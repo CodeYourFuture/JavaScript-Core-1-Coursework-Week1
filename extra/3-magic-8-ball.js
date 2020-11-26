@@ -42,19 +42,87 @@ My sources say no.
 Outlook not so good.
 Very doubtful.
 */
-
+let answers = [
+  {"content": "It is certain.",
+  "type": "very positive"
+  }, 
+  {"content": "It is decidedly so.",
+  "type": "very positive"
+  }, 
+  {"content": "Without a doubt.",
+  "type": "very positive"
+  }, 
+  {"content": "Yes - definitely.",
+  "type": "very positive"
+  }, 
+  {"content": "You may rely on it.",
+  "type": "very positive"
+  },
+  {"content": "As I see it, yes.",
+  "type": "positive"
+  },
+  {"content": "Most likely.",
+  "type": "positive"
+  },
+  {"content": "Outlook good.",
+  "type": "positive"
+  },
+  {"content": "Yes.",
+  "type": "positive"
+  },
+  {"content": "Signs point to yes.",
+  "type": "positive"
+  },
+  {"content": "Reply hazy, try again.",
+  "type": "negative"
+  },
+  {"content": "Ask again later.",
+  "type": "negative"
+  },
+  {"content": "Better not tell you now.",
+  "type": "negative"
+  },
+  {"content": "Cannot predict now.",
+  "type": "negative"
+  },
+  {"content": "Concentrate and ask again.",
+  "type": "negative"
+  },
+  {"content": "Don't count on it.",
+  "type": "very negative"
+  },
+  {"content": "My reply is no.",
+  "type": "very negative"
+  },
+  {"content": "My sources say no.",
+  "type": "very negative"
+  },
+  {"content": "Outlook not so good.",
+  "type": "very negative"
+  },
+  {"content": "Very doubtful.",
+  "type": "very negative"
+  }
+]
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
+  let randomAnswer = Math.floor(Math.random() * 20);
+  console.log("The ball has shaken!")
+  return answers[randomAnswer].content;
 }
-
 // This function should say whether the answer it is given is
 // - very positive
 // - positive
 // - negative
 // - very negative
 // This function should expect to be called with any value which was returned by the shakeBall function.
+
 function checkAnswer(answer) {
+  var result = answers.filter(obj => {
+  return obj.content === answer
+  })
+  return result[0].type;
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
