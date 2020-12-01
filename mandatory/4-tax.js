@@ -19,10 +19,15 @@ function calculateSalesTax() {}
 
 function addTaxAndFormatCurrency() {}
 
-/* ======= TESTS - DO NOT MODIFY =====
-  There are some Tests in this file that will help you work out if your code is working.
+/* 
+===================================================
+======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
 
-  To run these tests type `node 4-tax.js` into your terminal
+There are some Tests in this file that will help you work out if your code is working.
+
+To run these tests type `node 4-tax.js` into your terminal
+
+===================================================
 */
 
 const util = require("util");

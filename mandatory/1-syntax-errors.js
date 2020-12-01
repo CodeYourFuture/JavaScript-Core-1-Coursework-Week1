@@ -13,10 +13,15 @@ function getTotal(a, b) {
     return "The total is total"
 }
 
-/* ======= TESTS - DO NOT MODIFY =====
-    There are some Tests in this file that will help you work out if your code is working.
+/* 
+===================================================
+======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
 
-    To run these tests type `node 1-syntax-errors.js` into your terminal
+There are some Tests in this file that will help you work out if your code is working.
+
+To run these tests type `node 1-syntax-errors.js` into your terminal
+
+===================================================
 */
 
 const util = require('util');

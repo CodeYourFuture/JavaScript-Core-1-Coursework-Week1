@@ -13,10 +13,14 @@ function concatenate(firstWord, secondWord, thirdWord) {
   // Look at the test case below to understand what this function is expected to return.
 }
 
-/* ======= TESTS - DO NOT MODIFY =====
-  There are some Tests in this file that will help you work out if your code is working.
+/* 
+===================================================
+======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
 
-  To run these tests type `node 3-function-output` into your terminal
+There are some Tests in this file that will help you work out if your code is working.
+
+To run these tests type `node 3-function-output` into your terminal
+==================================
 */
 
 const util = require("util");
