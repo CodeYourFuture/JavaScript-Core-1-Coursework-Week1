@@ -14,9 +14,9 @@ function multiply(a, b, c) {
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
-There are some Tests in this file that will help you work out if your code is working.
+  There are some Tests in this file that will help you work out if your code is working.
 
-To run these tests type `node 2-logic-error` into your terminal
+  To run these tests type `node 2-logic-error` into your terminal
 */
 
 const util = require('util');
