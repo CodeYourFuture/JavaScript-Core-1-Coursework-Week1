@@ -5,7 +5,12 @@
   Sales tax is 20% of the price of the product
 */
 
-function calculateSalesTax() {}
+// pruductPrize is the prize before tax
+
+function calculateSalesTax(productPrize) {
+  let salesTaxPercentage = 0.2;
+  return productPrize + productPrize * salesTaxPercentage; // returns sales prize after tax
+}
 
 /*
   CURRENCY FORMATTING
@@ -17,7 +22,10 @@ function calculateSalesTax() {}
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency() {}
+function addTaxAndFormatCurrency(productPrize) {
+  let newValue = `£${calculateSalesTax(productPrize).toFixed(2)}`;
+  return newValue;
+}
 
 /* 
 ===================================================
