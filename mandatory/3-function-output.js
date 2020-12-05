@@ -1,9 +1,21 @@
 // Add comments to explain what this function does. You're meant to use Google!
+/*
+ *
+ * The Math.random() function returns a floating-point, pseudo-random number between 0 (inclusive) and 1 (exclusive). The function getNumber() multiplies this pseudo random number by 10 and returns a number between 0 (inclusive) and 10 (exclusive).
+ *
+ *
+*/
 function getNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+/*
+ *
+ * This function concatenates string w2 at the end of string w1. And returns this new concatenated string.
+ *
+ *
+*/
 function s(w1, w2) {
   return w1.concat(w2);
 }
@@ -11,6 +23,7 @@ function s(w1, w2) {
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  return firstWord + " " + secondWord + " " + thirdWord;
 }
 
 /* 
