@@ -46,7 +46,19 @@
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
-  //Write your code in here
+  
+  // Array containing all the possible answers
+  let possibleAnswers = ["It is certain.", "It is decidedly so.", "Without a doubt.", "Yes - definitely.", "You may rely on it.", "As I see it, yes.", "Most likely.", "Outlook good.", "Yes.", "Signs point to yes.", "Reply hazy, try again.", "Ask again later.", "Better not tell you now.", "Cannot predict now.", "Concentrate and ask again.", "Don't count on it.", "My reply is no.", "My sources say no.", "Outlook not so good.", "Very doubtful."];
+
+  // Generate a random number to chose an answer from array of answers
+  let tempIndex = Math.random()*(possibleAnswers.length - 1);
+
+  // round the value of index to nearest whole number
+  let index = Math.round(tempIndex);
+
+  // log the message and return the randomly selected answer
+  console.log("The ball has shaken!");
+  return possibleAnswers[index];
 }
 
 /* 
@@ -60,6 +72,32 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
+  let result;
+  switch(answer)
+  {
+    case "It is certain." :
+    case "It is decidedly so." :
+    case "Without a doubt." :
+    case "Yes - definitely." :
+    case "You may rely on it." : result = "very positive"; break;
+    case "As I see it, yes." :
+    case "Most likely." :
+    case "Outlook good." :
+    case "Yes." :
+    case "Signs point to yes." : result = "positive"; break;
+    case "Reply hazy, try again." :
+    case "Ask again later." :
+    case "Better not tell you now." :
+    case "Cannot predict now." :
+    case "Concentrate and ask again." : result = "negative"; break;
+    case "Don't count on it." :
+    case "My reply is no." :
+    case "My sources say no." :
+    case "Outlook not so good." :
+    case "Very doubtful." : result = "very negative"; break;
+    default : break;
+  }
+  return result;
 }
 
 /* 
@@ -71,6 +109,7 @@ There are some Tests in this file that will help you work out if your code is wo
 To run these tests type `node 3-magic-8-ball.js` into your terminal
 ==================================
 */
+
 
 const log = console.log;
 let logged;
