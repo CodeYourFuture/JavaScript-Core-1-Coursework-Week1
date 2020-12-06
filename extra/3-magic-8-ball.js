@@ -119,7 +119,7 @@ function shakeBall() {
 // This function should expect to be called with any value which was returned by the shakeBall function.
 
 function checkAnswer(answer) {
-  var result = answers.filter(obj => {
+  let result = answers.filter(obj => {
   return obj.content === answer
   })
   return result[0].type;
