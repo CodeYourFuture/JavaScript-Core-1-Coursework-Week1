@@ -1,2 +1,9 @@
-var numberOfStudents = 15;
-var numberOfMentors = 8;
+var numberOfStudents = 30.612437;
+
+var preciseNumber = 30.612437;
+var roughNumber = Math.round(preciseNumber);
+
+console.log( "Precise Number " + roughNumber + " % ")
+
+
+
