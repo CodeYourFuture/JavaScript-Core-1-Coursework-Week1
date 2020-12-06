@@ -27,13 +27,13 @@ function shoutyGreeting(mentor){
 }
 
 var firstGreeting = shoutyGreeting(mentor1);
-var seccondGreeting = shoutyGreeting(mentor2);
+var secondGreeting = shoutyGreeting(mentor2);
 var thirdGreeting = shoutyGreeting(mentor3);
 var fourthGreeting = shoutyGreeting(mentor4);
 var fifthGreeting = shoutyGreeting(mentor5);
 
 console.log(firstGreeting);
-console.log(seccondGreeting);
+console.log(secondGreeting);
 console.log(thirdGreeting);
 console.log(fourthGreeting);
 console.log(fifthGreeting);
