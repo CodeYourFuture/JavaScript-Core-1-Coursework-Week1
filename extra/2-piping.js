@@ -16,26 +16,34 @@
   the final result to the variable goodCode
 */
 
-function add() {
-
+function add(num1, num2) {
+    return num1 + num2;
 }
 
-function multiply() {
-
+function multiply(num1, num2) {
+    return num1 * num2;
 }
 
-function format() {
-
+function format(num) {
+ return "£" + num;
 }
 
 const startingValue = 2
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode = 
+/*
+  This is a bad coding example because it is unreadable and confusing. Reading this bit of code is difficult. Calling a function, within a function call and so on can easily lead to errors.
+*/
+let badCode = format(multiply(add(startingValue, 10), 2));
 
-/* BETTER PRACTICE */
-
-let goodCode = 
+// BETTER PRACTICE
+/*
+  This is considered a better practice because the complicated task has been broken down into small readable, easy to understand steps.
+*/
+let step1 = add(startingValue, 10);
+let step2 = multiply(step1, 2);
+let finalStep = format(step2);
+let goodCode = finalStep;
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
