@@ -43,10 +43,95 @@
     Very doubtful.
 */
 
+let answers = [
+  { 
+    posisibility: "It is certain.",
+    type: "very positive"
+  }, 
+  { 
+    posisibility: "It is decidedly so.",
+    type: "very positive"
+  }, 
+  { 
+    posisibility: "Without a doubt.",
+    type: "very positive"
+  }, 
+  { 
+    posisibility: "Yes - definitely.",
+    type: "very positive"
+  }, 
+  { 
+    posisibility: "You may rely on it.",
+    type: "very positive"
+  },
+  { 
+    posisibility: "As I see it, yes.",
+    type: "positive"
+  },
+  { 
+    posisibility: "Most likely.",
+    type: "positive"
+  },
+  {
+    posisibility: "Outlook good.",
+    type: "positive"
+  },
+  {
+    posisibility: "Yes.",
+    type: "positive"
+  },
+  {
+    posisibility: "Signs point to yes.",
+    type: "positive"
+  },
+  {
+    posisibility: "Reply hazy, try again.",
+    type: "negative"
+  },
+  {
+    posisibility: "Ask again later.",
+    type: "negative"
+  },
+  {
+    posisibility: "Better not tell you now.",
+    type: "negative"
+  },
+  {
+    posisibility: "Cannot predict now.",
+    type: "negative"
+  },
+  {
+    posisibility: "Concentrate and ask again.",
+    type: "negative"
+  },
+  {
+    posisibility: "Don't count on it.",
+    type: "very negative"
+  },
+  {
+    posisibility: "My reply is no.",
+    type: "very negative"
+  },
+  {
+    posisibility: "My sources say no.",
+    type: "very negative"
+  },
+  {
+    posisibility: "Outlook not so good.",
+    type: "very negative"
+  },
+  { 
+    posisibility: "Very doubtful.",
+    type: "very negative"
+  }
+]
+
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
-  //Write your code in here
+  let randomAnswer = Math.floor(Math.random() * 20);
+  console.log("The ball has shaken!")
+  return answers[randomAnswer].posisibility;
 }
 
 /* 
@@ -59,7 +144,10 @@ function shakeBall() {
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
-  //Write your code in here
+  let result = answers.filter(object => {
+  return object.posisibility === answer
+  });
+  return result[0].type;
 }
 
 /* 
