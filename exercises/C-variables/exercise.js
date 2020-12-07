@@ -1,3 +1,3 @@
 // Start by creating a variable `greeting`
-
-console.log(greeting);
+var greeting = "Hello world\n";  // added  backspace \n newline
+console.log(greeting.repeat(3)); // added repeat 3
