@@ -1,18 +1,22 @@
 // Add comments to explain what this function does. You're meant to use Google!
+// This is random generator. So basically it is giving as pseudo-random numbers
+// this Math.random() is giving numbers from 0 - 0.9999999999. 
+// By multiply it to 10, we are going to get numbers from 0 to 9,9999999999999
 function getNumber() {
   return Math.random() * 10;
 }
-
+console.log(getNumber())
 // Add comments to explain what this function does. You're meant to use Google!
+// concatenate addition of string, but I would rather call it sticking strings to each other 
 function s(w1, w2) {
   return w1.concat(w2);
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
-  // Write the body of this function to concatenate three words together.
-  // Look at the test case below to understand what this function is expected to return.
+ return (firstWord + " " + secondWord + " " + thirdWord)
 }
 
+const { DH_NOT_SUITABLE_GENERATOR } = require('constants');
 /* ======= TESTS - DO NOT MODIFY =====
 There are some Tests in this file that will help you work out if your code is working.
 To run these tests type `node 3-function-output` into your terminal

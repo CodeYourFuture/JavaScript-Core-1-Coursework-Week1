@@ -5,10 +5,14 @@
   Sales tax is 20% of the price of the product
 */
 
-function calculateSalesTax() {}
+function calculateSalesTax(number) {
+  let taxAmount = (number * 0.20);
+  let totalAmount = taxAmount + number;
+  console.log(totalAmount);
+  return (totalAmount)
+}
 
-/*
-  CURRENCY FORMATTING
+/*  CURRENCY FORMATTING
   ===================
   The business has informed you that prices must have 2 decimal places
   They must also start with the currency symbol
@@ -17,7 +21,13 @@ function calculateSalesTax() {}
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency() {}
+function addTaxAndFormatCurrency(number) {
+  let taxAmount = (number * 0.20);
+  let totalAmount = taxAmount + number;
+  console.log(totalAmount);
+  return ("£" + totalAmount.toFixed(2))
+
+}
 
 /* ======= TESTS - DO NOT MODIFY =====
 There are some Tests in this file that will help you work out if your code is working.
