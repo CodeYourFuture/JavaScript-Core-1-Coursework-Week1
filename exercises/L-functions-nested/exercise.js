@@ -23,8 +23,8 @@ console.log(greeting + mentor3.toUpperCase());
 console.log(greeting + mentor4.toUpperCase());
 console.log(greeting + mentor5.toUpperCase());
 
-let numberStudents = 65;
-let numberMentors = 35;
+let numberStudents = 64.5;
+let numberMentors = 34.5;
 
 function percentage (number, total) {
     let result = Math.round (numberStudents);
@@ -34,15 +34,8 @@ function percentage (number, total) {
 let numberStudentsPerc= percentage (numberStudents);
 console.log( "Percentage students " + numberStudents + " % ")
 
-
-function percentage (number,total) {
-    let result = Math.round (numberMentors);
-    return result;
-}
-
 let numberMentorsPerc= percentage (numberMentors);
-console.log( "Percentage Mentors " + numberMentors + " % ")
-
+console.log ("Percentage of Mentors " + numberMentors + "%")
 
 
 
