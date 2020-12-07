@@ -1,9 +1,11 @@
 // Add comments to explain what this function does. You're meant to use Google!
+// This function returns a random number between 0 and 10 but not 10
 function getNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+// This function joins the w1 and w2 or concatinates them (spelling questionable)
 function s(w1, w2) {
   return w1.concat(w2);
 }
@@ -11,6 +13,7 @@ function s(w1, w2) {
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  return `${firstWord} ${secondWord} ${thirdWord}`;
 }
 
 /* 
