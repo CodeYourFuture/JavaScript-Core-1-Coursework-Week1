@@ -10,7 +10,7 @@ console.log(greeting);
 
 The program above will print "Hello world" to the console. Notice how it uses the value assigned to the variable `greeting`.
 
-## Exercise
+## Exercis
 
 * Add a variable `greeting` to exercise.js (make sure it comes _before_ the console.log)
 * Print your `greeting` to the console 3 times
