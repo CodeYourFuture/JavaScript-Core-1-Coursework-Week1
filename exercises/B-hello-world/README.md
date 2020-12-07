@@ -4,7 +4,7 @@ We'll do this in JavaScript, using something called `console.log()`.
 
 Inside of `exercise.js` there's a line of code that will print "Hello world!".
 
-### 1. Run the program
+### 1. Run the programcd
 
 * Open a terminal window
 * Change directory to this folder (`cd B-hello-world`)
