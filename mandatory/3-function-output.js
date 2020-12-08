@@ -1,9 +1,16 @@
 // Add comments to explain what this function does. You're meant to use Google!
+
+ /* It will generate numbers b/n 0 (inclusive) and 1 and then multiply them by 10 
+  and this result will be returned */
 function getNumber() {
+ 
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+/* This function will take two arguments and will concatenate(add as in numbers) the 2nd string(w2)
+to to first(w1)*/
+
 function s(w1, w2) {
   return w1.concat(w2);
 }
@@ -11,6 +18,8 @@ function s(w1, w2) {
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  let sentence  = firstWord + ' ' +  secondWord + ' ' + thirdWord;
+  return sentence;
 }
 
 /* 
