@@ -22,10 +22,7 @@ function calculateSalesTax(price, actualPrice) {
 
 function addTaxAndFormatCurrency(actualPrice) {
     const taxedPrice = calculateSalesTax(actualPrice);
-
     return "£" + (taxedPrice).toFixed(2);
-
-
 }
 
 /* 
