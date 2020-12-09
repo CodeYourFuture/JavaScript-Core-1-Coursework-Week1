@@ -8,7 +8,7 @@
 /***** Quick Note *******
  * The function below fails the tests. However, it meets the requirements (lines 4 and 5) 
  * and has no logic errors (I hope).
- * I hope the suggestion I made (starts at line 32) can explain why. */
+ * I hope the suggestion I made (starts at line 35) can explain why. */
 
 function calculateSalesTax(price) {
     return price / 5;   // tax = 20% of price
@@ -32,9 +32,9 @@ function addTaxAndFormatCurrency(price) {
 
 /*
  ========================= THIS IS A SUGGESTION ============================
- * I suggest lines 57 through 59 be corrected for values: calculateSalesTax() should
- * return the tax (i.e. 20% of product price, as stipulated in lines 4 and 5 above),
- * not the value of price + tax. 
+ * I suggest calls made to the function calculateSalesTax (lines 70 through 72) be 
+ * edited for values: calculateSalesTax() should return the tax (i.e. 20% of product
+ * price, as stipulated in lines 4 and 5 above), not the value of price + tax. 
  * 
  * It's possible to make calculateSalesTax() calculate the total price to pass the tests,
  * but that does seem counterintuitive to what we expect the function does.
