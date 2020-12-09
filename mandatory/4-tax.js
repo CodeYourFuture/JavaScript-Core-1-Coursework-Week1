@@ -22,9 +22,11 @@ function calculateSalesTax(productBefore) {
 */
 
 function addTaxAndFormatCurrency(productBefore) {
-  let value = `£${calculateSalesTax(productBefore).toFixed(2)}`;
+  let newValue = `£${calculateSalesTax(productBefore).toFixed(2)}`;
   return newValue;
 }
+
+
 
 /* 
 ===================================================

@@ -43,6 +43,29 @@
     Very doubtful.
 */
 
+let answers = [
+  posisibility: "It is certain", type: "very positive"
+  posisibility: "It is certain", type: "very positive"
+  posisibility: "It is certain", type: "very positive"
+  posisibility: "It is certain", type: "very positive"
+  posisibility: "It is certain", type: "very positive"
+  posisibility: "It is certain", type: "positive"
+  posisibility: "It is certain", type: "positive"
+  posisibility: "It is certain", type: "positive"
+  posisibility: "It is certain", type: "positive"
+  posisibility: "It is certain", type: "positive"
+  posisibility: "It is certain", type: "negative"
+  posisibility: "It is certain", type: "negative"
+  posisibility: "It is certain", type: "negative"
+  posisibility: "It is certain", type: "negative"
+  posisibility: "It is certain", type: "negative"
+  posisibility: "It is certain", type: "very negative"
+  posisibility: "It is certain", type: "very negative"
+  posisibility: "It is certain", type: "very negative"
+  posisibility: "It is certain", type: "very negative"
+  posisibility: "It is certain", type: "very negative"
+]
+
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
