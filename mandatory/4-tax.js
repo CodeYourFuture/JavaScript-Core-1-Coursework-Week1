@@ -5,8 +5,13 @@
   Sales tax is 20% of the price of the product
 */
 
+/***** Quick Note *******
+ * The function below fails the tests. However, it meets the requirements (lines 4 and 5) 
+ * and has no logic errors (I hope).
+ * I hope the suggestion I made (starts at line 32) can explain why. */
+
 function calculateSalesTax(price) {
-    return price / 5;
+    return price / 5;   // tax = 20% of price
 }
 
 /*
@@ -19,10 +24,21 @@ function calculateSalesTax(price) {
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency(price,tax) {
+function addTaxAndFormatCurrency(price) {
+    let tax = calculateSalesTax(price);
     let actualPrice = price + tax;
     return "£" + actualPrice.toFixed(2);
 }
+
+/*
+ ========================= THIS IS A SUGGESTION ============================
+ * I suggest lines 57 through 59 be corrected for values: calculateSalesTax() should
+ * return the tax (i.e. 20% of product price, as stipulated in lines 4 and 5 above),
+ * not the value of price + tax. 
+ * 
+ * It's possible to make calculateSalesTax() calculate the total price to pass the tests,
+ * but that does seem counterintuitive to what we expect the function does.
+ ============================================================================ */
 
 const { format } = require("path");
 /* 
