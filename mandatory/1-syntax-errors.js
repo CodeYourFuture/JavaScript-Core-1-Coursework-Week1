@@ -1,16 +1,29 @@
-// There are syntax errors in this code - can you fix it to pass the tests?
 
-function addNumbers(a b c) {
+
+//Write a function that takes a name (a string) and an age (a number) and returns a greeting (a string)
+
+//## Expected result
+
+
+
+
+
+// There are syntax errors in this code - can you fix it to pass the tests?
+// addNumber adds a,b,c  missing comma's
+function addNumbers(a , b  , c) {
     return a + b + c;
 }
+// introduce adds a string with age and name missing +   , missing curly brackets, added spaces
+function introduceMe(name, age){
+return "Hello, my name is " + name  + " and I am " + age + " years old";
+}
 
-function introduceMe(name, age)
-return "Hello, my name is " + name "and I am " age + "years old";
-
+// getTotal adds a,b
+//removed a + (was a ++ b)
 function getTotal(a, b) {
-    total = a ++ b;
+   return  "The total is " + (a+b);
 
-    return "The total is total"
+
 }
 
 /* 
