@@ -1,6 +1,13 @@
 // Start by creating a variable `message`
-const myName = "Amanuel.";
-let greeting = "Hey, my name is ";
+// Start by creating a variable `message`
+const myName = "Amanuel";
+let greeting  = "My name is ";
+let nameLength = " and my name length is " + myName.length + " characters long.";
 
-console.log(greeting + myName);
+let message = greeting + myName + nameLength;
+
+
+console.log(message.trim());
+
+
 
