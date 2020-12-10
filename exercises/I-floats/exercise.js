@@ -1,2 +1,11 @@
 var numberOfStudents = 15;
 var numberOfMentors = 8;
+var total = numberOfMentors + numberOfStudents;
+var percentageOfStudents = (numberOfStudents / total) * 100;
+var percentageOfMentors = (numberOfMentors / total) * 100;
+console.log("Percentage Students " + percentageOfStudents + "%");
+console.log("percentage Mentors " + percentageOfMentors + "%");
+var roundedPercentageOfStudents = Math.round(percentageOfStudents);
+var roundedPercentageOfMentors = Math.round(percentageOfMentors);
+console.log(roundedPercentageOfMentors + "%");
+console.log(roundedPercentageOfStudents + "%");
