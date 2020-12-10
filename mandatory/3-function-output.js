@@ -1,18 +1,26 @@
 // Add comments to explain what this function does. You're meant to use Google!
+/* The Math.random() function returns a floating-point. Numbers are selected between 0 inclusive and 1 exclusive.
+However, Math.random()*10 select random floating point number between 0 and 10 */
+
 function getNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+
+// This function takes the value of w1 and add the value of w2
 function s(w1, w2) {
   return w1.concat(w2);
 }
 
+
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  
+  return firstWord.concat(" ").concat(secondWord).concat(" ").concat(thirdWord);
 }
-
+concatenate("code", "your", "future");
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====

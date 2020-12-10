@@ -1,11 +1,15 @@
 // The syntax for this function is valid but it has an error, find it and fix it.
 
-var trimWord = "  CodeYourFuture "; 
-  trimWord.trim();
+function trimWord(word) {
+  return word.trim();
+}
+trimWord("  CodeYourFuture ");
 
 
-var getWordLength = "A wild sentence appeared!";
-  getWordLength.length;
+function getWordLength(word) {
+return word.length;
+}
+  getWordLength("A wild sentence appeared!");
 
 
 
