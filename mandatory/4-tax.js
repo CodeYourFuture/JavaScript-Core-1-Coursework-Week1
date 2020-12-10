@@ -8,7 +8,8 @@
 
 function calculateSalesTax(price) {
 
-  return price*2.2;
+ const salesTax = 0.2;
+  return price + price * salesTax;
 }
 /*
   CURRENCY FORMATTING
@@ -22,9 +23,12 @@ function calculateSalesTax(price) {
 
 function addTaxAndFormatCurrency(price) {
 
- const taxedPrice = calculateSalesTax(price);
-  return "£" + taxedPrice.toFixed(2);
+  let value = `£${calculateSalesTax(price).toFixed(2)}`;
+  return value;
 }
+
+
+
 
 
 /* 
