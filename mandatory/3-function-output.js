@@ -1,6 +1,6 @@
 // Add comments to explain what this function does. You're meant to use Google!
 function getNumber() {
-  return Math.random() * 10; //This returns a random number between 0 and 1, 0 inclusive and 1 exclusive
+  return Math.random() * 10; //This returns a random number between 0 and 10, 0 inclusive and 10 exclusive
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
