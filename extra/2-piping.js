@@ -17,25 +17,32 @@
 */
 
 function add(a,b) {
-return a + b;
+var addTotal = a + b;
+return addTotal;
 }
 
 function multiply(c,d) {
-return c * d;
+var multiplyTotal = c * d;
+return multiplyTotal;
 }
 
 function format(num1) {
  return "£" + num1;
 }
 
-const startingValue = 2
+const startingValue = 2;
+let  addedTotal = add(startingValue, 10);
+let  multiTotal = multiply(addedTotal, 2);
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode = add(startingValue,10)multiply(startingValue,2) + format(startingValue);
+let badCode =  format(add(multiply(startingValue,2),20));
+
+//looks messy hard to unerstand unsure if this is the right way???
 
 /* BETTER PRACTICE */
 
-let goodCode = 
+let goodCode = format(multiTotal);
+// more layed out. maybe a easier way to do this
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
