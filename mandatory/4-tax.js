@@ -10,7 +10,6 @@ function calculateSalesTax(productPrice) {
   let totalSalePrice = productPrice + tax;
   return totalSalePrice;
 }
-
 /*
   CURRENCY FORMATTING
   ===================
@@ -20,9 +19,10 @@ function calculateSalesTax(productPrice) {
 
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
-
 function addTaxAndFormatCurrency(productPrice) {
-  let totalPrice = calculateSalesTax (productPrice)
+  let totalPrice = calculateSalesTax (productPrice);
+  let formatCurrency = totalPrice.toFixed(2);
+  return "£" + formatCurrency;
 }
   
 /* 

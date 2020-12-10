@@ -1,6 +1,6 @@
-function createGreeting (Daniel){
-    return Daniel
+function createGreeting (name){
+    return "Hello, my name is " + name;
 }
-var greeting = createGreeting("Hello, my name is Daniel");
+var greeting = createGreeting("Daniel");
 
 console.log(greeting);
