@@ -47,8 +47,10 @@
 // and return the answer.
 function shakeBall() {
   //Write your code in here
+  return "The ball has shaken!" + checkAnswer;
+  
 }
-
+console.log(shakeBall);
 /* 
   This function should say whether the answer it is given is
     - very positive
@@ -60,7 +62,17 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
+  var array1 = ["very positive" , "positive" , "negative" , "very negative"];
+ var random = array1[Math.floor(Math.random()*array1.length)]; // picks names from array
+ //var  veryPos = ["It is certain" , "It is decidedly so" , "Without a doubt" , "Yes - definitely" ,"You may rely on it"];
+ //var randomVP = veryPos[Math.floor(Math.random()*veryPos.length)]; // picks names from array
+ //var  pos = [ "As I see it, yes" , "Most likely" , "Outlook good" , "Yes" ,"Signs point to yes"];
+  //var  negative =[];
+  //var  very negative  = [];
+  
+ return random;
 }
+
 
 /* 
 ==================================
