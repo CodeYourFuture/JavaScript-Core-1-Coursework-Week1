@@ -1,5 +1,5 @@
-function createGreeting ("Daniel"){
-    return "Hello"
+function createGreeting (Daniel){
+    return Daniel
 }
 var greeting = createGreeting("Hello, my name is Daniel");
 
