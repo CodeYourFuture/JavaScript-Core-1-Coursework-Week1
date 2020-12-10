@@ -10,8 +10,8 @@ return "Hello, my name is " + name + " and I am " + age + " years old";
 
 function getTotal(a, b) {
    let total = a + b;
-
-    return "The total is total"
+    // return "The total is" + total;
+    return "The total is " + total;
 }
 
 /* 
