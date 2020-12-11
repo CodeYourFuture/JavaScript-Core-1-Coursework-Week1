@@ -1,4 +1,4 @@
-The next data type we will learn is **number**.
+-------The next data type we will learn is **number**.
 
 Unlike strings, numbers do not need to be wrapped in quotes.
 
@@ -17,7 +17,7 @@ var difference = 10 - 2; // 8
 
 ## Exercise
 
-* Create two variables `numberOfStudents` and `numberOfMentors`
+* Create two variables `numberOfStudents` and `_numberOfMentors_`
 * Log a message that displays the total number of students and mentors
 
 ## Expected result
