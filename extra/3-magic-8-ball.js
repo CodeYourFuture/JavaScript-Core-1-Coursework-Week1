@@ -45,9 +45,13 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
-function shakeBall() {
+
+function shakeBall(askAQuestion) {
+  return askAQuestion + "?";
   //Write your code in here
 }
+
+
 
 /* 
   This function should say whether the answer it is given is
