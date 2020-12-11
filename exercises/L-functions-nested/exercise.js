@@ -16,6 +16,7 @@ console.log(print(8, 15));
 
 */
 //Exercise 2
+
 var mentor1 = "Daniel";
 var mentor2 = "Irina";
 var mentor3 = "Mimi";
