@@ -2,8 +2,14 @@
 function getNumber() {
   return Math.random() * 10;
 }
+//The function returns a random number between 1 and 10,so mynumber equals a random number
+//between 1 and 10.
+//The math.random() function returns a floating-point,pseudo-random number between range (0,1),
+//0(inclusive) and 1 (exclusive).
 
 // Add comments to explain what this function does. You're meant to use Google!
+//The concat() function concatenates the string arguments to the calling changes to
+//the original string or the returned string don't affect the other.
 function s(w1, w2) {
   return w1.concat(w2);
 }
@@ -11,6 +17,7 @@ function s(w1, w2) {
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  return firstWord.concat( " " ,secondWord, " " , thirdWord);
 }
 
 /* 

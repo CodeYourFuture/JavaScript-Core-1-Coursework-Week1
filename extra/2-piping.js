@@ -16,13 +16,28 @@
   the final result to the variable goodCode
 */
 
-function add() {
+function add(a,b) {
+    let val =a + b;
+    return val;
 
 }
+let result = add (1,3);
+console.log(result);
+
+function add(x,y){
+    let val =a + b;
+    return val;
+}
+let result = add(2.4,5);
+console.log(result);
 
 function multiply() {
+    let val = a * b;
+    return val;
 
 }
+let result = multiply(2*3);
+console.log(result);
 
 function format() {
 
