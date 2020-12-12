@@ -1,3 +1,7 @@
 // Start by creating a variable `message`
+let message =  "welcome to Java Script world"; 
 
-console.log(message);
+let messageType = typeof message; 
+
+console.log(messageType);
+

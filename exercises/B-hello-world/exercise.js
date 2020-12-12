@@ -1,4 +1,1 @@
-var greetings = "Hello World"
-console.log("greetings");
-console.log("greetings");
-console.log("greetings");
+console.log("Hello World, I just started learning JavaScript.");
