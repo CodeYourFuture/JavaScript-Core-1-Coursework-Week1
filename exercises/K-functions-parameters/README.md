@@ -42,7 +42,7 @@ function add(num1, num2) {
 
 * Write a function that takes a name (a string) and returns a greeting
 
-## Expected result
+## Expected result 
 
 ```
 Hello, my name is Daniel
