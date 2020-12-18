@@ -1,6 +1,6 @@
 const name = " Daniel  ";
-const addTrim = name.trim();
-const newNameLength = addTrim.length;
+const trimmedName = name.trim();
+const newNameLength = trimmedName.length;
 
-console.log(`My name is ${addTrim} and my name is ${newNameLength} characters long`);
+console.log(`My name is ${trimmedName} and my name is ${newNameLength} characters long`);
 
