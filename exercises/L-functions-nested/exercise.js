@@ -6,7 +6,7 @@ function groupPercentage(num1, num2){
 function message(numberOfStudents, numberOfMentors){
     let percentageOfStudents = groupPercentage(numberOfStudents, numberOfMentors);
     let percentageOfMentors = groupPercentage (numberOfMentors, numberOfStudents);
-    return displayPercentage = `Percentage students: ${percentageOfStudents}%\nPercentage students: ${percentageOfMentors}%`;
+    return `Percentage students: ${percentageOfStudents}%\nPercentage students: ${percentageOfMentors}%`;
 }
  let percentage = message(15, 8);
  console.log(percentage);
