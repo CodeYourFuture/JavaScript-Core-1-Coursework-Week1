@@ -25,6 +25,22 @@ function PercentageOfStudentAndMentor (students, mentors){
  }
  console.log (message (students, mentors));
 
+ function upperCase(name) {
+    return name.toUpperCase()
+}
+ var mentors = ["daniel", "irina", "mimi", "rob", "yohannes"];
+    function shoutyG(name){
+        const capName = upperCase(name);
+        const message = "Hello, welcome " + capName + " to my world!";
+        return message;
+}
+for (let i=0; i < mentors.length; i++){
+    let mentorName = shoutyG
+    console.log(shoutyG(mentors[i]));
+}
+
+
+
 
 
 
