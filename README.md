@@ -2,7 +2,7 @@
 
 Like learning a musical instrument, programming requires daily practise.
 
-The exercises are split into three folders: `exercises`, `mandatory` and `extra`. All homework in the `exercise and ``mandatory` section **must** be completed for homework by the following lesson. 
+The exercises are split into three folders: `exercises`, `mandatory` and `extra`. All homework in the `exercise` and `mandatory` section **must** be completed for homework by the following lesson. 
 
 The `extra` folder contains exercises that you can complete to challenge yourself, but are not required for the following lesson.
 
