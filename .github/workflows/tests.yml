@@ -24,7 +24,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Run Code 
       id: run
-      run: ::set-output name=log::node mandatory/1-syntax-errors.js
+      run: ::set-output name=logs::node mandatory/1-syntax-errors.js
       continue-on-error: true
   comment:
     runs-on: ubuntu-latest
