@@ -23,6 +23,7 @@ jobs:
     - name: Run Code 
       id: run
       run: node mandatory/1-syntax-errors.js
+      continue-on-error: true
   comment:
     name: sample comment
     runs-on: ubuntu-latest
