@@ -9,7 +9,6 @@ on:
     
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -24,3 +23,14 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: node mandatory/1-syntax-errors.js
+  comment:
+    name: sample comment
+    runs-on: ubuntu-latest
+    steps:
+      - name: comment PR
+        uses: unsplash/comment-on-pr@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          msg: "Check out this message!"
+          check_for_duplicate_msg: false  # OPTIONAL 
