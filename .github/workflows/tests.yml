@@ -23,4 +23,4 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: node /mandatory/1-syntax-errors.js
+    - run: node mandatory/1-syntax-errors.js
