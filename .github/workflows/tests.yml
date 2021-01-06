@@ -22,7 +22,7 @@ jobs:
       id: run
       run: |
         # run command and capture stderr
-        node mandatory/1-syntax-errors.js > logs.txt
+        node mandatory/1-syntax-errors.js 2> logs.txt
         echo ::set-output name=logs::`cat logs.txt`
         # run again to get exit code
         node mandatory/1-syntax-errors.js
