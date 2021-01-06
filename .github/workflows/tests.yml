@@ -34,4 +34,4 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        msg: ${{ needs.build.outputs.logs }}
+        msg: Result ${{ needs.build.outputs.logs }}
