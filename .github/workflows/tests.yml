@@ -23,10 +23,14 @@ jobs:
     - name: Run Code 
       id: run
       run: node mandatory/1-syntax-errors.js
-    - name: comment PR
-      uses: unsplash/comment-on-pr@master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        msg: ${{join(steps.run.outputs.*, '\n')}}
-        check_for_duplicate_msg: false  # OPTIONAL 
+  comment:
+    name: sample comment
+    runs-on: ubuntu-latest
+    steps:
+      - name: comment PR
+        uses: unsplash/comment-on-pr@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          msg: ${{join(steps.run.outputs.*, '\n')}}
+          check_for_duplicate_msg: false  # OPTIONAL 
