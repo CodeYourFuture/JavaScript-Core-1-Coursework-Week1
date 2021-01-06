@@ -10,6 +10,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      logs: ${{ steps.run.outputs }}
     strategy:
       matrix:
         node-version: [12.x]
@@ -24,10 +26,13 @@ jobs:
       id: run
       run: node mandatory/1-syntax-errors.js
       continue-on-error: true
+  comment:
+    runs-on: ubuntu-latest
+    steps:
     - name: comment PR
       uses: unsplash/comment-on-pr@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        msg: ${{join(steps.run.outputs.*, '\n')}}
+        msg: ${{needs.build.logs}}
         check_for_duplicate_msg: false  # OPTIONAL 
