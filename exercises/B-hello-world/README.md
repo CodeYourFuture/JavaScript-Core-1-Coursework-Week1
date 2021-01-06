@@ -6,13 +6,14 @@ Inside of `exercise.js` there's a line of code that will print "Hello world!".
 
 ### 1. Run the program
 
-* Open a terminal window
-* Change directory to this folder (`cd B-hello-world`)
-* Run the program using node (`node exercise.js`)
+- Open a terminal window
+  - If you are using Visual Studio Code, you can "View" in the toolbar and then "Terminal"
+- Change directory to this folder (`cd B-hello-world`)
+- Run the program using node (`node exercise.js`)
 
 ### 2. Experiment
 
-* Try to `console.log()` something different. For example, 'Hello World. I just started learning JavaScript!'.
-* Try to console.log() several things at once.
-* What happens when you get rid of the quote marks?
-* What happens when you console.log() just a number without quotes?
+- Try to `console.log()` something different. For example, 'Hello World. I just started learning JavaScript!'.
+- Try to console.log() several things at once.
+- What happens when you get rid of the quote marks?
+- What happens when you console.log() just a number without quotes?
