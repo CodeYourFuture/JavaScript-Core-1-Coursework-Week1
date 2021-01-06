@@ -10,27 +10,23 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [12.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: node mandatory/1-syntax-errors.js
-  comment:
-    name: sample comment
-    runs-on: ubuntu-latest
-    steps:
-      - name: comment PR
-        uses: unsplash/comment-on-pr@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          msg: "Check out this message!"
-          check_for_duplicate_msg: false  # OPTIONAL 
+    - name: Run Code 
+      id: run
+      run: node mandatory/1-syntax-errors.js
+    - name: comment PR
+      uses: unsplash/comment-on-pr@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        msg: ${{join(steps.run_tests.outputs.*, '\n')}}
+        check_for_duplicate_msg: false  # OPTIONAL 
