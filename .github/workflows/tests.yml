@@ -28,5 +28,5 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        msg: ${{join(steps.run_tests.outputs.*, '\n')}}
+        msg: ${{join(steps.run.outputs.*, '\n')}}
         check_for_duplicate_msg: false  # OPTIONAL 
