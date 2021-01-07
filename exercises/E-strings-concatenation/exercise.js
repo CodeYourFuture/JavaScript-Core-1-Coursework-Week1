@@ -1,7 +1,9 @@
 // Start by creating a variable `message`
-var greet = "Hello, my name is ";
-var name = "Monique";
+let greet = "Hello, my name is ";
+let name = "Monique";
 
-var greeting = greet + name;
+let greeting = greet + name;
 
 console.log(greeting); 
+
+//Try to use let instead of var. Its best practice to use let :)
