@@ -1,3 +1,3 @@
-// Start by creating a variable `message`
+// Start by creating a variable to begin the greeting
 
-console.log(message);
+console.log(greeting);

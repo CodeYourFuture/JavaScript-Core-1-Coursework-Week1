@@ -1,3 +1,3 @@
-const name = " Daniel  ";
+var name = " Daniel  ";
 
 console.log(message);

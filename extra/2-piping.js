@@ -11,7 +11,7 @@
   - add 10 to startingValue
   - multiply the result by 2
   - format it
-  
+
   3. Write a more readable version of what you wrote in step 2 under the BETTER PRACTICE comment. Assign
   the final result to the variable goodCode
 */
@@ -28,16 +28,16 @@ function format() {
 
 }
 
-const startingValue = 2
+var startingValue = 2
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode = 
+var badCode =
 
 /* BETTER PRACTICE */
 
-let goodCode = 
+var goodCode =
 
-/* ======= TESTS - DO NOT MODIFY ===== 
+/* ======= TESTS - DO NOT MODIFY =====
 There are some Tests in this file that will help you work out if your code is working.
 
 To run these tests type `node 2-piping.js` into your terminal
@@ -46,14 +46,14 @@ To run these tests type `node 2-piping.js` into your terminal
 const util = require('util');
 
 function test(test_name, actual, expected) {
-    let status;
-    if (actual === expected) {
-        status = "PASSED";
-    } else {
-        status = `FAILED: expected: ${util.inspect(expected)} but your code returned: ${util.inspect(actual)}`;
-    }
+  let status;
+  if (actual === expected) {
+    status = "PASSED";
+  } else {
+    status = `FAILED: expected: ${util.inspect(expected)} but your code returned: ${util.inspect(actual)}`;
+  }
 
-    console.log(`${test_name}: ${status}`);
+  console.log(`${test_name}: ${status}`);
 }
 
 test('add function - case 1 works', add(1,3), 4)
