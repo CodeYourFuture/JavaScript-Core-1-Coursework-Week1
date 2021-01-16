@@ -1,9 +1,15 @@
 // Add comments to explain what this function does. You're meant to use Google!
+
+// Math.random() returns a random number between 0 (inclusive),  and 1 (exclusive):
+// For example: 0.40020936983011146
+// Math.random() always returns a number lower than 1.
 function getNumber() {
   return Math.random() * 10;
 } // The Math.random() function returns a floating-point, pseudo-random number in the range 0 to less than 1 (inclusive of 0, but not 1)with approximately uniform distribution over that range — which you can then scale to your desired range. so the getnumber function multiplies the psuedo random number between 0 and 10 however not 10.
 
 // Add comments to explain what this function does. You're meant to use Google!
+// The concat() method is used to join two or more arrays.
+This method does not change the existing arrays, but returns a new array, containing the values of the joined arrays.
 function s(w1, w2) {
   return w1.concat(w2);
 }
@@ -12,7 +18,7 @@ function s(w1, w2) {
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
-return `${firstWord} ${secondWord} ${thirdWord}`;
+  return `${firstWord} ${secondWord} ${thirdWord}`;
 }
 
 
