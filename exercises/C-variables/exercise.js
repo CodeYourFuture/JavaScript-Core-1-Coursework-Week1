@@ -1,3 +1,6 @@
 // Start by creating a variable `greeting`
+var greeting = "helloWorld";
 
-console.log(greeting);
+for (var i = 0; i < 3; i++) {
+  console.log(greeting);
+}
