@@ -45,9 +45,34 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
-function shakeBall() {
-  //Write your code in here
+
+function getRandomNumber(min, max) {
+  return Math.round(Math.random() * (max - min) + min);
 }
+
+function shakeBall() {
+  console.log("The ball has shaken!");
+  let answer = "";
+  randomNumber = getRandomNumber(1, 4)
+  if (randomNumber == 1) {
+    answer = `It is decidedly so.`;
+    return(answer);
+  }
+  else if (randomNumber == 2) {
+    answer = `As I see it, yes.`;
+    return(answer);
+  }
+  else if (randomNumber == 3) {
+    answer = `Reply hazy, try again.`;
+    return(answer);
+  }
+  else if (randomNumber == 4) {
+    answer = `My reply is no.`;
+    return(answer);
+  }
+}
+
+console.log(shakeBall()); 
 
 /* 
   This function should say whether the answer it is given is
@@ -60,8 +85,27 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
+  let rating = "";
+  if (answer == `It is decidedly so.`) {
+    console.log(rating = "very positive");
+    return rating;
+  }
+  else if (answer == `As I see it, yes.`) {
+    console.log(rating = "positive");
+    return rating;
+  }
+  else if (answer == `Reply hazy, try again.`) {
+    console.log(rating = "negative");
+    return rating;
+  }
+  else if (answer == `My reply is no.`) {
+    console.log(rating = "very negative");
+    return rating;
+  }
 }
 
+checkAnswer();
+console.log();
 /* 
 ==================================
 ======= TESTS - DO NOT MODIFY =====
