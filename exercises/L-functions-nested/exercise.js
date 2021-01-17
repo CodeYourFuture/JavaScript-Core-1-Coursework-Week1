@@ -31,8 +31,8 @@ let totalPercentageMentors = percentage(numberOfMentors, total);
 //     return notemessage1, message2;
 // }
 
-console.log(`Percentage Students: ${totalPercentageStudents}`);
-console.log(`Pencentage Mentors: ${totalPercentageMentors}`);
+console.log(`Percentage Students: ${totalPercentageStudents}%`);
+console.log(`Pencentage Mentors: ${totalPercentageMentors}%`);
     
 
 
