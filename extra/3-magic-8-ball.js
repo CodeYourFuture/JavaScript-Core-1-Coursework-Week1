@@ -47,6 +47,38 @@
 // and return the answer.
 function shakeBall() {
   //Write your code in here
+
+  const possibleAnswers = [
+    'It is certain.',
+    'It is decidedly so.',
+    'Without a doubt.',
+    'Yes - definitely.',
+    'You may rely on it.',
+
+    'As I see it, yes.',
+    'Most likely.',
+    'Outlook good.',
+    'Yes.',
+    'Signs point to yes.',
+
+    'Reply hazy, try again.',
+    'Ask again later.',
+    'Better not tell you now.',
+    'Cannot predict now.',
+    'Concentrate and ask again.',
+
+    "Don't count on it.",
+    'My reply is no.',
+    'My sources say no.',
+    'Outlook not so good.',
+    'Very doubtful.'
+  ];
+
+  console.log('The ball has shaken!');
+
+  const possibleAnswerIndex = Math.floor(Math.random() * 20);
+
+  return possibleAnswers[possibleAnswerIndex];
 }
 
 /* 
@@ -60,6 +92,59 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
+
+  const veryPositiveAnswers = [
+    'It is certain.',
+    'It is decidedly so.',
+    'Without a doubt.',
+    'Yes - definitely.',
+    'You may rely on it.'
+  ];
+
+  const positiveAnswers = [
+    'As I see it, yes.',
+    'Most likely.',
+    'Outlook good.',
+    'Yes.',
+    'Signs point to yes.'
+  ];
+
+  const negativeAnswers = [
+    'Reply hazy, try again.',
+    'Ask again later.',
+    'Better not tell you now.',
+    'Cannot predict now.',
+    'Concentrate and ask again.'
+  ];
+
+  const veryNegativeAnswers = [
+    "Don't count on it.",
+    'My reply is no.',
+    'My sources say no.',
+    'Outlook not so good.',
+    'Very doubtful.'
+  ];
+
+  const isAnswerVeryPositive = veryPositiveAnswers.find((ans) => ans === answer);
+  const isAnswerPositive = positiveAnswers.find((ans) => ans === answer);
+  const isAnswerNegative = negativeAnswers.find((ans) => ans === answer);
+  const isAnswerVeryNegative = veryNegativeAnswers.find((ans) => ans === answer);
+
+  if (isAnswerVeryPositive) {
+    return 'very positive';
+  }
+
+  if (isAnswerPositive) {
+    return 'positive';
+  }
+
+  if (isAnswerNegative) {
+    return 'negative';
+  }
+
+  if (isAnswerVeryNegative) {
+    return 'very negative';
+  }
 }
 
 /* 
@@ -82,9 +167,9 @@ console.log = function () {
 function test(test_name, expr) {
   let status;
   if (expr) {
-    status = "PASSED";
+    status = 'PASSED';
   } else {
-    status = "FAILED";
+    status = 'FAILED';
   }
 
   logged = undefined;
@@ -94,27 +179,22 @@ function test(test_name, expr) {
 const validAnswers = [];
 function testAll() {
   const answer = shakeBall();
-  test(
-    `shakeBall logs "The ball has shaken!"`,
-    logged === "The ball has shaken!"
-  );
-  test(`shakeBall returns an string answer`, typeof answer === "string");
+  test(`shakeBall logs "The ball has shaken!"`, logged === 'The ball has shaken!');
+  test(`shakeBall returns an string answer`, typeof answer === 'string');
 
   test(
     `checkAnswer("It is decidedly so.") returns "very positive`,
-    checkAnswer("It is decidedly so.") === "very positive"
+    checkAnswer('It is decidedly so.') === 'very positive'
   );
 
   test(
     `checkAnswer("My reply is no.") returns "very negative`,
-    checkAnswer("My reply is no.") === "very negative"
+    checkAnswer('My reply is no.') === 'very negative'
   );
 
   test(
     `checkAnswer returns the level of positivity"`,
-    ["very positive", "positive", "negative", "very negative"].includes(
-      checkAnswer(answer)
-    )
+    ['very positive', 'positive', 'negative', 'very negative'].includes(checkAnswer(answer))
   );
   const answers = new Set();
   for (let i = 0; i < 10; ++i) {
