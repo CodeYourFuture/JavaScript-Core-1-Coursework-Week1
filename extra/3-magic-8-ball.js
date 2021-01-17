@@ -46,6 +46,8 @@
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
+  console.log("The ball has shaken!");
+  return "Dont't count on it";
   //Write your code in here
 }
 
@@ -59,7 +61,13 @@ function shakeBall() {
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
-  //Write your code in here
+  var positivity;
+  if (answer === "It is decidedly so.") {
+    positivity = "very positive";
+  } else if (answer === "My reply is no.") {
+    positivity = "very negative";
+  }
+  return positivity;
 }
 
 /* 
