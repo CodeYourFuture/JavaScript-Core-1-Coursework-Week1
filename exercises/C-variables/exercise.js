@@ -1,11 +1,12 @@
 var approach = "greeting";// Start by creating a variable `greeting`
 
-console.log(approach);
+let greeting = "Hello World"
+console.log(greeting);
 
 var approach = "greeting";// Start by creating a variable `greeting`
 
-console.log(approach);
+console.log(greeting);
 
 var approach = "greeting";// Start by creating a variable `greeting`
 
-console.log(approach);
+console.log(greeting);
