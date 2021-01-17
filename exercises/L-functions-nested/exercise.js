@@ -9,9 +9,9 @@ function shoutyGreeting(name) {
     return name.toUpperCase();
 }
 
-// for (let i = 0; i < mentors.length; i++) {
-//     console.log(`HELLO ${shoutyGreeting(mentors[i])}`)
-// };
+for (let i = 0; i < mentors.length; i++) {
+    console.log(`HELLO ${shoutyGreeting(mentors[i])}`)
+};
 
 // Solution with ForEach method
 // mentors.forEach(item => console.log(`HELLO ${shoutyGreeting(item)}`));
