@@ -1,5 +1,6 @@
 function triple(number) {
-  // complete function here
+  const result = number * 3;
+  return result
 }
 
 var result = triple(12);

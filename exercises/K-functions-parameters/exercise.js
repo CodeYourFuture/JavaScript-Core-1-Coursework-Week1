@@ -1,6 +1,8 @@
 // Complete the function so that it takes input parameters
-function multiply() {
+function multiply(num1, num2) {
   // Calculate the result of the function and return it
+  const result = num1 * num2
+  return result
 }
 
 // Assign the result of calling the function the variable `result`
