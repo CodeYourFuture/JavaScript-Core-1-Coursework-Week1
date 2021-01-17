@@ -1,9 +1,22 @@
 // Add comments to explain what this function does. You're meant to use Google!
+/**
+
+  * @description Function returns a random floating numbers bounded from [0, 10)
+
+ **/
 function getNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+
+/**
+ * @description Function concatenates 2 values together
+ * @param w1
+ * @param  w2
+ * @returns Joint result of @param w1 and @param w2
+ * @example w1='J' and w2='mac' result is 'Jmac'
+ **/
 function s(w1, w2) {
   return w1.concat(w2);
 }
@@ -11,6 +24,8 @@ function s(w1, w2) {
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+
+  return `${firstWord} ${secondWord} ${thirdWord}`;
 }
 
 /* 
