@@ -1,12 +1,11 @@
-var numberOfStudents = 15;
-var numberOfMentors = 8;
-
-function percentages(num1, num2) {
-  var studentPerc = Math.round((num1 / (num1 + num2)) * 100);
-  var mentorPerc = Math.round((num2 / (num1 + num2)) * 100);
-  function greet(student, mentor) {
-    return `${student} percentage :${studentPerc}"\n"${mentor} percentage: ${mentorPerc}`;
+//This function calculates the percentages.
+//provide the name of group you wish to calculate its percentage on name parameter
+function percentage(name, numberOfGroup, total) {
+  let result = (numberOfGroup / total) * 100;
+  function message() {
+    return `Percentages of ${name}: ${result}`;
   }
-  return greet("student", "mentor");
+  return message();
 }
-console.log(percentages(numberOfStudents, numberOfMentors));
+console.log(percentage("Student", 40, 400));
+console.log(percentage("Mentors", 360, 400));

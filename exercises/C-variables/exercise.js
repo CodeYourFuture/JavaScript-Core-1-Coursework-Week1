@@ -1,6 +1,6 @@
-// Start by creating a variable `greeting`
-var greeting = "helloWorld";
+// Start by creating a letiable `greeting`
+let greeting = "helloWorld";
 
-for (var i = 0; i < 3; i++) {
+for (let i = 0; i < 3; i++) {
   console.log(greeting);
 }

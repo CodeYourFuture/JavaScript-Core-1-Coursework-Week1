@@ -21,7 +21,7 @@ function calculateSalesTax(num) {
 */
 
 function addTaxAndFormatCurrency(num) {
-  return Math.round(calculateSalesTax(num));
+  return `£${calculateSalesTax(num).toFixed(2)}`;
 }
 
 /* 

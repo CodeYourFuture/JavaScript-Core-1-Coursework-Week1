@@ -15,8 +15,7 @@ function concatenate(firstWord, secondWord, thirdWord) {
   // Look at the test case below to understand what this function is expected to return.
   return `${firstWord} ${secondWord} ${thirdWord}`;
 }
-console.log(getNumber());
-console.log(s("hello", "World"));
+
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====

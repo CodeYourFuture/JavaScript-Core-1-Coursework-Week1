@@ -1,6 +1,6 @@
-// Start by creating a variable `message`
-var message = "Coding is best";
-var typeOfmessage = typeof message;
+// Start by creating a letiable `message`
+let message = "Coding is best";
+let typeOfmessage = typeof message;
 
 console.log(message);
 console.log(typeOfmessage);
