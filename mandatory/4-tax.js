@@ -7,9 +7,7 @@
 
 function calculateSalesTax(price) {
   let totalPriceWithTax = price + price / 5;
-  
   return totalPriceWithTax;
-
 }
 
 /*
@@ -24,10 +22,8 @@ function calculateSalesTax(price) {
 
 function addTaxAndFormatCurrency(price) {
   let totalPrice = calculateSalesTax(price);
-  let decimalNumberOfAbove = Number(totalPrice).toFixed(2);
-  return `£${decimalNumberOfAbove}`;
-
-
+  let decimalNumberOfAbove = Number(totalPrice).toFixed(2); // decimal number added
+  return `£${decimalNumberOfAbove}`; // string interpolation
 }
 
 /* 
