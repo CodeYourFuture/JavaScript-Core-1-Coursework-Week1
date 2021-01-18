@@ -19,7 +19,35 @@ function calculateSalesTax(price) {
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency() {}
+function addTaxAndFormatCurrency(numberToBeTaxed) {
+  const taxedValue = calculateSalesTax(numberToBeTaxed); //return taxed value.
+  const formatValue = `£${taxedValue.toFixed(2)}`; //formatted tax value.
+  return formatValue;
+  // return `£${calculateSalesTax(numberToBeTaxed).toFixed(2)}`;
+
+  // // let formatNumber = numberToBeTaxed.toFixed(2);
+  // // let finalNumber = `£ ${formatNumber}`;
+  // // return finalNumber;
+  // return `£${numberToBeTaxed.toFixed(2)}`
+}
+
+// let price1 = calculateSalesTax(15);
+// let price2 = calculateSalesTax(17.5);
+// let price3 = calculateSalesTax(34);
+
+// let numberToBeTaxed = price1;
+
+// let case1 = numberToBeTaxed(price1);
+// let case2 = numberToBeTaxed(price1);
+// let case3 = numberToBeTaxed(price1);
+
+// console.log(case1);
+// console.log(case2);
+// console.log(case3);
+
+// The toFixed() method converts a number into a string, rounding to a specified number of decimals.
+// var num = 5.56789;
+//   var n = num.toFixed(2);
 
 /* 
 ===================================================
