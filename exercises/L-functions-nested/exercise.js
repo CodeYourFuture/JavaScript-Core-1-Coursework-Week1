@@ -15,14 +15,15 @@
 // console.log(totalPercentage);
 
 // Function for calculating percentages.
+
 function percentage(num, total) {
     return Math.round((num / total) * 100);
 }
 
 // Variables used for calculating the percentages.
-var numberOfStudents = 33;
-var numberOfMentors = 13;
-let total = numberOfStudents + numberOfMentors;
+const numberOfStudents = 33;
+const numberOfMentors = 13;
+const total = numberOfStudents + numberOfMentors;
 let percentageStudents = percentage(numberOfStudents, total);
 let percentageMentors = percentage(numberOfMentors, total);
 
@@ -40,7 +41,8 @@ console.log(students+"%");
 console.log(mentors+"%");
 // I need help with getting % added.
 
-// This one is interpolation to create the message.
+This one is interpolation to create the message.
+    
 console.log(`Percentage Students: ${percentageStudents}%`);
 console.log(`Pencentage Mentors: ${percentageMentors}%`);
 
