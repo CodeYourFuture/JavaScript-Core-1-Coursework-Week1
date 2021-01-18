@@ -47,6 +47,7 @@
 // and return the answer.
 function shakeBall() {
   console.log("The ball has shaken!");
+  var array = {};
   return "Dont't count on it";
   //Write your code in here
 }
