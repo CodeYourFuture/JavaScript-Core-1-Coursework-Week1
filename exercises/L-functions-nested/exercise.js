@@ -14,26 +14,36 @@
 
 // console.log(totalPercentage);
 
+// Function for calculating percentages.
 function percentage(num, total) {
     return Math.round((num / total) * 100);
 }
 
+// Variables used for calculating the percentages.
 var numberOfStudents = 33;
 var numberOfMentors = 13;
-
 let total = numberOfStudents + numberOfMentors;
-let totalPercentageStudents = percentage(numberOfStudents, total);
-let totalPercentageMentors = percentage(numberOfMentors, total);
+let percentageStudents = percentage(numberOfStudents, total);
+let percentageMentors = percentage(numberOfMentors, total);
 
-// function percentageType(catagory, percent) {
-//     // let message1 = `Percentage Students: ${totalPercentageStudents}`;
-//     // let message2 = `Percentage Mentors: ${totalPercentageMentors}`;
-//     return notemessage1, message2;
-// }
+// Function for creating the message.
+function percentageType(groupName, percentageOfGroupName) {
+    return groupName + percentageOfGroupName;
+}
 
-console.log(`Percentage Students: ${totalPercentageStudents}%`);
-console.log(`Pencentage Mentors: ${totalPercentageMentors}%`);
-    
+// Variables for creating the output message.
+let students = percentageType("Percentage Students: ", percentageStudents);
+let mentors = percentageType("Percentage Mentors: ", percentageMentors);
+
+// This one is using the variables above to output the message.
+console.log(students+"%");
+console.log(mentors+"%");
+// I need help with getting % added.
+
+// This one is interpolation to create the message.
+console.log(`Percentage Students: ${percentageStudents}%`);
+console.log(`Pencentage Mentors: ${percentageMentors}%`);
+
 
 
 
