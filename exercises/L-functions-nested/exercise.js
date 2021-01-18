@@ -71,6 +71,28 @@ console.log(`Pencentage Mentors: ${percentageMentors}%`);
 // var greeting4 = shoutyGreeting(mentor4);
 // var greeting5 = shoutyGreeting(mentor5);
 
+let mentorA = "daniel";
+let mentorB = "irina";
+let mentorC = "mimi";
+let mentorD = "rob";
+let mentorE = "yohannes";
+
+function shoutyGreeting(mentorName) {
+    return "Hello " + mentorName + ".";
+}
+
+let greet1 = shoutyGreeting(mentorA.toUpperCase())
+let greet2 = shoutyGreeting(mentorB.toUpperCase())
+let greet3 = shoutyGreeting(mentorC.toUpperCase())
+let greet4 = shoutyGreeting(mentorD.toUpperCase())
+let greet5 = shoutyGreeting(mentorE.toUpperCase())
+
+console.log(greet1);
+console.log(greet2);
+console.log(greet3);
+console.log(greet4);
+console.log(greet5);
+
 // console.log(greeting1);
 // console.log(greeting2);
 // console.log(greeting3);
