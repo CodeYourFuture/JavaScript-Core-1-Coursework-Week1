@@ -18,7 +18,7 @@ function convertToUSD(euro) {
 */
 
 function convertToBRL(euro) {
-  var fee = (5.7 / 100) * 99;
+  let fee = (5.7 / 100) * 99;
   return euro * fee;
 }
 
