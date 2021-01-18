@@ -43,10 +43,23 @@
     Very doubtful.
 */
 
+let answers = {
+  veryPositive: ['It is certain.', 'It is decidedly so.', 'Without a doubt.', 'Yes - definitely', 'You may rely on it.'],
+  positive: ['As I see it, yes.', 'Most likely.', 'Outlook good.', 'Yes.', 'Signs point to yes.'],
+  negative: ['Reply hazy, try again.', 'Ask again later.', 'Better not tell you now.', 'Cannot predict now.', 'Concentrate and ask again.'],
+  veryNegative: ['Don\'t count on it.', 'My reply is no.', 'My sources say no.', 'Outlook not so good.', 'Very doubtful.']
+}
+
+let arrayOfAnswers = ['It is certain.', 'It is decidedly so.', 'Without a doubt.', 'Yes - definitely', 'You may rely on it.', 'As I see it, yes.', 'Most likely.', 'Outlook good.', 'Yes.', 'Signs point to yes.', 'Reply hazy, try again.', 'Ask again later.', 'Better not tell you now.', 'Cannot predict now.', 'Concentrate and ask again.', 'Don\'t count on it.', 'My reply is no.', 'My sources say no.', 'Outlook not so good.', 'Very doubtful.']
+
 // This should log "The ball has shaken!"
 // and return the answer.
+
 function shakeBall() {
-  //Write your code in here
+//Write your code in here
+
+  console.log('The ball has shaken!');
+  return arrayOfAnswers[Math.floor(Math.random()*arrayOfAnswers.length)];
 }
 
 /* 
@@ -60,6 +73,10 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
+
+  return answers.veryPositive.find(x => x == answer) ? 'very positive' :
+    answers.veryNegative.find(x => x == answer) ? 'very negative' :
+    answers.positive.find(x => x == answer) ? 'positive' : 'negative';
 }
 
 /* 

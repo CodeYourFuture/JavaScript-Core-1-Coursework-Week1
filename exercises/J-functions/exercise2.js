@@ -1,6 +1,4 @@
-function triple(number) {
-  // complete function here
-}
+const triple = number => number*3;
 
 var result = triple(12);
 

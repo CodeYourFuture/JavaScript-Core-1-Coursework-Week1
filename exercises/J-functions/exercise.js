@@ -1,6 +1,5 @@
-function halve(number) {
-  // complete the function here
-}
+const halve = number => number/2;
+
 
 var result = halve(12);
 
