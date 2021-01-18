@@ -1,9 +1,13 @@
-// Add comments to explain what this function does. You're meant to use Google!
+// Add comments to explain what this function does. You're meant to use Google! 
+/* Math.random returns a pseudo-random number between 0 - less than 1 (by default) 
+   and then scale it between whichever numbers you desire */
+
 function getNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+// This function is going to concatenate the string arguments to the calling string and then returns the new string
 function s(w1, w2) {
   return w1.concat(w2);
 }
@@ -11,6 +15,7 @@ function s(w1, w2) {
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  return firstWord + ' ' + secondWord + ' ' + thirdWord
 }
 
 /* 
