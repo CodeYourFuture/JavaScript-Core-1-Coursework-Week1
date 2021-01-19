@@ -1,3 +1,4 @@
 // Start by creating a variable `message`
-
+var firstName = "Daniel";
+var message = "My name is " + firstName + " and my name is " + firstName.length + " characters long.";
 console.log(message);

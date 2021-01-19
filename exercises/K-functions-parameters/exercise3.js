@@ -1,4 +1,8 @@
-// Write your function here
+function createGreeting(firstName) {
+    var message = "Hello, my name is " + firstName;
+    return message;
+
+}
 
 var greeting = createGreeting("Daniel");
 
