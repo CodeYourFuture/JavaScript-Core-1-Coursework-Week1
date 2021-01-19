@@ -1,18 +1,25 @@
 // The syntax for this function is valid but it has an error, find it and fix it.
 
 function trimWord(word) {
-  return wordtrim();
+  var string = word;
+  return string.trim();
 }
+
+console.log(trimWord("Happy"));
 
 function getWordLength(word) {
-  return "word".length();
+  var findWordLength = trimWord(word);
+  return findWordLength.length;
 }
+
+console.log(getWordLength("Happy"));
 
 function multiply(a, b, c) {
-  a * b * c;
-  return;
+  var sum = a * b * c;
+  return sum;
 }
 
+console.log(multiply(2, 3, 4));
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====

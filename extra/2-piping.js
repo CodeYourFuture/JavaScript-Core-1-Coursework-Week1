@@ -30,12 +30,12 @@ function multiply(num1, num2) {
 
 console.log(multiply(5, 6));
 
-function format(num1, num2) {
-    var sum = num1 + num2;
+function format(num) {
+    var sum = num;
     return "£" + sum;
 }
 
-console.log(format(11, 5));
+console.log(format(16));
 
 const startingValue = 2 + 10;
 
