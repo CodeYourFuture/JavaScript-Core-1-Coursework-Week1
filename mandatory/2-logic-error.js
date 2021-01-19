@@ -3,9 +3,9 @@
 function trimWord(word) {
   return word.trim();
 }
-
+trimWord("  CodeYourFuture ");
 function getWordLength(word) {
-  return word.length();
+  return word.length;
 }
 
 

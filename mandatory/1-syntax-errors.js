@@ -1,27 +1,25 @@
 // There are syntax errors in this code - can you fix it to pass the tests?
 
 function addNumbers(a ,b, c) {
-    let d= a + b + c;
-    console.log(d)
+    return a + b + c;
 }
-
-function introduceMe(name, age)
-let txt="Hello, my name is " + name +"and I am "+ age + "years old";
-console.log(txt);
-
+addNumbers(3, 4 ,6)
+function introduceMe(name, age){
+return "Hello, my name is " + name +" and I am "+ age + " years old";
+}
+introduceMe("Sonjide ", 27)
 function getTotal(a, b) {
     total = a + b;
-    console.log(total)
+
+    return "The total is "+total;
 }
+getTotal(23,5)
 
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
-
 There are some Tests in this file that will help you work out if your code is working.
-
 To run these tests type `node 1-syntax-errors.js` into your terminal
-
 ===================================================
 */
 
