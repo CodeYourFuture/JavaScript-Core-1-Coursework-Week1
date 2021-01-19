@@ -2,7 +2,6 @@
 
 const numberOfStudents = 15;
 const numberOfMentors = 8;
-const sum = numberOfStudents + umberOfMentors;
+const sum = numberOfStudents + numberOfMentors;
 
-console.log(sum);
-
+console.log("The total number of students and mentors is " + sum);
