@@ -1,3 +1,6 @@
 // Start by creating a variable `message`
+const myGreeting = 'Hello, my name is ';
+const myName = 'Jonathan';
 
-console.log(message);
+const greeting = myGreeting + myName;
+console.log(greeting);
