@@ -50,16 +50,14 @@ let answers = {
   veryNegative: ['Don\'t count on it.', 'My reply is no.', 'My sources say no.', 'Outlook not so good.', 'Very doubtful.']
 }
 
-let arrayOfAnswers = ['It is certain.', 'It is decidedly so.', 'Without a doubt.', 'Yes - definitely', 'You may rely on it.', 'As I see it, yes.', 'Most likely.', 'Outlook good.', 'Yes.', 'Signs point to yes.', 'Reply hazy, try again.', 'Ask again later.', 'Better not tell you now.', 'Cannot predict now.', 'Concentrate and ask again.', 'Don\'t count on it.', 'My reply is no.', 'My sources say no.', 'Outlook not so good.', 'Very doubtful.']
+let allAnswers = answers.veryPositive.concat(answers.veryNegative, answers.negative, answers.positive);
 
 // This should log "The ball has shaken!"
 // and return the answer.
 
 function shakeBall() {
-//Write your code in here
-
   console.log('The ball has shaken!');
-  return arrayOfAnswers[Math.floor(Math.random()*arrayOfAnswers.length)];
+  return allAnswers[Math.floor(Math.random()*allAnswers.length)];
 }
 
 /* 
@@ -71,12 +69,11 @@ function shakeBall() {
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
-function checkAnswer(answer) {
-  //Write your code in here
 
-  return answers.veryPositive.find(x => x == answer) ? 'very positive' :
-    answers.veryNegative.find(x => x == answer) ? 'very negative' :
-    answers.positive.find(x => x == answer) ? 'positive' : 'negative';
+function checkAnswer(answer) {
+  return answers.veryPositive.find(x => x === answer) ? 'very positive' :
+    answers.veryNegative.find(x => x === answer) ? 'very negative' :
+    answers.positive.find(x => x === answer) ? 'positive' : 'negative';
 }
 
 /* 
