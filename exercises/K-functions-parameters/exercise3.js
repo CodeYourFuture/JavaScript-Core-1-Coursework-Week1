@@ -1,5 +1,5 @@
 // Write your function here
-
-var greeting = createGreeting("Daniel");
+const createGreeting = (name) => `Hello, my name is ${name}`;
+const greeting = createGreeting("Daniel");
 
 console.log(greeting);
