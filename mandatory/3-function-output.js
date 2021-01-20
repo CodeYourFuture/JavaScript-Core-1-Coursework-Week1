@@ -1,16 +1,24 @@
-// Add comments to explain what this function does. You're meant to use Google!
-function getNumber() {
-  return Math.random() * 10;
-}
+ // Add comments to explain what this function does. You're meant to use Google!
+ function getNumber() {
+   //It generate random number between  0 to 9 in decimal order. math.random generates number lower than 1 then it will multiply by 10
+   // example of out put will be something like this 5.172328389151401 or 6.876018727361755
+   return  Math.random() * 10; 
+ }
 
-// Add comments to explain what this function does. You're meant to use Google!
-function s(w1, w2) {
-  return w1.concat(w2);
-}
+ // Add comments to explain what this function does. You're meant to use Google!
+ function s(w1, w2) {
+   // The concat() method is used to join two or more arrays.
+   // in this case we have w2 as a parameter what ever w1 is contact will add w2 to w1. 
+   return w1.concat(w2);
+   
+ }
+
 
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+let body = firstWord + " " + secondWord  + " " + thirdWord;
+return body;
 }
 
 /* 
