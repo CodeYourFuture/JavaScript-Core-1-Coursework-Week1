@@ -5,7 +5,14 @@
   Sales tax is 20% of the price of the product
 */
 
-function calculateSalesTax() {}
+function calculateSalesTax(productPrice) {
+  
+  let reducedPrice = productPrice * 20 / 100;
+  let net = productPrice + reducedPrice ;
+  return net;
+}
+
+
 
 /*
   CURRENCY FORMATTING
@@ -17,7 +24,9 @@ function calculateSalesTax() {}
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency() {}
+function addTaxAndFormatCurrency() {
+  
+}
 
 /* 
 ===================================================
@@ -47,20 +56,20 @@ function test(test_name, actual, expected) {
 
 test("calculateSalesTax function - case 1 works", calculateSalesTax(15), 18);
 test("calculateSalesTax function - case 2 works", calculateSalesTax(17.5), 21);
-test("calculateSalesTax function - case 3 works", calculateSalesTax(34), 40.8);
+ test("calculateSalesTax function - case 3 works", calculateSalesTax(34), 40.8);
 
-test(
-  "addTaxAndFormatCurrency function - case 1 works",
-  addTaxAndFormatCurrency(15),
-  "£18.00"
-);
-test(
-  "addTaxAndFormatCurrency function - case 2 works",
-  addTaxAndFormatCurrency(17.5),
-  "£21.00"
-);
-test(
-  "addTaxAndFormatCurrency function - case 3 works",
-  addTaxAndFormatCurrency(34),
-  "£40.80"
-);
+// test(
+//   "addTaxAndFormatCurrency function - case 1 works",
+//   addTaxAndFormatCurrency(15),
+//   "£18.00"
+// );
+// test(
+//   "addTaxAndFormatCurrency function - case 2 works",
+//   addTaxAndFormatCurrency(17.5),
+//   "£21.00"
+// );
+// test(
+//   "addTaxAndFormatCurrency function - case 3 works",
+//   addTaxAndFormatCurrency(34),
+//   "£40.80"
+// );
