@@ -45,8 +45,43 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
+let answers = [
+  [
+    "It is certain.",
+    "It is decidedly so.",
+    "Without a doubt.",
+    "Yes - definitely",
+    "You may rely on it.",
+  ],
+  [
+    "As I see it, yes.",
+    "Most likely.",
+    "Outlook good.",
+    "Yes.",
+    "Signs point to yes.",
+  ],
+  [
+    "Reply hazy, try again.",
+    "Ask again later.",
+    "Better not tell you now.",
+    "Cannot predict now.",
+    "Concentrate and ask again.",
+  ],
+  [
+    "Don't count on it.",
+    "My reply is no.",
+    "My sources say no.",
+    "Outlook not so good.",
+    "Very doubtful",
+  ],
+];
 function shakeBall() {
-  //Write your code in here
+  console.log("The ball has shaken!");
+  let randomNumber1 = Math.floor(Math.random() * 4);
+  let randomNumber2 = Math.floor(Math.random() * 5);
+  let message = answers[randomNumber1][randomNumber2];
+  // console.log(message);
+  return message;
 }
 
 /* 
@@ -59,9 +94,18 @@ function shakeBall() {
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
-  //Write your code in here
+  if (answers[0].includes(answer)) {
+    return "very positive";
+  } else if (answers[1].includes(answer)) {
+    return "positive";
+  } else if (answers[2].includes(answer)) {
+    return "negative";
+  } else if (answers[3].includes(answer)) {
+    return "very negative";
+  }
 }
-
+// let message = checkAnswer(shakeBall());
+// console.log(message);
 /* 
 ==================================
 ======= TESTS - DO NOT MODIFY =====
