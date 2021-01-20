@@ -1,16 +1,18 @@
 // The syntax for this function is valid but it has an error, find it and fix it.
 
+// Missing . before the method to correctly use it
 function trimWord(word) {
-  return wordtrim();
+  return word.trim();
 }
 
+// Variable doesn't need quotation marks and the length method doesn't require empty parenthesis
 function getWordLength(word) {
-  return "word".length();
+  return word.length;
 }
 
+// Return element was separated in two different lines
 function multiply(a, b, c) {
-  a * b * c;
-  return;
+  return a * b * c;
 }
 
 /* 

@@ -1,9 +1,8 @@
 /**
-
   Let's peer into the future using a Magic 8 Ball!
   https://en.wikipedia.org/wiki/Magic_8-Ball 
 
-  There are a few steps to being able view the future though:
+  There are a few steps to being able to view the future though:
   * Ask a question
   * Shake the ball
   * Get an answer
@@ -43,10 +42,22 @@
     Very doubtful.
 */
 
-// This should log "The ball has shaken!"
-// and return the answer.
+// First I placed all possibilities within an array
+
+let possibleAnswers = ["It is certain.", "It is decidedly so.", "Without a doubt.", "Yes - definitey.", 
+"You may rely on it.", "As I see it, yes.", "Most likely.", "Outlook good.", "Yes.", "Signs point to yes.",
+"Reply hazy, try again.", "Ask again later.", "Better not tell you now.", "Cannot predict now.", "Concentrate and ask again.", 
+"Dont count on it.", "My reply is no.", "My sources say no.", "Outlook not so good.", "Very doubtful."];
+
+// This function logs "The ball has shaken!" and returns the answer.
+// I had guidance to make this function, as I was not able to make it by myself
+
 function shakeBall() {
-  //Write your code in here
+  console.log('The ball has shaken!')
+  let max = possibleAnswers.length - 1;
+  let min = 0;
+  let randomIndex = Math.floor(Math.random() * (max - min) + min);
+  return possibleAnswers[randomIndex];
 }
 
 /* 
@@ -58,9 +69,29 @@ function shakeBall() {
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
+
+// This function checks the index of the array and determines the type of response previously given
+// I had some guidance to make this function, as I was not able to make it by myself
+
 function checkAnswer(answer) {
-  //Write your code in here
+  let arrayIndex = possibleAnswers.indexOf(answer);
+  console.log(arrayIndex);
+  if (arrayIndex >= 0 && arrayIndex <= 4) {
+    return 'very positive';
+  } else if (arrayIndex >= 5 && arrayIndex <= 9) {
+    return 'positive';
+  } else if (arrayIndex >= 10 && arrayIndex <= 14) {
+    return 'negative';
+  } else {
+    return 'very negative';
+  }
 }
+
+let answerSelection = shakeBall();
+console.log(answerSelection);
+
+let answerType = checkAnswer(answerSelection);
+console.log(answerType);
 
 /* 
 ==================================

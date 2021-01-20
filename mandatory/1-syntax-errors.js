@@ -1,16 +1,20 @@
 // There are syntax errors in this code - can you fix it to pass the tests?
 
-function addNumbers(a b c) {
+// Parametres need to be separated by commas
+function addNumbers(a, b, c) {
     return a + b + c;
 }
 
-function introduceMe(name, age)
-return "Hello, my name is " + name "and I am " age + "years old";
+// Block of code needs to be displayed between curly braces
+// Missing spaces next to variables within the return element
+function introduceMe(name, age){
+  return "Hello, my name is " + name + " and I am " + age + " years old";
+}
 
+// Incorrect use of operators (+) both in the variable and the return element
 function getTotal(a, b) {
-    total = a ++ b;
-
-    return "The total is total"
+    total = a + b;
+    return "The total is " + total;
 }
 
 /* 

@@ -5,7 +5,15 @@
   Write a function that converts a price to USD (exchange rate is 1.4 $ to £)
 */
 
-function convertToUSD() {}
+// This function multiplies the value of a GBP to convert it into USD. You could also put it all in one line but I see it clearer this way
+function convertToUSD(priceGBP) {
+  let priceUSD = priceGBP * 1.4;
+  return priceUSD;
+  // return "$" + priceUSD.toFixed(2); 
+  // This could be added if you wanted to put the currency symbol and some decimals
+}
+
+console.log(convertToUSD(32));
 
 /*
   CURRENCY FORMATTING
@@ -15,7 +23,14 @@ function convertToUSD() {}
   They have also decided that they should add a 1% fee to all foreign transactions, which means you only convert 99% of the £ to BRL.
 */
 
-function convertToBRL() {}
+// Following the same principle as for the previous function, but taking into consideration the transaction fee, which needs to be worked out too
+function convertToBRL(priceGBP) {
+  let foreignFee = priceGBP * 1 / 100;
+  let priceBRL = (priceGBP - foreignFee) * 5.7;
+  return priceBRL;
+}
+
+console.log(convertToBRL(30));
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
