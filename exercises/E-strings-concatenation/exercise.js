@@ -1,5 +1,5 @@
-var greeting = "Hello, my name is ";
-var firstName = "Yasemin";
-var message = greeting + firstName;
+let greeting = "Hello, my name is ";
+let firstName = "Yasemin";
+let message = greeting + firstName;
 
 console.log(message);

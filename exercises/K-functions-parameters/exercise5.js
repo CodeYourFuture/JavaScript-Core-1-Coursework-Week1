@@ -1,5 +1,5 @@
 function createLongGreeting (firstName, age) {
-    var message = "Hello, my name is " + firstName + " and I'm " + age + " years old";
+    let message = "Hello, my name is " + firstName + " and I'm " + age + " years old";
     return message;
 }
 

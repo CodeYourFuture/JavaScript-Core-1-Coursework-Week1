@@ -1,12 +1,12 @@
 function calculatePercentage(numberOfFirstGroup, numberOfSecondGroup){
-    var total = numberOfFirstGroup + numberOfSecondGroup;
-    var percentageOfGroup = Math.round((numberOfFirstGroup / total) * 100);
+    let total = numberOfFirstGroup + numberOfSecondGroup;
+    let percentageOfGroup = Math.round((numberOfFirstGroup / total) * 100);
     return percentageOfGroup;
     
 }
 
 function createMessage(firstGroupName, numberOfFirstGroup, numberOfSecondGroup){
-    var message = "Percentage of " + firstGroupName + ": " + calculatePercentage(numberOfFirstGroup, numberOfSecondGroup) + "%";
+    let message = "Percentage of " + firstGroupName + ": " + calculatePercentage(numberOfFirstGroup, numberOfSecondGroup) + "%";
     return message;
 }
 

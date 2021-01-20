@@ -9,7 +9,7 @@ function introduceMe(name, age) {
 }
 
 function getTotal(a, b) {
-    var total = a + b;
+    let total = a + b;
     return "The total is " + total;
 }
 

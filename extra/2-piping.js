@@ -42,9 +42,9 @@ let badCode = format(multiply(add(startingValue, 10), 2));
 /* BETTER PRACTICE */
 
 function betterPractice(num1, num2, num3){
-    var add = num1 + num2;
-    var multiply = add * num3;
-    var message = "£" + multiply;
+    let add = num1 + num2;
+    let multiply = add * num3;
+    let message = "£" + multiply;
     return message;
 }
 

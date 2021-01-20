@@ -9,7 +9,7 @@ function spellNameUpperCase(firstName) {
 }
 
 function createShoutyGreeting(firstName) {
-    var message = "HELLO " + spellNameUpperCase(firstName);
+    let message = "HELLO " + spellNameUpperCase(firstName);
     return message;
 }
 

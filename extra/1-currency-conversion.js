@@ -6,7 +6,7 @@
 */
 
 function convertToUSD(price) {
-    var convertedValue = price * 1.4;
+    let convertedValue = price * 1.4;
     return convertedValue;
 }
 
@@ -19,7 +19,7 @@ function convertToUSD(price) {
 */
 
 function convertToBRL(price) {
-  var convertedValue = price * 5.7 * 0.99;
+  let convertedValue = price * 5.7 * 0.99;
   return convertedValue;
 }
 
