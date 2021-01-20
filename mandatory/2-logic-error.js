@@ -1,17 +1,20 @@
 // The syntax for this function is valid but it has an error, find it and fix it.
 
+// wordtrim had no meaning correct way was to write word.trim()
 function trimWord(word) {
-  return wordtrim();
+  return word.trim();
 }
 
-function getWordLength(word) {
-  return "word".length();
-}
+//at end of the length we do not need ();
+ function getWordLength(word) {
+   return word.length;
+ }
 
+ //here we were not returning any result
 function multiply(a, b, c) {
-  a * b * c;
-  return;
-}
+   let result = a * b * c;
+   return result;
+ }
 
 /* 
 ===================================================
@@ -43,9 +46,9 @@ test(
   trimWord("  CodeYourFuture "),
   "CodeYourFuture"
 );
-test(
-  "fixed wordLength function",
-  getWordLength("A wild sentence appeared!"),
-  25
+ test(
+   "fixed wordLength function",
+   getWordLength("A wild sentence appeared!"),
+   25
 );
-test("fixed multiply function", multiply(2, 3, 6), 36);
+ test("fixed multiply function", multiply(2, 3, 6), 36);
