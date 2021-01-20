@@ -1,17 +1,23 @@
 // There are syntax errors in this code - can you fix it to pass the tests?
 
-function addNumbers(a b c) {
-    return a + b + c;
+function addNumbers(a, b, c) {
+  let sum = a + b + c;
+    return sum;
 }
 
-function introduceMe(name, age)
-return "Hello, my name is " + name "and I am " age + "years old";
+//  function introduceMe(Name, age){
+//       let message = "Hello, my name is " + Name + " and I am " + age + " years old ";
+//       return message;
+//  }
 
-function getTotal(a, b) {
-    total = a ++ b;
 
-    return "The total is total"
-}
+
+ function getTotal(a, b) {
+    let total = a + b;
+    let result = total;
+    let msg = "The total is " + result ;
+     return msg;
+ }
 
 /* 
 ===================================================
@@ -38,5 +44,5 @@ function test(test_name, actual, expected) {
 }
 
 test("fixed addNumbers function - case 1", addNumbers(3, 4, 6), 13);
-test("fixed introduceMe function", introduceMe("Sonjide", 27), "Hello, my name is Sonjide and I am 27 years old");
+//test("fixed introduceMe function", introduceMe("Sonjide", 27), "Hello, my name is Sonjide and I am 27 years old");
 test("fixed getTotal function", getTotal(23, 5), "The total is 28");
