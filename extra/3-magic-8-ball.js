@@ -92,17 +92,16 @@ function shakeBall() {
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
-  let positivity;
+  let positivity = ["very positive", "positive", "negative", "very negative"];
   if (answer === "It is decidedly so.") {
-    positivity = "very positive";
+    return positivity[0];
   } else if (answer === "My reply is no.") {
-    positivity = "very negative";
+    return positivity[3];
+  } else if (answer === "It is decidedly so.") {
+    return positivity[0];
   } else if (answer === "My reply is no.") {
-    positivity = "positive";
-  } else if (answer === "My reply is no.") {
-    positivity = "negative";
   }
-  return positivity;
+  return positivity[Math.floor(Math.random() * 3)];
 }
 
 /* 
