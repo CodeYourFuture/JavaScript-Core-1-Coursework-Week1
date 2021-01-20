@@ -1,16 +1,28 @@
 // Add comments to explain what this function does. You're meant to use Google!
-function getNumber() {
-  return Math.random() * 10;
+
+// This function return a number which is the return a natural number of the given number multiplied by 10;
+function getNumber(num) {
+  return Math.random(num) * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+
+// This function return a string which it is a concatenation of two given strings.
 function s(w1, w2) {
+
+  // The concat() method is used to join two or more strings. It does not change the existing strings, but returns a new string containing the text of the joined strings.
+
   return w1.concat(w2);
 }
 
+
+// This function return a string which it is a concatenation of three given strings.
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  //return firstWord + " " + secondWord + " " + thirdWord;
+
+  return s(s(s(firstWord," "), s(secondWord, " ")), thirdWord);
 }
 
 /* 
