@@ -6,8 +6,13 @@
 // var myGreeting = 'My name is ' + myName + ' and my name is ' + myName.length + ' characters long';
 
 function getGreeting(name) {
-    var myGreeting = 'My name is ' + name + ' and my name is ' + name.length + ' characters long';
-    return myGreeting;
+  var myGreeting =
+    "My name is " +
+    name +
+    " and my name is " +
+    name.length +
+    " characters long";
+  return myGreeting;
 }
-var name = 'Laurita'
+var name = "Laurita";
 console.log(getGreeting(name));

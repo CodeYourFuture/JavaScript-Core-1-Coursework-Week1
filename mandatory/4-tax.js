@@ -8,10 +8,10 @@
 // This function aims to calculate the tax amount to charge on any given product depending on its price and the 20% given sales tax
 function calculateSalesTax(priceOfProduct) {
   let salesTax = 20;
-  let taxAmount = priceOfProduct * salesTax / 100;
+  let taxAmount = (priceOfProduct * salesTax) / 100;
   return taxAmount;
 }
- 
+
 console.log(calculateSalesTax(80));
 
 /*
@@ -24,7 +24,7 @@ console.log(calculateSalesTax(80));
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-// This nested function follows up from the previous one; using the taxAmount already worked out to return 
+// This nested function follows up from the previous one; using the taxAmount already worked out to return
 function getFormattedTotalPrice(productPrice) {
   let totalPrice = productPrice + calculateSalesTax(productPrice);
   return "£" + totalPrice.toFixed(2);

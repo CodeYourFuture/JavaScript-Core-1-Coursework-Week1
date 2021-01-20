@@ -2,19 +2,19 @@
 
 // Parametres need to be separated by commas
 function addNumbers(a, b, c) {
-    return a + b + c;
+  return a + b + c;
 }
 
 // Block of code needs to be displayed between curly braces
 // Missing spaces next to variables within the return element
-function introduceMe(name, age){
+function introduceMe(name, age) {
   return "Hello, my name is " + name + " and I am " + age + " years old";
 }
 
 // Incorrect use of operators (+) both in the variable and the return element
 function getTotal(a, b) {
-    total = a + b;
-    return "The total is " + total;
+  total = a + b;
+  return "The total is " + total;
 }
 
 /* 
@@ -28,19 +28,25 @@ To run these tests type `node 1-syntax-errors.js` into your terminal
 ===================================================
 */
 
-const util = require('util');
+const util = require("util");
 
 function test(test_name, actual, expected) {
-    let status;
-    if (actual === expected) {
-        status = "PASSED";
-    } else {
-        status = `FAILED: expected: ${util.inspect(expected)} but your function returned: ${util.inspect(actual)}`;
-    }
+  let status;
+  if (actual === expected) {
+    status = "PASSED";
+  } else {
+    status = `FAILED: expected: ${util.inspect(
+      expected
+    )} but your function returned: ${util.inspect(actual)}`;
+  }
 
-    console.log(`${test_name}: ${status}`);
+  console.log(`${test_name}: ${status}`);
 }
 
 test("fixed addNumbers function - case 1", addNumbers(3, 4, 6), 13);
-test("fixed introduceMe function", introduceMe("Sonjide", 27), "Hello, my name is Sonjide and I am 27 years old");
+test(
+  "fixed introduceMe function",
+  introduceMe("Sonjide", 27),
+  "Hello, my name is Sonjide and I am 27 years old"
+);
 test("fixed getTotal function", getTotal(23, 5), "The total is 28");

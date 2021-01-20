@@ -9,7 +9,7 @@
 function convertToUSD(priceGBP) {
   let priceUSD = priceGBP * 1.4;
   return priceUSD;
-  // return "$" + priceUSD.toFixed(2); 
+  // return "$" + priceUSD.toFixed(2);
   // This could be added if you wanted to put the currency symbol and some decimals
 }
 
@@ -25,7 +25,7 @@ console.log(convertToUSD(32));
 
 // Following the same principle as for the previous function, but taking into consideration the transaction fee, which needs to be worked out too
 function convertToBRL(priceGBP) {
-  let foreignFee = priceGBP * 1 / 100;
+  let foreignFee = (priceGBP * 1) / 100;
   let priceBRL = (priceGBP - foreignFee) * 5.7;
   return priceBRL;
 }

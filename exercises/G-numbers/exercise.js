@@ -5,6 +5,7 @@
 let numberOfStudents = 30;
 let numberOfMentors = 10;
 
-let numberOfAdults = 'The total amount of adults is ' + (numberOfStudents + numberOfMentors);
+let numberOfAdults =
+  "The total amount of adults is " + (numberOfStudents + numberOfMentors);
 
 console.log(numberOfAdults);

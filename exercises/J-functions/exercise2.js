@@ -1,4 +1,3 @@
-
 function triple(number) {
   // Completed function here to trebble a number and called it several times
   let trebbledNum = number * 3;

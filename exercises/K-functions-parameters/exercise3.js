@@ -1,8 +1,7 @@
-
 // Write your function here with the block of code inside the curly braces
 function createGreeting(name) {
-    let myGreeting = 'Hello, my name is ' + name;
-    return myGreeting;
+  let myGreeting = "Hello, my name is " + name;
+  return myGreeting;
 }
 
 // Store the value in a variable

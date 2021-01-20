@@ -1,4 +1,3 @@
-
 function halve(number) {
   // Complete the function here
   let half = number / 2;

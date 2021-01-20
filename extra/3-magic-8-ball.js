@@ -44,16 +44,34 @@
 
 // First I placed all possibilities within an array
 
-let possibleAnswers = ["It is certain.", "It is decidedly so.", "Without a doubt.", "Yes - definitey.", 
-"You may rely on it.", "As I see it, yes.", "Most likely.", "Outlook good.", "Yes.", "Signs point to yes.",
-"Reply hazy, try again.", "Ask again later.", "Better not tell you now.", "Cannot predict now.", "Concentrate and ask again.", 
-"Dont count on it.", "My reply is no.", "My sources say no.", "Outlook not so good.", "Very doubtful."];
+let possibleAnswers = [
+  "It is certain.",
+  "It is decidedly so.",
+  "Without a doubt.",
+  "Yes - definitey.",
+  "You may rely on it.",
+  "As I see it, yes.",
+  "Most likely.",
+  "Outlook good.",
+  "Yes.",
+  "Signs point to yes.",
+  "Reply hazy, try again.",
+  "Ask again later.",
+  "Better not tell you now.",
+  "Cannot predict now.",
+  "Concentrate and ask again.",
+  "Dont count on it.",
+  "My reply is no.",
+  "My sources say no.",
+  "Outlook not so good.",
+  "Very doubtful.",
+];
 
 // This function logs "The ball has shaken!" and returns the answer.
 // I had guidance to make this function, as I was not able to make it by myself
 
 function shakeBall() {
-  console.log('The ball has shaken!')
+  console.log("The ball has shaken!");
   let max = possibleAnswers.length - 1;
   let min = 0;
   let randomIndex = Math.floor(Math.random() * (max - min) + min);
@@ -77,13 +95,13 @@ function checkAnswer(answer) {
   let arrayIndex = possibleAnswers.indexOf(answer);
   console.log(arrayIndex);
   if (arrayIndex >= 0 && arrayIndex <= 4) {
-    return 'very positive';
+    return "very positive";
   } else if (arrayIndex >= 5 && arrayIndex <= 9) {
-    return 'positive';
+    return "positive";
   } else if (arrayIndex >= 10 && arrayIndex <= 14) {
-    return 'negative';
+    return "negative";
   } else {
-    return 'very negative';
+    return "very negative";
   }
 }
 
