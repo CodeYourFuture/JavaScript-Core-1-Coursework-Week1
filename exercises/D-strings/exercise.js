@@ -1,3 +1,6 @@
 // Start by creating a variable `message`
 
-console.log(message);
+var location = "Uganda";
+var typeOfLocation = typeof location;
+console.log(location);
+console.log(typeOfLocation);
