@@ -4,9 +4,9 @@ function getNumber() {
 }
 getNumber();
 
-// concatenates 2 arrays and returns a new array
+// joins two strings together and returns new string with the text of the joined strings.
 function s(w1, w2) {
-  console.log(w1.concat(w2));
+  return w1.concat(w2);
 }
 
 s(["hello", "world"], ["this", "is", "me"]);
