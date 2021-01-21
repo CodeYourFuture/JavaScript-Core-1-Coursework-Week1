@@ -1,14 +1,20 @@
-// Add comments to explain what this function does. You're meant to use Google!
+// returns random number from 0 to 1 and multiplies it by 10;
 function getNumber() {
   return Math.random() * 10;
 }
+getNumber();
 
-// Add comments to explain what this function does. You're meant to use Google!
+// concatenates 2 arrays and returns a new array
 function s(w1, w2) {
-  return w1.concat(w2);
+  console.log(w1.concat(w2));
 }
 
+s(["hello", "world"], ["this", "is", "me"]);
+
 function concatenate(firstWord, secondWord, thirdWord) {
+  const myArr = [firstWord, secondWord, thirdWord].join(" ");
+  console.log(myArr);
+  return myArr;
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
 }
