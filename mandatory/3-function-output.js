@@ -1,9 +1,12 @@
 // Add comments to explain what this function does. You're meant to use Google!
+//The Math.random function floating-point, pseudo-random number in the range 0 to less than 1 with approximately uniform distribution.
 function getNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+// Take the value store or passing to w1, join it with the value store to w2 and return a new string.
+//So concat() is a method uses in javaScript that join two or more strings and return a new string
 function s(w1, w2) {
   return w1.concat(w2);
 }
@@ -11,7 +14,9 @@ function s(w1, w2) {
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  return firstWord+ " "+ secondWord + " "+thirdWord;
 }
+
 
 /* 
 ===================================================
