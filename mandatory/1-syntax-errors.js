@@ -2,7 +2,7 @@
 
 // you can not return param on its own if you expecting some results.
 function addNumbers(a, b, c) {
-  let sum = a + b + c;
+    let sum = a + b + c;
     return sum;
 }
 
