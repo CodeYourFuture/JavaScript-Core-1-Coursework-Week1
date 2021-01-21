@@ -9,6 +9,8 @@ function s(w1, w2) {
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
+  let firstConcatenation = firstWord.concat(secondWord);
+  return firstConcatenation.concat(thirdWord);
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
 }
@@ -40,16 +42,16 @@ function test(test_name, actual, expected) {
 
 test(
   "concatenate function - case 1 works",
-  concatenate("code", "your", "future"),
+  concatenate("code ", "your ", "future"),
   "code your future"
 );
 test(
   "concatenate function - case 2 works",
-  concatenate("I", "like", "pizza"),
+  concatenate("I ", "like ", "pizza"),
   "I like pizza"
 );
 test(
   "concatenate function - case 3 works",
-  concatenate("I", "am", 13),
+  concatenate("I ", "am ", 13),
   "I am 13"
 );

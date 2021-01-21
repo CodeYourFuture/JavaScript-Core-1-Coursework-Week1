@@ -5,7 +5,10 @@
   Sales tax is 20% of the price of the product
 */
 
-function calculateSalesTax() {}
+function calculateSalesTax(productPrice) {
+  let salesTax = productPrice + (productPrice * 0.2);
+  return salesTax
+}
 
 /*
   CURRENCY FORMATTING
@@ -17,8 +20,12 @@ function calculateSalesTax() {}
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency() {}
-
+function addTaxAndFormatCurrency(productPrice) {
+  let productPriceWithTax = calculateSalesTax(productPrice);
+  let formatCurrency = (new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP' }).format(productPriceWithTax))
+  return formatCurrency;
+  /*For the above formatting, I have used the following website: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat */
+}
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====

@@ -5,7 +5,12 @@
   Write a function that converts a price to USD (exchange rate is 1.4 $ to £)
 */
 
-function convertToUSD() {}
+function convertToUSD(poundValue) {
+  let convertedPrice = poundValue * 1.4; 
+  return convertedPrice;
+}
+let convertedUSDValue = convertToUSD()
+console.log(convertedUSDValue);
 
 /*
   CURRENCY FORMATTING
@@ -15,9 +20,15 @@ function convertToUSD() {}
   They have also decided that they should add a 1% fee to all foreign transactions, which means you only convert 99% of the £ to BRL.
 */
 
-function convertToBRL() {}
+function convertToBRL(poundValue) {
+  let convertedPrice = (5.7*0.99) * poundValue; 
+  return convertedPrice;
+}
+let convertedBRLValue = convertToBRL();
+console.log(convertedBRLValue);
 
-/* ======= TESTS - DO NOT MODIFY ===== 
+
+/* ======= TESTS - DO NOT MODIFY ===== `2
 There are some Tests in this file that will help you work out if your code is working.
 
 To run these tests type `node 1-currency-conversion` into your terminal
