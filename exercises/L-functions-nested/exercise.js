@@ -13,3 +13,4 @@ function students (s) {
 
  console.log(`Percentage of students: ${studentPercent}`);
  console.log(`Percentage of mentors: ${mentorPercent}`);
+ 
