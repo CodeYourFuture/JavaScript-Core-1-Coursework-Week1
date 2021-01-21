@@ -3,4 +3,4 @@ var students = 15;
 var mentors = 8;
 var message = "Total number of students and mentors: " + (students+mentors);
 
-console.log(message)
+console.log(message);
