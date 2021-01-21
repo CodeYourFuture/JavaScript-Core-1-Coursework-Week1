@@ -1,3 +1,3 @@
 // Start by creating a variable `message`
-
-console.log(message);
+let message="My name is Kudakwashe."
+console.log(message+" "+typeof(message));
