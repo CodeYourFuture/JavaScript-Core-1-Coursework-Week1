@@ -24,3 +24,17 @@ var mentor2 = "Irina";
 var mentor3 = "Mimi";
 var mentor4 = "Rob";
 var mentor5 = "Yohannes";
+
+function upperCase(name){
+    return name.toUpperCase();
+}
+
+function greeting(name){
+    return "HELLO " + name + "!";
+}
+
+console.log(greeting(upperCase(mentor1)));
+console.log(greeting(upperCase(mentor2)));
+console.log(greeting(upperCase(mentor3)));
+console.log(greeting(upperCase(mentor4)));
+console.log(greeting(upperCase(mentor5)));
