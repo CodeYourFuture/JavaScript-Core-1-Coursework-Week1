@@ -87,20 +87,16 @@ function checkAnswer(answer) {
   //Write your code in here
   let rating = "";
   if (answer == `It is decidedly so.`) {
-    console.log(rating = "very positive");
-    return rating;
+    return rating = "very positive";
   }
   else if (answer == `As I see it, yes.`) {
-    console.log(rating = "positive");
-    return rating;
+    return rating = "positive";
   }
   else if (answer == `Reply hazy, try again.`) {
-    console.log(rating = "negative");
-    return rating;
+    return rating = "negative";
   }
   else if (answer == `My reply is no.`) {
-    console.log(rating = "very negative");
-    return rating;
+    return rating = "very negative";
   }
 }
 
