@@ -1,14 +1,17 @@
 // Add comments to explain what this function does. You're meant to use Google!
 function getNumber() {
+  // generates random floating numbers between zero and 10 but never 10
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
 function s(w1, w2) {
+  // stringing together two strings-no spaces- and returns a string
   return w1.concat(w2);
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
+  return firstWord + " ".concat(secondWord) + " ".concat(thirdWord);
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
 }
