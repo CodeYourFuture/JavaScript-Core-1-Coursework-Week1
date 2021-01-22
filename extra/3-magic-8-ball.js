@@ -21,7 +21,7 @@
     Yes - definitely.
     You may rely on it.
 
-  ## Positive
+  ## positive
     As I see it, yes.
     Most likely.
     Outlook good.
@@ -43,10 +43,44 @@
     Very doubtful.
 */
 
+const answersAndCategories = {
+  "It is certain.": "very positive",
+  "It is decidedly so.": "very positive",
+  "Without a doubt.": "very positive",
+  "Yes - definitely.": "very positive",
+  "You may rely on it.": "very positive",
+  "As I see it, yes.": "positive",
+  "Most likely.": "positive",
+  "Outlook good.": "positive",
+  "Yes.": "positive",
+  "You may rely on it.": "positive",
+  "Reply hazy, try again.": "negative",
+  "Ask again later.": "negative",
+  "Better not tell you now.": "negative",
+  "Cannot predict now.": "negative",
+  "Concentrate and ask again.": "negative",
+  "Don't count on it.": "very negative",
+  "My reply is no.": "very negative",
+  "My sources say no.": "very negative",
+  "Outlook not so good.": "very negative",
+  "Very doubtful.": "very negative",
+};
+
 // This should log "The ball has shaken!"
 // and return the answer.
+
 function shakeBall() {
-  //Write your code in here
+  // gets an array of answers (keys from "answersAndCategories" object)
+  const answersArray = Object.keys(answersAndCategories);
+
+  //gets random number
+  const randomIndex = Math.floor(Math.random() * answersArray.length);
+
+  //gets random answer (string) from "messages" array
+  const randomAnswer = answersArray[randomIndex];
+
+  console.log("The ball has shaken!");
+  return randomAnswer;
 }
 
 /* 
@@ -59,7 +93,8 @@ function shakeBall() {
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
-  //Write your code in here
+  let category = answersAndCategories[answer];
+  return category;
 }
 
 /* 
