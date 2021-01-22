@@ -21,6 +21,7 @@ console.log(messageType); // logs 'string'
 
 * Write a program that logs a message and its type
 
+
 ## Expected result
 
 ```
