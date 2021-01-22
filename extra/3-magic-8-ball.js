@@ -76,7 +76,7 @@ function shakeBall() {
   //gets random number
   const randomIndex = Math.floor(Math.random() * answersArray.length);
 
-  //gets random answer (string) from "messages" array
+  //gets random answer (string(key from answersAndCategories)) from "answersArray"
   const randomAnswer = answersArray[randomIndex];
 
   console.log("The ball has shaken!");
