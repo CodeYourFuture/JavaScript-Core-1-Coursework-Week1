@@ -7,7 +7,7 @@
 
 function calculateSalesTax(price) {
 
-return (price + price*0.2);
+return price + price*0.2;
 
 }
 
@@ -21,9 +21,10 @@ return (price + price*0.2);
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency(result) {
-  result = calculateSalesTax();
-  return "£" + result;
+function addTaxAndFormatCurrency(price) {
+
+  return "£" + (calculateSalesTax(price)).toFixed(2);
+
 }
 
 /* 
