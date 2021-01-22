@@ -5,7 +5,10 @@
   Sales tax is 20% of the price of the product
 */
 
-function calculateSalesTax() {}
+function calculateSalesTax(price) {
+  return parseFloat((price * 0.20) + price);
+
+}
 
 /*
   CURRENCY FORMATTING
@@ -17,8 +20,13 @@ function calculateSalesTax() {}
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency() {}
+function addTaxAndFormatCurrency(price) {
+  const newPrice = calculateSalesTax(price);
+  return "£" + newPrice.toFixed(2);
 
+}
+
+const { PassThrough } = require("stream");
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====

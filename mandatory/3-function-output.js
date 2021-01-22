@@ -1,16 +1,18 @@
 // Add comments to explain what this function does. You're meant to use Google!
 function getNumber() {
-  return Math.random() * 10;
-}
+  return Math.random() * 10; 
+} //getNumber will have Math.random() return a random number between 0 (incl.) and 1(excl) and then  is multiplied by 10
+
 
 // Add comments to explain what this function does. You're meant to use Google!
 function s(w1, w2) {
   return w1.concat(w2);
-}
+} //this function takes the first parameter and concatenates(joins) it with the second parameter(w2)
 
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  return firstWord + ' ' + secondWord + ' ' + thirdWord;
 }
 
 /* 
