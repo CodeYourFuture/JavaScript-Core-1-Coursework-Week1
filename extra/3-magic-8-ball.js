@@ -57,9 +57,9 @@ let allAnswers = answers.veryPositive.concat(answers.veryNegative, answers.negat
 
 function shakeBall() {
   console.log('The ball has shaken!');
-  return allAnswers[Math.floor(Math.random()*allAnswers.length)];
+  let answer = allAnswers[Math.floor(Math.random()*allAnswers.length)];
+  return answer;
 }
-
 /* 
   This function should say whether the answer it is given is
     - very positive
@@ -69,7 +69,6 @@ function shakeBall() {
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
-
 function checkAnswer(answer) {
   return answers.veryPositive.find(x => x === answer) ? 'very positive' :
     answers.veryNegative.find(x => x === answer) ? 'very negative' :

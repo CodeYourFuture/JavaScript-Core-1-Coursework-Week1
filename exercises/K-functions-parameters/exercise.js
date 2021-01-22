@@ -2,6 +2,6 @@
 const multiply = (a, b) => a * b;
 
 // Assign the result of calling the function the variable `result`
-var result = multiply(3, 4);
+let result = multiply(3, 4);
 
 console.log(result);

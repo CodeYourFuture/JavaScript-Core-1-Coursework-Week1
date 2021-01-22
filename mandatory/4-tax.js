@@ -21,7 +21,7 @@ function calculateSalesTax(price) {
 
 function addTaxAndFormatCurrency(price) {
   let currency = calculateSalesTax(price).toFixed(2);
-  return `£${currency}`
+  return `£${currency}`;
 }
 
 /* 
