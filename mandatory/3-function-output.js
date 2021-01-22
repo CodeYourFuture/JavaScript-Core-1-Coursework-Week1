@@ -1,9 +1,11 @@
 // Add comments to explain what this function does. You're meant to use Google!
+// This function outputs a random number and multiply it by 10,
 function getNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+// This function is joining the word w1 with the word w2, example w1 = hand and w2 = ball, and then the output would be handball
 function s(w1, w2) {
   return w1.concat(w2);
 }
@@ -11,6 +13,7 @@ function s(w1, w2) {
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  return firstWord + " " + secondWord + " " + thirdWord;
 }
 
 /* 
