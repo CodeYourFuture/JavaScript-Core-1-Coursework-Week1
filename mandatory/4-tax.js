@@ -6,9 +6,7 @@
 */
 
 function calculateSalesTax(price) {
-    const taxChargeAmount = price + (20 / 100) * price
-
-    return taxChargeAmount;
+    return price + (20 / 100) * price;
 }
 
 /*

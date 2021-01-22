@@ -1,10 +1,12 @@
 var numberOfStudents = 15;
 var numberOfMentors = 8;
+var totalStudentsMentors = numberOfStudents + numberOfMentors
 
-var quotientStudents = 15/23 * 100
-var quotientMentors = 8/23 *100
+var quotientStudents = (numberOfStudents/totalStudentsMentors) * 100
+var quotientMentors = (numberOfMentors/totalStudentsMentors) *100
 
-var roundUpStudents = Math.round(quotientStudents);
+//rounding the values up to it's nearest integer
+var roundUpStudents = Math.round(quotientStudents); 
 var roundUpMentors = Math.round(quotientMentors);
 
 var percentageStudents = "Percentage students: " + roundUpStudents + "%";

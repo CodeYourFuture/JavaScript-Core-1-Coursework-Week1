@@ -1,8 +1,11 @@
 // Start by creating a variables `numberOfStudents` and `numberOfMentors`
-var numberOfStudents = "Number of students: 15"
-var numberOfMentors = "Number of mentors: 8"
- 
-var sum = 15 + 8;
+var amountOfStudents = 15;
+var amountOfMentors = 8;
+
+numberOfStudents = "Number of Students: " + amountOfStudents;
+numberOfMentors = "Number of Students: " + amountOfMentors;
+
+var sum = amountOfStudents + amountOfMentors;
 var numberTotal = "Total number of students and mentors: " + sum
 
 console.log(numberOfStudents)

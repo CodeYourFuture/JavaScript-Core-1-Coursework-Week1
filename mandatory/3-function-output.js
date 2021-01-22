@@ -1,13 +1,22 @@
 // Add comments to explain what this function does. You're meant to use Google! 
-/* Math.random returns a pseudo-random number between 0 - less than 1 (by default) 
-   and then scale it between whichever numbers you desire */
+
+/* 
+   Math.random returns a pseudo-random double type number greater than or equal to 0.0 and less than 1.0(by default).
+   When called the first time it creates a single new pseudo-random number generator.
+   In this case the function will return a float value between 0 and 10
+*/
 
 function getNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
-// This function is going to concatenate the string arguments to the calling string and then returns the new string
+
+/* 
+   This function is going to concatenate the string arguments to the calling string and then returns the new string
+   without affecting the 1st string(calling string).
+   In this case it will concatenate w2 at the end of w1.
+*/
 function s(w1, w2) {
   return w1.concat(w2);
 }
