@@ -21,9 +21,9 @@ return (price + price*0.2);
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency(calc) {
-  calc = calculateSalesTax();
-  return "£" + calc;
+function addTaxAndFormatCurrency(result) {
+  result = calculateSalesTax();
+  return "£" + result;
 }
 
 /* 
