@@ -1,4 +1,4 @@
-You can find out how many characters there are in a string by using the `length` property of a string:
+ You can find out how many characters there are in a string by using the `length` property of a string:
 
 ```js
 var name = "Daniel";
@@ -26,7 +26,7 @@ You can find out more about string properties and methods by searching for "Java
 
 ```
 My name is Daniel and my name is 6 characters long
-```
+``` 
 
 ## Exercise 2
 
