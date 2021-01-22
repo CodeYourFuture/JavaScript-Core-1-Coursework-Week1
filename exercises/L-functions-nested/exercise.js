@@ -5,13 +5,13 @@ var mentor4 = greeting("Rob");
 var mentor5 = greeting("Yohannes");
 
 function greeting(name) {
-    return 'HELLO ' + name;
+    return 'HELLO ' + name.toUpperCase();
 }
 
-console.log(mentor1.toUpperCase());
-console.log(mentor2).toUpperCase();
-//console.log(mentor3);
-//console.log(mentor4);
-//console.log(mentor5);
+console.log(mentor1);
+console.log(mentor2);
+console.log(mentor3);
+console.log(mentor4);
+console.log(mentor5);
 
 
