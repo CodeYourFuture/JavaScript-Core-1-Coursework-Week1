@@ -17,7 +17,12 @@ function calculateSalesTax() {}
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency() {}
+function addTaxAndFormatCurrency(productPrice) {
+   let totalCost = productPrice * 1.2;
+  return `£${totalCost.toFixed(2)}`; // fixes to 2 decimal places
+}
+console.log(addTaxAndFormatCurrency(15));
+
 
 /* 
 ===================================================
