@@ -13,9 +13,9 @@ function createShoutyGreeting(firstName) {
     return message;
 }
 
-console.log (createShoutyGreeting("Daniel"));
-console.log (createShoutyGreeting("Irina"));
-console.log (createShoutyGreeting("Mimi"));
-console.log (createShoutyGreeting("Rob"));
-console.log (createShoutyGreeting("Yohannes"));
+console.log (createShoutyGreeting(mentor1));
+console.log (createShoutyGreeting(mentor2));
+console.log (createShoutyGreeting(mentor3));
+console.log (createShoutyGreeting(mentor4));
+console.log (createShoutyGreeting(mentor5));
 
