@@ -1,16 +1,19 @@
 // Add comments to explain what this function does. You're meant to use Google!
 function getNumber() {
-  return Math.random() * 10;
+  return Math.random() * 10;      
 }
+// The function above will return a random integer from 0 and 9, The random() method returns a random number from 0 (inclusive) up to but not including 1 (exclusive)
 
 // Add comments to explain what this function does. You're meant to use Google!
 function s(w1, w2) {
   return w1.concat(w2);
 }
+// The concat() method above is used to join two or more strings, so the function will return a new string of w1 + w2.
 
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  return `${firstWord} ${secondWord} ${thirdWord}`;
 }
 
 /* 
