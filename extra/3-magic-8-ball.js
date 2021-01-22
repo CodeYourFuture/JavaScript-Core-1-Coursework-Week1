@@ -47,6 +47,18 @@
 // and return the answer.
 function shakeBall() {
   //Write your code in here
+  let output = "The ball has shaken!";
+  console.log(output);
+  let num = Math.round(Math.random()*6)+1;
+  if (num ==1){
+    return checkAnswer("It is decidedly so.");
+  }
+  if (num ==2){
+    return checkAnswer("My reply is no.");
+  }
+  if (num ==3){
+    return checkAnswer("different answers");
+  }
 }
 
 /* 
@@ -60,6 +72,13 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
+  if (answer == "It is decidedly so."){
+    return "very positive";
+  }
+  if (answer == "My reply is no."){
+    return "very negative";
+  }
+  return "different answers";
 }
 
 /* 
