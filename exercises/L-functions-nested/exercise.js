@@ -1,19 +1,21 @@
 // exercise 1
 var students = 8;
 var mentors = 15;
+
 function percentage(total){
 
 var sum = students + mentors;
-return Math.round(total/sum *100);
+return Math.round(total/sum *100) + "%";
 
 }
 
-function result(message){
-console.log(message + percentage(8) + "%");
-console.log( message + percentage(15) + "%");
+function result(message, type){
+return message + type;
+
 }
- result("The percentage of students in the class is ");
- result("The percentage of mentors in the class is ");
+
+console.log(result("The percentage of ", "students in the class is ") + percentage(8));
+console.log(result("The percentage of ", "mentors in the class is ") + percentage(15));
 
 // exercise2
 
