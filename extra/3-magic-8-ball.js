@@ -46,6 +46,7 @@
 // This should log "The ball has shaken!"
 // and return the answer.
 
+// Object "possibleAnswers" declared for the 4 categories to set up key:value pairs
 let possibleAnswers = {
   veryPositive: ["It is certain.", "It is decidedly so.", "Without a doubt.", "Yes - definitely.", "You may rely on it."],
   positive: ["As I see it, yes.", "Most likely.", "Outlook good.", "Yes.", "Signs point to yes."],
@@ -53,10 +54,13 @@ let possibleAnswers = {
   veryNegative: ["Don't count on it.", "My reply is no.", "My sources say no.", "Outlook not so good.", "Very doubtful."]
 }
 
+// Random number function
 function getRandomNumber(min, max) {
+  // Produces a random decimal number between 0-1 then multiplies it by the range then adds the min value. Rounds to nearest number.
   return Math.round(Math.random() * (max - min) + min);
 }
 
+// Variable used in shakeBall() function to select an answer from each category and the checkAnswer() function as a parameter to pass in a random number between 1 and 5
 let answerSelection = getRandomNumber(1 , 5);
 
 function shakeBall() {
@@ -64,18 +68,22 @@ function shakeBall() {
   let answer = "";
   randomNumber = getRandomNumber(1, 4);
   if (randomNumber == 1) {
+    // if the random number selected is 1, then variable "answer" is assigned the value of a random selection (1-5) from the "veryPositive" key values in the possibleAnswers object
     answer = possibleAnswers.veryPositive[answerSelection];
     return(answer);
   }
   else if (randomNumber == 2) {
+    // if the random number selected is 2, then variable "answer" is assigned the value of a random selection (1-5) from the "positive" key values in the possibleAnswers object
     answer = possibleAnswers.positive[answerSelection];
     return(answer);
   }
   else if (randomNumber == 3) {
+    // if the random number selected is 3, then variable "answer" is assigned the value of a random selection (1-5) from the "negative" key values in the possibleAnswers object
     answer = possibleAnswers.negative[answerSelection];
     return(answer);
   }
   else if (randomNumber == 4) {
+    // if the random number selected is 4, then variable "answer" is assigned the value of a random selection (1-5) from the "veryNegative" key values in the possibleAnswers object
     answer = possibleAnswers.veryNegative[answerSelection];
     return(answer);
   }
@@ -96,15 +104,19 @@ console.log(shakeBall());
 function checkAnswer(answer, answerSelection) {
   //Write your code in here
   let rating = "";
+   // if the "veryPositive" key values in the possibleAnswers object include the string assigned to "answer" at the index specified by "answerSelection", then return "rating" value very positive
   if (possibleAnswers.veryPositive.includes(answer, [answerSelection])) {
     return rating = "very positive";
   }
+  // if the "positive" key values in the possibleAnswers object include the string assigned to "answer" at the index specified by "answerSelection", then return "rating" value positive
   else if (possibleAnswers.positive.includes(answer, [answerSelection])) {
     return rating = "positive";
   }
+  // if the "negative" key values in the possibleAnswers object include the string assigned to "answer" at the index specified by "answerSelection", then return "rating" value negative
   else if (possibleAnswers.negative.includes(answer, [answerSelection])) {
     return rating = "negative";
   }
+  // if the "VeryNegative" key values in the possibleAnswers object include the string assigned to "answer" at the index specified by "answerSelection", then return "rating" value very negative
   else if (possibleAnswers.veryNegative.includes(answer, [answerSelection])) {
     return rating = "very negative";
   }
