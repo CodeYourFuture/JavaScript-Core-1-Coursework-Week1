@@ -17,8 +17,8 @@ var difference = 10 - 2; // 8
 
 ## Exercise
 
-* Create two variables `numberOfStudents` and `numberOfMentors`
-* Log a message that displays the total number of students and mentors
+- Create two variables `numberOfStudents` and `numberOfMentors`
+- Log a message that displays the total number of students and mentors
 
 ## Expected result
 
