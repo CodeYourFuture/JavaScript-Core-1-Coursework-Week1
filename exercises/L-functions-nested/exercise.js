@@ -1,31 +1,43 @@
-var mentor1 = "Daniel";
-var mentor2 = "Irina";
-var mentor3 = "Mimi";
-var mentor4 = "Rob";
-var mentor5 = "Yohannes";
 
+function greeting(shortGreed){
+ var shortGreed= "hello"
+ return shortGreed;
+}
 
+function capital(shortGreed){
+    var mentor = ["Daniel", "Irina", "Mimi", "Rob", "Yohannes"];
+   
+    //gets greeting function
+    var greed = greeting(shortGreed);
+    
+    // loop in arrays items and convert them to uppercase
+    for(i = 0;  i < mentor.length; i++){
+       console.log(greed.toUpperCase(),mentor[i].toUpperCase());
+     }
+    return mentor;
+}
 
+// call function
+capital();
 
 function calc(numberOfStudents,numberOfMentors){
     var sum = numberOfStudents + numberOfMentors;
-    var percentStudent = "" + Math.round(numberOfStudents / sum * 100)+ "%"+ "\n" +  Math.round(numberOfMentors / sum * 100  )+"%" ; 
-    return percentStudent;
-
+    var student = Math.round(numberOfStudents / sum * 100);
+    var mentors = Math.round(numberOfMentors / sum * 100);
+    
+    //return variables as an array
+    return [student,mentors] ;
 }
 
 
-function message(m,numberOfStudents,numberOfMentors){
-     const per = calc(numberOfStudents,numberOfMentors);
-      const ms = `my name is ${personName} and i born ${ageInDays}`;
+function message(numberOfStudents,numberOfMentors){
+     var  result = calc(numberOfStudents,numberOfMentors);
+     var msg = "Percentage students: "  + result [0] + "%" + "\n" + "Percentage mentors: " + result[1] + "%" ;
+      return msg;
 }
-
-var g = calc(15,8);
-console.log(g);
-
+var output = message(15,8);
+console.log(output);
 
 
 
-
-//console.log("Percentage Students: " + Math.round(percentStudent) + "%" + "\nPercentage Mentors: " + Math.round(percentMentors) + "%");
 
