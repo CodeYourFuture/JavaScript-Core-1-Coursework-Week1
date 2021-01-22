@@ -43,10 +43,38 @@
     Very doubtful.
 */
 
+const magicAnswer = {
+  "veryPositive": ["It is certain.",
+    "It is decidedly so.",
+    "Without a doubt.",
+    "Yes - definitely.",
+    "You may rely on it."]
+  ,
+  "positive": ["As I see it, yes." ,
+    "Most likely.",
+   " Outlook good.",
+    "Yes.",
+    "Signs point to yes."],
+  "negative": ["Reply hazy, try again.",
+    "Ask again later.",
+    "Better not tell you now.",
+    "Cannot predict now.",
+    "Concentrate and ask again."],
+  "veryNegative": [ "Don't count on it.",
+    "My reply is no.",
+    "My sources say no.",
+    "Outlook not so good.",
+    "Very doubtful."]
+};
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
-  //Write your code in here
+  console.log("The ball has shaken!");
+  let answerCategory = Math.round(Math.random() * 3);
+  let possibleAnswer = Math.round(Math.random() * 4);
+
+  return magicAnswer[Object.keys(magicAnswer)[answerCategory]][possibleAnswer];
+  
 }
 
 /* 
@@ -60,6 +88,15 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
+  // answer = shakeBall();
+    for (const group of Object.keys(magicAnswer))
+    {
+      if (magicAnswer[group].includes(answer))
+      {
+      return group;
+      }
+    }
+  
 }
 
 /* 
