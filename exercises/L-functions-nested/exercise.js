@@ -1,11 +1,11 @@
 
 let total = 15 + 8;
 
-function students (s) {
-    return s / total * 100;
+function students (student) {
+    return student / total * 100;
 }
- function mentors (m) {
-     return m / total * 100;
+ function mentors (mentor) {
+     return mentor / total * 100;
  }
 
  let studentPercent = Math.round(students(15)) + '%';

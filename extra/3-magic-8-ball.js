@@ -47,6 +47,7 @@
 // and return the answer.
 function shakeBall() {
   //Write your code in here
+  return "The ball has shaken!";
 }
 
 /* 
@@ -60,6 +61,7 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
+  
 }
 
 /* 

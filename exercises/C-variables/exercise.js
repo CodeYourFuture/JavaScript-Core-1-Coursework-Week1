@@ -1,5 +1,8 @@
 
-let greeting = 'Hello world'
-console.log(greeting);
-console.log(greeting);
-console.log(greeting);
+let greeting = 'Hello world';
+
+for (let i = 0; i < 3; i++) {
+    console.log(greeting);
+}
+
+
