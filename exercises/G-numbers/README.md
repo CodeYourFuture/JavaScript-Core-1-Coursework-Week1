@@ -25,5 +25,5 @@ var difference = 10 - 2; // 8
 ```
 Number of students: 15
 Number of mentors: 8
-Total numnber of students and mentors: 23
+Total number of students and mentors: 23
 ```
