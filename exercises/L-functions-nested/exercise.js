@@ -16,29 +16,27 @@ function percentageOfMentors(students, mentors) {
     return Math.round(percentageOfMentorsCalculation);
 }
 function message(students, mentors) {
-    let messageForStudents = "Percentage students: " + percentageOfStudents(15,8) + "%",
-        messageForMentors = "Percentage Mentors: " + percentageOfMentors(15,8) +"%";
+    let messageForStudents = `Percentage students: ${percentageOfStudents(15,8)}%`
+        messageForMentors = `Percentage Mentors: ${percentageOfMentors(15,8)}%`;
     return [messageForStudents, messageForMentors]
 }
 let messages = message(15, 8);
 console.log(messages);
 
 // ## Exercise 2
-function capitalLetter(name) {
-    let shoutyName = "Hello ".toUpperCase() + name.toUpperCase();
-    return shoutyName; 
+function capitalLetterMessage(name) {
+    let shoutyComment = "Hello ".toUpperCase();
+    return shoutyComment; 
 }
-
-let nameInput1 = capitalLetter(mentor1);
-console.log(nameInput1);
-let nameInput2 = capitalLetter(mentor2);
-console.log(nameInput2);
-let nameInput3 = capitalLetter(mentor3);
-console.log(nameInput3);
-let nameInput4 = capitalLetter(mentor4);
-console.log(nameInput4);
-let nameInput5 = capitalLetter(mentor5);
-console.log(nameInput5);
+function capitalLetterName(name) {
+    let capitalName = capitalLetterMessage(name) + name.toUpperCase();
+    return capitalName;
+}
+console.log(capitalLetterName(mentor1));
+console.log(capitalLetterName(mentor2));
+console.log(capitalLetterName(mentor3));
+console.log(capitalLetterName(mentor4));
+console.log(capitalLetterName(mentor2));
 
 // - In `exercise2.js` you have been provided with the names of some mentors. Write a program that logs a shouty greeting to each one.
 // - Your program should include a function that spells their name in uppercase, and a function that creates a shouty greeting.
