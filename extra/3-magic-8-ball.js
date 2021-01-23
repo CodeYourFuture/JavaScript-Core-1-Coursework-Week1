@@ -60,8 +60,8 @@ function getRandomNumber(min, max) {
   return Math.round(Math.random() * (max - min) + min);
 }
 
-// Variable used in shakeBall() function to select an answer from each category and the checkAnswer() function as a parameter to pass in a random number between 1 and 5
-let answerSelection = getRandomNumber(1 , 5);
+// Variable used in shakeBall() function to select an answer from each category and the checkAnswer() function as a parameter to pass in a random number between 0 and 4
+let answerSelection = getRandomNumber(0 , 4);
 
 function shakeBall() {
   console.log("The ball has shaken!");
