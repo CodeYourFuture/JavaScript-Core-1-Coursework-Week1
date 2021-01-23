@@ -1,9 +1,9 @@
 // Start by creating a variable `message`
 
-let message="Hi everyone,nice to meet you, I am "
+let message = "Hi everyone,nice to meet you, I am ";
 
-let name="Murat"
+let name = "Murat";
 
-let myMessage= message+name;
+let myMessage = message + name;
 
 console.log(myMessage);
