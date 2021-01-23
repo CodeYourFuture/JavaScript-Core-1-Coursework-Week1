@@ -1,18 +1,14 @@
-var numberOfStudents = 15;
-var numberOfMentors = 8;
+function percentage(numberOfMentors, numberOfStudents) {
+    let totalNumber = numberOfMentors + numberOfStudents; 
+    let studentPercentage = Math.round((numberOfStudents / totalNumber * 100)); 
+    let mentorPercentage = Math.round((numberOfMentors / totalNumber * 100)); 
+    function message() { 
+        return `The percentage of mentors is: ${mentorPercentage} 
+        \nThe percentage of students is: ${studentPercentage}`
+    }    
+  return message(); 
+} 
 
-var totNum = numberOfMentors + numberOfStudents;
-
-
-var numStudentPerc = numberOfStudents / totNum * 100;
-var studentPercRound = Math.round(numStudentPerc);
-var numMentorPerc = numberOfMentors / totNum * 100;
-var mentorPercRound = Math.round(numMentorPerc);
-
-
-    
-  
-console.log("The Percentage of" + Mentors + " is: ", mentorPercRound);
-console.log("The percentage of" Students is: ",studentPercRound);clear
+console.log(percentage(8, 15)); 
 
 
