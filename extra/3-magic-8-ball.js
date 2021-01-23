@@ -60,30 +60,31 @@ function getRandomNumber(min, max) {
   return Math.round(Math.random() * (max - min) + min);
 }
 
-// Variable used in shakeBall() function to select an answer from each category and the checkAnswer() function as a parameter to pass in a random number between 0 and 4
+// Variable used in shakeBall() function and checkAnswer function to select an answer from the array of the chosen category (passes in a random number between 0 and 4)
 let answerSelection = getRandomNumber(0 , 4);
 
 function shakeBall() {
   console.log("The ball has shaken!");
+  let randomNumber = getRandomNumber(1, 4);
   let answer = "";
-  randomNumber = getRandomNumber(1, 4);
+
   if (randomNumber == 1) {
-    // if the random number selected is 1, then variable "answer" is assigned the value of a random selection (1-5) from the "veryPositive" key values in the possibleAnswers object
+    // if the random number selected is 1, then variable "answer" is assigned the value of a random selection (0-4) from the "veryPositive" values array in the possibleAnswers object
     answer = possibleAnswers.veryPositive[answerSelection];
     return(answer);
   }
   else if (randomNumber == 2) {
-    // if the random number selected is 2, then variable "answer" is assigned the value of a random selection (1-5) from the "positive" key values in the possibleAnswers object
+    // if the random number selected is 2, then variable "answer" is assigned the value of a random selection (0-4) from the "positive" values array in the possibleAnswers object
     answer = possibleAnswers.positive[answerSelection];
     return(answer);
   }
   else if (randomNumber == 3) {
-    // if the random number selected is 3, then variable "answer" is assigned the value of a random selection (1-5) from the "negative" key values in the possibleAnswers object
+    // if the random number selected is 3, then variable "answer" is assigned the value of a random selection (0-4) from the "negative" values array in the possibleAnswers object
     answer = possibleAnswers.negative[answerSelection];
     return(answer);
   }
   else if (randomNumber == 4) {
-    // if the random number selected is 4, then variable "answer" is assigned the value of a random selection (1-5) from the "veryNegative" key values in the possibleAnswers object
+    // if the random number selected is 4, then variable "answer" is assigned the value of a random selection (0-4) from the "veryNegative" values array in the possibleAnswers object
     answer = possibleAnswers.veryNegative[answerSelection];
     return(answer);
   }
@@ -103,22 +104,21 @@ console.log(shakeBall());
 
 function checkAnswer(answer, answerSelection) {
   //Write your code in here
-  let rating = "";
-   // if the "veryPositive" key values in the possibleAnswers object include the string assigned to "answer" at the index specified by "answerSelection", then return "rating" value very positive
+   // if the "veryPositive" values in the possibleAnswers object include the string assigned to "answer" at the index specified by "answerSelection", then return "very positive"
   if (possibleAnswers.veryPositive.includes(answer, [answerSelection])) {
-    return rating = "very positive";
+    return "very positive";
   }
-  // if the "positive" key values in the possibleAnswers object include the string assigned to "answer" at the index specified by "answerSelection", then return "rating" value positive
+  // if the "positive" values in the possibleAnswers object include the string assigned to "answer" at the index specified by "answerSelection", then return "positive"
   else if (possibleAnswers.positive.includes(answer, [answerSelection])) {
-    return rating = "positive";
+    return "positive";
   }
-  // if the "negative" key values in the possibleAnswers object include the string assigned to "answer" at the index specified by "answerSelection", then return "rating" value negative
+  // if the "negative" values in the possibleAnswers object include the string assigned to "answer" at the index specified by "answerSelection", then return "negative"
   else if (possibleAnswers.negative.includes(answer, [answerSelection])) {
-    return rating = "negative";
+    return "negative";
   }
-  // if the "VeryNegative" key values in the possibleAnswers object include the string assigned to "answer" at the index specified by "answerSelection", then return "rating" value very negative
+  // if the "veryNegative" values in the possibleAnswers object include the string assigned to "answer" at the index specified by "answerSelection", then return "very negative"
   else if (possibleAnswers.veryNegative.includes(answer, [answerSelection])) {
-    return rating = "very negative";
+    return "very negative";
   }
 }
 
