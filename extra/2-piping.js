@@ -18,8 +18,7 @@
 
 
 function add(number1,number2) {
-   
- 
+
    return number1+number2;
 }
 
@@ -44,8 +43,8 @@ const startingValue = 2
 let badCode = format(multiply(add(startingValue,10),2)); 
 
 /* BETTER PRACTICE */
-let total =add(startingValue,10);
-let product =multiply(total,2)
+let total = add(startingValue,10);
+let product = multiply(total,2)
 let goodCode = format(product);
 
 /* ======= TESTS - DO NOT MODIFY ===== 

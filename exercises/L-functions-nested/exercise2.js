@@ -10,8 +10,8 @@ function upperName(name){
 };
 
 function shoutyGreeting(name){
-var message = 'HELLO' + upperName(name);
-return message;
+    var message = 'HELLO' + upperName(name);
+    return message;
 
 };
 
