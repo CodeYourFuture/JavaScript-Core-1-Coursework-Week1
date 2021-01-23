@@ -16,26 +16,31 @@
   the final result to the variable goodCode
 */
 
-function add() {
-
+function add(num1,num2) {
+    return num1 + num2;
 }
 
-function multiply() {
-
+function multiply(a,b) {
+    return a * b;
 }
 
-function format() {
-
+function format(number) {
+    // var stringformat = string(number);
+   return `£${number}`;  
 }
 
 const startingValue = 2
+const num1 = add(startingValue,10);
+const num2 = multiply(num1,2);
+const result = format(num2);
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode = 
+let badCode = format(24);// becouse it has been defined but not assigned. so i assigned and closed with semi-colon
 
 /* BETTER PRACTICE */
 
-let goodCode = 
+let goodCode = format(24);
+
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.

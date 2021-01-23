@@ -1,4 +1,6 @@
 function halve(number) {
+  var devider = Math.round(number / 2)
+  return devider; 
   // complete the function here
 }
 

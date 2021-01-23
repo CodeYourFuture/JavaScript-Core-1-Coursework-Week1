@@ -15,4 +15,7 @@ Inside of `exercise.js` there's a line of code that will print "Hello world!".
 - Try to `console.log()` something different. For example, 'Hello World. I just started learning JavaScript!'.
 - Try to console.log() several things at once.
 - What happens when you get rid of the quote marks?
+  it display this massege: SyntaxError: missing ) after argument list
+  meaning that you tapped something that's not a string
 - What happens when you console.log() just a number without quotes?
+  it print a number not a string

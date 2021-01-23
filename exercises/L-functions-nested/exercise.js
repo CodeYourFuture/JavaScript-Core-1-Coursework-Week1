@@ -1,5 +1,12 @@
-var mentor1 = "Daniel";
-var mentor2 = "Irina";
-var mentor3 = "Mimi";
-var mentor4 = "Rob";
-var mentor5 = "Yohannes";
+function mentor(name) {
+    
+   return `HELLO ${name.toUpperCase()}` 
+}
+
+
+console.log(mentor("Daniel"));
+console.log(mentor("Irina"));
+console.log(mentor("Mimi"));
+console.log(mentor("Rob"));
+console.log(mentor("Yohannes"));
+

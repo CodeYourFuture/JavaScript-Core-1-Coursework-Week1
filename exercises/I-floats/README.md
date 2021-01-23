@@ -18,6 +18,6 @@ var roughAge = Math.round(preciseAge); // 30
 ## Expected result
 
 ```
-Percentage students: 65%
+ge studentsPercenta: 65%
 Percentage mentors: 35%
 ```
