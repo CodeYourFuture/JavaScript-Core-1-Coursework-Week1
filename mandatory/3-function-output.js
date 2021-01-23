@@ -15,7 +15,7 @@ function concatenate(firstWord, secondWord, thirdWord) {
   // Look at the test case below to understand what this function is expected to return.
   var sentence = firstWord +" " +  secondWord +" " + thirdWord;
   // var sentence = `${firstWord} ${secondWord} ${thirdWord}`
-  console.log(sentence)
+  console.log(sentence);
   return sentence;
 }
 

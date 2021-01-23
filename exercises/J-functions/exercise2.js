@@ -1,7 +1,7 @@
 function triple(number) {
   // complete function here
   var multiplied = number * 3;
-  return multiplied
+  return multiplied;
 }
 
 var result = triple(12);

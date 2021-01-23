@@ -26,7 +26,7 @@ function calculateSalesTax(price) {
 */
 
 function addTaxAndFormatCurrency(price) {
-  var priceInclusiveOfTax = calculateSalesTax (price)
+  var priceInclusiveOfTax = calculateSalesTax (price);
   var decimatedPrice = priceInclusiveOfTax.toFixed(2);
   var poundSignPrice = "£" + decimatedPrice;
   return poundSignPrice;
