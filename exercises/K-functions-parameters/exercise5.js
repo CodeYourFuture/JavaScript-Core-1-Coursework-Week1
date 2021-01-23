@@ -1,5 +1,6 @@
-// Declare your function here
+//exercise 5
+function intro(nomme, number){
+  return ('My name is ' + nomme + ' and I\'m ' + number + ' years old')
+}
 
-const greeting = createLongGreeting("Daniel", 30);
-
-console.log(greeting);
+console.log(intro('Daniel', 30))

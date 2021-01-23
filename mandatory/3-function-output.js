@@ -1,17 +1,19 @@
-// Add comments to explain what this function does. You're meant to use Google!
-function getNumber() {
-  return Math.random() * 10;
+// Math.random() can be used to return random integers/numbers
+function getNumber(nim) {
+  return Math.random(nim) * 10;
 }
+console.log(getNumber(23))
 
-// Add comments to explain what this function does. You're meant to use Google!
+// .concat() is used to join two or more strings
 function s(w1, w2) {
-  return w1.concat(w2);
+  return w1.concat(w1, w2);
 }
+console.log (s(34 + ' likes'))
 
 function concatenate(firstWord, secondWord, thirdWord) {
-  // Write the body of this function to concatenate three words together.
-  // Look at the test case below to understand what this function is expected to return.
+  return firstWord+secondWord+thirdWord;
 }
+console.log(concatenate('I' + ' like' + ' you'));
 
 /* 
 ===================================================

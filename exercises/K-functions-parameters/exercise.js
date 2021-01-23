@@ -1,9 +1,8 @@
-// Complete the function so that it takes input parameters
-function multiply() {
-  // Calculate the result of the function and return it
+//FUNCTIONS - PARAMETERS
+
+//exercise 1
+function multiply(fig1, fig2) {
+  return fig1 * fig2;
 }
-
-// Assign the result of calling the function the variable `result`
-var result = multiply(3, 4);
-
-console.log(result);
+let resultTwo = multiply(3, 4);
+console.log(resultTwo);
