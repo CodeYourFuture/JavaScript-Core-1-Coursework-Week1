@@ -1,5 +1,5 @@
 const name ='  Adem  ';
-const NoWhiteSpace = name.trim();
-const greetings ='My name is '+ NoWhiteSpace +' and my name is '+ NoWhiteSpace.length +' characters long';
+const noWhiteSpace = name.trim();
+const greetings ='My name is '+ noWhiteSpace +' and my name is '+ noWhiteSpace.length +' characters long';
 console.log(greetings);
 
