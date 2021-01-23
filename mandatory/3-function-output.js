@@ -1,9 +1,11 @@
 // Add comments to explain what this function does. You're meant to use Google!
+//In JavaScript, to get a random number between 0 and 1, use the Math. random() function. If you want a random number between 1 and 10, multiply the results of Math. random by 10, then round up or down.
 function getNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+//So concat() is a method uses in javaScript that join two or more strings and return a new string
 function s(w1, w2) {
   return w1.concat(w2);
 }
@@ -11,6 +13,7 @@ function s(w1, w2) {
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  return firstWord+ " "+ secondWord + " "+thirdWord;
 }
 
 /* 
