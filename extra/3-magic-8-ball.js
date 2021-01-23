@@ -1,50 +1,7 @@
-/**
 
-  Let's peer into the future using a Magic 8 Ball!
-  https://en.wikipedia.org/wiki/Magic_8-Ball 
-
-  There are a few steps to being able view the future though:
-  * Ask a question
-  * Shake the ball
-  * Get an answer
-  * Decide if it's positive or negative
-
-  The question can be anything, but the answers are fixed,
-  and have different levels of positivity or negativity.
-
-  Below are the possible answers:
-
-  ## Very positive
-    It is certain.
-    It is decidedly so.
-    Without a doubt.
-    Yes - definitely.
-    You may rely on it.
-
-  ## Positive
-    As I see it, yes.
-    Most likely.
-    Outlook good.
-    Yes.
-    Signs point to yes.
-
-  ## Negative
-    Reply hazy, try again.
-    Ask again later.
-    Better not tell you now.
-    Cannot predict now.
-    Concentrate and ask again.
-
-  ## Very negative
-    Don't count on it.
-    My reply is no.
-    My sources say no.
-    Outlook not so good.
-    Very doubtful.
-*/
-
+// creating a magicAnswer object with all the possible answers
 const magicAnswer = {
-  "veryPositive": ["It is certain.",
+  "very positive": ["It is certain.",
     "It is decidedly so.",
     "Without a doubt.",
     "Yes - definitely.",
@@ -60,7 +17,7 @@ const magicAnswer = {
     "Better not tell you now.",
     "Cannot predict now.",
     "Concentrate and ask again."],
-  "veryNegative": [ "Don't count on it.",
+  "very negative": [ "Don't count on it.",
     "My reply is no.",
     "My sources say no.",
     "Outlook not so good.",
@@ -70,9 +27,11 @@ const magicAnswer = {
 // and return the answer.
 function shakeBall() {
   console.log("The ball has shaken!");
+  // outputs 0,1,2,3 corresponding to very/positive,very/negative
   let answerCategory = Math.round(Math.random() * 3);
+  // these represent the arrays' five options i.e. 0,1,2,3,4
   let possibleAnswer = Math.round(Math.random() * 4);
-
+  // the function returns random answers every time it is invoked
   return magicAnswer[Object.keys(magicAnswer)[answerCategory]][possibleAnswer];
   
 }
@@ -87,11 +46,11 @@ function shakeBall() {
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
-  //Write your code in here
-  // answer = shakeBall();
-    for (const group of Object.keys(magicAnswer))
+  for (const group of Object.keys(magicAnswer))
+      // iterating through all the keys of the magicAnswer object 
     {
-      if (magicAnswer[group].includes(answer))
+    if (magicAnswer[group].includes(answer))
+      // checking which category the answer belongs to
       {
       return group;
       }
