@@ -8,7 +8,7 @@ function add(a, b) {
 }
 ```
 
-When you write a function (sometimes called _declaring a function_) you assign names to the parameters inside of the parentheses (`()`). Parameters can be called anything.
+When you write a function (sometimes called _declaring a function_) you assign names to the parameters inside of the parentheses (`()`). Parameters can  be called anything.
 
 This function is exactly the same as the on above:
 
@@ -31,7 +31,7 @@ function add(num1, num2) {
 ## Exercise 2
 
 * From scratch, write a function that divides two numbers
-
+-+
 ## Expected result
 
 ```
