@@ -1,5 +1,5 @@
 function halve(number) {
-  return number / 2;
+  return number - 6;
   
 }
 
