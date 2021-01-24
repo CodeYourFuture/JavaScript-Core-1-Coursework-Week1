@@ -2,6 +2,9 @@
 var numberOfStudents = 15;
 var numberOfMentors = 8;
 
-var totalNumbers = numberOfMentors + numberOfStudents;
+//var totalNumbers = numberOfMentors + numberOfStudents;
 
-console.log(totalNumbers);
+
+
+sum = numberOfStudents + numberOfMentors;
+console.log(sum);
