@@ -6,7 +6,7 @@
 */
 
 function convertToUSD(sterling) {
-  return sterling*1.4;
+  return sterling * 1.4;
 }
 
 /*
@@ -18,7 +18,7 @@ function convertToUSD(sterling) {
 */
 
 function convertToBRL(sterling) {
-  return sterling*0.99*5.7;
+  return sterling * 0.99 * 5.7;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== 

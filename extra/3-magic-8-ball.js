@@ -66,21 +66,16 @@ var answers = [
   "My reply is no.",
   "My sources say no.",
   "Outlook not so good.",
-  "Very doubtful."    
+  "Very doubtful.",
 ];
-//Very positive
-//Positive
-//Negative
-//Very negative
-
-
 
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
   //Write your code in here
   console.log("The ball has shaken!");
-  var randomValue = Math.floor(Math.random()*19);
+  //create random integer value between from 0 to 19 for 20 answers array
+  var randomValue = Math.floor(Math.random() * 19);
   return answers[randomValue];
 }
 
@@ -97,17 +92,14 @@ function checkAnswer(answer) {
   //Write your code in here
   var indexNumber = answers.indexOf(answer);
 
-  if(indexNumber<5){
-    return 'very positive'
-  }
-  else if(indexNumber<10){
-    return 'positive'
-  }
-  else if(indexNumber<15){
-    return 'negative'
-  }
-  else{
-    return 'very negative'
+  if (indexNumber < 5) {
+    return "very positive";
+  } else if (indexNumber < 10) {
+    return "positive";
+  } else if (indexNumber < 15) {
+    return "negative";
+  } else {
+    return "very negative";
   }
 }
 
