@@ -6,8 +6,8 @@
 */
 
 function calculateSalesTax(price) {
-  var decimalTwo = price.toFixed()
-  return decimalTwo/5;
+  var totalPrice = price+price/5
+  return totalPrice;
 
 }
 
