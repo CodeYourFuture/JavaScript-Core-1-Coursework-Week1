@@ -1,14 +1,20 @@
 // Add comments to explain what this function does. You're meant to use Google!
+
+// random() returns a double value with a positive sign, greater than or equal to 0.0 and less than 1.0. and than multiple by 10 meaning that we will get numbers between 0 to 9 (0 and 9 included)
 function getNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+// The concat() method is used to join two or more arrays.
+
+// This method does not change the existing arrays, but returns a new array, containing the values of the joined arrays.
 function s(w1, w2) {
   return w1.concat(w2);
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
+  return firstWord + " " + secondWord + " " + thirdWord;
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
 }
