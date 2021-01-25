@@ -1,5 +1,5 @@
 // Complete the function so that it takes input parameters
-function multiply() {
+function multiply(number) {
   return 6 * 2;
   
 }
