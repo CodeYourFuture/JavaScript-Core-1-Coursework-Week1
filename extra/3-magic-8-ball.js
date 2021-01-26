@@ -45,8 +45,44 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
+
+let allAnswers = {
+  veryPositive: ["It is certain.",
+    "It is decidedly so.",
+    "Without a doubt.",
+    "Yes - definitely.",
+    "You may rely on it."],
+
+  positive: ["As I see it, yes.",
+    "Most likely.",
+    "Outlook good.",
+    "Yes.",
+    "Signs point to yes."],
+  negative: [
+    "Reply hazy, try again.",
+    "Ask again later.",
+    "Better not tell you now.",
+    "Cannot predict now.",
+    "Concentrate and ask again."
+  ],
+  veryNegative: [
+    "Don't count on it.",
+    "My reply is no.",
+    "My sources say no.",
+    "Outlook not so good.",
+    "Very doubtful."
+  ]
+
+}
+
+
 function shakeBall() {
-  print ("The ball has shaken!");
+  console.log("The ball has shaken!");
+  let randomArray = Math.floor(Math.random() * allAnswers.length);
+  let randomEmotion = allAnswers[randomArray];
+  let arrayEmotion = Math.floor(Math.random*randomEmotion.length);
+  let arrayEmotionAnswer = [arrayEmotion];
+  let final = allAnswers[randomEmotion].[arrayEmotionAnswer];
   //Write your code in here
 }
 
@@ -60,6 +96,7 @@ function shakeBall() {
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
+
 
   //Write your code in here
 }
