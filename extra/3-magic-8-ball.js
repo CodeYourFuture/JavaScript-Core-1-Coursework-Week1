@@ -46,7 +46,7 @@
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
-  return ("The ball has shaken!")
+  print ("The ball has shaken!");
   //Write your code in here
 }
 
@@ -60,6 +60,7 @@ function shakeBall() {
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
+
   //Write your code in here
 }
 
