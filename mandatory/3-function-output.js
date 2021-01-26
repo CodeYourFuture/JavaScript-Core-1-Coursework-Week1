@@ -1,9 +1,11 @@
 // Add comments to explain what this function does. You're meant to use Google!
+// this function returns a random number between 0 (inclusive),  and 1 (exclusive)
 function getNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+//The concat() method concatenates the string arguments to the calling string and returns a new string.
 function s(w1, w2) {
   return w1.concat(w2);
 }
