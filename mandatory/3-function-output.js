@@ -2,13 +2,13 @@
 function getNumber() {
   return Math.random() * 10;      
 }
-// The function above will return a random integer from 0 and 9, The random() method returns a random number from 0 (inclusive) up to but not including 1 (exclusive)
+// The function above will return a random floating point between 0 and 10 (not included), The random() method returns a random floating number from 0 (inclusive) up to but not including 1 (exclusive)
 
 // Add comments to explain what this function does. You're meant to use Google!
 function s(w1, w2) {
   return w1.concat(w2);
 }
-// The concat() method above is used to join two or more strings, so the function will return a new string of w1 + w2.
+// The concat() method above is used to join or concatenate the two parameters W1 and W2, so the function will return a new string of w1 + w2.
 
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
