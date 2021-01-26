@@ -46,6 +46,7 @@
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
+  return ("The ball has shaken!")
   //Write your code in here
 }
 
