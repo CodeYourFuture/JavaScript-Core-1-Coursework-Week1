@@ -1,16 +1,21 @@
 // Add comments to explain what this function does. You're meant to use Google!
+//The Math.random() function returns a floating-point, pseudo-random number in the range 0 to less than 1 (inclusive of 0, but not 1) with approximately uniform distribution over that range — which you can then scale to your desired range
 function getNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+//Concat Returns: A table or series whose length is the end-to-end sum of the input lengths
 function s(w1, w2) {
   return w1.concat(w2);
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
-  // Write the body of this function to concatenate three words together.
-  // Look at the test case below to understand what this function is expected to return.
+let firstWord = "Hello Sam, "
+let secondWord = "how's your day going?"
+let thirdWord = "Have you completed this exercise?"
+
+return firstWord + secondWord + thirdWord;
 }
 
 /* 
