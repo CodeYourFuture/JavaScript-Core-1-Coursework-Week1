@@ -1,23 +1,18 @@
 // There are syntax errors in this code - can you fix it to pass the tests?
+    function addNumbers(a, b, c) {
+        return a + b + c;
+       
+    }
 
-function addNumbers(a, b, c) {
-    let d = a + b + c;
-    return a + b + c;
-}
-    console.log(d);
+    function introduceMe(name, age){
+        return "Hello, my name is " + name + "and I am" + age + "years old";
+    }  
 
-function introduceMe(name, age){
-    let text = "Hello, my name is " + Lawrence + "and I am" + age + "31";
+    function getTotal(a, b) {
+        total = a + b;
+        return `The total is ${total}`;
+    }
     
-}
-    console.log(text);
-
-function getTotal(a,c,b) {
-    total = a + c + b;
-    console.log(total)
-    return "The total is total" + total;
-}
-    console.log(total);
 
 const { Console } = require('console');
 /* 
