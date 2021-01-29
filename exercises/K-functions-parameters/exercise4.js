@@ -1,10 +1,9 @@
 // Declare your function first
-
+  var sum = sumOfNumber(13, 124);
+  
 // Call the function and assign to a variable `sum`
-function add(numb1,numb2) {
-    var numb1 = 13;
-    var numb2 = 124;
-    
-  }
-  return sum;
-console.log(sum);
+
+  function sumOfNumber(num1, num2) {
+      return num1 + num2;
+}
+  console.log(sum);
