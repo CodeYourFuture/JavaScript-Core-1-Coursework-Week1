@@ -1,8 +1,8 @@
 // Write your function here
-function myGreeting(){
-    return myGreeting , name ;
+function createGreeting(name){
+    return `Hello , my name is ${name}`;
 }
-var name = "Hello , my name is";
+
 var greeting = createGreeting("Daniel");
 
 
