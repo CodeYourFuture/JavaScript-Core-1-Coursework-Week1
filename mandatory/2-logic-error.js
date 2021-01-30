@@ -1,18 +1,20 @@
 // The syntax for this function is valid but it has an error, find it and fix it.
 
 function trimWord(word) {
-  return wordtrim();
+  return word;
 }
 
 function getWordLength(word) {
-  return "word".length();
+  return word.length();
 }
 
 function multiply(a, b, c) {
-  a * b * c;
-  return;
+  return a * b * c;
 }
 
+trimWord("CodeYourFuture");
+getWordLength();
+multiply(2, 3, 5);
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
