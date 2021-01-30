@@ -9,7 +9,6 @@ function calculateSalesTax(a) {
   return a + ((20 / 100) * a);
 }
 
-let saleTax = calculateSalesTax();
 /*
   CURRENCY FORMATTING
   ===================
@@ -21,7 +20,8 @@ let saleTax = calculateSalesTax();
 */
 
 function addTaxAndFormatCurrency(a) {
-  return "£".concat(saleTax.toFixed(2));
+
+  return "£".concat(calculateSalesTax(a).toFixed(2));
 }
 
 /* 
