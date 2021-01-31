@@ -1,25 +1,24 @@
 // The syntax for this function is valid but it has an error, find it and fix it.
 
-// function trimWord(word) {
-//     return word;
-// }
-// var result = trimWord('Hello Gorgeous World!');
-// console.log(result);
+function trimWord(word) {
+    return word;
+}
+var result = trimWord('Hello Gorgeous World!');
+console.log(result);
+
+// number 2
+function getWordLength(word) {
+    return word.length;
+}
+
+var strResult = getWordLength('Hello World beautiful')
+console.log(strResult.length);
 
 
-// function getWordLength(word) {
-//     return word;
-// }
-
-// var strResult = getWordLength('Hello World, you beautiful thing!')
-// console.log(strResult.length);
-
-
-// function multiply(a, b, c) {
-//     return a * b * c;
-// }
-// var results = multiply(2, 2, 2);
-// console.log(results);
+function multiply(a, b, c) {
+    return a * b * c;
+}
+var results = multiply(2, 3, 6);
 
 
 /* 
@@ -49,12 +48,14 @@ function test(test_name, actual, expected) {
 
 test(
     "fixed trimWord function",
-    trimWord("  CodeYourFuture "),
+    trimWord("CodeYourFuture"),
     "CodeYourFuture"
 );
 test(
     "fixed wordLength function",
-    getWordLength("A wild sentence appeared!"),
-    25
+    getWordLength("A wild sentence appeared!"), 25
 );
-test("fixed multiply function", multiply(2, 3, 6), 36);
+test(
+    "fixed multiply function",
+    multiply(2, 3, 6), 36
+);
