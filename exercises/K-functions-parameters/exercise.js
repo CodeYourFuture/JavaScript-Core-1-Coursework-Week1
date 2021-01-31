@@ -32,7 +32,6 @@ console.log(sum);
 let age = 30;
 
 function sentence(str) {
-
     return str;
 }
 
