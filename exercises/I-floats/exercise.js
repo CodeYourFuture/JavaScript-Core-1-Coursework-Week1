@@ -1,11 +1,10 @@
-var numberOfStudents = 14.488;
-var roundStudent = Math.round(numberOfStudents);
-var numberOfMentors = 8.655;
-var roundMentor = Math.round(numberOfMentors)
+var numberOfStudents = Math.round(14.488);
+var numberOfMentors = Math.round(8.655);
 
-let total = numberOfStudents + numberOfMentors;
+let total = numberOfMentors + numberOfStudents
+let students = numberOfStudents / total * 100;
+let mentors = numberOfMentors / total * 100;
 
 
-
-console.log('Percentage students: ' + numberOfStudents / (roundStudent + roundMentor) + '%');
-console.log('Percentage students: ' + numberOfMentors / total + '%');
+console.log('Percentage students: ' + Math.round(students) + '%');
+console.log('Percentage students: ' + Math.round(mentors) + '%');
