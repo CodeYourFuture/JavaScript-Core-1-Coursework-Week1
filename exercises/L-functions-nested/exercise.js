@@ -20,9 +20,16 @@ var mentor3 = "Mimi";
 var mentor4 = "Rob";
 var mentor5 = "Yohannes";
 
-function shoutyMessage(str, name) {
-    let message = str + ' ' + name;
-    return message;
+function upperCase(names) {
+    return names.toUpperCase();
 }
 
-console.log(shoutyMessage('hello', 'daniel'));
+function shoutyMessage(names) {
+    return ` HELLO ${names}`;
+}
+
+console.log(shoutyMessage(upperCase(mentor1)));
+console.log(shoutyMessage(upperCase(mentor2)));
+console.log(shoutyMessage(upperCase(mentor3)));
+console.log(shoutyMessage(upperCase(mentor4)));
+console.log(shoutyMessage(upperCase(mentor5)));
