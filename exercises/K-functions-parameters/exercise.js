@@ -5,7 +5,6 @@ function multiply(num1, num2) {
 }
 // Assign the result of calling the function the variable `result`
 var result = multiply(3, 4);
-
 console.log(result);
 
 // Exercise 2
@@ -19,7 +18,7 @@ console.log(results);
 function string(str) {
     return str;
 }
-var strResult = string('Hello my name is Daniel')
+var strResult = string('Hello, my name is Daniel')
 console.log(strResult);
 
 //Exercise 4
@@ -30,9 +29,12 @@ var sum = add(13, 124);
 console.log(sum);
 
 //Exercise 5
-function sentence(num) {
-    return num;
+let age = 30;
+
+function sentence(str) {
+
+    return str;
 }
 
-var outcome = sentence('Hello my name is Daniel and I am', 30)
+var outcome = sentence(`Hello my name is Daniel and I am ${age} years old. `)
 console.log(outcome);
