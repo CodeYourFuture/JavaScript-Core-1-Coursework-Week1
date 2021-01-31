@@ -47,14 +47,14 @@ function test(test_name, actual, expected) {
     console.log(`${test_name}: ${status}`);
 }
 
-// test(
-//     "fixed trimWord function",
-//     trimWord("  CodeYourFuture "),
-//     "CodeYourFuture"
-// );
-// test(
-//     "fixed wordLength function",
-//     getWordLength("A wild sentence appeared!"),
-//     25
-// );
-// test("fixed multiply function", multiply(2, 3, 6), 36);
+test(
+    "fixed trimWord function",
+    trimWord("  CodeYourFuture "),
+    "CodeYourFuture"
+);
+test(
+    "fixed wordLength function",
+    getWordLength("A wild sentence appeared!"),
+    25
+);
+test("fixed multiply function", multiply(2, 3, 6), 36);
