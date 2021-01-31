@@ -15,6 +15,7 @@ function createCreeting(name, age) {
     "My Name is " + name + " and I was born over " + ageInDays + " days ago!";
   return message;
 }
+
 console.log(createCreeting("Peter", 30));
 ```
 
