@@ -1,17 +1,26 @@
 // The syntax for this function is valid but it has an error, find it and fix it.
 
-function trimWord(word) {
-  return wordtrim();
-}
+// function trimWord(word) {
+//     return word;
+// }
+// var result = trimWord('Hello Gorgeous World!');
+// console.log(result);
 
-function getWordLength(word) {
-  return "word".length();
-}
 
-function multiply(a, b, c) {
-  a * b * c;
-  return;
-}
+// function getWordLength(word) {
+//     return word;
+// }
+
+// var strResult = getWordLength('Hello World, you beautiful thing!')
+// console.log(strResult.length);
+
+
+// function multiply(a, b, c) {
+//     return a * b * c;
+// }
+// var results = multiply(2, 2, 2);
+// console.log(results);
+
 
 /* 
 ===================================================
@@ -26,26 +35,26 @@ To run these tests type `node 2-logic-error` into your terminal
 const util = require("util");
 
 function test(test_name, actual, expected) {
-  let status;
-  if (actual === expected) {
-    status = "PASSED";
-  } else {
-    status = `FAILED: expected: ${util.inspect(
+    let status;
+    if (actual === expected) {
+        status = "PASSED";
+    } else {
+        status = `FAILED: expected: ${util.inspect(
       expected
     )} but your function returned: ${util.inspect(actual)}`;
-  }
+    }
 
-  console.log(`${test_name}: ${status}`);
+    console.log(`${test_name}: ${status}`);
 }
 
-test(
-  "fixed trimWord function",
-  trimWord("  CodeYourFuture "),
-  "CodeYourFuture"
-);
-test(
-  "fixed wordLength function",
-  getWordLength("A wild sentence appeared!"),
-  25
-);
-test("fixed multiply function", multiply(2, 3, 6), 36);
+// test(
+//     "fixed trimWord function",
+//     trimWord("  CodeYourFuture "),
+//     "CodeYourFuture"
+// );
+// test(
+//     "fixed wordLength function",
+//     getWordLength("A wild sentence appeared!"),
+//     25
+// );
+// test("fixed multiply function", multiply(2, 3, 6), 36);
