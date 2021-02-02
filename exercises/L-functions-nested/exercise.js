@@ -20,12 +20,17 @@ var mentor3 = "Mimi";
 var mentor4 = "Rob";
 var mentor5 = "Yohannes";
 
-function upperCase() {
-    return (mentor1, mentor2, mentor3, mentor4, mentor5).toUpperCase();
+function upperCase(greetings) {
+    return greetings.toUpperCase();
 }
 
-let showMentors = upperCase();
+let showMentors = upperCase("hello ");
 
 console.log(showStud);
-console.log(showMent)
-console.log(showMentors)
+console.log(showMent);
+console.log(showMentors + mentor1.toUpperCase());
+console.log(showMentors + mentor2.toUpperCase());
+console.log(showMentors + mentor3.toUpperCase());
+console.log(showMentors + mentor4.toUpperCase());
+console.log(showMentors + mentor5.toUpperCase());
+/*console.log(showMentors)*/
