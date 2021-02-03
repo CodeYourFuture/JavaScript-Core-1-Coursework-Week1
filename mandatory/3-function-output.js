@@ -7,19 +7,24 @@ function getNumber() {
 
 // Add comments to explain what this function does. You're meant to use Google!
 
-// This 's' function with the .concat() method is used to merge two or more arrays, by returning a new array and not changing the existing arrays.
+// This 's' function with the .concat() method is used here to join two arrays, returning a new array and not changing the existing arrays.
 function s(w1, w2) {
   return w1.concat(w2);
 }
 
-function concatenate(firstWord, secondWord, thirdWord) {
+function concatenate(theFirstWord, theSecondWord, theThirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
-  let myFirstWord = firstWord + " ";
-  let mySecondWord = secondWord + " ";
-  let myThirdWord = thirdWord;
-  return myFirstWord.concat(mySecondWord, myThirdWord);
+  return theFirstWord + " " + theSecondWord + " " + theThirdWord;
 }
+
+// Below is the longer option I originally had before feedback was given by tutor
+
+// function concatenate(firstWord, secondWord, thirdWord) {
+//   let myFirstWord = firstWord + " ";
+//   let mySecondWord = secondWord + " ";
+//   return myFirstWord.concat(mySecondWord, thirdWord);
+// }
 
 console.log(concatenate("code", "your", "future"));
 console.log(concatenate("I", "like", "pizza"));

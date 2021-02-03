@@ -5,11 +5,11 @@
   Sales tax is 20% of the price of the product
 */
 
-// This function aims to calculate the tax amount to charge on any given product depending on its price and the 20% given sales tax
 function calculateSalesTax(priceOfProduct) {
   let salesTax = 20;
-  let taxAmount = (priceOfProduct * salesTax) / 100;
-  return taxAmount;
+  let taxAmount = priceOfProduct * (salesTax / 100);
+  // math round used to fix rounding errors
+  return Math.round(taxAmount * 100) / 100;
 }
 
 console.log(calculateSalesTax(80));
@@ -25,12 +25,12 @@ console.log(calculateSalesTax(80));
 */
 
 // This nested function follows up from the previous one; using the taxAmount already worked out to return
-function getFormattedTotalPrice(productPrice) {
+function addTaxAndFormatCurrency(productPrice) {
   let totalPrice = productPrice + calculateSalesTax(productPrice);
   return "£" + totalPrice.toFixed(2);
 }
 
-console.log(getFormattedTotalPrice(80));
+console.log(addTaxAndFormatCurrency(80));
 
 /* 
 ===================================================
@@ -58,9 +58,9 @@ function test(test_name, actual, expected) {
   console.log(`${test_name}: ${status}`);
 }
 
-test("calculateSalesTax function - case 1 works", calculateSalesTax(15), 18);
-test("calculateSalesTax function - case 2 works", calculateSalesTax(17.5), 21);
-test("calculateSalesTax function - case 3 works", calculateSalesTax(34), 40.8);
+test("calculateSalesTax function - case 1 works", calculateSalesTax(15), 3);
+test("calculateSalesTax function - case 2 works", calculateSalesTax(17.5), 3.5);
+test("calculateSalesTax function - case 3 works", calculateSalesTax(34), 6.8);
 
 test(
   "addTaxAndFormatCurrency function - case 1 works",
