@@ -19,7 +19,7 @@ console.log(messageType); // logs 'string'
 
 ## Exercise
 
-* Write a program that logs a message and its type
+- Write a program that logs a message and its type
 
 ## Expected result
 
