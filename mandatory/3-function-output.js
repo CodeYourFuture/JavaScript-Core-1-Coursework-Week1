@@ -1,11 +1,11 @@
 // Add comments to explain what this function does. You're meant to use Google!
-function getNumber() {
+function getRandomNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
-function s(w1, w2) {
-  return w1.concat(w2);
+function combine2Words(word1, word2) {
+  return word1.concat(word2);
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
