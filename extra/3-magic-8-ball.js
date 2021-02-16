@@ -42,10 +42,40 @@ My sources say no.
 Outlook not so good.
 Very doubtful.
 */
+const sentenceArr = [
+  //0-4
+  "It is certain.",
+  "It is decidedly so.",
+  "Without a doubt.",
+  "Yes - definitely.",
+  "You may rely on it.",
+  //4-9
+  "As I see it, yes.",
+  "Most likely.",
+  "Outlook good.",
+  "Yes.",
+  "Signs point to yes.",
+  //10-14
+  "Reply hazy, try again.",
+  "Ask again later.",
+  "Better not tell you now.",
+  "Cannot predict now.",
+  "Concentrate and ask again.",
+  //15 - 19
+  "Don't count on it.",
+  "My reply is no.",
+  "My sources say no.",
+  "Outlook not so good.",
+  "Very doubtful.",
+];
+
+const { randomBytes } = require("crypto");
 
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
+  console.log("The ball has shaken!");
+  return sentenceArr[Math.floor(Math.random() * 20)];
 }
 
 // This function should say whether the answer it is given is
@@ -55,6 +85,18 @@ function shakeBall() {
 // - very negative
 // This function should expect to be called with any value which was returned by the shakeBall function.
 function checkAnswer(answer) {
+  if (sentenceArr.indexOf(answer) >= 0 && sentenceArr.indexOf(answer) <= 4) {
+    return "very positive";
+  }
+  if (sentenceArr.indexOf(answer) >= 5 && sentenceArr.indexOf(answer) <= 9) {
+    return "positive";
+  }
+  if (sentenceArr.indexOf(answer) >= 10 && sentenceArr.indexOf(answer) <= 14) {
+    return "negative";
+  }
+  if (sentenceArr.indexOf(answer) >= 15 && sentenceArr.indexOf(answer) <= 19) {
+    return "very negative";
+  }
 }
 
 /* ======= TESTS - DO NOT MODIFY =====
@@ -65,7 +107,7 @@ To run these tests type `node 3-magic-8-ball.js` into your terminal
 
 const log = console.log;
 let logged;
-console.log = function() {
+console.log = function () {
   log(...arguments);
   logged = arguments[0];
 };
@@ -92,14 +134,14 @@ function testAll() {
   test(`shakeBall returns an string answer`, typeof answer === "string");
 
   test(
-    `checkAnswer("It is decidedly so.") returns "very positive`,
+    `checkAnswer("It is decidedly so.") returns "very positive"`,
     checkAnswer("It is decidedly so.") === "very positive"
-  )
+  );
 
   test(
     `checkAnswer("My reply is no.") returns "very negative`,
     checkAnswer("My reply is no.") === "very negative"
-  )
+  );
 
   test(
     `checkAnswer returns the level of positivity"`,
@@ -111,13 +153,10 @@ function testAll() {
   for (let i = 0; i < 10; ++i) {
     answers.add(shakeBall());
   }
-  test(
-    `shakeBall returns different answers`,
-    answers.size > 1,
-  );
+  test(`shakeBall returns different answers`, answers.size > 1);
   test(
     `checkAnswer returns different answers`,
-    new Set(Array.from(answers.values()).map(checkAnswer)).size > 1,
+    new Set(Array.from(answers.values()).map(checkAnswer)).size > 1
   );
 }
 
