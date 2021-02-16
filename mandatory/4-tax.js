@@ -6,6 +6,7 @@
 */
 
 function calculateSalesTax(prices) {
+  // the sales tax is 20% of the prices
   return 0.2 * prices;
 }
 
@@ -20,6 +21,7 @@ function calculateSalesTax(prices) {
 */
 
 function addTaxAndFormatCurrency(prices) {
+  // this function adds on the 20% tax to the original price
   let afterTax = prices + calculateSalesTax(prices);
   return `£${afterTax}`
 }
