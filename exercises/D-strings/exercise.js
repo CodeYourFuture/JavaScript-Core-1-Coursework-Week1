@@ -1,3 +1,3 @@
 // Start by creating a variable `message`
-
-console.log(message);
+var message = "This is a String";
+console.log(typeof message);

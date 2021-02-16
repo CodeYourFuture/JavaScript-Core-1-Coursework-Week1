@@ -1,3 +1,4 @@
 const name = " Daniel  ";
-
-console.log(message);
+let message = name.trim(" ")
+console.log(message + "hi im bad an ");
+name = "harpal";
