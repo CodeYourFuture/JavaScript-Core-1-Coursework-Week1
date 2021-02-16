@@ -5,7 +5,9 @@
   Write a function that converts a price to USD (exchange rate is 1.4 $ to £)
 */
 
-function convertToUSD() {}
+function convertToUSD(price) {
+  return price * 1.4;
+}
 
 /*
   CURRENCY FORMATTING
@@ -15,7 +17,9 @@ function convertToUSD() {}
   They have also decided that they should add a 1% fee to all foreign transactions, which means you only convert 99% of the £ to BRL.
 */
 
-function convertToBRL() {}
+function convertToBRL(currency) {
+  return currency * 5.7 * 0.99;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
@@ -23,17 +27,19 @@ There are some Tests in this file that will help you work out if your code is wo
 To run these tests type `node 1-currency-conversion` into your terminal
 */
 
-const util = require('util');
+const util = require("util");
 
 function test(test_name, actual, expected) {
-    let status;
-    if (actual === expected) {
-        status = "PASSED";
-    } else {
-        status = `FAILED: expected: ${util.inspect(expected)} but your function returned: ${util.inspect(actual)}`;
-    }
+  let status;
+  if (actual === expected) {
+    status = "PASSED";
+  } else {
+    status = `FAILED: expected: ${util.inspect(
+      expected
+    )} but your function returned: ${util.inspect(actual)}`;
+  }
 
-    console.log(`${test_name}: ${status}`);
+  console.log(`${test_name}: ${status}`);
 }
 
 test("convertToUSD function works", convertToUSD(32), 44.8);
