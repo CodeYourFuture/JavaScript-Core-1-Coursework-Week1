@@ -22,8 +22,10 @@ return price + price*0.2;
 */
 
 function addTaxAndFormatCurrency(price) {
+  let result =  (calculateSalesTax(price)).toFixed(2);
+    console.log(result);
+    return "£" + result;
 
-  return "£" + (calculateSalesTax(price)).toFixed(2);
 
 }
 
@@ -59,16 +61,16 @@ test("calculateSalesTax function - case 3 works", calculateSalesTax(34), 40.8);
 
 test(
   "addTaxAndFormatCurrency function - case 1 works",
-  addTaxAndFormatCurrency(),
+  addTaxAndFormatCurrency(15),
   "£18.00"
 );
 test(
   "addTaxAndFormatCurrency function - case 2 works",
-  addTaxAndFormatCurrency(),
+  addTaxAndFormatCurrency(17.5),
   "£21.00"
 );
 test(
   "addTaxAndFormatCurrency function - case 3 works",
-  addTaxAndFormatCurrency(),
+  addTaxAndFormatCurrency(34),
   "£40.80"
 );
