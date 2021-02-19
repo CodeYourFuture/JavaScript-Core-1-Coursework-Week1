@@ -16,26 +16,35 @@
   the final result to the variable goodCode
 */
 
-function add() {
-
+function add(number1, number2) {
+    return number1 + number2;
 }
 
-function multiply() {
-
+function multiply(number1, number2) {
+    return number1 * number2;
 }
 
-function format() {
-
+function format(number) {
+    let formatToString= number.toString();
+    return `£${formatToString}`;
 }
 
 const startingValue = 2
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode = 
+/*
+ - It can easily generate to an error
+ -It may look very confuse to other programmer and also to you later in future if you had that though of  going through your work again
+ - lack of readability as all the function fall on one line. 
+*/
+let badCode = format(multiply(add(startingValue, 10),2));
 
 /* BETTER PRACTICE */
+// it Would be better storing those function inside of a variable and call them after (callback function)
 
-let goodCode = 
+let addNumber = add (startingValue, 10);
+let multiplies= multiply(addNumber,2);
+let goodCode = format(multiplies);
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.

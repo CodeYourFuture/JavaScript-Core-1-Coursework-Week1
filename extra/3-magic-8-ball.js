@@ -1,13 +1,13 @@
 /**
 
-  Let's peer into the future using a Magic 8 Ball!
+  Let"s peer into the future using a Magic 8 Ball!
   https://en.wikipedia.org/wiki/Magic_8-Ball 
 
   There are a few steps to being able view the future though:
   * Ask a question
   * Shake the ball
   * Get an answer
-  * Decide if it's positive or negative
+  * Decide if it"s positive or negative
 
   The question can be anything, but the answers are fixed,
   and have different levels of positivity or negativity.
@@ -36,17 +36,103 @@
     Concentrate and ask again.
 
   ## Very negative
-    Don't count on it.
+    Don"t count on it.
     My reply is no.
     My sources say no.
     Outlook not so good.
     Very doubtful.
 */
+let possibleAnswers=[
+  {
+    positivity: "It is certain",
+    display: "Very positive"
+  },
+  {
+    positivity: "It is decidedly so",
+    display: "Very positive"
+  },
+  {
+    positivity: "Without a doubt",
+    display: "Very positive"
+  },
+  {
+    positivity: "Yes - definitely",
+    display: "Very positive"
+  },
+  {
+    positivity: "You may rely on it",
+    display: "Very positive"
+  },
+  {
+    positivity: "As I see it, yes",
+    display: "positive"
+  },
+  {
+    positivity: "Most likely",
+    display: "positive"
+  },
+  {
+    positivity: "Outlook good.",
+    display: "positive"
+  },
+  {
+    positivity: "Yes",
+    display: "positive"
+  },
+  {
+    positivity: "Signs point to yes",
+    display: "positive"
+  },
+  {
+  positivity: "Reply hazy, try again",
+    display: "negative"
+  },
+  {
+    positivity: "Ask again later",
+    display: "negative"
+  },
+  {
+    positivity: "Better not tell you now",
+    display: "negative"
+  },
+  {
+    positivity: "Cannot predict now",
+    display: "negative"
+  },
+  {
+    positivity: "Concentrate and ask again",
+    display: "negative"
+  },
+  {
+    positivity: `Don"t count on it`,
+    display: "very negative"
+  },
+  {
+    positivity: "My reply is no",
+    display: "very negative"
+  },
+  {
+    positivity: "My sources say no",
+    display: "very negative"
+  },
+  {
+    positivity: "Outlook not so good",
+    display: "very negative"
+  },
+  {
+    positivity: "Very doubtful",
+    display: "very negative"
+  },
+  
+]
 
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
-  //Write your code in here
+  let randomValue= Math.floor(Math.random()*20);
+  console.log("The ball has shaken!")
+  return possibleAnswers[randomValue].positivity;
+
 }
 
 /* 
@@ -55,11 +141,16 @@ function shakeBall() {
     - positive
     - negative
     - very negative
+  
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
+
 function checkAnswer(answer) {
-  //Write your code in here
+  return possibleAnswers.filter( objectValue => {
+    return objectValue.positivity === answer;
+  });
+  //return positivity.display;
 }
 
 /* 
