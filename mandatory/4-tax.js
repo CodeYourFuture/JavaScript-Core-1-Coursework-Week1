@@ -6,7 +6,7 @@
 */
 
 function calculateSalesTax(a) {
-  return a + ((20 / 100) * a);
+  return a + (20 / 100) * a;
 }
 
 /*
@@ -20,7 +20,6 @@ function calculateSalesTax(a) {
 */
 
 function addTaxAndFormatCurrency(a) {
-
   return "£".concat(calculateSalesTax(a).toFixed(2));
 }
 
