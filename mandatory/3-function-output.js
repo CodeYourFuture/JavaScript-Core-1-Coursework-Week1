@@ -1,4 +1,4 @@
-// Add comments to explain what this function does. You're meant to use Google!
+// The Math.random() function returns a floating-point, pseudo-random number in the range 0 to less than 1 (inclusive of 0, but not 1) with approximately uniform distribution over that range. 
 function getNumber() {
   return Math.random() * 10;
 }
