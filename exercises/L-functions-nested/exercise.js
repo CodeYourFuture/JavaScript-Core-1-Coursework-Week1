@@ -11,8 +11,8 @@ return createMessage + totalStudents + "%";
 
 }
 
-let showStud = message("Percentage students: ");
-let showMent = message("Percentage mentors: ");
+let showStudentsInPercentage = message("Percentage students:");
+let showMentorsInPercentage = message("Percentage mentors:");
 
 var mentor1 = "Daniel";
 var mentor2 = "Irina";
@@ -26,8 +26,8 @@ function upperCase(greetings) {
 
 let showMentors = upperCase("hello ");
 
-console.log(showStud);
-console.log(showMent);
+console.log(showStudentsInPercentage);
+console.log(showMentorsInPercentage);
 console.log(showMentors + mentor1.toUpperCase());
 console.log(showMentors + mentor2.toUpperCase());
 console.log(showMentors + mentor3.toUpperCase());

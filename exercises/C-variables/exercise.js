@@ -1,5 +1,6 @@
 // Start by creating a variable `greeting`
-var greeting = "hello world";
-var greeting = "hello world";
-var greeting = "hello world";
+var greeting = "Hello world";
+
+console.log(greeting);
+console.log(greeting);
 console.log(greeting);

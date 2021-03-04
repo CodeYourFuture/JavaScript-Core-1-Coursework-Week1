@@ -1,10 +1,10 @@
 // Declare your function here
-function createLongGreeting (string1, number1) {
-    var string0 = "Hello, my name is ";
-    var string2 = " and I'm  ";
-    var string3 = " years old";
+function createLongGreeting (name, age) {
+    var stringPartOne = "Hello, my name is";
+    var stringPartTwo = "and I'm";
+    var stringPArtThree = "years old";
 
-    return string0 + string1 + string2 + number1 + string3;
+    return `${stringPartOne} ${name} ${stringPartTwo} ${age} ${stringPArtThree}`;
 }
 const greeting = createLongGreeting("Daniel", 30);
 

@@ -1,7 +1,7 @@
 // Start by creating a variable `message`
 var myName = "My name is ";
-var name = " Ryno ";
-var length = " and my name is ";
-var nameLength = name.length;
+var nameOf = "Daniel";
+var shortDescriptionOf = " and my name is ";
+var nameLength = nameOf.length;
 var characters = " characters long";
-console.log(myName + name.trim() + length + nameLength +characters);
+console.log(`${myName}${nameOf.trim()}${shortDescriptionOf}${nameLength}${characters}`);

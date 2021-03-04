@@ -5,7 +5,7 @@ function getNumber() {
 
 // Add comments to explain what this function does. You're meant to use Google!
 function s(w1, w2) {
-  return w1.concat(w2); // The .concat() method is used to join two or more arrays. or elements
+  return w1.concat(w2); // The .concat() method is used to join two or more arrays. or strings
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
