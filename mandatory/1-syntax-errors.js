@@ -9,7 +9,8 @@ return "Hello, my name is " + name + " and I am " + age + " years old";
 }
 
 function getTotal(a, b) {
-   return total = "The total is " + (a + b);
+   let total = "The total is " + (a + b);
+   return total;
 }
 
 /* 
