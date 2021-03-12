@@ -8,7 +8,7 @@ The `extra` folder contains exercises that you can complete to challenge yoursel
 
 ## Solutions
 
-The solutions for this coursework can be found here:
+The solutions for this coursework can be found here:sss
 
 https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week1-Solution
 
