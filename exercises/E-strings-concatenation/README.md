@@ -1,5 +1,5 @@
 You can add two strings together using the plus operator (`+`):
-s
+
 ```js
 var greetingStart = "Hello, my name is ";
 var name = "Daniel";

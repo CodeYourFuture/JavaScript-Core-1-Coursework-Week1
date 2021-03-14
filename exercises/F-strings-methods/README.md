@@ -12,7 +12,7 @@ You can also get a modified version of a string by calling _string methods_. Let
 ```js
 var name = "Daniel";
 var nameLowerCase = name.toLowerCase();
-
+a
 console.log(nameLowerCase); // "daniel"
 ```
 
