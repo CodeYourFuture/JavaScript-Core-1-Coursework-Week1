@@ -9,4 +9,3 @@ var myType = typeof myNum;
 
 console.log(myNum);
 console.log(myType);
-
