@@ -1,9 +1,11 @@
 // Add comments to explain what this function does. You're meant to use Google!
+//math.random returns a random number between 0 and 1 ie. from w3schools - returns a random number between 0 (inclusive),  and 1 (exclusive)
 function getNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+//The concat() method is used to join two or more strings.This method does not change the existing strings, but returns a new string containing the text of the joined strings.
 function s(w1, w2) {
   return w1.concat(w2);
 }
@@ -11,6 +13,7 @@ function s(w1, w2) {
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  return firstWord.concat(" ", secondWord, " ", thirdWord);
 }
 
 /* 
