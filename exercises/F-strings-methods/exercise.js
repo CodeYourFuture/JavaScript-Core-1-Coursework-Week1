@@ -1,9 +1,9 @@
 // Start by creating a variable `message`
-var name = "Daniel";
-var nameLength = name.length;
+let name = "Daniel";
+let nameLength = name.length;
 console.log(nameLength);
 
-var name = "Daniel";
-var nameLowerCase = name.toLowerCase();
+
+let nameLowerCase = name.toLowerCase();
 
 console.log(nameLowerCase);
