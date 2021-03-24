@@ -1,5 +1,5 @@
 // Start by creating a variable `message`
-var myGreetingStarts = "Hello, my name is ";
-var name = "Danial.";
-var greeting = myGreetingStarts + name;
+let myGreetingStarts = "Hello, my name is ";
+let name = "Danial.";
+let greeting = myGreetingStarts + name;
 console.log(greeting);
