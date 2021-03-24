@@ -5,6 +5,6 @@ function multiply(number) {
 }
 
 // Assign the result of calling the function the variable `result`
-var result = multiply(6, 2);
+let result = multiply(6, 2);
 
 console.log(result);
