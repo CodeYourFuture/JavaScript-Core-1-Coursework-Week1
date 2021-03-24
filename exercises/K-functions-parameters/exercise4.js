@@ -1,5 +1,5 @@
 // Declare your function first
-  var sum = sumOfNumber(13, 124);
+  let sum = sumOfNumber(13, 124);
   
 // Call the function and assign to a variable `sum`
 
