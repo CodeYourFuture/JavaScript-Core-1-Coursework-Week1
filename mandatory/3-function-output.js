@@ -1,13 +1,13 @@
 // Add comments to explain what this function does. You're meant to use Google!
 // This function returns a random number >= 0 and < 10
 function getNumber() {
-  return Math.random() * 10; 
+  return Math.random() * 10; // returns the number entered multiplied by a random integer from 0 to 9
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
 // This function returns the two input parameters concatenated (i.e. the second one following the first)
-function combine2Words(word1, word2) {
-  return word1.concat(word2);
+function combine2Words(w1, w2) {
+  return word1.concat(w2); // concatenates w1 and w2 without white space
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
@@ -15,6 +15,8 @@ function concatenate(firstWord, secondWord, thirdWord) {
   // Look at the test case below to understand what this function is expected to return.
    return `${firstWord} ${secondWord} ${thirdWord}`;
 }
+
+console.log(concatenate("Code","Your","Future"));
 
 /* 
 ===================================================
