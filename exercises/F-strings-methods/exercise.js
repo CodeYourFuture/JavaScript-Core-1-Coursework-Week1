@@ -2,4 +2,4 @@
 let name = "Reem";
 let nameLength = "My name is " + name + " and my name is 4 characters long";
 
-console.log(nameLength); // Logs 6
+console.log(nameLength); 
