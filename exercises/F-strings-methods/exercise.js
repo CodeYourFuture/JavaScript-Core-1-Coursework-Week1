@@ -1,6 +1,5 @@
 // Start by creating a variable `message`
-var name = "Reem";
-var nameLength = name.length;
+let name = "Reem";
+let nameLength = "My name is " + name + " and my name is 4 characters long";
 
-console.log("My name is " + name + " and my name is " + name.length + " characters long");
-
+console.log(nameLength); // Logs 6

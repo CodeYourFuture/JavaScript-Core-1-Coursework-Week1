@@ -13,3 +13,4 @@ console.log("sum of students and mentors " + sum);
 
 console.log("percentage students " + percentage(numberOfStudents, sum) + "%");
 console.log("percentage mentors " + percentage(numberOfMentors, sum) + "%");
+

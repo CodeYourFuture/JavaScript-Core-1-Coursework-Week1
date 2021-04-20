@@ -1,5 +1,4 @@
 const name = " Reem  ";
-const nameLength = name.length;
-
-
-console.log("My name is " + name.trim() + " and my name is " + name.length + " characters long");
+var str = "       My name is Daniel and my name is 6 characters long        ";
+alert(str.trim());
+console.log(message);
