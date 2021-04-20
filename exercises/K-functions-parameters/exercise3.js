@@ -1,6 +1,6 @@
 // Write your function here
 function createGreeting(name) {
-  let newGreeting = "Hi " + name ;
+  let newGreeting = "Hello, my name is " + name ;
   return newGreeting;
 }
 
