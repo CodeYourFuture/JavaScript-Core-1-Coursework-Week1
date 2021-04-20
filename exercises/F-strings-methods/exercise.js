@@ -2,4 +2,5 @@
 var name = "Reem";
 var nameLength = name.length;
 
-console.log(nameLength); 
+console.log("My name is " + name + " and my name is " + name.length + " characters long");
+
