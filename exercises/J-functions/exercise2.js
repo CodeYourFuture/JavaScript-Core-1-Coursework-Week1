@@ -1,4 +1,6 @@
-function triple(number) {
+function triple( number )
+{
+  return number * 3
   // complete function here
 }
 
