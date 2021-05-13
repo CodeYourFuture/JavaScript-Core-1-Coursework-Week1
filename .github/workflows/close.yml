@@ -2,7 +2,7 @@ name: 'Close stale issues and PRs'
 on:
   workflow_dispatch:
   schedule:
-    - cron: '* * * * *'
+    - cron: '30 1 * * *'
 
 jobs:
   stale:
@@ -11,6 +11,6 @@ jobs:
       - uses: actions/stale@v3
         with:
           close-pr-message: 'Your coursework submission has been closed because nobody has interacted with it in 30 days. You are welcome to re-open it to get more feedback.'
-          days-before-stale: -1
-          days-before-close: 30
+          days-before-stale: 30
+          days-before-close: 0
           days-before-issue-close: -1
