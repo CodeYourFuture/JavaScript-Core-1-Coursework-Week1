@@ -24,7 +24,7 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 2-l
 ===================================================
 */
 
-const {test} = require("@jest/globals");
+const {expect, test} = require("@jest/globals");
 
 test("trimWord trims leading and trailing whitespace", () => {
     expect(trimWord("   CodeYourFuture ")).toEqual("CodeYourFuture");

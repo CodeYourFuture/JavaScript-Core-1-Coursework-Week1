@@ -30,7 +30,7 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 4-t
 ===================================================
 */
 
-const {test} = require("@jest/globals");
+const {expect, test} = require("@jest/globals");
 
 test("calculateSalesTax for £15", () => {
     expect(calculateSalesTax(15)).toEqual(18);
