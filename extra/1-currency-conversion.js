@@ -20,23 +20,24 @@ function convertToBRL() {}
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
 
-To run these tests type `node 1-currency-conversion` into your terminal
+To run these tests type `npm run extraTo run the tests for just this one file, type `npm run extra-tests -- --testPathPattern 1-syntax-errors` into your terminal
+(Reminder: You must have run `npm install` one time before this will work!)
 */
 
-const util = require("util");
+const {expect, test} = require("@jest/globals");
 
-function test(test_name, actual, expected) {
-  let status;
-  if (actual === expected) {
-    status = "PASSED";
-  } else {
-    status = `FAILED: expected: ${util.inspect(
-      expected
-    )} but your function returned: ${util.inspect(actual)}`;
-  }
+test("convertToUSD function works for £32", () => {
+    expect(convertToUSD(32)).toEqual(44.8);
+});
 
-  console.log(`${test_name}: ${status}`);
-}
+test("convertToUSD function works for £50", () => {
+    expect(convertToUSD(50)).toEqual(70);
+});
 
-test("convertToUSD function works", convertToUSD(32), 44.8);
-test("convertToBRL function works", convertToBRL(30), 169.29);
+test("convertToBRL function works for £30", () => {
+    expect(convertToBRL(30)).toEqual(169.29);
+});
+
+test("convertToBRL function works for £0.99", () => {
+    expect(convertToBRL(1.5)).toEqual(8.46);
+});
