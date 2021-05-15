@@ -19,24 +19,22 @@ function getTotal(a, b) {
 
 There are some Tests in this file that will help you work out if your code is working.
 
-To run these tests type `node 1-syntax-errors.js` into your terminal
+To run the tests for just this one file, type `npm test -- --testPathPattern 1-syntax-errors` into your terminal
+(Reminder: You must have run `npm install` one time before this will work!)
 
 ===================================================
 */
 
-const util = require('util');
+const {test} = require("@jest/globals");
 
-function test(test_name, actual, expected) {
-    let status;
-    if (actual === expected) {
-        status = "PASSED";
-    } else {
-        status = `FAILED: expected: ${util.inspect(expected)} but your function returned: ${util.inspect(actual)}`;
-    }
+test("addNumbers adds numbers correctly", () => {
+    expect(addNumbers(3, 4, 6)).toEqual(13);
+});
 
-    console.log(`${test_name}: ${status}`);
-}
+test("introduceMe function returns the correct string", () => {
+    expect(introduceMe("Sonjide", 27)).toEqual("Hello, my name is Sonjide and I am 27 years old");
+})
 
-test("fixed addNumbers function - case 1", addNumbers(3, 4, 6), 13);
-test("fixed introduceMe function", introduceMe("Sonjide", 27), "Hello, my name is Sonjide and I am 27 years old");
-test("fixed getTotal function", getTotal(23, 5), "The total is 28");
+test("getTotal returns a string describing the total", () => {
+    expect(getTotal(23, 5)).toEqual("The total is 28");
+})
