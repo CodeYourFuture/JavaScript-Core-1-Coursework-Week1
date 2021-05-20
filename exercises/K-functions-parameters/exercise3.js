@@ -1,5 +1,7 @@
-// Write your function here
+function printstring(name) {
+  return "Hello, my name is " + name;
+}
 
-var greeting = createGreeting("Daniel");
+var greeting = printstring("Richard");
 
 console.log(greeting);
