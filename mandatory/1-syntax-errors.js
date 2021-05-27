@@ -25,8 +25,6 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 1-s
 ===================================================
 */
 
-const { expect, test } = require("@jest/globals");
-
 test("addNumbers adds numbers correctly", () => {
   expect(addNumbers(3, 4, 6)).toEqual(13);
 });

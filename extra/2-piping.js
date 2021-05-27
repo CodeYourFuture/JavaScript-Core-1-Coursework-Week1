@@ -44,8 +44,6 @@ To run these tests type `npm run extraTo run the tests for just this one file, t
 (Reminder: You must have run `npm install` one time before this will work!)
 */
 
-const { expect, test } = require("@jest/globals");
-
 test("add function - case 1 works", () => {
   expect(add(1, 3)).toEqual(4);
 });

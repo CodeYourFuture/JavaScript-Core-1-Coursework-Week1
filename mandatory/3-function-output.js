@@ -24,8 +24,6 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 3-f
 ==================================
 */
 
-const { expect, test } = require("@jest/globals");
-
 test("concatenate example #1", () => {
   expect(concatenate("code", "your", "future")).toEqual("code your future");
 });
