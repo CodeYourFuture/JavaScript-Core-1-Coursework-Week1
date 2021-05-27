@@ -28,14 +28,14 @@ function format() {
 
 }
 
-const startingValue = 2
+const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode = 
+let badCode =
 
 /* BETTER PRACTICE */
 
-let goodCode = 
+let goodCode =
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
@@ -44,32 +44,32 @@ To run these tests type `npm run extraTo run the tests for just this one file, t
 (Reminder: You must have run `npm install` one time before this will work!)
 */
 
-const {expect, test} = require("@jest/globals");
+const { expect, test } = require("@jest/globals");
 
 test("add function - case 1 works", () => {
-    expect(add(1, 3)).toEqual(4);
+  expect(add(1, 3)).toEqual(4);
 });
 
 test("add function - case 2 works", () => {
-    expect(add(2.4, 5)).toEqual(7.4);
+  expect(add(2.4, 5)).toEqual(7.4);
 });
 
 test("multiply function works", () => {
-    expect(multiply(2, 3)).toEqual(6);
+  expect(multiply(2, 3)).toEqual(6);
 });
 
 test("format function works for whole number", () => {
-    expect(format(16)).toEqual("£16");
+  expect(format(16)).toEqual("£16");
 });
 
 test("format function works for decimal number", () => {
-    expect(format(10.1)).toEqual("£10.1");
+  expect(format(10.1)).toEqual("£10.1");
 });
 
 test("badCode variable correctly assigned", () => {
-    expect(badCode).toEqual("£24");
+  expect(badCode).toEqual("£24");
 });
 
 test("goodCode variable correctly assigned", () => {
-    expect(goodCode).toEqual("£24");
+  expect(goodCode).toEqual("£24");
 });

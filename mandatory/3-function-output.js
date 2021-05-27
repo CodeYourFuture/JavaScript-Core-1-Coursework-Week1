@@ -24,16 +24,16 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 3-f
 ==================================
 */
 
-const {expect, test} = require("@jest/globals");
+const { expect, test } = require("@jest/globals");
 
 test("concatenate example #1", () => {
-    expect(concatenate("code", "your", "future")).toEqual("code your future");
+  expect(concatenate("code", "your", "future")).toEqual("code your future");
 });
 
 test("concatenate example #2", () => {
-    expect(concatenate("I", "like", "pizza")).toEqual("I like pizza");
+  expect(concatenate("I", "like", "pizza")).toEqual("I like pizza");
 });
 
 test("concatenate doesn't only accept strings", () => {
-    expect(concatenate("I", "am", 13)).toEqual("I am 13");
+  expect(concatenate("I", "am", 13)).toEqual("I am 13");
 });

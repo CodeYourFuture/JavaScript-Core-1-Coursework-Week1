@@ -24,20 +24,20 @@ To run these tests type `npm run extraTo run the tests for just this one file, t
 (Reminder: You must have run `npm install` one time before this will work!)
 */
 
-const {expect, test} = require("@jest/globals");
+const { expect, test } = require("@jest/globals");
 
 test("convertToUSD function works for £32", () => {
-    expect(convertToUSD(32)).toEqual(44.8);
+  expect(convertToUSD(32)).toEqual(44.8);
 });
 
 test("convertToUSD function works for £50", () => {
-    expect(convertToUSD(50)).toEqual(70);
+  expect(convertToUSD(50)).toEqual(70);
 });
 
 test("convertToBRL function works for £30", () => {
-    expect(convertToBRL(30)).toEqual(169.29);
+  expect(convertToBRL(30)).toEqual(169.29);
 });
 
 test("convertToBRL function works for £0.99", () => {
-    expect(convertToBRL(1.5)).toEqual(8.46);
+  expect(convertToBRL(1.5)).toEqual(8.46);
 });
