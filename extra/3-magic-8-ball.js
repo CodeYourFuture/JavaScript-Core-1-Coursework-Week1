@@ -68,63 +68,51 @@ function checkAnswer(answer) {
 
 There are some Tests in this file that will help you work out if your code is working.
 
-To run these tests type `node 3-magic-8-ball.js` into your terminal
+To run these tests type `npm run extraTo run the tests for just this one file, type `npm run extra-tests -- --testPathPattern 3-magic-8-ball` into your terminal
+(Reminder: You must have run `npm install` one time before this will work!)
 ==================================
 */
 
-const log = console.log;
-let logged;
-console.log = function () {
-  log(...arguments);
-  logged = arguments[0];
-};
-
-function test(test_name, expr) {
-  let status;
-  if (expr) {
-    status = "PASSED";
-  } else {
-    status = "FAILED";
-  }
-
-  logged = undefined;
-  console.log(`${test_name}: ${status}`);
-}
-
-const validAnswers = [];
-function testAll() {
+test("whole magic 8 ball sequence", () => {
+  const consoleLogSpy = jest.spyOn(global.console, "log");
   const answer = shakeBall();
-  test(
-    `shakeBall logs "The ball has shaken!"`,
-    logged === "The ball has shaken!"
-  );
-  test(`shakeBall returns an string answer`, typeof answer === "string");
 
-  test(
-    `checkAnswer("It is decidedly so.") returns "very positive`,
-    checkAnswer("It is decidedly so.") === "very positive"
-  );
+  expect(typeof answer).toEqual("string");
 
-  test(
-    `checkAnswer("My reply is no.") returns "very negative`,
-    checkAnswer("My reply is no.") === "very negative"
-  );
+  expect(consoleLogSpy).toHaveBeenCalledTimes(1);
+  expect(consoleLogSpy).toHaveBeenLastCalledWith("The ball has shaken!");
 
-  test(
-    `checkAnswer returns the level of positivity"`,
-    ["very positive", "positive", "negative", "very negative"].includes(
-      checkAnswer(answer)
-    )
-  );
-  const answers = new Set();
+  expect(checkAnswer(answer)).toBeOneOf([
+    "very positive",
+    "positive",
+    "negative",
+    "very negative",
+  ]);
+});
+
+test("magic 8 ball returns different values each time", () => {
+  const seenAnswers = new Set();
   for (let i = 0; i < 10; ++i) {
-    answers.add(shakeBall());
+    seenAnswers.add(shakeBall());
   }
-  test(`shakeBall returns different answers`, answers.size > 1);
-  test(
-    `checkAnswer returns different answers`,
-    new Set(Array.from(answers.values()).map(checkAnswer)).size > 1
-  );
-}
+  if (seenAnswers.size < 2) {
+    throw Error(
+      "Expected to get different random answers each time shakeBall was called, but always got the same one"
+    );
+  }
 
-testAll();
+  let seenPositivities = new Set(Array.from(answers.values()).map(checkAnswer));
+  if (seenPositivities.size < 2) {
+    throw Error(
+      "Expected to random answers with different positivities each time shakeBall was called, but always got the same one"
+    );
+  }
+});
+
+test("checkAnswer works for `It is decidedly so.`", () => {
+  expect(checkAnswer("It is decidedly so.")).toEqual("very positive");
+});
+
+test("checkAnswer works for `My reply is no.`", () => {
+  expect(checkAnswer("My reply is no.")).toEqual("very negative");
+});

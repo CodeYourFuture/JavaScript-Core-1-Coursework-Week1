@@ -19,33 +19,33 @@ function multiply(a, b, c) {
 
 There are some Tests in this file that will help you work out if your code is working.
 
-To run these tests type `node 2-logic-error` into your terminal
+To run the tests for just this one file, type `npm test -- --testPathPattern 2-logic-error` into your terminal
+(Reminder: You must have run `npm install` one time before this will work!)
 ===================================================
 */
 
-const util = require("util");
+test("trimWord trims leading and trailing whitespace", () => {
+  expect(trimWord("   CodeYourFuture ")).toEqual("CodeYourFuture");
+});
 
-function test(test_name, actual, expected) {
-  let status;
-  if (actual === expected) {
-    status = "PASSED";
-  } else {
-    status = `FAILED: expected: ${util.inspect(
-      expected
-    )} but your function returned: ${util.inspect(actual)}`;
-  }
+test("trimWord doesn't remove whitespace in the middle of the string", () => {
+  expect(trimWord(" CodeYourFuture teaches coding     ")).toEqual(
+    "CodeYourFuture teaches coding"
+  );
+});
 
-  console.log(`${test_name}: ${status}`);
-}
+test("getStringLength returns the length of a word", () => {
+  expect(getStringLength("Turtles")).toEqual(7);
+});
 
-test(
-  "fixed trimWord function",
-  trimWord("  CodeYourFuture "),
-  "CodeYourFuture"
-);
-test(
-  "fixed wordLength function",
-  getWordLength("A wild sentence appeared!"),
-  25
-);
-test("fixed multiply function", multiply(2, 3, 6), 36);
+test("getStringLength returns the length of a sentence", () => {
+  expect(getStringLength("A wild sentence appeared!")).toEqual(25);
+});
+
+test("multiply multiplies numbers", () => {
+  expect(multiply(2, 3, 6)).toEqual(36);
+});
+
+test("multiply multiplies different numbers", () => {
+  expect(multiply(2, 3, 4)).toEqual(24);
+});

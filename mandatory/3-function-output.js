@@ -19,37 +19,19 @@ function concatenate(firstWord, secondWord, thirdWord) {
 
 There are some Tests in this file that will help you work out if your code is working.
 
-To run these tests type `node 3-function-output` into your terminal
+To run the tests for just this one file, type `npm test -- --testPathPattern 3-function-output` into your terminal
+(Reminder: You must have run `npm install` one time before this will work!)
 ==================================
 */
 
-const util = require("util");
+test("concatenate example #1", () => {
+  expect(concatenate("code", "your", "future")).toEqual("code your future");
+});
 
-function test(test_name, actual, expected) {
-  let status;
-  if (actual === expected) {
-    status = "PASSED";
-  } else {
-    status = `FAILED: expected: ${util.inspect(
-      expected
-    )} but your function returned: ${util.inspect(actual)}`;
-  }
+test("concatenate example #2", () => {
+  expect(concatenate("I", "like", "pizza")).toEqual("I like pizza");
+});
 
-  console.log(`${test_name}: ${status}`);
-}
-
-test(
-  "concatenate function - case 1 works",
-  concatenate("code", "your", "future"),
-  "code your future"
-);
-test(
-  "concatenate function - case 2 works",
-  concatenate("I", "like", "pizza"),
-  "I like pizza"
-);
-test(
-  "concatenate function - case 3 works",
-  concatenate("I", "am", 13),
-  "I am 13"
-);
+test("concatenate doesn't only accept strings", () => {
+  expect(concatenate("I", "am", 13)).toEqual("I am 13");
+});

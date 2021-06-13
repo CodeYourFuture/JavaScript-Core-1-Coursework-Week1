@@ -25,42 +25,31 @@ function addTaxAndFormatCurrency() {}
 
 There are some Tests in this file that will help you work out if your code is working.
 
-To run these tests type `node 4-tax.js` into your terminal
-
+To run the tests for just this one file, type `npm test -- --testPathPattern 4-tax` into your terminal
+(Reminder: You must have run `npm install` one time before this will work!)
 ===================================================
 */
 
-const util = require("util");
+test("calculateSalesTax for £15", () => {
+  expect(calculateSalesTax(15)).toEqual(18);
+});
 
-function test(test_name, actual, expected) {
-  let status;
-  if (actual === expected) {
-    status = "PASSED";
-  } else {
-    status = `FAILED: expected: ${util.inspect(
-      expected
-    )} but your function returned: ${util.inspect(actual)}`;
-  }
+test("calculateSalesTax for £17.50", () => {
+  expect(calculateSalesTax(17.5)).toEqual(21);
+});
 
-  console.log(`${test_name}: ${status}`);
-}
+test("calculateSalesTax for £34", () => {
+  expect(calculateSalesTax(34)).toEqual(40.8);
+});
 
-test("calculateSalesTax function - case 1 works", calculateSalesTax(15), 18);
-test("calculateSalesTax function - case 2 works", calculateSalesTax(17.5), 21);
-test("calculateSalesTax function - case 3 works", calculateSalesTax(34), 40.8);
+test("addTaxAndFormatCurrency for £15", () => {
+  expect(addTaxAndFormatCurrency(15)).toEqual("£18.00");
+});
 
-test(
-  "addTaxAndFormatCurrency function - case 1 works",
-  addTaxAndFormatCurrency(15),
-  "£18.00"
-);
-test(
-  "addTaxAndFormatCurrency function - case 2 works",
-  addTaxAndFormatCurrency(17.5),
-  "£21.00"
-);
-test(
-  "addTaxAndFormatCurrency function - case 3 works",
-  addTaxAndFormatCurrency(34),
-  "£40.80"
-);
+test("addTaxAndFormatCurrency for £17.50", () => {
+  expect(addTaxAndFormatCurrency(17.5)).toEqual("£21.00");
+});
+
+test("addTaxAndFormatCurrency for £34", () => {
+  expect(addTaxAndFormatCurrency(34)).toEqual("£40.80");
+});
