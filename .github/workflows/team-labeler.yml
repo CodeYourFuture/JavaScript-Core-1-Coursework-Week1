@@ -2,6 +2,8 @@ name: "team-labeller"
 on:
   pull_request:
   workflow_dispatch:
+  schedule:
+    - cron: "30 1 * * *"
 jobs:
   test:
     runs-on: ubuntu-latest
