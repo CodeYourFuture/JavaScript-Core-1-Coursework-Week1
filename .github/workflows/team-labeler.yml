@@ -1,9 +1,7 @@
-name: "team-labeller"
-on:
-  pull_request:
-  workflow_dispatch:
+name: team-labeler
+on: pull_request
 jobs:
-  test:
+  team-labeler:
     runs-on: ubuntu-latest
     steps:
     - uses: JulienKode/team-labeler-action@v0.1.0
