@@ -14,9 +14,9 @@ function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
   let firstWordWithSpace = combine2Words(firstWord, " ");
-  let fistAndSeconWord = combine2Words(firstWordWithSpace , secondWord);
-  let seconWordWithSpace = combine2Words(fistAndSeconWord, " ");
-  return combine2Words(seconWordWithSpace, thirdWord);
+  let firstAndSecondWord = combine2Words(firstWordWithSpace , secondWord);
+  let secondWordWithSpace = combine2Words(firstAndSecondWord, " ");
+  return combine2Words(secondWordWithSpace, thirdWord);
 }
 
 /* 
