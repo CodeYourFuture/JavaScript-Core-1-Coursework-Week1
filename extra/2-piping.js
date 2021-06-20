@@ -1,41 +1,49 @@
-/*
-  PIPING FUNCTIONS
-  ================
-  1. Write 3 functions:
-  - one that adds 2 numbers together
-  - one that multiplies 2 numbers together
-  - one that formats a number so it's returned as a string with a £ sign before it (e.g. 20 -> £20)
+/**
+ * /*
+ *   PIPING FUNCTIONS
+ *   ================
+ *   1. Write 3 functions:
+ *   - one that adds 2 numbers together
+ *   - one that multiplies 2 numbers together
+ *   - one that formats a number so it's returned as a string with a £ sign before it (e.g. 20 -> £20)
+ *
+ *   2. Using the variable startingValue as input, perform the following operations using your functions all
+ *   on one line (assign the result to the variable badCode):
+ *   - add 10 to startingValue
+ *   - multiply the result by 2
+ *   - format it
+ *
+ *   3. Write a more readable version of what you wrote in step 2 under the BETTER PRACTICE comment. Assign
+ *   the final result to the variable goodCode
+ *
+ * @format
+ */
 
-  2. Using the variable startingValue as input, perform the following operations using your functions all
-  on one line (assign the result to the variable badCode):
-  - add 10 to startingValue
-  - multiply the result by 2
-  - format it
-  
-  3. Write a more readable version of what you wrote in step 2 under the BETTER PRACTICE comment. Assign
-  the final result to the variable goodCode
-*/
-
-function add() {
-
+function add(num1, num2) {
+	var result = num1 + num2;
+	return result;
 }
 
-function multiply() {
-
+function multiply(num1, num2) {
+	var result = num1 * num2;
+	return result;
 }
 
-function format() {
-
+function format(num) {
+	var result = `£${num}`;
+	return result;
 }
 
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =
-
+let badCode = add(startingValue, 10);badCode = multiply(badCode, startingValue);badCode = format(badCode);
+//Code is very difficult to read when it is written on single line, makes it challenging to rectify errors if encountered.
 /* BETTER PRACTICE */
 
-let goodCode =
+let goodCode = add(startingValue, 10);
+goodCode = multiply(goodCode, startingValue);
+goodCode = format(goodCode);
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
@@ -45,29 +53,29 @@ To run these tests type `npm run extraTo run the tests for just this one file, t
 */
 
 test("add function - case 1 works", () => {
-  expect(add(1, 3)).toEqual(4);
+	expect(add(1, 3)).toEqual(4);
 });
 
 test("add function - case 2 works", () => {
-  expect(add(2.4, 5)).toEqual(7.4);
+	expect(add(2.4, 5)).toEqual(7.4);
 });
 
 test("multiply function works", () => {
-  expect(multiply(2, 3)).toEqual(6);
+	expect(multiply(2, 3)).toEqual(6);
 });
 
 test("format function works for whole number", () => {
-  expect(format(16)).toEqual("£16");
+	expect(format(16)).toEqual("£16");
 });
 
 test("format function works for decimal number", () => {
-  expect(format(10.1)).toEqual("£10.1");
+	expect(format(10.1)).toEqual("£10.1");
 });
 
 test("badCode variable correctly assigned", () => {
-  expect(badCode).toEqual("£24");
+	expect(badCode).toEqual("£24");
 });
 
 test("goodCode variable correctly assigned", () => {
-  expect(goodCode).toEqual("£24");
+	expect(goodCode).toEqual("£24");
 });
