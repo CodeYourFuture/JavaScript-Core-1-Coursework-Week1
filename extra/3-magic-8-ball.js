@@ -101,7 +101,7 @@ test("magic 8 ball returns different values each time", () => {
     );
   }
 
-  let seenPositivities = new Set(Array.from(answers.values()).map(checkAnswer));
+  let seenPositivities = new Set(Array.from(seenAnswers.values()).map(checkAnswer));
   if (seenPositivities.size < 2) {
     throw Error(
       "Expected to random answers with different positivities each time shakeBall was called, but always got the same one"

@@ -7,8 +7,10 @@ function trimWord(word) {
 }
 
 function getStringLength(word) {
+
 	var noSpaceString = word.trim();
 	return noSpaceString.length;
+
 }
 
 function multiply(a, b, c) {
