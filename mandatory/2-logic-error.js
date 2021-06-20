@@ -1,5 +1,9 @@
 // The syntax for this function is valid but it has an error, find it and fix it.
 
+function wordtrim(){
+  return " hi afafaf";  //maybe need If Statements with numbers????
+}
+
 function trimWord(word) {
   return wordtrim();
 }
