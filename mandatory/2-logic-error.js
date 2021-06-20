@@ -1,16 +1,19 @@
+/** @format */
+
 // The syntax for this function is valid but it has an error, find it and fix it.
 
 function trimWord(word) {
-  return wordtrim();
+	return word.trim();
 }
 
-function getWordLength(word) {
-  return "word".length();
+function getStringLength(word) {
+	var noSpaceString = word.trim();
+	return noSpaceString.length;
 }
 
 function multiply(a, b, c) {
-  a * b * c;
-  return;
+	var result = a * b * c;
+	return result;
 }
 
 /* 
@@ -25,27 +28,27 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 2-l
 */
 
 test("trimWord trims leading and trailing whitespace", () => {
-  expect(trimWord("   CodeYourFuture ")).toEqual("CodeYourFuture");
+	expect(trimWord("   CodeYourFuture ")).toEqual("CodeYourFuture");
 });
 
 test("trimWord doesn't remove whitespace in the middle of the string", () => {
-  expect(trimWord(" CodeYourFuture teaches coding     ")).toEqual(
-    "CodeYourFuture teaches coding"
-  );
+	expect(trimWord(" CodeYourFuture teaches coding     ")).toEqual(
+		"CodeYourFuture teaches coding"
+	);
 });
 
 test("getStringLength returns the length of a word", () => {
-  expect(getStringLength("Turtles")).toEqual(7);
+	expect(getStringLength("Turtles")).toEqual(7);
 });
 
 test("getStringLength returns the length of a sentence", () => {
-  expect(getStringLength("A wild sentence appeared!")).toEqual(25);
+	expect(getStringLength("A wild sentence appeared!")).toEqual(25);
 });
 
 test("multiply multiplies numbers", () => {
-  expect(multiply(2, 3, 6)).toEqual(36);
+	expect(multiply(2, 3, 6)).toEqual(36);
 });
 
 test("multiply multiplies different numbers", () => {
-  expect(multiply(2, 3, 4)).toEqual(24);
+	expect(multiply(2, 3, 4)).toEqual(24);
 });
