@@ -1,16 +1,20 @@
 // Add comments to explain what this function does. You're meant to use Google!
 function getRandomNumber() {
-  return Math.random() * 10;
+  return Math.random() * 10; 
+  //function returns random number in the range 0 to less than 10 (inclusive of 0, but not 10)
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
 function combine2Words(word1, word2) {
   return word1.concat(word2);
+  // function is used to join two strings.
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+ return combine2Words(combine2Words(combine2Words(combine2Words(firstWord, " "), secondWord), " "),thirdWord);
+  // return `${firstWord} ${secondWord} ${thirdWord}`; //this is also work but i tried to use "combine2Words" function.
 }
 
 /* 
