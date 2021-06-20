@@ -13,8 +13,10 @@ function combine2Words(word1, word2) {
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
- return combine2Words(combine2Words(combine2Words(combine2Words(firstWord, " "), secondWord), " "),thirdWord);
-  // return `${firstWord} ${secondWord} ${thirdWord}`; //this is also work but i tried to use "combine2Words" function.
+  let firstWordWithSpace = combine2Words(firstWord, " ");
+  let fistAndSeconWord = combine2Words(firstWordWithSpace , secondWord);
+  let seconWordWithSpace = combine2Words(fistAndSeconWord, " ");
+  return combine2Words(seconWordWithSpace, thirdWord);
 }
 
 /* 
