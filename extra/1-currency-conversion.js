@@ -58,8 +58,8 @@ test("convertToBRL function works for £30", () => {
 
 
 test("convertToBRL function works for £0.99", () => {
-	expect(convertToBRL(1.5)).toEqual(8.46);
-
+  expect(convertToBRL(1.5)).toEqual(8.46);
+});
 test("convertToBRL function works for £1.50", () => {
   expect(convertToBRL(1.5)).toEqual(8.46);
 
