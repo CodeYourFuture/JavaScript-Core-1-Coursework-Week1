@@ -4,7 +4,7 @@ function trimWord(word) {
   return wordtrim();
 }
 
-function getWordLength(word) {
+function getStringLength(word) {
   return "word".length();
 }
 
