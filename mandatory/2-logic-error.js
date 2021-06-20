@@ -4,13 +4,12 @@ function trimWord(word) {
   return wordtrim();
 }
 
-function getWordLength(word) {
-  return "word".length();
+function getStringLength(word) {
+  return word.length();
 }
 
 function multiply(a, b, c) {
-  a * b * c;
-  return;
+  return a * b * c;
 }
 
 /* 
