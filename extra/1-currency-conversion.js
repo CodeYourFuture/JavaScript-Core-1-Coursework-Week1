@@ -17,7 +17,13 @@ function convertToUSD(price) {
   They have also decided that they should add a 1% fee to all foreign transactions, which means you only convert 99% of the £ to BRL.
 */
 
-function convertToBRL() {}
+function convertToBRL(price, decimals) {
+  const fee = (price / 100) * 99;
+  const exchangeRate = fee * 5.7;
+  const calculateDecimals = exchangeRate.toFixed(2);
+  const total = Number(calculateDecimals);
+  return total;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
