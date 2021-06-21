@@ -1,3 +1,7 @@
 // Start by creating a variable `message`
+const greetingPartOne = "Hi, my name is ";
+const firstName = "Humail";
 
-console.log(message);
+const greetingConcatenated = greetingPartOne + firstName;
+
+console.log(greetingConcatenated);
