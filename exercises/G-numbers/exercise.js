@@ -1,8 +1,8 @@
 // Start by creating a variables `numberOfStudents` and `numberOfMentors`
-const numberOfStudents = 20;
-const numberOfMentors = 10;
-const totalNumbers = `There are ${numberOfStudents} students and ${numberOfMentors} mentors. In total, there are ${
-  numberOfStudents + numberOfMentors
-} students and mentors.`;
+const numberOfStudents = 15;
+const numberOfMentors = 8;
+const totalNumbers = numberOfStudents + numberOfMentors;
 
-console.log(totalNumbers);
+console.log(`Number of students: ${numberOfStudents}`);
+console.log(`Number of mentors: ${numberOfMentors}`);
+console.log(`Total number of students and mentors: ${totalNumbers}`);
