@@ -1,3 +1,4 @@
+
 /**
 
   Let's peer into the future using a Magic 8 Ball!
@@ -47,7 +48,12 @@
 // and return the answer.
 function shakeBall() {
   //Write your code in here
+  console.log("The ball has shaken!");
+  var message = "";
+  return message;
 }
+
+
 
 /* 
   This function should say whether the answer it is given is
