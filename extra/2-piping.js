@@ -16,26 +16,30 @@
   the final result to the variable goodCode
 */
 
-function add() {
-
+function add(num1, num2) {
+  return num1 + num2;
 }
 
-function multiply() {
-
+function multiply(value1, value2) {
+  return value1 * value2;
 }
 
-function format() {
-
+function format(number) {
+  return `£${number}`;
 }
 
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =
-
+//readability is sacrificed for concise code. Returning to this at a later date I would need to consult the global functions to figure out each step of the program
+let badCode = format(multiply(add(startingValue, 10), 2));
 /* BETTER PRACTICE */
-
-let goodCode =
+//storing the add function value in a variable
+const adding = add(startingValue, 10);
+//multiplying result
+const multiplied = multiply(adding, 2);
+//taking the variable and returning the entire equation to a variable
+let goodCode = format(multiplied);
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
