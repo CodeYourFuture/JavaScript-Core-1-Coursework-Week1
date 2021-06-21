@@ -14,7 +14,9 @@
     "url": "https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week1/issues"
   },
   "jest": {
-    "setupFilesAfterEnv": ["jest-extended"]
+    "setupFilesAfterEnv": [
+      "jest-extended"
+    ]
   },
   "homepage": "https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week1#readme",
   "devDependencies": {

@@ -1,5 +1,8 @@
+/** @format */
+
 function triple(number) {
-  // complete function here
+	// complete function here
+	return number * 3;
 }
 
 var result = triple(12);
