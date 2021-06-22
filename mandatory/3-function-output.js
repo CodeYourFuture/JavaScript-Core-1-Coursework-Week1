@@ -1,9 +1,11 @@
 // Add comments to explain what this function does. You're meant to use Google!
+/*Math.random() function gives a random number between 0 and 1, get the number with the function and multiply it with 10 */
 function getRandomNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+/* concat() method concatenates the input given, such as string or array; in this example it concatenates word2 to the end of word1 */  
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
@@ -11,6 +13,7 @@ function combine2Words(word1, word2) {
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  return `${firstWord} ${secondWord} ${thirdWord}`;
 }
 
 /* 
