@@ -1,3 +1,5 @@
 // Start by creating a variable `message`
-
-console.log(message);
+var type = "String of charectors";
+var datatype = typeof type;
+console.log(type);
+console.log(datatype);
