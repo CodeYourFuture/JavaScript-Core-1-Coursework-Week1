@@ -1,8 +1,8 @@
 const name = " Daniel  ";
-const nameLength = name.length;
 const nameTrim = name.trim();
+const nameLength = nameTrim.length;
 
 message =
-  "My name is " + name.trim() + " and my name is " + nameLength + " characters long";
+  "My name is " + nameTrim + " and my name is " + nameLength + " characters long";
 
 console.log(message);
