@@ -27,7 +27,7 @@ function convertToBRL(amount) {
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
 
-To run these tests type `npm run extraTo run the tests for just this one file, type `npm run extra-tests -- --testPathPattern 1-syntax-errors` into your terminal
+To run these tests type `npm run extraTo run the tests for just this one file, type `npm run extra-tests -- --testPathPattern 1-currency-conversion` into your terminal
 (Reminder: You must have run `npm install` one time before this will work!)
 */
 
