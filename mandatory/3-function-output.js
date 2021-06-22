@@ -10,7 +10,7 @@ function combine2Words(word1, word2) {
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
-  return firstWord.concat(secondWord, thirdWord);
+  return firstWord.concat(" ", secondWord, " ", thirdWord);
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
 }
@@ -27,13 +27,13 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 3-f
 */
 
 test("concatenate example #1", () => {
-  expect(concatenate("code", " your", " future")).toEqual("code your future");
+  expect(concatenate("code", "your", "future")).toEqual("code your future");
 });
 
 test("concatenate example #2", () => {
-  expect(concatenate("I", " like", " pizza")).toEqual("I like pizza");
+  expect(concatenate("I", "like", "pizza")).toEqual("I like pizza");
 });
 
 test("concatenate doesn't only accept strings", () => {
-  expect(concatenate("I", " am ", 13)).toEqual("I am 13");
+  expect(concatenate("I", "am", 13)).toEqual("I am 13");
 });
