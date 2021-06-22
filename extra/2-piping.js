@@ -33,6 +33,7 @@ const startingValue = 2;
 // Why can this code be seen as bad practice? Comment your answer.
 //readability is sacrificed for concise code. Returning to this at a later date I would need to consult the global functions to figure out each step of the program
 let badCode = format(multiply(add(startingValue, 10), 2));
+
 /* BETTER PRACTICE */
 //storing the add function value in a variable
 const adding = add(startingValue, 10);

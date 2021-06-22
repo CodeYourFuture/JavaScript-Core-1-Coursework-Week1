@@ -13,40 +13,47 @@
   and have different levels of positivity or negativity.
 
   Below are the possible answers:
+  **/
+  const answersArray = [
+  //Very positive
+    "It is certain.",
+    "It is decidedly so.",
+    "Without a doubt.",
+    "Yes - definitely.",
+    "You may rely on it.",
 
-  ## Very positive
-    It is certain.
-    It is decidedly so.
-    Without a doubt.
-    Yes - definitely.
-    You may rely on it.
+  //Positive
+    "As I see it, yes.",
+    "Most likely.",
+    "Outlook good.",
+    "Yes.",
+    "Signs point to yes.",
 
-  ## Positive
-    As I see it, yes.
-    Most likely.
-    Outlook good.
-    Yes.
-    Signs point to yes.
+  //Negative
+    "Reply hazy, try again.",
+    "Ask again later.",
+    "Better not tell you now.",
+    "Cannot predict now.",
+    "Concentrate and ask again.",
 
-  ## Negative
-    Reply hazy, try again.
-    Ask again later.
-    Better not tell you now.
-    Cannot predict now.
-    Concentrate and ask again.
-
-  ## Very negative
-    Don't count on it.
-    My reply is no.
-    My sources say no.
-    Outlook not so good.
-    Very doubtful.
-*/
+  //Very negative
+    "Don't count on it.",
+    "My reply is no.",
+    "My sources say no.",
+    "Outlook not so good.",
+    "Very doubtful."
+  ];
 
 // This should log "The ball has shaken!"
 // and return the answer.
+function randomNumber () {
+  return Math.floor(Math.random() * answersArray.length);
+}
+
 function shakeBall() {
   //Write your code in here
+  console.log("The ball has shaken!");
+  return answersArray[randomNumber()];
 }
 
 /* 
@@ -59,8 +66,26 @@ function shakeBall() {
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
-  //Write your code in here
+  let answerIteration;
+  for(let i = 0; i < answersArray.length; i++) {
+    if(answer === answersArray[i]) {
+      answerIteration = i;
+    }
+  }
+  //refactored my code below to make it into a ternary operator
+  return answerIteration < 5 ? "very positive" : answerIteration >=5 && answerIteration < 10 ? "positive"
+  : answerIteration >=10 && answerIteration < 15 ? "negative" : "very negative";
 }
+/**if(answerIteration < 5) {
+  return "very positive";
+} else if(answerIteration >= 5 && answerIteration < 10) {
+  return "positive";
+} else if(answerIteration >=10 && answerIteration < 15) {
+  return "negative"
+} else {
+  return "very negative";
+}**/
+
 
 /* 
 ==================================
@@ -101,7 +126,7 @@ test("magic 8 ball returns different values each time", () => {
     );
   }
 
-  let seenPositivities = new Set(Array.from(answers.values()).map(checkAnswer));
+  let seenPositivities = new Set(Array.from(seenAnswers.values()).map(checkAnswer));
   if (seenPositivities.size < 2) {
     throw Error(
       "Expected to random answers with different positivities each time shakeBall was called, but always got the same one"
