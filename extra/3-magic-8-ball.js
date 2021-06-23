@@ -73,19 +73,22 @@ function checkAnswer(answer) {
         answerNumber = i;
     }
   }
-  if(answerNumber < 5){
-    return "very positive";
-  } else if(answerNumber >=5 && answerNumber < 10){
-    return "positive";
-  } else if(answerNumber >=10 && answerNumber < 15){
-    return "negative";
-  } else {
-    return "very negative";
-    }
-}
- let a =shakeBall();
-//  console.log("ANSWER = "+a);
- console.log(checkAnswer(a));
+
+  return answerNumber < 5 ? "very positive" 
+        :answerNumber < 10 ? "positive"
+        :answerNumber < 15 ? "negative"
+        :"very negative";
+//   if(answerNumber < 5){
+//     return "very positive";
+//   } else if(answerNumber >=5 && answerNumber < 10){
+//     return "positive";
+//   } else if(answerNumber >=10 && answerNumber < 15){
+//     return "negative";
+//   } else {
+//     return "very negative";
+//     }
+ }
+
 /* 
 ==================================
 ======= TESTS - DO NOT MODIFY =====
