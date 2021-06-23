@@ -43,11 +43,77 @@
     Very doubtful.
 */
 
+let question;
+
+const answers = [
+  //Very positive
+  "It is certain.",
+  "It is decidedly so.",
+  "Without a doubt.",
+  "Yes - definitely.",
+  "You may rely on it.",
+  //Positive
+  "As I see it, yes.",
+  "Most likely.",
+  "Outlook good.",
+  "Yes.",
+  "Signs point to yes.",
+  //Negative
+  "Reply hazy, try again.",
+  "Ask again later.",
+  "Better not tell you now.",
+  "Cannot predict now.",
+  "Concentrate and ask again.",
+  //Very Negative
+  "Don't count on it.",
+  "My reply is no.",
+  "My sources say no.",
+  "Outlook not so good.",
+  "Very doubtful.",
+];
+
+const veryPositive = [
+  "It is certain.",
+  "It is decidedly so.",
+  "Without a doubt.",
+  "Yes - definitely.",
+  "You may rely on it.",
+];
+
+const positive = [
+  "As I see it, yes.",
+  "Most likely.",
+  "Outlook good.",
+  "Yes.",
+  "Signs point to yes.",
+];
+
+const negative = [
+  "Reply hazy, try again.",
+  "Ask again later.",
+  "Better not tell you now.",
+  "Cannot predict now.",
+  "Concentrate and ask again.",
+];
+
+const veryNegative = [
+  "Don't count on it.",
+  "My reply is no.",
+  "My sources say no.",
+  "Outlook not so good.",
+  "Very doubtful.",
+];
+
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
   //Write your code in here
+  console.log("The ball has shaken!");
+  const answer = answers[Math.floor(Math.random() * answers.length)];
+  return answer;
 }
+
+shakeBall();
 
 /* 
   This function should say whether the answer it is given is
@@ -60,7 +126,45 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
+  let index;
+  for (let i = 0; i < answers.length; i++) {
+    if (answer === answers[i]) {
+      index = i;
+    } else {
+      console.log("Answer is not recognized. Please input an answer in answers array.");
+    }
+  }
+  if (index < 5) {
+    return "very positive";
+  } else if (index >= 5 && index < 10) {
+    return "positive";
+  } else if (index >= 10 && index < 15) {
+    return "negative";
+  } else {
+    return "very negative";
+  }
 }
+
+checkAnswer(shakeBall());
+
+/* Another way of doing the exercise; used arrays for "very positive", "positive", "negative", and "very negative" answers, and then used includes method in checkAnswer function 
+
+function checkAnswer(answer) {
+  //Write your code in here
+  if (veryPositive.includes(answer)) {
+    console.log(`very positive`);
+  } else if (positive.includes(answer)) {
+    console.log(`positive`);
+  } else if (negative.includes(answer)) {
+    console.log(`negative`);
+  } else if (veryNegative.includes(answer)) {
+    console.log(`very negative`);
+  } else {
+    console.log(`something unexpected happened`);
+  }
+}
+
+*/ 
 
 /* 
 ==================================
