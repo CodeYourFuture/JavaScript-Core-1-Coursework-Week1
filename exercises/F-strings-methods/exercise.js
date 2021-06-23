@@ -1,3 +1,4 @@
 // Start by creating a variable `message`
+const names= "Bimbola Lasisi" ;
 
-console.log(message);
+console.log(names.length);

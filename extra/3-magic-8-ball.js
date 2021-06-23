@@ -43,10 +43,124 @@
     Very doubtful.
 */
 
-// This should log "The ball has shaken!"
+
+
 // and return the answer.
-function shakeBall() {
+let answer =[
+  {
+    positivity: " It is certain.",
+    type: " very positive"
+  },
+{
+  
+  positivity: " It is decidedly so.",
+  type: " very positive"
+},
+{
+
+  positivity: " Without a doubt.",
+  type: " very positive"
+},
+{
+
+   positivity: " Yes - definitely.",
+  type: " very positive"
+},
+{
+
+ positivity: " Yes - definitely.",
+  type: " very positive"
+},
+{
+
+   positivity: " you may rely on it ",
+  type: " very positive"
+},
+{
+
+   positivity: " As I see it, yes.",
+  type: " positive"
+},
+{
+
+   positivity: " Most likely.",
+  type: " positive"
+},
+{
+
+   positivity: " Outlook good.",
+  type: "positive"
+},
+{
+
+   positivity: " Yes.",
+  type: " positive"
+},
+{
+
+
+   positivity: " Sign point to yes.",
+  type: " positive"
+},
+{
+
+   negativity: "  Reply hazy, try again",
+  type: " negative"
+},
+{
+
+   negativity: " Ask again later.",
+  type: " negative"
+},
+{
+
+   negativity: " Better not tell you now.",
+  type: " negative"
+},
+{
+
+   negativity: " Cannot predict now.",
+  type: " negative"
+},
+{
+   negativity: " Concentrate and ask again.",
+  type: " negative"
+},
+{
+
+   negativity: " Don't count on it.",
+  type: " very negative"
+},
+{
+
+   negativity: "My reply is no.",
+  type: " very negative"
+},
+{
+
+   negativity: " My sources say no.",
+  type: " very negative"
+},
+{
+
+   negativity: " Outlook not so good.",
+  type: " very negative"
+},
+{
+
+  negativity: " Very doubtful .",
+  type: " very negative"
+},
+]
+
+
+
   //Write your code in here
+function shakeBall() {
+  let randomAnswer = Math.floor(maths.random() * 20);
+  // This should log "The ball has shaken!"
+  console.log("The ball has shaken!")
+  return answer[randomAnswer].positivity;
 }
 
 /* 
@@ -60,8 +174,36 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
-}
+  let  checkAnswer= math.floor(math.randomAnswer() *20)
+    if (randomAnswer === 20){
+    console.log("it is certain")
+    }else if (randomAnswer === 19){
+    console.log('Reply hazy, try again')
+    }else if (randomAnswer===18 ){
+    console.log('It is decidedly so.')
+    }else if (randomAnswer===17 ){
+    console.log('Without a doubt.')
+    }else if (randomAnswer===16 ){
+    console.log('yes -Definitely.')
+    }else if (randomAnswer===17 ){
+    console.log('You may rely rely on it.')
+    }else if (randomAnswer===15 ){
+    console.log('Most likely.')
+    }else if (randomAnswer===14 ){
+    console.log('It is decidedly so.')
+    }else if (randomAnswer===14 ){
+    console.log('out look good.')
+    }else if (randomAnswer===13 ){
+    console.log('yes.')
+    }else if (randomAnswer===12 ){
+    console.log('Sign point to yes.')
 
+    }else if (randomAnswer===0 ){
+    console.log('very doubtful .')
+    }else if (randomAnswer===11 ){
+    console.log('Reply hazy, try later.')
+ }
+}
 /* 
 ==================================
 ======= TESTS - DO NOT MODIFY =====
