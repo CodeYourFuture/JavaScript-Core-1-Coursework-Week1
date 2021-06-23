@@ -43,11 +43,61 @@
     Very doubtful.
 */
 
+let veryPositive = [
+  "It is certain.",
+  "It is decidedly so.",
+  "Without a doubt.",
+  "Yes - definitely.",
+  "You may rely on it.",
+];
+
+let positive = [
+  "As I see it, yes.",
+  "Most likely.",
+  "Outlook good.",
+  "Yes.",
+  "Signs point to yes.",
+];
+
+let negative = [
+  "Reply hazy, try again.",
+  "Ask again later.",
+  "Better not tell you now.",
+  "Cannot predict now.",
+  "Concentrate and ask again.",
+];
+
+let veryNegative = [
+  "Don't count on it.",
+  "My reply is no.",
+  "My sources say no.",
+  "Outlook not so good.",
+  "Very doubtful.",
+];
+
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
   //Write your code in here
+  let randomNumber = Math.floor(Math.random() * 4);
+
+  console.log("The ball has shaken!");
+
+  if (randomNumber === 0) {
+    let index = Math.floor(Math.random() * veryPositive.length);
+    return veryPositive[index];
+  } else if (randomNumber === 1) {
+    index = Math.floor(Math.random() * positive.length);
+    return positive[index];
+  } else if (randomNumber === 2) {
+    index = Math.floor(Math.random() * negative.length);
+    return negative[index];
+  } else if (randomNumber === 3) {
+    index = Math.floor(Math.random() * veryNegative.length);
+    return veryNegative[index];
+  }
 }
+let ans = shakeBall();
 
 /* 
   This function should say whether the answer it is given is
@@ -58,9 +108,45 @@ function shakeBall() {
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
+
 function checkAnswer(answer) {
   //Write your code in here
+
+  if (
+    answer === "It is certain." ||
+    answer === "It is decidedly so." ||
+    answer === "Without a doubt." ||
+    answer === "Yes - definitely." ||
+    answer === "You may rely on it."
+  ) {
+    return "very positive";
+  } else if (
+    answer === "As I see it, yes." ||
+    answer === "Most likely." ||
+    answer === "Outlook good." ||
+    answer === "Yes." ||
+    answer === "Signs point to yes."
+  ) {
+    return "positive";
+  } else if (
+    answer === "Reply hazy, try again." ||
+    answer === "Ask again later." ||
+    answer === "Better not tell you now." ||
+    answer === "Cannot predict now." ||
+    answer === "Concentrate and ask again."
+  ) {
+    return "negative";
+  } else if (
+    answer === "Don't count on it." ||
+    answer === "My reply is no." ||
+    answer === "My sources say no." ||
+    answer === "Outlook not so good." ||
+    answer === "Very doubtful."
+  ) {
+    return "very negative";
+  }
 }
+checkAnswer(ans);
 
 /* 
 ==================================
@@ -101,7 +187,9 @@ test("magic 8 ball returns different values each time", () => {
     );
   }
 
-  let seenPositivities = new Set(Array.from(seenAnswers.values()).map(checkAnswer));
+  let seenPositivities = new Set(
+    Array.from(seenAnswers.values()).map(checkAnswer)
+  );
   if (seenPositivities.size < 2) {
     throw Error(
       "Expected to random answers with different positivities each time shakeBall was called, but always got the same one"
