@@ -67,12 +67,13 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
-  let answerNumber;
-  for(let i =0; i<20; i++){
-    if(answer === answers[i]){
-        answerNumber = i;
-    }
-  }
+  let answerNumber = answers.indexOf(answer);
+
+  // for(let i =0; i<20; i++){
+  //   if(answer === answers[i]){
+  //       answerNumber = i;
+  //  }
+  // }
 
   return answerNumber < 5 ? "very positive" 
         :answerNumber < 10 ? "positive"
