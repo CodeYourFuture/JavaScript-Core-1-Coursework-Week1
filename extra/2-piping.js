@@ -15,27 +15,38 @@
   3. Write a more readable version of what you wrote in step 2 under the BETTER PRACTICE comment. Assign
   the final result to the variable goodCode
 */
-
-function add() {
-
+function add(pipe1, pipe2) {
+  var total = pipe1 + pipe2;
+  return total;
 }
 
-function multiply() {
-
+function multiply(num1, num2) {
+  var multiplyNum = num1 * num2;
+  return multiplyNum;
 }
 
-function format() {
-
+function format(number) {
+  var message = "£" + number;
+  return message;
 }
 
 const startingValue = 2;
 
+function digit(startingValue) {
+  let calculation = "£" + (startingValue + 10) * 2;
+  return calculation;
+}
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =
+// This code is difficult to read and look messy.
+let badCode = digit(startingValue);
 
 /* BETTER PRACTICE */
+function goodDigit(startingValue) {
+  let calculation = "£" + (startingValue + 10) * 2;
+  return calculation;
+}
 
-let goodCode =
+let goodCode = goodDigit(startingValue);
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
