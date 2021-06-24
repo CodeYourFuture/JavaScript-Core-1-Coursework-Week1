@@ -89,20 +89,20 @@ console.log(shakeBall());
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
-  let message = "";
-  for (let i = 0; i < choicesOfAnswer.length; i++) {
-    if (answer === choicesOfAnswer[i]) {
-      message = i;
-    }
-  }
-  if (message < 5) {
-    return "very positive";
-  } else if (message >= 5 && message < 10) {
-    return "positive";
-  } else if (message >= 10 && message < 15) {
+  if (choicesOfAnswer.indexOf(answer) < 5) {
+    return "Very positive";
+  } else if (
+    choicesOfAnswer.indexOf(answer) >= 5 &&
+    choicesOfAnswer.indexOf(answer) < 10
+  ) {
+    return "Positive";
+  } else if (
+    choicesOfAnswer.indexOf(answer) >= 10 &&
+    choicesOfAnswer.indexOf(answer) < 15
+  ) {
     return "negative";
   } else {
-    return "very negative";
+    return "Very negative";
   }
 }
 
