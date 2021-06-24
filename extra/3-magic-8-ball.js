@@ -92,17 +92,30 @@ function shakeBall() {
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 
+// **** IF/ELSE ****
+// function checkAnswer(answer) {
+//   let indexOfAnswer = answers.indexOf(answer);
+
+// if (indexOfAnswer < 5) {
+//   return "very positive";
+// } else if (indexOfAnswer < 10) {
+//   return "positive";
+// } else if (indexOfAnswer < 15) {
+//   return "negative";
+// } else {
+//   return "very negative";
+// }
+
+// **** TERNARY ****
 function checkAnswer(answer) {
   let indexOfAnswer = answers.indexOf(answer);
-  if (indexOfAnswer < 5) {
-    return "very positive";
-  } else if (indexOfAnswer < 10) {
-    return "positive";
-  } else if (indexOfAnswer < 15) {
-    return "negative";
-  } else {
-    return "very negative";
-  }
+  return indexOfAnswer <= 5
+    ? "very positive"
+    : indexOfAnswer <= 10
+    ? "positive"
+    : indexOfAnswer <= 15
+    ? "negative"
+    : "very negative";
 }
 
 /* 
