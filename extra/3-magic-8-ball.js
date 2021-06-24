@@ -13,40 +13,45 @@
   and have different levels of positivity or negativity.
 
   Below are the possible answers:
-
-  ## Very positive
-    It is certain.
-    It is decidedly so.
-    Without a doubt.
-    Yes - definitely.
-    You may rely on it.
-
-  ## Positive
-    As I see it, yes.
-    Most likely.
-    Outlook good.
-    Yes.
-    Signs point to yes.
-
-  ## Negative
-    Reply hazy, try again.
-    Ask again later.
-    Better not tell you now.
-    Cannot predict now.
-    Concentrate and ask again.
-
-  ## Very negative
-    Don't count on it.
-    My reply is no.
-    My sources say no.
-    Outlook not so good.
-    Very doubtful.
 */
+
+  // ## Very positive
+  let answers = [
+    "It is certain.",
+    "It is decidedly so.",
+    "Without a doubt.",
+    "Yes - definitely.",
+    "You may rely on it.",
+
+  // ## Positive
+    "As I see it, yes.",
+    "Most likely.",
+    "Outlook good.",
+    "Yes.",
+    "Signs point to yes.",
+
+  // ## Negative
+    "Reply hazy, try again.",
+    "Ask again later.",
+    "Better not tell you now.",
+    "Cannot predict now.",
+    "Concentrate and ask again.",
+
+  // ## Very negative
+    "Don't count on it.",
+    "My reply is no.",
+    "My sources say no.",
+    "Outlook not so good.",
+    "Very doubtful."
+  ];
+
 
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
-  //Write your code in here
+  console.log("The ball has shaken!")
+  var index = Math.floor(Math.random()*20);
+  return answers[index];
 }
 
 /* 
@@ -59,7 +64,23 @@ function shakeBall() {
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
-  //Write your code in here
+    let index = answers.indexOf(answer);
+
+    return index <5 ? "very positive"
+          :index <10 ? "positive"
+          :index <15 ? "negative"
+          : "very negative";
+
+    // if (index <5){
+    //   return "very positive";
+    // } else if (index >= 5 && index <10) {
+    //   return "positive";
+    // } else if (index >= 10 && index <15) {
+    //   return "negative";
+    // } else {
+    //   return "very negative";
+    // }
+//Write your code in here
 }
 
 /* 
