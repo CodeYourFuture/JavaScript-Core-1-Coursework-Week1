@@ -5,7 +5,7 @@ function getRandomNumber() {
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
-/* Concat method is used to merge two or more arrays and it does not change the existing array but returns a new array.*/
+/* Concat method is used to merge two or more arrays or strings and it does not change the existing array (or string) but returns a new one.*/
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
