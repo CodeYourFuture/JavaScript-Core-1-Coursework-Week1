@@ -6,10 +6,8 @@
 */
 
 function calculateSalesTax(num) {
-  var salesTax = num * 1.20;
-  return salesTax;
-}
-
+  return num * 1.20;
+};
 
 /*
   CURRENCY FORMATTING
@@ -21,8 +19,8 @@ function calculateSalesTax(num) {
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency() {
-  var finalPrice = parseFloat(salesTax).toFixed(2);
+function addTaxAndFormatCurrency(num){
+  var finalPrice = calculateSalesTax(num).toFixed(2);
   return "£" + finalPrice;
 }
 

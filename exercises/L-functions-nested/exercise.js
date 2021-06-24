@@ -18,3 +18,4 @@ function createGreeting() {
     console.log(messageFive.toUpperCase());   
   };
 
+  createGreeting();
