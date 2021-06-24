@@ -68,16 +68,16 @@ const ansArray = [
   "Outlook not so good.",
   "Very doubtful.",
 ];
-/*function generateRandom() {
+function generateRandom() {
   return Math.floor(Math.random() * ansArray.length);
-}*/
+}
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
-  const generateRandom = ansArray[Math.floor(Math.random() * ansArray.length)];
+  const randomAnswer = ansArray[generateRandom()];
   //Write your code in here
   console.log("The ball has shaken!");
-  return generateRandom;
+  return randomAnswer;
 }
 
 /* 
@@ -107,8 +107,7 @@ function checkAnswer(answer) {
     return "very negative";
   }
 }
-let a = shakeBall();
-console.log(checkAnswer(a));
+console.log("answer", checkAnswer(shakeBall()));
 /* 
 ==================================
 ======= TESTS - DO NOT MODIFY =====
