@@ -1,3 +1,9 @@
 // Start by creating a variable `message`
+var myName = "Ali";
+console.log(myName.length);
 
-console.log(message);
+myName = "   Ali Bavarsad";
+console.log(myName.length);
+
+console.log(myName);
+console.log(myName.trim());
