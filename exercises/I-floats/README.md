@@ -1,8 +1,4 @@
-Numbers can be integers (whole numbers) or floats (numbers with a decimal).
-
-```js
-var preciseAge = 30.612437;
-```
+---
 
 Floats can be rounded to the nearest whole number using the `Math.round` function:
 
@@ -21,3 +17,5 @@ var roughAge = Math.round(preciseAge); // 30
 Percentage students: 65%
 Percentage mentors: 35%
 ```
+
+-
