@@ -90,19 +90,19 @@ console.log(shakeBall());
 */
 function checkAnswer(answer) {
   if (choicesOfAnswer.indexOf(answer) < 5) {
-    return "Very positive";
+    return "very positive";
   } else if (
     choicesOfAnswer.indexOf(answer) >= 5 &&
     choicesOfAnswer.indexOf(answer) < 10
   ) {
-    return "Positive";
+    return "positive";
   } else if (
     choicesOfAnswer.indexOf(answer) >= 10 &&
     choicesOfAnswer.indexOf(answer) < 15
   ) {
     return "negative";
   } else {
-    return "Very negative";
+    return "very negative";
   }
 }
 
