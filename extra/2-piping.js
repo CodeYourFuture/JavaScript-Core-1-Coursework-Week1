@@ -41,11 +41,10 @@ function digit(startingValue) {
 let badCode = digit(startingValue);
 
 /* BETTER PRACTICE */
-function goodDigit(startingValue) {
-  let calculation = "£" + (startingValue + 10) * 2;
-  return calculation;
-}
 
+let goodCode = add(startingValue, 10);
+let goodCodeMultiply = multiply(goodCode, startingValue);
+let goodCodeFormat = format(goodCode);
 let goodCode = goodDigit(startingValue);
 
 /* ======= TESTS - DO NOT MODIFY ===== 
