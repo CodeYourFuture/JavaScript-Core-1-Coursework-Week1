@@ -20,8 +20,9 @@ function convertToUSD(price) {
 
 function convertToBRL(currency) {
   var addFee = currency * 0.01;
-  var foreignRate = (currency - addFee) * 5.7;
-  return parseFloat(foreignRate.toFixed(2));
+  var foreignRate = 5.7;
+  var calculateRate = (currency - addFee) * foreignRate;
+  return parseFloat(calculateRate.toFixed(2));
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== 
