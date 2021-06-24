@@ -45,10 +45,16 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
-var userQuestion = '';
-console.log("The ball has shaken!");
-/*var randomNumber = Math.floor(Math.random()*20);
+function shakeBall() {
+  //Write your code in here
+  const answer =
+    eightBallMessage[Math.floor(Math.random() * eightBallMessage.length)];
 
+  console.log("The ball has shaken!");
+  return answer;
+};
+
+/*
 function eightBall() {
   //Write your code in here
   switch(randomNumber){
@@ -120,17 +126,7 @@ let eightBallMessage = ["Very positive", "It is certain.", "It is decidedly so."
   "Outlook good.", "Yes.", "Signs point to yes.", "Reply hazy, try again.", "Ask again later.", "Better not tell you now.", "Cannot predict now.", "Concentrate and ask again.", 
   "Don\'t count on it.", "My reply is no.", "My sources say no.", "Outlook not so good.", "Very doubtful."];
 
-function shakeBall(eightBall) {
-  if ((eightBall = "It is certain.") || (eightBall = "It is decidedly so.") || (eightBall = "Without a doubt.") || (eightBall = "Yes - definitely." )|| (eightBall = "You may rely on it.")) {
-    console.log("very positive");
-  } else if ((eightBall = "As I see it, yes.") || (eightBall = "Most likely.") || (eightBall = "Outlook good.") || (eightBall = "Yes.") || (eightBall = "Signs point to yes.")) {
-    console.log("positive"); 
-  } else if ((eightBall = "Reply hazy, try again.") || (eightBall = "Ask again later.") || (eightBall = "Better not tell you now.") || (eightBall = "Cannot predict now.") || (eightBall = "Concentrate and ask again.")) {
-    console.log("negative");
-  } else if ((eightBall = "Don't count on it.") || (eightBall = "My reply is no.") || (eightBall = "My sources say no.") || (eightBall = "Outlook not so good") || (eightBall = "Very doubtful.")) {
-    console.log("very negative");
-  }
-};
+
 /* 
   This function should say whether the answer it is given is
     - very positive
@@ -142,7 +138,23 @@ function shakeBall(eightBall) {
 */
 function checkAnswer(answer) {
   //Write your code in here
-}
+  if (eightBallMessage.indexOf(answer) < 5) {
+    return "very positive";
+  } else if (
+    eightBallMessage.indexOf(answer) >= 5 &&
+    eightBallMessage.indexOf(answer) < 10
+  ) {
+    return "positive";
+  } else if (
+    eightBallMessage.indexOf(answer) >= 10 &&
+    eightBallMessage.indexOf(answer) < 15
+  ) {
+    return "negative";
+  } else {
+    return "very negative";
+  }
+};
+
 
 /* 
 ==================================
