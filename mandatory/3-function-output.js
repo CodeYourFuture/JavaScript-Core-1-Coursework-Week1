@@ -1,5 +1,5 @@
 // Add comments to explain what this function does. You're meant to use Google!
-/* Math.random function returns a pseudo random value between 0 to 1 and multiplies it by 10.*/
+/* Math.random function returns a pseudo random value between 0 to 1 (inclusive of 0 but not 1) and multiplies it by 10. Since the random number will not be inclusive of 1 as such the output will also not be inclusive of 10*/
 function getRandomNumber() {
   return Math.random() * 10;
 }

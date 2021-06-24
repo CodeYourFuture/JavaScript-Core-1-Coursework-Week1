@@ -1,6 +1,6 @@
 const name = " Azan  ";
-let nametrim = name.trim();
-let nameLength = name.length;
+let nameTrim = name.trim();
+let nameLength = nameTrim.length;
 
 console.log(
   "My name is",
