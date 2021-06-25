@@ -1,3 +1,4 @@
+
 You can find out how many characters there are in a string by using the `length` property of a string:
 
 ```js
