@@ -43,7 +43,7 @@
     Very doubtful.
 */
 
-let veryPositive = [
+const veryPositive = [
   "It is certain.",
   "It is decidedly so.",
   "Without a doubt.",
@@ -51,7 +51,7 @@ let veryPositive = [
   "You may rely on it.",
 ];
 
-let positive = [
+const positive = [
   "As I see it, yes.",
   "Most likely.",
   "Outlook good.",
@@ -59,7 +59,7 @@ let positive = [
   "Signs point to yes.",
 ];
 
-let negative = [
+const negative = [
   "Reply hazy, try again.",
   "Ask again later.",
   "Better not tell you now.",
@@ -67,7 +67,7 @@ let negative = [
   "Concentrate and ask again.",
 ];
 
-let veryNegative = [
+const veryNegative = [
   "Don't count on it.",
   "My reply is no.",
   "My sources say no.",
@@ -75,27 +75,18 @@ let veryNegative = [
   "Very doubtful.",
 ];
 
+const allAnswers = veryPositive.concat(positive, negative, veryNegative);
+
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
   //Write your code in here
-  let randomNumber = Math.floor(Math.random() * 4);
 
   console.log("The ball has shaken!");
 
-  if (randomNumber === 0) {
-    let index = Math.floor(Math.random() * veryPositive.length);
-    return veryPositive[index];
-  } else if (randomNumber === 1) {
-    index = Math.floor(Math.random() * positive.length);
-    return positive[index];
-  } else if (randomNumber === 2) {
-    index = Math.floor(Math.random() * negative.length);
-    return negative[index];
-  } else if (randomNumber === 3) {
-    index = Math.floor(Math.random() * veryNegative.length);
-    return veryNegative[index];
-  }
+  const answerIndex = Math.floor(Math.random() * allAnswers.length);
+
+  return allAnswers[answerIndex];
 }
 let ans = shakeBall();
 
@@ -112,37 +103,13 @@ let ans = shakeBall();
 function checkAnswer(answer) {
   //Write your code in here
 
-  if (
-    answer === "It is certain." ||
-    answer === "It is decidedly so." ||
-    answer === "Without a doubt." ||
-    answer === "Yes - definitely." ||
-    answer === "You may rely on it."
-  ) {
+  if (veryPositive.includes(answer)) {
     return "very positive";
-  } else if (
-    answer === "As I see it, yes." ||
-    answer === "Most likely." ||
-    answer === "Outlook good." ||
-    answer === "Yes." ||
-    answer === "Signs point to yes."
-  ) {
+  } else if (positive.includes(answer)) {
     return "positive";
-  } else if (
-    answer === "Reply hazy, try again." ||
-    answer === "Ask again later." ||
-    answer === "Better not tell you now." ||
-    answer === "Cannot predict now." ||
-    answer === "Concentrate and ask again."
-  ) {
+  } else if (negative.includes(answer)) {
     return "negative";
-  } else if (
-    answer === "Don't count on it." ||
-    answer === "My reply is no." ||
-    answer === "My sources say no." ||
-    answer === "Outlook not so good." ||
-    answer === "Very doubtful."
-  ) {
+  } else if (veryNegative.includes(answer)) {
     return "very negative";
   }
 }
