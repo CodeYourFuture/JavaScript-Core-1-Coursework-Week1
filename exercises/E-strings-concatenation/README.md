@@ -1,3 +1,4 @@
+
 You can add two strings together using the plus operator (`+`):
 
 ```js
