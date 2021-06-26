@@ -2,10 +2,12 @@
   "name": "javascript-core-1-coursework-week1",
   "version": "1.0.0",
   "description": "Exercises for JS1 Week 1",
+}
+ {
   "scripts": {
-    "test": "jest --testRegex='mandatory[/\\\\].*\\.js$'",
-    "extra-tests": "jest --testRegex='extra[/\\\\].*\\.js$'"
-  },
+    "test": "jest"
+  }
+}
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week1.git"
@@ -14,7 +16,9 @@
     "url": "https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week1/issues"
   },
   "jest": {
-    "setupFilesAfterEnv": ["jest-extended"]
+    "setupFilesAfterEnv": [
+      "jest-extended"
+    ]
   },
   "homepage": "https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week1#readme",
   "devDependencies": {
