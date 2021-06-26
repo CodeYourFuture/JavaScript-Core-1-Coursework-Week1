@@ -1,6 +1,6 @@
 // Write your function here
 fucntion greeting(name){
-    return "Hello " + creatingGreeting;
+    return `Hello my name is ${name}`;
 }
 var greeting = createGreeting("Daniel");
 
