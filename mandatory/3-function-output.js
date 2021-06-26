@@ -1,9 +1,11 @@
 // Add comments to explain what this function does. You're meant to use Google!
+//The Math. random() function returns a floating-point, pseudo-random number in the range 0 to less than 1 (inclusive of 0, but not 1) with approximately uniform distribution over that range — which you can then scale to your desired range.
 function getRandomNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+//The CONCAT function combines the text from multiple ranges and/or strings, but it doesn't provide delimiter or IgnoreEmpty arguments. CONCAT replaces the CONCATENATE function.
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
@@ -11,6 +13,7 @@ function combine2Words(word1, word2) {
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  return `${firstWord} ${secondWord} ${thirdWord}`;
 }
 
 /* 
