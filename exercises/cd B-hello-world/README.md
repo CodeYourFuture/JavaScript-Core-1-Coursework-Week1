@@ -14,5 +14,5 @@ Inside of `exercise.js` there's a line of code that will print "Hello world!".
 
 - Try to `console.log()` something different. For example, 'Hello World. I just started learning JavaScript!'.
 - Try to console.log() several things at once.
-- What happens when you get rid of the quote marks?
-- What happens when you console.log() just a number without quotes?
+- What happens when you get rid of the quote marks? `if the entire was string it will be error, if number this is fine`
+- What happens when you console.log() just a number without quotes? `the type of the entire will be number`
