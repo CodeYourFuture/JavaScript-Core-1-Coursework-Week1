@@ -1,3 +1,5 @@
-// Start by creating a variable `message`
+let myName = "Tara";
+let message ="Hello, my name is " + myName;
+
 
 console.log(message);
