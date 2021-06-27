@@ -31,24 +31,23 @@ function format(value) {
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode = format(
-  multiply(add(startingValue, 10)),
-  2
-); /* This is quite a lot of function all at once which will be very difficult to read and make sense of.*/
+/* This code isn't structured properly as such hard to figure out what is being calculated due to it being all in-line and also doesn't make use of the previously declared functions. */
+let badCode = "£" + (startingValue + 10) * 2;
 
 /* BETTER PRACTICE */
+/* This code mainly consists of the previously declared function as such is pretty clear in terms of the order of calculation. */
+let goodCode = format(multiply(add(startingValue, 10), 2));
 
-let goodCode =
-  /* ======= TESTS - DO NOT MODIFY ===== 
+/* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
 
 To run these tests type `npm run extraTo run the tests for just this one file, type `npm run extra-tests -- --testPathPattern 2-piping` into your terminal
 (Reminder: You must have run `npm install` one time before this will work!)
 */
 
-  test("add function - case 1 works", () => {
-    expect(add(1, 3)).toEqual(4);
-  });
+test("add function - case 1 works", () => {
+  expect(add(1, 3)).toEqual(4);
+});
 
 test("add function - case 2 works", () => {
   expect(add(2.4, 5)).toEqual(7.4);

@@ -20,8 +20,9 @@ function convertToUSD(poundSterling) {
 
 function convertToBRL(poundSterling) {
   const poundAfterFee = 0.99 * poundSterling;
-  const BRL = 5.7 * poundAfterFee;
-  return parseFloat(BRL.toFixed(2));
+  const exchangeRate = 5.7;
+  const BRL = poundAfterFee * exchangeRate;
+  return Math.round(100 * BRL) / 100;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== 
