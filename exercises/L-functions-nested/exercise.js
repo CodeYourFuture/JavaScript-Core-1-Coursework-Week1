@@ -1,5 +1,5 @@
 // I hope the way I have solved this exercise is ok although the readme seemed to have
-// some wiggle room but happy to redo if needed. As its the last exercise I wanted
+// some wiggle room (hope jest does!) but happy to redo if needed. As its the last exercise I wanted
 // to try and be a bit creative so to solve this I have put the pre-defined mentor names into
 // an array then iterated through it using a for loop which contains two nested ES6
 // arrow functions. Had great fun figuring out how to solve it like this:)

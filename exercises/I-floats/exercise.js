@@ -4,7 +4,7 @@ let numberOfMentors = 8;
 
 // I decided to declare the variable `percentValue` first and set its value equal to the
 // actual percentage value for the group size as this reduces the required nesting and hopefully
-// makes the code easier follow.
+// makes the code easier read.
 let percentValue = 100 / (numberOfStudents + numberOfMentors);
 
 // I then performed the main calculation using Math.round for both students and mentors,
