@@ -1,3 +1,8 @@
 // Start by creating a variable `message`
-
-console.log(message);
+var greetingStart = "    My name is ";
+var name = "Megumi";
+var greeting = greetingStart + name;
+var nameLengthStart = " and my name is "
+var nameLength = name.length;
+var nameLenghEnd = " characters long"
+console.log(greetingStart.trim() + name + nameLengthStart + nameLength + nameLenghEnd);
