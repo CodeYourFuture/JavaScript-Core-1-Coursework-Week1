@@ -3,9 +3,13 @@
 // I used constants here as `myName` will never change and consequently its length wont either, however
 // the variable `message` concatenation may be updated so I declared it using let
 
-const myName = "Andrew";
-const nameLength = myName.length;
+const MY_NAME = "Andrew";
+const NAME_LENGTH = MY_NAME.length;
 let message =
-  "My name is " + myName + " and my name is " + nameLength + " characters long";
+  "My name is " +
+  MY_NAME +
+  " and my name is " +
+  NAME_LENGTH +
+  " characters long";
 
 console.log(message);

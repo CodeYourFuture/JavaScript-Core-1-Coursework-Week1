@@ -1,6 +1,6 @@
 // Program that selects one of the three basic types of variables then outputs it along with its type.
-// Hopefully its ok that I added some randomness to this exercise by highlighting the three main data types, 
-// If not or it causes jest to fail  I will re-write, it was fun though :)
+// Hopefully its ok that I added some randomness to this exercise by highlighting the three main data types,
+// If not or it causes jest to fail  I will re-write, it was fun though and has a 3:1 chance of printing the expected result :)
 
 // Declare the `messageChoice` variable, then set it to a random number between 0 and 2 rounded to the nearest integer.
 let messageChoice = Math.round(Math.random() * 2);
