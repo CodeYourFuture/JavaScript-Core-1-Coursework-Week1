@@ -1,7 +1,8 @@
 function triple(number) {
-  // complete function here
+    return Math.pow(number, 3);
 }
 
-var result = triple(12);
 
-console.log(result);
+console.log(triple(3));
+console.log(triple(7));
+console.log(triple(2));
