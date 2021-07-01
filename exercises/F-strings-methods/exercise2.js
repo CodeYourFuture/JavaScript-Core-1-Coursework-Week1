@@ -1,6 +1,8 @@
-let name = " Daniel  ";
-let nameTrim = name.trim;
+let name = " Grant  ";
+let trimName = name.trim();
+let nameLength = trimName.length;
 
 
-console.log(name);
-console.log(nameTrim);
+let greeting = "My name is " + trimName + " and mmy name is " + nameLength + " characters long";
+
+console.log(greeting);
