@@ -23,11 +23,11 @@ calculateSalesTax(60);
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency(price) {
-  let tax = price * 0.2;
-  let result = tax + price;
-  result = result.toFixed(2);
-  return `£${result}`;
+function addTaxAndFormatCurrency(price){
+
+ let message = calculateSalesTax(price).toFixed(2);
+return `£${message}`;
+
 }
 
 /* 
