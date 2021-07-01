@@ -46,7 +46,7 @@
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
-  //Write your code in here
+    //Write your code in here
 }
 
 /* 
@@ -59,7 +59,7 @@ function shakeBall() {
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
-  //Write your code in here
+    //Write your code in here
 }
 
 /* 
@@ -74,45 +74,45 @@ To run these tests type `npm run extraTo run the tests for just this one file, t
 */
 
 test("whole magic 8 ball sequence", () => {
-  const consoleLogSpy = jest.spyOn(global.console, "log");
-  const answer = shakeBall();
+    const consoleLogSpy = jest.spyOn(global.console, "log");
+    const answer = shakeBall();
 
-  expect(typeof answer).toEqual("string");
+    expect(typeof answer).toEqual("string");
 
-  expect(consoleLogSpy).toHaveBeenCalledTimes(1);
-  expect(consoleLogSpy).toHaveBeenLastCalledWith("The ball has shaken!");
+    expect(consoleLogSpy).toHaveBeenCalledTimes(1);
+    expect(consoleLogSpy).toHaveBeenLastCalledWith("The ball has shaken!");
 
-  expect(checkAnswer(answer)).toBeOneOf([
-    "very positive",
-    "positive",
-    "negative",
-    "very negative",
-  ]);
+    expect(checkAnswer(answer)).toBeOneOf([
+        "very positive",
+        "positive",
+        "negative",
+        "very negative",
+    ]);
 });
 
 test("magic 8 ball returns different values each time", () => {
-  const seenAnswers = new Set();
-  for (let i = 0; i < 10; ++i) {
-    seenAnswers.add(shakeBall());
-  }
-  if (seenAnswers.size < 2) {
-    throw Error(
-      "Expected to get different random answers each time shakeBall was called, but always got the same one"
-    );
-  }
+    const seenAnswers = new Set();
+    for (let i = 0; i < 10; ++i) {
+        seenAnswers.add(shakeBall());
+    }
+    if (seenAnswers.size < 2) {
+        throw Error(
+            "Expected to get different random answers each time shakeBall was called, but always got the same one"
+        );
+    }
 
-  let seenPositivities = new Set(Array.from(seenAnswers.values()).map(checkAnswer));
-  if (seenPositivities.size < 2) {
-    throw Error(
-      "Expected to random answers with different positivities each time shakeBall was called, but always got the same one"
-    );
-  }
+    let seenPositivities = new Set(Array.from(seenAnswers.values()).map(checkAnswer));
+    if (seenPositivities.size < 2) {
+        throw Error(
+            "Expected to random answers with different positivities each time shakeBall was called, but always got the same one"
+        );
+    }
 });
 
 test("checkAnswer works for `It is decidedly so.`", () => {
-  expect(checkAnswer("It is decidedly so.")).toEqual("very positive");
+    expect(checkAnswer("It is decidedly so.")).toEqual("very positive");
 });
 
 test("checkAnswer works for `My reply is no.`", () => {
-  expect(checkAnswer("My reply is no.")).toEqual("very negative");
+    expect(checkAnswer("My reply is no.")).toEqual("very negative");
 });
