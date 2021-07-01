@@ -1,4 +1,3 @@
-// Complete the function so that it takes input parameters
 function multiply(numOne, numTwo) {
   // Function to multiply two parameters together
   return (result = numOne * numTwo);
