@@ -1,5 +1,5 @@
 function triple(number) {
-    return Math.pow(number, 3);
+    return number * 3;
 }
 
 
