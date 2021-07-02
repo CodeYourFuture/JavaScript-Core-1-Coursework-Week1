@@ -4,4 +4,4 @@ var numberOfStudents =35;
 var numberOfMentors=25;
 
 var total =numberOfStudents + numberOfMentors;
-console.log(total)
+console.log("Total numnber of students and mentors :"+total)
