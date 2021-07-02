@@ -50,7 +50,7 @@
 // and return the answer.
 function shakeBall() {
   console.log("The ball has shaken!")
-  var index = Math.floor(Math.random()*20);
+  var index = Math.floor(Math.random()*answers.length);
   return answers[index];
 }
 
