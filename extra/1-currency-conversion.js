@@ -9,10 +9,6 @@ function convertToUSD(pound) {
   let usd = pound * 1.4;
   return usd;
 }
-
-console.log(convertToUSD(32));
-console.log(convertToUSD(50));
-
 /*
   CURRENCY CONVERSION
   ===================
@@ -28,11 +24,8 @@ function convertToBRL(pound) {
   let brl = pound * 5.7;
   // let fees = 0.01 * brl
   // brl = brl - fees;
-  return brl;
+  return parseFloat(brl.toFixed(2));
 }
-
-console.log(convertToBRL(30));
-
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
 
