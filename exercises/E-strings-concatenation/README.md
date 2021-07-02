@@ -9,7 +9,7 @@ var greeting = greetingStart + name;
 console.log(greeting); // Logs "Hello, my name is Daniel"
 ```
 
-## Exercise
+let myN =
 
 - Write a program that logs a message with a greeting and your name
 
