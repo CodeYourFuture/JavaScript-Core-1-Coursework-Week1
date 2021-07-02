@@ -1,3 +1,6 @@
-const name = " Daniel  ";
+const name = " Dilek   ";
+console.log(name);
 
-console.log(message);
+var nameLength = name.trim().length;
+
+console.log("My name is "+  name+" and my name is " + nameLength+ " characters long");
