@@ -1,8 +1,7 @@
-var mentor1 = "Daniel";
-var mentor2 = "Irina";
-var mentor3 = "Mimi";
-var mentor4 = "Rob";
-var mentor5 = "Yohannes";
 
+const mentors = ["Daniel","Irina","Mimi","Rob","Yohanne"];
+for(let i=0; i<5; i++){
+    console.log("HELLO " + mentors[i].toUpperCase());
+}
 
 
