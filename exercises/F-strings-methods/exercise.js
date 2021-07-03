@@ -1,3 +1,7 @@
-// Start by creating a variable `message`
+const name = "Ilhan";
+let nameLength = name.length;
 
-console.log(message);
+
+let greetingStart = "Hell0 my name is " + name + " and my name is " +nameLength+ " characters long";
+
+console.log(greetingStart);
