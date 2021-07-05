@@ -47,7 +47,9 @@
 // and return the answer.
 function shakeBall() {
   //Write your code in here
+  console.log("The ball has been shaken!")
 }
+shakeBall();
 
 /* 
   This function should say whether the answer it is given is
@@ -60,6 +62,7 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
+
 }
 
 /* 
