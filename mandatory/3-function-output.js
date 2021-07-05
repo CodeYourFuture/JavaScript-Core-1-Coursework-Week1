@@ -1,9 +1,11 @@
 // Add comments to explain what this function does. You're meant to use Google!
+// Whenever this function is called, it generates a random number and multiplies it by 10.
 function getRandomNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+//This function takes two parameters which are strings and concatenates them into one string.
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
@@ -11,6 +13,8 @@ function combine2Words(word1, word2) {
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  // We could not use concat() because it only accepts strings. It would not meet all conditions of the test.
+  return firstWord + " " + secondWord + " " + thirdWord;
 }
 
 /* 
