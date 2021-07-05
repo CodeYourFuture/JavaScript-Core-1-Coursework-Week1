@@ -47,7 +47,18 @@
 // and return the answer.
 function shakeBall() {
   //Write your code in here
-}
+  const answer =
+    eightBallMessage[Math.floor(Math.random() * eightBallMessage.length)];
+
+  console.log("The ball has shaken!");
+  return answer;
+};
+
+
+let eightBallMessage = ["Very positive", "It is certain.", "It is decidedly so.", "Without a doubt.", "Yes - definitely.", "You may rely on it.", "As I see it, yes.", "Most likely.", 
+  "Outlook good.", "Yes.", "Signs point to yes.", "Reply hazy, try again.", "Ask again later.", "Better not tell you now.", "Cannot predict now.", "Concentrate and ask again.", 
+  "Don\'t count on it.", "My reply is no.", "My sources say no.", "Outlook not so good.", "Very doubtful."];
+
 
 /* 
   This function should say whether the answer it is given is
@@ -60,7 +71,23 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
-}
+  if (eightBallMessage.indexOf(answer) < 5) {
+    return "very positive";
+  } else if (
+    eightBallMessage.indexOf(answer) >= 5 &&
+    eightBallMessage.indexOf(answer) < 10
+  ) {
+    return "positive";
+  } else if (
+    eightBallMessage.indexOf(answer) >= 10 &&
+    eightBallMessage.indexOf(answer) < 15
+  ) {
+    return "negative";
+  } else {
+    return "very negative";
+  }
+};
+
 
 /* 
 ==================================
