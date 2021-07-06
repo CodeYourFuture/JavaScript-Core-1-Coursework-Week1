@@ -1,3 +1,7 @@
 const name = " Daniel  ";
 
-console.log(message);
+var nameTrim = name.trim;
+
+console.log(nameTrim);
+
+//console.log(message);
