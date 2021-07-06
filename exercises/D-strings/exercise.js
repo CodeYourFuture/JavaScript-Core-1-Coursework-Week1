@@ -1,3 +1,3 @@
 // Start by creating a variable `message`
-
-console.log(message);
+const country = "United Kindgom";
+console.log(typeof country);

@@ -16,26 +16,31 @@
   the final result to the variable goodCode
 */
 
-function add() {
-
+function add(num1 , num2) {
+ return num1 + num2;
 }
+console.log(add (3, 5));
 
 function multiply() {
-
+   return num1 * numb2;
 }
+console.log(multiply (3, 5));
 
-function format() {
-
+function format(pound) {
+return  pound ;
 }
 
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =
-
+let badCode = 0; 
+//let code = newDate(2021, 7, 7)) return newDate:  bad code because  all togther in one line 
 /* BETTER PRACTICE */
 
-let goodCode =
+let goodCode = 0;
+// goodCode =newDate(2021, 7, 06);
+// return newDate;
+// best practices 
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
