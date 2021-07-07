@@ -1,3 +1,6 @@
-const name = " Daniel  ";
+var name = "Abed   ";
+var nameLength = name.length;
+var nameLowerCase = name.trim().toLowerCase();
 
-console.log(message);
+
+console.log("My name is " + nameLowerCase + " and my name is " + nameLength + " characters long" )
