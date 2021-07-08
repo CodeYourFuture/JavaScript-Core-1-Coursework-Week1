@@ -9,3 +9,4 @@ function toUpperCase(mentor) {
 }
 
 var mentor = toUpperCase(mentor2);
+console.log(mentor);
