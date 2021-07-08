@@ -1,3 +1,10 @@
-// Start by creating a variable `message`
+// Program which states my first name to practice concatenation.
 
-console.log(message);
+// Set and initialise variables and constants
+const MY_NAME = "Andrew";
+let greetingStart = "Hello, my name is ";
+let greeting = "";
+
+// Update and output `greeting`
+greeting = greetingStart + MY_NAME;
+console.log(greeting);

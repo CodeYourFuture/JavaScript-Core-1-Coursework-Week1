@@ -1,5 +1,7 @@
-// Declare your function here
+function createLongGreeting(myName, myAge) {
+  // Function takes myName parameter (string) and adds it to a greeting
+  return `Hello, my name is ${myName} and I'm ${myAge} years old`;
+}
 
-const greeting = createLongGreeting("Daniel", 30);
-
-console.log(greeting);
+// Testing by calling the function with suggested parameters.
+console.log(createLongGreeting("Daniel", 30));
