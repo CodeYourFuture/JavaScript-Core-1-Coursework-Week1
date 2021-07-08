@@ -1,12 +1,16 @@
 /*
   SALES TAX
   =========
-  A business requires a program that calculates how much the price of a product is including sales tax
+  A business requires a program that calculates how much the price of a product 
+  is including sales tax
   Sales tax is 20% of the price of the product.
 */
 
-function calculateSalesTax() {}
+function calculateSalesTax(price) {
+  return ((price * .20) + price);
+}
 
+console.log(calculateSalesTax(80));
 /*
   CURRENCY FORMATTING
   ===================
@@ -17,8 +21,12 @@ function calculateSalesTax() {}
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency() {}
-
+function addTaxAndFormatCurrency(prices) {
+  num = calculateSalesTax(prices);
+  n = num.toFixed(2);
+  return "£" + n;
+}
+console.log(addTaxAndFormatCurrency(100))
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====

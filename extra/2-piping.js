@@ -6,7 +6,8 @@
   - one that multiplies 2 numbers together
   - one that formats a number so it's returned as a string with a £ sign before it (e.g. 20 -> £20)
 
-  2. Using the variable startingValue as input, perform the following operations using your functions all
+  2. Using the variable startingValue as input, perform the following operations 
+  using your functions all
   on one line (assign the result to the variable badCode):
   - add 10 to startingValue
   - multiply the result by 2
@@ -16,26 +17,43 @@
   the final result to the variable goodCode
 */
 
-function add() {
-
+function add(num1, num2) {
+  return num1 + num2;
 }
 
-function multiply() {
-
+function multiply(num1, num2) {
+  return num1 * num2;
 }
 
-function format() {
-
+function format(number) {
+  return "£" + number;
 }
 
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =
+let badCode = format((multiply(add(startingValue,10),2))); //I never think to write this without your help CYF
+                                                          //Is a bad code I know but I understand what I wrote
+console.log(badCode);                                      
+                                   
+ /*BETTER PRACTICE */
 
-/* BETTER PRACTICE */
+function performOperations (numToAdd, numToMultiply){
+  sum = numToAdd + startingValue;
+  multiplication = sum * numToMultiply;
+  return "£" + multiplication;
+}
 
-let goodCode =
+let goodCode = performOperations(10,2);
+
+console.log(goodCode);
+/* £££    UNCOMMENT THIS CODE TO RUN WITH FIXED VALUES  $$$
+
+function performOperations (){
+  sum = 10 + startingValue;
+  multiplication = sum * 2;
+  return "£" + multiplication;
+  */
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.

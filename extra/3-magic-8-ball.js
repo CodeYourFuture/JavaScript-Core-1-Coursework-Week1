@@ -13,15 +13,17 @@
   and have different levels of positivity or negativity.
 
   Below are the possible answers:
-
-  ## Very positive
-    It is certain.
-    It is decidedly so.
-    Without a doubt.
-    Yes - definitely.
-    You may rely on it.
-
-  ## Positive
+*/
+let possibleAnswer = new Array ();
+    possibleAnswer[0]  = new Array (
+    "Very positive",
+    "It is certain",
+    "It is decidedly so",
+    "Without a doubt",
+    "Yes - definitely",
+    "You may rely on it"
+);
+    possibleAnswer[0]  = new Array (Positive = (
     As I see it, yes.
     Most likely.
     Outlook good.
@@ -41,14 +43,18 @@
     My sources say no.
     Outlook not so good.
     Very doubtful.
-*/
 
+]
 // This should log "The ball has shaken!"
 // and return the answer.
-function shakeBall() {
-  //Write your code in here
+function shakeBall(question) {
+  console.log("The ball has shaken!");
+  let answer = Math.random() * (17 - 5) + 5;
+  return "did you ask " + question + " ?" )
 }
 
+let answer = Math.round(Math.random() * (17 - 5) + 5);
+console.log(answer);
 /* 
   This function should say whether the answer it is given is
     - very positive
