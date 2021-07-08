@@ -1,2 +1,12 @@
 var numberOfStudents = 15;
 var numberOfMentors = 8;
+var sum = numberOfMentors + numberOfStudents;
+console.log(sum);
+var studentPercentage = (numberOfStudents / 23) * 100;
+console.log(studentPercentage);
+var roughstudent = Math.round(studentPercentage);
+console.log(roughstudent);
+var mentorPercentage = (numberOfMentors / 23) * 100;
+console.log(mentorPercentage);
+var roughmentors = Math.round(mentorPercentage);
+console.log(roughmentors);
