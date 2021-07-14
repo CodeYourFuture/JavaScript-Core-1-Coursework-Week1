@@ -18,7 +18,7 @@ function convertToUSD(gbp) {
 */
 
 function convertToBRL(gbp) {
-  return gbp * .99 * 5.7;
+  return Math.round(gbp * .99 * 5.7 * 100) / 100;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== 
