@@ -47,7 +47,10 @@
 // and return the answer.
 function shakeBall(ques) {
   //Write your code in here
-  
+  console.log("The ball has shaken!");
+
+  let answer = ((ques.length/100) * Math.random* 100);
+  return answer
 }
 
 /* 
@@ -61,6 +64,15 @@ function shakeBall(ques) {
 */
 function checkAnswer(answer) {
   //Write your code in here
+  if (answer >= 0 && answer <= 25){
+    return "very positive"
+  }else if (answer > 25 && answer <= 50){
+    return "positive"
+  }else if (answer > 50 && answer <= 75){
+    return "negative"
+  }else{
+    return "very negative"
+  }
 }
 
 /* 
