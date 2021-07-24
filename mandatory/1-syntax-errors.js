@@ -4,14 +4,19 @@ function addNumbers(a, b, c) {
   return a + b + c;
 }
 
-function introduceMe(name, age)
-  return "Hello, my name is " + name +"and I am "+ age + "years old";
+function introduceMe(name, age){
+  return "Hello, my name is " + name +" and I am "+ age + " years old";
+}
 
 function getTotal(a, b) {
-  total = a + b;
-
-  return "The total is total";
+  totalIs = a + b;
+  return "The total is " + totalIs;
 }
+
+console.log(addNumbers(123,234,453));
+console.log(introduceMe("Israel",38));
+console.log(getTotal(23,345));
+
 
 /* 
 ===================================================
