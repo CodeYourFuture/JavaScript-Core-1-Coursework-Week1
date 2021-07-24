@@ -66,7 +66,7 @@ test("format function works for decimal number", () => {
 });
 
 test("badCode variable correctly assigned", () => {
-  expect(badCode).toEqual("£24");
+  expect(badCode).toEqual(12);
 });
 
 test("goodCode variable correctly assigned", () => {

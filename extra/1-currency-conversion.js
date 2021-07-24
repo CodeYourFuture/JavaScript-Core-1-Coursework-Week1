@@ -6,7 +6,8 @@
 */
 
 function convertToUSD(num) {
-  return num * 1.4;
+  let usd = num * 1.4
+ return usd.toFixed(2);
 }
 
 /*
@@ -18,7 +19,8 @@ function convertToUSD(num) {
 */
 
 function convertToBRL(num) {
-  return num* 5.7* 0.99;
+ let brl =  num* 5.7* 0.99;
+ return brl.toFixed(2);
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== 
