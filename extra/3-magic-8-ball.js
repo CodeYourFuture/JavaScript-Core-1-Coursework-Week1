@@ -48,8 +48,7 @@
 function shakeBall(ques) {
   //Write your code in here
   console.log("The ball has shaken!");
-
-  let answer = ((ques.length/100) * Math.random* 100);
+  let answer = ((ques.length/100) * Math.random() * 100);
   return answer
 }
 
@@ -62,8 +61,9 @@ function shakeBall(ques) {
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
-function checkAnswer(answer) {
+function checkAnswer(ques) {
   //Write your code in here
+ let answer = shakeBall(ques);
   if (answer >= 0 && answer <= 25){
     return "very positive"
   }else if (answer > 25 && answer <= 50){
