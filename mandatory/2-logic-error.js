@@ -1,17 +1,23 @@
 // The syntax for this function is valid but it has an error, find it and fix it.
 
 function trimWord(word) {
-  return wordtrim();
+  return word.trim();
 }
+
+let words = "  CodeYourFuture  ";
+console.log(words);
 
 function getStringLength(word) {
-  return "word".length();
+  return word.length;
 }
+var get = "Turtles";
+console.log(get);
 
 function multiply(a, b, c) {
-  a * b * c;
-  return;
+  return a * b * c;
 }
+var mult = (2, 3, 4);
+console.log(mult);
 
 /* 
 ===================================================
@@ -24,7 +30,7 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 2-l
 ===================================================
 */
 
-test("trimWord trims leading and trailing whitespace", () => {
+test("trimWord trims leading and trailing ", () => {
   expect(trimWord("   CodeYourFuture ")).toEqual("CodeYourFuture");
 });
 

@@ -5,10 +5,10 @@
   Write a function that converts a price to USD (exchange rate is 1.4 $ to £)
 */
 
-function convertToUSD(a) {
-  return 1.4 * convertToUSD(a);
+function convertToUSD(£) {
+  return 1.4 * convertToUSD(£);
 }
-var convert = convertToUSD(6);
+var convert = convertToUSD(£50);
 console.log(convert);
 /*
   CURRENCY CONVERSION

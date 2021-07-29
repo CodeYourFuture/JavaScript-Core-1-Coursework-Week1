@@ -8,5 +8,5 @@ function toUpperCase(mentor) {
   return mentor.toUpperCase();
 }
 
-var mentor = toUpperCase(mentor2);
-console.log(mentor);
+let mentor = toUpperCase(mentor2);
+console.log(toUpperCase);
