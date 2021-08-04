@@ -17,10 +17,6 @@
   "jest": {
     "setupFilesAfterEnv": [
       "jest-extended"
-    ],
-    "reporters": [
-      "default",
-      "<rootDir>/util/github-action-reporter.js"
     ]
   },
   "homepage": "https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week1#readme",
