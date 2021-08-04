@@ -1,0 +1,14 @@
+name: Run extra tests
+on:
+  pull_request:
+    paths:
+      - extra/**
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install modules
+      run: npm install
+    - name: Run extra tests
+      run: npm run extra-tests
