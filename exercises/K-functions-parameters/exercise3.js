@@ -1,5 +1,12 @@
-// Write your function here
+//Write your function here
 
-var greeting = createGreeting("Daniel");
+function startGreet(name) {
+return "Hello, my name is " + name.;
+}
+let greeting = startGreet("Daniel")
 
 console.log(greeting);
+
+
+
+
