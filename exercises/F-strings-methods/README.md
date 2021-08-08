@@ -37,4 +37,5 @@ My name is Daniel and my name is 6 characters long
 
 ```
 My name is Daniel and my name is 6 characters long
+shouldn't it take away the whitespace from ' Daniel  '? :P
 ```

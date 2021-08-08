@@ -1,3 +1,4 @@
 const name = " Daniel  ";
-
-console.log(message);
+//this prints name twice, once with and once without the trim function.
+console.log(name.trim());
+console.log(name);
