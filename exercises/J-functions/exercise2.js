@@ -1,5 +1,7 @@
+//this code triples the number passed into the triple() function.
 function triple(number) {
   // complete function here
+  return number*3
 }
 
 var result = triple(12);
