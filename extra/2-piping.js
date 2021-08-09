@@ -16,26 +16,33 @@
   the final result to the variable goodCode
 */
 
-function add() {
+function add(num1, num2) {
+  sum = num1 + num2;
+  return sum; 
 
 }
 
-function multiply() {
+function multiply(num1 , num2) {
+  total = num1 * num2;
+  return total; 
 
 }
 
-function format() {
+function format(num) { // used parseFloat to convert numbers to string and toFixed to format the number 
+  let value = parseFloat(num).toFixed(2);
+  return `£${num}`;
+
 
 }
 
-const startingValue = 2;
+const startingValue = `£${((2+10)*2).toFixed(2)}`;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =
+let badCode = startingValue;
 
 /* BETTER PRACTICE */
 
-let goodCode =
+let goodCode = finalAnswer; 
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
