@@ -4,24 +4,14 @@
   A business requires a program that calculates how much the price of a product is including sales tax
   Sales tax is 20% of the price of the product.
 */
-let taxedSum;
 function calculateSalesTax(unformattedSum) {
   //adds 20% to the original sum
   return taxedSum = ((unformattedSum/100)*20) + unformattedSum;
 }
 
-/*
-  CURRENCY FORMATTING
-  ===================
-  The business has informed you that prices must have 2 decimal places
-  They must also start with the currency symbol
-  Write a function that adds tax to a number, and then transforms the total into the format £0.00
-
-  Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
-*/
-function addTaxAndFormatCurrency() {
+function addTaxAndFormatCurrency(taxedSum) {
   //should add £ and limit to 2 decimal places
-  let a = taxedSum.toFixed(2);
+  let a = calculateSalesTax(taxedSum).toFixed(2);
   return `£${a}`;
 }
 
