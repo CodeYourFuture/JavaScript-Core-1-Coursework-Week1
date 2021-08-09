@@ -31,7 +31,7 @@ function multiply( num1,num2) {
 console.log(multiply(5,6));
 
 function format(num) {
-  return "£ ${num}";
+  return `£ ${num}`;
 
 
 }

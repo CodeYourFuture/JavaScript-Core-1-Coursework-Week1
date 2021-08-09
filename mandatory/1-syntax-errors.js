@@ -12,7 +12,7 @@ function getTotal(a, b) {
 
   return "The total is" + total;
 }
-let x = 
+let x ; 
 
 /* 
 ===================================================
