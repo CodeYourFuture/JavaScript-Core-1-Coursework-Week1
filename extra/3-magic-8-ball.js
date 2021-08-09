@@ -45,8 +45,44 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
+let veryPositive = [
+    "It is certain.",
+    "It is decidedly so.",
+    "Without a doubt.",
+    "Yes - definitely.",
+    "You may rely on it."
+]
+
+let positive = [
+    "As I see it, yes.",
+    "Most likely.",
+    "Outlook good.",
+    "Yes.",
+    "Signs point to yes."
+]
+
+let negative = [
+    "Reply hazy, try again.",
+    "Ask again later.",
+    "Better not tell you now.",
+    "Cannot predict now.",
+    "Concentrate and ask again."
+]
+
+let veryNegative = [
+    "Don't count on it.",
+    "My reply is no.",
+    "My sources say no.",
+    "Outlook not so good.",
+    "Very doubtful."
+]
+
 function shakeBall() {
-  //Write your code in here
+  let possibleAnswers = veryPositive.concat(positive , veryNegative , negative);
+  console.log("The ball has shaken!");
+  let randomNr = Math.floor(Math.random() * (possibleAnswers.length));
+  let answer = possibleAnswers[randomNr];
+  return answer;
 }
 
 /* 
@@ -60,6 +96,18 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
+  if (veryPositive.includes(answer)){
+    return "very positive";
+  }
+  if (positive.includes(answer)) {
+    return "positive";
+  }
+  if (veryNegative.includes(answer)) {
+    return "very negative";
+  }
+  if (negative.includes(answer)) {
+    return "negative";
+  }
 }
 
 /* 

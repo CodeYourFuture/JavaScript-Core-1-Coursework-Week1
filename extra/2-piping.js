@@ -16,26 +16,32 @@
   the final result to the variable goodCode
 */
 
-function add() {
-
+function add(num1, num2) {
+var add = num1+ num2;
+return add;
 }
 
-function multiply() {
-
+function multiply(num1, num2) {
+var multiply = num1*num2;
+return multiply;
 }
 
-function format() {
-
+function format(price) {
+var formattedPrice = `£${price}`;
+return formattedPrice;
 }
 
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =
+//I think this code is a bad practice because there are too many nested functions calls and it is difficult to visually go through the code, understand how it works and eventually do some debugging. 
+let badCode =  format(multiply(add(startingValue, 10), 2));
+
 
 /* BETTER PRACTICE */
-
-let goodCode =
+let addNum = add(startingValue, 10);
+let multiplyNum = multiply(addNum, 2);
+let goodCode = format(multiplyNum);
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
