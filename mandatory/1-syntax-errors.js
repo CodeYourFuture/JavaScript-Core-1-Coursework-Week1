@@ -5,12 +5,12 @@ function addNumbers(a, b, c) { //Added , between letters
 }
 
 function introduceMe(name, age){  //Added + to ensure spacing and variables are seperated. Also curly brackets 
-  return "Hello, my name is " + name + "and I am " + age + "years old";
+  return "Hello, my name is " + name + " and I am " + age + " years old";
 }
 function getTotal(a, b) {
  const total = a + b; //Declared total as variable 
 
-  return "The total is" + total; //Added spacing 
+  return "The total is " + total; //appended the value to the string and added spacing 
 }
 
 /* 
