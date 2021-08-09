@@ -5,7 +5,8 @@ var mentor4 = "Rob";
 var mentor5 = "Yohannes";
 
 function upperCaseString(string){
-    return cap
+    //took me a while to clock this as vs wouldn't auto complete it (google helped :P)
+    return string.toUpperCase()
 }
 
 function createShoutyGreeting(name){
