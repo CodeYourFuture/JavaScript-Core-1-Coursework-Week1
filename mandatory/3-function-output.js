@@ -1,9 +1,18 @@
 // Add comments to explain what this function does. You're meant to use Google!
+/*
+  getRandomNumber() will generate a number less than 1 and >= 0,
+  it then multiplies that number by 10; meaning the result will
+  be anywhere between 0 and <10.
+*/
 function getRandomNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+/*
+  combine2Words() does exactly what it says on the tin.
+  It will combine the 2 strings that you put in as parameters.
+*/ 
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
@@ -11,8 +20,9 @@ function combine2Words(word1, word2) {
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  const space = " ";
+  return firstWord.concat(space,secondWord,space, thirdWord);
 }
-
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
