@@ -1,4 +1,7 @@
 // Declare your function first
+function divide(num1, numb2){
+    return num1 / numb2;
+}
 
 var result = divide(3, 4);
 
