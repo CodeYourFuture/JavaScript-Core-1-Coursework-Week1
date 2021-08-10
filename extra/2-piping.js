@@ -35,14 +35,18 @@ function format(num) { // used parseFloat to convert numbers to string and toFix
 
 }
 
-const startingValue = `£${((2+10)*2).toFixed(2)}`;
-
+const startingValue = 2;
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode = startingValue;
+//many lines less tidy 
+let addition = startingValue + 10 ; 
+let badCode = "£"+ addition *2; 
+// let badCode = "£" + (startingValue + 10) *2; //easy readable code 
+
 
 /* BETTER PRACTICE */
+//Using interpolation made the code short and easy to read 
+let goodCode = `£${((startingValue+10)*2)}`;
 
-let goodCode = finalAnswer; 
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
