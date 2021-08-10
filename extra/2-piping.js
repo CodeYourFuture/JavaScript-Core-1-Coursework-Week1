@@ -16,26 +16,34 @@
   the final result to the variable goodCode
 */
 
-function add() {
+function add(startingValue, lastValue) {
+  return startingValue + lastValue;
 
 }
 
-function multiply() {
+function multiply(startingValue, lastValue) {
+  return startingValue * lastValue;
 
 }
 
-function format() {
+function format(startingValue) {
+  return `£${startingValue}`;
 
 }
 
 const startingValue = 2;
-
+const lastValue = 10;
+add(2, 10); multiply(add(2, 10), 2); format(multiply(add(2, 10), 2));
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =
+// These codes are not properly indented and each statement needs to be on a separate line
+let badCode = format(multiply(add(2, 10), 2));
 
 /* BETTER PRACTICE */
-
-let goodCode =
+// each statement of codes should be on a separate line and neatly indented.
+  add(2, 10);
+  multiply(add(2, 10), 2);
+  format(multiply(add(2, 10), 2));
+let goodCode = format(multiply(add(2, 10), 2));
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
