@@ -1,5 +1,5 @@
 // Start by creating a variable `message`
-let message = 31;
+let message = "elmira";
 let typeOfMessage = typeof message;
 
 console.log(message);

@@ -6,8 +6,8 @@
 */
 
 function calculateSalesTax(price) {
-    let result = ((20 * price) / 100) ;
-    return result ;
+  let result = (20 * price) / 100 + price;
+  return result;
 }
 
 /*
@@ -21,8 +21,8 @@ function calculateSalesTax(price) {
 */
 
 function addTaxAndFormatCurrency(ultimatPrice) {
-  let result = calculateSalesTax(ultimatPrice).toFixed(2);
-  return `£ ${result}`
+  let result1 = calculateSalesTax(ultimatPrice).toFixed(2);
+  return `£${result1}`;
 }
 
 /* 
