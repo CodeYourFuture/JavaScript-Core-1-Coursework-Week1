@@ -6,8 +6,8 @@
 */
 
 function calculateSalesTax(price) {
-  let result = (20 * price) / 100 + price;
-  return result;
+  let tax = (20 * price) / 100 + price;
+  return tax;
 }
 
 /*
@@ -20,9 +20,11 @@ function calculateSalesTax(price) {
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency(ultimatPrice) {
-  let result1 = calculateSalesTax(ultimatPrice).toFixed(2);
-  return `£${result1}`;
+function addTaxAndFormatCurrency(price) {
+  const taxIncludedPrice = calculateSalesTax(price);
+  const priceWithTwoDecimal = taxIncludedPrice.toFixed(2);
+  const localPrice = `£${priceWithTwoDecimal}`;
+  return localPrice;
 }
 
 /* 
