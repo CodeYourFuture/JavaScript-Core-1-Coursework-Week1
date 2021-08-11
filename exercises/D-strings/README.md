@@ -1,6 +1,6 @@
 In programming there are different _types of_ data. You've used one data type already: **string**.
 
-Computers recognise strings as a sequence of characters but to humans, strings are simply lines of text.
+Computers recognize strings as a sequence of characters but to humans, strings are simply lines of text.
 
 ```js
 var message = "This is a string";
