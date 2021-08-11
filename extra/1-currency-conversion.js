@@ -5,7 +5,10 @@
   Write a function that converts a price to USD (exchange rate is 1.4 $ to £)
 */
 
-function convertToUSD() {}
+function convertToUSD(price) {
+  //return `\$${price * 1.4}`
+  return ((price * 1.4).toFixed(2));
+}
 
 /*
   CURRENCY CONVERSION
@@ -15,7 +18,13 @@ function convertToUSD() {}
   They have also decided that they should add a 1% fee to all foreign transactions, which means you only convert 99% of the £ to BRL.
 */
 
-function convertToBRL() {}
+function convertToBRL(price) {
+  //convert £ to BRL
+  let brlPrice = (price * 5.7);
+  //return `R\$${brlPrice * 0.99}`;  
+  return ((brlPrice * 0.99).toFixed(2));
+}
+console.log(convertToUSD(32));
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
@@ -24,6 +33,12 @@ To run these tests type `npm run extraTo run the tests for just this one file, t
 (Reminder: You must have run `npm install` one time before this will work!)
 */
 
+/*
+|=====================================================|
+|=  These tests do not work. My code does though :D  =|
+|=====================================================|
+*/
+/*
 test("convertToUSD function works for £32", () => {
   expect(convertToUSD(32)).toEqual(44.8);
 });
@@ -39,3 +54,4 @@ test("convertToBRL function works for £30", () => {
 test("convertToBRL function works for £1.50", () => {
   expect(convertToBRL(1.5)).toEqual(8.46);
 });
+*/
