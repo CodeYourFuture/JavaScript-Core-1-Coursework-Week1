@@ -5,7 +5,9 @@
   Write a function that converts a price to USD (exchange rate is 1.4 $ to £)
 */
 
-function convertToUSD() {}
+function convertToUSD(numberToConvert) {
+  return numberToConvert * 1.4;
+}
 
 /*
   CURRENCY CONVERSION
@@ -15,7 +17,10 @@ function convertToUSD() {}
   They have also decided that they should add a 1% fee to all foreign transactions, which means you only convert 99% of the £ to BRL.
 */
 
-function convertToBRL() {}
+function convertToBRL(numberToConvert) {
+  // first I do the maths for the conversion, the total number multiplied by the exchange rate then I multiply that by 0.99 to take away 1% for the transaction price. Then I use the .toFixed() method to limit this to 2 dp, but that returns a string so I convert it using the Number() function
+  return Number((numberToConvert * 5.7 * 0.99).toFixed(2));
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
