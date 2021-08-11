@@ -1,16 +1,15 @@
 // Add comments to explain what this function does. You're meant to use Google!
 function getRandomNumber() {
-  return Math.random() * 10;
+  return Math.random() * 10; // Math.random() makes a random number between 0 and 1. But then you multiply that result by 10, which means the number can be between 0 and 10. With a lot more steps in between.
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
 function combine2Words(word1, word2) {
-  return word1.concat(word2);
+  return word1.concat(word2); // cancat is a method you can use to concatenate strings (or other types) into a new string. So you can use this method on a variable, that variable is the calling variable which is placed at the start of the string, every argument then will be used when the previous string ends
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
-  // Write the body of this function to concatenate three words together.
-  // Look at the test case below to understand what this function is expected to return.
+  return firstWord.concat(" ", secondWord, " ", thirdWord);
 }
 
 /* 
