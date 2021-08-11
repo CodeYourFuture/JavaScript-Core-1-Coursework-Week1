@@ -43,10 +43,35 @@
     Very doubtful.
 */
 
+let possibleAnswers = [
+  "It is certain.",
+  "It is decidedly so.",
+  "Without a doubt.",
+  "Yes - definitely.",
+  "You may rely on it.",
+  "As I see it, yes.",
+  "Most likely.",
+  "Outlook good.",
+  "Yes.",
+  "Signs point to yes.",
+  "Reply hazy, try again.",
+  "Ask again later.",
+  "Better not tell you now.",
+  "Cannot predict now.",
+  "Concentrate and ask again.",
+  "Don't count on it.",
+  "My reply is no.",
+  "My sources say no.",
+  "Outlook not so good.",
+  "Very doubtful.",
+];
+
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
-  //Write your code in here
+  console.log("The ball has shaken!");
+  outCome = Math.floor(Math.random() * 20);
+  return possibleAnswers[outCome];
 }
 
 /* 
@@ -58,9 +83,21 @@ function shakeBall() {
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
+let answer = shakeBall();
+
 function checkAnswer(answer) {
-  //Write your code in here
+  let position = possibleAnswers.indexOf(answer);
+  if (position >= 15) {
+    return "very negative";
+  } else if (position >= 10) {
+    return "negative";
+  } else if (position >= 5) {
+    return "positive";
+  } else {
+    return "very positive";
+  }
 }
+
 
 /* 
 ==================================
@@ -101,7 +138,9 @@ test("magic 8 ball returns different values each time", () => {
     );
   }
 
-  let seenPositivities = new Set(Array.from(seenAnswers.values()).map(checkAnswer));
+  let seenPositivities = new Set(
+    Array.from(seenAnswers.values()).map(checkAnswer)
+  );
   if (seenPositivities.size < 2) {
     throw Error(
       "Expected to random answers with different positivities each time shakeBall was called, but always got the same one"
