@@ -127,7 +127,7 @@ To run these tests type `npm run extraTo run the tests for just this one file, t
 test("whole magic 8 ball sequence", () => {
   const consoleLogSpy = jest.spyOn(global.console, "log");
   const answer = shakeBall();
-
+  console.log("answer is:", answer);
   expect(typeof answer).toEqual("string");
 
   expect(consoleLogSpy).toHaveBeenCalledTimes(1);
