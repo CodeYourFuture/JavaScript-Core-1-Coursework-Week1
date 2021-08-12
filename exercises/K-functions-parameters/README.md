@@ -1,4 +1,4 @@
-The input given to a function is called a **parameter**.
+{The input given to a function is called a **parameter**.
 
 A function can take more than one parameter:
 
