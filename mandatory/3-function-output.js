@@ -2,15 +2,20 @@
 function getRandomNumber() {
   return Math.random() * 10;
 }
+//The Math.random() function returns a floating-point, pseudo-random number in the range 0 to less than 1 (inclusive of 0, but not 1) with approximately uniform distribution over that range — which you can then scale to your desired range.
+// expected output : 0-9 but not 10.
 
 // Add comments to explain what this function does. You're meant to use Google!
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
+// concat() is a string method that is used to concatenate strings together. The concat() method appends one or more string values to the calling string and then returns the concatenated result as a new string.
+//expected output: word1word2
 
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  return firstWord.concat(" ", secondWord, " ", thirdWord);
 }
 
 /* 

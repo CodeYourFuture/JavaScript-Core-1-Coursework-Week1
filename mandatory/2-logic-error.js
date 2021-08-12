@@ -3,19 +3,21 @@
 function trimWord(word) {
   return word.trim();
 }
-trimWord("   CodeYourFuture ");
+// trimWord("   CodeYourFuture ");
+// trimWord(" CodeYourFuture teaches coding     ");
 
 function getStringLength(word) {
-  return "word".length();
+  return word.length;
 }
 
-getStringLength("Turtles");
+// getStringLength("Turtles");
+// getStringLength("A wild sentence appeared!");
 
 function multiply(a, b, c) {
-  a * b * c;
-  return;
+  return a * b * c;
 }
-multiply(2, 3, 6);
+// multiply(2, 3, 6);
+// multiply(2, 3, 4);
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====

@@ -6,9 +6,12 @@
 */
 
 function calculateSalesTax(price) {
-  var salesTax = price + (20 / price) * 100;
+  return price + (20 / 100) * price;
+  // var salesTax = (20 / 100) * price;
+  // var totalPrice = price + salesTax;
+  // return totalPrice;
 }
-console.log(calculateSalesTax(15));
+// console.log(calculateSalesTax(15));
 /*
   CURRENCY FORMATTING
   ===================
@@ -19,8 +22,15 @@ console.log(calculateSalesTax(15));
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency() {}
-
+function addTaxAndFormatCurrency(price) {
+  let taxIncluded = calculateSalesTax(price);
+  let decimalPlaces = taxIncluded.toFixed(2);
+  let priceCurrency = `£${decimalPlaces}`;
+  // var tax = (20 / 100) * price;
+  // var total = "£" + price + tax;
+  return priceCurrency;
+}
+// console.log(addTaxAndFormatCurrency(15));
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====S
