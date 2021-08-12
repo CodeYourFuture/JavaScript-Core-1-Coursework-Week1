@@ -5,7 +5,10 @@
   Write a function that converts a price to USD (exchange rate is 1.4 $ to £)
 */
 
-function convertToUSD() {}
+function convertToUsd(pound) {
+  return `$${pound * 1.4}`;
+}
+console.log(convertToUsd(100));
 
 /*
   CURRENCY CONVERSION
@@ -15,7 +18,10 @@ function convertToUSD() {}
   They have also decided that they should add a 1% fee to all foreign transactions, which means you only convert 99% of the £ to BRL.
 */
 
-function convertToBRL() {}
+function convertToBrl(pound) {
+  return `BRL ${(pound * 0.99 * 5.7).toFixed(4)}`;
+}
+console.log(convertToBrl(100));
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.

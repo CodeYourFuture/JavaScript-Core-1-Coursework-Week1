@@ -43,11 +43,42 @@
     Very doubtful.
 */
 
+//  from index 0 -> 4 : Very positive
+//  from index 5 -> 9 : Positive
+//  from index 10 -> 14 : Negative
+//  from index 15 -> 19 : Very Negative
+const possibleAnswers = [
+  "It is certain.",
+  "It is decidedly so.",
+  "Without a doubt.",
+  "Yes - definitely.",
+  "You may rely on it.",
+  "As I see it, yes.",
+  "Most likely.",
+  "Outlook good.",
+  "Yes.",
+  "Signs point to yes.",
+  "Reply hazy, try again.",
+  "Ask again later.",
+  "Better not tell you now.",
+  "Cannot predict now.",
+  "Concentrate and ask again.",
+  "Don't count on it.",
+  "My reply is no.",
+  "My sources say no.",
+  "Outlook not so good.",
+  "Very doubtful.",
+];
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
   //Write your code in here
+  console.log(`Ball is Shaken`);
+  const randomElement = [Math.floor(Math.random() * possibleAnswers.length)];
+  // console.log(randomElement, possibleAnswers[randomElement]);
+  return randomElement;
 }
+shakeBall();
 
 /* 
   This function should say whether the answer it is given is
@@ -58,9 +89,30 @@ function shakeBall() {
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
-function checkAnswer(answer) {
+
+//  from index 0 -> 4 : Very positive
+//  from index 5 -> 9 : Positive
+//  from index 10 -> 14 : Negative
+//  from index 15 -> 19 : Very Negative
+
+function checkAnswer(tone) {
   //Write your code in here
+  if (tone >= 0 && tone <= 4) {
+    return `Very Positive`;
+  } else if (tone >= 5 && tone <= 9) {
+    return `positive`;
+  } else if (tone >= 10 && tone <= 14) {
+    return `Negative`;
+  } else if (tone >= 15 && tone <= 19) {
+    return `Very Negative`;
+  } else {
+    return `Not within range`;
+  }
 }
+
+let test = checkAnswer(23);
+
+console.log(test);
 
 /* 
 ==================================
@@ -101,7 +153,9 @@ test("magic 8 ball returns different values each time", () => {
     );
   }
 
-  let seenPositivities = new Set(Array.from(seenAnswers.values()).map(checkAnswer));
+  let seenPositivities = new Set(
+    Array.from(seenAnswers.values()).map(checkAnswer)
+  );
   if (seenPositivities.size < 2) {
     throw Error(
       "Expected to random answers with different positivities each time shakeBall was called, but always got the same one"
