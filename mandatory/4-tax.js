@@ -7,11 +7,8 @@
 
 function calculateSalesTax(price) {
   return price + (20 / 100) * price;
-  // var salesTax = (20 / 100) * price;
-  // var totalPrice = price + salesTax;
-  // return totalPrice;
 }
-// console.log(calculateSalesTax(15));
+
 /*
   CURRENCY FORMATTING
   ===================
@@ -26,11 +23,9 @@ function addTaxAndFormatCurrency(price) {
   let taxIncluded = calculateSalesTax(price);
   let decimalPlaces = taxIncluded.toFixed(2);
   let priceCurrency = `£${decimalPlaces}`;
-  // var tax = (20 / 100) * price;
-  // var total = "£" + price + tax;
   return priceCurrency;
 }
-// console.log(addTaxAndFormatCurrency(15));
+
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====S
