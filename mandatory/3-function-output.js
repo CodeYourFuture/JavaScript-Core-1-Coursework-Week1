@@ -1,6 +1,8 @@
 // Add comments to explain what this function does. You're meant to use Google!
+
+//this function chooses a random number below 1:
 function getRandomNumber() {
-  return Math.random() * 10;
+  return Math.floor(Math.random() * 10);
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
