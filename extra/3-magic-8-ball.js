@@ -106,7 +106,6 @@ function checkAnswer(answer) {
   let answerCategory = undefined;
   Object.keys(answersObj).forEach(function (key) {
     if (answersObj[key].includes(answer)) {
-      console.log(key);
       answerCategory = key;
     }
   });
@@ -127,7 +126,6 @@ To run these tests type `npm run extraTo run the tests for just this one file, t
 test("whole magic 8 ball sequence", () => {
   const consoleLogSpy = jest.spyOn(global.console, "log");
   const answer = shakeBall();
-  console.log("answer is:", answer);
   expect(typeof answer).toEqual("string");
 
   expect(consoleLogSpy).toHaveBeenCalledTimes(1);
