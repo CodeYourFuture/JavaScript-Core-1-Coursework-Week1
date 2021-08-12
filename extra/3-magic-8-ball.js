@@ -42,11 +42,55 @@
     Outlook not so good.
     Very doubtful.
 */
+//  assume answer is an object which contain a few possible answers which they are an array
+const answersObj = {
+  "very positive": [
+    "It is certain",
+    "It is decidedly so.",
+    "Without a doubt.",
+    "Yes - definitely.",
+    "You may rely on it.",
+  ],
 
+  positive: [
+    "As I see it, yes.",
+    "Most likely.",
+    "Outlook good.",
+    "Yes.",
+    "Signs point to yes.",
+  ],
+
+  negative: [
+    "Reply hazy, try again.",
+    "Ask again later.",
+    "Better not tell you now.",
+    "Cannot predict now.",
+    "Concentrate and ask again.",
+  ],
+
+  "very negative": [
+    "Don't count on it.",
+    "My reply is no.",
+    "My sources say no.",
+    "Outlook not so good.",
+    "Very doubtful.",
+  ],
+};
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
-  //Write your code in here
+  console.log("The ball has shaken!");
+  //  i concatinate all the arrays into one. in order to reach any of the items easily. so with concat () method , i define an empty array then concatinate all other arrays in that empty one.
+  const answers = [].concat(
+    answersObj.veryPositive,
+    answersObj.positive,
+    answersObj.negative,
+    answersObj.veryNegative
+  );
+  // selects a random index of the answers list through length of an array
+  // Math.floor remove decimal numbers. make it as integer.also possible to use parseInt() .
+  const selectedAnswers = answers[Math.floor(Math.random() * answers.length)];
+  return selectedAnswers;
 }
 
 /* 
@@ -59,7 +103,14 @@ function shakeBall() {
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
-  //Write your code in here
+  let answerCategory = undefined;
+  Object.keys(answersObj).forEach(function (key) {
+    if (answersObj[key].includes(answer)) {
+      console.log(key);
+      answerCategory = key;
+    }
+  });
+  return answerCategory;
 }
 
 /* 
@@ -101,7 +152,9 @@ test("magic 8 ball returns different values each time", () => {
     );
   }
 
-  let seenPositivities = new Set(Array.from(seenAnswers.values()).map(checkAnswer));
+  let seenPositivities = new Set(
+    Array.from(seenAnswers.values()).map(checkAnswer)
+  );
   if (seenPositivities.size < 2) {
     throw Error(
       "Expected to random answers with different positivities each time shakeBall was called, but always got the same one"

@@ -6,7 +6,7 @@
 */
 
 function convertToUSD(price) {
-  return  price * 1.4  ;
+  return price * 1.4;
 }
 
 /*
@@ -18,8 +18,9 @@ function convertToUSD(price) {
 */
 
 function convertToBRL(price) {
-  let convertedPrice = 5.7 * (price *99 /100) ;
-  
+  const convertedPrice = 5.7 * ((price * 99) / 100);
+  // The parseFloat() function parses an argument (converting it to a string first if needed) and returns a floating point number.
+  return parseFloat(convertedPrice.toFixed(2));
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== 
