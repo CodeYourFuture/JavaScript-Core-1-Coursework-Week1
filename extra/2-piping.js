@@ -36,7 +36,7 @@ let badCode = format(multiply(add(startingValue, 10), 2));
 
 /* BETTER PRACTICE */
 
-let adeddNumbers = add(startingValue, 10);
+let addedNumbers = add(startingValue, 10);
 let multiplyedNumbers = multiply(addedNumbers, 2);
 let goodCode = format(multiplyedNumbers);
 
