@@ -82,10 +82,10 @@ function shakeBall() {
   console.log("The ball has shaken!");
   //  i concatinate all the arrays into one. in order to reach any of the items easily. so with concat () method , i define an empty array then concatinate all other arrays in that empty one.
   const answers = [].concat(
-    answersObj.veryPositive,
-    answersObj.positive,
-    answersObj.negative,
-    answersObj.veryNegative
+    answersObj["very positive"],
+    answersObj["positive"],
+    answersObj["negative"],
+    answersObj["very negative"]
   );
   // selects a random index of the answers list through length of an array
   // Math.floor remove decimal numbers. make it as integer.also possible to use parseInt() .
