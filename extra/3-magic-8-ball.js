@@ -84,7 +84,7 @@ let veryNegativeAnswers = ["Don't count on it.",
 let answerType = Number;
 
 //generate a random number between 0 and 'num'
-function randomNumberGenerator(num){
+function randomNumberGenerator(num) {
   return Math.floor(Math.random() * num);
 }
 
