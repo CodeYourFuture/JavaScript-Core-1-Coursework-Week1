@@ -1,16 +1,20 @@
 // Add comments to explain what this function does. You're meant to use Google!
 function getRandomNumber() {
+  // returns a floating point numebr > 0 and < 1 we multiply by 10 to get a interger
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
 function combine2Words(word1, word2) {
+  // merges two or more Arrays and returns a new Array so this would merge "word1" and "word2" to form a new Array.
   return word1.concat(word2);
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+
+  return firstWord + " " + secondWord + " " + " " + thirdWord;
 }
 
 /* 
