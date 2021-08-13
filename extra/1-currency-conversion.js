@@ -5,8 +5,8 @@
   Write a function that converts a price to USD (exchange rate is 1.4 $ to £)
 */
 
-function convertToUSD(money) {
-  return money * 1.4;
+function convertToUSD(moneyToDollar) {
+  return moneyToDollar * 1.4;
 }
 
 /*
@@ -17,9 +17,10 @@ function convertToUSD(money) {
   They have also decided that they should add a 1% fee to all foreign transactions, which means you only convert 99% of the £ to BRL.
 */
 
-function convertToBRL(money) {
-  var money = money * 0.99 * 5.7;
-  return Math.round(100 * money) / 100;
+function convertToBRL(moneyToReal) {
+  moneyToReal = moneyToReal * 0.99 * 5.7;
+  /* Rounding to the nearest hundredths .*/
+  return Math.round(100 * moneyToReal) / 100;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== 

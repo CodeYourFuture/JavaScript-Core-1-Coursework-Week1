@@ -1,12 +1,12 @@
 // Start by creating a variable `message`
-var myName = " Halla ";
-var message = myName.length;
-var aboutName = `My name is Halla and my name is ${message} characters long`;
-var aboutName1 =
+let myName = " Halla ";
+let message = myName.length;
+let aboutName = `My name is Halla and my name is ${message} characters long`;
+let aboutName1 =
   "My name is Halla and my name is " + message + " characters long";
-var myNewName = myName.trim();
-var message1 = myNewName.length;
-var aboutName2 =
+let myNewName = myName.trim();
+let message1 = myNewName.length;
+let aboutName2 =
   "My name is Halla and my name after trim is " + message1 + " characters long";
 
 console.log(aboutName);

@@ -32,10 +32,11 @@ const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
 let badCode = format(multiply(add(startingValue, 10), 2));
+// this looks more complex than the goodCode .
 
 /* BETTER PRACTICE */
-var adding = add(startingValue, 10);
-var multiplying = multiply(adding, 2);
+const adding = add(startingValue, 10);
+const multiplying = multiply(adding, 2);
 
 let goodCode = format(multiplying);
 

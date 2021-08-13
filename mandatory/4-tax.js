@@ -20,8 +20,8 @@ function calculateSalesTax(price) {
 */
 
 function addTaxAndFormatCurrency(price) {
-  var newPrice = calculateSalesTax(price);
-  var newPriceDecimal = newPrice.toFixed(2);
+  let newPrice = calculateSalesTax(price);
+  let newPriceDecimal = newPrice.toFixed(2);
   return `£${newPriceDecimal}`;
 }
 
