@@ -1,3 +1,3 @@
-const name = " Daniel  ";
+const name = "Mohamed  ";
 
-console.log(message);
+console.log(name.trim());
