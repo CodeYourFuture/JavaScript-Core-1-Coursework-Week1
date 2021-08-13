@@ -5,3 +5,4 @@ const numberOfMentors = 8;
 const Total = `Total number of students and mentors: ${numberOfStudents + numberOfMentors}`
  
 console.log(Total);
+
