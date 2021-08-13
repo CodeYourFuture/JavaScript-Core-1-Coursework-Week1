@@ -38,7 +38,7 @@ To run these tests type `npm run extraTo run the tests for just this one file, t
 |=  These tests do not work. My code does though :D  =|
 |=====================================================|
 */
-/*
+
 test("convertToUSD function works for £32", () => {
   expect(convertToUSD(32)).toEqual(44.8);
 });
@@ -54,4 +54,3 @@ test("convertToBRL function works for £30", () => {
 test("convertToBRL function works for £1.50", () => {
   expect(convertToBRL(1.5)).toEqual(8.46);
 });
-*/
