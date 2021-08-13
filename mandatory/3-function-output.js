@@ -3,19 +3,18 @@ function getRandomNumber() {
   return Math.random() * 10;
 }
 
-//The above code uses Math.random to get a random number between 0-1, it is then timesed by 10. 
+//The above code uses Math.random to get a random floating number between 0-1, it is then multiplied by 10.
 
 // Add comments to explain what this function does. You're meant to use Google!
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
 
-//above is a method to concatenate values. 
+//above is a method to used to concatenate values.
 
 function concatenate(firstWord, secondWord, thirdWord) {
-  return ''.concat(firstWord, secondWord, thirdWord);
+  return "".concat(firstWord, secondWord, thirdWord);
 }
-
 
 /* 
 ===================================================

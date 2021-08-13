@@ -4,14 +4,20 @@ function addNumbers(a, b, c) {
   return a + b + c;
 }
 
-function introduceMe(name, age)
-  return "Hello, my name is " + name + "and I am " + age + "years old";
+//added commas between parameters above
+
+function introduceMe(name, age) {
+  return "Hello, my name is " + name + " and I am " + age + " years old";
+}
+
+//added "+" operator for concatenation and an additional curly bracket.
 
 function getTotal(a, b) {
-  total = a + b;
-
+  const total = a + b;
   return "The total is " + total;
 }
+
+//turned the total into a variable and added correct spacing.
 
 /* 
 ===================================================

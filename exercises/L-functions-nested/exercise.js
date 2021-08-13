@@ -4,8 +4,8 @@ var mentor3 = "Mimi";
 var mentor4 = "Rob";
 var mentor5 = "Yohannes";
 
-function loudGreeting(mentor){
-    return "HELLO " + mentor.toUpperCase();
+function loudGreeting(mentor) {
+  return "HELLO " + mentor.toUpperCase();
 }
 
 console.log(loudGreeting(mentor1));
