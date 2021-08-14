@@ -18,6 +18,15 @@ function calculateSalesTax() {}
 */
 
 function addTaxAndFormatCurrency() {}
+function calculateSalesTax(beforeSalesTax) {
+  // return the total price then multiply by tax percentage
+  return beforeSalesTax + beforeSalesTax * 0.2;
+}
+
+function addTaxAndFormatCurrency(numberToFormat) {
+  // returns: total price + tax using £ as the start currency symbol. Price has 2 decimal places at the end via .toFixed()
+  return `£${(numberToFormat + numberToFormat * 0.2).toFixed(2)}`;
+}
 
 /* 
 ===================================================
