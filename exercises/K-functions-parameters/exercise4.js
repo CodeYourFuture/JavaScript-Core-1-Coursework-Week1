@@ -6,8 +6,4 @@ return num1+num2;
 }
 const result =add(13,124)
 console.log(result);
-<<<<<<< HEAD
-
-=======
->>>>>>> 82d3c6248e7f9737e9c4152aeee1971cff5b8193
 
