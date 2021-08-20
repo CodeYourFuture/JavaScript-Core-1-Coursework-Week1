@@ -73,12 +73,13 @@ const possibleAnswers = [
 // and return the answer.
 function shakeBall() {
   //Write your code in here
-  console.log(`Ball is Shaken`);
+  console.log(`The ball has shaken!`);
   const randomElement = [Math.floor(Math.random() * possibleAnswers.length)];
   // console.log(randomElement, possibleAnswers[randomElement]);
   return randomElement;
 }
-shakeBall();
+
+
 
 /* 
   This function should say whether the answer it is given is
@@ -95,22 +96,23 @@ shakeBall();
 //  from index 10 -> 14 : Negative
 //  from index 15 -> 19 : Very Negative
 
-function checkAnswer(tone) {
+function checkAnswer() {
   //Write your code in here
+  tone = shakeBall();
   if (tone >= 0 && tone <= 4) {
-    return `Very Positive`;
+    return `Very Positive, ${possibleAnswers[tone]}`;
   } else if (tone >= 5 && tone <= 9) {
-    return `positive`;
+    return `positive, ${possibleAnswers[tone]}`;
   } else if (tone >= 10 && tone <= 14) {
-    return `Negative`;
+    return `Negative, ${possibleAnswers[tone]}`;
   } else if (tone >= 15 && tone <= 19) {
-    return `Very Negative`;
+    return `Very Negative, ${possibleAnswers[tone]}`;
   } else {
     return `Not within range`;
   }
 }
 
-let test = checkAnswer(23);
+let test = checkAnswer();
 
 console.log(test);
 
