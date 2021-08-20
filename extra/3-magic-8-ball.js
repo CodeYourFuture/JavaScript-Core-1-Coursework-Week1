@@ -11,36 +11,6 @@
 
   The question can be anything, but the answers are fixed,
   and have different levels of positivity or negativity.
-
-  Below are the possible answers:
-
-  ## Very positive
-    It is certain.
-    It is decidedly so.
-    Without a doubt.
-    Yes - definitely.
-    You may rely on it.
-
-  ## Positive
-    As I see it, yes.
-    Most likely.
-    Outlook good.
-    Yes.
-    Signs point to yes.
-
-  ## Negative
-    Reply hazy, try again.
-    Ask again later.
-    Better not tell you now.
-    Cannot predict now.
-    Concentrate and ask again.
-
-  ## Very negative
-    Don't count on it.
-    My reply is no.
-    My sources say no.
-    Outlook not so good.
-    Very doubtful.
 */
 
 //  from index 0 -> 4 : Very positive
@@ -74,12 +44,12 @@ const possibleAnswers = [
 function shakeBall() {
   //Write your code in here
   console.log(`The ball has shaken!`);
-  const randomElement = [Math.floor(Math.random() * possibleAnswers.length)];
+  const randomElement = [
+    Math.floor(Math.random() * possibleAnswers.length) + 1,
+  ];
   // console.log(randomElement, possibleAnswers[randomElement]);
   return randomElement;
 }
-
-
 
 /* 
   This function should say whether the answer it is given is
@@ -112,9 +82,7 @@ function checkAnswer() {
   }
 }
 
-let test = checkAnswer();
-
-console.log(test);
+console.log(checkAnswer());
 
 /* 
 ==================================
