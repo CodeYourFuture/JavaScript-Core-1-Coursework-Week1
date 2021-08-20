@@ -19,7 +19,6 @@ console.log(convertToUSD(50));
 */
 
 function convertToBRL(pound) {
-  
   return (pound * 0.99 * 5.7).toFixed(2);
 }
 console.log(convertToBRL(1.5));
