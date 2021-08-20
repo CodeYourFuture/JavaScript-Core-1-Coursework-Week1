@@ -9,7 +9,7 @@ function calculateSalesTax(prodPreTax) {
   let prodPrice = prodPreTax + prodPreTax * 0.2;
   return prodPrice;
 }
-
+console.log(calculateSalesTax(15.0));
 /*
   CURRENCY FORMATTING
   ===================
@@ -20,12 +20,14 @@ function calculateSalesTax(prodPreTax) {
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency(prodPreTax, tax) {
-  let prodPrice = prodPreTax + prodPreTax * (tax / 100);
-  let fixedPrice = `£${prodPrice.toFixed(2)}`;
+function addTaxAndFormatCurrency(prod) {
+  afterTax = calculateSalesTax(prod);
+  let fixedPrice = `£${afterTax.toFixed(2)}`;
   return fixedPrice;
 }
+console.log(addTaxAndFormatCurrency(15));
 
+// addTaxAndFormatCurrency(15)
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
