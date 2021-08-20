@@ -5,9 +5,10 @@ function trimWord(word) {
 }
 
 function getStringLength(word) {
-  return word.length();
+  return word.length;
 }
 
+console.log(getStringLength("Hi"));
 function multiply(a, b, c) {
   return a * b * c;
 }

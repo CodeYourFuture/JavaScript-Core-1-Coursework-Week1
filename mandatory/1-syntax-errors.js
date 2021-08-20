@@ -11,9 +11,9 @@ function introduceMe(name, age) {
 function getTotal(a, b) {
   let total = a + b;
 
-  return total;
+  return `The total is: ${total}`;
 }
-
+console.log(getTotal(1,2));
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
