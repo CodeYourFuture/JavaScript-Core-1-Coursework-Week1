@@ -42,11 +42,44 @@
     Outlook not so good.
     Very doubtful.
 */
+const ansArray = [
+  //Very positive
+  "It is certain.",
+  "It is decidedly so.",
+  "Without a doubt.",
+  "Yes - definitely.",
+  "You may rely on it.",
+  //Positive
+  "As I see it, yes.",
+  "Most likely.",
+  "Outlook good.",
+  "Yes.",
+  "Signs point to yes.",
+  //Negative
+  "Reply hazy, try again.",
+  "Ask again later.",
+  "Better not tell you now.",
+  "Cannot predict now.",
+  "Concentrate and ask again.",
+  //Very negative
+  "Don't count on it.",
+  "My reply is no.",
+  "My sources say no.",
+  "Outlook not so good.",
+  "Very doubtful.",
+];
+function generateRandom() {
+  return Math.floor(Math.random() * ansArray.length);
+}
 
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
+  const randomAnswer = ansArray[generateRandom()];
+
   //Write your code in here
+console.log("The ball has shaken!");
+return randomAnswer;
 }
 
 /* 
@@ -58,9 +91,29 @@ function shakeBall() {
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
+
 function checkAnswer(answer) {
   //Write your code in here
+  let answerTurns;
+  for (let i = 0; i < ansArray.length; i++) {
+    if (answer === ansArray[i]) {
+      answerTurns = i;
+    }
+  }
+  if (answerTurns < 5) {
+    return "very positive";
+  } else if (answerTurns >= 5 && answerTurns < 10) {
+    return "positive";
+  } else if (answerTurns >= 10 && answerTurns < 15) {
+    return "negative";
+  } else {
+    return "very negative";
+  }
 }
+
+let a = shakeBall();
+console.log(checkAnswer(a));
+
 
 /* 
 ==================================
@@ -101,7 +154,10 @@ test("magic 8 ball returns different values each time", () => {
     );
   }
 
-  let seenPositivities = new Set(Array.from(seenAnswers.values()).map(checkAnswer));
+  let seenPositivities = new Set(
+    Array.from(seenAnswers.values()).map(checkAnswer)
+  );
+  
   if (seenPositivities.size < 2) {
     throw Error(
       "Expected to random answers with different positivities each time shakeBall was called, but always got the same one"

@@ -6,6 +6,10 @@
 */
 
 function convertToUSD() {}
+function convertToUSD(amount) {
+  let poundToDollar = 1.4 * amount;
+  return poundToDollar;
+}
 
 /*
   CURRENCY CONVERSION
@@ -16,11 +20,16 @@ function convertToUSD() {}
 */
 
 function convertToBRL() {}
+function convertToBRL(amount) {
+  let transferFee = amount * 0.99;
+  let poundToReal = (transferFee * 5.7).toFixed(2);
+  return parseFloat(poundToReal);
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
 
-To run these tests type `npm run extraTo run the tests for just this one file, type `npm run extra-tests -- --testPathPattern 1-syntax-errors` into your terminal
+To run these tests type `npm run extraTo run the tests for just this one file, type `npm run extra-tests -- --testPathPattern 1-currency-conversion` into your terminal
 (Reminder: You must have run `npm install` one time before this will work!)
 */
 
