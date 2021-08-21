@@ -39,9 +39,17 @@ const startingValue = 2;
 // Why can this code be seen as bad practice? Comment your answer.
 let badCode = format(multiply(add(startingValue, 10), 2));
 
+// alternative and shorter code snippet: let badCode = '£' + ((startingValue + 10) * 2);
+
+// I found the above code hard to put together because it's so messy, but it's a bunch on functions and methods nested inside each other, see if you can trace the beginning and end brackets for each function and method, start from the inside and work way back out. # Notes to self.  
+
 /* BETTER PRACTICE */
 
-let =
+  let addNum = add(startingValue, 10);
+  let multiplyNum = multiply(addNum, 2);
+  let goodCode = format(multiplyNum);
+
+
   /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
 

@@ -31,12 +31,13 @@ let exchangeRate = convertToBRL(30);
 console.log(exchangeRate);
 
 let exchangeRate2 = convertToBRL(1.5);
-console.log(exchangeRate2.toFixed(2));
+let formatDecimals = exchangeRate2.toFixed(2);
+console.log(formatDecimals);
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
 
-To run these tests type `npm run extra To run the tests for just this one file, type `npm run extra-tests -- --testPathPattern 1-syntax-errors` into your terminal
+To run these tests type `npm test extra` to run the tests for just this one file. Type `npm run extra-tests -- --testPathPattern 1-syntax-errors` into your terminal
 (Reminder: You must have run `npm install` one time before this will work!)
 */
 

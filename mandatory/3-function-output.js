@@ -7,13 +7,13 @@ function getRandomNumber() {
 
 // Add comments to explain what this function does. You're meant to use Google!
 function combine2Words(word1, word2) {
-  return word1.concat(word2);
+  return firstWord.concat(' ', secondWord, ' ', thirdWord);
 }
 
 //above is a method to used to concatenate values.
 
 function concatenate(firstWord, secondWord, thirdWord) {
-  return "".concat(firstWord, secondWord, thirdWord);
+  return firstWord + ' ' + secondWord + ' ' + thirdWord;
 }
 
 /* 
