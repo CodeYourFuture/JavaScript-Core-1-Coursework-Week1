@@ -9,6 +9,7 @@ function getStringLength(word) {
 }
 
 console.log(getStringLength("Hi"));
+
 function multiply(a, b, c) {
   return a * b * c;
 }
