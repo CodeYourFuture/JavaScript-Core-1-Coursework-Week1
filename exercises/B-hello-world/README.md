@@ -15,6 +15,7 @@ Inside of `exercise.js` there's a line of code that will print "Hello world!".
 - Try to `console.log()` something different. For example, 'Hello World. I just started learning JavaScript!'.
 - Try to console.log() several things at once.
 - What happens when you get rid of the quote marks?
--Answer: It generates a syntax error message
-- What happens when you console.log() just a number 
--Answer: 
+  -Answer: It generates a syntax error message
+- What happens when you console.log() just a number
+  -Answer: An error is generated when I console.log(44),
+  i.e.just a number

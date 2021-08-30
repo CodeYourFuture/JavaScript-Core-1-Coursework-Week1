@@ -15,7 +15,7 @@ var nameLowerCase = name.toLowerCase();
 
 console.log(nameLowerCase); // "daniel"
 ```
-
+S
 You can find out more about string properties and methods by searching for "JavaScript string methods".
 
 ## Exercise 1
