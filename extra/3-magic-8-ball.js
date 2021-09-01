@@ -43,10 +43,38 @@
     Very doubtful.
 */
 
+  var responses = [
+    "It is certain.",
+    "It is decidedly so.",
+    "Without a doubt.",
+    "Yes - definitely.",
+    "You may rely on it.",
+
+    "As I see it, yes.",
+    "Most likely.",
+    "Outlook good.",
+    "Yes.",
+    "Signs point to yes.",
+
+    "Reply hazy, try again.",
+    "Ask again later.",
+    "Better not tell you now.",
+    "Cannot predict now.",
+    "Concentrate and ask again.",
+
+    "Don't count on it.",
+    "My reply is no.",
+    "My sources say no.",
+    "Outlook not so good.",
+    "Very doubtful.",
+  ];
+
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
   //Write your code in here
+  console.log("The ball has shaken!");
+  return responses[Math.floor(Math.random() * responses.length)];
 }
 
 /* 
@@ -60,6 +88,24 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
+  let answerIndex = responses.indexOf(answer);
+
+  if(answerIndex <= 5) {
+    return "very positive";
+  } 
+  else if(answerIndex <= 10) {
+    return "positive";
+  }
+  else if(answerIndex <= 15) {
+    return "negative";
+  }
+  else if(answerIndex <= 20) {
+    return "very negative";
+  }
+  else {
+    return "not a correct response"
+  }
+
 }
 
 /* 
