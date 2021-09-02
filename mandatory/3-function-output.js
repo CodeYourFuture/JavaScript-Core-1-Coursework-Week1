@@ -1,6 +1,6 @@
 // Add comments to explain what this function does. You're meant to use Google!
 function getRandomNumber() {
-  // returns a floating point numebr > 0 and < 1 we multiply by 10 to get a interger
+  // returns a floating point number > 0 and < 1 we multiply by 10 to get a interger.
   return Math.random() * 10;
 }
 
