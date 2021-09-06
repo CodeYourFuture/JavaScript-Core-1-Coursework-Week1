@@ -2,6 +2,7 @@
   "name": "javascript-core-1-coursework-week1",
   "version": "1.0.0",
   "description": "Exercises for JS1 Week 1",
+  "license": "CC-BY-SA-4.0",
   "scripts": {
     "test": "jest"
   },
