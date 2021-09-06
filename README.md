@@ -8,7 +8,7 @@ The `extra` folder contains exercises that you can complete to challenge yoursel
 
 ## Running the code/tests
 
-These files for the mandatory/extra exercises are intended to be run as jest tests. 
+The files for the mandatory/extra exercises are intended to be run as jest tests. 
 
 - Once you have cloned the repository, run `npm install` once in the terminal to install jest (and any necessary dependencies).
 - To run the tests for all mandatory/extra exercises, run `npm test`
