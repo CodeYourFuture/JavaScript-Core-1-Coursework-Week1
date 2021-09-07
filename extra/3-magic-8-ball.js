@@ -45,8 +45,19 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
+const magicAnswers = ["It is certain.", "It is decidedly so.", 
+    "Without a doubt.", "Yes - definitely", "You may rely on it.", 
+    "As I see it, yes.", "Most likely.", "Outlook good.", "Yes.", "Signs point to yes.",
+    "Reply hazy, try again.", "Ask again later.", "Better not tell you now.", 
+    "Cannot predict now.", "Concentrate and ask again.", 
+    "Don't count on us.", "My reply is no.", "My sources say no.", 
+    "Outlook not so good.", "Very doubtful." ];
 function shakeBall() {
   //Write your code in here
+  let index = Math.floor(Math.random() * magicAnswers.length)
+  let response = magicAnswers[index];
+  console.log("The ball has shaken!");
+  return response;
 }
 
 /* 
@@ -60,6 +71,20 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
+  let i = magicAnswers.indexOf(answer);
+  if (i <= 4) {
+    return "very positive";
+  }
+  if (i > 4 && i < 10) {
+    return "positive";
+  }
+  if (i > 9 && i < 15){
+    return "negative";
+  }
+  if (i > 14 && i < 20){
+    return "very negative";
+  }
+
 }
 
 /* 
