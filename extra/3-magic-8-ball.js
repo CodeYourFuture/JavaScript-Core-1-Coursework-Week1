@@ -75,15 +75,13 @@ function checkAnswer(answer) {
   if (i <= 4) {
     return "very positive";
   }
-  if (i > 4 && i < 10) {
+  if (i < 10) {
     return "positive";
   }
-  if (i > 9 && i < 15){
+  if (i < 15){
     return "negative";
   }
-  if (i > 14 && i < 20){
     return "very negative";
-  }
 
 }
 
