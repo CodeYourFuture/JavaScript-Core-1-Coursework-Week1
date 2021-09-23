@@ -1,5 +1,7 @@
-// Declare your function first
+function sum(num1,num2){
+    return num1+num2;
+}
 
-// Call the function and assign to a variable `sum`
+let addition = sum(5,8);
 
-console.log(sum);
+console.log(addition);
