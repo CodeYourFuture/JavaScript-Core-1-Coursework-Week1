@@ -47,6 +47,7 @@
 // and return the answer.
 function shakeBall() {
   //Write your code in here
+  console.log("The ball has shaken!");
 }
 
 /* 
