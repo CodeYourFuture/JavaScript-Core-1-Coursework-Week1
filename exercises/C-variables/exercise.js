@@ -1,2 +1,6 @@
 // Start by creating a variable `greeting`
-var 
+var greeting = "Hello world";
+
+console.log(greeting);
+console.log(greeting);
+console.log(greeting);
