@@ -1,4 +1,4 @@
-// Declare your function here
+const createLongGreeting= (userName, userAge) => "Hello, my name is "+userName+" and I'm "+userAge+ " old";
 
 const greeting = createLongGreeting("Daniel", 30);
 

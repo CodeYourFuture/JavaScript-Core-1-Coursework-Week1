@@ -43,10 +43,53 @@
     Very doubtful.
 */
 
+const answers = {
+   veryPositive: [
+    "It is certain.",
+    "It is decidedly so.",
+    "Without a doubt.",
+    "Yes - definitely.",
+    "You may rely on it."
+  ],
+  positive: [
+    "As I see it, yes.",
+    "Most likely.",
+    "Outlook good.",
+    "Yes.",
+    "Signs point to yes."
+  ],
+  negative: [
+    "Reply hazy, try again.",
+    "Ask again later.",
+    "Better not tell you now.",
+    "Cannot predict now.",
+    "Concentrate and ask again."
+  ],
+  veryNegative:[
+    "Don't count on it.",
+    "My reply is no.",
+    "My sources say no.",
+    "Outlook not so good.",
+    "Very doubtful."
+  ]
+}
+
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
-  //Write your code in here
+  let answerGroup = Math.floor(Math.random() * 4);
+  let answerNumber = Math.floor(Math.random() * 5);
+  console.log("The ball has shaken!");
+  switch (answerGroup) {
+    case 1: 
+      return answers.veryPositive[answerNumber];
+    case 2: 
+      return answers.positive[answerNumber];
+    case 3: 
+      return answers.negative[answerNumber];
+    default:
+      return answers.veryNegative[answerNumber]; 
+  }
 }
 
 /* 
@@ -59,7 +102,15 @@ function shakeBall() {
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
-  //Write your code in here
+  if(answers.veryPositive.includes(answer)) {
+    return "very positive";
+  } else if(answers.positive.includes(answer)) {
+    return "positive";
+  } else if(answers.negative.includes(answer)) {
+    return "negative";
+  } else if(answers.veryNegative.includes(answer)) {
+    return "very negative";
+  }
 }
 
 /* 
@@ -81,13 +132,20 @@ test("whole magic 8 ball sequence", () => {
 
   expect(consoleLogSpy).toHaveBeenCalledTimes(1);
   expect(consoleLogSpy).toHaveBeenLastCalledWith("The ball has shaken!");
-
-  expect(checkAnswer(answer)).toBeOneOf([
+  expect([
+    "very positive",
+    "positive",
+    "negative",
+    "very negative",
+  ].includes(checkAnswer(answer))).toBeTruthy();
+/* the below function is depcrecated (toBeOneOf). So I wrote the above code, which does the same test. 
+expect(checkAnswer(answer)).toBeOneOf([
     "very positive",
     "positive",
     "negative",
     "very negative",
   ]);
+*/
 });
 
 test("magic 8 ball returns different values each time", () => {

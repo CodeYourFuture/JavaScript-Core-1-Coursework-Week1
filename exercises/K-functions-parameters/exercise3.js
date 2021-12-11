@@ -1,4 +1,4 @@
-// Write your function here
+const createGreeting = (userName) => "Hello, my name is " + userName;
 
 var greeting = createGreeting("Daniel");
 
