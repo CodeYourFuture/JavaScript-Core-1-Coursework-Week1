@@ -1,3 +1,5 @@
+const  { toBeOneOf } =require("jest-extended");
+expect.extend({ toBeOneOf });
 /**
 
   Let's peer into the future using a Magic 8 Ball!
@@ -110,7 +112,7 @@ function checkAnswer(answer) {
   //Write your code in here
 }
 
-console.log(checkAnswer(shakeBall()));
+// console.log(checkAnswer(shakeBall()));
 /* 
 ==================================
 ======= TESTS - DO NOT MODIFY =====
@@ -130,13 +132,13 @@ test("whole magic 8 ball sequence", () => {
 
   expect(consoleLogSpy).toHaveBeenCalledTimes(1);
   expect(consoleLogSpy).toHaveBeenLastCalledWith("The ball has shaken!");
-  // I've found a problem with the code below,I've changed
-  expect(
-    checkAnswer(answer) === "very positive" ||
-      checkAnswer(answer) === "positive" ||
-      checkAnswer(answer) === "negative" ||
-      checkAnswer(answer) === "very negative"
-  ).toBe(true);
+
+  expect(checkAnswer(answer)).toBeOneOf([
+    "very positive",
+    "positive",
+    "negative",
+    "very negative",
+  ]);
 });
 
 test("magic 8 ball returns different values each time", () => {
