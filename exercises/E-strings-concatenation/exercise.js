@@ -1,3 +1,5 @@
 // Start by creating a variable `message`
-
-console.log(message);
+const myName = "Ali";
+const message = "Hi my name is ";
+const product = message + myName;
+console.log(product);

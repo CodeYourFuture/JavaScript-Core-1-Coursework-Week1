@@ -1,5 +1,5 @@
-function triple(number) {
-  // complete function here
+function triple(num) {
+  return num * 3;
 }
 
 var result = triple(12);
