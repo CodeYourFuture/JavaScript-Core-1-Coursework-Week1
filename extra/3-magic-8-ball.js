@@ -132,20 +132,12 @@ test("whole magic 8 ball sequence", () => {
 
   expect(consoleLogSpy).toHaveBeenCalledTimes(1);
   expect(consoleLogSpy).toHaveBeenLastCalledWith("The ball has shaken!");
-  expect([
-    "very positive",
-    "positive",
-    "negative",
-    "very negative",
-  ].includes(checkAnswer(answer))).toBeTruthy();
-/* the below function is depcrecated (toBeOneOf). So I wrote the above code, which does the same test. 
-expect(checkAnswer(answer)).toBeOneOf([
+  expect(checkAnswer(answer)).toBeOneOf([
     "very positive",
     "positive",
     "negative",
     "very negative",
   ]);
-*/
 });
 
 test("magic 8 ball returns different values each time", () => {
