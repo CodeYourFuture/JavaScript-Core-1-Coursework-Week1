@@ -4,7 +4,7 @@ var mentor3 = "Mimi";
 var mentor4 = "Rob";
 var mentor5 = "Yohannes";
 
-const shouty = (mentorName) => "HELLO " + mentorName.toUpperCase();
+const shouty = (mentorName) => `HELLO ${mentorName.toUpperCase()}`;
 
 console.log(shouty(mentor1));
 console.log(shouty(mentor2));

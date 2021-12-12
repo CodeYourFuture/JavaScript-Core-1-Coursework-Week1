@@ -39,6 +39,7 @@ let badCode = format(multiply(add(startingValue, 10), 2));
 
 let sum = add(startingValue, 10);
 let total = multiply(sum, 2);
+let total2 = multiply(sum, 2);
 let goodCode = format(total);
 
 /* ======= TESTS - DO NOT MODIFY ===== 
