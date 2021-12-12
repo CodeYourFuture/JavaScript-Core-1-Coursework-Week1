@@ -1,3 +1,5 @@
+const { toBeOneOf } = require("jest-extended");
+expect.extend({ toBeOneOf });
 /**
 
   Let's peer into the future using a Magic 8 Ball!
@@ -43,11 +45,50 @@
     Very doubtful.
 */
 
+let answers = [{
+        "Very Positive": [
+            "It is certain.",
+            "It is decidedly so.",
+            "Without a doubt.",
+            "Yes - definitely.",
+            "You may rely on it.",
+        ],
+    },
+    {
+        Positive: [
+            "As I see it, yes.",
+            "Most likely.",
+            "Outlook good.",
+            "Yes.",
+            "Signs point to yes.",
+        ],
+    },
+    {
+        Negative: [
+            "Reply hazy, try again.",
+            "Ask again later.",
+            "Better not tell you now.",
+            "Cannot predict now.",
+            "Concentrate and ask again.",
+        ],
+    },
+    {
+        "Very negative": [
+            "Don't count on it.",
+            "My reply is no.",
+            "My sources say no.",
+            "Outlook not so good.",
+            "Very doubtful.",
+        ],
+    },
+];
+
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
     //Write your code in here
-    return "The ball has shaken! " + answer;
+
+    return "The ball has shaken!";
 }
 
 /* 

@@ -34,8 +34,9 @@ const startingValue = 2;
 let badCode = format(multiply(add(startingValue, 10), 2));
 
 /* BETTER PRACTICE */
-
-let goodCode = startingValue;
+let sum = add(startingValue, 10);
+let times = multiply(sum, 2);
+let goodCode = format(times);
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
 
