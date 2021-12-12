@@ -43,6 +43,9 @@
     Very doubtful.
 */
 
+const matchers = require("jest-extended");
+expect.extend(matchers);
+
 const answers = {
    veryPositive: [
     "It is certain.",

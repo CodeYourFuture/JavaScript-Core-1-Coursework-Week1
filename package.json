@@ -4,7 +4,8 @@
   "description": "Exercises for JS1 Week 1",
   "license": "CC-BY-SA-4.0",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "extra-tests":"jest extra"
   },
   "repository": {
     "type": "git",
@@ -15,26 +16,22 @@
   },
   "jest": {
     "setupFilesAfterEnv": [
-      "./node_modules/jest-extended/all"
-    ],
+        "jest-extended/all"
+      ],
     "projects": [
       {
         "displayName": "mandatory",
-        "testMatch": [
-          "<rootDir>/mandatory/*.js"
-        ]
+        "testMatch": ["<rootDir>/mandatory/*.js"]
       },
       {
         "displayName": "extra",
-        "testMatch": [
-          "<rootDir>/extra/*.js"
-        ]
+        "testMatch": ["<rootDir>/extra/*.js"]
       }
     ]
   },
   "homepage": "https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week1#readme",
   "devDependencies": {
     "jest": "^27.4.4",
-    "jest-extended": "^1.2.0"
+    "jest-extended": "^1.2"
   }
 }
