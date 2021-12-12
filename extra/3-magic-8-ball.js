@@ -38,7 +38,7 @@
   ## Very negative
     Don't count on it.
     My reply is no.
-    My sources say no.
+   My reply is no..
     Outlook not so good.
     Very doubtful.
 */
@@ -46,7 +46,14 @@
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
-  //Write your code in here
+  array = ["It is certain.","It is decidedly so.","Without a doubt.","Yes - definitely.", "You may rely on it.",
+    "As I see it", "yes.","Most likely.","Outlook good.","Yes.","Signs point to yes.",
+    "Reply hazy", "try again.","Ask again later.","Better not tell you now.","Cannot predict now.","Concentrate and ask again.",
+    "Don't count on it.","My reply is no.","My reply is no.","Outlook not so good.","Very doubtful."
+  ]
+ randomN =  Math.floor(Math.random() * 19);
+ console.log("The ball has shaken!");
+ return array[randomN];
 }
 
 /* 
@@ -59,7 +66,17 @@ function shakeBall() {
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
-  //Write your code in here
+  let aIndex = (array.indexOf(answer));
+  if (aIndex >= 0 && aIndex < 5 ){
+    return "very positive";
+  } else if (aIndex >= 5 && aIndex < 10 ){
+    return "positive";
+  } else if (aIndex >= 10 && aIndex < 15 ){
+    return "negative";
+  } else if (aIndex >= 14 && aIndex < 19 ){
+    return "very negative";
+  }
+  
 }
 
 /* 
@@ -116,3 +133,5 @@ test("checkAnswer works for `It is decidedly so.`", () => {
 test("checkAnswer works for `My reply is no.`", () => {
   expect(checkAnswer("My reply is no.")).toEqual("very negative");
 });
+
+
