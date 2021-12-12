@@ -1,3 +1,6 @@
-const name = " Daniel  ";
+const myName = " Daniel  ";
+let nameWithoutspace = myName.trim();
 
-console.log(message);
+console.log(
+  `My name is ${nameWithoutspace} and my name is ${nameWithoutspace.length} characters long`
+);

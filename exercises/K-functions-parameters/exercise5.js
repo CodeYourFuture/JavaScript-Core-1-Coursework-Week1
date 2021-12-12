@@ -1,5 +1,5 @@
 // Declare your function here
 
-const greeting = createLongGreeting("Daniel", 30);
+const greeting = (nam, age) => `Hello, my name is ${nam} and I'm ${age} years old`;
 
-console.log(greeting);
+console.log(greeting("Daniel", 30));
