@@ -1,3 +1,6 @@
+const { toBeOneOf } = require("jest-extended");
+expect.extend({ toBeOneOf });
+
 /**
 
   Let's peer into the future using a Magic 8 Ball!
@@ -67,6 +70,7 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   let aIndex = (array.indexOf(answer));
+
   if (aIndex >= 0 && aIndex < 5 ){
     return "very positive";
   } else if (aIndex >= 5 && aIndex < 10 ){

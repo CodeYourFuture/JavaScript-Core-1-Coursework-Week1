@@ -1,40 +1,39 @@
 {
-  "name": "javascript-core-1-coursework-week1",
-  "version": "1.0.0",
-  "description": "Exercises for JS1 Week 1",
-  "license": "CC-BY-SA-4.0",
-  "scripts": {
-    "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week1.git"
-  },
-  "bugs": {
-    "url": "https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week1/issues"
-  },
-  "jest": {
-    "setupFilesAfterEnv": [
-      "jest-extended"
-    ],
-    "projects": [
-      {
-        "displayName": "mandatory",
-        "testMatch": [
-          "<rootDir>/mandatory/*.js"
+"name": "javascript-core-1-coursework-week1",
+    "version": "1.0.0",
+    "description": "Exercises for JS1 Week 1",
+    "license": "CC-BY-SA-4.0",
+    "scripts": {
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week1.git"
+    },
+    "bugs": {
+        "url": "https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week1/issues"
+    },
+    "jest": {
+        "setupFilesAfterEnv": [
+            "jest-extended"
+        ],
+        "projects": [{
+                "displayName": "mandatory",
+                "testMatch": [
+                    "<rootDir>/mandatory/*.js"
+                ]
+            },
+            {
+                "displayName": "extra",
+                "testMatch": [
+                    "<rootDir>/extra/*.js"
+                ]
+            }
         ]
-      },
-      {
-        "displayName": "extra",
-        "testMatch": [
-          "<rootDir>/extra/*.js"
-        ]
-      }
-    ]
-  },
-  "homepage": "https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week1#readme",
-  "devDependencies": {
-    "jest": "^27.4.4",
-    "jest-extended": "^1.2.0"
-  }
+    },
+    "homepage": "https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week1#readme",
+    "devDependencies": {
+        "jest": "^26.6.3",
+        "jest-extended": "^0.11.5"
+    }
 }
