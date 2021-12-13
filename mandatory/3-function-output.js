@@ -2,15 +2,22 @@
 function getRandomNumber() {
   return Math.random() * 10;
 }
+/********************************************************************************** */
+/*Math.random() returns a random number between 0 (inclusive),  and 1 (exclusive)
+/********************************************************************************** */
 
 // Add comments to explain what this function does. You're meant to use Google!
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
+/********************************************************************************** */
+/*The concat() method joins two or more strings
+/********************************************************************************** */
 
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  return firstWord+" ".concat(secondWord)+" ".concat(thirdWord);
 }
 
 /* 

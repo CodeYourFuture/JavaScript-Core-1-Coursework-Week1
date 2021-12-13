@@ -43,32 +43,13 @@
     Very doubtful.
 */
 
-// This should log "The ball has shaken!"
-// and return the answer.
-function shakeBall() {
-  //Write your code in here
-}
-
-/* 
-  This function should say whether the answer it is given is
-    - very positive
-    - positive
-    - negative
-    - very negative
-
-  This function should expect to be called with any value which was returned by the shakeBall function.
-*/
-function checkAnswer(answer) {
-  //Write your code in here
-}
-
 /* 
 ==================================
 ======= TESTS - DO NOT MODIFY =====
 
 There are some Tests in this file that will help you work out if your code is working.
 
-To run these tests type `npm run extraTo run the tests for just this one file, type `npm run extra-tests -- --testPathPattern 3-magic-8-ball` into your terminal
+To run these tests type `npm run extraTo run the tests for just this one file, type `npm test -- --testPathPattern 3-magic-8-ball` into your terminal
 (Reminder: You must have run `npm install` one time before this will work!)
 ==================================
 */
@@ -101,7 +82,9 @@ test("magic 8 ball returns different values each time", () => {
     );
   }
 
-  let seenPositivities = new Set(Array.from(seenAnswers.values()).map(checkAnswer));
+  let seenPositivities = new Set(
+    Array.from(seenAnswers.values()).map(checkAnswer)
+  );
   if (seenPositivities.size < 2) {
     throw Error(
       "Expected to random answers with different positivities each time shakeBall was called, but always got the same one"
