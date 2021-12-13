@@ -1,3 +1,4 @@
 // Start by creating a variable `message`
-
-console.log(message);
+text = "   Hello ,   my name is       Bita .       ";
+let namel = text.length;
+console.log(namel);
