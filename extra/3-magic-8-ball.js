@@ -1,5 +1,3 @@
-const { toBeOneOf } = require("jest-extended");
-expect.extend({ toBeOneOf });
 /**
 
   Let's peer into the future using a Magic 8 Ball!
@@ -45,50 +43,54 @@ expect.extend({ toBeOneOf });
     Very doubtful.
 */
 
-let answers = [{
-        "Very Positive": [
-            "It is certain.",
-            "It is decidedly so.",
-            "Without a doubt.",
-            "Yes - definitely.",
-            "You may rely on it.",
-        ],
-    },
-    {
-        Positive: [
-            "As I see it, yes.",
-            "Most likely.",
-            "Outlook good.",
-            "Yes.",
-            "Signs point to yes.",
-        ],
-    },
-    {
-        Negative: [
-            "Reply hazy, try again.",
-            "Ask again later.",
-            "Better not tell you now.",
-            "Cannot predict now.",
-            "Concentrate and ask again.",
-        ],
-    },
-    {
-        "Very negative": [
-            "Don't count on it.",
-            "My reply is no.",
-            "My sources say no.",
-            "Outlook not so good.",
-            "Very doubtful.",
-        ],
-    },
-];
+let answers = {
+    veryPositive: [
+        "It is certain.",
+        "It is decidedly so.",
+        "Without a doubt.",
+        "Yes - definitely.",
+        "You may rely on it.",
+    ],
+    positive: [
+        "As I see it, yes.",
+        "Most likely.",
+        "Outlook good.",
+        "Yes.",
+        "Signs point to yes.",
+    ],
+
+    negative: [
+        "Reply hazy, try again.",
+        "Ask again later.",
+        "Better not tell you now.",
+        "Cannot predict now.",
+        "Concentrate and ask again.",
+    ],
+    veryNegative: [
+        "Don't count on it.",
+        "My reply is no.",
+        "My sources say no.",
+        "Outlook not so good.",
+        "Very doubtful.",
+    ],
+};
 
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
     //Write your code in here
-
-    return "The ball has shaken!";
+    let positivity = Math.floor(Math.random() * 4); // random number between 0 and 4 - the possible outcomes for veryPositive - veryNegative
+    let possibleAnswers = Math.floor(Math.random() * 5); // random number between 0 and 5 - the possible outcomes for each possible answer from the arrays veryPositive - veryNegative
+    console.log("The ball has shaken!");
+    if (positivity === 0) {
+        return answers.veryPositive[possibleAnswers];
+    } else if (positivity === 1) {
+        return answers.positive[possibleAnswers];
+    } else if (positivity === 2) {
+        return answers.negative[possibleAnswers];
+    } else if (positivity === 3) {
+        return answers.veryNegative[possibleAnswers];
+    }
 }
 
 /* 
@@ -102,6 +104,15 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
     //Write your code in here
+    if (answers.veryPositive.includes(answer)) {
+        return "very positive";
+    } else if (answers.positive.includes(answer)) {
+        return "positive";
+    } else if (answers.negative.includes(answer)) {
+        return "negative";
+    } else if (answers.veryNegative.includes(answer)) {
+        return "very negative";
+    }
 }
 
 /* 
