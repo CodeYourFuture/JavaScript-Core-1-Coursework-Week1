@@ -43,10 +43,38 @@
     Very doubtful.
 */
 
+const answerList = {
+  0: "It is certain.",
+  1: "It is decidedly so.",
+  2: "Without a doubt.",
+  3: "Yes - definitely.",
+  4: "You may rely on it.",
+  5: "As I see it, yes.",
+  6: "Most likely.",
+  7: "Outlook good.",
+  8: "Yes.",
+  9: "Signs point to yes.",
+  10: "Reply hazy, try again.",
+  11: "Ask again later.",
+  12: "Better not tell you now.",
+  13: "Cannot predict now.",
+  14: "Concentrate and ask again.",
+  15: "Don't count on it.",
+  16: "My reply is no.",
+  17: "My sources say no.",
+  18: "Outlook not so good.",
+  19: "Very doubtful.",
+  call () {
+    return this[Math.floor(Math.random() * 19)];
+  }
+};
+
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
   //Write your code in here
+  console.log("The ball has shaken!");
+  return answerList.call();
 }
 
 /* 
@@ -58,9 +86,53 @@ function shakeBall() {
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
+
+ const veryPositive = { 
+  0: "It is certain.",
+  1: "It is decidedly so.",
+  2: "Without a doubt.",
+  3: "Yes - definitely.",
+  4: "You may rely on it."
+}
+
+const positive = {
+  5: "As I see it, yes.",
+  6: "Most likely.",
+  7: "Outlook good.",
+  8: "Yes.",
+  9: "Signs point to yes.",
+};
+
+const negative = {
+  10: "Reply hazy, try again.",
+  11: "Ask again later.",
+  12: "Better not tell you now.",
+  13: "Cannot predict now.",
+  14: "Concentrate and ask again.",
+};
+
+const veryNegative = {
+  15: "Don't count on it.",
+  16: "My reply is no.",
+  17: "My sources say no.",
+  18: "Outlook not so good.",
+  19: "Very doubtful.",
+};
+
 function checkAnswer(answer) {
   //Write your code in here
+  if (Object.values(veryPositive).indexOf(answer) > -1) {
+    return "very positive";
+  } else if (Object.values(positive).indexOf(answer) > -1) {
+    return "positive";
+  } else if (Object.values(negative).indexOf(answer) > -1) {
+    return "negative";
+  } else {
+    return "very negative";
+  }
 }
+
+checkAnswer(shakeBall());
 
 /* 
 ==================================
@@ -101,7 +173,9 @@ test("magic 8 ball returns different values each time", () => {
     );
   }
 
-  let seenPositivities = new Set(Array.from(seenAnswers.values()).map(checkAnswer));
+  let seenPositivities = new Set(
+    Array.from(seenAnswers.values()).map(checkAnswer)
+  );
   if (seenPositivities.size < 2) {
     throw Error(
       "Expected to random answers with different positivities each time shakeBall was called, but always got the same one"
