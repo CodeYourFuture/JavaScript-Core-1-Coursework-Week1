@@ -10,6 +10,7 @@ function helloGreeting(name) {
     function upperCaseGreeting(helloGreeting) {
         return ("Hello " + helloGreeting).toUpperCase();   
 }
+
 var greeting = helloGreeting;
 var shoutyGreeting = upperCaseGreeting;
 
@@ -26,7 +27,3 @@ console.log(shoutyGreeting(mentor3));
 console.log(shoutyGreeting(mentor4));
 console.log(shoutyGreeting(mentor5));
 
-
-// - In `exercise.js` you have been provided with the names of some mentors. Write a program that logs a shouty greeting to each one.
-// - Your program should include a function that spells their name in uppercase, and a function that creates a shouty greeting.
-// - Log each greeting to the console
