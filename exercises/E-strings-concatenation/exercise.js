@@ -1,5 +1,5 @@
 // Start by creating a variable `message` //
-let message = "Hello, my name is ";
+const message = "Hello, my name is ";
 console.log(message);
 
 // - Write a program that logs a message with a greeting and your name //
