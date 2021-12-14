@@ -2,7 +2,7 @@
 
 
 var greetingStart = 'Hello, my name is ';
-var myName = 'Davood';
+var myName = 'Daniel';
 
 var greeting = greetingStart + myName;
 

@@ -16,21 +16,24 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name: Davood Khoshnood
+- Your City: London
+- Your Slack Name: Davood
 
 # Homework Details
 
-- Module:
-- Week:
+- Module: JavaScript
+- Week: 1
 
 # Notes
 
 - What did you find easy?
+  All of them were easy.
 
 - What did you find hard?
+  Nothing.
 
 - What do you still not understand?
+  First time as usual I confused about all questions I must answered. It wasn't clear.
 
 - Any other notes?

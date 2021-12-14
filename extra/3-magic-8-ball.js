@@ -45,8 +45,46 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
+var answers = [
+  //  ## Very positive
+  "It is certain",
+  "It is decidedly so.",
+  "Without a doubt.",
+  "Yes - definitely.",
+  "You may rely on it.",
+  //  ## Positive
+  "As I see it, yes.",
+  "Most likely.",
+  "Outlook good.",
+  "Yes.",
+  "Signs point to yes.",
+  //  ## Negative
+  "Reply hazy, try again.",
+  "Ask again later.",
+  "Better not tell you now.",
+  "Cannot predict now.",
+  "Concentrate and ask again.",
+  //  ## Very negative
+  "Don't count on it.",
+  "My reply is no.",
+  "My sources say no.",
+  "Outlook not so good.",
+  "Very doubtful."];
+
+console.log("The ball has shaken!");
+console.log("...................");
+
+let answer = shakeBall(); 
+
+console.log('Answer is : "'+answer+'"');
+
+console.log('The answer is '+checkAnswer(answer));
+
+
 function shakeBall() {
   //Write your code in here
+  let randomAnswer = Math.round(Math.random()*20);
+  return answers[randomAnswer];
 }
 
 /* 
@@ -60,6 +98,25 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
+  let index = answers.indexOf(answer);
+  
+  if (index < 5) 
+  {
+    return 'very positive'
+  } else
+  if (index < 10 && index >= 5) 
+  {
+    return 'positive';
+  } else 
+  if (index < 15 && index >= 10) 
+  {
+    return 'negative';
+  } else 
+  if (index < 20 && index >= 15) 
+  { 
+    return 'very negative'; 
+  }
+ 
 }
 
 /* 
