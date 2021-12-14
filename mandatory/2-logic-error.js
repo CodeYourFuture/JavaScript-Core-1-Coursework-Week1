@@ -1,11 +1,12 @@
 // The syntax for this function is valid but it has an error, find it and fix it.
+console.log(trimWord(" CodeYourFuture teaches coding     "));
 
 function trimWord(word) {
-  return word.trim();
+  return word.trim(word.replace(/\s+/g, ' '));
 }
 
 function getStringLength(word) {
-  return word.length();
+  return word.length;
 }
 
 function multiply(a, b, c) {

@@ -6,7 +6,7 @@
 */
 
 function convertToUSD(price) {
-  return price / 1.4;
+  return parseFloat((price * 1.4).toFixed(2));
 }
 
 /*
@@ -18,7 +18,7 @@ function convertToUSD(price) {
 */
 
 function convertToBRL(price) {
-    return ((price * 99)/100) / 5.7;
+  return parseFloat((((price * 99) / 100) * 5.7).toFixed(2));
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== 

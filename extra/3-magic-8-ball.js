@@ -45,7 +45,11 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
-var answers = [
+
+const matchers = require("jest-extended");
+expect.extend(matchers);
+
+const answers = [
   //  ## Very positive
   "It is certain",
   "It is decidedly so.",
@@ -69,22 +73,19 @@ var answers = [
   "My reply is no.",
   "My sources say no.",
   "Outlook not so good.",
-  "Very doubtful."];
+  "Very doubtful."]
 
-console.log("The ball has shaken!");
-console.log("...................");
 
-let answer = shakeBall(); 
-
-console.log('Answer is : "'+answer+'"');
-
-console.log('The answer is '+checkAnswer(answer));
-
+console.log("Did you fear that?")
+const answer = shakeBall()
+console.log(answer)
+console.log(checkAnswer(answer))
 
 function shakeBall() {
   //Write your code in here
-  let randomAnswer = Math.round(Math.random()*20);
-  return answers[randomAnswer];
+  let randomAnswer = Math.round(Math.random()*20)
+  console.log("The ball has shaken!");
+  return answers[randomAnswer]
 }
 
 /* 
@@ -98,7 +99,7 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
-  let index = answers.indexOf(answer);
+  let index = answers.indexOf(answer)
   
   if (index < 5) 
   {

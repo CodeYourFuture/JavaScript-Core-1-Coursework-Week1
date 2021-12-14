@@ -32,11 +32,11 @@ const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
 // Because it makes confused someone to read and understand and debug.
-let badCode = format(multiply(add(startingValue,2),2));
+let badCode = format(multiply(add(startingValue,10),2));
 
 /* BETTER PRACTICE */
-let sum = add(startingValue,2);
-let multi = multiply(sum,2);
+var sum = add(startingValue,10);
+var multi = multiply(sum,2);
 
 let goodCode = format(multi);
 
