@@ -22,7 +22,7 @@ function convertToUSD(priceInPound) {
 function convertToBRL(priceInPound) {
   let priceInBrazilian = 0.99 * priceInPound * 5.7;
 
-  return priceInBrazilian.toFixed(2);
+  return Number(priceInBrazilian.toFixed(2));
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== 
