@@ -17,7 +17,11 @@ function calculateSalesTax() {}
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency() {}
+var b = "£"
+
+function addTaxAndFormatCurrency(x) {
+  return (x + 0.20*x).toFixed(2);
+}
 
 /* 
 ===================================================
