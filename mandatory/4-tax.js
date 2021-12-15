@@ -9,7 +9,7 @@ function calculateSalesTax(num) {
   return num + (num/100 * 20);
 }
 
- console.log(calculateSalesTax(15));
+//  console.log(calculateSalesTax(15));
 
 /*
   CURRENCY FORMATTING
@@ -28,7 +28,7 @@ function addTaxAndFormatCurrency(num) {
     return "£" + (num + (num/100 * 20)).toFixed(2);
 }
 
- console.log(addTaxAndFormatCurrency(15))
+//  console.log(addTaxAndFormatCurrency(15))
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
