@@ -1,17 +1,36 @@
 // Add comments to explain what this function does. You're meant to use Google!
 function getRandomNumber() {
-  return Math.random() * 10;
+  return Math.random() * 10; // returns a random number from 0 to 9.
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
 function combine2Words(word1, word2) {
-  return word1.concat(word2);
+  return word1.concat(word2);  // the concat() method joins two or more strings. It does not change the existing strings. It returns a new string. 
 }
 
+// function concatenate(firstWord, secondWord, thirdWord) {
+//   // Write the body of this function to concatenate three words together.
+//   // Look at the test case below to understand what this function is expected to return.
+//   return firstWord + secondWord + thirdWord;
+// }
+// let result = concatenate("code ", "your  ","future");
+// console.log(result);
+// result = concatenate("I ","like ","pizza");
+// console.log(result);
+// result = concatenate("I ","am ",13);
+// console.log(result);
+
 function concatenate(firstWord, secondWord, thirdWord) {
-  // Write the body of this function to concatenate three words together.
-  // Look at the test case below to understand what this function is expected to return.
+  return firstWord + " " + secondWord + " " + thirdWord;
 }
+let word = concatenate("code", "your", "future");
+console.log(word);
+word = concatenate("I", "like",  "pizza");
+console.log(word);
+word = concatenate("I",  "am",  13);
+console.log(word);
+
+
 
 /* 
 ===================================================
