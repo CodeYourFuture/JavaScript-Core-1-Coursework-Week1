@@ -25,7 +25,7 @@ function multiply(a, b) {
 }
 
 function format(a) {
- return '£' + a.toString
+ return '£' + a.toString()
 }
 
 const startingValue = 2;
@@ -33,19 +33,19 @@ const startingValue = 2;
 
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode = myFunction() {
-  return ((startingValue + 10) * 2).toString();
-}
-//Answer : It is bad practice because the function is trying to convert the global value of startingValue. It wont't even work because the variable is decalred as const
+let badCode = format(multiply((add(startingValue, 10)), 2))
+//Answer : It is bad practice because the function is very difficult for any other programmer to understand. Code should be written such simple format that is simple to read and understand.
 
 /* BETTER PRACTICE */
 
-let goodCode = myFunction() {
-  const startingValue = 2;
-  return ((startingValue += 10) * 2).toString();
-}
-//Answer: this is goodCode because the starting value is declared within the function
 
+  let addedValue = add(startingValue, 10);
+  let multipliedValue = multiply(addedValue, 2);
+  let formattedFinalValue = format(multipliedValue)
+  let goodCode = formattedFinalValue;
+
+  
+//Answer: this is goodCode because the code is much simpler to read and understand.
 
 
 /* ======= TESTS - DO NOT MODIFY ===== 

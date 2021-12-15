@@ -19,7 +19,7 @@ function convertToUSD(gbp) {
 */
 
 function convertToBRL(gbp) {
-  const brlAfterFees = (gbp*0.99)*5.7;
+  const brlAfterFees = parseFloat(((gbp*0.99)*5.7).toFixed(2));
   return brlAfterFees;
 }
 
