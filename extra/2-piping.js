@@ -16,17 +16,31 @@
   the final result to the variable goodCode
 */
 
-function add() {
+function add(a, b) {
+  return a + b;
 
 }
+let num = add(1, 3);
+console.log(num);
 
-function multiply() {
+num = add(2.4, 5);
+console.log(num);
+
+function multiply(a, b) {
+  return a * b;
 
 }
+let myNum = multiply(2, 3);
+console.log(myNum);
 
-function format() {
-
+function format(number) {
+  return `£${number}`;
 }
+let myInt = format(16);
+console.log(myInt);
+
+myInt = format(10.1);
+console.log(myInt);
 
 const startingValue = 2;
 

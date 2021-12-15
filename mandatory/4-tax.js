@@ -25,12 +25,15 @@ console.log(sales);
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency(num) {
-  return Math.round(`£${(num * 100) / 100 + (num * 20) / 100 + num}`);
+function addTaxAndFormatCurrency(calculateSalesTax) {
+  let ProductTax = calculateSalesTax + (calculateSalesTax * 20) / 100;
+  let taxFormat = `£${ProductTax.toFixed(2)}`;
+  return taxFormat;
 }
-addTaxAndFormatCurrency(15);
-addTaxAndFormatCurrency(17.5);
-addTaxAndFormatCurrency(34);
+console.log(addTaxAndFormatCurrency(15));
+console.log(addTaxAndFormatCurrency(17.5));
+console.log(addTaxAndFormatCurrency(34));
+
 
 
 /* 
