@@ -4,16 +4,16 @@ function addNumbers(a, b, c) {
   return a + b + c;
 }
 
-function introduceMe(name, age)
-var message = "Hello, my name is " + name + "and I am " + age + "years old";
-return message;
+function introduceMe(name, age) {
+  var message = "Hello, my name is " + name + " and I am " + age + " years old";
+  return message;
+}
 
 function getTotal(a, b) {
   var total = a + b;
   var message2 = `The total is ${total}`;
   return message2;
 }
-
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====

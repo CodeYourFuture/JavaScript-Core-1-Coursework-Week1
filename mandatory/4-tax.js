@@ -6,7 +6,7 @@
 */
 
 function calculateSalesTax(p) {
-  var taxedProduct = (p * 20) * 100;
+  var taxedProduct = (p * 20) / 100;
   var afterTaxPrice = taxedProduct + p;
   return afterTaxPrice;
 
