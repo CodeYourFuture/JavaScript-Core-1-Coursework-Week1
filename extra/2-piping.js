@@ -45,11 +45,15 @@ console.log(myInt);
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =
+let badCode = format(multiply(2, add(10, startingValue))); // Because it is difficult to read.
 
 /* BETTER PRACTICE */
+let addBetter = add(10, startingValue);
+let multiplyBetter = multiply(2, addBetter);
+let formatBetter = format(multiplyBetter);
 
-let goodCode =
+let goodCode = formatBetter;
+console.log(goodCode);
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
