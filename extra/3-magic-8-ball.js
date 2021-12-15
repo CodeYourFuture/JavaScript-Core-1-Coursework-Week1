@@ -46,7 +46,8 @@
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
-  //Write your code in here
+  console.log("The ball has shaken!")
+  return answer
 }
 
 /* 
@@ -59,7 +60,32 @@ function shakeBall() {
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
-  //Write your code in here
+  if ( (answer === ' It is certain') 
+  || (answer === 'It is decidedly so') 
+  || (answer === 'Yes - definitely')
+  || (answer === 'You may rely on it.')
+  || (answer == 'Without a doubt') ) {
+    return 'Very positive'
+  } else if ( (answer === 'As I see it, yes.') 
+  || (answer === 'Most likely.') 
+  || (answer === 'Outlook good.')
+  || (answer === 'Yes.')
+  || (answer == 'Signs point to yes.') ) {
+    return 'Positive'
+  } else if ( (answer === 'Reply hazy, try again.') 
+  || (answer === 'Ask again later.') 
+  || (answer === 'Better not tell you now.')
+  || (answer === 'Cannot predict now.')
+  || (answer === 'Concentrate and ask again.') ) {
+    return 'Negetive'
+  } else if ( (answer === 'Don\'t count on it.') 
+  || (answer === 'My reply is no')
+  || (answer === 'My source say no.')
+  || (answer === 'Outlook not so good.')
+  || (answer === 'Very doubtful.') ) {
+    return 'Very negetive'
+  }
+
 }
 
 /* 

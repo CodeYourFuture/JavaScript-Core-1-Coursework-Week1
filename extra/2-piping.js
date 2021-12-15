@@ -16,26 +16,37 @@
   the final result to the variable goodCode
 */
 
-function add() {
-
+function add(a, b) {
+  return a + b
 }
 
-function multiply() {
-
+function multiply(a, b) {
+  return a * b
 }
 
-function format() {
-
+function format(a) {
+ return '£' + a.toString
 }
 
 const startingValue = 2;
 
+
+
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =
+let badCode = myFunction() {
+  return ((startingValue + 10) * 2).toString();
+}
+//Answer : It is bad practice because the function is trying to convert the global value of startingValue. It wont't even work because the variable is decalred as const
 
 /* BETTER PRACTICE */
 
-let goodCode =
+let goodCode = myFunction() {
+  const startingValue = 2;
+  return ((startingValue += 10) * 2).toString();
+}
+//Answer: this is goodCode because the starting value is declared within the function
+
+
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
