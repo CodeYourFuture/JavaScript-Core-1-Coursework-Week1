@@ -4,8 +4,13 @@
   The business is breaking out into a new market and need to convert prices to USD
   Write a function that converts a price to USD (exchange rate is 1.4 $ to £)
 */
+let currency = 1.4
+function convertToUSD(currency) {
+  return currency.toFixed(2)
+}
 
-function convertToUSD() {}
+console.log(convertToUSD(200));
+
 
 /*
   CURRENCY CONVERSION

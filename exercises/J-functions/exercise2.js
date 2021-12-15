@@ -1,7 +1,12 @@
 function triple(number) {
-  // complete function here
+  return number * 3;
 }
 
-var result = triple(12);
-
+let result = triple(12);
 console.log(result);
+
+let nextResult = triple(20);
+console.log(nextResult);
+
+let thirdResult = triple(30);
+console.log(thirdResult);

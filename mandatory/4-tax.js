@@ -5,8 +5,11 @@
   Sales tax is 20% of the price of the product.
 */
 
-function calculateSalesTax() {}
-
+function calculateSalesTax(num1) {
+   return (num1 * 20)/ 100 + num1;
+}
+let total = calculateSalesTax(15);
+console.log("PcalculateSalesTax for £15: " + total.toEqual);
 /*
   CURRENCY FORMATTING
   ===================
@@ -17,15 +20,22 @@ function calculateSalesTax() {}
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency() {}
+function addTaxAndFormatCurrency (price) {
+  let newTotal = calculateSalesTax(price).toFixed(2);
+  return "£"+ newTotal
+}
+
+console.log(addTaxAndFormatCurrency(15));
+
 
 /* 
+
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
 
 There are some Tests in this file that will help you work out if your code is working.
 
-To run the tests for just this one file, type `npm test -- --testPathPattern 4-tax` into your terminal
+To run the tests for just this one file, type `` into your terminal
 (Reminder: You must have run `npm install` one time before this will work!)
 ===================================================
 */

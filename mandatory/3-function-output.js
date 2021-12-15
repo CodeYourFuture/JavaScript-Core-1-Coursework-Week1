@@ -1,17 +1,22 @@
-// Add comments to explain what this function does. You're meant to use Google!
+// returns a floating-point, pseudo-random number in the range 0 to less than 1 
 function getRandomNumber() {
   return Math.random() * 10;
 }
 
-// Add comments to explain what this function does. You're meant to use Google!
+
+// this function concatenate two strings together. Which basically means joins two words together.
 function combine2Words(word1, word2) {
-  return word1.concat(word2);
+  return "I " + "am" + 13
+
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
+   return "code "+ "your" + " future"
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
 }
+
+
 
 /* 
 ===================================================

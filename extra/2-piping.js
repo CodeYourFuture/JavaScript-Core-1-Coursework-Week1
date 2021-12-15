@@ -16,22 +16,23 @@
   the final result to the variable goodCode
 */
 
-function add() {
-
+function add(a, b) {
+ return a + b
 }
 
-function multiply() {
-
+function multiply(c, d) {
+ return c* d
 }
 
-function format() {
-
+function format(num) {
+  return "£" + num.toFixed(2)
 }
 
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =
+//calling all these functions in one line of code is bad practise because the code looks cluttered
+let badCode = console.log(add(10, 2)); console.log(multiply(2, 2));console.log(format(34))
 
 /* BETTER PRACTICE */
 
