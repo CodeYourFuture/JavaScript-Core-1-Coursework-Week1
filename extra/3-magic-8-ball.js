@@ -1,3 +1,6 @@
+const matchers = require("jest-extended");
+expect.extend(matchers);
+
 /**
 
   Let's peer into the future using a Magic 8 Ball!
@@ -47,6 +50,18 @@
 // and return the answer.
 function shakeBall() {
   //Write your code in here
+
+  // If you assign a value to a variable that has not been declared, it will automatically become a GLOBAL variable.
+
+  answers = ["It is certain.", "It is decidedly so.", "Without a doubt.", "Yes - definitely.", "You may rely on it.",
+             "As I see it, yes.", "Most likely.", "Outlook good.", "Yes.", "Signs point to yes.",
+             "Reply hazy, try again.", "Ask again later.", "Better not tell you now.", "Cannot predict now.",
+             "Concentrate and ask again.", 
+             "Don't count on it.", "My reply is no.", "My sources say no.", "Outlook not so good.", "Very doubtful."];
+
+    let result = answers[Math.floor(Math.random() * 20)];
+    console.log("The ball has shaken!");
+    return result;                
 }
 
 /* 
@@ -58,8 +73,31 @@ function shakeBall() {
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
-function checkAnswer(answer) {
+function checkAnswer(givenAnswer) {
   //Write your code in here
+     
+  // The indexOf() method returns the first index at which a given element can be found in the array, 
+  // or -1 if it is not present.
+     let theIndex = answers.indexOf(givenAnswer)
+     if (theIndex < 5) {
+       return "very positive"
+     } 
+
+     else
+     if (theIndex < 10) {
+       return "positive"
+     }
+     
+     else
+     if (theIndex < 15) {
+       return "negative"
+     }
+     
+     else
+     {
+       return "very negative";
+     }
+
 }
 
 /* 
