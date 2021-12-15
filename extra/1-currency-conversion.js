@@ -6,11 +6,11 @@
 */
 function convertToUSD(pound) {
   let usd = pound * 1.4;
-  return "$" + usd.toFixed(2); 
+  return usd; 
   //  return "$" + pound * 1.4.toFixed(2); 
 }
 
-console.log(convertToUSD(200));
+// console.log(convertToUSD(200));
 
 
 /*
@@ -22,11 +22,12 @@ console.log(convertToUSD(200));
 */
 
 function convertToBRL(pound) {
-  let brl = (pound/100 * 99) * 5.7;
-  return "BRL" + brl.toFixed(2);
+
+  let brl = parseFloat((pound/100 * 99 * 5.7).toFixed(2)); ;
+  return brl;
 }
 
-console.log(convertToBRL(10));
+// console.log(convertToBRL(10));
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
 
@@ -34,18 +35,18 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 1-c
 (Reminder: You must have run `npm install` one time before this will work!)
 */
 
-// test("convertToUSD function works for £32", () => {
-//   expect(convertToUSD(32)).toEqual(44.8);
-// });
+test("convertToUSD function works for £32", () => {
+  expect(convertToUSD(32)).toEqual(44.8);
+});
 
-// test("convertToUSD function works for £50", () => {
-//   expect(convertToUSD(50)).toEqual(70);
-// });
+test("convertToUSD function works for £50", () => {
+  expect(convertToUSD(50)).toEqual(70);
+});
 
-// test("convertToBRL function works for £30", () => {
-//   expect(convertToBRL(30)).toEqual(169.29);
-// });
+test("convertToBRL function works for £30", () => {
+  expect(convertToBRL(30)).toEqual(169.29);
+});
 
-// test("convertToBRL function works for £1.50", () => {
-//   expect(convertToBRL(1.5)).toEqual(8.46);
-// });
+test("convertToBRL function works for £1.50", () => {
+  expect(convertToBRL(1.5)).toEqual(8.46);
+});
