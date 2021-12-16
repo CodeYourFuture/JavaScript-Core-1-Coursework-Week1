@@ -1,3 +1,5 @@
 // Start by creating a variable `message`
 
-console.log(message);
+x = "This is a string";
+console.log(x);
+console.log(typeof x);

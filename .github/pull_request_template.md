@@ -16,18 +16,18 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name: Jude Ricketts
+- Your City: Ldn 8
+- Your Slack Name: Loves Pictures
 
 # Homework Details
 
-- Module:
-- Week:
+- Module: JS1
+- Week: 1
 
 # Notes
 
-- What did you find easy?
+- What did you find easy? -
 
 - What did you find hard?
 

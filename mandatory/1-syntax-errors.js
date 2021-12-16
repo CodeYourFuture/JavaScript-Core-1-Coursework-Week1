@@ -1,16 +1,23 @@
 // There are syntax errors in this code - can you fix it to pass the tests?
 
-function addNumbers(a b c) {
+function addNumbers(a, b, c) {
   return a + b + c;
 }
+// how do I look at the output of each
+console.log(addNumbers);
 
-function introduceMe(name, age)
-  return "Hello, my name is " + name "and I am " age + "years old";
+// declare the peramiters - new
+const name = "Jude";
+const age = 35;
+
+function introduceMe(name, age) {
+  return "Hello, my name is " + name + " and I am " + age + " years old";
+}
 
 function getTotal(a, b) {
-  total = a ++ b;
+  total = a + b;
 
-  return "The total is total";
+  return "The total is " + total;
 }
 
 /* 
