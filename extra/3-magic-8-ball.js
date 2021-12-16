@@ -1,5 +1,6 @@
 /**
-
+const matchers = require(“jest-extended”);
+expect.extend(matchers);
   Let's peer into the future using a Magic 8 Ball!
   https://en.wikipedia.org/wiki/Magic_8-Ball 
 
