@@ -6,18 +6,18 @@
 function shoutyGreeting(name) {
     return ("Hello " + name);
 }
-var mentor1 = shoutyGreeting("Daniel");
+let mentor1 = shoutyGreeting("Daniel");
 console.log(mentor1.toUpperCase());
 
-var mentor2 = shoutyGreeting("Irina");
+let mentor2 = shoutyGreeting("Irina");
 console.log(mentor2.toUpperCase());
 
-var mentor3 = shoutyGreeting("Mimi");
+let mentor3 = shoutyGreeting("Mimi");
 console.log(mentor3.toUpperCase());
 
-var mentor4 = shoutyGreeting("Rob");
+let mentor4 = shoutyGreeting("Rob");
 console.log(mentor4.toUpperCase());
 
-var mentor5 = shoutyGreeting("Yohannes");
+let mentor5 = shoutyGreeting("Yohannes");
 console.log(mentor5.toUpperCase());
 
