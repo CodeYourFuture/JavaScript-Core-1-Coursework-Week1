@@ -45,10 +45,10 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
-function shakeBall(string) {
+function shakeBal() {
   //Write your code in here
   console.log("The ball has shaken");
-  return string;
+  return;
 }
 
 /* 

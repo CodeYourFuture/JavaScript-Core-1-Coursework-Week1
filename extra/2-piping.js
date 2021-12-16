@@ -20,6 +20,7 @@ function add(a, b) {
   return a + b;
 
 }
+
 let num = add(1, 3);
 console.log(num);
 
@@ -30,12 +31,14 @@ function multiply(a, b) {
   return a * b;
 
 }
+
 let myNum = multiply(2, 3);
 console.log(myNum);
 
 function format(number) {
   return `£${number}`;
 }
+
 let myInt = format(16);
 console.log(myInt);
 

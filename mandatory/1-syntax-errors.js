@@ -12,8 +12,6 @@ console.log(greet);
 
 function getTotal(a, b) {
   return "The total is " + (a + b);
-
-  
 }
 let result = getTotal(14, 14);
 console.log(result);
