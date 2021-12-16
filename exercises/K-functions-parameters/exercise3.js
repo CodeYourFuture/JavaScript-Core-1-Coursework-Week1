@@ -6,3 +6,4 @@ function createGreeting (name){
 let greeting = createGreeting("Daniel.");
 
 console.log(greeting);
+ 

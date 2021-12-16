@@ -7,3 +7,4 @@ function halve(number) {
  let secondResult = halve(50);
  console.log(secondResult);
 
+ 

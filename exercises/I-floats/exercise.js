@@ -5,3 +5,4 @@ console.log("Percentage students : " + Math.round(sPercentage) + "%");
 let mPercentage = (numberOfMentors * 100) / 23;
 console.log("Percentage mentors : " + Math.round (mPercentage) + "%");
 
+ 
