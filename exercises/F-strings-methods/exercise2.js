@@ -1,9 +1,9 @@
-const name = " Mahri  ";
-let nameLength = name.length;
+const fname = " Daniel  ";
+let nameLength = fname.length;
 
 let message =
   "My name is " +
-  name.trim() +
+  fname.trim() +
   " and my name is " +
   nameLength +
   " characters long";

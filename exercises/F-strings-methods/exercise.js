@@ -1,5 +1,5 @@
 // Start by creating a variable `message`
-let fName = "Mahri";
+let fName = "Daniel";
 let nameLength = fName.length;
 console.log(nameLength);
 

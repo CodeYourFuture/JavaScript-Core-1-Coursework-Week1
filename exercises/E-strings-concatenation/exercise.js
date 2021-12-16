@@ -1,6 +1,6 @@
 // Start by creating a variable `message`
-let greeting = "hello , my name is";
-let fName = "Mahri";
+let greeting = "Hello , my name is";
+let fName = "Daniel";
 
 let message = greeting + " " + fName;
 
