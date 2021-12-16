@@ -1,5 +1,8 @@
 // Write your function here
-
-var greeting = createGreeting("Daniel");
+function createGreeting (name){
+    let createGreeting = "Hello, my name is ";
+    return createGreeting + name;
+}
+let greeting = createGreeting("Daniel.");
 
 console.log(greeting);
