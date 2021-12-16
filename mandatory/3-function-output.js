@@ -4,8 +4,6 @@ function getRandomNumber() {
   return Math.random() * 10;
 }
 console.log(getRandomNumber());
-
-
 // Add comments to explain what this function does. You're meant to use Google!
 // this function can combine to parameters.Like using sum or +
 function combine2Words(word1, word2) {
@@ -31,7 +29,6 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 3-f
 (Reminder: You must have run `npm install` one time before this will work!)
 ==================================
 */
-
 test("concatenate example #1", () => {
   expect(concatenate("code", "your", "future")).toEqual("code your future");
 });

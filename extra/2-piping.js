@@ -15,10 +15,8 @@
   3. Write a more readable version of what you wrote in step 2 under the BETTER PRACTICE comment. Assign
   the final result to the variable goodCode
 */
-
 function add(a,b) {
   return a+b;
-
 }
 console.log(add(1,3))
 
@@ -29,12 +27,10 @@ console.log(multiply(2,3))
 
 function format(a) {
   return "£"+a;
-
 }
 console.log(format(10.1))
 
 const startingValue = 2;
-
 // Why can this code be seen as bad practice? Comment your answer.
 // because they are not assign to any value
 let badCode=24;

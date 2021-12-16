@@ -14,7 +14,6 @@ function calculateSalesTax(price,product) {
 console.log(calculateSalesTax(1,15))
 console.log(calculateSalesTax(1,17.5))
 console.log(calculateSalesTax(1,34))
-
 /*
   CURRENCY FORMATTING
   ===================

@@ -1,20 +1,15 @@
 // There are syntax errors in this code - can you fix it to pass the tests?
 
 function addNumbers(a, b, c) {
-  
   return a + b + c;
 }
 
 function introduceMe(name, age){
-
-  return `Hello, my name is ${name} and I am ${age} years old`;
+ return `Hello, my name is ${name} and I am ${age} years old`;
 }
-
 function getTotal(a, b) {
   total = a + b;
-
   return `The total is ${total}`;
-  
 }
 let result=addNumbers(3,4,6);
 let result1=introduceMe("Sonjide",27);
@@ -22,8 +17,6 @@ let result2=getTotal(23,5)
 console.log(result);
 console.log(result1);
 console.log(result2);
-
-
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
