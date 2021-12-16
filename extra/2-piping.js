@@ -29,28 +29,36 @@ function multiply(a, b) {
 console.log(multiply(2, 10));
 
 function format(num) {
-  return "£" + num.toFixed(2);
+  return "£" +  eval(num);
 }
 
 console.log(format(45));
 
 
 const startingValue = 2;
-function badPractice () {
-  
-  let badCode = "£" + ((startingValue + 10) * 2);
-  
+function badPractice () {  
   return badCode;
 }
 
+let badCode = "£" + (startingValue + 10) * 2;
 
 console.log(badPractice());
+
+
+function goodPractice() {
+ 
+
+  return goodCode; //Is this code any better?
+}
+  let goodCode = "£" + ((startingValue + 10) * 2); 
+// console.log(goodPractice(2)); 
+
 
 
 // Why can this code be seen as bad practice? Comment your answer.
 
 // Const should be used for the values we don't re-assign. The name startingValue suggests otherwise
-// let badCode =
+
 
 /* BETTER PRACTICE */
 
@@ -63,30 +71,30 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 2-p
 (Reminder: You must have run `npm install` one time before this will work!)
 */
 
-// test("add function - case 1 works", () => {
-//   expect(add(1, 3)).toEqual(4);
-// });
+test("add function - case 1 works", () => {
+  expect(add(1, 3)).toEqual(4);
+});
 
-// test("add function - case 2 works", () => {
-//   expect(add(2.4, 5)).toEqual(7.4);
-// });
+test("add function - case 2 works", () => {
+  expect(add(2.4, 5)).toEqual(7.4);
+});
 
-// test("multiply function works", () => {
-//   expect(multiply(2, 3)).toEqual(6);
-// });
+test("multiply function works", () => {
+  expect(multiply(2, 3)).toEqual(6);
+});
 
-// test("format function works for whole number", () => {
-//   expect(format(16)).toEqual("£16");
-// });
+test("format function works for whole number", () => {
+  expect(format(16)).toEqual("£16");
+});
 
-// test("format function works for decimal number", () => {
-//   expect(format(10.1)).toEqual("£10.1");
-// });
+test("format function works for decimal number", () => {
+  expect(format(10.1)).toEqual("£10.1");
+});
 
-// test("badCode variable correctly assigned", () => {
-//   expect(badCode).toEqual("£24");
-// });
+test("badCode variable correctly assigned", () => {
+  expect(badCode).toEqual("£24");
+});
 
-// test("goodCode variable correctly assigned", () => {
-//   expect(goodCode).toEqual("£24");
-// });
+test("goodCode variable correctly assigned", () => {
+  expect(goodCode).toEqual("£24");
+});
