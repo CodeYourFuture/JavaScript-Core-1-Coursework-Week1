@@ -1,14 +1,18 @@
 // Add comments to explain what this function does. You're meant to use Google!
+// Gets a random number between 0 (inclusive) and 1 (exclusive). Then multiplies with 10.
 function getRandomNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+// The concat() method joins two or more strings. It does not change the existing strings and returns a new string. 
+// This function only applies to a string, not on a integer.
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
+  return firstWord.concat(" ", secondWord).concat(" ", thirdWord);
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
 }
