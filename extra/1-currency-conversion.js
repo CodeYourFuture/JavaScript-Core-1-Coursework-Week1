@@ -24,16 +24,19 @@ console.log(myNum);
 */
 
 function convertToBRL(number) {
-  return number * 99 / 100 * 5.7;
+  return parseFloat(((number * 99 / 100) * 5.7).toFixed(2));
 }
+
 let myConvert = convertToBRL(30);
-console.log(myConvert.toFixed(2));
-myConvert = convertToBRL(1.50)
-console.log(myConvert.toFixed(2));
+console.log(myConvert);
+
+myConvert = convertToBRL(1.5);
+console.log(myConvert);
+
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
 
-To run the tests for just this one file, type `npm test -- --testPathPattern 1-currency-conversion` into your terminal
+To run the tests for just this one file, type `` into your terminal
 (Reminder: You must have run `npm install` one time before this will work!)
 */
 
