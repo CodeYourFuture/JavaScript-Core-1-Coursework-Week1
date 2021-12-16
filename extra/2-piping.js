@@ -32,9 +32,20 @@ function format(num) {
   return "£" + num.toFixed(2);
 }
 
-console.log(format(45))
+console.log(format(45));
+
 
 const startingValue = 2;
+function badPractice () {
+  
+  let badCode = "£" + ((startingValue + 10) * 2);
+  
+  return badCode;
+}
+
+
+console.log(badPractice());
+
 
 // Why can this code be seen as bad practice? Comment your answer.
 
