@@ -1,18 +1,25 @@
 // There are syntax errors in this code - can you fix it to pass the tests?
 
-function addNumbers(a b c) {
+//addNumbers adds numbers correctly
+function addNumbers(a, b, c) {
   return a + b + c;
 }
+console.log(addNumbers(3, 4, 6));
 
+//introduceMe function returns the correct string
 function introduceMe(name, age)
-  return "Hello, my name is " + name "and I am " age + "years old";
-
+{ 
+  let message = `Hello, my name is ${name} and I am ${age} years old`;
+  return message;
+  }
+console.log(introduceMe("Sonjide", 27));
+  
+//getTotal returns a string describing the total
 function getTotal(a, b) {
-  total = a ++ b;
-
-  return "The total is total";
+  let total = a + b;
+  return "The total is " + total ;
 }
-
+console.log(getTotal(23, 5))
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====

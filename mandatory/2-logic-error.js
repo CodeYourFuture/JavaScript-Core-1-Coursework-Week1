@@ -1,18 +1,40 @@
 // The syntax for this function is valid but it has an error, find it and fix it.
 
+//trimWord trims leading and trailing whitespace
 function trimWord(word) {
-  return wordtrim();
+  return word.trim();
 }
+console.log(trimWord("CodeYourFuture "));
 
-function getStringLength(word) {
-  return "word".length();
+//trimWord doesn't remove whitespace in the middle of the string
+function trimSentence(sentence) {
+  return sentence.trim();
 }
+console.log(trimSentence(" CodeYourFuture teaches coding     "));
 
+//getStringLength returns the length of a word
+ function getStringLength(word) {
+  return word.length;
+}
+console.log(getStringLength("Turtles"));
+
+//getStringLength returns the length of a sentence
+ function getStringLength(sentence) {
+  return sentence.length;
+}
+console.log(getStringLength("A wild sentence appeared!"));
+
+//multiply multiplies numbers
+ function multiply(a, b, c) {
+ return a * b * c;
+}
+console.log(multiply(2, 3, 6));
+
+//multiply multiplies different numbers
 function multiply(a, b, c) {
-  a * b * c;
-  return;
+  return a * b * c;
 }
-
+console.log(multiply(2, 3, 4));
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
