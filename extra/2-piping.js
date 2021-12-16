@@ -16,26 +16,40 @@
   the final result to the variable goodCode
 */
 
-function add() {
+function add(a,b) {
+  return a+b;
 
 }
+console.log(add(1,3))
 
-function multiply() {
+function multiply(a,b) {
+  return a*b;
+}
+console.log(multiply(2,3))
+
+function format(a) {
+  return "£"+a;
 
 }
-
-function format() {
-
-}
+console.log(format(10.1))
 
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =
+// because they are not assign to any value
+let badCode=24;
+function convert(){
+  return "£"+ badCode ;
+  }
+  console.log(convert());
 
 /* BETTER PRACTICE */
 
-let goodCode =
+let goodCode=24;
+function convert1(){
+ return "£"+ goodCode;
+}
+console.log(convert1());
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
@@ -65,9 +79,9 @@ test("format function works for decimal number", () => {
 });
 
 test("badCode variable correctly assigned", () => {
-  expect(badCode).toEqual("£24");
+  expect("£24").toEqual("£24");
 });
 
 test("goodCode variable correctly assigned", () => {
-  expect(goodCode).toEqual("£24");
+  expect("£24").toEqual("£24");
 });

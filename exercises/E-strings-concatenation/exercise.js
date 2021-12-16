@@ -1,3 +1,8 @@
 // Start by creating a variable `message`
+var message="Hello ";
+var name="Okan";
+console.log(message+name);
 
-console.log(message);
+// or
+var name="Fatma";
+console.log(`Hello ${name}`)

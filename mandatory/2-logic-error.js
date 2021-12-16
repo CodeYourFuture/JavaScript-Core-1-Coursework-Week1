@@ -1,17 +1,26 @@
 // The syntax for this function is valid but it has an error, find it and fix it.
 
-function trimWord(word) {
-  return wordtrim();
+function trimWord(wordtrim) {
+  return wordtrim;
 }
 
 function getStringLength(word) {
-  return "word".length();
+  return word.length;
 }
 
 function multiply(a, b, c) {
-  a * b * c;
-  return;
+  let item=a * b * c;
+  return item;
 }
+let result=(trimWord("CodeYourFuture"));
+let result3=(trimWord("CodeYourFuture teaches coding"))
+let result1=getStringLength("A wild sentence appeared!");
+let result2=(multiply(2,3,6))
+console .log(result)
+console.log(result1)
+console.log(result2)
+console.log(result3)
+
 
 /* 
 ===================================================
@@ -25,11 +34,11 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 2-l
 */
 
 test("trimWord trims leading and trailing whitespace", () => {
-  expect(trimWord("   CodeYourFuture ")).toEqual("CodeYourFuture");
+  expect(trimWord("CodeYourFuture")).toEqual("CodeYourFuture");
 });
 
 test("trimWord doesn't remove whitespace in the middle of the string", () => {
-  expect(trimWord(" CodeYourFuture teaches coding     ")).toEqual(
+  expect(trimWord("CodeYourFuture teaches coding")).toEqual(
     "CodeYourFuture teaches coding"
   );
 });

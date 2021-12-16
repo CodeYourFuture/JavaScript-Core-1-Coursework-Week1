@@ -1,5 +1,17 @@
-var mentor1 = "Daniel";
-var mentor2 = "Irina";
-var mentor3 = "Mimi";
-var mentor4 = "Rob";
-var mentor5 = "Yohannes";
+let mentors=[
+    "Daniel",
+    "Irina",
+    "Mimi",
+    "Rob",
+    "Yohannes"
+  ];
+  let message= 'hello'
+  
+  
+  function createCreeting(a) {
+    for (let i = 0; i < mentors.length; i++) {
+      console.log( message +' '+ mentors[i])
+    }
+  }
+  console.log(createCreeting())
+  

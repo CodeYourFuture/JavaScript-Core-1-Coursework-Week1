@@ -1,17 +1,25 @@
 // Add comments to explain what this function does. You're meant to use Google!
+// this function can bring random number and the range is between 0 to less than 1.
 function getRandomNumber() {
   return Math.random() * 10;
 }
+console.log(getRandomNumber());
+
 
 // Add comments to explain what this function does. You're meant to use Google!
+// this function can combine to parameters.Like using sum or +
 function combine2Words(word1, word2) {
-  return word1.concat(word2);
+  return word1.concat(" ",word2);
 }
+console.log(combine2Words("I like", "pizza"))
 
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  return firstWord.concat(" ", secondWord, " ", thirdWord);
 }
+
+console.log(concatenate("I","am", 13));
 
 /* 
 ===================================================
