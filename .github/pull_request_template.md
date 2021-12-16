@@ -16,21 +16,21 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name: Alireza Bagheri
+- Your City: London
+- Your Slack Name: Alireza Bagheri
 
 # Homework Details
 
-- Module:
-- Week:
+- Module:JS1
+- Week:1
 
 # Notes
 
-- What did you find easy?
+- What did you find easy? I understood all of them.
 
-- What did you find hard?
+- What did you find hard? No.
 
-- What do you still not understand?
+- What do you still not understand? ...
 
-- Any other notes?
+- Any other notes? No
