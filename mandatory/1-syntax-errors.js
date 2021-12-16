@@ -15,7 +15,7 @@ function getTotal(a, b) {
 
   
 }
-var result = getTotal(14, 14);
+let result = getTotal(14, 14);
 console.log(result);
 /* 
 ===================================================
