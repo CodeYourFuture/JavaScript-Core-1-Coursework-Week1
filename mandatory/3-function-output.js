@@ -2,15 +2,18 @@
 function getRandomNumber() {
   return Math.random() * 10;
 }
+// It returns a random integer between 0-9, including both 0 and 9. Math.random returns a number between 0-1.
 
 // Add comments to explain what this function does. You're meant to use Google!
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
+//The concat method joins 2 or more strings. And returns a string.If there is more than 2 strings they are separated by a comma: (string.concat(string1, string2, ..., stringX))
 
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  return firstWord.concat (" ",secondWord," ",thirdWord);
 }
 
 /* 
