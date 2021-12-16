@@ -1,8 +1,8 @@
 // Write your function here
 
-function createGreeting (Maira){
-   
-    let message = "hello my name is " ;
+function createGreeting (){
+    let name = "Daniel"
+    let message = "hello my name is  " + name;
 return message
 }
 

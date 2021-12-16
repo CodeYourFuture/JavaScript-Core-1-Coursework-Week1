@@ -5,8 +5,17 @@
   Sales tax is 20% of the price of the product.
 */
 
-function calculateSalesTax() {}
-
+function calculateSalesTax(price) {
+  let totalPrice = price * 0.2 + price;
+  return totalPrice;
+}
+let totalPrice = calculateSalesTax(15);
+console.log(totalPrice);
+let totalPrice2 = calculateSalesTax(17.50);
+console.log(totalPrice2);
+let totalPrice3 = calculateSalesTax(34);
+console.log(totalPrice3);
+ 
 /*
   CURRENCY FORMATTING
   ===================
@@ -16,8 +25,20 @@ function calculateSalesTax() {}
 
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
+// Компания сообщила вам, что цены должны иметь 2 десятичных знака.
+//    Они также должны начинаться с символа валюты.
+//    Напишите функцию, которая добавляет налог к числу, а затем преобразует итоговую сумму в формат 0,00 фунтов стерлингов.
 
-function addTaxAndFormatCurrency() {}
+//    Помните, что цены должны включать налог с продаж (подсказка: вы уже написали для этого функцию!)
+function addTaxAndFormatCurrency(number) {
+  // let addTax = number + totalPrice;
+  // return `£${addTax}`;
+  let result = `£${calculateSalesTax(number).toFixed(2) }`;
+  return result
+}
+console.log( addTaxAndFormatCurrency(15) )
+console.log( addTaxAndFormatCurrency(17.50) )
+console.log( addTaxAndFormatCurrency(34) )
 
 /* 
 ===================================================
