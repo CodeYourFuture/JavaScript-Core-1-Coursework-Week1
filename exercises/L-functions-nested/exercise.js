@@ -9,8 +9,8 @@ function upName(name) {
 }
 
 function greeting(name) {
-  var upperName = upName(name);
-  var message = "HELLO " + upperName;
+  let upperName = upName(name);
+  let message = "HELLO " + upperName;
   return message;
   
 }
