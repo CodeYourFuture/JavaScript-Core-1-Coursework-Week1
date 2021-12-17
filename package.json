@@ -17,6 +17,7 @@
   },
   "jest": {
     "setupFilesAfterEnv": ["jest-extended"],
+  
     "projects": [
       {
         "displayName": "mandatory",

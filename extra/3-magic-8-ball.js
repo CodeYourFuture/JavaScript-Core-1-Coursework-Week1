@@ -14,12 +14,13 @@
 
   Below are the possible answers:
 
-  ## Very positive
+  ## Very positive
     It is certain.
     It is decidedly so.
     Without a doubt.
     Yes - definitely.
     You may rely on it.
+    
 
   ## Positive
     As I see it, yes.
@@ -42,15 +43,42 @@
     Outlook not so good.
     Very doubtful.
 */
+ const veryPositive = [
+  "It is certain.",
+  "It is decidedly so.",
+  "Without a doubt.",
+  "Yes - definitely.",
+  "You may rely on it.",
+];
 
+const positive = [
+  'As I see it, yes.',
+  'Most likely.',
+  'Outlook good.',
+  'Yes.',
+  'Signs point to yes.',];
+    
+const negative = ['Reply hazy, try again.',
+  'Ask again later.',
+  'Better not tell you now.',
+  'Cannot predict now.',
+  'Concentrate and ask again.',];
+
+const veryNegative = ['Don\'t count on it.',
+  'My reply is no.',
+  'My sources say no.',
+  'Outlook not so good.',
+  'Very doubtful.',];
+
+const myAnswer = [...veryPositive, ...positive, ...negative, ...veryNegative,];
 // This should log "The ball has shaken!"
 // and return the answer.
-function shakeBal() {
+function shakeBall() {
   //Write your code in here
-  console.log("The ball has shaken");
-  return;
-}
+  console.log("The ball has shaken!");
 
+  return myAnswer[Math.round(Math.random() * myAnswer.length)];
+}
 /* 
   This function should say whether the answer it is given is
     - very positive
