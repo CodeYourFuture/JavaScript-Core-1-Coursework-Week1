@@ -31,12 +31,12 @@ function format(number) {
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode = format(multiply(add(startingValue, 10), 2));
+let badCode = format(multiply(add(startingValue, 10), 2)); // Even though it works, I feel that this is bad practice because every thing is on one line and it would be difficult to debug
 
 /* BETTER PRACTICE */
 let sum = add(startingValue, 10);
 let product = multiply(sum, 2);
-let formatted = `£${product}`;
+let formatted = `£${Math.round(product)}`;
 let goodCode = formatted;
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
