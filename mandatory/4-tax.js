@@ -22,9 +22,7 @@ function calculateSalesTax(num) {
 */
 
 
-function addTaxAndFormatCurrency(num) { 
-
-  
+function addTaxAndFormatCurrency(num) {   
     return "£" + (num + (num/100 * 20)).toFixed(2);
 }
 

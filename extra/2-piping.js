@@ -45,13 +45,12 @@ let badCode = "£" + (startingValue + 10) * 2;
 console.log(badPractice());
 
 
-function goodPractice() {
- 
+function goodPractice() { 
 
   return goodCode; //Is this code any better?
 }
   let goodCode = "£" + ((startingValue + 10) * 2); 
-// console.log(goodPractice(2)); 
+
 
 
 
