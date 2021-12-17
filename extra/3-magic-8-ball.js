@@ -78,7 +78,6 @@ function shakeBall() {
   return answer;
 }
 
-
 console.log(shakeBall());
 /* 
   This function should say whether the answer it is given is
