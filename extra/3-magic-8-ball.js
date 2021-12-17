@@ -88,7 +88,7 @@ function checkAnswer(question) {
   // } else 
   // return shakeBall(`${question.trim()}? The answer is: Ask me later!`)
 }
-console.log(checkAnswer('Will CYF party be worth going?'))
+console.log(checkAnswer('Is Dona qualified as my PD buddy?'))
 /* 
 ==================================
 ======= TESTS - DO NOT MODIFY =====

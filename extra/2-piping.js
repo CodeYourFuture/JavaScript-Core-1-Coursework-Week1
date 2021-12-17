@@ -35,9 +35,9 @@ let badCode = '£24'
 console.log(badCode)
 
 /* BETTER PRACTICE */
-
-let goodCode = 24
-console.log(`£${goodCode}`)
+let pound = 24
+let goodCode = `£${pound}`
+console.log(goodCode)
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
 
@@ -45,30 +45,30 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 2-p
 (Reminder: You must have run `npm install` one time before this will work!)
 */
 
-// test("add function - case 1 works", () => {
-//   expect(add(1, 3)).toEqual(4);
-// });
+test("add function - case 1 works", () => {
+  expect(add(1, 3)).toEqual(4);
+});
 
-// test("add function - case 2 works", () => {
-//   expect(add(2.4, 5)).toEqual(7.4);
-// });
+test("add function - case 2 works", () => {
+  expect(add(2.4, 5)).toEqual(7.4);
+});
 
-// test("multiply function works", () => {
-//   expect(multiply(2, 3)).toEqual(6);
-// });
+test("multiply function works", () => {
+  expect(multiply(2, 3)).toEqual(6);
+});
 
-// test("format function works for whole number", () => {
-//   expect(format(16)).toEqual("£16");
-// });
+test("format function works for whole number", () => {
+  expect(format(16)).toEqual("£16");
+});
 
-// test("format function works for decimal number", () => {
-//   expect(format(10.1)).toEqual("£10.1");
-// });
+test("format function works for decimal number", () => {
+  expect(format(10.1)).toEqual("£10.1");
+});
 
-// test("badCode variable correctly assigned", () => {
-//   expect(badCode).toEqual("£24");
-// });
+test("badCode variable correctly assigned", () => {
+  expect(badCode).toEqual("£24");
+});
 
-// test("goodCode variable correctly assigned", () => {
-//   expect(goodCode).toEqual("£24");
-// });
+test("goodCode variable correctly assigned", () => {
+  expect(goodCode).toEqual("£24");
+});
