@@ -9,3 +9,4 @@ function multiply(number1, number2) {
 let result = multiply(3, 4);
 
 console.log(result);
+
