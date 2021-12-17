@@ -24,8 +24,9 @@ console.log(calculateSalesTax(34));
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency(calculateSalesTax) {
-  return "£" + Math.round((calculateSalesTax * 100) / 100);
+function addTaxAndFormatCurrency(price) {
+  const totalPrice = price * 1.2;
+  return `£${totalPrice.toFixed(2)}`;
 }
 
 console.log(addTaxAndFormatCurrency(15));
