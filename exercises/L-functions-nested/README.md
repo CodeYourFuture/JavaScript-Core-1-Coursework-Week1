@@ -16,7 +16,6 @@ function createCreeting(name, age) {
   return message;
 }
 ```
-
 ## Exercise 1
 
 - In `exercise.js` you have been provided with the names of some mentors. Write a program that logs a shouty greeting to each one.
