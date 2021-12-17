@@ -1,9 +1,9 @@
-// Add comments to explain what this function does. You're meant to use Google!
+// random number gives any number, but not 0!
 function getRandomNumber() {
   return Math.random() * 10;
 }
 
-// Add comments to explain what this function does. You're meant to use Google!
+// it is joining to or more strings
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
