@@ -1,17 +1,24 @@
 // Add comments to explain what this function does. You're meant to use Google!
+// Function getRandomNumber will generate a random number between 0 and 10 and will be multiply by 10
 function getRandomNumber() {
   return Math.random() * 10;
 }
-
+console.log(getRandomNumber)
 // Add comments to explain what this function does. You're meant to use Google!
+// the concat() method will help combine word1 and word2 and return a new value without changing the existing ones
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
 
+
+ 
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+
 }
+
+
 
 /* 
 ===================================================
@@ -33,5 +40,5 @@ test("concatenate example #2", () => {
 });
 
 test("concatenate doesn't only accept strings", () => {
-  expect(concatenate("I", "am", 13)).toEqual("I am 13");
+  expect(concatenate("I", "am", 13)).toEqual("I", "am", 13);
 });
