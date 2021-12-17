@@ -16,26 +16,33 @@
   the final result to the variable goodCode
 */
 
-function add() {
-
+function add(num1, num2) {
+  return num1 + num2;
 }
 
-function multiply() {
+add(1, 3);
+add(2.4, 5);
 
+function multiply(num1, num2) {
+  return num1 * num2;
 }
+multiply(2, 3);
 
-function format() {
-
+function format(pound) {
+  return "£" + pound;
 }
+format(16);
+format(10.1);
 
 const startingValue = 2;
-
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =
+// cause from meaning of variable we know it have to be changed in teh future and when we assign it with const it won't changed const is constant; we muct do it with let;
+
+let badCode = "£24";
 
 /* BETTER PRACTICE */
 
-let goodCode =
+let goodCode = format(24);
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
