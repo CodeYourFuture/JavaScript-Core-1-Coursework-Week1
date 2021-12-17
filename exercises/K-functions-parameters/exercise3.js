@@ -1,5 +1,7 @@
-// Write your function here
 
-var greeting = createGreeting("Daniel");
+function CreateGreeting (myName) {
+    // Write your function here
+    console.log("Hello my name is " + myName);
+}
 
-console.log(greeting);
+CreateGreeting ("Teniola");
