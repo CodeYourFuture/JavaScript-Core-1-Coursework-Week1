@@ -12,6 +12,8 @@ let priceOfProduct = taxOnProduct + originalPrice
 return priceOfProduct;
 }
 console.log(calculateSalesTax);
+
+
 /*
   CURRENCY FORMATTING
   ===================
