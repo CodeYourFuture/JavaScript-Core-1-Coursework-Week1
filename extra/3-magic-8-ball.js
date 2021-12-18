@@ -68,17 +68,10 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
-function shakeBall() {
-  //Write your code in here
+// function shakeBall() {
 
+// }
 
-  
-	let index = Math.floor(Math.random() * answers.length);
-	let answer = answers[index];
-  return answer;
-}
-
-console.log(shakeBall());
 /* 
   This function should say whether the answer it is given is
     - very positive
@@ -88,19 +81,31 @@ console.log(shakeBall());
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
-// function checkAnswer(answer) {
-//   //Write your code in here
-// }
+function checkAnswer() {
+  //Write your code in here
+
+  if (answers.indexOf < 6) {
+  return "very positive";  
+  } else if (answers.indexOf < 11) {
+    return "positive";
+  } else if (answers.indexOf < 16) {
+    return "negative";
+  } else {
+    return "very negative";
+  }
+}
+ console.log(checkAnswer());
 
 
 
+function displayAnswer() {
+	let index = Math.floor(Math.random() * answers.length);
+  let answer = answers[index];
+	
+  return answer;
+}
 
-// function displayAnswer()
-// {
-// 	// let index = Math.floor(Math.random() * answers.length);
-// 	// let answers = answers[index];
-//   return Math.floor(Math.random() * answers.length)
-// }
+console.log(displayAnswer());
 
 // console.log(displayAnswer());
 
