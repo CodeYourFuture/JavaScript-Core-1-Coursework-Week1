@@ -1,10 +1,10 @@
 /*Add comments to explain what this function does. You're meant to use Google!
 
- This function it's going to take a random number from 0 to 9 and it's going to multiply that
+ This function it's going to take a random number from 0 to 1(excluding ) and it's going to multiply that
 number by 10 */
 function getRandomNumber() {
   return Math.random() * 10;
-}
+}  
 
 /*Add comments to explain what this function does. You're meant to use Google!
 
