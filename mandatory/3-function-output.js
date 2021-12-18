@@ -1,5 +1,5 @@
 // Add comments to explain what this function does. You're meant to use Google!
-function getRandomNumber() {
+function getRandomNumber(numbers) {
   return Math.random() * 10;
 }
 
