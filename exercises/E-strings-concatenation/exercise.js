@@ -1,7 +1,7 @@
 // Start by creating a variable `message`
 let greetingS ="Hi, may name is";
-let nameOf = "Ali";
-// let greeting = `${greetingS} ${nameOf}`;
+let myName = "Ali";
+// let greeting = `${greetingS} ${myName}`;
 // console.log(greeting);
-let greeting = greetingS + " " + nameOf;
+let greeting = greetingS + " " + myName;
 console.log(greeting);
