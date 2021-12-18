@@ -1,9 +1,8 @@
 // Start by creating a variable `message`
 
+const greetingStart = 'Hello, my name is '
+const myName = 'Daniel'
 
-var greetingStart = 'Hello, my name is ';
-var myName = 'Daniel';
+let greeting = greetingStart + myName
 
-var greeting = greetingStart + myName;
-
-console.log(greeting);
+console.log(greeting)
