@@ -69,7 +69,7 @@
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
-  return "The ball was shaken";
+  return "The ball has shaken";
 }
 
 console.log(shakeBall());
