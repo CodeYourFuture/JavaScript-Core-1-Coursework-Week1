@@ -63,7 +63,7 @@ function shakeBall() {
 }
 
 let answer = shakeBall();
-console.log(answer);
+// console.log(answer);
 /* 
   This function should say whether the answer it is given is
     - very positive
@@ -88,7 +88,7 @@ function checkAnswer(answer) {
     return "very negative";
   }
 }
-
+checkAnswer(answer);
 console.log(checkAnswer(answer));
 // console.log(checkAnswer("It is decidedly so."));
 // console.log(checkAnswer("My reply is no."));
@@ -113,12 +113,12 @@ test("whole magic 8 ball sequence", () => {
   expect(consoleLogSpy).toHaveBeenCalledTimes(1);
   expect(consoleLogSpy).toHaveBeenLastCalledWith("The ball has shaken!");
 
-  expect(checkAnswer(answer)).toBeOneOf([
-    "very positive",
-    "positive",
-    "negative",
-    "very negative",
-  ]);
+  expect(
+    checkAnswer(answer) === "very positive" ||
+      checkAnswer(answer) === "positive" ||
+      checkAnswer(answer) === "negative" ||
+      checkAnswer(answer) === "very negative"
+  ).toBe(true);
 });
 
 test("magic 8 ball returns different values each time", () => {
