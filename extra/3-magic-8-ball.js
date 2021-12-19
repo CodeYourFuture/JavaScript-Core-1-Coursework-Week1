@@ -45,23 +45,25 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
+
 function shakeBall() {
-  let randomNumber = Math.round(Math.random() * 8);
-  console.log(randomNumber);
-  //Write your code in here
-  if (randomNumber() === 1 || randomNumber() === 2) {
-    return "very positive";
-  } else if (randomNumber() === 3 || randomNumber() === 4) {
-    return "positive";
-  } else if (randomNumber() === 5 || randomNumber() === 6) {
-    return "negative";
-  } else {
-    return "very negative";
-  }
+  const array = [
+    "My reply is no.",
+    "Outlook not so good.",
+    " Cannot predict now.",
+    "Reply hazy, try again",
+    "Most likely.",
+    " Outlook good.",
+    " It is decidedly so.",
+    "Without a doubt.",
+  ];
+  console.log("The ball has shaken!");
+  let randomBall = Math.round(Math.random() * 8);
+  return array[randomBall];
 }
 
 let answer = shakeBall();
-
+console.log(answer);
 /* 
   This function should say whether the answer it is given is
     - very positive
@@ -73,16 +75,23 @@ let answer = shakeBall();
 */
 function checkAnswer(answer) {
   //Write your code in here
-  if (answer === "very positive") {
+  if (answer === "It is decidedly so." || answer === "Without a doubt.") {
     return "very positive";
-  } else if (shakeBall() === 3 || shakeBall() === 4) {
+  } else if (answer === " Outlook good." || answer === "Most likely.") {
     return "positive";
-  } else if (shakeBall() === 5 || shakeBall() === 6) {
+  } else if (
+    answer === " Cannot predict now." ||
+    answer === "Reply hazy, try again"
+  ) {
     return "negative";
   } else {
     return "very negative";
   }
 }
+
+console.log(checkAnswer(answer));
+// console.log(checkAnswer("It is decidedly so."));
+// console.log(checkAnswer("My reply is no."));
 
 /* 
 ==================================
