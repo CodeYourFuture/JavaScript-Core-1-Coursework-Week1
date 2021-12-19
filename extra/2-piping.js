@@ -36,7 +36,7 @@ format(10.1);
 
 const startingValue = 2;
 // Why can this code be seen as bad practice? Comment your answer.
-// cause from meaning of variable we know it have to be changed in teh future and when we assign it with const it won't changed const is constant; we muct do it with let;
+// cause from meaning of variable we know it have to be changed in teh future and when we assign it with const it won't changed const is constant; we must do it with let;
 
 let badCode = "£24";
 
