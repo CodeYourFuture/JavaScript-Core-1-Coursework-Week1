@@ -81,13 +81,12 @@ test("whole magic 8 ball sequence", () => {
 
   expect(consoleLogSpy).toHaveBeenCalledTimes(1);
   expect(consoleLogSpy).toHaveBeenLastCalledWith("The ball has shaken!");
-
-  expect(checkAnswer(answer)).toBeOneOf([
+  expect([
     "very positive",
     "positive",
     "negative",
     "very negative",
-  ]);
+  ].includes(checkAnswer(answer))).toEqual(true);
 });
 
 test("magic 8 ball returns different values each time", () => {
