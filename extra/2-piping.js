@@ -21,7 +21,7 @@ function add(a, b) {
 }
 
 function multiply(c, d) {
- return c* d
+ return c * d
 }
 
 function format(num) {
@@ -36,7 +36,11 @@ let badCode = console.log(add(10, 2)); console.log(multiply(2, 2));console.log(f
 
 /* BETTER PRACTICE */
 
-let goodCode =
+let adding = add(startingValue, 10);
+let multiplying = multiply(adding, 2);
+let formatting = format(multiplying);
+let goodCode = formatting;
+
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.

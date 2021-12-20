@@ -1,4 +1,4 @@
-// returns a floating-point, pseudo-random number in the range 0 to less than 1 
+// returns a random number and multiplies the returned number by 10
 function getRandomNumber() {
   return Math.random() * 10;
 }
@@ -6,12 +6,12 @@ function getRandomNumber() {
 
 // this function concatenate two strings together. Which basically means joins two words together.
 function combine2Words(word1, word2) {
-  return "I " + "am" + 13
+  return word1 +" "+ word2
 
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
-   return "code "+ "your" + " future"
+   return firstWord + " " + secondWord + " " + thirdWord
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
 }
