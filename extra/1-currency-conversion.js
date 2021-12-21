@@ -21,7 +21,7 @@ console.log(convertToUSD(50))
 function convertToBRL(pound) {
   let afterFees = (pound/100) *99
   
-  let total= afterFees *5.7.toFixed(2)
+  let total= (afterFees *5.7).toFixed(2)
   return total
 }
 // function convertToNewBrl(pound){
@@ -29,8 +29,8 @@ function convertToBRL(pound) {
 //   return ((pound*5.7)- fee).toFixed(2)
 // }
 // console.log(convertToNewBrl(1.5))
-console.log(convertToBRL(30))
-console.log(convertToBRL(1.5))
+// console.log(convertToBRL(30))
+// console.log(convertToBRL(1.5))
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.

@@ -45,9 +45,6 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
-function shakeBall(a) {
-  return `${a} --The ball has shaken--!!`
-}
 
 /* 
   This function should say whether the answer it is given is
@@ -58,25 +55,59 @@ function shakeBall(a) {
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
-function checkAnswer(question) {
+function shakeBall(a) {
+  return `${a} --The ball has shaken--!!`
+}
+
+let possibleAnswers = {
+    veryPositive: [
+        "It is certain.",
+        "It is decidedly so.",
+        "Without a doubt.",
+        "Yes - definitely.",
+        "You may rely on it.",
+    ],
+    positive: [
+        "As I see it, yes.",
+        "Most likely.",
+        "Outlook good.",
+        "Yes.",
+        "Signs point to yes.",
+    ],
+
+    negative: [
+        "Reply hazy, try again.",
+        "Ask again later.",
+        "Better not tell you now.",
+        "Cannot predict now.",
+        "Concentrate and ask again.",
+    ],
+    veryNegative: [
+        "Don't count on it.",
+        "My reply is no.",
+        "My sources say no.",
+        "Outlook not so good.",
+        "Very doubtful.",
+    ],
+};
+function checkAnswer(answer) {
   let a = 'very positive' 
   let b = 'positive'
   let c = 'negative'
   let d = 'very negative'
-  
-  answer = Math.round(Math.random() * 4)
-  let shake = shakeBall(`${question.trim()}? `)
-    if(answer === 0) {
-      return `${shake} ${a}`
-    } else if (answer === 1) {
-      return `${shake} ${b}`
-    } else if (answer === 2) {
-      return `${shake} ${c}`
-    } else if (answer === 3) {
-      return `${shake} ${d}`
-    } else { return `${shake} Ask me later!`};
-   
-  
+
+  let shake = shakeBall(`${answer}? `)
+       if (possibleAnswers.veryPositive.includes(answer)) {
+        return `${shake}  ${a}`;
+    } else if (possibleAnswers.positive.includes(answer)) {
+        return `${shake}  ${b}`;
+    } else if (possibleAnswers.negative.includes(answer)) {
+        return `${shake}  ${c}`;
+    } else if (possibleAnswers.veryNegative.includes(answer)) {
+        return `${shake}  ${d}`;
+}}
+console.log(checkAnswer("you may rely on it.")) // need to covert the string to case sensitive before  commit
+
   // if(answer === 0){
   //   return shakeBall(`${question.trim()}? The answer is: ${a}`) 
   // } else if( answer === 1){
@@ -87,8 +118,8 @@ function checkAnswer(question) {
   //   return shakeBall(`${question.trim()}? The answer is: ${d}`)
   // } else 
   // return shakeBall(`${question.trim()}? The answer is: Ask me later!`)
-}
-console.log(checkAnswer('Is Dona qualified as my PD buddy?'))
+
+
 /* 
 ==================================
 ======= TESTS - DO NOT MODIFY =====
