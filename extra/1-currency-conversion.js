@@ -5,7 +5,9 @@
   Write a function that converts a price to USD (exchange rate is 1.4 $ to £)
 */
 
-function convertToUSD(num) {return num*1.4;}
+function convertToUSD(num) {
+                              return num*1.4;
+                           }
 
 /*
   CURRENCY CONVERSION
@@ -17,7 +19,10 @@ function convertToUSD(num) {return num*1.4;}
 
 function convertToBRL(num) 
 {
-      num = num*99/100*5.7;
+      // Formula: 99/100*5.7;
+      let rateToBRL = 5.7;
+      let theFee = 99 / 100;
+      num = num * theFee * rateToBRL ;
       num=num.toFixed(2);
       return Number(num);}
 

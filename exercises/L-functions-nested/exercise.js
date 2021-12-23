@@ -1,10 +1,10 @@
 
-function UpperCase(string) {
+function doUpperCase(string) {
   return string.toUpperCase();
 }
 
 function shoutyGreeting(name) {
-   let message = "HELLO " + UpperCase(name);
+   let message = "HELLO " + doUpperCase(name);
   return message;
 }
 
