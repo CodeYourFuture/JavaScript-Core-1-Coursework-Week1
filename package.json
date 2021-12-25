@@ -16,7 +16,8 @@
   },
   "jest": {
     "setupFilesAfterEnv": [
-      "jest-extended"
+      "jest-extended",
+      "jest-extended/all"
     ],
     "projects": [
       {
