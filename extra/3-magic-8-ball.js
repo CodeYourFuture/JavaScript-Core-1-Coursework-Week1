@@ -43,27 +43,49 @@
     Very doubtful.
 */
 
+const veryNegativeAnswers = [
+  "Don't count on it.",
+  "My reply is no.",
+  "My sources say no.",
+  "Outlook not so good.",
+  "Very doubtful.",
+];
+const negativeAnswers = [
+  "Reply hazy, try again.",
+  "Ask again later.",
+  "Better not tell you now.",
+  "Cannot predict now.",
+  "Concentrate and ask again.",
+];
+const positiveAnswers = [
+  "As I see it, yes.",
+  "Most likely.",
+  "Outlook good.",
+  "Yes.",
+  "Signs point to yes.",
+];
+const veryPositiveAnswers = [
+  "You may rely on it",
+  "You may rely on it",
+  "It is decidedly so.",
+  "It is certain.",
+];
+const possibleAnswers = veryNegativeAnswers.concat(
+  negativeAnswers,
+  positiveAnswers,
+  veryPositiveAnswers
+);
 // This should log "The ball has shaken!"
 // and return the answer.
 
 function shakeBall() {
-  const array = [
-    "My reply is no.",
-    "Outlook not so good.",
-    " Cannot predict now.",
-    "Reply hazy, try again",
-    "Most likely.",
-    " Outlook good.",
-    " It is decidedly so.",
-    "Without a doubt.",
-  ];
+  let randomIndex = Math.round(Math.random() * possibleAnswers.length);
   console.log("The ball has shaken!");
-  let randomBall = Math.round(Math.random() * 8);
-  return array[randomBall];
+  return possibleAnswers[randomIndex];
 }
 
-let answer = shakeBall();
-// console.log(answer);
+// let answer = shakeBall();
+// console.log(answer, "anwer is");
 /* 
   This function should say whether the answer it is given is
     - very positive
@@ -75,23 +97,20 @@ let answer = shakeBall();
 */
 function checkAnswer(answer) {
   //Write your code in here
-  if (answer === "It is decidedly so." || answer === "Without a doubt.") {
+  const answerIndex = possibleAnswers.indexOf(answer);
+  if (answerIndex >= 15) {
     return "very positive";
-  } else if (answer === " Outlook good." || answer === "Most likely.") {
+  } else if (answerIndex >= 10) {
     return "positive";
-  } else if (
-    answer === " Cannot predict now." ||
-    answer === "Reply hazy, try again"
-  ) {
+  } else if (answerIndex >= 5) {
     return "negative";
   } else {
     return "very negative";
   }
 }
-checkAnswer(answer);
-console.log(checkAnswer(answer));
-// console.log(checkAnswer("It is decidedly so."));
-// console.log(checkAnswer("My reply is no."));
+
+console.log(checkAnswer("It is decidedly so."));
+console.log(checkAnswer("My reply is no."), "myreplyno");
 
 /* 
 ==================================
