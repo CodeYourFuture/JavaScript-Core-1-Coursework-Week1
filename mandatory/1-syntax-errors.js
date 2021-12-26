@@ -9,8 +9,8 @@ function introduceMe(name, age) {
 }
 
 function getTotal(a, b) {
- 
-  return "The total is " + (a + b);
+  let total = a + b;
+  return "The total is " + total;
 }
  
 /* 

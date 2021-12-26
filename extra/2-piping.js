@@ -33,8 +33,6 @@ function format(num) {
 }
 
 console.log(format(45));
-
-
 const startingValue = 2;
 function badPractice () {  
   return badCode;
@@ -46,12 +44,12 @@ console.log(badPractice());
 
 
 function goodPractice() { 
-
   return goodCode; //Is this code any better?
 }
   let goodCode = "£" + ((startingValue + 10) * 2); 
 
 
+// let goodCode = format(multiply(add(startingValue, 10), 2)); //suggested in 'solutions'
 
 
 // Why can this code be seen as bad practice? Comment your answer.

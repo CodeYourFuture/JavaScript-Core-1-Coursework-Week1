@@ -9,6 +9,12 @@ function calculateSalesTax(num) {
   return num + (num/100 * 20);
 }
 
+// function calculateSalesTax(originalPrice) {
+//   const taxRate = 20;
+//   const taxOnOriginal = originalPrice * (taxRate / 100);
+//   return originalPrice + taxOnOriginal;
+// } // code suggested in 'solutions'
+
 //  console.log(calculateSalesTax(15));
 
 /*
@@ -25,6 +31,13 @@ function calculateSalesTax(num) {
 function addTaxAndFormatCurrency(num) {   
     return "£" + (num + (num/100 * 20)).toFixed(2);
 }
+
+
+// function addTaxAndFormatCurrency(price) {
+//   const priceWithTax = calculateSalesTax(price);
+//   const formattedPrice = '£' + priceWithTax.toFixed(2);
+//   return formattedPrice;
+// } //code suggested in solutions
 
 //  console.log(addTaxAndFormatCurrency(15))
 /* 
