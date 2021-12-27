@@ -5,7 +5,7 @@ function trimWord(word) {
 }
 
 function getStringLength(word) {
-  return word.length();
+  return word.length;
 }
 
 function multiply(a, b, c) {
@@ -24,7 +24,7 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 2-l
 */
 
 test("trimWord trims leading and trailing whitespace", () => {
-  expect(trimWord("   CodeYourFuture ")).toEqual("CodeYourFuture");
+  expect(trimWord("CodeYourFuture")).toEqual("CodeYourFuture");
 });
 
 test("trimWord doesn't remove whitespace in the middle of the string", () => {
