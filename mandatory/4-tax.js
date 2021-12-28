@@ -6,7 +6,10 @@
 */
 
 function calculateSalesTax(amount) {
-  return (amount * 20) / 100 + amount;
+  let taxRate = 20;
+  let taxAmount = amount * (taxRate / 100);
+  return amount + taxAmount;
+  // return (amount * 20) / 100 + amount; my solution
 }
 
 /*
