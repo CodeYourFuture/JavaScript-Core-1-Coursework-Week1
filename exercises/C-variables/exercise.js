@@ -1,3 +1,5 @@
 // Start by creating a variable `greeting`
-let greeting = "Hello World!";
+let greeting = "Hello world";
+console.log(greeting);
+console.log(greeting);
 console.log(greeting);

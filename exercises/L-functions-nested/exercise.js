@@ -6,7 +6,7 @@ var mentor5 = "Yohannes";
 
 
 function greeting(name) {
-    let sayHello = "hello, " + name;
+    let sayHello = "hello " + name;
     return sayHello.toUpperCase();
 }
 console.log(greeting(mentor1));
