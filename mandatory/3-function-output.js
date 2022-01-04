@@ -11,7 +11,7 @@ function combine2Words(word1, word2) {
 //This function is used to connect strings together into one new string. //
 
 function concatenate(firstWord, secondWord, thirdWord) {
-  return firstWord.concat(thirdWord);
+  return firstWord.concat(secondWord, thirdWord);
 }
 
 /* 
