@@ -25,7 +25,7 @@ console.log(calculateSalesTax(34));
 */
 
 function addTaxAndFormatCurrency(price) {
-  const totalPrice = price * 1.2;
+  const totalPrice = calculateSalesTax;
   return `£${totalPrice.toFixed(2)}`;
 }
 
