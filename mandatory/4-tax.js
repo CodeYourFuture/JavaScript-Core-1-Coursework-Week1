@@ -5,9 +5,10 @@
   Sales tax is 20% of the price of the product.
 */
 
-function calculateSalesTax(n) {
-  let tax = n + 0.2 * n;
-  return tax;
+function calculateSalesTax(originalPrice) {
+  const taxRate = 20;
+  const amountOfTax = originalPrice * (taxRate / 100);
+  return originalPrice + amountOfTax;
 }
 
 /*
@@ -20,8 +21,8 @@ function calculateSalesTax(n) {
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency(n) {
-  return `\u00a3${Number(calculateSalesTax(n)).toFixed(2)}`;
+function addTaxAndFormatCurrency(originalPrice) {
+  return `\u00a3${Number(calculateSalesTax(originalPrice)).toFixed(2)}`;
 }
 
 /* 
