@@ -19,7 +19,9 @@ function convertToUSD(priceGbp) {
 */
 
 function convertToBRL(priceGbp) {
-  return parseFloat(((0.99 * priceGbp) * 5.7).toFixed(2));
+  const exchangeRate = 5.7;
+  const percentageAfterFee = 0.99;
+  return parseFloat(((percentageAfterFee * priceGbp) * exchangeRate).toFixed(2));
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== 

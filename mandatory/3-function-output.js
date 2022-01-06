@@ -16,7 +16,7 @@ function combine2Words(word1, word2) {
 
 function concatenate(firstWord, secondWord, thirdWord) {
 
-  var result = firstWord.concat(" " + secondWord.concat(" " + thirdWord));
+  let result = firstWord.concat(" " + secondWord.concat(" " + thirdWord));
   return result;
 
   // Write the body of this function to concatenate three words together.
