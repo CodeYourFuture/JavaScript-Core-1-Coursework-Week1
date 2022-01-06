@@ -1,3 +1,6 @@
+const { toBeOneOf } = require("jest-extended");
+expect.extend({ toBeOneOf });
+
 /**
 
   Let's peer into the future using a Magic 8 Ball!
