@@ -7,15 +7,12 @@ var mentor5 = "Yohannes";
 function upperCase(a) {
     return a.toUpperCase();
 }
-let upperMentor1 = upperCase(mentor1)
 
 
-function greeting(a, b, c ,d ,e) {
-            
-    return "HELLO " +upperMentor1+"\n" + "HELLO " +b+ "\n"+ "HELLO " +c+"\n"+"HELLO " +d+"\n" +"HELLO " +e+"\n";
-    
+function greeting(name) {     
+    return `HELLO ${upperCase(name)} `
 }
 
-let greetings = greeting(mentor1,mentor2,mentor3,mentor4,mentor5);
+let greetings = greeting(mentor1) + '\n' + greeting(mentor2) + "\n" + greeting(mentor3) + "\n" + greeting(mentor4) +"\n"+greeting(mentor5);
 
 console.log(greetings)

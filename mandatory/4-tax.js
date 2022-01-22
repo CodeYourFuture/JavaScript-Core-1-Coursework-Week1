@@ -8,6 +8,7 @@
 function calculateSalesTax(num) {
    return  num * 1.2;
 }
+console.log(calculateSalesTax)
 
 
 
@@ -26,6 +27,7 @@ function calculateSalesTax(num) {
 function addTaxAndFormatCurrency(num) {
   return "£" + calculateSalesTax(num).toFixed(2);
 }
+console.log(addTaxAndFormatCurrency)
 
 /* 
 ===================================================
