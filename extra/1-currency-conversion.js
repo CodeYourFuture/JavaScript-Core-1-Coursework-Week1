@@ -6,7 +6,7 @@
 */
 
 function convertToUSD(priceToEuros) {
-  return 1.4 * priceToEuros
+  return 1.4 * priceToEuros;
 }
 
 /*
@@ -18,7 +18,7 @@ function convertToUSD(priceToEuros) {
 */
 
 function convertToBRL(priceToPounds) {
-  return 5.7 * priceToPounds * 0.99
+  return parseFloat((5.7 * priceToPounds * 0.99).toFixed(2));
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== 

@@ -17,26 +17,28 @@
 */
 
 function add(num1, num2) {
-  return num1 + num2
+  return num1 + num2;
 
 }
 
 function multiply(numA, numB) {
-return numA * numB
+return numA * numB;
 }
 
 function format(num) {
-return "£" + num
+return "£" + num;
 }
 
 const startingValue = 2;
 
-// Why can this code be seen as bad practice? Comment your answer.
-let badCode = function add(num1, num2) {return num1 + num2;}; function multiply(numA, numB) {return numA * numB;}function format(num) {return "£" + num;}
+// Why can this code be seen as bad practice? Comment your answer. The code can be seen as a shortcut but can easily be confusing when working with multiple line of codes
+let badCode = format(multiply(add(startingValue,10),2));
+
 
 /* BETTER PRACTICE */
-
-let goodCode = 
+let addition = add(startingValue, 10);
+let multiplication= multiply(addition, 2);
+let goodCode = format(multiplication);
 
 
 /* ======= TESTS - DO NOT MODIFY ===== 

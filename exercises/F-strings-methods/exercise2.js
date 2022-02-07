@@ -7,3 +7,4 @@ var length = " characters long.";
 myName = myName.trim();
 
 console.log(greeting + myName + message + myName.length + length);
+console.log(`${greeting}${myName}${message}${myName.length}${length}`)

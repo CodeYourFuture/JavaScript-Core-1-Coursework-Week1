@@ -2,6 +2,7 @@
 var greeting = "Hello ";
 function greet (greeting, name){
 
+  
 }
 
   var mentor1 = "Daniel ";
@@ -15,3 +16,4 @@ function greet (greeting, name){
   console.log(greeting.toUpperCase() + mentor3.toUpperCase());
   console.log(greeting.toUpperCase() + mentor4.toUpperCase());
   console.log(greeting.toUpperCase() + mentor5.toUpperCase());
+  console.log(`${greeting.toUpperCase()} ${mentor1.toUpperCase()} `)

@@ -7,4 +7,5 @@ let myName= " Senami";
 function myGreeting (greeting, myName){
     
 }
-console.log(greeting + myName)
+console.log(greeting + myName);
+console.log (`${greeting}${myName}`);
