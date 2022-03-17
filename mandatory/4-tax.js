@@ -1,32 +1,28 @@
 /*
   SALES TAX
   =========
-  A business requires a program that calculates how much the 
-  price of a product is including sales tax
-  Sales tax is 20% of the price of the product.
+  A business requires a program that calculates how much sales tax to charge
+  Sales tax is 20% of the price of the product
 */
 
 function calculateSalesTax(originalPrice) {
-let taxOnProduct = (20/100)*originalPrice;
-let priceOfProduct = taxOnProduct + originalPrice
-return priceOfProduct;
+  const taxRate = 0.20; // 20% = 20/100 = 0.20
+  return salesTax = originalPrice + (originalPrice * (taxRate));
 }
-console.log(calculateSalesTax);
-
 
 /*
   CURRENCY FORMATTING
   ===================
   The business has informed you that prices must have 2 decimal places
   They must also start with the currency symbol
-  Write a function that adds tax to a number, and then transforms the 
-  total into the format £0.00
-
-  Remember that the prices must include the sales tax 
-  (hint: you already wrote a function for this!)
+  Write a function that adds tax to a number, and then transforms the total into the format £0.00
+  Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency() {}
+function addTaxAndFormatCurrency(price) {
+  const priceWithTax = calculateSalesTax(price);
+  return totalPrice = '£' + priceWithTax.toFixed(2); //formatted Price to 2 decimal places
+}
 
 /* 
 ===================================================

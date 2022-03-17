@@ -1,3 +1,4 @@
+ 
 // The syntax for this function is valid but it has an error, find it and fix it.
 
 function trimWord(word) {
@@ -5,11 +6,11 @@ function trimWord(word) {
 }
 
 function getStringLength(word) {
-  return word.length();
+  return word.length;
 }
 
 function multiply(a, b, c) {
-    return a * b * c;
+  return a * b * c;
 }
 
 /* 

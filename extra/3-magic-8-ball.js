@@ -1,40 +1,32 @@
 /**
-
   Let's peer into the future using a Magic 8 Ball!
   https://en.wikipedia.org/wiki/Magic_8-Ball 
-
   There are a few steps to being able view the future though:
   * Ask a question
   * Shake the ball
   * Get an answer
   * Decide if it's positive or negative
-
   The question can be anything, but the answers are fixed,
   and have different levels of positivity or negativity.
-
   Below are the possible answers:
-
-  ## Very positive
+  ## Very positive
     It is certain.
     It is decidedly so.
     Without a doubt.
     Yes - definitely.
     You may rely on it.
-
   ## Positive
     As I see it, yes.
     Most likely.
     Outlook good.
     Yes.
     Signs point to yes.
-
   ## Negative
     Reply hazy, try again.
     Ask again later.
     Better not tell you now.
     Cannot predict now.
     Concentrate and ask again.
-
   ## Very negative
     Don't count on it.
     My reply is no.
@@ -43,10 +35,44 @@
     Very doubtful.
 */
 
-// This should log "The ball has shaken!"
-// and return the answer.
-function shakeBall() {
-  //Write your code in here
+const veryNegative = [
+  "Don't count on it.",
+  'My reply is no.',
+  'My sources say no.',
+  'Outlook not so good.',
+  'Very doubtful.',
+];
+const negative = [
+  'Reply hazy, try again.',
+  'Ask again later.',
+  'Better not tell you now.',
+  'Cannot predict now.',
+  'Concentrate and ask again.',
+];
+const positive = [
+  'As I see it, yes.',
+  'Most likely.',
+  'Outlook good.',
+  'Yes.',
+  'Signs point to yes.',
+];
+const veryPositive = [
+  'You may rely on it',
+  'You may rely on it',
+  'It is decidedly so.',
+  'It is certain.',
+];
+const possibleAnswers = veryNegative.concat(
+  negative,
+  positive,
+  veryPositive
+);
+
+function shakeBall() { // function taken from solutions
+  const message = 'The ball has shaken!';
+  return randomAnswer = possibleAnswers[Math.floor(Math.random() * possibleAnswers.length)];
+  console.log(message);
+ 
 }
 
 /* 
@@ -55,12 +81,17 @@ function shakeBall() {
     - positive
     - negative
     - very negative
-
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
-  //Write your code in here
+  const answerIndex = possibleAnswers.indexOf(answer);
+  if (answerIndex >= 15) {return 'very positive'};
+  if (answerIndex >= 10) {return 'positive'};
+  if (answerIndex >= 5) {return 'negative'};
+  return 'very negative';
 }
+
+/* 
 
 /* 
 ==================================

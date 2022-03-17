@@ -1,18 +1,16 @@
-// random number gives any number, but not 0!
-function getRandomNumber() {
+function getNumber() {
   return Math.random() * 10;
-}
+} // Math.random() returns a random number between 0 (inclusive),  and 1 (exclusive): 
 
-// it is joining to or more strings
-function combine2Words(word1, word2) {
-  return word1.concat(word2);
-}
+
+function s(w1, w2) {
+  return w1.concat(w2);
+} /* The concat() method concatenates (joins) two or more arrays. The concat() method returns a new array, 
+containing the joined arrays. The concat() method does not change the existing arrays.*/
 
 function concatenate(firstWord, secondWord, thirdWord) {
-  // Write the body of this function to concatenate three words together.
-  // Look at the test case below to understand what this function is expected to return.
+  return firstWord.concat(' ', secondWord, ' ', thirdWord);
 }
-
 
 /* 
 ===================================================

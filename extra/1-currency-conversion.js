@@ -5,27 +5,25 @@
   Write a function that converts a price to USD (exchange rate is 1.4 $ to £)
 */
 
-function convertToUSD(priceInPound) {
-  return priceInUSD= priceInPound * 1.4;
+function convertToUSD(amountInPounds) {
+  const exchangeRate = 1.4;
+  return amountToUSD = amountInPounds * exchangeRate;
 }
 
-console.log( priceInUSD);
 /*
   CURRENCY CONVERSION
   ===================
   The business is now breaking into the Brazilian market
   Write a new function for converting to the Brazilian real (exchange rate is 5.7 BRL to £)
-  They have also decided that they should add a 1% fee to all foreign transactions, 
-  which means you only convert 99% of the £ to BRL.
+  They have also decided that they should add a 1% fee to all foreign transactions, which means you only convert 99% of the £ to BRL.
 */
 
-function convertToBRL() {}
-function convertToBRL(priceInPound) {
-  let priceInBrazilian = 0.99 * 5.7 * priceInPound;
-  return number(priceInBrazilian.toFixed(2));
+function convertToBRL(amountInPounds) {
+  const transactionFee = 1- 1/100 // 1% = 1/100 = 0.01
+  const exchangeRate = 5.7;
+  const amountAfterDeduction = amountInPounds * transactionFee;
+  return Math.round(amountAfterDeduction * exchangeRate *100) / 100;
 }
-
-console.log(priceInBrazilian);
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
 

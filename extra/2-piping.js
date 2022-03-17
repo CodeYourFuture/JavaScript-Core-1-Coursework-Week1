@@ -5,45 +5,40 @@
   - one that adds 2 numbers together
   - one that multiplies 2 numbers together
   - one that formats a number so it's returned as a string with a £ sign before it (e.g. 20 -> £20)
-
-  2. Using the variable startingValue as input, perform the following operations using your functions all
+  
+  
+  2. Using the variable startingValue as input, perform the following operations using your 
+  functions all
   on one line (assign the result to the variable badCode):
   - add 10 to startingValue
   - multiply the result by 2
   - format it
   
-  3. Write a more readable version of what you wrote in step 2 under the BETTER PRACTICE comment. Assign
-  the final result to the variable goodCode
+  3. Write a more readable version of what you wrote in step 2 under the BETTER PRACTICE comment. 
+  Assign  the final result to the variable goodCode
 */
-
-function add(num1,num2) {
-  return sum= num1 + num2; 
+let a;
+let b;
+function add(a, b) {
+  return a + b;
 }
-console.log(sum);
 
-function multiply(num1, num2) {
-  return product= num1 * num2;
+function multiply(a, b) {
+  return a * b;
 }
-console.log(product);
 
-function format(number) {
-  return format = "£" + number;
+function format(num) {
+  return '£' + num;
 }
-console.log(format);
 
 const startingValue = 2;
-function random(startingValue){
-  return "£" + (startingValue + 10) * 2;
-}
+
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode = "£" + (startingValue + 10) *2;
+let badCode = '£' + ((startingValue + 10) * 2);
 
 /* BETTER PRACTICE */
 
-let sum = startingValue + 10;
-let total = sum *2;
-
-let goodCode = "£" + total;
+let goodCode = format(multiply(add(startingValue, 10), 2));
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
