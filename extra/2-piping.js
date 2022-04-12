@@ -17,29 +17,30 @@
 */
 
 function add(a, b) {
- return a + b
+ return a + b;
 }
 
 function multiply(c, d) {
- return c * d
+ return c * d;
 }
 
 function format(num) {
-  return "£" + num.toFixed(2)
+  return "£" + num;
 }
 
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-//calling all these functions in one line of code is bad practise because the code looks cluttered
+//calling all these functions in one line of code is bad practise because the code looks cluttered and the reapeated console log is making the code hard to read
 let badCode = console.log(add(10, 2)); console.log(multiply(2, 2));console.log(format(34))
 
 /* BETTER PRACTICE */
 
-let adding = add(startingValue, 10);
-let multiplying = multiply(adding, 2);
-let formatting = format(multiplying);
-let goodCode = formatting;
+
+
+let goodCode = add() 
+add() = multiply()
+multiply= format();
 
 
 /* ======= TESTS - DO NOT MODIFY ===== 
