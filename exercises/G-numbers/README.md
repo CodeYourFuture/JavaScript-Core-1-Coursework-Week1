@@ -3,16 +3,16 @@ The next data type we will learn is **number**.
 Unlike strings, numbers do not need to be wrapped in quotes.
 
 ```js
-var age = 30;
+let age = 30;
 ```
 
 You can use mathematical operators to caclulate numbers:
 
 ```js
-var sum = 10 + 2; // 12
-var product = 10 * 2; // 20
-var quotient = 10 / 2; // 5
-var difference = 10 - 2; // 8
+let sum = 10 + 2; // 12
+let product = 10 * 2; // 20
+let quotient = 10 / 2; // 5
+let difference = 10 - 2; // 8
 ```
 
 ## Exercise
