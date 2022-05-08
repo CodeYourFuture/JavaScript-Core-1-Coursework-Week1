@@ -1,2 +1,2 @@
-var numberOfStudents = 15;
-var numberOfMentors = 8;
+let numberOfStudents = 15;
+let numberOfMentors = 8;

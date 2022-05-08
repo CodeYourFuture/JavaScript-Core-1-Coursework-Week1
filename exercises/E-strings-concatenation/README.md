@@ -1,10 +1,10 @@
 You can add two strings together using the plus operator (`+`):
 
 ```js
-var greetingStart = "Hello, my name is ";
-var name = "Daniel";
+let greetingStart = "Hello, my name is ";
+let name = "Daniel";
 
-var greeting = greetingStart + name;
+let greeting = greetingStart + name;
 
 console.log(greeting); // Logs "Hello, my name is Daniel"
 ```
