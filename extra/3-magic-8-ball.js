@@ -45,51 +45,48 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
-function shakeBall() {
-  //Write your code in here
-  let answer = Math.round(Math.random() * 20);
+const veryPositive = [
+  "It is certain.",
+  "It is decidedly so.",
+  "Without a doubt.",
+  "Yes - definitely.",
+  "You may rely on it.",
+];
 
-  if (answer == 0) {
-    return `The ball has shaken! It is certain.`;
-  } else if (answer == 1) {
-    return `The ball has shaken! It is decidedly so.`;
-  } else if (answer == 2) {
-    return `The ball has shaken! Without a doubt.`;
-  } else if (answer == 3) {
-    return `The ball has shaken! Yes - definitely.`;
-  } else if (answer == 4) {
-    return `The ball has shaken! You may rely on it.`;
-  } else if (answer == 5) {
-    return `The ball has shaken! As I see it, yes.`;
-  } else if (answer == 6) {
-    return `The ball has shaken! Most likely.`;
-  } else if (answer == 7) {
-    return `The ball has shaken! Outlook good.`;
-  } else if (answer == 8) {
-    return `The ball has shaken! Yes.`;
-  } else if (answer == 9) {
-    return `The ball has shaken! Signs point to yes.`;
-  } else if (answer == 10) {
-    return `The ball has shaken! Reply hazy, try again.`;
-  } else if (answer == 11) {
-    return `The ball has shaken! Ask again later.`;
-  } else if (answer == 12) {
-    return `The ball has shaken! Better not tell you now.`;
-  } else if (answer == 13) {
-    return `The ball has shaken! Cannot predict now.`;
-  } else if (answer == 14) {
-    return `The ball has shaken! Concentrate and ask again.`;
-  } else if (answer == 15) {
-    return `The ball has shaken! Don't count on it.`;
-  } else if (answer == 16) {
-    return `The ball has shaken! My reply is no.`;
-  } else if (answer == 17) {
-    return `The ball has shaken! My sources say no.`;
-  } else if (answer == 18) {
-    return `The ball has shaken! Outlook not so good.`;
-  } else if (answer == 19) {
-    return `The ball has shaken! Very doubtful.`;
-  }
+const positive = [
+  "As I see it, yes.",
+  "Most likely.",
+  "Outlook good.",
+  "Yes.",
+  "Signs point to yes.",
+];
+
+const negative = [
+  "Reply hazy, try again.",
+  "Ask again later.",
+  "Better not tell you now.",
+  "Cannot predict now.",
+  "Concentrate and ask again.",
+];
+
+const veryNegative = [
+  "Don't count on it.",
+  "My reply is no.",
+  "My sources say no.",
+  "Outlook not so good.",
+  "Very doubtful.",
+];
+
+// This should log "The ball has shaken!"
+// and return the answer.
+function shakeBall() {
+  const allAnswers = [
+    ...veryPositive,
+    ...positive,
+    ...negative,
+    ...veryNegative,
+  ];
+  return allAnswers[Math.round(Math.random() * allAnswers.length)];
 }
 
 /* 
@@ -98,14 +95,17 @@ function shakeBall() {
     - positive
     - negative
     - very negative
-
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
-  //Write your code in here
-
-  if (answer <= 4) {
-    return `Very Positive`;
+  if (veryPositive.includes(answer)) {
+    return "very positive";
+  } else if (positive.includes(answer)) {
+    return "positive";
+  } else if (negative.includes(answer)) {
+    return "negative";
+  } else {
+    return "very negative";
   }
 }
 
