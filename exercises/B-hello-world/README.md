@@ -2,8 +2,7 @@ It is programming tradition that the first thing you do in any language is make 
 
 We'll do this in JavaScript, using something called `console.log()`.
 
-Inside of `exercise.js` there's a line of code that will print "Hello world!".
-
+Inside of `exercise.js` there's a line of code that will print "Hello world!"
 ### 1. Run the program
 
 - Open a terminal window
