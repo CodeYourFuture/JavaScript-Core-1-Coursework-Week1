@@ -1,3 +1,3 @@
 // Start by creating a variable `greeting`
-
-console.log(greeting);
+const greeting = "Hello"
+console.log(greeting.repeat(3));
