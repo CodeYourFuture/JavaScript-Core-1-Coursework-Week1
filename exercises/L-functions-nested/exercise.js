@@ -1,15 +1,19 @@
-let mentorNames = ["Daniel", "Irina", "Mimi", "Rob", "Yohannes"];
-let arrContainer = "";
-const spellNames = (arr) => {
-    for (let i = 0; i < mentorNames.length; i++) {
-        console.log(` HELLO ${mentorNames[i].toUpperCase()}`);
-    }
+let mentor1 = "Daniel";
+let mentor2 = "Irina";
+let mentor3 = "Mimi";
+let mentor4 = "Rob";
+let mentor5 = "Yohannes";
+const spellName = (name) => {
+    return name.toUpperCase();
 };
 
-const shoutyGreeting = () => {
-    let spelledUpperCase = spellNames();
-    let greeting = "HELLO" + spelledUpperCase;
-    return greeting;
-
+const shoutyGreeting = (name) => {
+    let message = "HELLO " + spellName(name);
+    return message;
 };
-shoutyGreeting();
+
+console.log(shoutyGreeting(mentor1));
+console.log(shoutyGreeting(mentor2));
+console.log(shoutyGreeting(mentor3));
+console.log(shoutyGreeting(mentor4));
+console.log(shoutyGreeting(mentor5));

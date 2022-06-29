@@ -16,15 +16,19 @@
   the final result to the variable goodCode
 */
 
-function add() {
+function add(x, y) {
+  return x + y;
 
 }
 
-function multiply() {
+function multiply(x, y) {
+  return x * y;
+
 
 }
 
-function format() {
+function format(num) {
+  return "£" + num.toString();
 
 }
 
@@ -33,20 +37,20 @@ const startingValue = 2;
 // Why can this code be seen as bad practice? Comment your answer.
 let badCode =
 
-/* BETTER PRACTICE */
+  /* BETTER PRACTICE */
 
-let goodCode =
+  let goodCode =
 
-/* ======= TESTS - DO NOT MODIFY ===== 
-There are some Tests in this file that will help you work out if your code is working.
+    /* ======= TESTS - DO NOT MODIFY ===== 
+    There are some Tests in this file that will help you work out if your code is working.
 
-To run the tests for just this one file, type `npm test -- --testPathPattern 2-piping` into your terminal
-(Reminder: You must have run `npm install` one time before this will work!)
-*/
+    To run the tests for just this one file, type `npm test -- --testPathPattern 2-piping` into your terminal
+    (Reminder: You must have run `npm install` one time before this will work!)
+    */
 
-test("add function - case 1 works", () => {
-  expect(add(1, 3)).toEqual(4);
-});
+    test("add function - case 1 works", () => {
+      expect(add(1, 3)).toEqual(4);
+    });
 
 test("add function - case 2 works", () => {
   expect(add(2.4, 5)).toEqual(7.4);
