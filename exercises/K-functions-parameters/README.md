@@ -10,7 +10,7 @@ function add(a, b) {
 
 When you write a function (sometimes called _declaring a function_) you assign names to the parameters inside of the parentheses (`()`). Parameters can be called anything.
 
-This function is exactly the same as the on above:
+This function is exactly the same as the one above:
 
 ```js
 function add(num1, num2) {
@@ -61,7 +61,7 @@ Hello, my name is Daniel
 
 ## Exercise 5
 
-- Write a function that takes a name (a string) and an age (a number) and returns a greeting (a string)
+- Write a function that takes a name (a string) and an age (a number) and returns a greeting (a string);
 
 ## Expected result
 
