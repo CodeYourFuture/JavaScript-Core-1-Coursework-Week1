@@ -4,15 +4,19 @@ let mentor3 = "Mimi";
 let mentor4 = "Rob";
 let mentor5 = "Yohannes";
 
-function uppercaseNames (str){
-    return nameUppercased = str.toUpperCase();
-}
 
-function shoutyGreet (name){
-    return "HELLO "+uppercaseNames(name);
-}
-console.log(shoutyGreet(mentor1));
-console.log(shoutyGreet(mentor2));
-console.log(shoutyGreet(mentor3));
-console.log(shoutyGreet(mentor4));
-console.log(shoutyGreet(mentor5));
+
+function spellName(name) {
+    return name.toUpperCase();
+  }
+
+function shoutyGreeting(name){
+    let message = 'HELLO '+ spellName(name);
+    return message 
+};
+
+console.log(shoutyGreeting(mentor1));
+console.log(shoutyGreeting(mentor2));
+console.log(shoutyGreeting(mentor3));
+console.log(shoutyGreeting(mentor4));
+console.log(shoutyGreeting(mentor5));

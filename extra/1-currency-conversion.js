@@ -5,8 +5,10 @@
   Write a function that converts a price to USD (exchange rate is 1.4 $ to £)
 */
 
+
 function convertToUSD(price) {
-  return price*1.4;
+  let exchangeRateUsd = 1.4;
+  return exchangeRateUsd * price;
 }
 
 /*
@@ -17,7 +19,11 @@ function convertToUSD(price) {
   They have also decided that they should add a 1% fee to all foreign transactions, which means you only convert 99% of the £ to BRL.
 */
 
-function convertToBRL() {}
+function convertToBRL(price) {
+  let exchangeRateBrl = 5.7 * price;
+  let discountRate = exchangeRateBrl / 100;
+  return exchangeRateBrl - discountRate.toFixed(2);
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.

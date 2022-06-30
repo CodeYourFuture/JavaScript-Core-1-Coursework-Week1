@@ -6,3 +6,4 @@ function triple(number) {
 let result = triple(12);
 
 console.log(result);
+

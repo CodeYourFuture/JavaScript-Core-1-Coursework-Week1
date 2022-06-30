@@ -1,7 +1,7 @@
 // Declare your function here
-function createLongGreeting(str, ages) {
-return "Hello, my names is " + str + " and I'm " + ages + " years old";
+function createLongGreeting(name, age){
+    let greeting = `Hello, my name is ${name} and I'm ${age} old`
+    return greeting
 }
-const greeting = createLongGreeting("Daniel", 30);
 
-console.log(greeting);
+const greeting = createLongGreeting("Daniel", 30);

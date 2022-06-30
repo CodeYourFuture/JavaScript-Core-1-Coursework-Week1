@@ -1,14 +1,12 @@
-var numberOfStudents = 15;
-var numberOfMentors = 8;
-let preciseAge = 30.612437;
-//get that number rounded using Math.round
-let roughAge = Math.round(preciseAge);
-//log
-//console.log(roughAge); //31
+let numberOfStudents = 30;
+let numberOfMentors = 8;
+let totalNumberOfStudentsMentors = numberOfStudents + numberOfMentors;
+//Percentage of Students:
+let percentageOfStudents = numberOfStudents * 100 / totalNumberOfStudentsMentors;
+percentageOfStudents = Math.round(percentageOfStudents);
+console.log("Percentage of Students: " + percentageOfStudents + " %")
 
-//lets sum both values Student and Mentors
-let totalAmount = numberOfMentors+numberOfStudents;
-//Divide - multiply and round
-let percentageValue = Math.round((numberOfStudents/totalAmount)*100);
-//log for students
-console.log("Percentage students "+percentageValue+"%");
+//Percentage of Mentors:
+let percentageOfMentors = numberOfMentors * 100 / totalNumberOfStudentsMentors;
+percentageOfMentors = Math.round(percentageOfMentors);
+console.log("Percentage of Mentors: " + percentageOfMentors + " %")

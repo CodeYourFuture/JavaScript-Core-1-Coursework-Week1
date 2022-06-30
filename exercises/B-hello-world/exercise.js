@@ -1,5 +1,6 @@
 
-console.log("Testing console.log");
-
-console.log("Hello world");
+let greeting = "Hello World"
+console.log(greeting);
+console.log(greeting);
+console.log("greeting");
 
