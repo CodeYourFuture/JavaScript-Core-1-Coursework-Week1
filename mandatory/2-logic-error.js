@@ -1,11 +1,11 @@
 // The syntax for this function is valid but it has an error, find it and fix it.
 
 function trimWord(word) {
-  return wordtrim();
+  return word.trim();
 }
 
 function getStringLength(word) {
-  return "word".length();
+  return word.length;
 }
 
 function multiply(a, b, c) {
@@ -49,3 +49,4 @@ test("multiply multiplies numbers", () => {
 test("multiply multiplies different numbers", () => {
   expect(multiply(2, 3, 4)).toEqual(24);
 });
+

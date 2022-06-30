@@ -35,7 +35,7 @@ let badCode =
 
 /* BETTER PRACTICE */
 
-let goodCode =
+ goodCode =
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
