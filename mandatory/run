@@ -1,0 +1,4 @@
+
+> javascript-core-1-coursework-week1@1.0.0 test
+> jest "--testPathPattern" "mandatory/2-logic-errors.js" "-" "single" "test"
+
