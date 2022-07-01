@@ -6,7 +6,7 @@ function trimWord(word) {
 
 function getStringLength(word) {
   
-  return (Turtles.length());
+  return word.length();
 }
 
 
