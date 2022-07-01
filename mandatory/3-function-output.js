@@ -1,9 +1,16 @@
 // Add comments to explain what this function does. You're meant to use Google!
+
+//(pseudorandom number generator) is an algorithm that outputs numbers in a complex, seemingly unpredictable pattern…
+
 function getRandomNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+
+//. A concat () method is method to combine two strings .
+//Number of arguments. In concat () method,takes only one argument of string and concatenate it with another string. ...
+
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
@@ -11,6 +18,7 @@ function combine2Words(word1, word2) {
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  return firstWord.concat(" ", secondWord, " ", thirdWord);
 }
 
 /* 
