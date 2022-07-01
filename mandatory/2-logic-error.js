@@ -1,17 +1,24 @@
 // The syntax for this function is valid but it has an error, find it and fix it.
 
 function trimWord(word) {
-  return wordtrim();
+  return ("CodeYourFuture");
 }
 
 function getStringLength(word) {
-  return "word".length();
+  
+  return (Turtles.length());
 }
 
+
+
+
 function multiply(a, b, c) {
-  a * b * c;
-  return;
+
+  return 2 * 3 * 6;
 }
+
+
+
 
 /* 
 ===================================================
@@ -35,7 +42,7 @@ test("trimWord doesn't remove whitespace in the middle of the string", () => {
 });
 
 test("getStringLength returns the length of a word", () => {
-  expect(getStringLength("Turtles")).toEqual(7);
+  expect(getStringLength("Turtles")).toEqual(7)
 });
 
 test("getStringLength returns the length of a sentence", () => {

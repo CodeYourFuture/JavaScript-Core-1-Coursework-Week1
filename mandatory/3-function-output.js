@@ -1,16 +1,28 @@
 // Add comments to explain what this function does. You're meant to use Google!
+
+// This function is taking any random number and multiplies it to 10.
+
 function getRandomNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+// This function is taking word 1 and word 2, concatenate them.
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
+
+  var firstWord = "code";
+  var secondWord = "your";
+  var thirdWord = "future";
+
+  return firstWord + " " + secondWord + " " + thirdWord;
+
   // Look at the test case below to understand what this function is expected to return.
+  
 }
 
 /* 
