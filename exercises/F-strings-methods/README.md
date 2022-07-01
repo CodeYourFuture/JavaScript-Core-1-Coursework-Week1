@@ -2,7 +2,7 @@ You can find out how many characters there are in a string by using the `length`
 
 ```js
 var name = "Daniel";
-var nameLength = name.length;
+ var nameLength = name.length;
 
 console.log(nameLength); // Logs 6
 ```
