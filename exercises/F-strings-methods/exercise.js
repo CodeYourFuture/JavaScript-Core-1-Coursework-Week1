@@ -1,3 +1,4 @@
 // Start by creating a variable `message`
+let name = "matthias";
 
-console.log(message);
+console.log(name.length);

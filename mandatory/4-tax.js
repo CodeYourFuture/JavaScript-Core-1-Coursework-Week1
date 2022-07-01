@@ -24,8 +24,8 @@ function calculateSalesTax(tx) {
 function addTaxAndFormatCurrency(tx) {
 
   let sum = calculateSalesTax(tx);
-  let dec = sum.fixed(2);
-  return "R" + dec;
+  sum = sum * 0.10;
+  return "R " + sum;
 }
 
 /* 

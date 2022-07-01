@@ -1,3 +1,4 @@
 // Start by creating a variable `message`
-let message = "let them come here";
+let message = "this is a string";
 console.log(message);
+console.log(typeof message);
