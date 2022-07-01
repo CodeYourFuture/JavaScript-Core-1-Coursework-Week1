@@ -5,9 +5,7 @@ We'll do this in JavaScript, using something called `console.log()`.
 Inside of `exercise.js` there's a line of code that will print "Hello world!".
 
 ### 1. Run the program
-
-- Open a terminal window
-- Change directory to this folder (`cd exercises/B-hello-world`) - assuming you're at the project root
+('cd exercises/B-hello-world`) - assuming you're at the project root
 - Run the program using node (`node exercise.js`)
 
 ### 2. Experiment
