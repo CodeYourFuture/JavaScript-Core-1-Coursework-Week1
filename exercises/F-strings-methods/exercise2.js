@@ -1,3 +1,5 @@
-const name = " Daniel  ";
+let greeting = "Hello, my name is Daniel";
+const name_ = "Daniel".trim();
+let nameLength = name_.length;
 
-console.log(message);
+console.log(greeting + " and my name is " + nameLength + " characters long");
