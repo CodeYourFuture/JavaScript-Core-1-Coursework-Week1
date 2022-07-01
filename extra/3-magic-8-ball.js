@@ -46,6 +46,95 @@
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
+  let randomNumber = Math.floor(Math.random() * 20);
+  // console.log (randomNumber);
+
+  if (randomNumber == 0)
+  {
+    answer = "It is certain.";
+  }
+  else if (randomNumber == 1)
+  {
+    answer = "It is decidedly so.";
+  }
+  else if (randomNumber == 2)
+  {
+    answer = "Without a doubt.";
+  }
+  else if (randomNumber == 3)
+  {
+    answer = "Yes - definitely.";
+  }
+  else if (randomNumber == 4)
+  {
+    answer = "You may rely on it.";
+  }
+  else if (randomNumber == 5)
+  {
+    answer = "As I see it, yes.";
+  }
+  else if (randomNumber == 6)
+  {
+    answer = "Most likely.";
+  }
+  else if (randomNumber == 7)
+  {
+    answer = "Outlook good.";
+  }
+  else if (randomNumber == 8)
+  {
+    answer = "Yes.";
+  }
+  else if (randomNumber == 9)
+  {
+    answer = "Signs point to yes.";
+  }
+  else if (randomNumber == 10)
+  {
+    answer = "Reply hazy, try again.";
+  }
+  else if (randomNumber == 11)
+  {
+    answer = "Ask again later.";
+  }
+  else if (randomNumber == 12)
+  {
+    answer = "Better not tell you now.";
+  }
+  else if (randomNumber == 13)
+  {
+    answer = "Cannot predict now.";
+  }
+  else if (randomNumber == 14)
+  {
+    answer = "Concentrate and ask again.";
+  }
+  else if (randomNumber == 15)
+  {
+    answer = "Don't count on it.";
+  }
+  else if (randomNumber == 16)
+  {
+    answer = "My reply is no.";
+  }
+  else if (randomNumber == 17)
+  {
+    answer = "My sources say no.";
+  }
+  else if (randomNumber == 18)
+  {
+    answer = "Outlook not so good.";
+  }
+  else
+  {
+    answer = "Very doubtful.";
+  }
+
+  console.log("The ball has shaken!");
+  // console.log(answer);
+  // console.log(checkAnswer(answer));
+  // checkAnswer(answer);
+  return answer;
   //Write your code in here
 }
 
@@ -59,8 +148,34 @@ function shakeBall() {
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
+
+  if (answer ==  'It is certain.' || answer == 'It is decidedly so.' || answer == 'Without a doubt.' || answer == 'Yes - definitely.' || answer == 'You may rely on it.')
+  {
+    // console.log("very positive");
+    level = "very positive";
+  }
+  else if (answer == 'As I see it, yes.' || answer == 'Most likely.' || answer == 'Outlook good.' || answer == 'Yes.' || answer == 'Signs point to yes.')
+  {
+    // console.log("positive");
+    level = "positive";
+  }
+  else if (answer == 'Reply hazy, try again.' || answer == 'Ask again later.' || answer == 'Better not tell you now.' || answer == 'Cannot predict now.' || answer == 'Concentrate and ask again.')
+  {
+    // console.log("negative");
+    level = "negative";
+  }
+  else
+  {
+    // console.log("very negative");
+    level = "very negative";
+  }
+  
+  return level;
   //Write your code in here
 }
+// let answer = shakeBall();
+// console.log(shakeBall());
+// console.log(checkAnswer(answer));
 
 /* 
 ==================================
@@ -116,3 +231,4 @@ test("checkAnswer works for `It is decidedly so.`", () => {
 test("checkAnswer works for `My reply is no.`", () => {
   expect(checkAnswer("My reply is no.")).toEqual("very negative");
 });
+
