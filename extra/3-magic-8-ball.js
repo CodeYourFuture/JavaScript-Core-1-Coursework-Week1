@@ -42,12 +42,17 @@
     Outlook not so good.
     Very doubtful.
 */
+// test runner, jest-extended
+const matchers = require("jest-extended");
+expect.extend(matchers); 
+
 // possible answers arrays
 let veryNegative = ["Don't count on it.", "My reply is no.", "My sources say no.", "Outlook not so good.", "Very doubtful."];
 let negative = ["Reply hazy, try again.", "Ask again later.", "Better not tell you now.", "Cannot predict now.", "Concentrate and ask again."];
 let positive = ["As I see it, yes.", "Most likely.", "Outlook good.", "Yes.", " Signs point to yes."];
 let veryPositive = ["It is certain.", "It is decidedly so.", "Without a doubt.", "Yes - definitely.", "You may rely on it."];  
 let possibleAnswers = veryPositive.concat(positive, negative, veryNegative);
+
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
@@ -93,12 +98,12 @@ test("whole magic 8 ball sequence", () => {
   expect(consoleLogSpy).toHaveBeenCalledTimes(1);
   expect(consoleLogSpy).toHaveBeenLastCalledWith("The ball has shaken!");
 
-  // expect(checkAnswer(answer)).toBeOneOf([
-  //   "very positive",
-  //   "positive",
-  //   "negative",
-  //   "very negative",
-  // ]);
+  expect(checkAnswer(answer)).toBeOneOf([
+    "very positive",
+    "positive",
+    "negative",
+    "very negative",
+  ]);
 });
 
 test("magic 8 ball returns different values each time", () => {
