@@ -42,7 +42,7 @@
     Outlook not so good.
     Very doubtful.
 */
-const matchers = require("jest-extended"); // adds additional matchers to Jest's default ones making it easy to test everything
+const matchers = require("jest-extended");
 expect.extend(matchers);
 
 const possibleAnswers = [
