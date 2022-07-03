@@ -1,19 +1,21 @@
 // There are syntax errors in this code - can you fix it to pass the tests?
 
 function addNumbers(a, b, c) {
-  return 2 + 3 + 6
+  return a + b + c;
 }
-const result = addNumbers(2, 3, 6);
+const result = addNumbers(4, 4, 6);
 console.log(result);
 
-// function introduceMe(name, age){
-//   return "Hello, my name is " + name "and I am " + age "years old";
-// }
+function introduceMe(name, age){
+  return "Hello, my name is " + name + " and I am " + age + " years old";
+}
+const z = introduceMe('Ele', 40)
+console.log(z)
 
 function getTotal(a, b) {
-  return 2 + 6;
+  return 'The total is ' + (a + b);
 }
-  const sum = getTotal(2, 6);
+  const sum = getTotal(23, 5);
  console.log(sum)
 /* 
 ===================================================
@@ -27,16 +29,16 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 1-s
 ===================================================
 */
 
-// test("addNumbers adds numbers correctly", () => {
-//   expect(addNumbers(3, 4, 6)).toEqual(13);
-// });
+test("addNumbers adds numbers correctly", () => {
+  expect(addNumbers(3, 4, 6)).toEqual(13);
+});
 
-// test("introduceMe function returns the correct string", () => {
-//   expect(introduceMe("Sonjide", 27)).toEqual(
-//     "Hello, my name is Sonjide and I am 27 years old"
-//   );
-// });
+test("introduceMe function returns the correct string", () => {
+  expect(introduceMe("Sonjide", 27)).toEqual(
+    "Hello, my name is Sonjide and I am 27 years old"
+  );
+});
 
-// test("getTotal returns a string describing the total", () => {
-//   expect(getTotal(23, 5)).toEqual("The total is 28");
-// });
+test("getTotal returns a string describing the total", () => {
+  expect(getTotal(23, 5)).toEqual("The total is 28");
+});
