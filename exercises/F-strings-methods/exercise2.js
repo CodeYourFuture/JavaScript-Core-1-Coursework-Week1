@@ -1,4 +1,5 @@
 const name = " Daniel  ";
+const message = name.trim();
 
-var str = '  My name is daniel and my name is 6 characters long  '
 console.log(message);
+//was not sure if i should combine the X2 exercises 
