@@ -1,11 +1,12 @@
-var numberOfStudents = 15;
-var numberOfMentors = 8;
+let numberOfStudents = 15;
+let numberOfMentors = 8;
 
-const students = ;
-const mentor = (15 - 8) / 15;
+function percent(x) {
+  return Math.round((x / (numberOfMentors + numberOfStudents)) * 100);
+}
 
-const studentPercent = Math.random(students);
-const mentorPercent = Math.random(mentor);
+let studentMessage = "Percentage students:";
+let mentorMessage = "Percentage mentors:";
 
-console.log(mentorPercent);
-console.log(mentorPercent);
+console.log(mentorMessage, percent(numberOfStudents) + "%");
+console.log(studentMessage, percent(numberOfMentors) + "%");
