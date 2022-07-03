@@ -4,9 +4,17 @@
   A business requires a program that calculates how much the price of a product is including sales tax
   Sales tax is 20% of the price of the product.
 */
+function calculateSalesTax(a, b,) {
+  return a+b
+}
+const v = calculateSalesTax(15, (15/100*20))
+console.log(Number(v))
 
-function calculateSalesTax() {}
+const u = calculateSalesTax(17.5, (17.5/100*20))
+console.log(u)
 
+const r = calculateSalesTax(34, (34/100*20))
+console.log(r)
 /*
   CURRENCY FORMATTING
   ===================
@@ -17,7 +25,18 @@ function calculateSalesTax() {}
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency() {}
+function addTaxAndFormatCurrency(a, b,) {
+  return a+b
+}
+const z = addTaxAndFormatCurrency(15, (15/100*20))
+console.log((z).toLocaleString("en-GB", {style: "currency", currency: "EUR", minimumFractionDigits: 2}))
+
+const x = addTaxAndFormatCurrency(17.5, (17.5/100*20))
+console.log((x).toLocaleString("en-GB", {style: "currency", currency: "EUR", minimumFractionDigits: 2}))
+
+const y = addTaxAndFormatCurrency(34, (34/100*20))
+console.log((y).toLocaleString("en-GB", {style: "currency", currency: "EUR", minimumFractionDigits: 2}))
+
 
 /* 
 ===================================================
