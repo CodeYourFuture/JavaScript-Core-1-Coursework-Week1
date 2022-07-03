@@ -2,6 +2,6 @@
 var greetings = "Hello, my name is ";
 var nameD = "Daniel";
 
-var message = greetings + nameD;
+let message = greetings + nameD;
 
-var message = console.log(message);
+console.log(message);
