@@ -2,6 +2,7 @@ In programming there are different _types of_ data. You've used one data type al
 
 Computers recognise strings as a sequence of characters but to humans, strings are simply lines of text.
 
+
 ```js
 var message = "This is a string";
 ```
@@ -16,6 +17,7 @@ var messageType = typeof message;
 
 console.log(messageType); // logs 'string'
 ```
+
 
 ## Exercise
 
