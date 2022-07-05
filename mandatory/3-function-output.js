@@ -1,9 +1,14 @@
 // Add comments to explain what this function does. You're meant to use Google!
+//Explanation of this function--
+//Math.random will generate a random number between 0 and 1, so the function will generate a random number between 0 and 1 and then multiply it by 10
 function getRandomNumber() {
   return Math.random() * 10;
 }
+console.log(getRandomNumber());
 
 // Add comments to explain what this function does. You're meant to use Google!
+//Explanation of this function--
+//This function will concatenate 2 strings
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
@@ -11,6 +16,7 @@ function combine2Words(word1, word2) {
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  return firstWord.concat(" ", secondWord).concat(" ", thirdWord);
 }
 
 /* 

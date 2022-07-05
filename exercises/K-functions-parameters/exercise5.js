@@ -1,5 +1,6 @@
 // Declare your function here
 
-const greeting = createLongGreeting("Daniel", 30);
-
-console.log(greeting);
+function createLongGreeting(name, age) {
+  if (name === "" && age === number);
+  return name, age;
+}

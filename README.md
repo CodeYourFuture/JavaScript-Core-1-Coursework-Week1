@@ -2,18 +2,18 @@
 
 Like learning a musical instrument, programming requires daily practise.
 
-The exercises are split into three folders: `exercises`, `mandatory` and `extra`. All homework in the `exercise` and `mandatory` section **must** be completed for homework by the following lesson. 
+The exercises are split into three folders: `exercises`, `mandatory` and `extra`. All homework in the `exercise` and `mandatory` section **must** be completed for homework by the following lesson.
 
 The `extra` folder contains exercises that you can complete to challenge yourself, but are not required for the following lesson.
 
 ## Running the code/tests
 
-The files for the mandatory/extra exercises are intended to be run as jest tests. 
+The files for the mandatory/extra exercises are intended to be run as jest tests.
 
 - Once you have cloned the repository, run `npm install` once in the terminal to install jest (and any necessary dependencies).
 - To run the tests for all mandatory/extra exercises, run `npm test`
 - To run only the tests for the mandatory exercises, run `npm test -- --selectProjects mandatory`
-- To run only the tests for the extra exercises, run `npm test -- --selectProjects extra`
+- To run only the tests for the extra exercises, run `npm test -- --selectProjects extra`e
 - To run a single exercise/test (for example `mandatory/1-writer.js`), run `npm test -- --testPathPattern mandatory/1-writer.js` (Remember, you can use tab-completion to get files relative to the current directory, so m`Tab ↹`/1-`Tab ↹` will autocomplete get you the test file starting with 1-)
 
 For more information about tests, look here:
