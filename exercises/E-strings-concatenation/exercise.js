@@ -1,3 +1,6 @@
 // Start by creating a variable `message`
+var message = "Welcome to Code Your Future";
+var name = " Lihle";
 
-console.log(message);
+var greeting = message + name;
+console.log(greeting);
