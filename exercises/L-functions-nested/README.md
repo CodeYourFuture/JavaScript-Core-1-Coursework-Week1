@@ -28,7 +28,7 @@ function createCreeting(name, age) {
 ```
 HELLO DANIEL
 HELLO IRINA
-HELLO MIMI
+HELLO MIMIv  
 HELLO ROB
 HELLO YOHANNES
 ```

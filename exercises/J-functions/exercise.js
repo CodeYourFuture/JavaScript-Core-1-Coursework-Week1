@@ -1,7 +1,9 @@
 function halve(number) {
+  let result = number / 2;
+  return result;
   // complete the function here
 }
 
-var result = halve(12);
+let result = halve(12);
 
 console.log(result);
