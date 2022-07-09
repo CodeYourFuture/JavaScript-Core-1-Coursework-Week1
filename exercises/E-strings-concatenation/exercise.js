@@ -5,4 +5,4 @@ var namePerson = "Daniel";
 
 var greeting = greetingStart + namePerson;
 
-console.log(greeting)
+console.log(greeting) // Logs "Hello, my name is Daniel"
