@@ -5,6 +5,7 @@ function getRandomNumber() {
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+// This function combines typed array with the new array.
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
