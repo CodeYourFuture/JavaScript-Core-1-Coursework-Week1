@@ -2,7 +2,7 @@ let a = 13
 let b = 124
 
 // Declare your function first
- function sum(a, b){
+ function Add(a, b){
             return  a + b;
  }       
  let sum = number(a, b)
