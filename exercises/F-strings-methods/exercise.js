@@ -9,3 +9,7 @@ var fullName = sentenceStart +   nameLength;
 
 console.log(fullName);
 
+function introduceMe(name, age)
+  var "Hello, my name is " + name + "and I am " age + "years old";
+  
+console.log(introduceMe);
