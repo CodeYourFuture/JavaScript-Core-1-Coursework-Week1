@@ -4,9 +4,12 @@
   A business requires a program that calculates how much the price of a product is including sales tax
   Sales tax is 20% of the price of the product.
 */
-
-function calculateSalesTax() {}
-
+var taxPercent = 20%;
+var amount = productPrice;
+function calculateSalesTax(amount, taxPercent) {}
+  // Whatever math is involved to calculate your sales tax here
+  return amount + (taxPercent * amount);
+};
 /*
   CURRENCY FORMATTING
   ===================
