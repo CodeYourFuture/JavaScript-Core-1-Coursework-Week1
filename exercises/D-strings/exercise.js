@@ -3,4 +3,4 @@ var message = "This is a string string"
 
 var messageType = typeof message;
 
-console.log(message);
+console.log(messageType);

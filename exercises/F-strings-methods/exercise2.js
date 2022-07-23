@@ -1,5 +1,5 @@
 const myName = " Catalina-Alexandra  ";
-const trimmed = myName.trim;
+const trimmed = myName.trim();
 var message1 = "My name is ";
 var message2 = " and my name is ";
 var message3 = " characters long";
