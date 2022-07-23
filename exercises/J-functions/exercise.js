@@ -3,6 +3,6 @@ function halve(number) {
   return number / 2;
 }
 
-var result = halve(556);
+var result = halve(200);
 
 console.log(result);

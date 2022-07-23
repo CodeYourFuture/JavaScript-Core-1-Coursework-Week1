@@ -1,18 +1,21 @@
 // There are syntax errors in this code - can you fix it to pass the tests?
 
 function addNumbers(a, b, c) {
-  return a + b + c;
+  let d = a + b + c;
+  return d;
 }
 
 function introduceMe(name, age) {
-  return "Hello, my name is " + name + " and I am " + age + "years old";
+  return `Hello, my name is ${name} and I am ${age} years old`;
 }
 console.log(introduceMe('Catalina', 47));
 
 function getTotal(a, b) {
-  total = a + b;
-  return total;
+  let toEqual = a + b;
+  return `The total is ${toEqual}`;
+
 }
+console.log(getTotal());
 
 /* 
 ===================================================

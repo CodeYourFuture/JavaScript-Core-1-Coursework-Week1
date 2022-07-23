@@ -1,20 +1,22 @@
 // Add comments to explain what this function does. You're meant to use Google! Math.random() method returns a random number from zero (inclusive)up but not including 1.
 function getRandomNumber() {
-  return Math.random() * 10;
+  return (Math.random() * 10);
 }
 
 // Add comments to explain what this function does. You're meant to use Google!Concat()method joins two or more strings.
-function combine2Words(word1, word2) {
-  return word1.concat(word2);
+function combine2Words(word1, word2, word3) {
+  return word1 + word2 + word3;
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
-  let firstWord = "I";
-  let secondWord = "like";
-  let thirdWord = "cats"
-  return firstWord.concat(secondWord, thirdWord);
+
+  return `${firstWord} ${secondWord} ${thirdWord}`;
+}
+function wordsNr(word1, word2, nr) {
+
+  return `${word1} ${word2} ${nr}`;
 }
 
 /* 

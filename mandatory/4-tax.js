@@ -6,7 +6,7 @@
 */
 
 function calculateSalesTax(price) {
-  return price + price * 0.2;
+  return price + (price * 0.2);
 
 }
 
@@ -21,7 +21,7 @@ function calculateSalesTax(price) {
 */
 
 function addTaxAndFormatCurrency(price) {
-  return "£" + price + price * 0.2.toFixed(2);
+  return "£" + (price + price * 0.2).toFixed(2);
 }
 
 /* 
