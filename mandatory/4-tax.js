@@ -8,7 +8,7 @@
 function calculateSalesTax(num) {
   const taxAmount = .20;
   const tax = num * taxAmount;
-  return tax;
+  return tax + num;
   //return `£${(num + tax).toFixed(2)      
   //I initially wrote this all in one function, but then I saw the function template below and changed it. Above was my original return statement.
 }
@@ -25,12 +25,13 @@ console.log(calculateSalesTax(17.50));
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency(price, tax) {
-  return `£${(price + tax).toFixed(2)}`
+function addTaxAndFormatCurrency(price) {
+  const taxAmount = .20;
+  const priceTax = price * taxAmount;
+  const total = price + priceTax;
+  return `£${total.toFixed(2)}`
 };
-console.log(addTaxAndFormatCurrency(19.99, calculateSalesTax(19.99)));
-console.log(addTaxAndFormatCurrency(34, calculateSalesTax(34)));
-console.log(addTaxAndFormatCurrency(17.50, calculateSalesTax(17.50)));
+console.log(addTaxAndFormatCurrency(15));
 
 /* 
 ===================================================

@@ -6,7 +6,7 @@ function addNumbers(a, b, c) {
 console.log(addNumbers(1, 9, 1));
 
 function introduceMe(name, age) {
-  return "Hello, my name is " + name + "and I am " + age + "years old";
+  return "Hello, my name is " + name + " and I am " + age + " years old";
 }
 console.log(introduceMe('Michelle', 30));
 

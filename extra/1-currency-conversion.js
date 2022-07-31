@@ -22,10 +22,11 @@ console.log(convertToUSD(32));
 function convertToBRL(price) {
   const transactionFee = price * 0.01;
   const converted = (price - transactionFee) * 5.7;
-  return converted;
+  const fixed = converted.toFixed(2);
+  return Number(fixed);
 }
 
-console.log(convertToBRL(30));
+console.log(convertToBRL(1.5));
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
 
