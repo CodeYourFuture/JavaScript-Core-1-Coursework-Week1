@@ -1,5 +1,5 @@
 // There are syntax errors in this code - can you fix it to pass the tests?
-
+// my first test 
 function addNumbers(a, b, c) {
   return a + b + c;
 };
