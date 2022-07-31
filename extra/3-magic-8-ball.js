@@ -47,7 +47,14 @@
 // and return the answer.
 function shakeBall() {
   //Write your code in here
+  let results = ['very positive', 'positive', 'negative', 'very negative'];
+  let randomResults = Math.floor(Math.random() * results.length);
+  console.log('The ball has shaken!');
+  //console.log(results[randomResults]);
+  return results[randomResults];
+  // use math.random to get a random value of very positive, positive, negative, very negative
 }
+//shakeBall();
 
 /* 
   This function should say whether the answer it is given is
@@ -60,7 +67,32 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
+  const veryPositive = ['It is certain.', 'It is decidedly so.', 'Without a doubt.', 'Yes - definitely.', 'You may rely on it.'];
+  const positive = ['As I see it, yes.', 'Most likely.', 'Outlook good.', 'Yes.', 'Signs point to yes.'];
+  const negative = ['Reply hazy, try again.', 'Ask again later.', 'Better not tell you now.', 'Cannot predict now.', 'Concentrate and ask again.'];
+  const veryNegative = ['Don\'t count on it.', 'My reply is no.', 'My sources say no.', 'Outlook not so good.', 'Very doubtful.'];
+
+  if (answer == 'very positive') {
+    let randomVP = Math.floor(Math.random() * veryPositive.length);
+    return veryPositive[randomVP];
+  } else if (answer == 'positive') {
+    let randomP = Math.floor(Math.random() * positive.length);
+    return positive[randomP];
+  } else if (answer == 'negative') {
+    let randomN = Math.floor(Math.random() * negative.length);
+    return negative[randomN];
+  } else {
+    let randomVN = Math.floor(Math.random() * veryNegative.length);
+    return negative[randomVN];
+  }
+  //assign values to very positive, positive, negative, and very negative
+  //use if/else statement to check the answer from the shakeBall function 
+  //use math.random, to get a random answer for each value
+  //return the answer
 }
+//console.log(checkAnswer('positive'));
+//console.log(checkAnswer('negative'));
+console.log(checkAnswer(shakeBall()));
 
 /* 
 ==================================
