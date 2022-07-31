@@ -1,16 +1,16 @@
 // The syntax for this function is valid but it has an error, find it and fix it.
 
 function trimWord(word) {
-  return wordtrim();
+  return word.trim(); //missing the dot
 }
 
 function getStringLength(word) {
-  return "word".length();
+  return word.length; //word is a parameter it shouldn't be between quotation marks
+  //length without brackets because it's a property not a method
 }
 
 function multiply(a, b, c) {
-  a * b * c;
-  return;
+  return a * b * c; // return was empty
 }
 
 /* 
