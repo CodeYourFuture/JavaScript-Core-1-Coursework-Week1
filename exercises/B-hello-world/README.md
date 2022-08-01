@@ -1,3 +1,4 @@
+
 It is programming tradition that the first thing you do in any language is make it output 'Hello world!'.
 
 We'll do this in JavaScript, using something called `console.log()`.
