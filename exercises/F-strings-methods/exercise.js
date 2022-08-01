@@ -1,8 +1,5 @@
 let name = "Daniel";
 let nameLength = name.length;
-let message1 = "My name is Daniel and my name is "
-let message2 = " characters long"
-
-let message = message1 + nameLength + message2;
+let message = "My name is " + name + " and my name is " + nameLength + " characters long"
 
 console.log(message);
