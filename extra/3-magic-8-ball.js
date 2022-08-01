@@ -47,15 +47,14 @@
 // and return the answer.
 function shakeBall() {
   //Write your code in here
-  let results = ['very positive', 'positive', 'negative', 'very negative'];
+  const results = ['It is certain.', 'It is decidedly so.', 'Without a doubt.', 'Yes - definitely.', 'You may rely on it.', 'As I see it, yes.', 'Most likely.', 'Outlook good.', 'Yes.', 'Signs point to yes.', 'Reply hazy, try again.', 'Ask again later.', 'Better not tell you now.', 'Cannot predict now.', 'Concentrate and ask again.', 'Don\'t count on it.', 'My reply is no.', 'My sources say no.', 'Outlook not so good.', 'Very doubtful.'];
   let randomResults = Math.floor(Math.random() * results.length);
   console.log('The ball has shaken!');
   //console.log(results[randomResults]);
   return results[randomResults];
-  // use math.random to get a random value of very positive, positive, negative, very negative
 }
-//shakeBall();
-
+shakeBall();
+//console.log(shakeBall());
 /* 
   This function should say whether the answer it is given is
     - very positive
@@ -72,27 +71,64 @@ function checkAnswer(answer) {
   const negative = ['Reply hazy, try again.', 'Ask again later.', 'Better not tell you now.', 'Cannot predict now.', 'Concentrate and ask again.'];
   const veryNegative = ['Don\'t count on it.', 'My reply is no.', 'My sources say no.', 'Outlook not so good.', 'Very doubtful.'];
 
-  if (answer == 'very positive') {
-    let randomVP = Math.floor(Math.random() * veryPositive.length);
-    return veryPositive[randomVP];
-  } else if (answer == 'positive') {
-    let randomP = Math.floor(Math.random() * positive.length);
-    return positive[randomP];
-  } else if (answer == 'negative') {
-    let randomN = Math.floor(Math.random() * negative.length);
-    return negative[randomN];
-  } else {
-    let randomVN = Math.floor(Math.random() * veryNegative.length);
-    return negative[randomVN];
+  if (veryPositive.includes(answer)) {
+    //console.log('very positive');
+    return 'very positive';
+  } else if (positive.includes(answer)) {
+    //console.log('positive');
+    return 'positive';
+  } else if (negative.includes(answer)) {
+    //console.log('negative');
+    return 'negative';
+  } else if (veryNegative.includes(answer)) {
+    //console.log('very negative');
+    return 'very negative';
   }
-  //assign values to very positive, positive, negative, and very negative
-  //use if/else statement to check the answer from the shakeBall function 
-  //use math.random, to get a random answer for each value
-  //return the answer
 }
+// if ((answer === 'It is certain.') || (answer === 'It is decidedly so.') || (answer === 'Without a doubt.') || (answer === 'Yes - definitely.') || (answer === 'You may rely on it.') || (answer === 'As I see it, yes.')) {
+//   return 'very positive';
+// } else if ((answer === 'Most likely.') || (answer === 'Outlook good.') || (answer === 'Yes.') || (answer === 'Signs point to yes.') || (answer === 'Reply hazy, try again.')) {
+//   return 'positive';
+// } else if ((answer === 'Reply hazy, try again.') || (answer === 'Ask again later.') || (answer === 'Better not tell you now.') || (answer === 'Cannot predict now.') || (answer === 'Concentrate and ask again.')) {
+//   return 'negative';
+// } else if ((answer === 'Don\'t count on it.') || (answer === 'My reply is no.') || (answer === 'My sources say no.') || (answer === 'Outlook not so good.') || (answer === 'Very doubtful.')) {
+//   return 'very negative';
+// }
+// switch (answer) {
+//   case 0: 'It is certain.';
+//   case 1: 'It is decidedly so.';
+//   case 2: 'Without a doubt.';
+//   case 3: 'Yes - definitely.';
+//   case 4: 'You may rely on it.';
+//     answer = 'very positive';
+//     break;
+//   case 5: 'As I see it, yes.';
+//   case 6: 'Most likely.';
+//   case 7: 'Outlook good.';
+//   case 8: 'Yes.';
+//   case 9: 'Signs point to yes.';
+//     answer = 'positive';
+//     break;
+//   case 10: 'Reply hazy, try again.';
+//   case 11: 'Ask again later.';
+//   case 12: 'Better not tell you now.';
+//   case 13: 'Cannot predict now.';
+//   case 14: 'Concentrate and ask again.';
+//     answer = 'negative';
+//     break;
+//   case 15: 'Don\'t count on it.';
+//   case 16: 'My reply is no.';
+//   case 17: 'My sources say no.';
+//   case 18: 'Outlook not so good.';
+//   case 19: 'Very doubtful.';
+//     answer = 'very negative';
+//     break;
+// }
+
+//console.log(checkAnswer('My reply is no.'));
 //console.log(checkAnswer('positive'));
 //console.log(checkAnswer('negative'));
-console.log(checkAnswer(shakeBall()));
+console.log(checkAnswer('My reply is no.'));
 
 /* 
 ==================================
