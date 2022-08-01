@@ -1,20 +1,24 @@
 // There are syntax errors in this code - can you fix it to pass the tests?
 
-function addNumbers(a b c) {
+function addNumbers(a ,b ,c) {
   return a + b + c;
 }
 
-function introduceMe(name, age)
-  return "Hello, my name is " + name "and I am " age + "years old";
-
-function getTotal(a, b) {
-  total = a ++ b;
-
-  return "The total is total";
+function introduceMe(name, age){
+  return `Hello, my name is ${name} and I am ${age} years old  ` ;
 }
 
-/* 
-===================================================
+
+function getTotal(a, b) {
+  var total = a + b;
+  return `The total is ${total}`;
+  
+}
+ 
+
+
+
+  ==================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
 
 There are some Tests in this file that will help you work out if your code is working.
