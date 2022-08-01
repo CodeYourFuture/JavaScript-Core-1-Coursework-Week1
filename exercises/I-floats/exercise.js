@@ -1,12 +1,12 @@
-let numberOfStudents = 15;
-let numberOfMentors = 8;
+var numberOfStudents = 15;
+var numberOfMentors = 8;
 
-let total = numberOfStudents + numberOfMentors;
+var total = numberOfStudents + numberOfMentors;
 
-let percent = 100 / total;
+var percent = 100 / total;
 
-let numberOfStudentsPercent =  Math.round(percent * numberOfStudents);
-let numberOfMentorsPercent =  Math.round(percent * numberOfMentors);
+var numberOfStudentsPercent =  Math.round(percent * numberOfStudents);
+var numberOfMentorsPercent =  Math.round(percent * numberOfMentors);
 
 console.log("Number of students: " + numberOfStudentsPercent + "%")
 console.log("Number of mentors: " + numberOfMentorsPercent + "%")
