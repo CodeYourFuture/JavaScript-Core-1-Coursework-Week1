@@ -5,7 +5,6 @@
   - one that adds 2 numbers together
   - one that multiplies 2 numbers together
   - one that formats a number so it's returned as a string with a £ sign before it (e.g. 20 -> £20)
-
   2. Using the variable startingValue as input, perform the following operations using your functions all
   on one line (assign the result to the variable badCode):
   - add 10 to startingValue
@@ -16,26 +15,34 @@
   the final result to the variable goodCode
 */
 
-function add() {
-
+function add(num1, num2)
+{
+    return num1 + num2;
 }
 
-function multiply() {
-
+function multiply(num1, num2)
+{
+    return num1 * num2;
 }
 
-function format() {
-
+function format(num1)
+{
+    return "£" + num1.toString();
 }
 
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =
+let badCode = 12;
+//let badCode = 12 * 3;
+badCode = badCode * 2;;//this should work, i dont know
+console.log(badCode);//is might work
+
 
 /* BETTER PRACTICE */
-
-let goodCode =
+let goodCode = 12;
+goodCode *= 2;
+console.log(goodCode);
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
