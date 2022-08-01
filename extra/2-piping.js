@@ -36,13 +36,13 @@ const startingValue = 2;
 let badCode = 12;
 //let badCode = 12 * 3;
 badCode = badCode * 2;;//this should work, i dont know
-console.log(badCode);//is might work
+console.log("£" + badCode);//is might work
 
 
 /* BETTER PRACTICE */
 let goodCode = 12;
 goodCode *= 2;
-console.log(goodCode);
+console.log("£" + goodCode);
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
