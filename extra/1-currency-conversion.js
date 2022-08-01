@@ -7,7 +7,7 @@
 
 function convertToUSD(amount)
 {
-    return (amount * 1.4).toFixed(2);
+    return amount * 1.4;
 }
 
 /*
