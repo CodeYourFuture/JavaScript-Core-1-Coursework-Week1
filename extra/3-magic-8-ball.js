@@ -126,8 +126,6 @@ function checkAnswer(answer) {
   }
   return message;
 }
-// let answer = shakeBall();
-// console.log(answer, checkAnswer(answer));
 /* 
 ==================================
 ======= TESTS - DO NOT MODIFY =====
