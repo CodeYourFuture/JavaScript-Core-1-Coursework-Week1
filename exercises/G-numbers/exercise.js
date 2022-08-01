@@ -1,7 +1,7 @@
-let numberOfStudents = 15;
-let numberOfMentors = 8;
+var numberOfStudents = 15;
+var numberOfMentors = 8;
 
-let total = numberOfStudents + numberOfMentors;
+var total = numberOfStudents + numberOfMentors;
 
 console.log("Number of students: " + numberOfStudents)
 console.log("Number of mentors: " + numberOfMentors)
