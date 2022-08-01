@@ -33,16 +33,19 @@ function format(num1)
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-//This code is bad because it leaves a mess behind without cleaning up the code.
-let badCode = 12;
-//let badCode = 12 * 3;
-badCode = "£" +(badCode * 2);;//this should work, i dont know
+//This code is bad because it leaves a mess behind without cleaning up the code. It also does too many calcualations which cant ebe done in one claculation.
+let badCode = 0;
+//let badCode = 0 + startingValue;
+badCode = startingValue + badCode;;//this should work, i dont know
+badCode = badCode * startingValue;//does this equal 4?
+badCode = startingValue * 12;//this should be enough
+badCode = "£" + badCode;
 console.log(badCode);//this might work
 
 
 /* BETTER PRACTICE */
-let goodCode = 12;
-goodCode = "£" + (goodCode * 2);
+let goodCode = 0;
+goodCode = "£" + ((goodCode + startingValue) * 12);
 console.log(goodCode);
 
 /* ======= TESTS - DO NOT MODIFY ===== 
