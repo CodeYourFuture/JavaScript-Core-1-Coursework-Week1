@@ -1,17 +1,26 @@
 // The syntax for this function is valid but it has an error, find it and fix it.
 
 function trimWord(word) {
-  return wordtrim();
+
+  return word.trim();
 }
+var word = "   CodeYourFuture ";
+
+console.log(trimWord);
+
 
 function getStringLength(word) {
-  return "word".length();
+  return word.length();
 }
+var word = "Turtles";
+console.log(getStringLength);
 
 function multiply(a, b, c) {
-  a * b * c;
-  return;
+  return a * b * c;
+  
 }
+var total = multiply(2, 3, 4);
+console.log(total);
 
 /* 
 ===================================================
