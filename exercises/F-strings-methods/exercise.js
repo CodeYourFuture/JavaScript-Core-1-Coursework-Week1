@@ -1,3 +1,7 @@
 // Start by creating a variable `message`
-
-console.log(message);
+let message = "Hello my name is"
+let myName = " Mesgna"
+let nameLength = myName.length
+console.log(
+    `${message} ${myName} and my  name is ${nameLength} characters long `
+);
