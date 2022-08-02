@@ -19,12 +19,12 @@ console.log(introduce);
 
 function getTotal(a, b) {
   
-  return a + b;
+  return `The total is ${a + b}`;
   
 }
 
 var total = getTotal(23, 5);
-console.log(`The total is ${total}`);
+console.log(total);
 
 
 /* 
