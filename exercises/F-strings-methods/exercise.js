@@ -1,3 +1,5 @@
-// Start by creating a variable `message`
+var name = "Rabie"; 
+var nameLnegth = name.length; 
 
-console.log(message);
+console.log(nameLnegth);
+console.log(name.length);
