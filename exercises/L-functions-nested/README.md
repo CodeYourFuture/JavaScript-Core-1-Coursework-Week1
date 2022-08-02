@@ -17,7 +17,7 @@ function createCreeting(name, age) {
 }
 ```
 
-## Exercise 1
+## Exercise 1x
 
 - In `exercise.js` you have been provided with the names of some mentors. Write a program that logs a shouty greeting to each one.
 - Your program should include a function that spells their name in uppercase, and a function that creates a shouty greeting.
