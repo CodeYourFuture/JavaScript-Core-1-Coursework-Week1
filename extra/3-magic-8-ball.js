@@ -68,7 +68,7 @@ function shakeBall() {
     "Outlook not so good.",
     "Very doubtful."];
     console.log("The ball has shaken!");
-    return answer[Math.floor(Math.random()*answers.length)];
+    return answer[Math.floor(Math.random()*answer.length)];
 }
 
 /* 
@@ -82,8 +82,14 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
-  if (answer === "It is certain." || "It is decidedly so." || "Without a doubt." || "Yes - definitely." || "You may rely on it.") {
-    return "Very positive."
+  if (answer === ("It is certain.") || answer === ("It is decidedly so.") || answer === ("Without a doubt.") || answer === ("Yes - definitely.") || answer === ("You may rely on it.")) {
+    return "very positive"
+  } else if (answer === ("As I see it, yes.") || answer === ("Most likely.") || answer === ("Outlook good.") || answer === ("Yes.") || answer === ("Signs point to yes.")) {
+    return "positive"
+  } else if (answer === ("Reply hazy, try again.") || answer === ("Ask again later.") || answer === ("Better not tell you now.") || answer === ("Cannot predict now.") || answer === ("Concentrate and ask again.")) {
+    return "negative"
+  } else if (answer === ("Don't count on it.") || answer === ("My reply is no.") || answer === ("My sources say no.") || answer === ("Outlook not so good.") || answer === ("Very doubtful.")) {
+    return "very negative"
   }
 }
 
