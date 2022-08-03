@@ -6,7 +6,8 @@
 */
 
 function calculateSalesTax(price) {
-  return price * .2;
+  var salesTax = price + price * .20;
+  return salesTax;
 }
 
 /*
@@ -20,7 +21,7 @@ function calculateSalesTax(price) {
 */
 
 function addTaxAndFormatCurrency(price) {
-   var total = price + calculateSalesTax(price);
+   var total = calculateSalesTax(price);
    var roundTotal = total.toFixed(2);
    return `£${roundTotal}`;
 }
