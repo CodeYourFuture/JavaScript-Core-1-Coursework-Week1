@@ -2,13 +2,20 @@
 function getRandomNumber() {
   return Math.random() * 10;
 }
+//the function will get numbers between 1 and 10 and round it up or down 
 
 // Add comments to explain what this function does. You're meant to use Google!
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
+// /two words will be combined to form a new word
 
 function concatenate(firstWord, secondWord, thirdWord) {
+  var one = "firstWord"
+  var two = "secondWord"
+  var three = "thirdWord"
+
+  console.log(one + two + three);
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
 }
