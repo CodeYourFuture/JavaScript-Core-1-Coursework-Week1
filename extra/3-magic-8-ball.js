@@ -45,9 +45,13 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
-function shakeBall() {
-  //Write your code in here
-}
+function shakeBall(val) {
+    var answer = "";
+
+    
+   }
+   console.shakeBall(val)
+  //Writeconsole your code in here
 
 /* 
   This function should say whether the answer it is given is
@@ -60,6 +64,42 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
+  
+  switch(val) {
+    case 1:It is certain.
+    case 2:It is decidedly so.
+    case 3:Without a doubt.
+    case 4:Yes - definitely.
+    case 5:You may rely on it.
+    
+      answer = "very pozitive";
+      break;
+    case 6: Reply hazy, try again.
+    case 7: Ask again later.
+    case 8:Better not tell you now.
+    case 9:Cannot predict now.
+    case 10:Concentrate and ask again.
+
+      answer = "Pozitive";
+      break;
+    case 11:Reply hazy, try again.
+    case 12:Ask again later.
+    case 13:Better not tell you now.
+    case 14:Cannot predict now.
+    case 15:Concentrate and ask again.
+   
+      answer = "Negative";
+      break;
+    case 16: Very negative
+    case 17:Don't count on it.
+    case 18:My reply is no.
+    case 19:My sources say no.
+    case 20:Outlook not so good.
+    case 21:Very doubtful.
+     answer ="Very Negative"
+  
+  return answer;  
+}
 }
 
 /* 

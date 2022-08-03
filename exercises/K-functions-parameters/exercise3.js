@@ -1,7 +1,7 @@
 // Write your function here
 function createGreeting(name){
-   return  "nagehan"
+   return  "Hello,my name is " +name;
 }
-var greeting = createGreeting("nagehan");
+var greeting = createGreeting("Daniel");
 
-console.log("hello my name is "+ greeting);
+console.log(greeting);
