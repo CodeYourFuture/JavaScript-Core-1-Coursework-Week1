@@ -3,16 +3,12 @@
 function trimWord(word) {
   return word.trim();
 }
-var trimName = trimWord("  Codeyourfuture  ");
-console.log(trimName);
-
 
 
 function getStringLength(word) {
   return word.length(); 
 }
-var lengthWord = getStringLength("school");
-console.log(lengthWord);
+
 
 
 
