@@ -3,3 +3,24 @@ var mentor2 = "Irina";
 var mentor3 = "Mimi";
 var mentor4 = "Rob";
 var mentor5 = "Yohannes";
+
+function add(name) {
+    var nameUpperCase = name.toUpperCase();
+    var greeting = 
+    "HELLO " + nameUpperCase ;
+
+    return greeting ;
+}
+
+var mentor1 = add("Daniel");
+var mentor2 = add("Irina");
+var mentor3 = add("Mimi");
+var mentor4 = add("Rob");
+var mentor5 = add("Yohannes");
+
+
+console.log(mentor1);
+console.log(mentor2);
+console.log(mentor3);
+console.log(mentor4);
+console.log(mentor5);
