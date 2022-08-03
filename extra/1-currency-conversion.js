@@ -20,7 +20,7 @@ function convertToUSD(amount)
 
 function convertToBRL(amount)
 {
-    return ((amount * 0.99) * 5.7).toFixed(2);
+    return parseInt(((amount * 0.99) * 5.7).toFixed(2));
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== 
