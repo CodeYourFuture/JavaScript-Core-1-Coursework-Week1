@@ -1,5 +1,6 @@
 // Complete the function so that it takes input parameters
-function multiply() {
+function multiply(a, b) {
+  return a * b;
   // Calculate the result of the function and return it
 }
 
@@ -7,3 +8,4 @@ function multiply() {
 var result = multiply(3, 4);
 
 console.log(result);
+
