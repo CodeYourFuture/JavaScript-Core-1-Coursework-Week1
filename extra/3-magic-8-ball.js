@@ -95,35 +95,36 @@ function checkAnswer(answer) {
 //   return 'very negative';
 // }
 // switch (answer) {
-//   case 0: 'It is certain.';
-//   case 1: 'It is decidedly so.';
-//   case 2: 'Without a doubt.';
-//   case 3: 'Yes - definitely.';
-//   case 4: 'You may rely on it.';
+//   case 'It is certain.':
+//   case 'It is decidedly so.':
+//   case 'Without a doubt.':
+//   case 'Yes - definitely.':
+//   case 'You may rely on it.':
 //     answer = 'very positive';
 //     break;
-//   case 5: 'As I see it, yes.';
-//   case 6: 'Most likely.';
-//   case 7: 'Outlook good.';
-//   case 8: 'Yes.';
-//   case 9: 'Signs point to yes.';
+//   case 'As I see it, yes.':
+//   case 'Most likely.':
+//   case 'Outlook good.':
+//   case 'Yes.':
+//   case 'Signs point to yes.':
 //     answer = 'positive';
 //     break;
-//   case 10: 'Reply hazy, try again.';
-//   case 11: 'Ask again later.';
-//   case 12: 'Better not tell you now.';
-//   case 13: 'Cannot predict now.';
-//   case 14: 'Concentrate and ask again.';
+//   case 'Reply hazy, try again.':
+//   case 'Ask again later.':
+//   case 'Better not tell you now.':
+//   case 'Cannot predict now.':
+//   case 'Concentrate and ask again.':
 //     answer = 'negative';
 //     break;
-//   case 15: 'Don\'t count on it.';
-//   case 16: 'My reply is no.';
-//   case 17: 'My sources say no.';
-//   case 18: 'Outlook not so good.';
-//   case 19: 'Very doubtful.';
-//     answer = 'very negative';
+//   case 'Don\'t count on it.':
+//   case 'My reply is no.':
+//   case 'My sources say no.':
+//   case 'Outlook not so good.':
+//   case 'Very doubtful.':
+//     answer = 'very negative':
 //     break;
 // }
+// return answer;
 
 //console.log(checkAnswer('My reply is no.'));
 //console.log(checkAnswer('positive'));
