@@ -15,4 +15,4 @@ function shoutyGreeting() {
     console.log(`HELLO ${shoutyName(mentors[i])}`);
   }
 }
-shoutyGreeting();
+shoutyGreeting()
