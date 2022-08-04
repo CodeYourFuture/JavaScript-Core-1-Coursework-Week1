@@ -121,17 +121,15 @@ function checkAnswer(answer) {
 //   case 'My sources say no.':
 //   case 'Outlook not so good.':
 //   case 'Very doubtful.':
-//     answer = 'very negative';
-//     break;
+//  answer = 'very negative';
+//  break;
 // }
-//return answer
-
-//console.log(checkAnswer('My reply is no.'));
+//return answer;
+//}
 //console.log(checkAnswer('positive'));
 //console.log(checkAnswer('negative'));
 //console.log(checkAnswer('My reply is no.'));
 
-/* 
 ==================================
 ======= TESTS - DO NOT MODIFY =====
 
@@ -151,12 +149,12 @@ test("whole magic 8 ball sequence", () => {
   expect(consoleLogSpy).toHaveBeenCalledTimes(1);
   expect(consoleLogSpy).toHaveBeenLastCalledWith("The ball has shaken!");
 
-  // expect(checkAnswer(answer)).toBeOneOf([
-  //   "very positive",
-  //   "positive",
-  //   "negative",
-  //   "very negative",
-  // ]);
+  expect(checkAnswer(answer)).toBeOneOf([
+    "very positive",
+    "positive",
+    "negative",
+    "very negative",
+  ]);
 });
 
 test("magic 8 ball returns different values each time", () => {
