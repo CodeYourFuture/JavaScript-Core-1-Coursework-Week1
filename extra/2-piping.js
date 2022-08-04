@@ -30,16 +30,22 @@ function format(num) {
   return `£${num}`;
 
 }
-console.log(format(20));
+console.log(format(10));
 
-// const startingValue = 2;
+const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-// let badCode =
+let badCode = format(multiply(add(startingValue, 10), 2))  
+
+// its a bad code because its hard to understand the step and what the outcome will be.
 
 /* BETTER PRACTICE */
+const added = add(startingValue, 10);
+const multiplied = multiply(added, 2);
+let goodCode = format(multiplied);
+console.log(goodCode);
 
-// let goodCode =
+// this  is a code good because it is easy to read anf follow the process .
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
