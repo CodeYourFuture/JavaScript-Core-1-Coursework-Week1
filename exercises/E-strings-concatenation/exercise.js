@@ -1,3 +1,5 @@
 // Start by creating a variable `message`
-
-console.log(message);
+var myGreeting="Hello, my name is ";
+const myName="Luna."
+let greeting=myGreeting + myName;
+console.log(greeting);
