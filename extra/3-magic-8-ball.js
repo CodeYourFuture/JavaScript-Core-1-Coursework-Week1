@@ -47,7 +47,7 @@
 // and return the answer.
 function shakeBall()
 {
-  let answer = [
+  const answer = [
     "It is certain.",
     "It is decidedly so.",
     "Without a doubt.",
