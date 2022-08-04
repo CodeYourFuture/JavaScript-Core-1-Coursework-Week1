@@ -4,23 +4,19 @@ function trimWord(word) {
 
   return word.trim();
 }
-var word = "   CodeYourFuture ";
-
-console.log(trimWord);
 
 
 function getStringLength(word) {
-  return word.length();
+
+  return word.length;
 }
-var word = "Turtles";
-console.log(getStringLength);
+
 
 function multiply(a, b, c) {
   return a * b * c;
   
 }
-var total = multiply(2, 3, 4);
-console.log(total);
+
 
 /* 
 ===================================================
