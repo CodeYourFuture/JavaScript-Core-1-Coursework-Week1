@@ -8,8 +8,7 @@ var mentor5 = "Yohannes";
 
 
 function mentorGreeting(name) {
-  let getUpperCase = name.toUpperCase();
-  return `Hello ${getUpperCase}`;
+   return "HELLO " + name.toUpperCase(); 
 }
 
 console.log(mentorGreeting(mentor1));
