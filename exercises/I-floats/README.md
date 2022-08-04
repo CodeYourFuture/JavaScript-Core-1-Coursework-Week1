@@ -1,4 +1,4 @@
-Numbers can be integers (whole numbers) or floats (numbers with a decimal).
+    Numbers can be integers (whole numbers) or floats (numbers with a decimal).
 
 ```js
 var preciseAge = 30.612437;
