@@ -84,51 +84,7 @@ function checkAnswer(answer) {
     return 'very negative';
   }
 }
-//console.log(checkAnswer(shakeBall()))
-// if ((answer === 'It is certain.') || (answer === 'It is decidedly so.') || (answer === 'Without a doubt.') || (answer === 'Yes - definitely.') || (answer === 'You may rely on it.') || (answer === 'As I see it, yes.')) {
-//   return 'very positive';
-// } else if ((answer === 'Most likely.') || (answer === 'Outlook good.') || (answer === 'Yes.') || (answer === 'Signs point to yes.') || (answer === 'Reply hazy, try again.')) {
-//   return 'positive';
-// } else if ((answer === 'Reply hazy, try again.') || (answer === 'Ask again later.') || (answer === 'Better not tell you now.') || (answer === 'Cannot predict now.') || (answer === 'Concentrate and ask again.')) {
-//   return 'negative';
-// } else if ((answer === 'Don\'t count on it.') || (answer === 'My reply is no.') || (answer === 'My sources say no.') || (answer === 'Outlook not so good.') || (answer === 'Very doubtful.')) {
-//   return 'very negative';
-// }
-// switch (answer) {
-//   case 'It is certain.':
-//   case 'It is decidedly so.':
-//   case 'Without a doubt.':
-//   case 'Yes - definitely.':
-//   case 'You may rely on it.':
-//     answer = 'very positive';
-//     break;
-//   case 'As I see it, yes.':
-//   case 'Most likely.':
-//   case 'Outlook good.':
-//   case 'Yes.':
-//   case 'Signs point to yes.':
-//     answer = 'positive';
-//     break;
-//   case 'Reply hazy, try again.':
-//   case 'Ask again later.':
-//   case 'Better not tell you now.':
-//   case 'Cannot predict now.':
-//   case 'Concentrate and ask again.':
-//     answer = 'negative';
-//     break;
-//   case 'Don\'t count on it.':
-//   case 'My reply is no.':
-//   case 'My sources say no.':
-//   case 'Outlook not so good.':
-//   case 'Very doubtful.':
-//  answer = 'very negative';
-//  break;
-// }
-//return answer;
-//}
-//console.log(checkAnswer('positive'));
-//console.log(checkAnswer('negative'));
-//console.log(checkAnswer('My reply is no.'));
+
 
 ==================================
 ======= TESTS - DO NOT MODIFY =====
