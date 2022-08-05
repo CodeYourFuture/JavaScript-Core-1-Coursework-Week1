@@ -11,6 +11,7 @@ function combine2Words(word1, word2) {
 
 // The function will return the following "firstWord, secondWord, thirdWord" 
 function concatenate(firstWord, secondWord, thirdWord) {
+  return firstWord + " " + secondWord + " " + thirdWord;
 }
 
 
