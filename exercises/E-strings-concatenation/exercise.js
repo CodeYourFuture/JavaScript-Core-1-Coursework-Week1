@@ -1,3 +1,5 @@
-// Start by creating a variable `message`
+let grettingStart = "Hello my name is ";
+let name = "Omid";
 
-console.log(message);
+let greeting = grettingStart + name;
+console.log(greeting);

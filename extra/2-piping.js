@@ -4,9 +4,9 @@
   1. Write 3 functions:
   - one that adds 2 numbers together
   - one that multiplies 2 numbers together
-  - one that formats a number so it's returned as a string with a £ sign before it (e.g. 20 -> £20)
+  - one that formats a number so it's returned as a string with a £ sign before it (e.g. 20 -> £20)*/
 
-  2. Using the variable startingValue as input, perform the following operations using your functions all
+/*  2. Using the variable startingValue as input, perform the following operations using your functions all
   on one line (assign the result to the variable badCode):
   - add 10 to startingValue
   - multiply the result by 2
@@ -16,26 +16,28 @@
   the final result to the variable goodCode
 */
 
-function add() {
-
+function add(a, b) {
+  return a + b;
 }
 
-function multiply() {
-
+function multiply(a, b) {
+  return a * b;
 }
 
-function format() {
-
+function format(number) {
+  return `£${number}`;
 }
+console.log(format(1.78));
 
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =
+let badCode = format(multiply(6, 4));
 
 /* BETTER PRACTICE */
 
-let goodCode =
+let goodCode = badCode;
+console.log(goodCode);
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
