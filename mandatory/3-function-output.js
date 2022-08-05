@@ -1,5 +1,5 @@
 // Add comments to explain what this function does. You're meant to use Google!
-//Getting a random number between 0 (inclusive) and 1 (exclusive)
+//Getting a random number between 0 and <10.
 function getRandomNumber() {
   return Math.random() * 10;
 }
