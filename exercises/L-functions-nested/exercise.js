@@ -11,8 +11,8 @@ function shoutyName(name) {
 let mentors = [mentor1, mentor2, mentor3, mentor4, mentor5];
 
 function shoutyGreeting() {
-  for (i = 0; i < 5; i++) {
+  for (i = 0; i < mentors.length; i++) {
     console.log(`HELLO ${shoutyName(mentors[i])}`);
   }
 }
-shoutyGreeting()
+shoutyGreeting();
