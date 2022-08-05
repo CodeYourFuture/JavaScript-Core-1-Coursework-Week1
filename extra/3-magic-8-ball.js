@@ -47,30 +47,31 @@
 // and return the answer.
 
   const answers = [
-    "It is certain.",
-    "It is decidedly so.",
-    "Without a doubt.",
-    "Yes - definitely.",
-    "You may rely on it.",
-    "As I see it, yes.",
-    "Most likely.",
-    "Outlook good.",
-    "Yes.",
-    "Signs point to yes.",
-    "Reply hazy, try again.",
-    "Ask again later.",
-    "Better not tell you now.",
-    "Cannot predict now.",
-    "Concentrate and ask again.",
-    "Don't count on it.",
-    "My reply is no.",
-    "My sources say no.",
-    "Outlook not so good.",
-    "Very doubtful."
+    ["It is certain.", "very positive"],
+    ["It is decidedly so.", "very positive"],
+    ["Without a doubt.", "very positive"],
+    ["Yes - definitely.", "very positive"],
+    ["You may rely on it.", "very positive"],
+    ["As I see it, yes.", "positive"],
+    ["Most likely.", "positive"],
+    ["Outlook good.", "positive"],
+    ["Yes.", "positive"],
+    ["Signs point to yes.", "positive"],
+    ["Reply hazy, try again.", "negative"],
+    ["Ask again later.", "negative"],
+    ["Better not tell you now.", "negative"],
+    ["Cannot predict now.", "negative"],
+    ["Concentrate and ask again.", "negative"],
+    ["Don't count on it.", "very negative"],
+    ["My reply is no.", "very negative"],
+    ["My sources say no.", "very negative"],
+    ["Outlook not so good.", "very negative"],
+    ["Very doubtful.", "very negative"],
   ];
 
 function shakeBall() {
-  let randomAnswer = answers[Math.trunc(Math.random() * answers.length)];
+  let randomNumber = Math.trunc(Math.random() * answers.length);
+  let randomAnswer = answers[randomNumber][0];
   console.log("The ball has shaken!");
   // console.log(randomAnswer);
   return randomAnswer;
@@ -87,24 +88,19 @@ function shakeBall() {
 */
 
 function checkAnswer(randomAnswer) {
-  // let randomAnswerIs;
   for (i = 0; i < answers.length; i++) {
-    if (answers[i] !== randomAnswer) continue;
-    if (i <= 4) {
-      randomAnswer = "very positive";
-    } else if (i >= 5 && i <= 9) {
-      randomAnswer = "positive";
-    } else if (i >= 10 && i <= 14) {
-      randomAnswer = "negative";
-    } else {
-      randomAnswer = "very negative";
+    if (answers[i][0] === randomAnswer) {
+      randomAnswer = answers[i][1];
+      break;
     }
   }
+
   console.log(randomAnswer);
   return randomAnswer;
 }
 
 checkAnswer(shakeBall());
+
 
 
 
