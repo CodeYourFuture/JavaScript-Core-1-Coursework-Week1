@@ -1,9 +1,10 @@
 // Start by creating a variable `message`
 
 
-var name = "This is a string";
-var message = typeof name;
+var message = "This is a string."
 
 console.log(message);
+console.log(typeof(message));
+
 
 
