@@ -1,6 +1,6 @@
 name: Run extra tests
 on:
-  [pull_request, workflow_dispatch]:
+  pull_request:
     paths:
       - extra/**
 jobs:
