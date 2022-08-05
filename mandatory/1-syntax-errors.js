@@ -3,22 +3,16 @@
 function addNumbers(a, b, c) {
   return a + b + c;
 }
-var equality = addNumbers(3, 4, 6);
-console.log(equality);
 
 function introduceMe(name, age) {
-  return "Hello, my name is " + name + " and I am "  + age + " years old";
+  return "Hello, my name is " + name + " and I am " + age + " years old";
 }
-
-var introduce = introduceMe("Ozy", 27);
-console.log(introduce);
 
 function getTotal(a, b) {
- let total = a + b;
- return "The total is " + total ;
+  total = a + b;
+
+  return `The total is ${total}`;
 }
-  var numbers1 =  getTotal(23, 5);
-  console.log(numbers1);
 
 
 /* 

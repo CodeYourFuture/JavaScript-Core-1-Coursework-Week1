@@ -4,9 +4,12 @@ function trimWord(word) {
   return word.trim();
 }
 
-
 function getStringLength(word) {
-  return word.length(); 
+  return word.length;
+}
+
+function multiply(a, b, c) {
+  return a * b * c;
 }
 
 
@@ -16,13 +19,6 @@ function getStringLength(word) {
 // july
 
 
-
-
-function multiply(a, b, c) {
-return a * b * c;
-}
-var totalMultiply = multiply(2, 3, 6);
-console.log(totalMultiply);
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
