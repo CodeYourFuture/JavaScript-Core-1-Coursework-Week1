@@ -1,5 +1,5 @@
 const name = " Daniel ";
-const message = name.trim();
-var nameLength = name.length;
-var message = "My name is " +trimName+ " and my name is " +nameLength+ " characters long";
-console.log(message);
+nameNew = name.trim();
+var nameLength = nameNew.length;
+
+console.log(`My name is ${nameNew}  and my name is  ${nameLength} characters long.`);
