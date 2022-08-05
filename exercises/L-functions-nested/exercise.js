@@ -6,4 +6,7 @@ console.log(result.toUpperCase())
 greetings("Jack");
 greetings("Nick");
 greetings("Ozy");
-greetings("Marta"); 
+greetings("Marta");
+
+
+
