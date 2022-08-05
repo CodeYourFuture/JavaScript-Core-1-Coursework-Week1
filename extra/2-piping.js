@@ -16,26 +16,47 @@
   the final result to the variable goodCode
 */
 
-function add() {
 
+function add(a, b) {
+  return a + b;
+} 
+
+result = add(40, 50)
+console.log(result)
+
+
+function multiply(a, b) {
+  return a * b;
+}
+result =multiply(10, 30)
+console.log(result)
+
+
+
+function format(num) {
+return num.toString();
 }
 
-function multiply() {
+result= "£" + (55) 
+console.log(result);
 
-}
 
-function format() {
 
-}
-
-const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =
+const startingValue = 2 
+let badCode = format(multiply(add(startingValue, 10), 2)); console.log(badCode);
+
+//This code is confusing to read, and prone to error
+
 
 /* BETTER PRACTICE */
 
-let goodCode =
+
+const added = add(startingValue, 10);
+const multiple = multiply(added, 2);
+let goodCode = format(multiple);
+console.log(goodCode);
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
@@ -43,6 +64,8 @@ There are some Tests in this file that will help you work out if your code is wo
 To run the tests for just this one file, type `npm test -- --testPathPattern 2-piping` into your terminal
 (Reminder: You must have run `npm install` one time before this will work!)
 */
+
+
 
 test("add function - case 1 works", () => {
   expect(add(1, 3)).toEqual(4);
@@ -71,3 +94,4 @@ test("badCode variable correctly assigned", () => {
 test("goodCode variable correctly assigned", () => {
   expect(goodCode).toEqual("£24");
 });
+

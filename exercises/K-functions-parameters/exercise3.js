@@ -1,5 +1,8 @@
-// Write your function here
+function greeting() {
+  var createGreeting = 'Hello, my name is';
+  
+  return `${createGreeting}`;
+}
 
-var greeting = createGreeting("Daniel");
+console.log(greeting(), "Daniel");
 
-console.log(greeting);

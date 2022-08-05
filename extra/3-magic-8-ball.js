@@ -46,8 +46,14 @@
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
-  //Write your code in here
+const results = ['It is certain.', 'It is decidedly so.', 'Without a doubt.', 'Yes - definitely.', 'You may rely on it.', 'As I see it, yes.', 'Most likely.', 'Outlook good.', 'Yes.', 'Signs point to yes.', 'Reply hazy, try again.', 'Ask again later.', 'Better not tell you now.', 'Cannot predict now.', 'Concentrate and ask again.', 'Don\'t count on it.', 'My reply is no.', 'My sources say no.', 'Outlook not so good.', 'Very doubtful.'];
+  let randomResults = Math.floor(Math.random() * results.length);
+  console.log('The ball has shaken!');
+  //console.log(results[randomResults]);
+  return results[randomResults];
 }
+
+console.log(shakeBall());
 
 /* 
   This function should say whether the answer it is given is
@@ -59,7 +65,24 @@ function shakeBall() {
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
-  //Write your code in here
+  const veryPositive = ['It is certain.', 'It is decidedly so.', 'Without a doubt.', 'Yes - definitely.', 'You may rely on it.'];
+  const positive = ['As I see it, yes.', 'Most likely.', 'Outlook good.', 'Yes.', 'Signs point to yes.'];
+  const negative = ['Reply hazy, try again.', 'Ask again later.', 'Better not tell you now.', 'Cannot predict now.', 'Concentrate and ask again.'];
+  const veryNegative = ['Don\'t count on it.', 'My reply is no.', 'My sources say no.', 'Outlook not so good.', 'Very doubtful.'];
+
+  if (veryPositive.includes(answer)) {
+    //console.log('very positive');
+    return 'very positive';
+  } else if (positive.includes(answer)) {
+    //console.log('positive');
+    return 'positive';
+  } else if (negative.includes(answer)) {
+    //console.log('negative');
+    return 'negative';
+  } else if (veryNegative.includes(answer)) {
+    //console.log('very negative');
+    return 'very negative';
+  }
 }
 
 /* 
