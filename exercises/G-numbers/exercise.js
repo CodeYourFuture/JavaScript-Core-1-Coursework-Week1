@@ -1,1 +1,5 @@
-// Start by creating a variables `numberOfStudents` and `numberOfMentors`
+numberOfStudents = 15;
+let numberOfMentors = 8;
+let total = numberOfStudents + numberOfMentors
+
+

@@ -1,1 +1,1 @@
-console.log(Salve mondo);
+console.log(10);
