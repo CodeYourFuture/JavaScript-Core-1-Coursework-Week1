@@ -1,5 +1,7 @@
 // Declare your function first
-
-// Call the function and assign to a variable `sum`
-
-console.log(sum);
+function addTogether(a, b){
+    return (a + b);
+    }
+    // Call the function and assign to a variable `sum`
+    let sum = addTogether(13, 124);
+    console.log(sum);
