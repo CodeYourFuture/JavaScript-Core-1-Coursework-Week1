@@ -1,16 +1,16 @@
 // The syntax for this function is valid but it has an error, find it and fix it.
 
 function trimWord(word) {
-  return wordtrim(); // wordtrim is undefined word. 
+  return word.trim(); // wordtrim is undefined word. 
 }
 
 function getStringLength(word) {
-  return "word".length(); // word shouldn't be a string. 
+  return word.length; // word shouldn't be a string. 
 }
 
 function multiply(a, b, c) {
-  a * b * c;
-  return; // the return should have the multiplication like: return a * b * c; 
+  
+  return a * b * c; // the return should have the multiplication like: return a * b * c; 
 }
 
 /* 

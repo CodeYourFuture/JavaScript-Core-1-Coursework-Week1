@@ -1,17 +1,18 @@
 // There are syntax errors in this code - can you fix it to pass the tests?
 
-function addNumbers(a b c) { //There are missing "," between each argument. 
+function addNumbers(a, b, c) { //There are missing "," between each argument. 
   return a + b + c;
 }
 
-function introduceMe(name, age)
-  return "Hello, my name is " + name "and I am " age + "years old"; // after name there needs to be + also after the string. 
-
-function getTotal(a, b) {
-  total = a ++ b; // why is there to + signs only one is needed, 
-
-  return "The total is total";
+function introduceMe(name, age){
+  return "Hello, my name is " + name + " and I am " + age + " years old"; // after name there needs to be + also after the string. 
 }
+function getTotal(a, b) {
+  let total = a + b; 
+
+  return "The total is " + total; 
+}
+
 
 /* 
 ===================================================
