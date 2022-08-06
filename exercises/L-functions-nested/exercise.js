@@ -1,5 +1,8 @@
-var mentor1 = "Daniel";
-var mentor2 = "Irina";
-var mentor3 = "Mimi";
-var mentor4 = "Rob";
-var mentor5 = "Yohannes";
+function greeting(name) {
+    return `HELLO ${name}`;
+}
+console.log(greeting("DANIEL"));
+console.log(greeting("IRINA"));
+console.log(greeting("MIMI"));
+console.log(greeting("ROB"));
+console.log(greeting("YOHANNES"));

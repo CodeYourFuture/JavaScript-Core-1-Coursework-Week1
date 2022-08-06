@@ -1,3 +1,7 @@
 // Start by creating a variable `message`
+var greetingStart = "Hello, my name is ";
+var name = "Olivier";
 
-console.log(message);
+var greeting = greetingStart + name;
+
+console.log(greeting);
