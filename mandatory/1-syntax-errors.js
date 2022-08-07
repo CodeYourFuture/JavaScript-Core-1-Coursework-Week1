@@ -11,7 +11,7 @@ function introduceMe(name, age) {
   return "Hello, my name is " + name + " and I am " + age + " years old";
   
 }
-console.log(introduceMe("Sonjide", 27))
+console.log(introduceMe("dan", 17))
 function getTotal(a, b) {
   
   let total = a + b;
