@@ -6,7 +6,7 @@
 */
 
 function calculateSalesTax(amount) {
-  result = (20/100*amount) + amount;
+  const result = (20/100*amount) + amount;
   return result;
 }
 
