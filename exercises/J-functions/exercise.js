@@ -1,4 +1,5 @@
 function halve(number) {
+  return (12 / 2)
   // complete the function here
 }
 

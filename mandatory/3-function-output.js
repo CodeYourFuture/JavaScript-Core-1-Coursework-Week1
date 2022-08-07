@@ -1,17 +1,22 @@
 // Add comments to explain what this function does. You're meant to use Google!
 function getRandomNumber() {
-  return Math.random() * 10;
+  return Math.random() * 10; // random numbers are 0 or less than 1 so multiplying by 10 and gives as a random number.
 }
+ 
+console.log(getRandomNumber)
 
 // Add comments to explain what this function does. You're meant to use Google!
 function combine2Words(word1, word2) {
-  return word1.concat(word2);
+  return word1.concat(word2); //When a function is defined, it is typically defined along with one or more parameters. 
+                              //The actual values that are input (or "passed") into a function when it is called are known as arguments.
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  return firstWord + " " + secondWord + " " + thirdWord
 }
+
 
 /* 
 ===================================================
