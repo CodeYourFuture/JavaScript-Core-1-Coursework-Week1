@@ -20,7 +20,7 @@ function convertToUSD(amountGBP) {
 
 function convertToBRL(amountGBP) {
   let amountBRL = (amountGBP * 0.99) * 5.7;
-  amountBRL = Math.round((amountBRL + Number.EPSILON) * 100) / 100;
+  amountBRL = parseFloat(amountBRL.toFixed(2));
   return amountBRL;
 }
 

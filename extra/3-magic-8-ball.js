@@ -88,7 +88,7 @@ function shakeBall() {
 */
 
 function checkAnswer(randomAnswer) {
-  for (i = 0; i < answers.length; i++) {
+  for (let i = 0; i < answers.length; i++) {
     if (answers[i][0] === randomAnswer) {
       randomAnswer = answers[i][1];
       break;

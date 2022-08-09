@@ -1,4 +1,4 @@
-// Return a random number between 0 and 10
+// Return a random random float number from 0 (inclusive) to 10(exclusive)
 function getRandomNumber() {
   return Math.random() * 10;
 }
