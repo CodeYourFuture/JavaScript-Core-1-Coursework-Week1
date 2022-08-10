@@ -18,7 +18,7 @@ console.log(typeof convertToUSD())
 */
 
 function convertToBRL(price) {
-  taxFree= price*99/100
+  let taxFree = price * 99/100
   let result= taxFree*5.7
   return parseFloat(result.toFixed(2))
 }
