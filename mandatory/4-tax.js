@@ -5,7 +5,9 @@
   Sales tax is 20% of the price of the product.
 */
 
-function calculateSalesTax() {}
+function calculateSalesTax() {
+  let calculateSalesTax = (*.2)
+} console.log(calculateSalesTax)
 
 /*
   CURRENCY FORMATTING

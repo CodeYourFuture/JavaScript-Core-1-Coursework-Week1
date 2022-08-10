@@ -2,16 +2,16 @@
 
 function trimWord(word) {
   return trimWord();
-}
+} console.log(trimWord)
 
 function getStringLength(word) {
   return "word".length();
-}
+} console.log(getStringLength)
 
 function multiply(a, b, c) {
   a * b * c;
-  return;
-}
+  return (a + b + c);
+} console.log(multiply)
 
 /* 
 ===================================================

@@ -3,16 +3,22 @@
 function addNumbers(a, b, c) {
   return a + b + c;
 }
+console.log(addNumbers)
 //
 
+const name = 'gary'
+let age = '100'
 function introduceMe(name, age){
-  return "Hello, my name is " + name "and I am " + age + "years old";
-}
-function getTotal(a, b) {
-  total = a ++ b;
+return "Hello, my name is " + name "and I am " + age + "years old";
+} 
+console.log(introduceMe (name + age))
 
+
+
+  function getTotal(a, b) {
+  total = a ++ b;
   return "The total is total";
-}
+} console.log(getTotal) 
 
 //Uncaught SyntaxError: Unexpected identifier return a + b + c;
   
