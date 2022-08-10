@@ -1,0 +1,5 @@
+
+> javascript-core-1-coursework-week1@1.0.0 test
+> jest "--selectProjects" "mandatory" "-" "only" "mandatory" "tests"
+
+Running one project: mandatory
