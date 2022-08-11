@@ -1,10 +1,10 @@
 
 function greetings(mentor) {
-let mentor1 = "Daniel";
-let mentor2 = "Irina";
-let mentor3 = "Mimi";
-let mentor4 = "Rob";
-let mentor5 = "Yohannes";
+// let mentor1 = "Daniel";
+// let mentor2 = "Irina";
+// let mentor3 = "Mimi";
+// let mentor4 = "Rob";
+// let mentor5 = "Yohannes";
 let result = `Hello ${mentor}`
 console.log(result.toUpperCase())
 }
