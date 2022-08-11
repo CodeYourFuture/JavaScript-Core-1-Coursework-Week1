@@ -1,19 +1,26 @@
 // Add comments to explain what this function does. You're meant to use Google!
 //Getting a random number between 0 and <10.
+// This function will return a random number between the ranges of 0 and 10 ( inclusive of 0, but not including 10 )
+// We can work this out because Math.random() returns a number between 0 and 1 ( inclusive of 0, but not including 1 ) and then we just multiply it by 10
+
 function getRandomNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
  //The concat() method concatenates the string arguments to the calling string and returns a new string.
-function combine2Words(word1, word2) {
+// This function will take two strings w1 and w2 and apply them to the concat function.
+// concat in JavaScript will join two strings together to form a new string
+// So this function will return a new string consisting of w1 and w2 joined together
+
+ function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
-  return firstWord.concat(" ", secondWord, " ", thirdWord);
+  return firstWord.concat(' ', secondWord, ' ', thirdWord);
 }
 
 /* 

@@ -6,8 +6,7 @@ function addNumbers(a, b ,c) {
 
 }
 
-var equalty = addNumbers(3, 4, 6);
-console.log(equalty);
+
 
 
 function introduceMe(name, age){
@@ -16,19 +15,17 @@ function introduceMe(name, age){
 
 }
 
-var introduce = introduceMe("Sonjide", 27);
-console.log(introduce);
+
 
 
 
 function getTotal(a, b) {
-  
+  let total = a + b;
   return `The total is ${a + b}`;
   
 }
 
-var total = getTotal(23, 5);
-console.log(total);
+
 
 
 /* 
