@@ -6,8 +6,8 @@
 */
 
 function convertToUSD(amountInPounds) {
-  const exchangeRate = 1.4;
-  return amountInPounds * exchangeRate;
+  return amountInPounds * 1.4;
+  
 }
 
 /*
@@ -19,10 +19,8 @@ function convertToUSD(amountInPounds) {
 */
 
 function convertToBRL(amountInPounds) {
-  const transactionFee = 0.01;
-  const exchangeRate = 5.7;
-  const amountAfterFee = amountInPounds * (1 - transactionFee);
-  return amountAfterFee * exchangeRate;
+  const newPounds = amountInPounds * (1 - 0.01) * 5.7;
+  return parseFloat(newPounds.toFixed(2));
 }
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
