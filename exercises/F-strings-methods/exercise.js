@@ -1,3 +1,3 @@
 // Start by creating a variable `message`
-
-console.log(message);
+const txt = "gary is a four letter word"
+console.log(txt);

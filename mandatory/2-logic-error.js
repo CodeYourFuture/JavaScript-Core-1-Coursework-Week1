@@ -1,17 +1,17 @@
 // The syntax for this function is valid but it has an error, find it and fix it.
 
 function trimWord(word) {
-  return wordtrim();
-}
+  return trimWord();
+} console.log(trimWord)
 
 function getStringLength(word) {
   return "word".length();
-}
+} console.log(getStringLength)
 
 function multiply(a, b, c) {
   a * b * c;
-  return;
-}
+  return (a + b + c);
+} console.log(multiply)
 
 /* 
 ===================================================
@@ -27,12 +27,14 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 2-l
 test("trimWord trims leading and trailing whitespace", () => {
   expect(trimWord("   CodeYourFuture ")).toEqual("CodeYourFuture");
 });
+//VM214:1 Uncaught ReferenceError: test is not defined at <anonymous>:1:1
 
 test("trimWord doesn't remove whitespace in the middle of the string", () => {
   expect(trimWord(" CodeYourFuture teaches coding     ")).toEqual(
     "CodeYourFuture teaches coding"
   );
 });
+//Uncaught ReferenceError: test is not defined at <anonymous>:1:1
 
 test("getStringLength returns the length of a word", () => {
   expect(getStringLength("Turtles")).toEqual(7);

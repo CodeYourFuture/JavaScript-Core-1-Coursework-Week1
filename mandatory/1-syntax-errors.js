@@ -1,17 +1,40 @@
 // There are syntax errors in this code - can you fix it to pass the tests?
 
-function addNumbers(a b c) {
+function addNumbers(a, b, c) {
   return a + b + c;
 }
+console.log(addNumbers)
+//
 
-function introduceMe(name, age)
-  return "Hello, my name is " + name "and I am " age + "years old";
+const name = 'gary'
+let age = '100'
+function introduceMe(name, age){
+return "Hello, my name is " + name "and I am " + age + "years old";
+} 
+console.log(introduceMe (name + age))
 
-function getTotal(a, b) {
+
+
+  function getTotal(a, b) {
   total = a ++ b;
-
   return "The total is total";
-}
+} console.log(getTotal) 
+
+//Uncaught SyntaxError: Unexpected identifier return a + b + c;
+  
+//Uncaught SyntaxError: Illegal return statement }
+
+//function introduceMe(name, age){return "Hello, my name is " + name "and I am " + age + "years old"; Uncaught SyntaxError: Unexpected string
+
+//Uncaught SyntaxError: Unexpected token '}'
+
+//Uncaught SyntaxError: Unexpected token 'return'
+
+//function getTotal(a, b) { total = a ++ b;
+
+//Uncaught SyntaxError: Unexpected identifier return "The total is total"; 
+
+
 
 /* 
 ===================================================
@@ -28,6 +51,7 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 1-s
 test("addNumbers adds numbers correctly", () => {
   expect(addNumbers(3, 4, 6)).toEqual(13);
 });
+//Uncaught ReferenceError: test is not defined
 
 test("introduceMe function returns the correct string", () => {
   expect(introduceMe("Sonjide", 27)).toEqual(
