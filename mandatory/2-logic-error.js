@@ -1,6 +1,6 @@
 // The syntax for this function is valid but it has an error, find it and fix it.
 
-function wordTrim() {
+function trimWord(word) {
   return word.trim();
 }
 
