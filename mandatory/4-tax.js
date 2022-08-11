@@ -6,8 +6,8 @@
 */
 
 function calculateSalesTax(productPrice) {
-  let productTax = productPrice * 0.2;
-  return productTax;
+  productAndTax = (productPrice*20/100) + productPrice;
+  return productAndTax;
 }
 
 //Function Test
@@ -24,8 +24,8 @@ console.log(calculateSalesTax(100));
 */
 
 function addTaxAndFormatCurrency(productPrice) {
-  let productTax = productPrice * 0.2;
-  return "£" + (productTax + productPrice).toFixed(2);
+ productAndTax = ((productPrice*20/100)+productPrice);
+  return "£" + productAndTax.toFixed(2);
 }
 
 //Function Test
