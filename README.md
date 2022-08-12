@@ -2,13 +2,13 @@
 
 Like learning a musical instrument, programming requires daily practise.
 
-The exercises are split into three folders: `exercises`, `mandatory` and `extra`. All homework in the `exercise` and `mandatory` section **must** be completed for homework by the following lesson. 
+The exercises are split into three folders: `exercises`, `mandatory` and `extra`. All homework in the `exercise` and `mandatory` section **must** be completed for homework by the following lesson.
 
 The `extra` folder contains exercises that you can complete to challenge yourself, but are not required for the following lesson.
 
 ## Running the code/tests
 
-The files for the mandatory/extra exercises are intended to be run as jest tests. 
+The files for the mandatory/extra exercises are intended to be run as jest tests.
 
 - Once you have cloned the repository, run `npm install` once in the terminal to install jest (and any necessary dependencies).
 - To run the tests for all mandatory/extra exercises, run `npm test`
@@ -41,3 +41,6 @@ For your homework, we'll be using [**test driven development**](https://medium.c
 1. Complete the challenges in each file and save it once you're happy with your changes
 2. Run the script to check the results against the tests - all tests should read PASSED if you completed the challenges correctly. If a test reads FAILED, find the associated test to identify which function failed and fix it.
 3. Raise a PR once you're happy with the quality of your code
+
+//Updated to test PR - chandre
+
