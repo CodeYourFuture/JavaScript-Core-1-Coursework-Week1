@@ -13,6 +13,7 @@ function getTotal(a, b) {
 
   return "The total is " + total;
 }
+//Testing if REPO works
 
 /* 
 ===================================================
