@@ -1,15 +1,7 @@
 
 
-function add(name) {
-    var mentor1 = "Daniel";
-    var mentor2 = "Irina";
-    var mentor3 = "Mimi";
-    var mentor4 = "Rob";
-    var mentor5 = "Yohannes";
-
-    var greeting = "HELLO " + name.toUpperCase() ;
-
-    return greeting ;
+function greetMentorUppercase(name) {
+    return `HELLO  ${name.toUpperCase()}`;
 }
 
 var mentor1 = add("Daniel");
