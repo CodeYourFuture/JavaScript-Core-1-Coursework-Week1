@@ -5,5 +5,6 @@
 // console.log(message);
 var myName="Luna";
 var nameLength=myName.length;
-var message= "my name is " + myName + " my name is " + nameLength +" characters long."; 
+ 
+var message = `my name is ${myName} my name is ${nameLength} characters long.`; 
 console.log(message);
