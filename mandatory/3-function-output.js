@@ -11,7 +11,7 @@ function combine2Words(word1, word2) {
 // the combine2words function will take the words and return a new string based on the two words
 
 function concatenate(firstWord, secondWord, thirdWord) {
-  return firstWord.concat(secondWord, thirdWord);
+  return `${firstWord} ${secondWord} ${thirdWord}`
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
 }
