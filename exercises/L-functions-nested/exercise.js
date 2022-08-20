@@ -4,11 +4,11 @@ var mentor3 = "Mimi";
 var mentor4 = "Rob";
 var mentor5 = "Yohannes";
 
-function shouty(name) {
+function shoutty(name) {
     return "HELLO " + name.toUpperCase();
 }
-console.log(shouty(mentor1));
-console.log(shouty(mentor2));
-console.log(shouty(mentor3));
-console.log(shouty(mentor4));
-console.log(shouty(mentor5));
+console.log(shoutty(mentor1));
+console.log(shoutty(mentor2));
+console.log(shoutty(mentor3));
+console.log(shoutty(mentor4));
+console.log(shoutty(mentor5));
