@@ -45,8 +45,13 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
+
 function shakeBall() {
   //Write your code in here
+  // const answers = ["very positive", "positive", "negative", "very negative"];
+  // return answers[Math.floor(Math.random() * answers.length)];
+  console.log("The ball has shaken!");
+  return Math.floor(Math.random() * 4);
 }
 
 /* 
@@ -58,8 +63,16 @@ function shakeBall() {
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
+
 function checkAnswer(answer) {
-  //Write your code in here
+  // let ques = shakeBall();
+  const answers = ["very positive", "positive", "negative", "very negative"];
+  return answer
+    ? answers[Math.floor(Math.random() * answers.length)]
+    : "My reply is no.";
+  // const answers = ["very positive", "positive", "negative", "very negative"];
+  // let a = answers[Math.floor(Math.random() * answers.length)];
+  // return a.length === ques ? a : "My reply is no.";
 }
 
 /* 
@@ -101,7 +114,9 @@ test("magic 8 ball returns different values each time", () => {
     );
   }
 
-  let seenPositivities = new Set(Array.from(seenAnswers.values()).map(checkAnswer));
+  let seenPositivities = new Set(
+    Array.from(seenAnswers.values()).map(checkAnswer)
+  );
   if (seenPositivities.size < 2) {
     throw Error(
       "Expected to random answers with different positivities each time shakeBall was called, but always got the same one"
