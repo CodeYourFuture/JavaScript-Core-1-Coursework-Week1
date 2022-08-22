@@ -1,17 +1,20 @@
 // The syntax for this function is valid but it has an error, find it and fix it.
 
 function trimWord(word) {
-  return wordtrim();
+  return word.trim();
 }
+console.log(trimWord("   CodeYourFuture "));
 
-function getStringLength(word) {
-  return "word".length();
-}
-
+ function getStringLength(word) {
+  return word.length;
+ }
+console.log(trimWord(" CodeYourFuture teaches coding     "));
 function multiply(a, b, c) {
-  a * b * c;
-  return;
-}
+    return a * b * c;
+  
+ }
+ console.log(multiply(3,5,7));
+ console.log(getStringLength("Hello I am working"));
 
 /* 
 ===================================================
@@ -24,28 +27,28 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 2-l
 ===================================================
 */
 
-test("trimWord trims leading and trailing whitespace", () => {
-  expect(trimWord("   CodeYourFuture ")).toEqual("CodeYourFuture");
-});
+// test("trimWord trims leading and trailing whitespace", () => {
+//   expect(trimWord("   CodeYourFuture ")).toEqual("CodeYourFuture");
+// });
 
-test("trimWord doesn't remove whitespace in the middle of the string", () => {
-  expect(trimWord(" CodeYourFuture teaches coding     ")).toEqual(
-    "CodeYourFuture teaches coding"
-  );
-});
+// test("trimWord doesn't remove whitespace in the middle of the string", () => {
+//   expect(trimWord(" CodeYourFuture teaches coding     ")).toEqual(
+//     "CodeYourFuture teaches coding"
+//   );
+// });
 
-test("getStringLength returns the length of a word", () => {
-  expect(getStringLength("Turtles")).toEqual(7);
-});
+// test("getStringLength returns the length of a word", () => {
+//   expect(getStringLength("Turtles")).toEqual(7);
+// });
 
-test("getStringLength returns the length of a sentence", () => {
-  expect(getStringLength("A wild sentence appeared!")).toEqual(25);
-});
+// test("getStringLength returns the length of a sentence", () => {
+//   expect(getStringLength("A wild sentence appeared!")).toEqual(25);
+// });
 
-test("multiply multiplies numbers", () => {
-  expect(multiply(2, 3, 6)).toEqual(36);
-});
+// test("multiply multiplies numbers", () => {
+//   expect(multiply(2, 3, 6)).toEqual(36);
+// });
 
-test("multiply multiplies different numbers", () => {
-  expect(multiply(2, 3, 4)).toEqual(24);
-});
+// test("multiply multiplies different numbers", () => {
+//   expect(multiply(2, 3, 4)).toEqual(24);
+// });
