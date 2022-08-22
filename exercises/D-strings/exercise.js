@@ -1,3 +1,3 @@
 // Start by creating a variable `message`
-
-console.log(message);
+const message="it is a string"
+console.log(message,typeof(message));
