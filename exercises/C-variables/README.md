@@ -3,7 +3,7 @@ When you write code, you'll want to create shortcuts to data values so you can d
 We can use _variable_ to create a reference to a value.
 
 ```js
-var greeting = "Hello world";
+var greeting = 'Hello world';
 
 console.log(greeting);
 ```
