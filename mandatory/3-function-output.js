@@ -1,13 +1,16 @@
 // Add comments to explain what this function does. You're meant to use Google!
+// This Function uses the Math random function to choose a random number bbetween zero and one and
+//then multiply it by  10.
 function getRandomNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+//This Function combine the frist and second parameter which they both are strings.
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
-
+//This function concatenate all the parameters which they can be string or numbers.
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
