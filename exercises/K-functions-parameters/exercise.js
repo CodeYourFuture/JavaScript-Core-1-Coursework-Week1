@@ -26,4 +26,4 @@ function greetings(name, num) {
   return `Hello, my ${name} is Daniel and I'm ${num} years old`;
 }
 
-console.log(greetings("Maziar", 35));
+console.log(greetings("Mazi", 35));
