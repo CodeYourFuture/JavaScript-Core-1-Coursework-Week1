@@ -1,17 +1,22 @@
-// Add comments to explain what this function does. You're meant to use Google!
+  //The Math.random() function returns a floating-point, pseudo-random number in the range 0 to less than 1 (inclusive of 0, but not 1) with approximately uniform distribution over that range — which you can then scale to your desired range. The implementation selects the initial seed to the random number generation algorithm; it cannot be chosen or reset by the user.
 function getRandomNumber() {
   return Math.random() * 10;
+
 }
 
-// Add comments to explain what this function does. You're meant to use Google!
+  //The concat() method joins two or more strings. The concat() method does not change the existing strings. The concat() method returns a new string.
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
 
-function concatenate(firstWord, secondWord, thirdWord) {
+function concatenate(firstWord, secondWord, thirdWord){
   // Write the body of this function to concatenate three words together.
+  return firstWord.concat(" ",secondWord," ",thirdWord);
   // Look at the test case below to understand what this function is expected to return.
 }
+const firstWord = "I";
+const secondWord = "like";
+const thirdWord = "pizza";
 
 /* 
 ===================================================
