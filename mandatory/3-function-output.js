@@ -9,7 +9,7 @@ function combine2Words(word1, word2) {
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
-  return  "I" + " " + "am" + " " + 13;
+  return  "I" + " " + "like" + " " + "pizza";
 
 
   // Write the body of this function to concatenate three words together.
