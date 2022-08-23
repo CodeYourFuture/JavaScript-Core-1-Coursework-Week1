@@ -23,7 +23,7 @@ function calculateSalesTax(product) {
 function addTaxAndFormatCurrency(a) {
   return sum = a.toFixed(2);
 }
-console.log(addTaxAndFormatCurrency(calculateSalesTax(30)));
+console.log("£" + addTaxAndFormatCurrency(calculateSalesTax(30)));
 
 /* 
 ===================================================
