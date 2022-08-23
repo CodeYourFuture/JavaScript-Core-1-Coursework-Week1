@@ -8,7 +8,7 @@
 function calculateSalesTax(product) {
   return product / 100 * 20;
 }
-console.log(calculateSalesTax(100));
+
 
 /*
   CURRENCY FORMATTING
@@ -23,7 +23,7 @@ console.log(calculateSalesTax(100));
 function addTaxAndFormatCurrency(a) {
   return sum = a.toFixed(2);
 }
-console.log(addTaxAndFormatCurrency(calculateSalesTax(100)));
+console.log(addTaxAndFormatCurrency(calculateSalesTax(30)));
 
 /* 
 ===================================================
