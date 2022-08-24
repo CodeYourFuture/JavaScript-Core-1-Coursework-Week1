@@ -6,7 +6,7 @@
 */
 
 function calculateSalesTax(product) {
-  let product1 = (product1 * 20) / 100 + product;
+  let product1 = (product * 20) / 100 + product;
 return product1;
 
 }
