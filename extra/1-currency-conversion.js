@@ -18,7 +18,7 @@ function convertToUSD(price) {
 */
 
 function convertToBRL(brazil) {
-  return (brazil * 0.99 * 5.7).toFixed(2);
+  return parseFloat((brazil * 0.99 * 5.7).toFixed(2));
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== 

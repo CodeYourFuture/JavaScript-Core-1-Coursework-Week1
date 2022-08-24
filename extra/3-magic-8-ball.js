@@ -45,8 +45,10 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
-function shakeBall() {
+function shakeBall(answer) {
   //Write your code in here
+  console.log("The ball has shaken!");
+  return answer;
 }
 
 /* 
@@ -60,6 +62,7 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
+  return answer;
 }
 
 /* 
