@@ -6,7 +6,8 @@
 */
 
 function calculateSalesTax(product) {
-  return product / 100 * 20;
+  let tex = product / 100 * 20;
+  return tax
 }
 
 
@@ -21,9 +22,9 @@ function calculateSalesTax(product) {
 */
 
 function addTaxAndFormatCurrency(a) {
-  return sum = a.toFixed(2);
+  return "£" + calculateSalesTax(a).toFixed(2);
 }
-console.log("£" + addTaxAndFormatCurrency(calculateSalesTax(34)));
+// console.log( addTaxAndFormatCurrency(calculateSalesTax(34)));
 
 /* 
 ===================================================
