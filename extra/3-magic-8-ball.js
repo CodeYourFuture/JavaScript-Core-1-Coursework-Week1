@@ -43,9 +43,17 @@
     Very doubtful.
 */
 
+
+const very_positive = ["It is certain.", "It is decidedly so.", "Without a doubt.","Yes - definitely.","You may rely on it."];
+const positive = ["As I see it, yes.", "Most likely.", "Outlook good.", "Yes.", "Signs point to yes."];
+const possible_answers = ["Very positive", "Positive"];
+
+var answer = shakeBall(value);
+
 // This should log "The ball has shaken!"
 // and return the answer.
-function shakeBall() {
+function shakeBall(value) {
+  Math.round(Math.random() * (2 - 1) + 1);
   //Write your code in here
 }
 

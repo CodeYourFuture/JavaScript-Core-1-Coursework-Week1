@@ -1,3 +1,8 @@
-// Start by creating a variable `message`
+var country = "Brasil";
+var age = 31;
+var name = "Luan";
 
-console.log(message);
+var greeting = "Hello my name is " + name + ", I'm from " 
++ country + " and I'm " + age + " years old";
+
+console.log(greeting); 
