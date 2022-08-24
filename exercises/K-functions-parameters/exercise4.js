@@ -1,5 +1,7 @@
-// Declare your function first
+// Write your function here
+function createGreeting(yourName){
+    return "Hello, my name is " + yourName;
+}
+var greeting = createGreeting("Hayat");
 
-// Call the function and assign to a variable `sum`
-
-console.log(sum);
+console.log(greeting);
