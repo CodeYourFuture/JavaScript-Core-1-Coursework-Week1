@@ -4,13 +4,13 @@ function trimWord(word) {
   
   return word.trim();
 }
-
+word = "  CodeYourFuture  ";
+word = " CodeYourFuture teaches coding     ";
 function getStringLength (word) {
-
-
  return word.length;
 }
-
+word = getStringLength("A wild sentence appeared!");
+word = getStringLength("Turtle"); ;
 function multiply(a, b, c) {
  
   return  a * b * c;
