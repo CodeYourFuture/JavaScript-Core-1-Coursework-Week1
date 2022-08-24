@@ -1,13 +1,13 @@
 // The syntax for this function is valid but it has an error, find it and fix it.
 
 function trimWord(word) {
-  return word.trim() ;
+  return word = word.trim() ;
   
 }
 console.log(trimWord());
 
 function getStringLength(word) {
-  return word.length;
+  return word = word.length;
 }
 console.log(getStringLength("Hello World"));
 
