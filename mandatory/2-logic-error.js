@@ -1,21 +1,19 @@
 // The syntax for this function is valid but it has an error, find it and fix it.
 
 function trimWord(word) {
-  return word = word.trim() ;
+  return word.trim();
   
 }
-console.log(trimWord());
+
 
 function getStringLength(word) {
-  return word = word.length;
+  return word.length; 
 }
-console.log(getStringLength("Hello World"));
 
 function multiply(a, b, c) {
   return a * b * c;
  
 }
-console.log(multiply(2,3,6));
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
