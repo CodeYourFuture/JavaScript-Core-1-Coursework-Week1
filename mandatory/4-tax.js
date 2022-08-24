@@ -6,9 +6,11 @@
 */
 
 function calculateSalesTax(product) {
-  let tex = (product / 100) * 20 + product;
-  return tax;
+  let product1 = (product1 * 20) / 100 + product;
+return product1;
+
 }
+
 
 
 /*
