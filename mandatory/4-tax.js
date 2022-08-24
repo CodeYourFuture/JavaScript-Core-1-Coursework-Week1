@@ -23,8 +23,7 @@ return price+salesTax;
 function addTaxAndFormatCurrency(tax) {
   return "£"+calculateSalesTax(tax).toFixed(2);
 }
-console.log(calculateSalesTax(17.5));
-console.log(addTaxAndFormatCurrency(15)); // expect to £18
+
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
