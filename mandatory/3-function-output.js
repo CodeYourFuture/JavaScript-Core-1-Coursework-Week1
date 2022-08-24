@@ -10,7 +10,9 @@ function combine2Words(word1, word2) {
 
 function concatenate(firstWord, secondWord, thirdWord) {
   firstWord = "I";
-  return  firstWord.concat() + " " + "like " + "pizza";
+  secondWord = "like";
+  thirdWord = "pizza";
+  return  firstWord + " " + secondWord + " " + thirdWord;
     
 
   // Write the body of this function to concatenate three words together.
