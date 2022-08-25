@@ -43,10 +43,77 @@
     Very doubtful.
 */
 
-// This should log "The ball has shaken!"
-// and return the answer.
+/* STEP 1 -------I turn those expected answers to arrays ------------*/
 function shakeBall() {
+  const veryPositiveArr = [
+    "It is certain.",
+    "It is decidedly so.",
+    "Without a doubt.",
+    "Yes - definitely.",
+    "You may rely on it.",
+  ];
+
+  const positveArr = [
+    "As I see it, yes.",
+    "Most likely.",
+    "Outlook good.",
+    "Yes.",
+    "Signs point to yes.",
+  ];
+
+  const negativeArr = [
+    "Reply hazy, try again.",
+    "Ask again later.",
+    "Better not tell you now.",
+    "Cannot predict now.",
+    "Concentrate and ask again.",
+  ];
+
+  const veryNegativeArr = [
+    "Don't count on it.",
+    "My reply is no.",
+    "My sources say no.",
+    "Outlook not so good.",
+    "Very doubtful.",
+  ];
+
+  /* STEP 2------------ Then create variables to fine a random answer each time------------*/
+
+  const randomAnswerVeryPositive =
+    veryPositiveArr[Math.floor(Math.random() * veryPositiveArr.length)];
+  const randomAnswerPositive =
+    positveArr[Math.floor(Math.random() * positveArr.length)];
+  const randomAnswerNegative =
+    negativeArr[Math.floor(Math.random() * negativeArr.length)];
+  const randomAnswerVeryNegative =
+    veryNegativeArr[Math.floor(Math.random() * veryNegativeArr.length)];
+
+  /* STEP 3--------Then Making these random Answers an array to find each of them randomly--------------*/
+  const answerArr = [
+    randomAnswerVeryPositive,
+    randomAnswerPositive,
+    randomAnswerNegative,
+    randomAnswerVeryNegative,
+  ];
+
+
+
+  /*STEP 4------ and then writting if statement inside shakeBall() function to determind the output---------- */
+
+  // This should log "The ball has shaken!" and return the answer.
+
   //Write your code in here
+  const randomAnswer = answerArr[Math.floor(Math.random() * answerArr.length)];
+  if (randomAnswer === randomAnswerVeryPositive) {
+    return "very positive";
+  } else if (randomAnswer === randomAnswerPositive) {
+    return "positve";
+  } else if (randomAnswer === randomAnswerNegative) {
+    return "negative";
+  } else if (randomAnswer === randomAnswerVeryNegative) {
+    return "very negative";
+  }
+  return randomAnswer;
 }
 
 /* 
@@ -58,8 +125,14 @@ function shakeBall() {
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
+
+
+/*STEP 5------- and finally calling shakeBall() funcation inside CheckAnswer funcatino*/ 
+
 function checkAnswer(answer) {
   //Write your code in here
+  answer = shakeBall();
+  return answer;
 }
 
 /* 
