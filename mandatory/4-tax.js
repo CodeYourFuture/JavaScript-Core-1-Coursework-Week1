@@ -7,7 +7,7 @@
 
 function calculateSalesTax(price) {
   const tax=(20*price) / 100;
-  return tax;
+  return price + tax;
 }
 
 /*
@@ -20,8 +20,10 @@ function calculateSalesTax(price) {
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency(price) {
-  return "£" + (price/100);
+
+  function addTaxAndFormatCurrency(price) {
+
+    return   `£${calculateSalesTax(price).toFixed(2)}`;
 }
 
 /* 

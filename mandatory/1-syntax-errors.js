@@ -10,7 +10,7 @@ function introduceMe(name, age){
 function getTotal(a, b) {
  const total = a + b;
 
-  return "The total is "+ total;
+  return "The total is " + total;
 }
 
 /* 
