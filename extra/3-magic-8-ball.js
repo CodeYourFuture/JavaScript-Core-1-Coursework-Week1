@@ -48,7 +48,9 @@
 function shakeBall(answer) {
   //Write your code in here
   console.log("The ball has shaken!");
-  return answer;
+  // checkAnswer(answer);
+  answer = ["It is certain", "It is decidedly so","Very doubtful"];
+  return answer[Math.floor(Math.random() * 2)];
 }
 
 /* 
@@ -62,7 +64,12 @@ function shakeBall(answer) {
 */
 function checkAnswer(answer) {
   //Write your code in here
-  return "very positive";
+  let response = ["very positive", "positive", "negative", "very negative"];
+  if (answer == "My reply is no.") {
+    return "very negative";
+  } else {
+    return response[Math.floor(Math.random()*3)];
+  }
 }
 
 /* 
