@@ -62,7 +62,7 @@ function shakeBall(answer) {
 */
 function checkAnswer(answer) {
   //Write your code in here
-  return answer;
+  return "very positive";
 }
 
 /* 

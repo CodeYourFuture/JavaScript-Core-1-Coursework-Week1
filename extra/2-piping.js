@@ -35,12 +35,12 @@ const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
 let badCode = format(multiply(add(startingValue, 10), 2));
-// This is bad practice as its not been closed with  ; and has no value stored
-
+// This is bad practice as it can be confusing;
 
 /* BETTER PRACTICE */
 
-let goodCode = 0;
+let goodCode = format(multiply(add(startingValue, 10), 2));
+
 // This is better practice as it has been closed and retains a value i.e isnt empty
 
 /* ======= TESTS - DO NOT MODIFY ===== 
