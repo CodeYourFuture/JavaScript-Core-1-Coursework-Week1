@@ -1,12 +1,14 @@
 var numberOfStudents = 15;
 var numberOfMentors = 8;
-var numberOfPeople = numberOfStudents + numberOfMentors;
+var sum = numberOfStudents + numberOfMentors;
 
-var students = Math.round (numberOfStudents / numberOfPeople);
-//var students = Math.round(student);
+var percentageStudents = (numberOfStudents / sum) * 100;
+var students = Math.round(percentageStudents);
 
-//var mentors = Math.round(numberOfMentors / numberOfPeople);
+var percentageMentors = (numberOfMentors / sum) * 100;
+var mentors = Math.round(percentageMentors);
+
 
 console.log(`Percentage students: ${students}%`);
-//console.log(`Percentage mentors: ${mentors}%`);
-//console.log(numberOfPeople);
+console.log(`Percentage mentors: ${mentors}%`);
+
