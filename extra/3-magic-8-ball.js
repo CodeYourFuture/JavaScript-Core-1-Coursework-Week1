@@ -98,9 +98,6 @@ function checkAnswer(answer) {
 	}
 }
 
-console.log(checkAnswer("Reply hazy, try again."));
-console.log(checkAnswer("Yes - definitely."));
-
 /* 
 ==================================
 ======= TESTS - DO NOT MODIFY =====
