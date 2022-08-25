@@ -16,26 +16,28 @@
   the final result to the variable goodCode
 */
 
-function add() {
-
+function add(a, b) {
+	return a + b;
 }
 
-function multiply() {
-
+function multiply(a, b) {
+	return a * b;
 }
 
-function format() {
-
+function format(number) {
+	return `£${number}`;
 }
 
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =
+let badCode = format(multiply(add(startingValue, 10), 2)); // this is difficult to read.
 
 /* BETTER PRACTICE */
 
-let goodCode =
+let goodCode = add(startingValue, 10);
+goodCode = multiply(goodCode, 2);
+goodCode = format(goodCode); // this is easier to read.
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
@@ -45,29 +47,29 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 2-p
 */
 
 test("add function - case 1 works", () => {
-  expect(add(1, 3)).toEqual(4);
+	expect(add(1, 3)).toEqual(4);
 });
 
 test("add function - case 2 works", () => {
-  expect(add(2.4, 5)).toEqual(7.4);
+	expect(add(2.4, 5)).toEqual(7.4);
 });
 
 test("multiply function works", () => {
-  expect(multiply(2, 3)).toEqual(6);
+	expect(multiply(2, 3)).toEqual(6);
 });
 
 test("format function works for whole number", () => {
-  expect(format(16)).toEqual("£16");
+	expect(format(16)).toEqual("£16");
 });
 
 test("format function works for decimal number", () => {
-  expect(format(10.1)).toEqual("£10.1");
+	expect(format(10.1)).toEqual("£10.1");
 });
 
 test("badCode variable correctly assigned", () => {
-  expect(badCode).toEqual("£24");
+	expect(badCode).toEqual("£24");
 });
 
 test("goodCode variable correctly assigned", () => {
-  expect(goodCode).toEqual("£24");
+	expect(goodCode).toEqual("£24");
 });
