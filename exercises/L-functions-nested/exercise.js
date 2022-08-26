@@ -1,3 +1,7 @@
+function name(params) {
+ 
+}
+
 var mentor1 = "Daniel";
 var mentor2 = "Irina";
 var mentor3 = "Mimi";
