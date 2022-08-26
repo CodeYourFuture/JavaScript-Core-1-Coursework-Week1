@@ -1,17 +1,20 @@
 // Add comments to explain what this function does. You're meant to use Google!
 function getRandomNumber() {
-  return Math.random() * 10;
+  return Math.random() * 10; //The Math. random() function returns a floating-point, pseudo-random number in the range 0 to less than 1 (inclusive of 0, but not 1) with approximately uniform distribution over that range
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
 function combine2Words(word1, word2) {
-  return word1.concat(word2);
+  return word1.concat(word2);  //The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+
+  return firstWord.concat(` ${secondWord} ${thirdWord}`);
 }
+
 
 /* 
 ===================================================
@@ -23,7 +26,6 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 3-f
 (Reminder: You must have run `npm install` one time before this will work!)
 ==================================
 */
-
 test("concatenate example #1", () => {
   expect(concatenate("code", "your", "future")).toEqual("code your future");
 });
