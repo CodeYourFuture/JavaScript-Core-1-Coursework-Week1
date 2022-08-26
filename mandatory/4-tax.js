@@ -6,7 +6,8 @@
 */
 
 function calculateSalesTax(value) {
-  return value*1.2;
+  const result = value*1.2
+  return result;
 
 }
 
@@ -21,7 +22,9 @@ function calculateSalesTax(value) {
 */
 
 function addTaxAndFormatCurrency(value) {
-  return "£" + (value*1.2).toFixed(2);
+  const addTax = 1.2*value;
+  const formattedCurrency = "£" + addTax.toFixed(2);
+  return formattedCurrency;
 
 }
 

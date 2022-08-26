@@ -5,11 +5,18 @@ var mentor4 = "Rob";
 var mentor5 = "Yohannes";
 
 function uppercaseNames(name) {
-    return name.toUpperCase();
+    let updateName = name.toUpperCase();
+    return updateName;
 }
 
-console.log("HELLO " + uppercaseNames(mentor1));
-console.log("HELLO " + uppercaseNames(mentor2));
-console.log("HELLO " + uppercaseNames(mentor3));
-console.log("HELLO " + uppercaseNames(mentor4));
-console.log("HELLO " + uppercaseNames(mentor5));
+function showMessage(mentor){
+    let mentorName = uppercaseNames(mentor) ;
+    let messageToShow = "HELLO " + mentorName;
+    console.log(messageToShow)
+}
+
+showMessage(mentor1);
+showMessage(mentor2);
+showMessage(mentor3);
+showMessage(mentor4);
+showMessage(mentor5);
