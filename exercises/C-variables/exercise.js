@@ -1,5 +1,5 @@
 // Start by creating a variable `greeting`
-const greeting = "Hellow World!";
+const greeting = "Hello World";
 
 console.log(greeting);
 console.log(greeting);

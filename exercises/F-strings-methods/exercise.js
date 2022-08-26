@@ -1,4 +1,4 @@
-const name = "Zaw Myo Khing"
+const name = "Zaw Khing"
 const nameLength = name.length;// Start by creating a variable `message`
 
 //const myName = "My name is " + name + " and my name is " + nameLength + " characters long.";

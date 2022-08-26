@@ -1,5 +1,5 @@
 // Start by creating a variable `message`
-const greetingStart = "Hi, My name is ";
+const greetingStart = "Hello, my name is ";
 const myName =  "Zaw Khing.";
 
 const greeting = greetingStart + myName ;

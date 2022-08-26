@@ -1,3 +1,3 @@
-console.log("Hello world");
+console.log("Hello world, I started learning Javascript");
 console.log("Jello world");
-console.log(5, "strin", 10);
+console.log(10);

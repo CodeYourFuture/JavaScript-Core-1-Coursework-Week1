@@ -15,7 +15,7 @@ function concatenate(firstWord, secondWord, thirdWord) {
 }
 console.log(concatenate("code","your","future"));
 console.log(concatenate("I","like","icecream"));
-console.log(concatenate("I","am","19"));
+console.log(concatenate("I","am",19));
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
