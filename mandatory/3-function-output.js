@@ -2,7 +2,7 @@
 
 function getRandomNumber() {
   return Math.random() * 10;
-  //random returns with 10 will result in a max value of 9.999
+  //random returns with 10 will result in a max value of 9.999 and the lowest value is 0
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
