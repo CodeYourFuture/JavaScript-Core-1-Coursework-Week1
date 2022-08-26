@@ -3,6 +3,6 @@ function createGreeting(){
 
 }// Write your function here
 
-var greeting = createGreeting("Daniel");
+let greeting = createGreeting("Daniel");
 
 console.log(greeting);

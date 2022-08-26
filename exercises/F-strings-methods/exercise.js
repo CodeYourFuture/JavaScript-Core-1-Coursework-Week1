@@ -2,13 +2,13 @@
 
 
 
-var greetings = "Hello, my name is  ";
-var name = "Meron";
-var myName = "my name is ";
-var nameLength = name.length;
-var characters = " characters long";
+let greetings = "Hello, my name is  ";
+let name = "Meron";
+let myName = "my name is ";
+let nameLength = name.length;
+let characters = " characters long";
 
-var message =  greetings + name + myName + nameLength + characters;
+let message =  greetings + name + myName + nameLength + characters;
 
 console.log(message);
 
