@@ -1,5 +1,6 @@
 function triple(number) {
-  // complete function here
+  let temp = number * 3;
+  return temp;
 }
 
 var result = triple(12);
