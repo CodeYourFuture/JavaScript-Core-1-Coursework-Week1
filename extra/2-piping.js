@@ -37,7 +37,9 @@ let badCode = format(startingValue);
 
 /* BETTER PRACTICE */
 
-let goodCode = format(startingValue);
+let goodCode = format(24);
+let goodCode1 = add(10, 2);
+let goodCode2 = multiply(10, 2);
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
