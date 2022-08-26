@@ -23,7 +23,7 @@ function createCreeting(name, age) {
 - Your program should include a function that spells their name in uppercase, and a function that creates a shouty greeting.
 - Log each greeting to the console.
 
-## Expected result
+## Expected result-
 
 ```
 HELLO DANIEL
