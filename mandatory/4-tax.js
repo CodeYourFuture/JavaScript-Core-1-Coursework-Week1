@@ -7,10 +7,11 @@
 
 function calculateSalesTax(productPrice) {
   const salesTax = (productPrice / 100) * 20;
-  return salesTax;
+  const totalPrice = productPrice + salesTax;
+  return totalPrice;
 }
 
-console.log(calculateSalesTax(64));
+console.log(calculateSalesTax(123));
 
 /*
   CURRENCY FORMATTING
@@ -22,10 +23,15 @@ console.log(calculateSalesTax(64));
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency(formatCurrency) {
-    format = calculateSalesTax().toFixed(2);
-   console.log("260 pence is £"+ format)
+function addTaxAndFormatCurrency(productPrice) {
+    const addTax = calculateSalesTax(productPrice);
+    const formatCurrency = addTax.toFixed(2);
+    return "£" + formatCurrency;
 }
+
+console.log(addTaxAndFormatCurrency(456));
+
+   
 
 /* 
 ===================================================

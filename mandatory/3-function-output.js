@@ -5,7 +5,7 @@ function getRandomNumber() {  //create function called getRandomNumber
 
 // Add comments to explain what this function does. You're meant to use Google!
 function combine2Words(word1, word2) {  //create function called combine2Words with 2 parameters
-  return word1.concat(word2);           //returns concat() method joins two or more strings.
+  return word1.concat(word2);           //returns concat() method joins two strings.
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
@@ -14,6 +14,8 @@ function concatenate(firstWord, secondWord, thirdWord) {
   return firstWord.concat(" ", secondWord, " ", thirdWord);
 }
 console.log(concatenate("code","your","future"));
+console.log(concatenate("I","like","icecream"));
+console.log(concatenate("I","am","19"));
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
