@@ -1,3 +1,4 @@
 // Start by creating a variable `message`
-
-console.log(message);
+const name1="Bahareh"
+const message="hello i am a "
+console.log(message+ name1);
