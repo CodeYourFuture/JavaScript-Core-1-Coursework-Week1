@@ -5,8 +5,13 @@ var mentor4 = "Rob";
 var mentor5 = "Yohannes";
 
 
+function getUpperCase(name){
+    return name.toUpperCase();
+}
+
 function greeting(name){
-   var message = "Hello " + name.toUpperCase();
+   nameInUpperCase = getUpperCase(name);
+   const message = "Hello " + nameInUpperCase;
    return message;
 }
 
