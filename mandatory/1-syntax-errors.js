@@ -15,6 +15,7 @@ function getTotal(a, b) {
   return "The total is " + total;
 }
 
+
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
