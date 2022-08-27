@@ -5,7 +5,10 @@
   Sales tax is 20% of the price of the product.
 */
 
-function calculateSalesTax() {}
+function calculateSalesTax(price) {
+  const tax=(20*price) / 100;
+  return price + tax;
+}
 
 /*
   CURRENCY FORMATTING
@@ -13,18 +16,19 @@ function calculateSalesTax() {}
   The business has informed you that prices must have 2 decimal places
   They must also start with the currency symbol
   Write a function that adds tax to a number, and then transforms the total into the format £0.00
-
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency() {}
+
+  function addTaxAndFormatCurrency(price) {
+
+    return   `£${calculateSalesTax(price).toFixed(2)}`;
+}
 
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
-
 There are some Tests in this file that will help you work out if your code is working.
-
 To run the tests for just this one file, type `npm test -- --testPathPattern 4-tax` into your terminal
 (Reminder: You must have run `npm install` one time before this will work!)
 ===================================================
