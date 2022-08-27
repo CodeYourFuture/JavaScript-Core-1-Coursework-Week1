@@ -19,13 +19,20 @@
 function add() {
 
 }
+function add(number1, number2){
+  return number1+number2;
+}
 
-function multiply() {
-
+function multiply() {}
+function add(number1, number2){
+  return number1*number2;
 }
 
 function format() {
 
+}
+function format(value){
+  return "£"+value;
 }
 
 const startingValue = 2;
