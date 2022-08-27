@@ -45,12 +45,39 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
-function shakeBall() {
+function shakeBall(ball) {
+  console.log("shake the ball");
+  randomAnswer=Math.floor(Math.random() * 5) 
+  randomAnswer2=Math.floor(Math.random() * 6) 
+  result=answerStatment[randomAnswer][randomAnswer2];
+  return result;
+ 
+       
   //Write your code in here
 }
 
-/* 
-  This function should say whether the answer it is given is
+    const answerStatment=[["It is certain",
+    "It is decidedly so",
+    "Without a doubt",
+    "Yes - definitely",
+    "You may rely on it"],//00 very pos
+    ["As I see it, yes",
+      "Most likely",
+      "Outlook good",
+      "Yes",
+      "Signs point to yes"],//01 pos
+      ["Reply hazy", 
+      "try again",
+        "Ask again later",
+        "Better not tell you now",
+        "Cannot predict now",
+       " Concentrate and ask again"]//,02 vert neg
+       [" Don't count on it",
+       "My reply is no",
+       "My sources say no",
+       "Outlook not so good",
+       " Very doubtful" ]]//03 neg
+  /*This function should say whether the answer it is given is
     - very positive
     - positive
     - negative
@@ -60,7 +87,19 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
-}
+  for (let i=0,i<5,i++) {
+  if (result == answerStatment[0][i]){
+  return "very positive";}
+  else if (result == answerStatment[1][i]) {
+    return "positive";}
+  else if(result== answerStatment[2][i]){
+  return "negetive";}
+    
+  } else {
+  return "very negetive";}
+    
+  }
+
 
 /* 
 ==================================
