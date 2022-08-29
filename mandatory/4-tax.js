@@ -6,7 +6,7 @@
 */
 
 function calculateSalesTax(price) {
-  return price + (.2 * price);
+  return price * 1.2;
 }
 console.log(calculateSalesTax(17.5));
 
@@ -19,11 +19,11 @@ console.log(calculateSalesTax(17.5));
 
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
-let sign = "£";
-function addTaxAndFormatCurrency(sign,price) {
-  return "£" + calculateSalesTax(price)  ;
+
+function addTaxAndFormatCurrency(price) {
+  return "£" + calculateSalesTax(price).toFixed(2) ;
 }
-console.log( addTaxAndFormatCurrency(sign,17.5));
+console.log( addTaxAndFormatCurrency(17.5));
 
 /* 
 ===================================================
