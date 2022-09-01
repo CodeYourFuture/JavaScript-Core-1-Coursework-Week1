@@ -6,6 +6,8 @@ We can use _variable_ to create a reference to a value.
 var greeting = "Hello world";
 
 console.log(greeting);
+console.log(greeting);
+console.log(greeting);
 ```
 
 The program above will print "Hello world" to the console. Notice how it uses the value assigned to the variable `greeting`.
