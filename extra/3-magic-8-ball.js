@@ -45,9 +45,22 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
+
+
+
 function shakeBall() {
   //Write your code in here
+  arr = ['It is certain.', 'It is decidedly so.', 'Without a doubt.', 'Yes - definitely.', 'You may rely on it.',
+'As I see it, yes.', 'Most likely.', 'Outlook good.', 'Yes.', 'Signs point to yes.', 'Reply hazy, try again.',
+'Ask again later.', 'Better not tell you now.', 'Cannot predict now.', 'Concentrate and ask again.', 'Don\'t count on it.',
+'My reply is no.', 'My sources say no.', 'Outlook not so good.', 'Very doubtful.']
+
+  console.log('The ball has shaken!');
+  const randomIndex = Math.floor(Math.random() * arr.length);
+  return answer = arr[randomIndex];
 }
+
+// shakeBall();
 
 /* 
   This function should say whether the answer it is given is
@@ -58,9 +71,50 @@ function shakeBall() {
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
+
+
 function checkAnswer(answer) {
-  //Write your code in here
+  // answer = shakeBall() || answer;
+  res = ["very positive", "positive", "negative", "very negative"];  
+  // const answer1 = answer; 
+
+  switch(answer) {
+    case 'It is certain.':
+    case 'It is decidedly so.':
+    case 'Without a doubt.':
+    case 'Yes - definitely.':
+    case 'You may rely on it.':
+      result = res[0];
+      break;
+    case 'As I see it, yes.':
+    case 'Most likely.':
+    case 'Outlook good.':
+    case 'Yes.':
+    case 'Signs point to yes.':
+      result = res[1];
+      break;
+    case 'Reply hazy, try again.':
+    case 'Ask again later.':
+    case 'Better not tell you now.':
+    case 'Cannot predict now.':
+    case 'Concentrate and ask again.':
+      result = res[2];
+      break;
+    case 'Don\'t count on it.':
+    case 'My reply is no.':
+    case 'My sources say no.':
+    case 'Outlook not so good.':
+    case 'Very doubtful.':
+      result = res[3];
+      break;
+    default:
+      result = 'try again';
+      break;
+  }
+    return result;
 }
+console.log(checkAnswer())
+console.log(checkAnswer(shakeBall()))
 
 /* 
 ==================================
@@ -82,7 +136,7 @@ test("whole magic 8 ball sequence", () => {
   expect(consoleLogSpy).toHaveBeenCalledTimes(1);
   expect(consoleLogSpy).toHaveBeenLastCalledWith("The ball has shaken!");
 
-  expect(checkAnswer(answer)).toBeOneOf([
+  expect(checkAnswer()).toBeOneOf([
     "very positive",
     "positive",
     "negative",
