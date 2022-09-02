@@ -5,7 +5,15 @@
   Write a function that converts a price to USD (exchange rate is 1.4 $ to £)
 */
 
-function convertToUSD() {}
+function convertToUSD(currency) {
+  return currency * 1.4;
+}
+
+const usDollar = convertToUSD(100);
+
+console.log(usDollar);
+
+
 
 /*
   CURRENCY CONVERSION
@@ -15,7 +23,15 @@ function convertToUSD() {}
   They have also decided that they should add a 1% fee to all foreign transactions, which means you only convert 99% of the £ to BRL.
 */
 
-function convertToBRL() {}
+function convertToBRL(currency) {
+  const convertIncludingFees = currency * 5.7 * 0.99;
+  currencyInTwoDecimal = Number(convertIncludingFees.toFixed(2));
+  return currencyInTwoDecimal;
+
+}
+//const brazillianDollar = convertToBRL(100);
+
+console.log(convertToBRL(100));
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
@@ -39,3 +55,4 @@ test("convertToBRL function works for £30", () => {
 test("convertToBRL function works for £1.50", () => {
   expect(convertToBRL(1.5)).toEqual(8.46);
 });
+
