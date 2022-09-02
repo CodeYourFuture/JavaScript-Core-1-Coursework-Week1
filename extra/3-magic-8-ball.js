@@ -45,13 +45,15 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
+//for (let i = 0; i < 21; ++i) {
 console.log("The ball has shaken!");
-function shakeBall(a) {
-  return a[Math.floor(Math.random() * a.length)];
-  console.log(shakeBall(a));
+function shakeBall(answers) {
+  const answer = answers.sort(() => Math.random() * 20).slice(0, 1);
+  //return answer;
+  console.log(answer);
 }
 
-var a = [
+let answer = shakeBall([
   "It is certain.",
   "It is decidedly so.",
   "Without a doubt.",
@@ -72,8 +74,7 @@ var a = [
   "My sources say no.",
   "Outlook not so good.",
   "Very doubtful.",
-];
-var answer = console.log(shakeBall(a));
+]);
 
 /* 
   This function should say whether the answer it is given is
@@ -87,7 +88,7 @@ var answer = console.log(shakeBall(a));
 
 function checkAnswer(answer) {
   if (
-    answer === "It is certain." ||
+    answer === "[ 'It is certain.' ]" ||
     answer === "It is decidedly so." ||
     answer === "You may rely on it." ||
     answer === "Without a doubt." ||
@@ -109,12 +110,12 @@ function checkAnswer(answer) {
     answer === "Cannot predict now." ||
     answer === "Concentrate and ask again."
   ) {
-    return "Negative";
+    return "negative";
   } else {
     return "very negative";
   }
 }
-
+//}
 /* 
 ==================================
 ======= TESTS - DO NOT MODIFY =====
