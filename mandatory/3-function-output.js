@@ -1,18 +1,24 @@
 // Add comments to explain what this function does. You're meant to use Google!
+//When you want to round numbers in javascript to its nearest integer, you need to use the Math.round () function. Here’s the syntax of the function: Math.round (value) Parameters: the number to be rounded to its nearest integer. Returns: Result after rounding the number passed as a parameter to the function passed as parameter.
 function getRandomNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+//Twice join of two strings in JavaScript Javascript Web Development Front End Technology Object Oriented Programming We are required to write a JavaScript function that takes in two strings; creates and returns a new string with first 2 words of first string, next two words of second string, then first, then second and so on.
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
-  // Look at the test case below to understand what this function is expected to return.
+  return firstWord.concat( " ",secondWord," " ,thirdWord);
 }
-
+  // Look at the test case below to understand what this function is expected to return.
+  
+const firstWord ="I";
+const secondWord ="like";
+const thirdWord ="pizza";
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
