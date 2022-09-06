@@ -1,17 +1,56 @@
 // The syntax for this function is valid but it has an error, find it and fix it.
 
+// function trimWord(word) {
+//   return wordtrim();
+// }
+
+// function getStringLength(word) {
+//   return "word".length();
+// }
+
+// function multiply(a, b, c) {
+//   a * b * c;
+//   return;
+// }
+
 function trimWord(word) {
-  return wordtrim();
+  return word.trim();
 }
+// missing . for method .trim
+
+// const trimWord = (word) => word.trim();
+
+console.log(trimWord("   CodeYourFuture "))
+// "CodeYourFuture"
+console.log(trimWord(" CodeYourFuture teaches coding     "))
+// "CodeYourFuture teaches coding"
+
 
 function getStringLength(word) {
-  return "word".length();
+  return word.length;
 }
+// string instead of argument, length requires no ()
+
+// const getStringLength = (word) => word.length;
+
+console.log(getStringLength("Turtles"))
+// 7
+console.log(getStringLength("A wild sentence appeared!"))
+// 25
+
 
 function multiply(a, b, c) {
-  a * b * c;
-  return;
+  return a * b * c;
 }
+// return incorrectly placed
+
+// const multiply = (a,b,c) => a*b*c;
+
+console.log(multiply(2, 3, 6))
+// 36
+console.log(multiply(2, 3, 4))
+// 24
+
 
 /* 
 ===================================================

@@ -1,17 +1,52 @@
 // There are syntax errors in this code - can you fix it to pass the tests?
 
-function addNumbers(a b c) {
+// function addNumbers(a b c) {
+//   return a + b + c;
+// }
+
+// function introduceMe(name, age)
+//   return "Hello, my name is " + name "and I am " age + "years old";
+
+// function getTotal(a, b) {
+//   total = a ++ b;
+
+//   return "The total is total";
+// }
+
+
+function addNumbers(a,b,c) {
   return a + b + c;
 }
+// commas between parameters are missing
 
-function introduceMe(name, age)
-  return "Hello, my name is " + name "and I am " age + "years old";
+// const addNumbers = (a,b,c) => a + b + c;
+
+console.log(addNumbers(3, 4, 6))
+// 13
+
+function introduceMe(name, age) {
+  // return "Hello, my name is " + name + " and I am " + age + " years old";
+  return `Hello, my name is ${name} and I am ${age} years old`;
+}
+// string concatenation is missing + either side and some spacing, also missing { } on function body
+
+// const introduceMe = (name, age) => `Hello, my name is ${name} and I am ${age} years old`;
+
+console.log(introduceMe("Sonjide", 27))
+// "Hello, my name is Sonjide and I am 27 years old"
 
 function getTotal(a, b) {
-  total = a ++ b;
-
-  return "The total is total";
+  // const total = a + b;
+  // return "The total is " + total;
+  return `The total is ${a + b}`;
 }
+// no let/const used to initialise total, double ++ used, and return string doesnt include variable name
+
+// const getTotal = (a,b) => `This total is ${a+b}`;
+
+console.log(getTotal(23, 5))
+// "The total is 28"
+
 
 /* 
 ===================================================
