@@ -20,8 +20,8 @@ function calculateSalesTax(basePrice) {
 */
 
 function addTaxAndFormatCurrency(price) {
-  //return `£${calculateSalesTax(price).toFixed(2)}`
-  return "£" + calculateSalesTax(price).toFixed(2)
+  return `£${calculateSalesTax(price).toFixed(2)}`
+  //return "£" + calculateSalesTax(price).toFixed(2)
 }
 
 /* 
