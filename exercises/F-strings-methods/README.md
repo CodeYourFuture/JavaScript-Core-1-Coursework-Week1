@@ -14,6 +14,12 @@ var name = "Daniel";
 var nameLowerCase = name.toLowerCase();
 
 console.log(nameLowerCase); // "daniel"
+
+var name = "Khesiwe"
+var nameLowerCase = name.length
+var nameLowerCase = name.trim()
+
+console.log(name.trim)
 ```
 
 You can find out more about string properties and methods by searching for "JavaScript string methods".

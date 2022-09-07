@@ -3,9 +3,11 @@ When you write code, you'll want to create shortcuts to data values so you can d
 We can use _variable_ to create a reference to a value.
 
 ```js
-var greeting = "Hello world";
+var greeting = " Hello world " ;
 
 console.log(greeting);
+console.log(greeting)
+console.log(greeting)
 ```
 
 The program above will print "Hello world" to the console. Notice how it uses the value assigned to the variable `greeting`.
