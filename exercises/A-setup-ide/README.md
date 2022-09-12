@@ -1,3 +1,5 @@
+
+
 There are some tools that will help you to write code. One of these, [Prettier](https://prettier.io/), formats your code, making it easier for you and others to read.
 
 ### 1. Install prettier
