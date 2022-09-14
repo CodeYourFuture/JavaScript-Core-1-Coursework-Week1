@@ -1,7 +1,7 @@
 // Start by creating a variable `message`
-var messageStart = "Hello, my name is ";
-var myName = "Helen";
+let messageStart = "Hello, my name is ";
+let myName = "Helen";
 
-var message = messageStart + myName;
+let message = messageStart + myName;
 
 console.log(message);

@@ -20,7 +20,7 @@ function add(a, b) {
   return a + b;
 }
 
-console.log(add(20,9));
+console.log(add(20, 9));
 
 function multiply(a, b) {
   return a * b;
@@ -29,12 +29,13 @@ function multiply(a, b) {
 console.log(multiply(2, 10));
 
 function format(num) {
-  return "£" +  eval(num);
+  return "£" + eval(num);
 }
 
 console.log(format(45));
+
 const startingValue = 2;
-function badPractice () {  
+function badPractice() {
   return badCode;
 }
 
@@ -42,20 +43,21 @@ let badCode = "£" + (startingValue + 10) * 2;
 
 console.log(badPractice());
 
+let incrementedValue = startingValue + 10;
+let doubledValue = incrementedValue * 2;
+let formattedValue = "£" + doubledValue;
 
-function goodPractice() { 
-  return goodCode; //Is this code any better?
+function goodPractice() {
+  return goodCode;
 }
-  let goodCode = "£" + ((startingValue + 10) * 2); 
 
+let goodCode = formattedValue;
 
 // let goodCode = format(multiply(add(startingValue, 10), 2)); //suggested in 'solutions'
-
 
 // Why can this code be seen as bad practice? Comment your answer.
 
 // Const should be used for the values we don't re-assign. The name startingValue suggests otherwise
-
 
 /* BETTER PRACTICE */
 

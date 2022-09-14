@@ -9,11 +9,11 @@ function getRandomNumber() {
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
-console.log("hello")
+
 //joins 2 words without spaces in between
 
 function concatenate(firstWord, secondWord, thirdWord) {
-  return firstWord.concat(' ', secondWord, ' ', thirdWord);
+  return firstWord.concat(" ", secondWord, " ", thirdWord);
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
 }

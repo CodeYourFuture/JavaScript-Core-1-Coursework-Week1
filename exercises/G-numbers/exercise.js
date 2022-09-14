@@ -1,8 +1,8 @@
 // Start by creating a variables `numberOfStudents` and `numberOfMentors`
 
-var numberOfStudents = 50;
-var numberOfMentors = 25;
-var total = numberOfStudents + numberOfMentors;
-var message = "Total number of students and mentors: " + total + ".";
+let numberOfStudents = 50;
+let numberOfMentors = 25;
+let total = numberOfStudents + numberOfMentors;
+let message = "Total number of students and mentors: " + total;
 
 console.log(message);

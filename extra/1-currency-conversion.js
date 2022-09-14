@@ -6,8 +6,8 @@
 */
 function convertToUSD(pound) {
   let usd = pound * 1.4;
-  return usd; 
-  //  return "$" + pound * 1.4.toFixed(2); 
+  return usd;
+  //  return "$" + pound * 1.4.toFixed(2);
 }
 
 // function convertToUSD(amountInPounds) {
@@ -16,7 +16,6 @@ function convertToUSD(pound) {
 // } // suggested in 'solutions'
 
 // console.log(convertToUSD(200));
-
 
 /*
   CURRENCY CONVERSION
@@ -27,7 +26,7 @@ function convertToUSD(pound) {
 */
 
 function convertToBRL(pound) {
-  let brl = parseFloat((pound/100 * 99 * 5.7).toFixed(2));
+  let brl = parseFloat(((pound / 100) * 99 * 5.7).toFixed(2));
   return brl;
 }
 
@@ -37,7 +36,6 @@ function convertToBRL(pound) {
 //   const amountAfterFee = amountInPounds * (1 - transactionFee);
 //   return amountAfterFee * exchangeRate;
 // } //suggested in 'solutions'
-
 
 // console.log(convertToBRL(10));
 /* ======= TESTS - DO NOT MODIFY ===== 
