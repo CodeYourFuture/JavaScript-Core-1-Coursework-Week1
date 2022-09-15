@@ -10,10 +10,7 @@ console.log(nameLength); // Logs 6
 You can also get a modified version of a string by calling _string methods_. Let's try one:
 
 ```js
-var name = "Daniel";
-var nameLowerCase = name.toLowerCase();
-
-console.log(nameLowerCase); // "daniel"
+"" // "daniel"
 ```
 
 You can find out more about string properties and methods by searching for "JavaScript string methods".
