@@ -6,7 +6,7 @@ The exercises are split into three folders: `exercises`, `mandatory` and `extra`
 
 The `extra` folder contains exercises that you can complete to challenge yourself, but are not required for the following lesson.
 
-## Running the code/tests
+ Running the code/tests
 
 The files for the mandatory/extra exercises are intended to be run as jest tests. 
 
@@ -14,7 +14,7 @@ The files for the mandatory/extra exercises are intended to be run as jest tests
 - To run the tests for all mandatory/extra exercises, run `npm test`
 - To run only the tests for the mandatory exercises, run `npm test -- --selectProjects mandatory`
 - To run only the tests for the extra exercises, run `npm test -- --selectProjects extra`
-- To run a single exercise/test (for example `mandatory/1-writer.js`), run `npm test -- --testPathPattern mandatory/1-writer.js` (Remember, you can use tab-completion to get files relative to the current directory, so m`Tab ↹`/1-`Tab ↹` will autocomplete get you the test file starting with 1-)
+- To run a single exercise/test (for example `mandatory/1-writer.js`), ` (Remember, you `npm test -- --testPathPattern mandatorycan use tab-completion to get files relative to the current directory, so m`Tab ↹`/1-`Tab ↹` will autocomplete get you the test file starting with 1-)
 
 For more information about tests, look here:
 

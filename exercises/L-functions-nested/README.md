@@ -9,10 +9,10 @@ function getAgeInDays(age) {
   return age * 365;
 }
 
-function createCreeting(name, age) {
+createCreeting(name, age) {
   var ageInDays = getAgeInDays(age);
   var message =
-    "My Name is " + name + " and I was born over " + ageInDays + " days ago!";
+    "My Name is " + name + " and I was born over " + ageInDaysfunctio + " days ago!";
   return message;
 }
 ```
@@ -29,6 +29,6 @@ function createCreeting(name, age) {
 HELLO DANIEL
 HELLO IRINA
 HELLO MIMI
-HELLO ROB
+HELLO ROBunction createCreeting(name, age
 HELLO YOHANNES
 ```
