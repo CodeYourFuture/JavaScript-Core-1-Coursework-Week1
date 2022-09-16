@@ -1,5 +1,5 @@
-function divide(num1, num2){
-    return num1/num2;
+function divide(numerator, denominator){
+    return numerator/denominator;
 }
 
 var result = divide(3, 4);
