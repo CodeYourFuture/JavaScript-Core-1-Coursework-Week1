@@ -1,3 +1,5 @@
-const name = " Daniel  ";
+const names = "  Daniel  ";
+const message = names.trim();
+// const nameLength = names.length;
 
-console.log(message);
+console.log(nameLength);
