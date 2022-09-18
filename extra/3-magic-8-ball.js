@@ -45,35 +45,48 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
+
+const veryNegativeAnswers = [
+  "Don't count on it.",
+  'My reply is no.',
+  'My sources say no.',
+  'Outlook not so good.',
+  'Very doubtful.',
+];
+const negativeAnswers = [
+  'Reply hazy, try again.',
+  'Ask again later.',
+  'Better not tell you now.',
+  'Cannot predict now.',
+  'Concentrate and ask again.',
+];
+const positiveAnswers = [
+  'As I see it, yes.',
+  'Most likely.',
+  'Outlook good.',
+  'Yes.',
+  'Signs point to yes.',
+];
+const veryPositiveAnswers = [
+  'You may rely on it',
+  'You may rely on it',
+  'It is decidedly so.',
+  'It is certain.',
+];
+const possibleAnswers = veryNegativeAnswers.concat(
+  negativeAnswers,
+  positiveAnswers,
+  veryPositiveAnswers
+);
+// This should log "The ball has shaken!"
+// and return the answer.
 function shakeBall() {
-  let questions = [
-    'It is certain.',
-    'It is decidedly so.',
-    'Without a doubt.',
-    'Yes - definitely.',
-    'You may rely on it.',
-
-    'As I see it, yes.',
-    'Most likely.',
-    'Outlook good.',
-    'Yes.',
-    'Signs point to yes.',
-
-    'Reply hazy, try again.',
-    'Ask again later.',
-    'Better not tell you now.',
-    'Cannot predict now.',
-    'Concentrate and ask again.',
-
-    "Don't count on it.",
-    'My reply is no.',
-    'My sources say no.',
-    'Outlook not so good.',
-    'Very doubtful.',
-  ] 
-  console.log("The ball has shaken!");
-  return questions[Math.floor(Math.random() * questions.length)];
   //Write your code in here
+  const randomIndex = Math.floor(Math.random() * possibleAnswers.length);
+  const randomAnswer = possibleAnswers[randomIndex];
+  const message = 'The ball has shaken!';
+  console.log(message);
+  return randomAnswer;
 }
 
 /* 
@@ -82,49 +95,14 @@ function shakeBall() {
     - positive
     - negative
     - very negative
-
-
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
-function checkAnswer( answer ) {  
-   let veryPositive = [
-    'It is certain.',
-    'It is decidedly so.',
-    'Without a doubt.',
-    'Yes - definitely.',
-    'You may rely on it.' 
-  ];
-  let positive =[
-    'As I see it, yes.',
-    'Most likely.',
-    'Outlook good.',
-    'Yes.',
-    'Signs point to yes.',
-  ];
-  let negative = [
-    'Reply hazy, try again.',
-    'Ask again later.',
-    'Better not tell you now.',
-    'Cannot predict now.',
-    'Concentrate and ask again.',
-  ];
-  let veryNegative = [
-    "Don't count on it." ,
-    'My reply is no.',
-    'My sources say no.',
-    'Outlook not so good.',
-    'Very doubtful.',
-  ];
-  if( veryPositive.includes( answer )){ 
-    return "very positive";
-  }else if( positive.includes( answer )){
-    return "positive";
-  }else if ( negative.includes( answer )){
-    return "negative";
-  }else if( veryNegative.includes( answer )){
-    return "very negative";
-  }  
-  //Write your code in here
+function checkAnswer(answer) {
+  const answerIndex = possibleAnswers.indexOf(answer);
+  if (answerIndex >= 15) return 'very positive';
+  if (answerIndex >= 10) return 'positive';
+  if (answerIndex >= 5) return 'negative';
+  return 'very negative';
 }
 
 /* 
