@@ -1,16 +1,21 @@
 // Add comments to explain what this function does. You're meant to use Google!
+
 function getRandomNumber() {
   return Math.random() * 10;
+  //random returns with 10 will result in a max value of 9.999 and the lowest value is 0
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
 function combine2Words(word1, word2) {
   return word1.concat(word2);
+  // join word1 to word2 together as a string.
+  //Concatenation is the process of appending one string to the end of another string.
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  return `${firstWord} ${secondWord} ${thirdWord}`;
 }
 
 /* 
