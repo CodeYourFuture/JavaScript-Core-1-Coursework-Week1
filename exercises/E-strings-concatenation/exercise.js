@@ -1,3 +1,7 @@
 // Start by creating a variable `message`
+const startGreeting = "Hello, my name is.";
+const name1 = "Sandra Duarte";
 
-console.log(message);
+
+const creating = startGreeting + name1;
+console.log(creating);

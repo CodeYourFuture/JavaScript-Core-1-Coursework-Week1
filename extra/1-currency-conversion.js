@@ -6,6 +6,9 @@
 */
 
 function convertToUSD() {}
+function convertToUSD(value){
+  return value*1.4;
+}
 
 /*
   CURRENCY CONVERSION
@@ -16,6 +19,11 @@ function convertToUSD() {}
 */
 
 function convertToBRL() {}
+function convertToUSD(value){
+  const convert = value*5.7*0.99;
+  return parseFloat(convert.toFixed(2));
+}
+
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
