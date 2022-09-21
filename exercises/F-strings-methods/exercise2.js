@@ -1,4 +1,15 @@
-const name = " Daniel  ";
+const name1 = "SANDRA";
+console.log(name1.toLowerCase());
 
-console.log(message);
-console.log("My name is" + name.trim() + "and my name is " + nameLength + "characters long.");
+
+const name1Length = name1.length;
+const message = "My Name is "  + "" +name1 + " and my name is " + name1Length  +  " characters long" ;
+
+
+console.log(message.trim())
+
+
+/*console.log(message);
+const message = "Hello";
+
+console.log("My name is" + name1.trim() + "and my name is " + name1Length + "characters long.");*/

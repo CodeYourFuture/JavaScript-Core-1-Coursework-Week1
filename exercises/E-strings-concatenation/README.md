@@ -13,7 +13,7 @@ console.log(greeting); // Logs "Hello, my name is Daniel"
 
 - Write a program that logs a message with a greeting and your name
 
-## Expected result
+## Expected results
 
 ```
 Hello, my name is Daniel
