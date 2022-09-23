@@ -6,8 +6,8 @@
 */
 
 function convertToUSD(money) {
-  let USDExchangeRate = money*5.7*0.99;
-  return USDExchangeRate*1.4;
+  let USDExchangeRate = money * 1.4;
+  return USDExchangeRate;
 }
 
 /*
@@ -19,7 +19,7 @@ function convertToUSD(money) {
 */
 
 function convertToBRL(money) {
-  let BRLExchangeRate = money*5.7*0.99;
+  let BRLExchangeRate = money * 5.7 * 0.99;
   return parseFloat(BRLExchangeRate.toFixed(2));
 }
 

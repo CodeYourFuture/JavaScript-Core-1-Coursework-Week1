@@ -17,17 +17,17 @@
 */
 
 function add(num1, num2) {
-  let addNumber = num1+num2;
+  let addNumber = num1 + num2;
   return addNumber;
 }
 
 function multiply(num1, num2) {
-  let multiplyNumber=num1*num2;
+  let multiplyNumber = num1 * num2;
   return multiplyNumber;
 }
 
 function format(value) {
-  let formatNumber="£"+value
+  let formatNumber = "£" + value;
   return formatNumber;
 }
 
@@ -41,19 +41,17 @@ let badCode = addAndFormated1(startingValue);
 function addAndFormated1(value) {
   soma = value + 10;
   total = soma * 2;
-  formated = "£" +total;
+  formated = "£" + total;
   return formated;
 }
-
 
 /* BETTER PRACTICE */
 //I called all function
 let goodCode = addAndFormated2(startingValue);
 
-
 function addAndFormated2(value) {
-  let sum = add(value,10);
-  let total = multiply(sum,2);
+  let sum = add(value, 10);
+  let total = multiply(sum, 2);
   let formated = format(total);
   return formated;
 }

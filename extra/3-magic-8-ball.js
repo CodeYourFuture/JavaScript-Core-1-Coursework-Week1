@@ -43,49 +43,65 @@
     Very doubtful.
 */
 
+const possibleResults = [
+  "very positive",
+  "positive",
+  "negative",
+  "very Negative",
+];
 
-const possibleResults = ["very positive","positive","negative","very Negative"];
-
-
-const veryPositiveAnswer = ["It is certain.", "It is decidedly so.", "Without a doubt.","Yes - definitely.","You may rely on it."];
-const positiveAnswer = ["As I see it, yes.", "Most likely.", "Outlook good.", "Yes.", "Signs point to yes."];
-const negativeAnswer = ["Reply hazy, try again.", "Ask again later.", "Better not tell you now.", "Cannot predict now.", "Concentrate and ask again."];
-const veryNegativeAnswer = ["Don't count on it.", "My reply is no.", "My sources say no.", "Outlook not so good.", "Very doubtful."];
-
+const veryPositiveAnswer = [
+  "It is certain.",
+  "It is decidedly so.",
+  "Without a doubt.",
+  "Yes - definitely.",
+  "You may rely on it.",
+];
+const positiveAnswer = [
+  "As I see it, yes.",
+  "Most likely.",
+  "Outlook good.",
+  "Yes.",
+  "Signs point to yes.",
+];
+const negativeAnswer = [
+  "Reply hazy, try again.",
+  "Ask again later.",
+  "Better not tell you now.",
+  "Cannot predict now.",
+  "Concentrate and ask again.",
+];
+const veryNegativeAnswer = [
+  "Don't count on it.",
+  "My reply is no.",
+  "My sources say no.",
+  "Outlook not so good.",
+  "Very doubtful.",
+];
 
 // This should log "The ball has shaken!"
 // and return the answer.
 
-
-
-
 function shakeBall() {
-  
+  var possibleAnswerResult = Math.floor(Math.random() * 4);
 
-    var possibleAnswerResult = Math.floor(Math.random() * 4);
-
-    var levelsAnswer = Math.floor(Math.random() * 5);
+  var levelsAnswer = Math.floor(Math.random() * 5);
 
   console.log("The ball has shaken!");
 
-    if(possibleAnswerResult == 0) {
-        //console.log(veryPositiveAnswer[levelsAnswer]);
-        return veryPositiveAnswer[levelsAnswer];
-
-    } else if (possibleAnswerResult == 1) {
-        //console.log(positiveAnswer[levelsAnswer]);
-        return positiveAnswer[levelsAnswer];
-
-    } else if (possibleAnswerResult == 2) {
-        //console.log(negativeAnswer[levelsAnswer]);
-        return negativeAnswer[levelsAnswer];
-
-    } else if (possibleAnswerResult == 3) {
-        //console.log(veryNegativeAnswer[levelsAnswer]);
-        return veryNegativeAnswer[levelsAnswer];
-
-    }
-
+  if (possibleAnswerResult == 0) {
+    //console.log(veryPositiveAnswer[levelsAnswer]);
+    return veryPositiveAnswer[levelsAnswer];
+  } else if (possibleAnswerResult == 1) {
+    //console.log(positiveAnswer[levelsAnswer]);
+    return positiveAnswer[levelsAnswer];
+  } else if (possibleAnswerResult == 2) {
+    //console.log(negativeAnswer[levelsAnswer]);
+    return negativeAnswer[levelsAnswer];
+  } else if (possibleAnswerResult == 3) {
+    //console.log(veryNegativeAnswer[levelsAnswer]);
+    return veryNegativeAnswer[levelsAnswer];
+  }
 
   //Write your code in here
 }
@@ -103,18 +119,40 @@ function checkAnswer(answer) {
   //Write your code in here
 
   //console.log(answer);
-  if (answer=="It is certain."||answer=="It is decidedly so."||answer== "Without a doubt."||answer=="Yes - definitely."||answer=="You may rely on it."){
+  if (
+    answer == "It is certain." ||
+    answer == "It is decidedly so." ||
+    answer == "Without a doubt." ||
+    answer == "Yes - definitely." ||
+    answer == "You may rely on it."
+  ) {
     return "very positive";
-  } else if (answer == "As I see it, yes."||answer == "Most likely."||answer == "Outlook good."||answer ==  "Yes."||answer ==  "Signs point to yes."){
+  } else if (
+    answer == "As I see it, yes." ||
+    answer == "Most likely." ||
+    answer == "Outlook good." ||
+    answer == "Yes." ||
+    answer == "Signs point to yes."
+  ) {
     return "positive";
-  }else if (answer == "Reply hazy, try again."||answer == "Ask again later."||answer == "Better not tell you now."||answer == "Cannot predict now."||answer == "Concentrate and ask again."){
+  } else if (
+    answer == "Reply hazy, try again." ||
+    answer == "Ask again later." ||
+    answer == "Better not tell you now." ||
+    answer == "Cannot predict now." ||
+    answer == "Concentrate and ask again."
+  ) {
     return "negative";
-  }else if (answer == "Don't count on it."||answer ==  "My reply is no."||answer ==  "My sources say no."||answer ==  "Outlook not so good."||answer ==  "Very doubtful."){
+  } else if (
+    answer == "Don't count on it." ||
+    answer == "My reply is no." ||
+    answer == "My sources say no." ||
+    answer == "Outlook not so good." ||
+    answer == "Very doubtful."
+  ) {
     return "very negative";
   }
-  
 }
-
 
 /* 
 ==================================
@@ -155,7 +193,9 @@ test("magic 8 ball returns different values each time", () => {
     );
   }
 
-  let seenPositivities = new Set(Array.from(seenAnswers.values()).map(checkAnswer));
+  let seenPositivities = new Set(
+    Array.from(seenAnswers.values()).map(checkAnswer)
+  );
   if (seenPositivities.size < 2) {
     throw Error(
       "Expected to random answers with different positivities each time shakeBall was called, but always got the same one"
