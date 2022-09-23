@@ -16,26 +16,45 @@
   the final result to the variable goodCode
 */
 
-function add() {
-
+function add(num1, num2) {
+  let addNumber = num1 + num2;
+  return addNumber;
 }
 
-function multiply() {
-
+function multiply(num1, num2) {
+  let multiplyNumber = num1 * num2;
+  return multiplyNumber;
 }
 
-function format() {
-
+function format(value) {
+  let formatNumber = "£" + value;
+  return formatNumber;
 }
 
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =
+//I didn't call the functions, I put all functionality in one code
+
+let badCode = addAndFormated1(startingValue);
+
+function addAndFormated1(value) {
+  soma = value + 10;
+  total = soma * 2;
+  formated = "£" + total;
+  return formated;
+}
 
 /* BETTER PRACTICE */
+//I called all function
+let goodCode = addAndFormated2(startingValue);
 
-let goodCode =
+function addAndFormated2(value) {
+  let sum = add(value, 10);
+  let total = multiply(sum, 2);
+  let formated = format(total);
+  return formated;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
