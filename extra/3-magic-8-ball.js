@@ -1,40 +1,34 @@
+const matchers = require('jest-extended');
+expect.extend(matchers);
 /**
-
   Let's peer into the future using a Magic 8 Ball!
   https://en.wikipedia.org/wiki/Magic_8-Ball 
-
   There are a few steps to being able view the future though:
   * Ask a question
   * Shake the ball
   * Get an answer
   * Decide if it's positive or negative
-
   The question can be anything, but the answers are fixed,
   and have different levels of positivity or negativity.
-
   Below are the possible answers:
-
-  ## Very positive
+  ## Very positive
     It is certain.
     It is decidedly so.
     Without a doubt.
     Yes - definitely.
     You may rely on it.
-
   ## Positive
     As I see it, yes.
     Most likely.
     Outlook good.
     Yes.
     Signs point to yes.
-
   ## Negative
     Reply hazy, try again.
     Ask again later.
     Better not tell you now.
     Cannot predict now.
     Concentrate and ask again.
-
   ## Very negative
     Don't count on it.
     My reply is no.
@@ -42,59 +36,55 @@
     Outlook not so good.
     Very doubtful.
 */
+const veryPositive = {
+	0: 'It is certain.',
+	1: 'It is decidedly so.',
+	2: 'Without a doubt.',
+	3: 'Yes - definitely.',
+	4: 'You may rely on it.',
+};
 
-let answers = {
-	veryPositive: [
-		'It is certain.',
-		'It is decidedly so.',
-		'Without a doubt.',
-		'Yes - definitely.',
-		'You may rely on it.',
-	],
-	positive: [
-		'As I see it, yes.',
-		'Most likely.',
-		'Outlook good.',
-		'Yes.',
-		'Signs point to yes.',
-	],
+const positive = {
+	5: 'As I see it, yes.',
+	6: 'Most likely.',
+	7: 'Outlook good.',
+	8: 'Yes.',
+	9: 'Signs point to yes.',
+};
 
-	negative: [
-		'Reply hazy, try again.',
-		'Ask again later.',
-		'Better not tell you now.',
-		'Cannot predict now.',
-		'Concentrate and ask again.',
-	],
-	veryNegative: [
-		"Don't count on it.",
-		'My reply is no.',
-		'My sources say no.',
-		'Outlook not so good.',
-		'Very doubtful.',
-	],
+const negative = {
+	10: 'Reply hazy, try again.',
+	11: 'Ask again later.',
+	12: 'Better not tell you now.',
+	13: 'Cannot predict now.',
+	14: 'Concentrate and ask again.',
+};
+
+const veryNegative = {
+	15: "Don't count on it.",
+	16: 'My reply is no.',
+	17: 'My sources say no.',
+	18: 'Outlook not so good.',
+	19: 'Very doubtful.',
+};
+
+const answerList = {
+	...veryPositive,
+	...positive,
+	...negative,
+	...veryNegative,
+	call() {
+		return this[Math.floor(Math.random() * 19)];
+	},
 };
 
 // This should log "The ball has shaken!"
 // and return the answer.
-
-
 function shakeBall() {
 	//Write your code in here
-	let positivity = Math.floor(Math.random() * 4); // random number between 0 and 4 - the possible outcomes for veryPositive - veryNegative
-	let possibleAnswers = Math.floor(Math.random() * 5); // random number between 0 and 5 - the possible outcomes for each possible answer from the arrays veryPositive - veryNegative
 	console.log('The ball has shaken!');
-	if (positivity === 0) {
-		return answers.veryPositive[possibleAnswers];
-	} else if (positivity === 1) {
-		return answers.positive[possibleAnswers];
-	} else if (positivity === 2) {
-		return answers.negative[possibleAnswers];
-	} else if (positivity === 3) {
-		return answers.veryNegative[possibleAnswers];
-	}
+	return answerList.call();
 }
-
 
 /* 
   This function should say whether the answer it is given is
@@ -102,28 +92,28 @@ function shakeBall() {
     - positive
     - negative
     - very negative
-
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
+
 function checkAnswer(answer) {
 	//Write your code in here
-	 if (answers.veryPositive.includes(answer)) {
-			return 'very positive';
-		} else if (answers.positive.includes(answer)) {
-			return 'positive';
-		} else if (answers.negative.includes(answer)) {
-			return 'negative';
-		} else if (answers.veryNegative.includes(answer)) {
-			return 'very negative';
-		}
+	if (Object.values(veryPositive).indexOf(answer) > -1) {
+		return 'very positive';
+	} else if (Object.values(positive).indexOf(answer) > -1) {
+		return 'positive';
+	} else if (Object.values(negative).indexOf(answer) > -1) {
+		return 'negative';
+	} else {
+		return 'very negative';
+	}
 }
+
+checkAnswer(shakeBall());
 
 /* 
 ==================================
 ======= TESTS - DO NOT MODIFY =====
-
 There are some Tests in this file that will help you work out if your code is working.
-
 To run the tests for just this one file, type `npm test -- --testPathPattern 3-magic-8-ball` into your terminal
 (Reminder: You must have run `npm install` one time before this will work!)
 ==================================
