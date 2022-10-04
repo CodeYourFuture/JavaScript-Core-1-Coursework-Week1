@@ -1,17 +1,23 @@
 // There are syntax errors in this code - can you fix it to pass the tests?
 
-function addNumbers(a b c) {
-  return a + b + c;
+function addNumbers(a, b, c) {
+	return a + b + c;
+}
+// console.log(addNumbers(3, 4, 6));
+
+function introduceMe(name, age) {
+	return 'Hello, my name is ' + name + ' and I am ' + age + ' years old';
 }
 
-function introduceMe(name, age)
-  return "Hello, my name is " + name "and I am " age + "years old";
+// console.log(introduceMe('Sonjide', 27));
 
 function getTotal(a, b) {
-  total = a ++ b;
+	total = a + b;
 
-  return "The total is total";
+	return 'The total is ' + total;
 }
+
+// console.log(getTotal(23, 5));
 
 /* 
 ===================================================
@@ -25,16 +31,16 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 1-s
 ===================================================
 */
 
-test("addNumbers adds numbers correctly", () => {
-  expect(addNumbers(3, 4, 6)).toEqual(13);
+test('addNumbers adds numbers correctly', () => {
+	expect(addNumbers(3, 4, 6)).toEqual(13);
 });
 
-test("introduceMe function returns the correct string", () => {
-  expect(introduceMe("Sonjide", 27)).toEqual(
-    "Hello, my name is Sonjide and I am 27 years old"
-  );
+test('introduceMe function returns the correct string', () => {
+	expect(introduceMe('Sonjide', 27)).toEqual(
+		'Hello, my name is Sonjide and I am 27 years old',
+	);
 });
 
-test("getTotal returns a string describing the total", () => {
-  expect(getTotal(23, 5)).toEqual("The total is 28");
+test('getTotal returns a string describing the total', () => {
+	expect(getTotal(23, 5)).toEqual('The total is 28');
 });
