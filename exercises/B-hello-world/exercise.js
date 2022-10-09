@@ -1,1 +1,10 @@
-console.log("Hello world");
+console.log("English: Hello world");
+console.log("French: Bonjour le monde");
+console.log("Spanish: Hola Mundo");
+console.log("German: Hallo Welt");
+console.log("Italian: Ciao mondo");
+console.log("Portuguese: Olá Mundo");
+console.log("Dutch: Hallo Wereld");
+console.log("Polish: Witaj świecie");
+console.log("Ukranian: Привіт Світ");
+console.log("Thai: สวัสดีชาวโลก");
