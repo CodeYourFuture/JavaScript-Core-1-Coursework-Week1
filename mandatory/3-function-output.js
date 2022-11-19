@@ -7,6 +7,7 @@
 function getRandomNumber() {
   return Math.random() * 10;
 }
+// math.round will round a given number to the nearest integer.
 
 // Add comments to explain what this function does. You're meant to use Google!
 // this is concatenate two string together which are been passed to the function

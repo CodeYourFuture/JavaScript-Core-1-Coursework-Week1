@@ -11,7 +11,7 @@ function getStringLength(word) {
 console.log(getStringLength("door"))
 
 function multiply(a, b, c) {
-  return  a*b*ccd;
+  return  a*b*c;
  
 }
 
