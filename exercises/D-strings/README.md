@@ -20,6 +20,9 @@ console.log(messageType); // logs 'string'
 ## Exercise
 
 - Write a program that logs a message and its type
+var messageType = typeOf 23;
+console.log(messageType);
+
 
 ## Expected result
 

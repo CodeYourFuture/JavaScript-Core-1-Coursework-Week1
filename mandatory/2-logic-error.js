@@ -1,17 +1,27 @@
 // The syntax for this function is valid but it has an error, find it and fix it.
-
 function trimWord(word) {
-  return wordtrim();
+  return word.trim();
 }
+console.log(trimWord("greet "));
 
 function getStringLength(word) {
-  return "word".length();
+  return word.length;
 }
 
+console.log(getStringLength("door"))
+
 function multiply(a, b, c) {
-  a * b * c;
-  return;
+  return  a*b*c;
+ 
 }
+
+console.log(multiply(2,3,4));
+
+
+let number = multiply(3,3,3);
+
+
+console.log(number)
 
 /* 
 ===================================================
@@ -19,7 +29,8 @@ function multiply(a, b, c) {
 
 There are some Tests in this file that will help you work out if your code is working.
 
-To run the tests for just this one file, type `npm test -- --testPathPattern 2-logic-error` into your terminal
+To run the tests for just this one file, type `npm test -- --
+testPathPattern 2-logic-error` into your terminal
 (Reminder: You must have run `npm install` one time before this will work!)
 ===================================================
 */
