@@ -4,9 +4,29 @@
   A business requires a program that calculates how much the price of a product is including sales tax
   Sales tax is 20% of the price of the product.
 */
+/* 
+// function does decimaal conversion and tax
+function calculateSalesTax(price) {
+  //convert number to decimall place twin
+  let newPrice = price.toFixed(2);
+  //convert numb form string back to numb
+  let usePrice = newPrice * 1;
+  console.log(typeof usePrice);
+  console.log(usePrice);
+  let taxPrice = usePrice * 1.2;
+  let showPrice = taxPrice.toFixed(2);
+  console.log(showPrice);
+  return `£ ${showPrice}`;
+}
+calculateSalesTax(15);
+*/
 
-function calculateSalesTax() {}
-
+function calculateSalesTax(price) {
+  let taxPrice = price * 1.2;
+  console.log(taxPrice);
+  return taxPrice;
+}
+calculateSalesTax(34);
 /*
   CURRENCY FORMATTING
   ===================
@@ -17,8 +37,14 @@ function calculateSalesTax() {}
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency() {}
+function addTaxAndFormatCurrency(price_tax) {
+  let newPrice = calculateSalesTax(price_tax);
+  let showPrice = newPrice.toFixed(2);
+  console.log(showPrice);
+  return `£${showPrice}`;
+}
 
+addTaxAndFormatCurrency(17.5);
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
