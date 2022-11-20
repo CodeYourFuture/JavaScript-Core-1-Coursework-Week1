@@ -1,3 +1,7 @@
 // Start by creating a variable `message`
 
-console.log(message);
+var message = "I am a trainer in CYF";
+var messageType = typeof message;
+console.log(messageType); 
+
+
