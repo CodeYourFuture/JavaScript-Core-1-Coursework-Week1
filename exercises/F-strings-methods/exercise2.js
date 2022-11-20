@@ -1,3 +1,8 @@
-const name = " Daniel  ";
+const personName = ' Daniel  '
 
-console.log(message);
+console.log(personName)
+console.log(
+  `My name is ${personName.trim()} and my name is ${
+    personName.trim().length
+  } characters long`
+)

@@ -1,3 +1,3 @@
 // Start by creating a variable `message`
-
-console.log(message);
+let message = 'This is a string\nstring'
+console.log(message)
