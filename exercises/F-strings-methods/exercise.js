@@ -1,3 +1,5 @@
 // Start by creating a variable `message`
+// Log a message that includes the length of your name
 
-console.log(message);
+let message = "Javascript";
+console.log(message.length);
