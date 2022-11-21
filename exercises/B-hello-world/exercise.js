@@ -7,3 +7,4 @@ console.log("I am learning JS");
 // // - What happens when you console.log() just a number without quotes?  
 //     console.log(9);
 //         = it works
+
