@@ -1,3 +1,8 @@
+// import jest extended matchers
+const jestExtended = require("jest-extended");
+// extend the existing jest class with the jest-extended matchers
+expect.extend(jestExtended);
+
 /**
 
   Let's peer into the future using a Magic 8 Ball!
@@ -46,7 +51,19 @@
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
-  //Write your code in here
+  
+  const possibleAnswers = {
+    veryPositive: ["It is certain.", "It is decidedly so.", "Without a doubt.", "Yes - definitely.", "You may rely on it."],
+    positive: ["As I see it, yes.", "Most likely.", "Outlook good.", "Yes.", "Signs point to yes."],
+    negative: ["Reply hazy, try again.", "Ask again later.", "Better not tell you now.", "Cannot predict now.", "Concentrate and ask again."],
+    veryNegative: ["Don't count on it.", "My reply is no.", "My sources say no.", "Outlook not so good.", "Very doubtful."]
+  };
+
+  const randomAnswer = possibleAnswers[Object.keys(possibleAnswers)[Math.floor(Math.random() * 4)]][Math.floor(Math.random() * 5)];
+
+  console.log("The ball has shaken!");
+  return randomAnswer;
+
 }
 
 /* 
@@ -59,8 +76,37 @@ function shakeBall() {
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
-  //Write your code in here
+
+  const possibleAnswers = {
+    veryPositive: ["It is certain.", "It is decidedly so.", "Without a doubt.", "Yes - definitely.", "You may rely on it."],
+    positive: ["As I see it, yes.", "Most likely.", "Outlook good.", "Yes.", "Signs point to yes."],
+    negative: ["Reply hazy, try again.", "Ask again later.", "Better not tell you now.", "Cannot predict now.", "Concentrate and ask again."],
+    veryNegative: ["Don't count on it.", "My reply is no.", "My sources say no.", "Outlook not so good.", "Very doubtful."]
+  };
+
+  for (let category in possibleAnswers) {
+    if (possibleAnswers[category].indexOf(answer) > -1) {
+      return category
+        // fix camelCase and no space between words, to allow it to be used as the return string
+        .split("")
+        .map((element) => element === element.toUpperCase() ? ` ${element}` : element)
+        .join("")
+        .toLowerCase();
+    }
+  };
+
 }
+
+// const answer = shakeBall();
+// console.log(answer);
+// console.log(typeof answer);
+// console.log(checkAnswer(answer));
+// console.log(checkAnswer(answer).length);
+// console.log(typeof checkAnswer(answer));
+
+// ^^ JEST-EXTENDED TO-BE-ONE-OF ISSUE
+// IT DOES RETURN A STRING, AND THE LENGTH IS CORRECT, AND IT MATCHES ONE OF THE 4 ELEMENTS IN THE TEST ARRAY
+// THERE IS SOME OTHER ISSUE GOING ON
 
 /* 
 ==================================

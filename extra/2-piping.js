@@ -16,26 +16,56 @@
   the final result to the variable goodCode
 */
 
-function add() {
+// function add() {
 
+// }
+
+function add(numberOne, numberTwo) {
+  return numberOne + numberTwo;
 }
 
-function multiply() {
+// const add = (numberOne, numberTwo) => numberOne + numberTwo;
 
+// function multiply() {
+
+// }
+
+function multiply(numberOne, numberTwo) {
+  return numberOne * numberTwo;
 }
 
-function format() {
+// const multiply = (numberOne, numberTwo) => numberOne * numberTwo;
 
+// function format() {
+
+// }
+
+function format(number) {
+  return `£${number}`
 }
+
+// const format = (number) => `£${number}`
 
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =
+let badCode = format(multiply(add(startingValue, 10), 2));
+// this is calling 3 functions 2 of which are nested, its bad practice because its unreadable(?) and not easy to maintain(?)
+
+console.log(badCode);
+// £24
 
 /* BETTER PRACTICE */
 
-let goodCode =
+const pipe = (functionOne, functionTwo, functionThree) => (functionOneParameterOne, functionOneParameterTwo, functionTwoParameterTwo) => functionThree(functionTwo(functionOne(functionOneParameterOne, functionOneParameterTwo), functionTwoParameterTwo));
+let goodCode = pipe(add, multiply, format)(startingValue, 10, 2);
+// i don't neccessarily agree that pipe/piping is good code...
+
+console.log(goodCode);
+// £24
+
+// I researched pipe/piping/compose/composing ...but all the examples use only a single parameter per function... unsure how to handle second parameters.
+
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
