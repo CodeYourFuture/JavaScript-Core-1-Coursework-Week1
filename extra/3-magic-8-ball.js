@@ -1,3 +1,8 @@
+// import jest extended matchers
+const jestExtended = require("jest-extended");
+// extend the existing jest class with the jest-extended matchers
+expect.extend(jestExtended);
+
 /**
 
   Let's peer into the future using a Magic 8 Ball!
@@ -61,7 +66,6 @@ function shakeBall() {
 
 }
 
-
 /* 
   This function should say whether the answer it is given is
     - very positive
@@ -100,8 +104,9 @@ function checkAnswer(answer) {
 // console.log(checkAnswer(answer).length);
 // console.log(typeof checkAnswer(answer));
 
-// JEST-EXTENDED TO-BE-ONE-OF 
-// IT DOES RETURN A STRING, AND THE LENGTH IS CORRECT, AND IT MATCHES ONE OF THE 4 ELEMENTS IN THE TEST ARRAY???
+// ^^ JEST-EXTENDED TO-BE-ONE-OF ISSUE
+// IT DOES RETURN A STRING, AND THE LENGTH IS CORRECT, AND IT MATCHES ONE OF THE 4 ELEMENTS IN THE TEST ARRAY
+// THERE IS SOME OTHER ISSUE GOING ON
 
 /* 
 ==================================
