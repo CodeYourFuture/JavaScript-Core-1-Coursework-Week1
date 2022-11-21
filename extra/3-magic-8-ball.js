@@ -43,8 +43,7 @@
     Very doubtful.
 */
 
-// This should log "The ball has shaken!"
-// and return the answer.
+const { toBeOneOf } = require("jest-extended");
 
 const veryPositiveAnswers = [
   "It is certain.",
@@ -94,8 +93,8 @@ function shakeBall() {
 
 function returnRandomAnswer() {
   let list = listsOfAnswers[getRandomInt(4)];
-  let answ = list[getRandomInt(5)];
-  return answ;
+  let answer = list[getRandomInt(5)];
+  return answer;
 }
 
 function getRandomInt(max) {
@@ -111,13 +110,10 @@ function getRandomInt(max) {
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(string) {
-  // console.log("answer is " + string);
   for (let i = 0; i < 4; i++) {
     let list = listsOfAnswers[i];
-
     for (let j = 0; j < 5; j++) {
       let answerFromList = list[j];
-
       if (answerFromList === string) {
         if (i === 0) {
           return "very positive";
@@ -132,23 +128,6 @@ function checkAnswer(string) {
     }
   }
 }
-
-// shakeBall();
-// const answer1 = shakeBall();
-// console.log(answer1);
-// let checklist =
-
-// for(let i = 0; i < )
-// if(checkAnswer(answer1 ))
-
-// shakeBall();
-// console.log(checkAnswer(answer));
-// shakeBall();
-// console.log(checkAnswer(answer));
-// shakeBall();
-// console.log(checkAnswer(answer));
-// shakeBall();
-// console.log(checkAnswer(answer));
 
 /* 
 ==================================
@@ -176,18 +155,6 @@ test("whole magic 8 ball sequence", () => {
     "negative",
     "very negative",
   ]);
-
-  // expect("positive").toBeOneOf([
-  //   "very positive",
-  //   "positive",
-  //   "negative",
-  //   "very negative",
-  // ]);
-
-  // expect(checkAnswer(answer)).toEqual(
-  //   "very positive" || "positive" || "negative" || "very negative"
-  // );
-  // expect(checkAnswer(answer)).toEqual("very positive");
 });
 
 test("magic 8 ball returns different values each time", () => {
