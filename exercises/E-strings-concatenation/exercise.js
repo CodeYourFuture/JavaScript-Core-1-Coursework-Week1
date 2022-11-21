@@ -1,3 +1,4 @@
-// Start by creating a variable `message`
-
+let myname="zobeir";
+let text="\t Ypo should try harder";
+let message=myname+text;
 console.log(message);
