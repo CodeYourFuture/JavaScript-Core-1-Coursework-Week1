@@ -3,12 +3,15 @@ function getRandomNumber() {
   return Math.random() * 10;
 }
 
+//by using random it will get a number between 0 and 1 then multiply it in 10.
 // Add comments to explain what this function does. You're meant to use Google!
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
+//concat combine to arrays and make new one. in this example it will add two words together.
 
 function concatenate(firstWord, secondWord, thirdWord) {
+  return firstWord.concat(" ", secondWord).concat(" ", thirdWord);
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
 }
