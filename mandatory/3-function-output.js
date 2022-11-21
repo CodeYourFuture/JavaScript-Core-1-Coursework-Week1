@@ -16,7 +16,7 @@ function concatenate(firstWord, secondWord, thirdWord) {
 }
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
-console.log(concatenate(HAPPY, BIRTH, DAY));
+console.log(concatenate("HAPPY", "BIRTH", "DAY"));
 
 /* 
 ===================================================
