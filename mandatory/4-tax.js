@@ -5,7 +5,10 @@
   Sales tax is 20% of the price of the product.
 */
 
-function calculateSalesTax() {}
+function calculateSalesTax(price) {
+  let tax = (price * 20) / 100;
+  return price + tax;
+}
 
 /*
   CURRENCY FORMATTING
@@ -17,8 +20,21 @@ function calculateSalesTax() {}
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency() {}
-
+function addTaxAndFormatCurrency(price) {
+  //calculating the price with tax
+  let priceIncludingTax = calculateSalesTax(price);
+  //writing a function to find out if a number has number after dot, if yes => how many numbers
+  let countDecimals = (number) =>
+    Math.floor(number) !== number ? number.toString().split(".")[1].length : 0;
+  //finding out amount of numbers after dot
+  let amountOfDecimals = countDecimals(priceIncludingTax);
+  //returning the result
+  return amountOfDecimals === 0
+    ? `£${priceIncludingTax}.00`
+    : amountOfDecimals === 1
+    ? `£${priceIncludingTax}0`
+    : `£${priceIncludingTax}`;
+}
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
