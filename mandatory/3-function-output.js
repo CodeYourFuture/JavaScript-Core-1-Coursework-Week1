@@ -1,16 +1,20 @@
 // Add comments to explain what this function does. You're meant to use Google!
 function getRandomNumber() {
   return Math.random() * 10;
+  // Math.random() method returns a random floating-point number between 0.0 and 1.0.
+  // This can be used to generate random number.
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
 function combine2Words(word1, word2) {
   return word1.concat(word2);
+  // .concat() method returns a string containing all the string values in a node-set concatenated together.
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+   return firstWord +' ' + secondWord +' ' + thirdWord
 }
 
 /* 
