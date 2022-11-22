@@ -8,3 +8,5 @@ console.log("The computer stops reading my code once it gets to the last tested 
 
 console.log(98797);
 console.log("Number prints without quote marks but words wont.");
+console.log("what happens if I break the line and carry on coding on a new line?");
+console.log("The computer thinks its a new command...returned error");
