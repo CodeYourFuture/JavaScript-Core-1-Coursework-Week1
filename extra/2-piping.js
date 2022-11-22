@@ -30,7 +30,7 @@ function format(number) {
 
 const startingValue = 2;
 
-// Why can this code be seen as bad practice? Comment your answer.
+// Why can this code be seen as bad practice? Comment your answer.//there is lots of function in one line which makes hard to understands for someone who read the codes
 let badCode = format(multiply(add(startingValue, 10), 2));
 
 /* BETTER PRACTICE */
@@ -39,7 +39,7 @@ function giveNewValueTo(startingValue) {
   let multiplication = multiply(sum, 2);
   return format(multiplication);
 }
-let goodCode = giveNewValueTo(startingValue);
+let goodCode = giveNewValueTo(startingValue); // i made new function which put inside it what function are need , i think it is easier to read
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
