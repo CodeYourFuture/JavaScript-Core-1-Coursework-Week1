@@ -1,3 +1,5 @@
-const name = " Daniel  ";
+const myName = " Daniel  ";
 
-console.log(message);
+
+console.log(`Hi I am ${myName.trim()} and my name has ${myName.length} letters`)
+
