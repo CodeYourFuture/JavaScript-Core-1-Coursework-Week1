@@ -3,6 +3,7 @@ It is programming tradition that the first thing you do in any language is make 
 We'll do this in JavaScript, using something called `console.log()`.
 
 Inside of `exercise.js` there's a line of code that will print "Hello world!".
+console.log("Hello world!");
 
 ### 1. Run the program
 
@@ -16,3 +17,7 @@ Inside of `exercise.js` there's a line of code that will print "Hello world!".
 - Try to console.log() several things at once.
 - What happens when you get rid of the quote marks?
 - What happens when you console.log() just a number without quotes?
+
+
+
+
