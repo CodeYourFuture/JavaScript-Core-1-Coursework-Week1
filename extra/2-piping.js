@@ -21,7 +21,7 @@ function add(a,b) {
 }
 
 function multiply(a,b) {
-   return  parseFloat(a)* parseFloat(b)
+   return  parseFloat(a)* parseFloat( b)
 }
 
 function format(a) {
@@ -31,11 +31,11 @@ function format(a) {
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode = "£24";
+let badCode = format(multiply(add(startingValue, 10), 2));
 
 /* BETTER PRACTICE */
 
-let goodCode = "£24";
+let goodCode = format((startingValue + 10) * 2)
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
