@@ -47,8 +47,9 @@
 // and return the answer.
 function shakeBall() {
   //Write your code in here
+  return ("The ball has shaken!");
 }
-
+console.log(shakeBall)
 /* 
   This function should say whether the answer it is given is
     - very positive
