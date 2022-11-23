@@ -1,24 +1,22 @@
 // The syntax for this function is valid but it has an error, find it and fix it.
 
 function trimWord(word) {
-  return (word.trim());
+  return word.trim();
 }
-let x = trimWord(" elahe");
-console.log(x);
 
 
 
 function getStringLength(word) {
- console.log(word.length);
+ return word.length;
 }
-getStringLength("hello"); 
+
 
 
 
 function multiply(a, b, c) {
- return (a * b * c);
+ return a * b * c;
 }
-console.log(multiply(1, 3, 4));
+
   
 
 
