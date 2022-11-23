@@ -18,7 +18,7 @@ return price*1.4;
 */
 
 function convertToBRL(priceinpounds) {
-  return ((priceinpounds-(priceinpounds/100))*5.7).toFixed(2);
+  return Number((priceinpounds*0.99*5.7).toFixed(2));
 
 }
 
