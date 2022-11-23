@@ -1,9 +1,10 @@
-// Complete the function so that it takes input parameters
-function multiply() {
-  // Calculate the result of the function and return it
+function logGreeting(name) {
+  let captalizedName = name.toUpperCase();
+  return "HELLO " + captalizedName;
 }
 
-// Assign the result of calling the function the variable `result`
-var result = multiply(3, 4);
-
-console.log(result);
+console.log(logGreeting("Daniel"));
+console.log(logGreeting("Irina"));
+console.log(logGreeting("Mimi"));
+console.log(logGreeting("Rob"));
+console.log(logGreeting("Yohannes"));
