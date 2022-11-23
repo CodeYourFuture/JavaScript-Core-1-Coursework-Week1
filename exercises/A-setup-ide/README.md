@@ -8,6 +8,6 @@ There are some tools that will help you to write code. One of these, [Prettier](
 
 ### 2. Enable formatting on save
 
-- In Visual Studio open the settings file (see https://code.visualstudio.com/docs/getstarted/settings#_creating-user-and-workspace-settings)
+- In Visual Studio open the settings file (see  )
 - Search for `editor format`
 - Set `editor.formatOnSave` and `editor.formatOnPaste` to true
