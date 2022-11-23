@@ -26,7 +26,7 @@ function addTaxAndFormatCurrency(num) {
   
 }
 
-           
+  //  function completed        
 
 
 
