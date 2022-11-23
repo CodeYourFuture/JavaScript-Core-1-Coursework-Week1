@@ -17,6 +17,13 @@ var percentageStudents = 100*numberOfStudents/sum
 var percentageMentors = 100*numberOfMentors/sum
 var roundStudents = Math.round(percentageStudents);
 var roundMentors = Math.round(percentageMentors);
-//result 
+
 console.log("Percentage mentors: " + roundMentors + " %.");
 console.log("Percentage students: " + roundStudents + " %.");
+//     Result 
+//     31
+//    Number of students: 15
+//    Number of mentors: 8
+//    Total number of students and mentors: 23
+//    Percentage mentors: 35 %.
+//    Percentage students: 65 %.
