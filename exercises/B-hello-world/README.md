@@ -19,4 +19,4 @@ Inside of `exercise.js` there's a line of code that will print "Hello world!".
   I received a syntax error.
 
 - What happens when you console.log() just a number without quotes?
-  It works without error.
+  It prints the number without any error.
