@@ -2,16 +2,21 @@
 function getRandomNumber() {
   return Math.random() * 10;
 }
+// MATH.RANDOM : to find a random number between 0 to 1. so tofind a number between 0 to 100 we need to multiple it to 100.
 
 // Add comments to explain what this function does. You're meant to use Google!
 function combine2Words(word1, word2) {
   return word1.concat(word2);
-}
+} 
+// CONCAT: to mix arrays together we can use concat. the other way is spread operator.
 
 function concatenate(firstWord, secondWord, thirdWord) {
+  return `${firstWord} ${secondWord} ${thirdWord}`;
+
+}
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
-}
+
 
 /* 
 ===================================================
