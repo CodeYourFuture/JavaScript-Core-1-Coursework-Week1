@@ -7,6 +7,9 @@
 
 function calculateSalesTax() {}
 
+function calculateSalesTax(productPrice) {
+return productPrice + (0.2 * productPrice)
+}
 /*
   CURRENCY FORMATTING
   ===================
@@ -18,6 +21,10 @@ function calculateSalesTax() {}
 */
 
 function addTaxAndFormatCurrency() {}
+function addTaxAndFormatCurrency(productPrice) {
+
+  return "£"+(calculateSalesTax(productPrice)).toFixed(2) 
+}
 
 /* 
 ===================================================
