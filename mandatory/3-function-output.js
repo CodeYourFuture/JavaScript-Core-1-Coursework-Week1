@@ -11,6 +11,7 @@ function combine2Words(word1, word2) {
 // CONCAT: to mix arrays together we can use concat. the other way is spread operator.
 
 function concatenate(firstWord, secondWord, thirdWord) {
+  return `${firstWord} ${secondWord} ${thirdWord}`;
 
 }
   // Write the body of this function to concatenate three words together.

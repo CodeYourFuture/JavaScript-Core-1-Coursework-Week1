@@ -14,7 +14,8 @@ function getStringLength(word) {
 
 
 function multiply(a, b, c) {
- return a * b * c;
+  let result = a * b * c;
+ return result;
 }
 
   
