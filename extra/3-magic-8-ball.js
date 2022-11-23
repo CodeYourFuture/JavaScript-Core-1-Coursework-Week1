@@ -45,8 +45,16 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
+let answer="";
 function shakeBall() {
   //Write your code in here
+  
+  const answers= [["It is certain.", "It is decidedly so.", "Without a doubt.", "Yes - definitely.", "You may rely on it."],
+     ["As I see it, yes.", "Most likely.", "Outlook good.", "Yes.", "Signs point to yes."],
+     ["Reply hazy, try again.", "Ask again later.", "Better not tell you now.", "Cannot predict now.", "Concentrate and ask again."],
+     ["Don't count on it.", "My reply is no.", "My sources say no.", "Outlook not so good.", "Very doubtful."]];
+  console.log("The ball has shaken!") ;  
+  return  answer = answers[Math.floor(Math.random() * 4)][Math.floor(Math.random() * 5)];
 }
 
 /* 
@@ -60,7 +68,51 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
+  const answers= [["It is certain.", "It is decidedly so.", "Without a doubt.", "Yes - definitely.", "You may rely on it."],
+     ["As I see it, yes.", "Most likely.", "Outlook good.", "Yes.", "Signs point to yes."],
+     ["Reply hazy, try again.", "Ask again later.", "Better not tell you now.", "Cannot predict now.", "Concentrate and ask again."],
+     ["Don't count on it.", "My reply is no.", "My sources say no.", "Outlook not so good.", "Very doubtful."]];
+
+  for (let i=0;i<4;i++){
+   for (let j=0;j<5;j++){
+     if (answers[i][j]=== answer){
+      if (i === 0) {
+        return "very positive";
+      }
+        else if(i===1){
+          return "positive";
+        }
+          else if (i === 2) {
+            return "negative";
+          }  
+            else  {
+              return "very negative";
+            }
+
+      }
+    }
+  }
 }
+
+
+
+    
+    
+    
+        
+            
+
+
+
+            
+          
+          
+                     
+  
+
+  
+  
+
 
 /* 
 ==================================
