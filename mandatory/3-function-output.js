@@ -1,17 +1,24 @@
 // Add comments to explain what this function does. You're meant to use Google!
+//The Math.random() function returns a floating-point, pseudo-random number that's greater than or equal to 0 and less than 1,
 function getRandomNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+//The concat() method is used to merge two or more arrays or any number or string. This method does not change the existing arrays, but instead returns a new array.in this example with concat word1 and word2 coming next to gether.
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
+  return firstWord.concat(" " + secondWord).concat(" " + thirdWord);
+  // return firstWord.concat(secondWord,thirdWord)
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
 }
+console.log(concatenate(code,your,future))
+console.log(concatenate(I,like,pizza))
+console.log(concatenate(I,am,13))
 
 /* 
 ===================================================

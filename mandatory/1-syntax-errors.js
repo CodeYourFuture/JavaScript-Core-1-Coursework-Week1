@@ -3,17 +3,20 @@
 function addNumbers(a, b ,c) {
   return a + b + c;
 }
+ console.log(addNumbers(3,4,6))
 
-function introduceMe(name, age)
-  return "Hello, my name is " + name "and I am " age + "years old";
 
-function getTotal(a, b) {
-  total = a ++ b;
+ function introduceMe(name, age){
+  return `Hello ,my name is ${name} and I am ${age}years old`;
+ 
+ }
+  console.log(introduceMe("Sonjide", 27))
 
-  return "The total is total";
-}
-
-/* 
+ function getTotal(a, b) {
+   const  total = a +b;
+   return `The total is ${total}`;
+ }
+  console.log (getTotal(23,5)) 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
 
