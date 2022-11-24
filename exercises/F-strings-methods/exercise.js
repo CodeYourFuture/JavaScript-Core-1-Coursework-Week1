@@ -1,3 +1,7 @@
 // Start by creating a variable `message`
+const name = " Daniel  ";
+name = "Daniel";
+var nameLowerCase = name.toLowerCase();
 
-console.log(message);
+console.log(nameLowerCase);
+

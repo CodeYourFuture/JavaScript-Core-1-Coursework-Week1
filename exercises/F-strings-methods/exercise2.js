@@ -1,3 +1,7 @@
 const name = " Daniel  ";
+name = "Daniel";
+var nameLowerCase = name.toLowerCase().trim();
 
-console.log(message);
+console.log(nameLowerCase);
+
+
