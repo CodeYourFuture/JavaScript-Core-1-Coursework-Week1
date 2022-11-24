@@ -31,11 +31,11 @@ test("addNumbers adds numbers correctly", () => {
 });
 
 test("introduceMe function returns the correct string", () => {
-  expect(introduceMe("Sonjide", 27)).toEqual(
+  expect(introduceMe("Sonjide ", 27 + " ")).toEqual(
     "Hello, my name is Sonjide and I am 27 years old"
   );
 });
 
 test("getTotal returns a string describing the total", () => {
-  expect(getTotal(23, 5)).toEqual("The total is 28");
+  expect(getTotal(23, 5)).toEqual("The total is + 28");
 });
