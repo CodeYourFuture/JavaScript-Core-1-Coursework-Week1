@@ -1,4 +1,4 @@
-// const { toBeOneOf } = require("jest-extended");
+const { toBeOneOf } = require("jest-extended");
 /**
 
   Let's peer into the future using a Magic 8 Ball!
