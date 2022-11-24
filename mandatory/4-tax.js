@@ -6,12 +6,12 @@
 */
 
 
-function calculateSalesTax(priceOfProduct) {
-var salesTax = (priceOfProduct*.2);
+function calculateSalesTax() {}
 
-  return salesTax
-}
-
+ function calculateSalesTax(sales) {
+   const calcTax = sales * 0.2 + sales;
+   return calcTax;
+ }
 /*
   CURRENCY FORMATTING
   ===================
@@ -21,8 +21,10 @@ var salesTax = (priceOfProduct*.2);
 
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
-
-function addTaxAndFormatCurrency(priceOfProduct) {}
+function addTaxAndFormatCurrency() {}
+ function addTaxAndFormatCurrency(sales) {
+   return "£" + calculateSalesTax(sales).toFixed(2);
+n
 
 /* 
 ===================================================
