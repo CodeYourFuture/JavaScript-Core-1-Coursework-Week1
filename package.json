@@ -1,5 +1,5 @@
 {
-  "name": "javascript-core-1-coursework-week1",
+  "name": "mandator",
   "version": "1.0.0",
   "description": "Exercises for JS1 Week 1",
   "license": "CC-BY-SA-4.0",
@@ -14,15 +14,21 @@
     "url": "https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week1/issues"
   },
   "jest": {
-    "setupFilesAfterEnv": ["jest-extended"],
+    "setupFilesAfterEnv": [
+      "jest-extended"
+    ],
     "projects": [
       {
         "displayName": "mandatory",
-        "testMatch": ["<rootDir>/mandatory/*.js"]
+        "testMatch": [
+          "<rootDir>/mandatory/*.js"
+        ]
       },
       {
         "displayName": "extra",
-        "testMatch": ["<rootDir>/extra/*.js"]
+        "testMatch": [
+          "<rootDir>/extra/*.js"
+        ]
       }
     ]
   },
@@ -30,5 +36,7 @@
   "devDependencies": {
     "jest": "^26.6.3",
     "jest-extended": "^0.11.5"
-  }
+  },
+  "main": "4-tax.js",
+  "author": ""
 }
