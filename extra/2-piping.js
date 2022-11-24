@@ -16,30 +16,31 @@
   the final result to the variable goodCode
 */
 
-function add() {
-
+function add(firstNum, secondNum) {
+  return firstNum + secondNum;
 }
 
-function multiply() {
-
+function multiply(firstNum, secondNum) {
+  return firstNum * secondNum;
 }
 
-function format() {
-
+function format(num) {
+  return `£${num}`;
 }
 
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =
+let badCode = format(multiply(add(startingValue, 10), 2));
 
 /* BETTER PRACTICE */
-
-let goodCode =
+let result = add(startingValue, 10);
+result = multiply(result, 2);
+let goodCode = format(result);
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
-
+ 
 To run the tests for just this one file, type `npm test -- --testPathPattern 2-piping` into your terminal
 (Reminder: You must have run `npm install` one time before this will work!)
 */
