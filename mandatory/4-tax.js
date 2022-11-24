@@ -21,7 +21,9 @@ return priceWithTax;
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency() {}
+function addTaxAndFormatCurrency(productPrice) {
+  return "£" +(calculateSalesTax(productPrice)).toFixed(2)
+}
 
 /* 
 ===================================================
