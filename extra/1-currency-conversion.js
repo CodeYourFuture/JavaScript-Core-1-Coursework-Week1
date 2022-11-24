@@ -13,13 +13,14 @@ function convertToUSD(pound) {
   CURRENCY CONVERSION
   ===================
   The business is now breaking into the Brazilian market
-  Write a new function for converting to the Brazilian real (exchange rate is 5.7 BRL to £)
-  They have also decided that they should add a 1% fee to all foreign transactions, 
+  Write a new function for converting to the Brazilian real (exchange rate is 
+  5.7 BRL to £)
+  They have also decided that they should add a 1% fee to all foreign transactions,
   which means you only convert 99% of the £ to BRL.
 */
 
-function convertToBRL(pound) {
-  return ((pound * 0.99)* 5.7).toFixed(2)
+function convertToBRL(poundmoney) {
+  return Number(((poundmoney * 0.99)* 5.7).toFixed(2))
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== 
