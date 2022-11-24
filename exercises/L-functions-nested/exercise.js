@@ -3,3 +3,10 @@ var mentor2 = "Irina";
 var mentor3 = "Mimi";
 var mentor4 = "Rob";
 var mentor5 = "Yohannes";
+
+function logGreeting(name) {
+  let upperCaseName = name.upperCaseName;
+  return "HELLO" + upperCaseName;
+}
+
+console.log(logGreeting);
