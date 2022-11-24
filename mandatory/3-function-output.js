@@ -2,13 +2,21 @@
 function getRandomNumber() {
   return Math.random() * 10;
 }
+// choose a random number which is between 0 to 1, so by changing to times 10, we receive a random number between 1 to 10
+
 
 // Add comments to explain what this function does. You're meant to use Google!
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
+//it concat two words, it means we receive 2 parameter beside each other.
+
 
 function concatenate(firstWord, secondWord, thirdWord) {
+  let result = combine2Words(firstWord, " ");
+  result = combine2Words(result, secondWord);
+  result = combine2Words(result, " ");
+  return combine2Words(result, thirdWord);
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
 }
