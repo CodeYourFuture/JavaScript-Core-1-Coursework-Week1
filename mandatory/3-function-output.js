@@ -9,14 +9,14 @@ function getRandomNumber() {
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
-//it concat two words, it means we receive 2 parameter beside each other.
+//it concat two words, it means we will these receive 2 parameters beside each other.
 
 
 function concatenate(firstWord, secondWord, thirdWord) {
-  let result = combine2Words(firstWord, " ");
-  result = combine2Words(result, secondWord);
-  result = combine2Words(result, " ");
-  return combine2Words(result, thirdWord);
+  let result = firstWord.concat(" ");
+  result = result.concat(secondWord);
+  result = result.concat(" ");
+  return result.concat(thirdWord);
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
 }
