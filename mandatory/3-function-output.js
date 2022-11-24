@@ -1,16 +1,24 @@
 // Add comments to explain what this function does. You're meant to use Google!
 function getRandomNumber() {
-  return Math.random() * 10;
+  return Math.random() * 10; 
 }
+
+/* ANSWER: This function gives a random number between 0-10. This is because Math.random() will return a floating point number
+between 0-1 which will then be multiplied by 10, which in the end results in a random number between 0-10*/
+
 
 // Add comments to explain what this function does. You're meant to use Google!
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
 
+/* ANSWER: this function returns a single word which is the concatenation of word1 and word2. Word2 will be added
+to the end of word1*/
+
 function concatenate(firstWord, secondWord, thirdWord) {
-  // Write the body of this function to concatenate three words together.
-  // Look at the test case below to understand what this function is expected to return.
+
+  const concatWords = firstWord.concat(" ", secondWord, " ", thirdWord);
+  return concatWords;
 }
 
 /* 
