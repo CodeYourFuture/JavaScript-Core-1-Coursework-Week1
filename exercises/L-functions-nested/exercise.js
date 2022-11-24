@@ -8,7 +8,7 @@ function nameUppercase(name){
 }
 
 function greetSomeMentors(name) {
-    return `HELLO THERE BOSS ${nameUppercase(name)}! HOWDY-DOO?!`;
+    return `HELLO THERE BOSS ${nameUppercase(name)}! HOWDY-DOO!`;
 }
 
 function shoutAGreeting(name){
