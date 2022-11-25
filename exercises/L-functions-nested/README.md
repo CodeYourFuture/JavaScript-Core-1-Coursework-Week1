@@ -1,4 +1,4 @@
-Functions are very powerful.
+ Functions are very powerful.
 
 - You can write more than one line of code inside of functions.
 - You can use variables inside of functions.
