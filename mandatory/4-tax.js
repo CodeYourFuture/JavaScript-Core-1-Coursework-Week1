@@ -5,7 +5,11 @@
   Sales tax is 20% of the price of the product.
 */
 
-function calculateSalesTax() {}
+function calculateSalesTax(price) {
+  const tax = 0.2 * price;
+  priceWithTax = tax + price;
+  return priceWithTax;
+}
 
 /*
   CURRENCY FORMATTING
@@ -17,7 +21,12 @@ function calculateSalesTax() {}
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency() {}
+function addTaxAndFormatCurrency(price) {
+  const tax = 0.2 * price;
+  priceWithTax = tax + price;
+  const totalPrice = "£" + priceWithTax.toFixed(2);
+  return totalPrice;
+}
 
 /* 
 ===================================================
@@ -30,9 +39,7 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 4-t
 ===================================================
 */
 
-test("calculateSalesTax for £15", () => {
-  expect(calculateSalesTax(15)).toEqual(18);
-});
+
 
 test("calculateSalesTax for £17.50", () => {
   expect(calculateSalesTax(17.5)).toEqual(21);
