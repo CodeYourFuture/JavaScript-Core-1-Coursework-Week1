@@ -1,3 +1,7 @@
-const name = " Daniel  ";
+var message = "Hello, This is Farnoosh!";
+var myName = "Farnoosh";
+var myNameTrim = myName.trim();
+var myNameLenght = myName.length;
 
-console.log(message);
+var messageTwo = message + " My name is " + myNameLenght + " characters long!";
+console.log(messageTwo);
