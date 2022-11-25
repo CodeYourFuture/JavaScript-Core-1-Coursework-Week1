@@ -1,5 +1,5 @@
 // Start by creating a variable `message`
 let message = "good morning";
-let stringType = typeOf message;
+let stringType = typeof message;
 console.log(message);
 console.log(messageType);
