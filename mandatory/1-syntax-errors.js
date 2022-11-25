@@ -11,7 +11,7 @@ function introduceMe(name, age) {
 function getTotal(a, b) {
   let total = a + b;
 
-  return "The total is " + total;
+  return `The total is ${total}`;
 }
 
 /* 
@@ -37,5 +37,5 @@ test("introduceMe function returns the correct string", () => {
 });
 
 test("getTotal returns a string describing the total", () => {
-  expect(getTotal(23, 5)).toEqual("The total is + 28");
+  expect(getTotal(23, 5)).toEqual("The total is 28");
 });
