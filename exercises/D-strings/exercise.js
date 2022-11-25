@@ -1,3 +1,5 @@
 // Start by creating a variable `message`
-
-console.log(message);
+let greeting = "This is a string";
+let greetingType = typeof greeting;
+console.log(greeting);
+console.log(greetingType);
