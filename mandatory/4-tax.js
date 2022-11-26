@@ -7,7 +7,7 @@
 
 function calculateSalesTax(price) {
   const tax = 0.2 * price;
-  priceWithTax = tax + price;
+  const priceWithTax = tax + price;
   return priceWithTax;
 }
 
@@ -23,7 +23,7 @@ function calculateSalesTax(price) {
 
 function addTaxAndFormatCurrency(price) {
   const tax = 0.2 * price;
-  priceWithTax = tax + price;
+  const priceWithTax = tax + price;
   const totalPrice = "£" + priceWithTax.toFixed(2);
   return totalPrice;
 }
