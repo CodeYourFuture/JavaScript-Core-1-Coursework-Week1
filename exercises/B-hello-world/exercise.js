@@ -1,2 +1,2 @@
 console.log("Hello JavaScript!");
-console.log("Happy Coding!")
+console.log("Happy Coding!");

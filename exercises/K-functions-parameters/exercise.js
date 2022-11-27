@@ -8,5 +8,5 @@
 
 // Assign the result of calling the function the variable `result`
 
-var result = multiply (10,20);
+let result = multiply (10,20);
 console.log(result);

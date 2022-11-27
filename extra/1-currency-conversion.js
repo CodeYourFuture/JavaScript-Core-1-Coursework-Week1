@@ -6,7 +6,7 @@
 */
 
 function convertToUSD(price) {
-return (price * 1.4)
+return price * 1.4;
 }
 
 
@@ -20,7 +20,7 @@ return (price * 1.4)
 */
 
 function convertToBRL(price) {
-  return (price * 0.99 *5.7 );
+  return Number(((price * 0.99) *5.7).toFixed(2));
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== 

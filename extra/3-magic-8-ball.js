@@ -1,4 +1,4 @@
-/**
+/** 
 
   Let's peer into the future using a Magic 8 Ball!
   https://en.wikipedia.org/wiki/Magic_8-Ball 
@@ -47,6 +47,9 @@
 // and return the answer.
 function shakeBall() {
   //Write your code in here
+  console.log('The ball has shaken!')
+  let randomIndex = Math.floor(Math.random() * allAnswers.length)
+  return allAnswers[randomIndex]
 }
 
 /* 
@@ -60,7 +63,23 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
+  if (veryPositiveAnswers.includes(answer)) {
+    return 'very positive'
+} else if (positiveAnswers.includes(answer)) {
+    return 'positive'
+} else if (negativeAnswers.includes(answer)) {
+    return 'negative'
+} else if (veryNegativeAnswers.includes(answer)) {
+    return 'very negative'
 }
+}
+const foo = shakeBall()
+const bar = checkAnswer(foo)
+console.log(bar)
+
+
+
+
 
 /* 
 ==================================

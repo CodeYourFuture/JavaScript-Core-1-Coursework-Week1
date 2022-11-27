@@ -1,6 +1,6 @@
 // Start by creating a variable `message`
-var greetingStart = "Hello, my name is ";
-var name = "Abdi";
+const  greetingStart = "Hello, my name is ";
+const name = "Abdi";
 
-var greeting = greetingStart + name;
+const greeting = greetingStart + name;
 console.log(greeting);

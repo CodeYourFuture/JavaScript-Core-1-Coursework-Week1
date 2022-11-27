@@ -1,5 +1,5 @@
 // Start by creating a variable `message`
 const message = "This is a string."
-var messageType = typeof message;
+let messageType = "type of message";
 console.log(message);
 

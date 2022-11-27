@@ -3,15 +3,17 @@
 function addNumbers(a, b, c) {
   return a + b + c;
 }
-
-function introduceMe(name,age) {
-  return "Hello, my name is " + name + " and I am " + age + " years old";}
-
-function getTotal(a, b) {
-  const total = a + b;
-
-  return `The total is ${ total}`;
-}
+  // console.log(addNumbers(2,3,4));
+  function introduceMe(myName, age){
+    return `Hello, my name is ${myName} and I am ${age} years old`;
+  }
+    // console.log(introduceMe(“Abdi”, 25));
+  
+    function getTotal(a, b) {
+      total = a + b;
+      return `The total is ${total}`;
+    }
+    // console.log(getTotal(10, 20));
 
 /* 
 ===================================================
