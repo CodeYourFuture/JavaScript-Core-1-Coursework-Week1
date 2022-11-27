@@ -73,7 +73,7 @@ let answer = "";
 function shakeBall() {
   //Write your code in here
   console.log("The ball has shaken!");
-  return (answer = answers[Math.floor(Math.random() * answers.length)]);
+  return answer = answers[Math.floor(Math.random() * answers.length)];
 }
 
 /* 
