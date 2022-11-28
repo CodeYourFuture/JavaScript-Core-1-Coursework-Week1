@@ -1,1 +1,3 @@
-console.log("Hello world");
+var aboutMe = "Hello" + " I just started learning JavaScript!"
+
+console.log(aboutMe);

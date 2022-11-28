@@ -43,9 +43,47 @@
     Very doubtful.
 */
 
+
+let veryPositiveAnswers = [
+  'It is certain.',
+  'It is decidedly so.',
+  'Without a doubt.',
+  'Yes - definitely.',
+  'You may rely on it.'
+];
+
+let positiveAnswers = [
+  'As I see it, yes.',
+  'Most likely.',
+  'Outlook good.',
+  'Yes.',
+  'Signs point to yes.'
+];
+
+let negativeAnswers = [
+  'Reply hazy, try again.',
+  'Ask again later.',
+  'Better not tell you now.',
+  'Cannot predict now.',
+  'Concentrate and ask again.'
+];
+
+let veryNegativeAnswers = [
+  'Don\'t count on it.',
+  'My reply is no.',
+  'My sources say no.',
+  'Outlook not so good.',
+  'Very doubtful.'
+];
+
+let allAnswers = [...veryPositiveAnswers, ...positiveAnswers, ...negativeAnswers, ...veryNegativeAnswers];
+
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
+  console.log('The ball has shaken!');
+  let randomIndex = Math.floor(Math.random() * allAnswers.length);
+  return allAnswers[randomIndex];
   //Write your code in here
 }
 
@@ -59,6 +97,15 @@ function shakeBall() {
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
+  if(veryPositiveAnswers.includes(answer)) {
+    return 'very positive';
+  } else if(positiveAnswers.includes(answer)) {
+    return 'positive';
+  } else if(negativeAnswers.includes(answer)) {
+    return 'negative';
+  } else if(veryNegativeAnswers.includes(answer)) {
+    return 'very negative';
+  }
   //Write your code in here
 }
 
