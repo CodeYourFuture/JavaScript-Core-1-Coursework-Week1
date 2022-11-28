@@ -16,21 +16,25 @@
   the final result to the variable goodCode
 */
 
-function add() {
-
+function add(number1,number2) {
+return number1+number2
 }
+console.log(add(1,3))
 
-function multiply() {
-
+function multiply(number1,number2) {
+return number1*number2
 }
+console.log(multiply(2,3))
 
-function format() {
-
+function format(number) {
+return `£${number}`
 }
+console.log(format(16))
 
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
+//there are three functions that are not necessary and I think it is possible with a shorter code as well.(I am not sure!!!!!!!!!!!!!!!!!)
 let badCode =
 
 /* BETTER PRACTICE */

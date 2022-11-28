@@ -45,7 +45,7 @@ function add(num1, num2) {
 ## Expected result
 
 ```
-Hello, my name is Daniel
+Hello,my name is ;Daniel
 ```
 
 ## Exercise 4
