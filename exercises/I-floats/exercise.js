@@ -1,10 +1,11 @@
 var numberOfStudents = 15;
 var numberOfMentors = 8;
-var percentageOfStudents = numberOfStudents / (numberOfStudents + numberOfMentors) * 100;
-console.log(percentageOfStudents);
-var percentageOfMentors = numberOfMentors / (numberOfStudents + numberOfMentors) * 100;
-console.log(percentageOfMentors);
-let percentageOfStudentsRound = Math.round(percentageOfStudents);
-console.log(percentageOfStudentsRound);
-let percentageOfMentorsRound = Math.round(percentageOfMentors);
-console.log(percentageOfMentorsRound);
+
+
+let total = numberOfStudents + numberOfMentors;
+
+let percentageOfStudents = (numberOfStudents / total) * 100;
+console.log(`Percentage students: ${Math.round(percentageOfStudents)}%`);
+
+let percentageOfMentors = (numberOfMentors / total) * 100;
+console.log(`Percentage mentors: ${Math.round(percentageOfMentors)}%`);

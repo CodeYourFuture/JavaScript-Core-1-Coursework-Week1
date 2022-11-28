@@ -5,3 +5,5 @@ function halve(number) {
 var result = halve(12);
 
 console.log(result);
+console.log(halve(30));
+console.log(halve(5));
