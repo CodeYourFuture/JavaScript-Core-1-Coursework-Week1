@@ -5,15 +5,12 @@ function addNumbers(a,b,c) {
 }
 
 function introduceMe(name, age) {
-  name = "Sonjide";
-  age = 27;
   return "Hello, my name is " + name + " and I am " + age + " years old";
 }
 
 function getTotal(a, b) {
-  a = 23;
-  b = 5;
-  return "The total is " + (a + b);
+  const total = a + b;
+  return "The total is " + total;
 }
 
 /* 
