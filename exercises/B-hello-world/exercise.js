@@ -1,6 +1,9 @@
-console.log(22);
-console.log("Hello World!");
-console.log("Hi World!");
-console.log("Hi World!");
-console.log("Hi World!");
+
+let greeting = '1';
+
+//console.log(22);
+console.log(greeting);
+console.log(greeting);
+console.log(greeting);
+//console.log("Hi World!");
 

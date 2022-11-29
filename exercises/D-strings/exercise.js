@@ -1,7 +1,7 @@
 // Start by creating a variable `message`
 
-let message = "This is a string";
-let messageType = typeof message;
+let message = [] ;
+//let messageType = typeof message;
 
 console.log(message);
-console.log(messageType);
+console.log(typeof  message);

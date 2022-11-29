@@ -5,10 +5,9 @@
   Write a function that converts a price to USD (exchange rate is 1.4 $ to £)
 */
 
-function convertToUSD(pound) {
-   return pound * 1.4;
+function convertToUSD(price) {
+   return price * 1.4;
 }
-
 /*
   CURRENCY CONVERSION
   ===================
@@ -19,8 +18,12 @@ function convertToUSD(pound) {
   which means you only convert 99% of the £ to BRL.
 */
 
-function convertToBRL(poundmoney) {
-  return Number(((poundmoney * 0.99)* 5.7).toFixed(2))
+function convertToBRL(price) {
+   let priceAfterFee = price * 0.99;
+   let priceInBRL = priceAfterFee * 5.7;
+   return Math.round(priceInBRL*100)/100;
+
+  //return Number(((poundmoney * 0.99)* 5.7).toFixed(2))
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== 
