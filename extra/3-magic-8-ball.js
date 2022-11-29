@@ -75,8 +75,8 @@ const answers = [["It is certain",
 function shakeBall() {
   //Write your code in here
 
-  let firstItem = Math.floor(Math.random() * 4);
-  let secondItem = Math.floor(Math.random() * 5);
+  let firstItem = Math.floor(Math.random() * answers.length);
+  let secondItem = Math.floor(Math.random() * answers[0].length);
 
   return checkAnswer(answers[firstItem][secondItem]);
 
