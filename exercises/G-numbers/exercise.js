@@ -5,4 +5,6 @@ var numberOfMentors = 5;
 
 var sumStudentsAndMentors = numberOfStudents + numberOfMentors;
 
-console.log(sumStudentsAndMentors)
+console.log(`Number of students: ${numberOfStudents}`)
+console.log(`Number of mentors: ${numberOfMentors}`)
+console.log(`Total number of students and mentors: ${sumStudentsAndMentors}`)
