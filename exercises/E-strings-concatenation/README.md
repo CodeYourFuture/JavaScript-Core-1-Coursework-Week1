@@ -7,14 +7,21 @@ var name = "Daniel";
 var greeting = greetingStart + name;
 
 console.log(greeting); // Logs "Hello, my name is Daniel"
+
+
 ```
 
 ## Exercise
 
 - Write a program that logs a message with a greeting and your name
 
+var greeting = "Hello! Welcome ";
+var name = "Daniel";
+var greetingSentence = geeting + name;
+
 ## Expected result
 
 ```
+
 Hello, my name is Daniel
 ```
