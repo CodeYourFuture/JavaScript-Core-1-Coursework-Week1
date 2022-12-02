@@ -11,8 +11,7 @@ function getAgeInDays(age) {
 
 function createCreeting(name, age) {
   const ageInDays = getAgeInDays(age);
-  const message =
-    "My Name is " + name + " and I was born over " + ageInDays + " days ago!";
+  const message = `My name is ${name} and I was born over ${ageInDays} days ago!`;
   return message;
 }
 ```

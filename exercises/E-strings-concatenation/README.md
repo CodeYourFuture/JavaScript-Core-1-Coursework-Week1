@@ -1,10 +1,10 @@
-You can add two strings together using the plus operator (`+`):
+You can add two strings together by using a template literal.
 
 ```js
-const greetingStart = "Hello, my name is ";
+const greetingStart = "Hello, my name is";
 const name = "Daniel";
 
-const greeting = greetingStart + name;
+const greeting = `${greetingStart} ${name}`;
 
 console.log(greeting); // Logs "Hello, my name is Daniel"
 ```
