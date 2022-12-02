@@ -1,6 +1,6 @@
 // Declare your function first
 function divide(numA, numB) {
-  const devideNumber = numA - numB;
+  const devideNumber = numA / numB;
   return devideNumber;
 }
 var result = divide(3, 4);

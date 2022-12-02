@@ -1,7 +1,7 @@
 // Complete the function so that it takes input parameters
 function multiply(num1, num2) {
   // Calculate the result of the function and return it
-  const multiplyNumber = num1 + num2;
+  const multiplyNumber = num1 * num2;
   return multiplyNumber;
 }
 
