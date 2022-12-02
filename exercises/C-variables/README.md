@@ -1,6 +1,6 @@
 When you write code, you'll want to create shortcuts to data values so you can don't have to write out the same value every time.
 
-We can use _variable_ to create a reference to a value.
+We can use a _variable_ to create a reference to a value.
 
 ```js
 const greeting = "Hello world";
