@@ -6,7 +6,7 @@
 */
 
 function calculateSalesTax(sales) {
-  const calcTax = sales * 0.2 + sales;
+  const calcTax = sales * 1.2;
   return calcTax;
 }
 /*
