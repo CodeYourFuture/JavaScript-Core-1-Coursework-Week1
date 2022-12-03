@@ -1,8 +1,5 @@
-function divide(a, b)// Declare your function first
-{
-    let result = a / b;
-    return result;
-}
+// Declare your function first
+
 var result = divide(3, 4);
 
 console.log(result);
