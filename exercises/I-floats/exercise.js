@@ -1,2 +1,2 @@
-const numberOfStudents = 15;
-const numberOfMentors = 8;
+var numberOfStudents = 15;
+var numberOfMentors = 8;

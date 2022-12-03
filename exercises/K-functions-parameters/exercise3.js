@@ -1,5 +1,5 @@
 // Write your function here
 
-const greeting = createGreeting("Daniel");
+var greeting = createGreeting("Daniel");
 
 console.log(greeting);
