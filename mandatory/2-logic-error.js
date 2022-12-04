@@ -1,16 +1,26 @@
 // The syntax for this function is valid but it has an error, find it and fix it.
 
-function trimWord(word) {
-  return wordtrim();
+//in this exercise we use the mothod .trim() which help to eliminate leading and trailing spaces. 
+ 
+function trimWord(phrase) {
+  let string = phrase.trim(); 
+  return string;
 }
 
-function getStringLength(word) {
-  return "word".length();
+// the function .length will show the number of the string that we give by the parameter a
+// we created a local variable where we store the result of the parameter 
+
+function getStringLength(a) {
+  let total = a.length;
+  return total;
 }
+
+
+//we declared a variable total to store the  math operation then we sent the result in the return;
 
 function multiply(a, b, c) {
-  a * b * c;
-  return;
+  let total = a * b * c;
+  return total;
 }
 
 /* 

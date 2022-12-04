@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "http:///Users/kygl/Documents/GitHub/JavaScript-Core-1-Coursework-Week1/exercises/B-hello-world/exercise.js",
+            "request": "launch",
+            "url": "http:///Users/kygl/Documents/GitHub/JavaScript-Core-1-Coursework-Week1/exercises/B-hello-world/exercise.js"
+        }
+    ]
+}
