@@ -1,3 +1,7 @@
+// import jest extended matchers
+const jestExtended = require("jest-extended");
+// extend the existing jest class with the jest-extended matchers
+expect.extend(jestExtended);
 /**
 
   Let's peer into the future using a Magic 8 Ball!
@@ -124,7 +128,7 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 3-m
 (Reminder: You must have run `npm install` one time before this will work!)
 ==================================
 */
-/*
+
 test("whole magic 8 ball sequence", () => {
   const consoleLogSpy = jest.spyOn(global.console, "log");
   const answer = shakeBall();
@@ -141,7 +145,7 @@ test("whole magic 8 ball sequence", () => {
     "very negative",
   ]);
 });
-*/
+
 test("magic 8 ball returns different values each time", () => {
   const seenAnswers = new Set();
   for (let i = 0; i < 10; ++i) {

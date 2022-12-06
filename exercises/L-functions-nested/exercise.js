@@ -1,8 +1,8 @@
-var mentor1 = "Daniel";
-var mentor2 = "Irina";
-var mentor3 = "Mimi";
-var mentor4 = "Rob";
-var mentor5 = "Yohannes";
+const mentor1 = "Daniel";
+const mentor2 = "Irina";
+const mentor3 = "Mimi";
+const mentor4 = "Rob";
+const mentor5 = "Yohannes";
 
 function mentorUpperCase(a) {
   return a.toUpperCase();
