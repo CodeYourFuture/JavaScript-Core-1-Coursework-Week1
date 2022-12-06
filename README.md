@@ -1,10 +1,30 @@
 # Coursework
 
-Like learning a musical instrument, programming requires daily practise.
+Like learning a musical instrument, programming requires daily practice.
 
-The exercises are split into three folders: `exercises`, `mandatory` and `extra`. All homework in the `exercise` and `mandatory` section **must** be completed for homework by the following lesson. 
+The exercises are split into two folders: `mandatory` and `extra`. All homework in the `mandatory` section **must** be completed for homework by the following lesson.
 
 The `extra` folder contains exercises that you can complete to challenge yourself, but are not required for the following lesson.
+
+If you think you need to do more practice with the basics, then you can find some more exercises listed in `resources.md`. These exercises are not mandatory and won't be assigned as part of your coursework for the week.
+
+## Setting up your code editor
+
+
+There are some tools that will help you to write code. One of these, [Prettier](https://prettier.io/), formats your code, making it easier for you and others to read.
+
+### 1. Install prettier
+
+- In Visual Studio open the extensions panel (see https://code.visualstudio.com/docs/editor/extension-gallery#_browse-and-install-extensions)
+- Search for `Prettier - Code formatter`
+- Click install on the top result
+
+### 2. Enable formatting on save
+
+- In Visual Studio open the settings file (see https://code.visualstudio.com/docs/getstarted/settings#_creating-user-and-workspace-settings)
+- Search for `editor format`
+- Set `editor.formatOnSave` and `editor.formatOnPaste` to true
+
 
 ## Running the code/tests
 
