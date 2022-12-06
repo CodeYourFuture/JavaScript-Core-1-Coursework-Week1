@@ -9,6 +9,7 @@ function getAgeInDays(age) {
   return age * 365;
 }
 
+
 function createCreeting(name, age) {
   const ageInDays = getAgeInDays(age);
   const message =
