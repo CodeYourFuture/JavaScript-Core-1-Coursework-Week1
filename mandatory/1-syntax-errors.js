@@ -8,12 +8,11 @@ function introduceMe(name, age){
   return "Hello, my name is " + name + " and I am " + age + " years old";
 }
 
-// let name = "Lola";
-// let age = 18;
+
 
 function getTotal(a, b){
-    let total = a + b;
-    return `The total is ${total}`;  //this line we combin
+  let total = a + b;
+  return `The total is ${total}`;  //this line we combin
 
 }
 

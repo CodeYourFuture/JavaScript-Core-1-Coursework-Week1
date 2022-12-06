@@ -5,9 +5,15 @@
   Sales tax is 20% of the price of the product.
 */
 
-function calculateSalesTax() {}
+function calculateSalesTax(price) {
+  let porcentage = price * 0.20; //we multiply with 0.20 to obtain the porcentage which
+  //will be included in the final price.
+  porcentage += price;
+  return porcentage;
+}
 
-/*
+
+/* 
   CURRENCY FORMATTING
   ===================
   The business has informed you that prices must have 2 decimal places
@@ -16,9 +22,14 @@ function calculateSalesTax() {}
 
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
+// let calculateSalestax = calculateSalestax;
 
-function addTaxAndFormatCurrency() {}
-
+function addTaxAndFormatCurrency(price) {
+  let finalPrice = `£${calculateSalesTax(price).toFixed(2)}`;
+  //we create a new variable and call the previus function and concatenate with £ and
+  // .toFixed will give us 2 digits to appear after the decimal point.
+  return finalPrice;
+}
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
