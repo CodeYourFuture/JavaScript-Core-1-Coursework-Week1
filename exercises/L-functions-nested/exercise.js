@@ -18,3 +18,5 @@ console.log(shoutyGreeting(mentor2));
 console.log(shoutyGreeting(mentor3));
 console.log(shoutyGreeting(mentor4));
 console.log(shoutyGreeting(mentor5));
+
+

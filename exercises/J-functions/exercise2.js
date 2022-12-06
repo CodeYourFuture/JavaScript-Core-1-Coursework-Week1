@@ -4,6 +4,6 @@ function triple(number) {
   return tripleNumber;
 }
 
-var result = triple(12);
+const result = triple(12);
 
 console.log(result);

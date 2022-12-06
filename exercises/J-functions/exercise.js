@@ -4,7 +4,7 @@ function halve(number) {
   return haldOfNumber;
 }
 
-var result = halve(12);
+const result = halve(12);
 
 console.log(result);
 
