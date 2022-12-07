@@ -1,4 +1,4 @@
-// The syntax for this function is valid but it has an error, find it and fix it.
+// The syntax for these functions is valid but there are some errors, find them and fix them
 
 function trimWord(word) {
   return wordtrim();
