@@ -3,19 +3,22 @@
 function getRandomNumber() {
   return Math.random() * 10;
 }
+// The Math.random() function returns a random number that is greater that or equal to 0 and less than 1 which you can then scale to your desire range.
 
 // Add comments to explain what this function does. You're meant to use Google!
 //concatenates the string arguments to the calling string and returns a new string
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
-
+//The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
 function concatenate(firstWord, secondWord, thirdWord) {
-  return firstWord.concat(' ', secondWord, thirdWord);
+  const cancWords = firstWord.concat(" ", secondWord, " ", thirdWord);
+  return cancWords;
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
 }
-const result = concatenate(code, your, future);
+
+
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
