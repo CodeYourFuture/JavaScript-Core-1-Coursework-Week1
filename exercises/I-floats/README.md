@@ -1,8 +1,8 @@
 Numbers can be integers (whole numbers) or floats (numbers with a decimal).
 
 ```js
-var preciseAge = 30.612437;
-```
+var preciseAge = 30.612437; //float number
+``` 
 
 Floats can be rounded to the nearest whole number using the `Math.round` function:
 

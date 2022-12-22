@@ -1,1 +1,9 @@
-// Start by creating a variables `numberOfStudents` and `numberOfMentors`
+// Start by creating a variables
+// `numberOfStudents` and `numberOfMentors`
+
+let numberOfStudents = 15;
+let numberOfMentors = 8;
+
+let total = numberOfStudents + numberOfMentors;
+
+console.log(`total number of studentes and mentor:  ${total}`);
