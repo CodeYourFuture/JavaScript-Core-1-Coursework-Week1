@@ -35,7 +35,7 @@ return "£" + price;
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =
+let badCode = 
 
 /* BETTER PRACTICE */
 
