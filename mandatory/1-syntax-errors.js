@@ -11,8 +11,9 @@ function introduceMe(name, age) {
 function getTotal(a, b) {
   total = a + b;
 
-  return `The total is `
+  return `The total is ${total}`;
 }
+
 
 /* 
 ===================================================
