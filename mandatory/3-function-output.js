@@ -6,7 +6,7 @@
 function getRandomNumber() {
   return Math.random( ) * 10;
 }
-console.log(getRandomNumber(10))
+// console.log(getRandomNumber(10))
 
 // Add comments to explain what this function does. You're meant to use Google!
 //This function will combine two parametres in the same line
