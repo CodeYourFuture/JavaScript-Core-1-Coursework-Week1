@@ -47,6 +47,32 @@
 // and return the answer.
 function shakeBall() {
   //Write your code in here
+  console.log("The ball has shaken!");
+  const predictions = [
+    "It is certain.",
+    "It is decidedly so.",
+    "Without a doubt.",
+    "Yes - definitely.",
+    "You may rely on it.",
+    "As I see it, yes.",
+    "Most likely.",
+    "Outlook good.",
+    "Yes.",
+    "Signs point to yes.",
+    "Reply hazy, try again.",
+    "Ask again later.",
+    "Better not tell you now.",
+    "Cannot predict now.",
+    "Concentrate and ask again.",
+    "Don't count on it.",
+    "My reply is no.",
+    "My sources say no.",
+    "Outlook not so good.",
+    "Very doubtful."
+  ];
+  let randomNum = Math.floor(Math.random() * 20) + 1;
+
+  return predictions[randomNum];
 }
 
 /* 
@@ -60,6 +86,69 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
+
+  if (answer == "It is certain.") {
+    return "very positive";
+  }
+  if (answer == "It is decidedly so.") {
+    return "very positive";
+  }
+  if (answer == "Without a doubt.") {
+    return "very positive";
+  }
+  if (answer == "Yes - definitely.") {
+    return "very positive";
+  }
+  if (answer == "You may rely on it.") {
+    return "very positive";
+  }
+  if (answer == "As I see it, yes.") {
+    return "positive";
+  }
+  if (answer == "Most likely.") {
+    return "positive";
+  }
+  if (answer == "Outlook good.") {
+    return "positive";
+  }
+  if (answer == "Yes.") {
+    return "positive";
+  }
+  if (answer == "Signs point to yes.") {
+    return "positive";
+  }
+  if (answer == "Reply hazy, try again.") {
+    return "negative";
+  }
+  if (answer == "Ask again later.") {
+    return "negative";
+  }
+  if (answer == "Better not tell you now.") {
+    return "negative";
+  }
+  if (answer == "Cannot predict now.") {
+    return "negative";
+  }
+  if (answer == "Concentrate and ask again.") {
+    return "negative";
+  }
+  if (answer == "Don't count on it.") {
+    return "very negative";
+  }
+  if (answer == "My reply is no.") {
+    return "very negative";
+  }
+  if (answer == "My sources say no.") {
+    return "very negative";
+  }
+  if (answer == "Outlook not so good.") {
+    return "very negative";
+  }
+  if (answer == "Very doubtful.") {
+    return "very negative";
+  } else {
+    return "very negative";
+  }
 }
 
 /* 
@@ -86,7 +175,7 @@ test("whole magic 8 ball sequence", () => {
     "very positive",
     "positive",
     "negative",
-    "very negative",
+    "very negative"
   ]);
 });
 
@@ -101,7 +190,9 @@ test("magic 8 ball returns different values each time", () => {
     );
   }
 
-  let seenPositivities = new Set(Array.from(seenAnswers.values()).map(checkAnswer));
+  let seenPositivities = new Set(
+    Array.from(seenAnswers.values()).map(checkAnswer)
+  );
   if (seenPositivities.size < 2) {
     throw Error(
       "Expected to random answers with different positivities each time shakeBall was called, but always got the same one"
