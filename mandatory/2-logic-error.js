@@ -1,17 +1,47 @@
 // The syntax for these functions is valid but there are some errors, find them and fix them
-
+/*
+let word ="   CodeYourFuture ";
 function trimWord(word) {
-  return wordtrim();
+  return word.trim();
+}
+*/
+
+let word = " CodeYourFuture teaches coding     ";
+let result= word.replace (' ');
+function trimWord(word) {
+  return word.trim();
 }
 
-function getStringLength(word) {
-  return "word".length();
+/*
+function getStringLength() {
+  let text = "Turtles";
+  return text.length;
+}
+*/
+
+function getStringLength() {
+  let phrase = "A wild sentence appeared!";
+  return phrase.length;
 }
 
+
+/*
+let a = 2;
+let b = 3;
+let c = 4;
 function multiply(a, b, c) {
-  a * b * c;
-  return;
+  return  a * b * c;
 }
+console.log(multiply);
+*/
+
+let x = 2;
+let y = 3;
+let z = 6;
+function multiply(x, y, z) {
+  return  x * y * z;
+}
+console.log(multiply);
 
 /* 
 ===================================================
@@ -29,9 +59,7 @@ test("trimWord trims leading and trailing whitespace", () => {
 });
 
 test("trimWord doesn't remove whitespace in the middle of the string", () => {
-  expect(trimWord(" CodeYourFuture teaches coding     ")).toEqual(
-    "CodeYourFuture teaches coding"
-  );
+  expect(trimWord(" CodeYourFuture teaches coding     ")).toEqual("CodeYourFuture teaches coding");
 });
 
 test("getStringLength returns the length of a word", () => {
