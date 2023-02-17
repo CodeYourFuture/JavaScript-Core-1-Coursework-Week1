@@ -125,7 +125,6 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 3-m
 (Reminder: You must have run `npm install` one time before this will work!)
 ==================================
 */
-const { toBeOneOf } = require("jest-extended");
 
 test("whole magic 8 ball sequence", () => {
   const consoleLogSpy = jest.spyOn(global.console, "log");
