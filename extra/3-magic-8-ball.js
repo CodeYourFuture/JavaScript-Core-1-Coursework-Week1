@@ -45,9 +45,36 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
+const magicBallAnswers = [
+  "It is certain.",
+  "It is decidedly so.",
+  "Without a doubt.",
+  "Yes - definitely.",
+  "You may rely on it.",
+  "As I see it, yes.",
+  "Most likely.",
+  "Outlook good.",
+  "Yes.",
+  "Signs point to yes.",
+  "Reply hazy, try again.",
+  "Ask again later.",
+  "Better not tell you now.",
+  "Cannot predict now.",
+  "Concentrate and ask again.",
+  "Don 't count on it.",
+  "My reply is no.",
+  "My sources say no.",
+  "Outlook not so good.",
+  "Very doubtful."
+]
+
 function shakeBall() {
-  //Write your code in here
+  console.log("The ball has shaken!");
+  let randomNumber = Math.ceil(Math.random() * 19);
+  return magicBallAnswers[randomNumber];
 }
+
+const answer = shakeBall();
 
 /* 
   This function should say whether the answer it is given is
@@ -58,8 +85,23 @@ function shakeBall() {
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
+
+
 function checkAnswer(answer) {
-  //Write your code in here
+  let result = '';
+  const number = magicBallAnswers.indexOf(answer);
+  if (number >= 0 && number < 5) {
+    result = 'very positive';
+  } else if (number >= 5 && number < 10) {
+    result = 'positive';
+  } else if (number >= 10 && number < 15) {
+    result = 'negative';
+  } else {
+    result = 'very negative';
+  }
+
+  return result;
+
 }
 
 /* 
