@@ -1,44 +1,34 @@
-//
-//  https://codepen.io/codifiedconcepts/pen/vXgvQL
-//  https://github.com/mmaynar1/games/blob/master/magic-eight-ball/magic-eight-ball.js
-//
+// const { toBeOneOf } = require("jest-extended");
+// expect.extend({ toBeOneOf });
 /**
-
   Let's peer into the future using a Magic 8 Ball!
   https://en.wikipedia.org/wiki/Magic_8-Ball 
-
   There are a few steps to being able view the future though:
   * Ask a question
   * Shake the ball
   * Get an answer
   * Decide if it's positive or negative
-
   The question can be anything, but the answers are fixed,
   and have different levels of positivity or negativity.
-
   Below are the possible answers:
-
-  ## Very positive
+  ## Very positive
     It is certain.
     It is decidedly so.
     Without a doubt.
     Yes - definitely.
     You may rely on it.
-
   ## Positive
     As I see it, yes.
     Most likely.
     Outlook good.
     Yes.
     Signs point to yes.
-
   ## Negative
     Reply hazy, try again.
     Ask again later.
     Better not tell you now.
     Cannot predict now.
     Concentrate and ask again.
-
   ## Very negative
     Don't count on it.
     My reply is no.
@@ -46,97 +36,79 @@
     Outlook not so good.
     Very doubtful.
 */
-const matchers = require("jest-extended");
-expect.extend(matchers);
+const verypositive = [
+  "It is certain.",
+  "It is decidedly so.",
+  "Without a doubt.",
+  "Yes - definitely.",
+  "You may rely on it.",
+];
 
-const main_moods_selection = {
-  "very positive": [
-    "It is certain.",
-    "It is decidedly so.",
-    "Without a doubt.",
-    "Yes - definitely.",
-    "You may rely on it.",
-  ],
-  positive: [
-    "As I see it, yes.",
-    "Most likely.",
-    "Outlook good.",
-    "Yes.",
-    "Signs point to yes.",
-  ],
-  negative: [
-    "Reply hazy, try again.",
-    "Ask again later.",
-    "Better not tell you now.",
-    "Cannot predict now.",
-    "Concentrate and ask again.",
-  ],
-  "very negative": [
-    "Don't count on it.",
-    "My reply is no.",
-    "My sources say no.",
-    "Outlook not so good.",
-    "Very doubtful.",
-  ],
-};
+const positive = [
+  "As I see it, yes.",
+  "Most likely.",
+  "Outlook good.",
+  "Yes.",
+  "Signs point to yes.",
+];
 
-var state_of_mood = "";
-var state_answer = "";
+const negative = [
+  "Reply hazy, try again.",
+  "Ask again later.",
+  "Better not tell you now.",
+  "Cannot predict now.",
+  "Concentrate and ask again.",
+];
 
-function mood_selector() {
-  var mood_keys = Object.keys(main_moods_selection); // stores all the mood types
-  var ran_mood = Math.floor(Math.random() * mood_keys.length); // generates random math for mood types
-  var one_mood = mood_keys[ran_mood]; // stores one random mood
-  var one_mood_values = main_moods_selection[mood_keys[ran_mood]]; // stores the all the values from inside one selected mood
-  var random_one_mood_values = Math.floor(
-    Math.random() * one_mood_values.length
-  ); // generates random math for values of one selected mood
-  var selected_ran_value = one_mood_values[random_one_mood_values]; // stores one selected random value
-  state_answer = selected_ran_value;
-  state_of_mood = one_mood;
-}
+const veryNegative = [
+  "Don't count on it.",
+  "My reply is no.",
+  "My sources say no.",
+  "Outlook not so good.",
+  "Very doubtful.",
+];
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
-  //Write your code in hereconst
   console.log("The ball has shaken!");
-
-  mood_selector();
-  return state_answer;
+  const allAnswers = [
+    ...verypositive,
+    ...positive,
+    ...negative,
+    ...veryNegative,
+  ];
+  return allAnswers[Math.round(Math.random() * allAnswers.length)];
+  //Write your code in here
 }
 
-/* 
+/*
   This function should say whether the answer it is given is
     - very positive
     - positive
     - negative
     - very negative
-
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
-function checkAnswer() {
-  //Write your code in here
-  let indexOfAnswers = possibleAnswers.indexOf(answer);
-
-  if (indexOfAnswers <= 4) {
+function checkAnswer(answer) {
+  if (verypositive.includes(answer)) {
     return "very positive";
-  } else if (indexOfAnswers >= 5 && indexOfAnswers < 10) {
+  } else if (positive.includes(answer)) {
     return "positive";
-  } else if (indexOfAnswers >= 10 && indexOfAnswers < 15) {
+  } else if (negative.includes(answer)) {
     return "negative";
-  } else if (indexOfAnswers >= 15 && indexOfAnswers < 20) {
+  } else {
     return "very negative";
   }
-  return state_of_mood;
+
+  //Write your code in here
 }
 
+// console.log(checkAnswer(shakeBall()));
 /* 
 ==================================
 ======= TESTS - DO NOT MODIFY =====
-
 There are some Tests in this file that will help you work out if your code is working.
-
-To run the tests for just this one file, type `npm test -- --testPathPattern 3-magic-8-ball` into your terminal
+To run these tests type `npm run extraTo run the tests for just this one file, type `npm run extra-tests -- --testPathPattern 3-magic-8-ball` into your terminal
 (Reminder: You must have run `npm install` one time before this will work!)
 ==================================
 */

@@ -1,44 +1,35 @@
-//
-//  https://codepen.io/codifiedconcepts/pen/vXgvQL
-//  https://github.com/mmaynar1/games/blob/master/magic-eight-ball/magic-eight-ball.js
-//
-/**
+const matchers = require("jest-extended");
+expect.extend(matchers);
 
+/**
   Let's peer into the future using a Magic 8 Ball!
   https://en.wikipedia.org/wiki/Magic_8-Ball 
-
   There are a few steps to being able view the future though:
   * Ask a question
   * Shake the ball
   * Get an answer
   * Decide if it's positive or negative
-
   The question can be anything, but the answers are fixed,
   and have different levels of positivity or negativity.
-
   Below are the possible answers:
-
-  ## Very positive
+  ## Very positive
     It is certain.
     It is decidedly so.
     Without a doubt.
     Yes - definitely.
     You may rely on it.
-
   ## Positive
     As I see it, yes.
     Most likely.
     Outlook good.
     Yes.
     Signs point to yes.
-
   ## Negative
     Reply hazy, try again.
     Ask again later.
     Better not tell you now.
     Cannot predict now.
     Concentrate and ask again.
-
   ## Very negative
     Don't count on it.
     My reply is no.
@@ -46,63 +37,40 @@
     Outlook not so good.
     Very doubtful.
 */
-const matchers = require("jest-extended");
-expect.extend(matchers);
 
-const main_moods_selection = {
-  "very positive": [
+// This should log "The ball has shaken!"
+// and return the answer.
+function shakeBall() {
+  //Write your code in here
+
+  // If you assign a value to a variable that has not been declared, it will automatically become a GLOBAL variable.
+
+  answers = [
     "It is certain.",
     "It is decidedly so.",
     "Without a doubt.",
     "Yes - definitely.",
     "You may rely on it.",
-  ],
-  positive: [
     "As I see it, yes.",
     "Most likely.",
     "Outlook good.",
     "Yes.",
     "Signs point to yes.",
-  ],
-  negative: [
     "Reply hazy, try again.",
     "Ask again later.",
     "Better not tell you now.",
     "Cannot predict now.",
     "Concentrate and ask again.",
-  ],
-  "very negative": [
     "Don't count on it.",
     "My reply is no.",
     "My sources say no.",
     "Outlook not so good.",
     "Very doubtful.",
-  ],
-};
+  ];
 
-var state_of_mood = "";
-var state_answer = "";
-
-function mood_selector() {
-  var mood_keys = Object.keys(main_moods_selection); // stores all the mood types
-  var ran_mood = Math.floor(Math.random() * mood_keys.length); // generates random math for mood types
-  var one_mood = mood_keys[ran_mood]; // stores one random mood
-  var one_mood_values = main_moods_selection[mood_keys[ran_mood]]; // stores the all the values from inside one selected mood
-  var random_one_mood_values = Math.floor(
-    Math.random() * one_mood_values.length
-  ); // generates random math for values of one selected mood
-  var selected_ran_value = one_mood_values[random_one_mood_values]; // stores one selected random value
-  state_answer = selected_ran_value;
-  state_of_mood = one_mood;
-}
-// This should log "The ball has shaken!"
-// and return the answer.
-function shakeBall() {
-  //Write your code in hereconst
+  let result = answers[Math.floor(Math.random() * 20)];
   console.log("The ball has shaken!");
-
-  mood_selector();
-  return state_answer;
+  return result;
 }
 
 /* 
@@ -111,31 +79,29 @@ function shakeBall() {
     - positive
     - negative
     - very negative
-
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
-function checkAnswer() {
+function checkAnswer(givenAnswer) {
   //Write your code in here
-  let indexOfAnswers = possibleAnswers.indexOf(answer);
 
-  if (indexOfAnswers <= 4) {
+  // The indexOf() method returns the first index at which a given element can be found in the array,
+  // or -1 if it is not present.
+  let theIndex = answers.indexOf(givenAnswer);
+  if (theIndex < 5) {
     return "very positive";
-  } else if (indexOfAnswers >= 5 && indexOfAnswers < 10) {
+  } else if (theIndex < 10) {
     return "positive";
-  } else if (indexOfAnswers >= 10 && indexOfAnswers < 15) {
+  } else if (theIndex < 15) {
     return "negative";
-  } else if (indexOfAnswers >= 15 && indexOfAnswers < 20) {
+  } else {
     return "very negative";
   }
-  return state_of_mood;
 }
 
 /* 
 ==================================
 ======= TESTS - DO NOT MODIFY =====
-
 There are some Tests in this file that will help you work out if your code is working.
-
 To run the tests for just this one file, type `npm test -- --testPathPattern 3-magic-8-ball` into your terminal
 (Reminder: You must have run `npm install` one time before this will work!)
 ==================================
