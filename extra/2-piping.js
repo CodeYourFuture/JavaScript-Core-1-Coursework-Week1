@@ -15,27 +15,35 @@
   3. Write a more readable version of what you wrote in step 2 under the BETTER PRACTICE comment. Assign
   the final result to the variable goodCode
 */
+let num1; 
+let num2; 
 
-function add() {
-
+function add(num1, num2) {
+  return num1 + num2;
 }
 
-function multiply() {
-
+function multiply(num1, num2) {
+  return num1 * num2;
 }
 
-function format() {
-
+function format(num1) {
+  return "£" + num1;
 }
 
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =
+let badCode = add(10, startingValue);
+badCode = multiply(2,badCode);
+badCode= format(badCode);
+
 
 /* BETTER PRACTICE */
 
-let goodCode =
+
+let addition = add(10,startingValue);
+let multiplication = multiply(2, addition);
+let goodCode = "£" + multiplication;
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
