@@ -51,12 +51,40 @@
 // and return the answer.
 function shakeBall() {
   //Write your code in hereconst
-
-  mood = ["Very positive", "Positive", "Negative", "Very negative"];
-  const mood_select = Math.floor(Math.random() * months.length);
-  current_mood = mood[mood_select];
-  answerr = checkAnswer(current_mood);
-  console.log("current mood is =  " + current_mood + " anser is =  " + answerr);
+  console.log("The ball has shaken!");
+  const main_moods_selection = {
+    "very positive": [
+      "It is certain.",
+      "It is decidedly so.",
+      "Without a doubt.",
+      "Yes - definitely.",
+      "You may rely on it.",
+    ],
+    positive: [
+      "As I see it, yes.",
+      "Most likely.",
+      "Outlook good.",
+      "Yes.",
+      "Signs point to yes.",
+    ],
+    negative: [
+      "Reply hazy, try again.",
+      "Ask again later.",
+      "Better not tell you now.",
+      "Cannot predict now.",
+      "Concentrate and ask again.",
+    ],
+    "very negative": [
+      "Don't count on it.",
+      "My reply is no.",
+      "My sources say no.",
+      "Outlook not so good.",
+      "Very doubtful.",
+    ],
+  };
+  answerr = checkAnswer(main_moods_selection);
+  console.log(answerr);
+  return answerr;
 }
 
 /* 
@@ -68,37 +96,20 @@ function shakeBall() {
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
-function checkAnswer(current_mood) {
+function checkAnswer(main_moods_selection) {
   //Write your code in here
 
-  very_positive = [
-    "It is certain.",
-    "It is decidedly so.",
-    "Without a doubt.",
-    "Yes - definitely.",
-    "You may rely on it.",
-  ];
-  Positive = [
-    "As I see it, yes.",
-    "Most likely.",
-    "Outlook good.",
-    "Yes.",
-    "Signs point to yes.",
-  ];
-  Negative = [
-    "Reply hazy, try again.",
-    "Ask again later.",
-    "Better not tell you now.",
-    "Cannot predict now.",
-    "Concentrate and ask again.",
-  ];
-  very_negative = [
-    "Don't count on it.",
-    "My reply is no.",
-    "My sources say no.",
-    "Outlook not so good.",
-    "Very doubtful.",
-  ];
+  var mood_keys = Object.keys(main_moods_selection); // stores all the mood types
+  var ran_mood = Math.floor(Math.random() * mood_keys.length); // generates random math for mood types
+  var one_mood = mood_keys[ran_mood]; // stores one random mood
+  var one_mood_values = main_moods_selection[mood_keys[ran_mood]]; // stores the all the values from inside one selected mood
+  var random_one_mood_values = Math.floor(
+    Math.random() * one_mood_values.length
+  ); // generates random math for values of one selected mood
+  var selected_ran_value = one_mood_values[random_one_mood_values]; // stores one selected random value
+
+  console.log("  The answer is :  " + one_mood);
+  return selected_ran_value;
 }
 
 /* 
