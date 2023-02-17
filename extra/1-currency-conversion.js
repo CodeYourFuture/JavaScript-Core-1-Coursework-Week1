@@ -19,10 +19,7 @@ function convertToUSD(stirling) {
 */
 
 function convertToBRL(stirling) {
-  fee = (stirling / 100) * 1;
-  final = stirling - fee;
-  real = final * 5.7;
-  return real.toFixed(2);
+  return Math.round(stirling * 0.99 * 5.7 * 100) / 100;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== 
