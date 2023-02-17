@@ -1,3 +1,7 @@
+//
+//  https://codepen.io/codifiedconcepts/pen/vXgvQL
+//  https://github.com/mmaynar1/games/blob/master/magic-eight-ball/magic-eight-ball.js
+//
 /**
 
   Let's peer into the future using a Magic 8 Ball!
@@ -46,7 +50,13 @@
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
-  //Write your code in here
+  //Write your code in hereconst
+
+  mood = ["Very positive", "Positive", "Negative", "Very negative"];
+  const mood_select = Math.floor(Math.random() * months.length);
+  current_mood = mood[mood_select];
+  answerr = checkAnswer(current_mood);
+  console.log("current mood is =  " + current_mood + " anser is =  " + answerr);
 }
 
 /* 
@@ -58,8 +68,37 @@ function shakeBall() {
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
-function checkAnswer(answer) {
+function checkAnswer(current_mood) {
   //Write your code in here
+
+  very_positive = [
+    "It is certain.",
+    "It is decidedly so.",
+    "Without a doubt.",
+    "Yes - definitely.",
+    "You may rely on it.",
+  ];
+  Positive = [
+    "As I see it, yes.",
+    "Most likely.",
+    "Outlook good.",
+    "Yes.",
+    "Signs point to yes.",
+  ];
+  Negative = [
+    "Reply hazy, try again.",
+    "Ask again later.",
+    "Better not tell you now.",
+    "Cannot predict now.",
+    "Concentrate and ask again.",
+  ];
+  very_negative = [
+    "Don't count on it.",
+    "My reply is no.",
+    "My sources say no.",
+    "Outlook not so good.",
+    "Very doubtful.",
+  ];
 }
 
 /* 
@@ -101,7 +140,9 @@ test("magic 8 ball returns different values each time", () => {
     );
   }
 
-  let seenPositivities = new Set(Array.from(seenAnswers.values()).map(checkAnswer));
+  let seenPositivities = new Set(
+    Array.from(seenAnswers.values()).map(checkAnswer)
+  );
   if (seenPositivities.size < 2) {
     throw Error(
       "Expected to random answers with different positivities each time shakeBall was called, but always got the same one"
