@@ -49,7 +49,7 @@
 const matchers = require("jest-extended");
 expect.extend(matchers);
 
-const main_moods_selection = {
+const mood = {
   "very positive": [
     "It is certain.",
     "It is decidedly so.",
@@ -80,20 +80,16 @@ const main_moods_selection = {
   ],
 };
 
-var state_of_mood = "";
-var state_answer = "";
-
 function mood_selector() {
-  var mood_keys = Object.keys(main_moods_selection); // stores all the mood types
+  var mood_keys = Object.keys(mood); // stores all the mood types
   var ran_mood = Math.floor(Math.random() * mood_keys.length); // generates random math for mood types
   var one_mood = mood_keys[ran_mood]; // stores one random mood
-  var one_mood_values = main_moods_selection[mood_keys[ran_mood]]; // stores the all the values from inside one selected mood
+  var one_mood_values = mood[mood_keys[ran_mood]]; // stores the all the values from inside one selected mood
   var random_one_mood_values = Math.floor(
     Math.random() * one_mood_values.length
   ); // generates random math for values of one selected mood
   var selected_ran_value = one_mood_values[random_one_mood_values]; // stores one selected random value
-  state_answer = selected_ran_value;
-  state_of_mood = one_mood;
+  return selected_ran_value;
 }
 // This should log "The ball has shaken!"
 // and return the answer.
@@ -101,8 +97,7 @@ function shakeBall() {
   //Write your code in hereconst
   console.log("The ball has shaken!");
 
-  mood_selector();
-  return state_answer;
+  return mood_selector();
 }
 
 /* 
@@ -114,20 +109,16 @@ function shakeBall() {
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
-function checkAnswer() {
+const state_of_mood = (mood_object, sentence) => {
+  let key = Object.keys(mood_object).find((k) =>
+    mood[k].find((mood_value) => mood_value === sentence) ? true : false
+  );
+  return key;
+};
+function checkAnswer(answer) {
   //Write your code in here
-  let indexOfAnswers = possibleAnswers.indexOf(answer);
 
-  if (indexOfAnswers <= 4) {
-    return "very positive";
-  } else if (indexOfAnswers >= 5 && indexOfAnswers < 10) {
-    return "positive";
-  } else if (indexOfAnswers >= 10 && indexOfAnswers < 15) {
-    return "negative";
-  } else if (indexOfAnswers >= 15 && indexOfAnswers < 20) {
-    return "very negative";
-  }
-  return state_of_mood;
+  return state_of_mood(mood, answer);
 }
 
 /* 
