@@ -1,7 +1,7 @@
 //
 //  https://codepen.io/codifiedconcepts/pen/vXgvQL
 //  https://github.com/mmaynar1/games/blob/master/magic-eight-ball/magic-eight-ball.js
-//
+//  https://stackoverflow.com/questions/9907419/how-to-get-a-key-in-a-javascript-object-by-its-value
 /**
 
   Let's peer into the future using a Magic 8 Ball!
@@ -46,9 +46,11 @@
     Outlook not so good.
     Very doubtful.
 */
+//  have to include the below two iline for one test below to work
 const matchers = require("jest-extended");
 expect.extend(matchers);
 
+// main list of moods and sentences
 const mood = {
   "very positive": [
     "It is certain.",
@@ -80,6 +82,7 @@ const mood = {
   ],
 };
 
+// sentencs selector for the 8 ball
 function mood_selector() {
   var mood_keys = Object.keys(mood); // stores all the mood types
   var ran_mood = Math.floor(Math.random() * mood_keys.length); // generates random math for mood types
@@ -109,6 +112,7 @@ function shakeBall() {
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
+// mood checker for the check answer function
 const state_of_mood = (mood_object, sentence) => {
   let key = Object.keys(mood_object).find((k) =>
     mood[k].find((mood_value) => mood_value === sentence) ? true : false
