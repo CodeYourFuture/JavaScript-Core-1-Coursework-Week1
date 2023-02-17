@@ -43,10 +43,53 @@
     Very doubtful.
 */
 
+
+const veryPositive = [
+  "It is certain.",
+  "It is decidedly so.",
+  "Without a doubt.",
+  "Yes - definitely.",
+  "You may rely on it.",
+];
+
+const positive = [
+  "As I see it, yes.",
+  "Most likely.",
+  "Outlook good.",
+  "Yes.",
+  "Signs point to yes.",
+];
+
+const negative = [
+  "Reply hazy, try again.",
+  "Ask again later.",
+  "Better not tell you now.",
+  "Cannot predict now.",
+  "Concentrate and ask again.",
+];
+
+const veryNegative = [
+  "Don't count on it.",
+  "My reply is no.",
+  "My sources say no.",
+  "Outlook not so good.",
+  "Very doubtful.",
+];
+
+const answers = [
+  ...veryPositive,
+  ...positive,
+  ...negative,
+  ...veryNegative,
+];
+
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
   //Write your code in here
+  console.log("The ball has shaken!");
+  let randomAnswer = Math.floor(Math.random() * answers.length);
+  return answers[randomAnswer];
 }
 
 /* 
@@ -60,8 +103,18 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
-}
-
+switch (answers.includes(answer)) {
+  case veryPositive.includes(answer):
+    return "very positive";
+  case positive.includes(answer):
+    return "positive";
+  case negative.includes(answer):
+    return "negative";
+  case veryNegative.includes(answer):
+    return "very negative";
+  default:
+    return answer
+}};
 /* 
 ==================================
 ======= TESTS - DO NOT MODIFY =====
