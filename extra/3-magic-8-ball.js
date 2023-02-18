@@ -45,45 +45,51 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
-const posibleAnswers = [
-  {
-    1: 'It is certain',
-    2: 'It is decidedly so.',
-    3: 'Without a doubt.',
-    4: 'Yes - definitely.',
-    5: 'You may rely on it.',
-  },
-  {
-    1: 'As I see it, yes.',
-    2: 'Most likely.',
-    3: 'Outlook good.',
-    4: 'Yes',
-    5: 'Signs point to yes.',
-  },
-  {
-    1: 'Reply hazy, try again.',
-    2: 'Ask again later.',
-    3: 'Better not tell you now.',
-    4: 'Cannot predict now.',
-    5: 'Concentrate and ask again.',
-  },
-  {
-    1: "Don't count on it.",
-    2: 'My reply is no.',
-    3: 'My sources say no.',
-    4: 'Outlook not so good.',
-    5: 'Very doubtful.',
-  },
+let veryPositiveAnswers = [
+  'It is certain.',
+  'It is decidedly so.',
+  'Without a doubt.',
+  'Yes - definitely.',
+  'You may rely on it.',
 ];
 
-// V.1 Function shakeBall generates random answer from different types of answers. By using Math.random() method function creates random number from 0 to length of posibleAnswers array. After that by creating random number from 1 to 5, function choosing random answer from chosen object of answers.
-function shakeBall() {
-  const randomIndex = Math.floor(Math.random() * posibleAnswers.length);
-  const selectedObject = posibleAnswers[randomIndex];
-  const randomKey = Math.floor(Math.random() * 5 + 1);
-  const selectedAnswer = selectedObject[randomKey];
+let positiveAnswers = [
+  'As I see it, yes.',
+  'Most likely.',
+  'Outlook good.',
+  'Yes.',
+  'Signs point to yes.',
+];
 
-  return selectedAnswer;
+let negativeAnswers = [
+  'Reply hazy, try again.',
+  'Ask again later.',
+  'Better not tell you now.',
+  'Cannot predict now.',
+  'Concentrate and ask again.',
+];
+
+let veryNegativeAnswers = [
+  "Don't count on it.",
+  'My reply is no.',
+  'My sources say no.',
+  'Outlook not so good.',
+  'Very doubtful.',
+];
+
+let allAnswers = [
+  ...veryPositiveAnswers,
+  ...positiveAnswers,
+  ...negativeAnswers,
+  ...veryNegativeAnswers,
+];
+
+// This should log "The ball has shaken!"
+// and return the answer.
+function shakeBall() {
+  console.log('The ball has shaken!');
+  let randomIndex = Math.floor(Math.random() * allAnswers.length);
+  return allAnswers[randomIndex];
 }
 
 /*
@@ -92,13 +98,19 @@ function shakeBall() {
     - positive
     - negative
     - very negative
-
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
-  //Write your code in here
+  if (veryPositiveAnswers.includes(answer)) {
+    return 'very positive';
+  } else if (positiveAnswers.includes(answer)) {
+    return 'positive';
+  } else if (negativeAnswers.includes(answer)) {
+    return 'negative';
+  } else if (veryNegativeAnswers.includes(answer)) {
+    return 'very negative';
+  }
 }
-
 /*
 ==================================
 ======= TESTS - DO NOT MODIFY =====
