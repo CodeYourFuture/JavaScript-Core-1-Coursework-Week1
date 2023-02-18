@@ -1,41 +1,41 @@
-/*
-  CURRENCY CONVERSION
-  ===================
-  The business is breaking out into a new market and need to convert prices to USD
-  Write a function that converts a price to USD (exchange rate is 1.4 $ to £)
-*/
+// Add comments to explain what this function does. You're meant to use Google!
 
-function convertToUSD() {}
+// Generate number bewtween 0 and 10 includind 10
+function getRandomNumber() {
+  return Math.random() * 10;
+}
 
-/*
-  CURRENCY CONVERSION
-  ===================
-  The business is now breaking into the Brazilian market
-  Write a new function for converting to the Brazilian real (exchange rate is 5.7 BRL to £)
-  They have also decided that they should add a 1% fee to all foreign transactions, which means you only convert 99% of the £ to BRL.
-*/
+// Add comments to explain what this function does. You're meant to use Google!
+// creating new variable which is merged world1 and world2
+function combine2Words(word1, word2) {
+  return word1.concat(word2);
+}
 
-function convertToBRL() {}
+function concatenate(firstWord, secondWord, thirdWord) {
+  // Write the body of this function to concatenate three words together.
+  // Look at the test case below to understand what this function is expected to return.
+  return firstWord.concat(" ", secondWord, " ", thirdWord )
+}
 
-/* ======= TESTS - DO NOT MODIFY ===== 
+/* 
+===================================================
+======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
+
 There are some Tests in this file that will help you work out if your code is working.
 
-To run the tests for just this one file, type `npm test -- --testPathPattern 1-currency-conversion` into your terminal
+To run the tests for just this one file, type `npm test -- --testPathPattern 3-function-output` into your terminal
 (Reminder: You must have run `npm install` one time before this will work!)
+==================================
 */
 
-test("convertToUSD function works for £32", () => {
-  expect(convertToUSD(32)).toEqual(44.8);
+test("concatenate example #1", () => {
+  expect(concatenate("code", "your", "future")).toEqual("code your future");
 });
 
-test("convertToUSD function works for £50", () => {
-  expect(convertToUSD(50)).toEqual(70);
+test("concatenate example #2", () => {
+  expect(concatenate("I", "like", "pizza")).toEqual("I like pizza");
 });
 
-test("convertToBRL function works for £30", () => {
-  expect(convertToBRL(30)).toEqual(169.29);
-});
-
-test("convertToBRL function works for £1.50", () => {
-  expect(convertToBRL(1.5)).toEqual(8.46);
+test("concatenate doesn't only accept strings", () => {
+  expect(concatenate("I", "am", 13)).toEqual("I am 13");
 });
