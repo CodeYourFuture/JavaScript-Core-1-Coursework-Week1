@@ -22,8 +22,12 @@ function calculateSalesTax(price) {
 */
 
 function addTaxAndFormatCurrency(price) {
-  return calculateSalesTax(price).fix(2)
+  console.log(price)
+  return "£" + calculateSalesTax(price).toFixed(2);
+  
 }
+console.log(addTaxAndFormatCurrency(40))
+
 
 /* 
 ===================================================
