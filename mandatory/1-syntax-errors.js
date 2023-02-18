@@ -1,11 +1,11 @@
 // There are syntax errors in this code - can you fix it to pass the tests?
-let x = 3;
-let y = 4;
-let z = 6;
+// let x = 3;
+// let y = 4;
+// let z = 6;
 function addNumbers(x, y, z) {
   return x + y + z;
 }
-console.log(addNumbers);
+//console.log(addNumbers);
 
 
 let name = "Sonjide";
@@ -13,7 +13,7 @@ let age = 27;
 function introduceMe(name, age){
   return `Hello, my name is ${name} and I am ${age} years old`;
 }
-console.log(introduceMe);
+//console.log(introduceMe);
 
 
 let a = 23;
@@ -21,7 +21,7 @@ let b = 5;
 function getTotal(a, b) {
   return `The total is ${total = a + b}`;
 }
-console.log(getTotal);
+//console.log(getTotal);
 
 /* 
 ===================================================
