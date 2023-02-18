@@ -10,7 +10,6 @@ If you think you need to do more practice with the basics, then you can find som
 
 ## Setting up your code editor
 
-
 There are some tools that will help you to write code. One of these, [Prettier](https://prettier.io/), formats your code, making it easier for you and others to read.
 
 ### 1. Install prettier
@@ -25,10 +24,9 @@ There are some tools that will help you to write code. One of these, [Prettier](
 - Search for `editor format`
 - Set `editor.formatOnSave` and `editor.formatOnPaste` to true
 
-
 ## Running the code/tests
 
-The files for the mandatory/extra exercises are intended to be run as jest tests. 
+The files for the mandatory/extra exercises are intended to be run as jest tests.
 
 - Once you have cloned the repository, run `npm install` once in the terminal to install jest (and any necessary dependencies).
 - To run the tests for all mandatory/extra exercises, run `npm test`
