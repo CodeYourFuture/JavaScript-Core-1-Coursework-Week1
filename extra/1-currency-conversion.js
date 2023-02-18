@@ -25,7 +25,7 @@ function convertToBRL(price) {
 }
 console.log(convertToBRL(20));
 
-/* ======= TESTS - DO NOT MODIFY ===== 
+ ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
 
 To run the tests for just this one file, type `npm test -- --testPathPattern 1-currency-conversion` into your terminal
@@ -46,4 +46,4 @@ test("convertToBRL function works for £30", () => {
 
 test("convertToBRL function works for £1.50", () => {
   expect(convertToBRL(1.5)).toEqual(8.46);
-});*/
+});
