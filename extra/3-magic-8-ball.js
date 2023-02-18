@@ -1,7 +1,7 @@
 /**
 
   Let's peer into the future using a Magic 8 Ball!
-  https://en.wikipedia.org/wiki/Magic_8-Ball 
+  https://en.wikipedia.org/wiki/Magic_8-Ball
 
   There are a few steps to being able view the future though:
   * Ask a question
@@ -45,11 +45,48 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
+const posibleAnswers = [
+  {
+    1: 'It is certain',
+    2: 'It is decidedly so.',
+    3: 'Without a doubt.',
+    4: 'Yes - definitely.',
+    5: 'You may rely on it.',
+  },
+  {
+    1: 'As I see it, yes.',
+    2: 'Most likely.',
+    3: 'Outlook good.',
+    4: 'Yes',
+    5: 'Signs point to yes.',
+  },
+  {
+    1: 'Reply hazy, try again.',
+    2: 'Ask again later.',
+    3: 'Better not tell you now.',
+    4: 'Cannot predict now.',
+    5: 'Concentrate and ask again.',
+  },
+  {
+    1: "Don't count on it.",
+    2: 'My reply is no.',
+    3: 'My sources say no.',
+    4: 'Outlook not so good.',
+    5: 'Very doubtful.',
+  },
+];
+
+// V.1 Function shakeBall generates random answer from different types of answers. By using Math.random() method function creates random number from 0 to length of posibleAnswers array. After that by creating random number from 1 to 5, function choosing random answer from chosen object of answers.
 function shakeBall() {
-  //Write your code in here
+  const randomIndex = Math.floor(Math.random() * posibleAnswers.length);
+  const selectedObject = posibleAnswers[randomIndex];
+  const randomKey = Math.floor(Math.random() * 5 + 1);
+  const selectedAnswer = selectedObject[randomKey];
+
+  return selectedAnswer;
 }
 
-/* 
+/*
   This function should say whether the answer it is given is
     - very positive
     - positive
@@ -62,7 +99,7 @@ function checkAnswer(answer) {
   //Write your code in here
 }
 
-/* 
+/*
 ==================================
 ======= TESTS - DO NOT MODIFY =====
 
@@ -73,46 +110,41 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 3-m
 ==================================
 */
 
-test("whole magic 8 ball sequence", () => {
-  const consoleLogSpy = jest.spyOn(global.console, "log");
+test('whole magic 8 ball sequence', () => {
+  const consoleLogSpy = jest.spyOn(global.console, 'log');
   const answer = shakeBall();
 
-  expect(typeof answer).toEqual("string");
+  expect(typeof answer).toEqual('string');
 
   expect(consoleLogSpy).toHaveBeenCalledTimes(1);
-  expect(consoleLogSpy).toHaveBeenLastCalledWith("The ball has shaken!");
+  expect(consoleLogSpy).toHaveBeenLastCalledWith('The ball has shaken!');
 
-  expect(checkAnswer(answer)).toBeOneOf([
-    "very positive",
-    "positive",
-    "negative",
-    "very negative",
-  ]);
+  expect(checkAnswer(answer)).toBeOneOf(['very positive', 'positive', 'negative', 'very negative']);
 });
 
-test("magic 8 ball returns different values each time", () => {
+test('magic 8 ball returns different values each time', () => {
   const seenAnswers = new Set();
   for (let i = 0; i < 10; ++i) {
     seenAnswers.add(shakeBall());
   }
   if (seenAnswers.size < 2) {
     throw Error(
-      "Expected to get different random answers each time shakeBall was called, but always got the same one"
+      'Expected to get different random answers each time shakeBall was called, but always got the same one'
     );
   }
 
   let seenPositivities = new Set(Array.from(seenAnswers.values()).map(checkAnswer));
   if (seenPositivities.size < 2) {
     throw Error(
-      "Expected to random answers with different positivities each time shakeBall was called, but always got the same one"
+      'Expected to random answers with different positivities each time shakeBall was called, but always got the same one'
     );
   }
 });
 
-test("checkAnswer works for `It is decidedly so.`", () => {
-  expect(checkAnswer("It is decidedly so.")).toEqual("very positive");
+test('checkAnswer works for `It is decidedly so.`', () => {
+  expect(checkAnswer('It is decidedly so.')).toEqual('very positive');
 });
 
-test("checkAnswer works for `My reply is no.`", () => {
-  expect(checkAnswer("My reply is no.")).toEqual("very negative");
+test('checkAnswer works for `My reply is no.`', () => {
+  expect(checkAnswer('My reply is no.')).toEqual('very negative');
 });

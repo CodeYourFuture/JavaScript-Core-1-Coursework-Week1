@@ -1,4 +1,4 @@
-# Coursework
+n# Coursework
 
 Like learning a musical instrument, programming requires daily practice.
 
@@ -9,7 +9,6 @@ The `extra` folder contains exercises that you can complete to challenge yoursel
 If you think you need to do more practice with the basics, then you can find some more exercises listed in `resources.md`. These exercises are not mandatory and won't be assigned as part of your coursework for the week.
 
 ## Setting up your code editor
-
 
 There are some tools that will help you to write code. One of these, [Prettier](https://prettier.io/), formats your code, making it easier for you and others to read.
 
@@ -25,10 +24,9 @@ There are some tools that will help you to write code. One of these, [Prettier](
 - Search for `editor format`
 - Set `editor.formatOnSave` and `editor.formatOnPaste` to true
 
-
 ## Running the code/tests
 
-The files for the mandatory/extra exercises are intended to be run as jest tests. 
+The files for the mandatory/extra exercises are intended to be run as jest tests.
 
 - Once you have cloned the repository, run `npm install` once in the terminal to install jest (and any necessary dependencies).
 - To run the tests for all mandatory/extra exercises, run `npm test`
