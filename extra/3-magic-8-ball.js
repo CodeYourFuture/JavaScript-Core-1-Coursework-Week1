@@ -1,4 +1,8 @@
-/**
+ // import jest extended matchers
+const jestExtended = require("jest-extended");
+// extend the existing jest class with the jest-extended matchers
+expect.extend(jestExtended);
+
 
   Let's peer into the future using a Magic 8 Ball!
   https://en.wikipedia.org/wiki/Magic_8-Ball 
@@ -75,21 +79,14 @@ let veryNegativeAnswers = [
   "Very doubtful.",
 ];
 
-let allAnswers = [
-  ...veryPositiveAnswers,
-  ...positiveAnswers,
-  ...negativeAnswers,
-  ...veryNegativeAnswers,
-];
-
+var answer;
 // This should log "The ball has shaken!"
-
 // and return the answer.
 function shakeBall() {
   //Write your code in here
   console.log("The ball has shaken!");
-  let randomIndex = Math.floor(Math.random() * allAnswers.length);
-  return allAnswers[randomIndex];
+  answer = returnRandomAnswer();
+  return answer;
 }
 
 /* 
@@ -98,21 +95,68 @@ function shakeBall() {
     - positive
     - negative
     - very negative
-
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
-function checkAnswer(answer) {
-  //Write your code in here
-  if (veryPositiveAnswers.includes(answer)) {
-    return "very positive";
-  } else if (positiveAnswers.includes(answer)) {
-    return "positive";
-  } else if (negativeAnswers.includes(answer)) {
-    return "negative";
-  } else if (veryNegativeAnswers.includes(answer)) {
-    return "very negative";
-  }
+function shakeBall() {
+  const possibleAnswers = {
+    veryPositive: [
+      "It is certain.",
+      "It is decidedly so.",
+      "Without a doubt.",
+      "Yes - definitely.",
+      "You may rely on it.",
+    ],
+    positive: [
+      "As I see it, yes.",
+      "Most likely.",
+      "Outlook good.",
+      "Yes.",
+      "Signs point to yes.",
+    ],
+    negative: [
+      "Reply hazy, try again.",
+      "Ask again later.",
+      "Better not tell you now.",
+      "Cannot predict now.",
+      "Concentrate and ask again.",
+    ],
+    veryNegative: [
+      "Don't count on it.",
+      "My reply is no.",
+      "My sources say no.",
+      "Outlook not so good.",
+      "Very doubtful.",
+    ],
+  };
+
+  const randomAnswer =
+    possibleAnswers[
+      Object.keys(possibleAnswers)[Math.floor(Math.random() * 4)]
+    ][Math.floor(Math.random() * 5)];
+
+  console.log("The ball has shaken!");
+  return randomAnswer;
 }
+
+function checkAnswer(answer) {
+
+  const possibleAnswers = {
+    veryPositive: ["It is certain.", "It is decidedly so.", "Without a doubt.", "Yes - definitely.", "You may rely on it."],
+    positive: ["As I see it, yes.", "Most likely.", "Outlook good.", "Yes.", "Signs point to yes."],
+    negative: ["Reply hazy, try again.", "Ask again later.", "Better not tell you now.", "Cannot predict now.", "Concentrate and ask again."],
+    veryNegative: ["Don't count on it.", "My reply is no.", "My sources say no.", "Outlook not so good.", "Very doubtful."]
+  };
+
+  for (let category in possibleAnswers) {
+    if (possibleAnswers[category].indexOf(answer) > -1) {
+      return category
+        // fix camelCase and no space between words, to allow it to be used as the return string
+        .split("")
+        .map((element) => element === element.toUpperCase() ? ` ${element}` : element)
+        .join("")
+        .toLowerCase();
+    }
+  };
 
 /* 
 ==================================
