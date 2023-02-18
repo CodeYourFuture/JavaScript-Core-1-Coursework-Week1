@@ -2,16 +2,21 @@
 function getRandomNumber() {
   return Math.random() * 10;
 }
+// getRandomNumber is a desspription of what I want to happen. The Math.random() method - The Math object in JavaScript is a built-in object that has properties and methods for performing mathematical calculations. A common use of the Math object is to create a random number using the random() method.
 
 // Add comments to explain what this function does. You're meant to use Google!
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
 
+// I created a descriptive word to my function. The CONCAT function combines the text from multiple ranges and/or strings, but it doesn't provide delimiter or IgnoreEmpty arguments. 
+
 function concatenate(firstWord, secondWord, thirdWord) {
+ return firstWord.concat(" ", secondWord, " ", thirdWord);
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
 }
+
 
 /* 
 ===================================================
