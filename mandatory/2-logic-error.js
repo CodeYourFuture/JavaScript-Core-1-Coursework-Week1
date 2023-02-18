@@ -1,19 +1,18 @@
 // The syntax for these functions is valid but there are some errors, find them and fix them
 
 function trimWord(word) {
-  return wordtrim();
+  return word.trim();
 }
 
 function getStringLength(word) {
-  return "word".length();
+  return word.length;
 }
 
 function multiply(a, b, c) {
-  a * b * c;
-  return;
+  return a * b * c;
 }
 
-/* 
+/*
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
 
@@ -24,28 +23,26 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 2-l
 ===================================================
 */
 
-test("trimWord trims leading and trailing whitespace", () => {
-  expect(trimWord("   CodeYourFuture ")).toEqual("CodeYourFuture");
+test('trimWord trims leading and trailing whitespace', () => {
+  expect(trimWord('   CodeYourFuture ')).toEqual('CodeYourFuture');
 });
 
 test("trimWord doesn't remove whitespace in the middle of the string", () => {
-  expect(trimWord(" CodeYourFuture teaches coding     ")).toEqual(
-    "CodeYourFuture teaches coding"
-  );
+  expect(trimWord(' CodeYourFuture teaches coding     ')).toEqual('CodeYourFuture teaches coding');
 });
 
-test("getStringLength returns the length of a word", () => {
-  expect(getStringLength("Turtles")).toEqual(7);
+test('getStringLength returns the length of a word', () => {
+  expect(getStringLength('Turtles')).toEqual(7);
 });
 
-test("getStringLength returns the length of a sentence", () => {
-  expect(getStringLength("A wild sentence appeared!")).toEqual(25);
+test('getStringLength returns the length of a sentence', () => {
+  expect(getStringLength('A wild sentence appeared!')).toEqual(25);
 });
 
-test("multiply multiplies numbers", () => {
+test('multiply multiplies numbers', () => {
   expect(multiply(2, 3, 6)).toEqual(36);
 });
 
-test("multiply multiplies different numbers", () => {
+test('multiply multiplies different numbers', () => {
   expect(multiply(2, 3, 4)).toEqual(24);
 });
