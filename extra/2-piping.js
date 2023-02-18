@@ -41,7 +41,7 @@ let finalResult = format(multiplayResult)
 
 // Why can this code be seen as bad practice? Comment your answer.
  
-//let badCode = ;
+let badCode = format(multiply(add(startingValue,10),2));
 /* BETTER PRACTICE */
 
 let goodCode = finalResult
