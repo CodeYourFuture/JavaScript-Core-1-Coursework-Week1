@@ -45,9 +45,21 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
+const arrayOfMessages = ["It is certain." ,"It is decidedly so.", "Without a doubt." ,
+    "Yes - definitely.", "You may rely on it."]; 
+
 function shakeBall() {
-  //Write your code in here
+
+  console.log("The ball has shaken!");
+  //let randomItem = arrayOfMessages[Math.floor((Math.random()*arrayOfMessages.length))];
+  let randomItem = Math.floor(Math.random() * arrayOfMessages.length);
+  console.log("the random item is " + randomItem)
+ 
+  let randomMessage = arrayOfMessages [randomItem];
+  console.log("the random message is: " + randomMessage);
+  return randomMessage;
 }
+
 
 /* 
   This function should say whether the answer it is given is
@@ -58,8 +70,14 @@ function shakeBall() {
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
+//let answer = ["1" , "2" , "3"];
+
 function checkAnswer(answer) {
   //Write your code in here
+  // let temp2 = answer[Math.floor((Math.random()*answer.length))];
+  // audioElement.setAttribute('src', textArray[randomNumber]);
+  // return temp2; 
+
 }
 
 /* 
