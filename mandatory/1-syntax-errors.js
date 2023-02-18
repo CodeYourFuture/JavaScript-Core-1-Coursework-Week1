@@ -1,12 +1,7 @@
 // There are syntax errors in this code - can you fix it to pass the tests?
-// let x = 3;
-// let y = 4;
-// let z = 6;
-function addNumbers(x, y, z) {
-  return x + y + z;
+function addNumbers(a, b, c) {
+  return a + b + c;
 }
-//console.log(addNumbers);
-
 
 let name = "Sonjide";
 let age = 27;
