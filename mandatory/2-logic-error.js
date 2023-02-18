@@ -19,9 +19,8 @@ function getStringLength() {
 }
 */
 
-function getStringLength() {
-  let phrase = "A wild sentence appeared!";
-  return phrase.length;
+function getStringLength(word) {
+  return word.length;
 }
 
 
