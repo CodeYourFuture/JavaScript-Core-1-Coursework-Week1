@@ -9,10 +9,11 @@ function getStringLength(word) {
 }
 
 function multiply(a, b, c) {
-  a * b * c;
-  return;
+  return (a * b * c);
+  
 }
-
+multiply(2,3,6);
+multiply(2,3,4);
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
