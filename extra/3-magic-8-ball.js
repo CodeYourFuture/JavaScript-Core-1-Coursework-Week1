@@ -45,19 +45,46 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
-const arrayOfMessages = ["It is certain." ,"It is decidedly so.", "Without a doubt." ,
-    "Yes - definitely.", "You may rely on it."]; 
+
+//declare 2D array to contain all messages each type in separated row 
+
+const arrayOfMessages = [
+    ["It is certain.",
+    "It is decidedly so.",
+    "Without a doubt.",
+    "Yes - definitely.",
+    "You may rely on it."] ,
+  
+    ["As I see it, yes.",
+    "Most likely.",
+    "Outlook good.",
+    "Yes.",
+    "Signs point to yes."] ,
+
+    ["Reply hazy, try again.",
+    "Ask again later.",
+    "Better not tell you now.",
+    "Cannot predict now.",
+    "Concentrate and ask again."] ,
+
+    ["Don't count on it.",
+    "My reply is no.",
+    "My sources say no.",
+    "Outlook not so good.",
+    "Very doubtful."] ];
+
+let random1;
+let random2;
 
 function shakeBall() {
-
   console.log("The ball has shaken!");
-  //let randomItem = arrayOfMessages[Math.floor((Math.random()*arrayOfMessages.length))];
-  let randomItem = Math.floor(Math.random() * arrayOfMessages.length);
-  console.log("the random item is " + randomItem)
- 
-  let randomMessage = arrayOfMessages [randomItem];
-  console.log("the random message is: " + randomMessage);
-  return randomMessage;
+
+  random1 = Math.floor(Math.random() * arrayOfMessages.length);
+  random2 = Math.floor(Math.random() * arrayOfMessages.length);
+
+  // console.log(arrayOfMessages[random1][random2]);
+  return arrayOfMessages[random1][random2];
+  
 }
 
 
@@ -70,13 +97,33 @@ function shakeBall() {
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
-//let answer = ["1" , "2" , "3"];
+
 
 function checkAnswer(answer) {
-  //Write your code in here
-  // let temp2 = answer[Math.floor((Math.random()*answer.length))];
-  // audioElement.setAttribute('src', textArray[randomNumber]);
-  // return temp2; 
+  let type;
+  switch (random1)
+  {
+    case 0:
+      //console.log("very positive");
+      type = "very positive";
+      break;
+
+    case 1:
+      //console.log("positive");
+      type = "positive";
+      break;
+
+    case 2:
+      //console.log("negative");
+      type = "negative";
+      break;
+
+    case 3:
+    //console.log("very negative");
+      type = "very negative";
+      break;
+  }
+  return type;
 
 }
 
