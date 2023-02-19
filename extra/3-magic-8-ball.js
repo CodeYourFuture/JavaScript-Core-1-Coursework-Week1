@@ -55,7 +55,8 @@ const veryNegative = ["Don't count on it.", "My reply is no.", "My sources say n
 function shakeBall() {
   //Write your code in here
   let answers = veryPositive.concat(positive, negative, veryNegative);
-  let randomInteger = Math.floor(Math.random() * 25);
+  let numberOfAnswers = answers.length;
+  let randomInteger = Math.floor(Math.random() * numberOfAnswers);
   let randomAnswer = answers[randomInteger];
   console.log("The ball has shaken!");
   return randomAnswer;

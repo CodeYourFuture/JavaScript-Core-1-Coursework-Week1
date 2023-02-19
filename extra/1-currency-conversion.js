@@ -19,8 +19,8 @@ function convertToUSD(amountGBP) {
 
 function convertToBRL(amountGBP) {
   convertedAmount = amountGBP * 0.99 * 5.7;
-  convertedAmount =  convertedAmount.toFixed(2);
-  return Number(convertedAmount);
+  convertedAmount =  (Math.round(convertedAmount * 100)/100);
+  return convertedAmount;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== 

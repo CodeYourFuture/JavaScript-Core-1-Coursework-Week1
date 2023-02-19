@@ -31,7 +31,7 @@ function format(value5) {
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode = `£${((startingValue + 10) * 2)}`;
+let badCode = format(multiply(add(startingValue, 10)));
 
 /* BETTER PRACTICE */
 
