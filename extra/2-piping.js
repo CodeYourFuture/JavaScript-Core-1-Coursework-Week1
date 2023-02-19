@@ -23,20 +23,19 @@ return a+b;
 function multiply(a,b) {
 return a*b;
 }
-
 function format(a) {
   return `£${a}`;
-
 }
 
 const startingValue = 2;
 
-// Why can this code be seen as bad practice? Comment your answer.
-let badCode =
+// Why can this code be seen as bad practice? Comment your answer. Better to use a functions
+let badCode ="£"+((startingValue+10)*2);
+
 
 /* BETTER PRACTICE */
 
-let goodCode =
+let goodCode = format(multiply(add(startingValue,10),2));
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
