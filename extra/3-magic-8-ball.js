@@ -88,8 +88,9 @@ const answers = [
 function shakeBall() {
   //Write your code in here
   console.log("The ball has shaken!");
-  let randomAnswer = Math.floor(Math.random() * answers.length);
-  return answers[randomAnswer];
+  let randomAnswer = answers[Math.floor(Math.random() * answers.length)];
+  
+  return randomAnswer;
 }
 
 /* 
