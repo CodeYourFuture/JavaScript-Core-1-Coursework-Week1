@@ -5,6 +5,11 @@
   Write a function that converts a price to USD (exchange rate is 1.4 $ to £)
 */
 
+let total = 0.00;
+let gbp = 0.00;
+
+let brl = 0.00;
+
 function convertToUSD(gbp) {
   let usd = gbp * 1.4; 
   return usd;
@@ -18,15 +23,11 @@ function convertToUSD(gbp) {
   They have also decided that they should add a 1% fee to all foreign transactions, which means you only convert 99% of the £ to BRL.
 */
 
-let total = 0.00;
-let gbp = 0.00;
-let brl = 0.00;
 
 function convertToBRL(gbp) {
-  
-brl = ( gbp - (gbp*0.01)) * 5.7 ;
-total = Number(brl).toFixed(2);
-return total;
+brl = gbp * 0.99 * 5.7 ;
+brl = parseFloat(brl.toFixed(2));
+return brl;
 
 }
 
