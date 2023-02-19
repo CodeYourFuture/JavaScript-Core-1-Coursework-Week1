@@ -37,7 +37,7 @@ let badCode = `£${((startingValue + 10) * 2)}`;
 
 let valueAddTen = add(startingValue, 10);
 let valueMultiplyByTwo = multiply(valueAddTen, 2);
-let goodCode = `£${valueMultiplyByTwo}`;
+let goodCode = format(valueMultiplyByTwo);
 
 
 
