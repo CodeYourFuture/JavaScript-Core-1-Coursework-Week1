@@ -14,24 +14,15 @@
     "url": "https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week1/issues"
   },
   "jest": {
+    "setupFilesAfterEnv": ["jest-extended"],
     "projects": [
       {
         "displayName": "mandatory",
-        "testMatch": [
-          "<rootDir>/mandatory/*.js"
-        ],
-        "setupFilesAfterEnv": [
-          "jest-extended"
-        ]
+        "testMatch": ["<rootDir>/mandatory/*.js"]
       },
       {
         "displayName": "extra",
-        "testMatch": [
-          "<rootDir>/extra/*.js"
-        ],
-        "setupFilesAfterEnv": [
-          "jest-extended"
-        ]
+        "testMatch": ["<rootDir>/extra/*.js"]
       }
     ]
   },
