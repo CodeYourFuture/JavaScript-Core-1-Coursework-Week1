@@ -1,4 +1,5 @@
 // Add comments to explain what this function does. You're meant to use Google!
+//The java.lang.Math.random() method returns a pseudorandom double type number greater than or equal to 0.0 and less than 1.0  
 function getRandomNumber() {
   return Math.random() * 10;
 }
@@ -7,10 +8,12 @@ function getRandomNumber() {
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
+// The concat() method joins two or more strings 
 
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
-  // Look at the test case below to understand what this function is expected to return.
+ // Look at the test case below to understand what this function is expected to return.
+ return firstWord.concat(" ",secondWord," ",thirdWord);
 }
 
 /* 
