@@ -1,50 +1,5 @@
-/**
+// Rahma _ Berhan 
 
-  Let's peer into the future using a Magic 8 Ball!
-  https://en.wikipedia.org/wiki/Magic_8-Ball 
-
-  There are a few steps to being able view the future though:
-  * Ask a question
-  * Shake the ball
-  * Get an answer
-  * Decide if it's positive or negative
-
-  The question can be anything, but the answers are fixed,
-  and have different levels of positivity or negativity.
-
-  Below are the possible answers:
-
-  ## Very positive
-    It is certain.
-    It is decidedly so.
-    Without a doubt.
-    Yes - definitely.
-    You may rely on it.
-
-  ## Positive
-    As I see it, yes.
-    Most likely.
-    Outlook good.
-    Yes.
-    Signs point to yes.
-
-  ## Negative
-    Reply hazy, try again.
-    Ask again later.
-    Better not tell you now.
-    Cannot predict now.
-    Concentrate and ask again.
-
-  ## Very negative
-    Don't count on it.
-    My reply is no.
-    My sources say no.
-    Outlook not so good.
-    Very doubtful.
-*/
-
-// This should log "The ball has shaken!"
-// and return the answer.
 
 //declare 2D array to contain all messages each type in separated row 
 
@@ -73,16 +28,19 @@ const arrayOfMessages = [
     "Outlook not so good.",
     "Very doubtful."] ];
 
+// declare random1 and random2 variables- and their values will be generated rondomly 
+// will use these two numbers to choose message from the array
+
 let random1;
 let random2;
 
+// this function will print message first, then will generate two numbers , then return message
 function shakeBall() {
   console.log("The ball has shaken!");
 
   random1 = Math.floor(Math.random() * arrayOfMessages.length);
   random2 = Math.floor(Math.random() * arrayOfMessages.length);
 
-  // console.log(arrayOfMessages[random1][random2]);
   return arrayOfMessages[random1][random2];
   
 }
@@ -98,34 +56,51 @@ function shakeBall() {
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 
+// this function will check the array one by one to search for the message stored in answer
+// when the message is found ,it will save the row number in variable rowNum 
+// then it will move to switch to store the message type in type variable and then return it 
 
 function checkAnswer(answer) {
-  let type;
-  switch (random1)
+  let type = "";
+  let rowNum = 0;
+  
+ //search for answer 
+  for (let i = 0 ; i <= 3 ; i++)
+  {
+    for (let j= 0 ;j<=4 ; j++)
+      {
+        if (answer == arrayOfMessages[i][j])
+          {
+            rowNum = i;
+          }
+      }
+  }
+
+//return message type depending on the rowNum 
+  switch (rowNum)
   {
     case 0:
-      //console.log("very positive");
       type = "very positive";
       break;
 
     case 1:
-      //console.log("positive");
       type = "positive";
       break;
 
     case 2:
-      //console.log("negative");
       type = "negative";
       break;
 
     case 3:
-    //console.log("very negative");
       type = "very negative";
       break;
   }
   return type;
 
 }
+
+
+
 
 /* 
 ==================================
