@@ -59,7 +59,7 @@
 function shakeBall() {
   console.log("The ball has shaken!");
   // const allAnswers = veryPositive.concat(positive, negative, veryNegative);
-  const allAnswers = ["very positive", "positive", "negative", "very negative"];
+  const allAnswers = [...veryPositive, ...positive, ...negative, ...veryNegative];
   let answer = allAnswers [Math.floor(Math.random()*allAnswers.length)];
   // console.log(prediction);
   return answer;
@@ -77,14 +77,14 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   if (veryPositive.indexOf(answer) >= 0 ) {
-    console.log("very positive");
+    return "very positive";
   //Write your code in here
   } else if (positive.indexOf(answer) >= 0) {
-     console.log("positive");
+     return "positive";
      } else if (negative.indexOf(answer) >= 0) {
-      console.log("negative");
+      return "negative";
      } else {
-      console.log("very negative");
+      return "very negative";
      }
 
      
