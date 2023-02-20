@@ -43,12 +43,61 @@
     Very doubtful.
 */
 
-// This should log "The ball has shaken!"
-// and return the answer.
-function shakeBall() {
-  //Write your code in here
+const answers ={
+
+'very positive':[
+    'It is certain.',
+   'It is decidedly so.',
+    'Without a doubt.',
+    'Yes - definitely.',
+    'You may rely on it.'
+  ],
+
+  'positive':[
+    'As I see it, yes.',
+    'Most likely.',
+    'Outlook good.',
+    'Yes.',
+    'Signs point to yes.'
+  ],
+
+  'negative': [
+  'Reply hazy, try again.',
+  'Ask again later.',
+  'Better not tell you now.',
+  'Cannot predict now.',
+  'Concentrate and ask again.'
+],
+
+'very negative': [
+  'Don\'t count on it.',
+  'My reply is no.',
+  'My sources say no.',
+  'Outlook not so good.',
+  'Very doubtful.'
+],
 }
 
+// This should log "The ball has shaken!"
+// and return the answer.
+// function shakeBall() {
+//   console.log('The Ball has shake');
+//   const answers = [
+//     Very_positive, Positive, 
+//     Very_negative, Negative,
+
+//   ];
+
+//   const P = Math.floor(Math.random() * answers.length);
+//   return answers[P];
+// }
+function shakeBall() {
+  console.log('The ball has shaken!');
+  const types = Object.keys(answers);
+  const randomType = types[Math.floor(Math.random() * types.length)];
+  const randomAnswer = answers[randomType][Math.floor(Math.random() * answers[randomType].length)];
+  return randomAnswer;
+}
 /* 
   This function should say whether the answer it is given is
     - very positive
@@ -59,8 +108,27 @@ function shakeBall() {
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
-  //Write your code in here
+  for (let type in answers) {
+    if (answers[type].includes(answer)) {
+      return type;
+    }
+  }
 }
+// function checkAnswer(answers) {
+//   if(very_positive.includes(answers)){
+//     return 'very positive';
+//   }
+//   else if(positive.includes(answers)){
+//     return 'positive';
+//   }
+//      else if(very_negative.includes(answers)){
+//     return 'very negative';
+//   }
+//    else if(negative.includes(answers)){
+//     return 'negative';
+//   }
+// }
+
 
 /* 
 ==================================
