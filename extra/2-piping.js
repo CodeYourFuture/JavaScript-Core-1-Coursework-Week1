@@ -34,8 +34,10 @@ let badCode ="£"+((startingValue+10)*2);
 
 
 /* BETTER PRACTICE */
+let sum=add(startingValue,10);
+let result=multiply(sum,2);
 
-let goodCode = format(multiply(add(startingValue,10),2));
+let goodCode = format(result);
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
