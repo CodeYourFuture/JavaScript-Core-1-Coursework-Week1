@@ -6,11 +6,14 @@
 */
 
 function calculateSalesTax(ProductPrice) {
-  return ProductPrice * 0.2;
-}
+  let Tax = ProductPrice * 0.2;
+  let total = ProductPrice + Tax;
+  return total;
 
+}
 /*
   CURRENCY FORMATTING
+
   ===================
   The business has informed you that prices must have 2 decimal places
   They must also start with the currency symbol
@@ -20,8 +23,9 @@ function calculateSalesTax(ProductPrice) {
 */
 
 function addTaxAndFormatCurrency(ProductPrice) {
-  let SalesTax = calculateSalesTax(ProductPrice);
-  let total = ProductPrice + SalesTax;
+  let Tax = ProductPrice * 0.2;
+  let total = ProductPrice + Tax;
+
   return `£${total.toFixed(2)}`;
 }
 /* 
