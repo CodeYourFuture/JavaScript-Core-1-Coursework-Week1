@@ -9,9 +9,8 @@
 function convertToUSD(priceGBP) {
    exchangeRate = 1.4;
   const priceUSD = priceGBP * exchangeRate;
-  return priceUSD;
+  return  Number(priceUSD.toFixed(2));
 }
-
 
 /*
   CURRENCY CONVERSION
@@ -25,8 +24,8 @@ function convertToUSD(priceGBP) {
 function convertToBRL(priceGBP) {
  const exchangeRate = 5.7;
 const transactionFee = 0.01;
-return priceBRL= priceGBP * exchangeRate * (1 - transactionFee);
-
+priceBRL= priceGBP * exchangeRate * (1 - transactionFee);
+return Number(priceBRL.toFixed(2));
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== 
