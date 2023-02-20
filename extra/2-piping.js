@@ -16,26 +16,29 @@
   the final result to the variable goodCode
 */
 
-function add() {
-
+function add(a,b) {
+let sum=a+b;
+return sum;
 }
 
-function multiply() {
-
+function multiply(a,b) {
+let mult=a*b;
+return mult;
 }
 
-function format() {
-
+function format(num) {
+return "£"+num;
 }
 
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =
+let badCode = 
+//const is local variabe and we cant use it in deferent functions
 
-/* BETTER PRACTICE */
+/* BETTER PRACTICE */ 
 
-let goodCode =
+let badCode = 12 4 2 
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
