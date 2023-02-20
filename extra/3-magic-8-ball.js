@@ -45,8 +45,12 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
-function shakeBall() {
-  //Write your code in here
+
+function shakeBall(herebetterStartingValue) {
+  answerRandom = Math.floor(Math.random() * 16);
+  return answerRandom;
+  //Write your code in herebetterStartingValue
+  
 }
 
 /* 
@@ -58,9 +62,49 @@ function shakeBall() {
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
-function checkAnswer(answer) {
+
+const answer = [
+    "It is certain.",
+    "It is decidedly so.",
+    "Without a doubt.",
+    "Yes - definitely.",
+    "You may rely on it.",
+    "As I see it, yes.",
+    "Most likely.",
+    "Outlook good.",
+    "Yes.",
+    "Signs point to yes.",
+    "Reply hazy, try again.",
+    "Ask again later.",
+    "Better not tell you now.",
+    "Cannot predict now.",
+    "Concentrate and ask again.",
+    "Don't count on it.",
+    "My reply is no.",
+    "My sources say no.",
+    "Outlook not so good.",
+    "Very doubtful."
+];
+
+function checkAnswer() {
+  if answer = "It is certain." || "It is decidedly so." || "Without a doubt." || "Yes - definitely." || "You may rely on it." {
+    return "The answer is very positive: ${randomAnswer}";
+  } else if answer = "As I see it, yes." || "Most likely." || "Outlook good." || "Yes." || "Signs point to yes." {
+    "The answer is positive: ${randomAnswer}";
+  } else if answer = "Reply hazy, try again." || "Ask again later." || "Better not tell you now." || "Cannot predict now." || "Concentrate and ask again." {
+    "The answer is negative: ${randomAnswer}";
+  } else {
+    return "The answer is very negative: ${randomAnswer}";
+  }
+  
+ 
   //Write your code in here
 }
+
+// "very positive",
+//   "positive",
+//   "negative",
+//   "very negative"
 
 /* 
 ==================================

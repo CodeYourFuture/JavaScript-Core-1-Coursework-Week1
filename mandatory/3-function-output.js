@@ -1,9 +1,11 @@
 // Add comments to explain what this function does. You're meant to use Google!
+// This function Return a random number between 0 and 10:
 function getRandomNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+// The concat() function in JavaScript is a string method that is used to combine two strings into a new string. It does not modify the original string, but returns a new string that is the result of joining the original string with one additional strings.
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
@@ -11,6 +13,7 @@ function combine2Words(word1, word2) {
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  return firstWord + " " + secondWord + " " + thirdWord;
 }
 
 /* 
