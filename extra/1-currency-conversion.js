@@ -6,9 +6,15 @@
 */
 
 function convertToUSD(poundPrice) {
-  let convertedPrice = poundPrice * 1.4 ;
-  return convertedPrice; 
+  let convertedPriceToUsd = poundPrice * 1.4 ;
+  return convertedPriceToUsd; 
+
+  // or 
+     return poundPrice * 1.4 ; 
 }
+
+let res = convertToUSD(57.06);
+console.log(res);
 
 
 /*
@@ -19,7 +25,15 @@ function convertToUSD(poundPrice) {
   They have also decided that they should add a 1% fee to all foreign transactions, which means you only convert 99% of the £ to BRL.
 */
 
-function convertToBRL() {}
+function convertToBRL(poundPrice) {
+  let convertedPriceToBrl = poundPrice * 5.7 ;
+  return convertedPriceToBrl; 
+}
+
+let res2 = convertToBRL(1.50);
+console.log(res2);
+
+
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.

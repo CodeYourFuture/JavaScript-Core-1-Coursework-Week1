@@ -6,13 +6,13 @@
 */
 
 
-function calculateSalesTax(productPrice) {
-    let salesTax = productPrice * 0.2;
-    return `£${productPrice + salesTax}.00`
+function calculateSalesTax(productPrice1) {
+    let salesTax1 = productPrice1 * 0.2;
+    return productPrice1 + salesTax1
 }
 
-let totalPrice = calculateSalesTax(200);
-console.log(totalPrice);
+let totalPrice1 = calculateSalesTax(200);
+console.log(totalPrice1);
  
 
 /*
@@ -25,7 +25,15 @@ console.log(totalPrice);
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency() {}
+function addTaxAndFormatCurrency(productPrice2) {
+    let salesTax2 = productPrice2 * 0.2;
+    return `£${productPrice2 + salesTax2}.00`
+
+}
+
+let totalPrice2 =  addTaxAndFormatCurrency(200);
+console.log(totalPrice2);
+ 
 
 /* 
 ===================================================
