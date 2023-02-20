@@ -85,8 +85,8 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
-  console.log("The ball has shaken!");
-  answer = shakeBall();
+    console.log("The ball has shaken!");
+    answer = shakeBall();
 
   if (
     answer === "It is certain." ||
@@ -127,6 +127,8 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 3-m
 (Reminder: You must have run `npm install` one time before this will work!)
 ==================================
 */
+const { test, expect } = require("jest");
+
 
 test("whole magic 8 ball sequence", () => {
   const consoleLogSpy = jest.spyOn(global.console, "log");
@@ -134,27 +136,10 @@ test("whole magic 8 ball sequence", () => {
 
   expect(typeof answer).toEqual("string");
 
-  /*   expect(consoleLogSpy).toHaveBeenCalledTimes(1);
+/*   expect(consoleLogSpy).toHaveBeenCalledTimes(1);
    expect(consoleLogSpy).toHaveBeenLastCalledWith("The ball has shaken!");*/
 
-  expect.extend({
-    toBeOneOf(received, values) {
-      const pass = values.includes(received);
-      if (pass) {
-        return {
-          message: () =>
-            `expected ${received} not to be one of [${values.join(", ")}]`,
-          pass: true,
-        };
-      } else {
-        return {
-          message: () =>
-            `expected ${received} to be one of [${values.join(", ")}]`,
-          pass: false,
-        };
-      }
-    },
-  });
+   
 
   expect(checkAnswer(answer)).toBeOneOf([
     "very positive",
