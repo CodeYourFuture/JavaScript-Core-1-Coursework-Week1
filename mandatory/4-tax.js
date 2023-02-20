@@ -20,7 +20,7 @@ function calculateSalesTax(amount) {
 */
 
 function addTaxAndFormatCurrency(amount) {
-  tax = (amount * 0.2) + (amount);
+  tax = calculateSalesTax(amount);
   return `£${tax.toFixed(2)}`;
 }
 
