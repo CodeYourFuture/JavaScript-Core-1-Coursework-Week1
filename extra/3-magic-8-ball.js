@@ -45,22 +45,93 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
+
+
+
+
+
+let rundomOneOfVeryPositive = [
+    "It is certain.",
+    "It is decidedly so.",
+    "Without a doubt.",
+    "Yes - definitely.",
+    "You may rely on it."
+];
+
+let rundomOneOfPositive = [
+    "As I see it, yes.",
+    "Most likely.",
+    "Outlook good.",
+    "Yes.",
+    "Signs point to yes."
+];
+
+let rundomOneOfNegative = [
+    "Reply hazy, try again.",
+    "Ask again later.",
+    "Better not tell you now.",
+    "Cannot predict now.",
+    "Concentrate and ask again."
+];
+
+let rundomOneOfVeryNegative = [
+    "Don't count on it.",
+    "My reply is no.",
+    "My sources say no.",
+    "Outlook not so good.",
+    "Very doubtful."
+];
+
+let answersArray = [
+  rundomOneOfVeryPositive, 
+  rundomOneOfPositive, 
+  rundomOneOfNegative, 
+  rundomOneOfVeryNegative
+];
+
+
+
+
+
 function shakeBall() {
-  //Write your code in here
+  console.log("The ball has shaken!");
+  let randomOfAnswersArray = answersArray[Math.floor(Math.random() * answersArray.length)];
+  let rundomAnswer = randomOfAnswersArray[Math.floor(Math.random() * randomOfAnswersArray.length)];
+  return  rundomAnswer;
 }
 
-/* 
-  This function should say whether the answer it is given is
-    - very positive
-    - positive
-    - negative
-    - very negative
 
-  This function should expect to be called with any value which was returned by the shakeBall function.
-*/
+let answer = shakeBall();
+
 function checkAnswer(answer) {
-  //Write your code in here
-}
+   
+   for (i = 0; i < rundomOneOfVeryPositive.length; i ++ ) {
+    if (rundomOneOfVeryPositive[i] === answer) {
+      return "very positive";
+    } 
+  }
+    for (i = 0; i < rundomOneOfPositive.length; i ++ ) {
+    if (rundomOneOfPositive[i] === answer) {
+    return "positive";
+   }
+   } 
+   for (i = 0; i < rundomOneOfNegative.length; i ++ ) {
+   if (rundomOneOfNegative[i] === answer) {
+    return "negative";
+   } 
+  }
+   for (i = 0; i < rundomOneOfVeryNegative.length; i ++ ) {
+  if (rundomOneOfVeryNegative[i] === answer) {
+    return "very negative";
+   }
+   } 
+}  
+
+
+checkAnswer(answer)
+
+//console.log(checkAnswer(shakeBall()));
+
 
 /* 
 ==================================

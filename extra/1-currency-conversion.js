@@ -20,11 +20,15 @@ function convertToUSD(amount) {
 */
 
 function convertToBRL(amount) {
-  let priceWithFee = amount * 0.99;
-  let amountBRL = priceWithFee * 5.7;
-  return Math.round(amountBRL * 100) / 100;
-
+  let priceFee = amount * 0.99;
+  let convertedPrice = priceFee * 5.7;
+  return Math.round(convertedPrice * 100)/100;
 }
+
+
+
+
+
 
 
 
