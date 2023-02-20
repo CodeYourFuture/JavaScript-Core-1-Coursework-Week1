@@ -45,9 +45,16 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
+let answerArray
+let randomItem
 function shakeBall() {
   //Write your code in here
+  answerArray = ["It is certin", "it's decideldly so", "As I see it, yes", "Most likely", "Reply hazy, try again", "Ask again later", "Dont count on it", "My replay is no"]
+  let randomIndex = Math.floor(Math.random() * answerArray.length);
+  randomItem = answerArray [randomIndex];
+  console.log(randomItem)
 }
+shakeBall();
 
 /* 
   This function should say whether the answer it is given is
@@ -58,9 +65,39 @@ function shakeBall() {
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
-function checkAnswer(answer) {
-  //Write your code in here
+ function checkAnswer(answer) {
+//   //Write your code in here
+switch(randomItem) {
+  case "It is certin":
+    console.log("very postive")
+    break;
+  case "it's decideldly so":
+    console.log("very positive")
+    break;
+  case "As I see it, yes":
+    console.log("positive")
+    break;
+  case "Most likely":
+    console.log("positive")
+    break;
+  case "Reply hazy, try again":
+    console.log("negative")
+    break;
+  case "Ask again later":
+    console.log("negative")
+    break;
+  case "Dont count on it":
+    console.log("very negative")
+    break;
+  case "My replay is no":
+    console.log("very negative")
+    break;
+  
 }
+
+
+ }
+ checkAnswer(randomItem);
 
 /* 
 ==================================
