@@ -5,14 +5,14 @@ function trimWord(word) {
 }
 console.log(trimWord("  CodeYourFuture "));
 
-function trimWord(word) {
+function tirmWord(word) {
   return word.tirm();
 }
 console.log(trimWord(" CodeYourFuture teaches coding  "));
 
 
 function getStringLength(word) {
-  return word;
+  return word.lenght;
 }
 console.log(getStringLength("Turtles"));
 
@@ -38,7 +38,7 @@ console.log(multiply(2, 3, 4));
 
 There are some Tests in this file that will help you work out if your code is working.
 
-To run the tests for just this one file, type `npm test -- --testPathPattern 2-logic-error` into your terminal
+To run the tests for just this one file, type expect(calculateSalesTax(15)).toEqual(18); into your terminal
 (Reminder: You must have run `npm install` one time before this will work!)
 ===================================================
 */

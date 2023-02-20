@@ -44,11 +44,16 @@ console.log(format(sign, 10));
 const startingValue = 2
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode = `"£" * 24`
+let badCode = 
+// It should have a specific name. I mean an changeable name because it declares a const, so it is not changeable but staringValue can be start from 0, 1 and so on.  
 
 /* BETTER PRACTICE */
 
-let goodCode = `"£" * 24`
+const gameStaringValue = 1; 
+
+//  let goodCode = 
+
+let name = 'Maria'
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.

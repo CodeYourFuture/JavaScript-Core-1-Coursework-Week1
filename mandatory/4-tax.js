@@ -6,8 +6,11 @@
 */
 
 function calculateSalesTax() {
-  return productprice * 1.2;
+  let salesTax = 0.2;
+  let totalProductPrice = productPrice + productPrice * 0.2;
+  return total;
 }
+
 
 
 /*
@@ -20,7 +23,11 @@ function calculateSalesTax() {
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency() {}
+function addTaxAndFormatCurrency() {
+  let salesTax = 0.2;
+  let totalProductPrice = productPrice + productPrice * 0.2;
+  return total.toFixed(2);
+}
 
 /* 
 ===================================================
@@ -33,7 +40,7 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 4-t
 ===================================================
 */
 
-test("calculateSalesTax for £15", () => {
+test("calculateSalesTax for £15",() => {
   expect(calculateSalesTax(15)).toEqual(18);
 });
 
