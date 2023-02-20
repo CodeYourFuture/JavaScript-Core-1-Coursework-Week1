@@ -1,48 +1,22 @@
 // The syntax for these functions is valid but there are some errors, find them and fix them
-/*
-let word ="   CodeYourFuture ";
-function trimWord(word) {
-  return word.trim();
-}
-*/
 
-let word = " CodeYourFuture teaches coding     ";
-let result= word.replace (' ');
+
 function trimWord(word) {
   return word.trim();
 }
 
-/*
-function getStringLength() {
-  let text = "Turtles";
-  return text.length;
-}
-*/
 
 function getStringLength(word) {
   return word.length;
 }
 
 
-/*
-let a = 2;
-let b = 3;
-let c = 4;
 function multiply(a, b, c) {
   return  a * b * c;
 }
-console.log(multiply);
-*/
 
-let x = 2;
-let y = 3;
-let z = 6;
-function multiply(x, y, z) {
-  return  x * y * z;
-}
-console.log(multiply);
 
-/* 
+/*
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
 

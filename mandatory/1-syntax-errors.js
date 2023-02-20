@@ -8,7 +8,6 @@ let age = 27;
 function introduceMe(name, age){
   return `Hello, my name is ${name} and I am ${age} years old`;
 }
-//console.log(introduceMe);
 
 
 let a = 23;
@@ -16,7 +15,6 @@ let b = 5;
 function getTotal(a, b) {
   return `The total is ${total = a + b}`;
 }
-//console.log(getTotal);
 
 /* 
 ===================================================
