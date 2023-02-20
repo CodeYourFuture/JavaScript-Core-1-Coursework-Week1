@@ -82,7 +82,7 @@ function shakeBall() {
   console.log("The ball has shaken!");
   let randomAnswer = Math.floor(Math.random() * answers.length);
   return answers[randomAnswer];
-}
+};
 
 /* 
   This function should say whether the answer it is given is

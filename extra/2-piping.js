@@ -19,25 +19,28 @@
 function add(a, b) {
   let sum = a + b;
   return sum;
-}
+};
 
 function multiply(a, b) {
   let multi = a * b;
  return multi;
-}
+};
 
 function format(poundAmount) {
  let formatPoundAmount = "£".concat(poundAmount);
  return formatPoundAmount;
-} 
+};
 
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode = "£" + (startingValue * 12).toString();
+// there are lots of extra variables and more complicate.
+let moneySign = "£";
+let value = (startingValue * 12)
+let valueToString = value.toString();
+let badCode = moneySign.concat(valueToString);
 
 /* BETTER PRACTICE */
-
 let goodCode = "£".concat((startingValue * 12));
 
 /* ======= TESTS - DO NOT MODIFY ===== 

@@ -2,15 +2,15 @@
 
 function trimWord(word) {
   return word.trim();
-}
+};
 
 function getStringLength(word) {
   return word.length;
-}
+};
 
 function multiply(a, b, c) {
   return a * b * c;
-}
+};
 
 /* 
 ===================================================

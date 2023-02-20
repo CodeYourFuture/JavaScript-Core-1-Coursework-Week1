@@ -8,7 +8,7 @@
 function calculateSalesTax(productPrice) {
  let salesTaxForProduct = (productPrice + ((productPrice * 20) / 100))
  return salesTaxForProduct;
-}
+};
 /*
   CURRENCY FORMATTING
   ===================
@@ -24,7 +24,7 @@ function addTaxAndFormatCurrency(productPrice) {
   let salesTaxForProduct = (productPrice + ((productPrice * 20) / 100)).toFixed(2);
   let showTaxAmount = "£".concat(salesTaxForProduct)
  return showTaxAmount;
-}
+};
 
 /* 
 ===================================================

@@ -8,7 +8,8 @@
 function convertToUSD(PoundAmount) {
   let usdAmount = (PoundAmount * 1.4)
   return usdAmount;
-}
+};
+
 
 /*
   CURRENCY CONVERSION
@@ -21,7 +22,7 @@ function convertToUSD(PoundAmount) {
 function convertToBRL(PoundAmount) {
   let BRLamount = parseFloat((((PoundAmount * 99) / 100) * 5.7).toFixed(2));
   return BRLamount;
-}
+};
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
