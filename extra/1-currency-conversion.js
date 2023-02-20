@@ -18,8 +18,9 @@ function convertToUSD(USD) {
 */
 
 function convertToBRL(USD) {
-  BRL=(USD-(USD/100)*5.7);
-  return BRL.toFixed(2);
+  USD=USD*5.7;
+  BRL=USD-(USD/100);
+  return parseFloat(BRL.toFixed(2));
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== 
