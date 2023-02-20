@@ -86,7 +86,8 @@ function shakeBall() {
 function checkAnswer(answer) {
   //Write your code in here
     console.log("The ball has shaken!");
-    let answer = "It is certain.";
+    answer = shakeBall();
+
   if (
     answer === "It is certain." ||
     answer === "It is decidedly so." ||
@@ -116,8 +117,7 @@ function checkAnswer(answer) {
   }
 }
 
-/* checkAnswer(shakeBall());
- *//* 
+/* 
 ==================================
 ======= TESTS - DO NOT MODIFY =====
 
