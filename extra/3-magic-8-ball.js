@@ -60,7 +60,10 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
+  return answer
 }
+const ah = checkAnswer("");
+console.log(newLocal);
 
 /* 
 ==================================

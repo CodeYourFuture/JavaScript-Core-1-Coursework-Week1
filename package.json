@@ -39,5 +39,8 @@
   "devDependencies": {
     "jest": "^29.4.3",
     "jest-extended": "^3.2.3"
-  }
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": ""
 }
