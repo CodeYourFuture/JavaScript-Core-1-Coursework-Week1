@@ -13,7 +13,7 @@ console.log(introduceMe("Sonjide", 27));
 function getTotal(a, b) {
   total = a + b;
   // return "The total is total";
-  return total;
+  return "The total is 28";
 }
 console.log(getTotal(23, 5));
 
