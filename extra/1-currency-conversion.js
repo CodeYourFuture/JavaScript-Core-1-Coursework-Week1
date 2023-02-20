@@ -5,8 +5,8 @@
   Write a function that converts a price to USD (exchange rate is 1.4 $ to £)
 */
 
-function convertToUSD(PoundAmount) {
-  let usdAmount = (PoundAmount * 1.4)
+function convertToUSD(poundAmount) {
+  const usdAmount = (poundAmount * 1.4)
   return usdAmount;
 };
 
