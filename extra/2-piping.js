@@ -32,8 +32,8 @@ let badCode =
 
 
 /* BETTER PRACTICE */
-
-//  let goodCode = 
+    
+let goodCode = 
 
 
 /* ======= TESTS - DO NOT MODIFY ===== 
