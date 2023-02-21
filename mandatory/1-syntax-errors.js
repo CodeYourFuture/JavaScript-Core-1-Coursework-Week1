@@ -5,7 +5,7 @@ function addNumbers(a, b, c) {
 }
 
 function introduceMe(name, age) {
-  return `Hello, my name is ${name} and i am ${age} years old.`;
+  return `Hello, my name is ${name} and I am ${age} years old`;
 }
 
 function getTotal(a, b) {
@@ -39,7 +39,5 @@ test("introduceMe function returns the correct string", () => {
 test("getTotal returns a string describing the total", () => {
   expect(getTotal(23, 5)).toEqual("The total is 28");
 });
-
-
 
 
