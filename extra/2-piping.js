@@ -32,17 +32,22 @@ return "£"+num;
 }
 
 const startingValue = 2;
+let numberadd=10;
+let numbermult=2;
+add(startingValue,numberadd);
+multiply(startingValue,numbermult);
+format(startingValue);
 
 // Why can this code be seen as bad practice? Comment your answer.
 //const is local variabe and we cant use it in deferent functions
 
-let badCode = 12 4 2 
+let badCode ="my reply is no" 
 
 
 /* BETTER PRACTICE */
 //we have to use let to create variable 
 
-let goodCode =
+let goodCode = //creating variable with let;//
 
 
 

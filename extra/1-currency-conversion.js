@@ -19,8 +19,7 @@ function convertToUSD(price) {
 */
 
 function convertToBRL(price) {
-  let newprice=(price/100)*99;
-  let total=newprice*5.7;
+  let total=parseFloat((((price/100)*99)*5.7).toFixed(2));
   return total;
 }
 
