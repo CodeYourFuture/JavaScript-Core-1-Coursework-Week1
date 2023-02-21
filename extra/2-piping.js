@@ -16,44 +16,28 @@
   the final result to the variable goodCode
 */
 
-function addNumber(n1, n2) {
-   return n1 + n2;
-}
-console.log(1, 3);
+function add() {}
 
-function addNumbers(n1, n2){
-  return n1 + n2;
-}
-console.log(addNumber(2.4, 5));
 
-function multiplyNumber(n1, n2) {
-   return n1 * n2;
-}
-console.log(multiplyNumber(2, 3));
+function add(){}
 
-function formatForWholeNumber(amount, sign) {
-   return amount * sign;
-}
-console.log(format(sign, 16));
 
-function formatForDecimalNumber(amount, sign) {
-  return amount * sign;
-}
-console.log(format(sign, 10));
+function multiply() {}
 
-const startingValue = 2
+
+function format() {}
+
+
+const startingValue = 2; 
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode = 
-// It should have a specific name. I mean an changeable name because it declares a const, so it is not changeable but staringValue can be start from 0, 1 and so on.  
+let badCode =  
 
 /* BETTER PRACTICE */
 
-const gameStaringValue = 1; 
+ let goodCode = 
 
-//  let goodCode = 
 
-let name = 'Maria'
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
