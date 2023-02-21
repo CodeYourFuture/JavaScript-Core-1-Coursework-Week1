@@ -1,3 +1,5 @@
+const { toBeOneOf } = require('jest-extended');
+
 /**
 
   Let's peer into the future using a Magic 8 Ball!
@@ -47,10 +49,7 @@
 // and return the answer.
 
 
-
-
-
-let rundomOneOfVeryPositive = [
+let randomOneOfVeryPositive = [
     "It is certain.",
     "It is decidedly so.",
     "Without a doubt.",
@@ -58,7 +57,7 @@ let rundomOneOfVeryPositive = [
     "You may rely on it."
 ];
 
-let rundomOneOfPositive = [
+let randomOneOfPositive = [
     "As I see it, yes.",
     "Most likely.",
     "Outlook good.",
@@ -66,7 +65,7 @@ let rundomOneOfPositive = [
     "Signs point to yes."
 ];
 
-let rundomOneOfNegative = [
+let randomOneOfNegative = [
     "Reply hazy, try again.",
     "Ask again later.",
     "Better not tell you now.",
@@ -74,7 +73,7 @@ let rundomOneOfNegative = [
     "Concentrate and ask again."
 ];
 
-let rundomOneOfVeryNegative = [
+let randomOneOfVeryNegative = [
     "Don't count on it.",
     "My reply is no.",
     "My sources say no.",
@@ -83,54 +82,34 @@ let rundomOneOfVeryNegative = [
 ];
 
 let answersArray = [
-  rundomOneOfVeryPositive, 
-  rundomOneOfPositive, 
-  rundomOneOfNegative, 
-  rundomOneOfVeryNegative
+  ...randomOneOfVeryPositive, 
+  ...randomOneOfPositive, 
+  ...randomOneOfNegative, 
+  ...randomOneOfVeryNegative
 ];
-
-
-
 
 
 function shakeBall() {
   console.log("The ball has shaken!");
-  let randomOfAnswersArray = answersArray[Math.floor(Math.random() * answersArray.length)];
-  let rundomAnswer = randomOfAnswersArray[Math.floor(Math.random() * randomOfAnswersArray.length)];
-  return  rundomAnswer;
+  let randomAnswerIndex = Math.floor(Math.random() * answersArray.length);
+   return answersArray [randomAnswerIndex]
+  
 }
 
 
-let answer = shakeBall();
-
 function checkAnswer(answer) {
-   
-   for (i = 0; i < rundomOneOfVeryPositive.length; i ++ ) {
-    if (rundomOneOfVeryPositive[i] === answer) {
+    if (randomOneOfVeryPositive.includes(answer)) {
       return "very positive";
     } 
-  }
-    for (i = 0; i < rundomOneOfPositive.length; i ++ ) {
-    if (rundomOneOfPositive[i] === answer) {
+    else if(randomOneOfPositive.includes(answer)) {
     return "positive";
    }
-   } 
-   for (i = 0; i < rundomOneOfNegative.length; i ++ ) {
-   if (rundomOneOfNegative[i] === answer) {
+   else if(randomOneOfNegative.includes(answer)) {
     return "negative";
-   } 
-  }
-   for (i = 0; i < rundomOneOfVeryNegative.length; i ++ ) {
-  if (rundomOneOfVeryNegative[i] === answer) {
+   } else if(randomOneOfVeryNegative.includes(answer)) {
     return "very negative";
-   }
-   } 
 }  
-
-
-checkAnswer(answer)
-
-//console.log(checkAnswer(shakeBall()));
+}
 
 
 /* 
