@@ -1,17 +1,26 @@
 // Add comments to explain what this function does. You're meant to use Google!
+
+//The generated number is returned by the function.
 function getRandomNumber() {
   return Math.random() * 10;
+  ////The Math.random() method returns a random decimal number between 0 (inclusive) and 1 (exclusive), and multiplying this number by 10 gives a random decimal number between 0 (inclusive) and 10 (exclusive).
+
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+
 function combine2Words(word1, word2) {
   return word1.concat(word2);
+  //This function takes two strings as input and combines them into a single string using the concat() method, which is a way to join strings together. The combined string is then returned as the output of the function.
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+    return firstWord + " " + secondWord + " " + thirdWord;
+
 }
+
 
 /* 
 ===================================================
