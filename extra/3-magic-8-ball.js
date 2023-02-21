@@ -1,7 +1,7 @@
 /**
 
   Let's peer into the future using a Magic 8 Ball!
-  https://en.wikipedia.org/wiki/Magic_8-Ball 
+  i/Magic_8-https://en.wikipedia.org/wikBall 
 
   There are a few steps to being able view the future though:
   * Ask a question
@@ -13,40 +13,53 @@
   and have different levels of positivity or negativity.
 
   Below are the possible answers:
+  */
 
-  ## Very positive
-    It is certain.
-    It is decidedly so.
-    Without a doubt.
-    Yes - definitely.
-    You may rely on it.
+  let veryPositiveAnswers = [
+  "It is certain.",
+  "It is decidedly so.",
+  "Without a doubt.",
+  "Yes - definitely.",
+  "You may rely on it.",
+];
+    
+let positiveAnswers= [
+  "As I see it, yes.",
+  "Most likely.",
+  "Outlook good.",
+  "Yes.",
+  "Signs point to yes.",
+]; 
 
-  ## Positive
-    As I see it, yes.
-    Most likely.
-    Outlook good.
-    Yes.
-    Signs point to yes.
+  let negativeAnswers = [
+  "Reply hazy, try again.",
+  "Ask again later.",
+  "Better not tell you now.",
+  "Cannot predict now.",
+  "Concentrate and ask again.",
+];
+    
+  let veryNegativeAnswers = [
+   "Don't count on it.",
+  "My reply is no.",
+  "My sources say no.",
+  "Outlook not so good.",
+  "Very doubtful.",
+];
 
-  ## Negative
-    Reply hazy, try again.
-    Ask again later.
-    Better not tell you now.
-    Cannot predict now.
-    Concentrate and ask again.
-
-  ## Very negative
-    Don't count on it.
-    My reply is no.
-    My sources say no.
-    Outlook not so good.
-    Very doubtful.
-*/
+let allAnswers = [
+  ...veryPositiveAnswers,
+  ...positiveAnswers,
+  ...negativeAnswers,
+  ...veryNegativeAnswers,
+];
 
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
-  //Write your code in here
+  console.log("The ball has shaken!");
+  let ranomIndex = Math.floor(Math.random() * allAnswers.length);
+  return allAnswers[ranomIndex];
 }
 
 /* 
@@ -59,7 +72,16 @@ function shakeBall() {
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
-  //Write your code in here
+  if (veryPositiveAnswers.includes(answer)) {
+    return "very positive";
+  } else if (positiveAnswers.includes(answer)) {
+    return "positive";
+  } else if (negativeAnswers.includes(answer)) {
+    return "negative";
+  } else if (veryNegativeAnswers.includes(answer)) {
+    return "very negative";
+  }
+
 }
 
 /* 
