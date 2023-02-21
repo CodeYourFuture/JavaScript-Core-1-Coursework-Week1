@@ -17,7 +17,9 @@ function convertToUSD(amountGBP) {
   They have also decided that they should add a 1% fee to all foreign transactions, which means you only convert 99% of the £ to BRL.
 */
 
-function convertToBRL() {}
+function convertToBRL(amountGBP) {
+  return Number((0.99 * amountGBP * 5.7).toFixed(2));
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
