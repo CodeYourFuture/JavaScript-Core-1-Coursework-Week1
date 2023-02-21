@@ -21,9 +21,9 @@ function convertToUSD(price) {
 
 function convertToBRL(PoundExchange) {
   let exchangeRate = 5.7;
-  let fee=0.1;
-  PoundExchange = (PoundExchange * exchangeRate) *(1-fee);
-  return ` ${PoundExchange.tofixed(2)}`;
+  let fee = 0.01;
+  PoundExchange = (PoundExchange * exchangeRate) * (1 - fee);
+  return parseFloat(PoundExchange.toFixed(2));
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== 
