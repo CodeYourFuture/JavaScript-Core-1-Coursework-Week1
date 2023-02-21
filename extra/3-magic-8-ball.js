@@ -45,9 +45,43 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
+let answers=[
+    "It is certain.",
+    "It is decidedly so.",
+   "Without a doubt.",
+    "Yes - definitely.",
+    "You may rely on it",
+    "As I see it, yes.",
+    "Most likely.",
+    "Outlook good.",
+    "Yes.",
+    "Signs point to yes.",
+    "Reply hazy, try again.",
+    ":Ask again later.",
+    "Better not tell you now.",
+    "Cannot predict now.",
+    "Concentrate and ask again.",
+    "Don't count on it.",
+    "My reply is no.",
+    "My sources say no.",
+    "Outlook not so good.",
+    "Very doubtful.",
+]
+
+let posetive=[
+
+]
+
+console.log("ask a question")
 function shakeBall() {
-  //Write your code in here
+console.log("The ball has shaken!");
+let search=Math.floor(Math.random() * answers.length);
+  let result=answers[search];
+  return result;
+  
 }
+let answer = shakeBall();
+console.log("The answer is " + answer);
 
 /* 
   This function should say whether the answer it is given is
@@ -58,9 +92,18 @@ function shakeBall() {
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
-function checkAnswer(answer) {
-  //Write your code in here
+function checkAnswer(check) {
+if (answers.indexOf(check)<5)
+return "very positive";
+else if (answers.indexOf(check) < 10) {
+    return "positive";
+  } else if (answers.indexOf(check) < 15) {
+    return "negative";
+  } else {
+    return "very negative";
 }
+}
+console.log(checkAnswer(answer));
 
 /* 
 ==================================

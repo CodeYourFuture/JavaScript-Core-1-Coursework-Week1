@@ -31,26 +31,25 @@ function format(num) {
 return "£"+num;
 }
 
-const startingValue = 2;
-let numberadd=10;
-let numbermult=2;
-add(startingValue,numberadd);
-multiply(startingValue,numbermult);
-format(startingValue);
+
 
 // Why can this code be seen as bad practice? Comment your answer.
-//const is local variabe and we cant use it in deferent functions
+//const is local variabe and we can't change its value
+const startingValue = 2;
 
-let badCode ="my reply is no" 
+let badCode =format(multiply(add(startingValue,10),2));
+console.log(badCode);
 
 
 /* BETTER PRACTICE */
-//we have to use let to create variable 
+//it is not easy to read and understand/ 
 
-let goodCode = //creating variable with let;//
+//creating variable with let;//
 
-
-
+let summ= add(startingValue,10);
+let multiplyy=multiply(summ,2);
+let goodCode=format(multiplyy);
+/* we can understand this code better /
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
