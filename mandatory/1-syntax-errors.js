@@ -39,3 +39,7 @@ test("introduceMe function returns the correct string", () => {
 test("getTotal returns a string describing the total", () => {
   expect(getTotal(23, 5)).toEqual("The total is 28");
 });
+
+
+
+

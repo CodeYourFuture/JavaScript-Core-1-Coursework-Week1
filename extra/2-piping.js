@@ -16,12 +16,13 @@
   the final result to the variable goodCode
 */
 
-function add('a') {
+function add(x,y) {
+  return (x+y);
 
 }
 
-function multiply() {
-
+function multiply(x,y) {
+return (xy);
 }
 
 function format() {
