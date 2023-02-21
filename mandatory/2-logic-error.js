@@ -16,8 +16,8 @@ function getStringLength(word) {
 }
 console.log(getStringLength("Turtles"));
 
-function getStringLength(words) {
-  return words;
+function getStringLength(word) {
+  return word.lenght;
 }
 console.log(getStringLength("A wide sentence appeared!"));
 
