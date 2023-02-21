@@ -1,18 +1,23 @@
 // The syntax for these functions is valid but there are some errors, find them and fix them
 
 function trimWord(word) {
-  return wordtrim();
+  return (word.trim());
 }
 
 function getStringLength(word) {
-  return "word".length();
+  return (word.length);
 }
 
 function multiply(a, b, c) {
-  a * b * c;
-  return;
+  return (a * b * c);
+  
 }
-
+trimWord("   CodeYourFuture ");
+trimWord(" CodeYourFuture teaches coding     ");
+getStringLength("Turtles");
+getStringLength("A wild sentence appeared!");
+multiply(2, 3, 6);
+multiply(2, 3, 4);
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
