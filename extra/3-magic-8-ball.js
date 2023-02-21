@@ -1,3 +1,5 @@
+
+const {toBeOneOf} = require ('jest-extended');
 /**
 
   Let's peer into the future using a Magic 8 Ball!
@@ -14,13 +16,13 @@
 
   Below are the possible answers:
 
-  ## Very positive
+  ##  Very positive
     It is certain.
     It is decidedly so.
     Without a doubt.
     Yes - definitely.
     You may rely on it.
-
+  
   ## Positive
     As I see it, yes.
     Most likely.

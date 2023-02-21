@@ -1,19 +1,17 @@
-// Add comments to explain what this function does. You're meant to use Google!
-
-
+// Returns a random number between 0 (inclusive) and 10 (exclusive)
 function getRandomNumber() {
   return Math.random() * 10;
 }
 
-// Add comments to explain what this function does. You're meant to use Google!
+// Combines two input words into a single word by concatenating them
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
 
+// Concatenates three input words into a single string
 function concatenate(firstWord, secondWord, thirdWord) {
-  // Write the body of this function to concatenate three words together.
-  // Look at the test case below to understand what this function is expected to return.
-  return firstWord + '' + secondWord + '' + thirdWord;
+  // The function concatenates the firstWord, secondWord, and thirdWord using the + operator, which concatenates strings.
+  return firstWord.toString() + '' + secondWord.toString() + '' + thirdWord.toString();
 }
 
 /* 
