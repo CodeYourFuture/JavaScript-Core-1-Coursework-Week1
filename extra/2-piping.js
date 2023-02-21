@@ -31,11 +31,20 @@ function format(lonelyNumber) {
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode = add(startingValue, 10); badCode = multiply(badCode, 2); badCode = format(badCode);
+
+// So, I'm not too sure what bad code or good code looks like yet so I wrote this, it seems vague and repetitive:
+// let badCode = add(10, startingValue); badCode = multiply(badCode, 2); badCode = format(badCode);
+
+// Below, I wrote some more of what I interpret bad code to look like too. This way seems complicated for me to read functions nested in others (although not sure if that's down to me being a beginner!):
+let badCode = format(multiply(add(10, startingValue), 2));
+
 
 /* BETTER PRACTICE */
+// This seems clearer as the variables say what they do on the tin.
 
-let goodCode =
+let addNumbers = add(10, startingValue);
+let multiplyNumbers = multiply(2, addNumbers);
+let goodCode = format(multiplyNumbers);
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
