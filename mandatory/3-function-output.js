@@ -4,14 +4,15 @@ function getRandomNumber() {
 }
 
 // Combines two input words into a single word by concatenating them
-function combine2Words(word1, word2) {
+function combine2Words(word1,word2) {
+  
   return word1.concat(word2);
 }
 
 // Concatenates three input words into a single string
 function concatenate(firstWord, secondWord, thirdWord) {
   // The function concatenates the firstWord, secondWord, and thirdWord using the + operator, which concatenates strings.
-  return firstWord.toString() + '' + secondWord.toString() + '' + thirdWord.toString();
+  return firstWord +''+ secondWord +''+ thirdWord;
 }
 
 /* 
