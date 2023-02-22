@@ -60,8 +60,8 @@
 // and return the answer.
 function shakeBall() {
   console.log ("The ball has shaken!");
-  let ranomIndex = Math.floor(Math.random() * allAnswers.length);
-  return allAnswers [ranomIndex];
+  let randomIndex = Math.floor(Math.random() * allAnswers.length);
+  return allAnswers [randomIndex];
 }
 
 /* 
