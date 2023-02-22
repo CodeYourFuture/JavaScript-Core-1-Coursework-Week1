@@ -6,7 +6,10 @@
 */
 
 function convertToUSD(price) {
-  return Number((price * 1.4).toFixed(2));
+  const EXCHANGE_RATE = 1.4;
+  let priceInUSD = price * EXCHANGE_RATE;
+  let priceInUSDFormatted = priceInUSD.toFixed(2)
+  return Number(priceInUSDFormatted);
 }
 
 /*
@@ -18,7 +21,12 @@ function convertToUSD(price) {
 */
 
 function convertToBRL(price) {
-  return Number(((price * 5.7)*0.99).toFixed(2));
+  const EXCHANGE_RATE = 5.7;
+  let amountInBRL = price * EXCHANGE_RATE;
+  let fee = amountInBRL * 0.01;
+  let finalAmountInBRL = amountInBRL - fee;
+  let finalAmountInBRLFormatted = finalAmountInBRL.toFixed(2);
+  return Number(finalAmountInBRLFormatted);
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== 
