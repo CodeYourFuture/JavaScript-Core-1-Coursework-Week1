@@ -11,8 +11,7 @@ function combine2Words(word1, word2) {
 }
 
 // This function will combine 2 or more arguments passed through this function.
-// In this function, word1 will be combined with word2 in that order as word2 is inside the brackets.
-// This function will create a new array, it does not change word1 or word2.
+// In this function, word1 will be combined with word2 in that order as word2 is inside the brackets. The function will return a new string.
 
 function concatenate(firstWord, secondWord, thirdWord) {
   return firstWord.concat(" ", secondWord, " ", thirdWord);
