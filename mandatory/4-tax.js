@@ -6,7 +6,7 @@
 */
 
 function calculateSalesTax(price) {
-  return price + price/5;
+  return price * 1.2;
 }
 
 /*
@@ -21,7 +21,8 @@ function calculateSalesTax(price) {
 
 function addTaxAndFormatCurrency(number) {
   let tax = calculateSalesTax(number);
-  return `£${(tax).toFixed(2)}`
+  let taxFormatted = tax.toFixed(2)
+  return `£${taxFormatted}`
 }
 
 /* 

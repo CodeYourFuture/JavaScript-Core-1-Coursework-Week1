@@ -32,11 +32,13 @@ function format(num) {
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode = `£${(startingValue + 10 ) * 2}`
+let badCode = format(multiply(add(startingValue, 10), 2));
+//This code can be seen as bad practice because multiple methods are used in one line which makes it hard to determine the results from each methods execution. It is confusing and hard to follow.
 
 /* BETTER PRACTICE */
-
-let goodCode = format(multiply(add(startingValue, 10), 2));
+let sum = add(startingValue, 10);
+let doubledSum = multiply(sum, 2);
+let goodCode = format(doubledSum);
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
