@@ -68,10 +68,6 @@ let answers=[
     "Very doubtful.",
 ]
 
-let posetive=[
-
-]
-
 console.log("ask a question")
 function shakeBall() {
 console.log("The ball has shaken!");
@@ -80,18 +76,11 @@ let search=Math.floor(Math.random() * answers.length);
   return result;
   
 }
+/*
 let answer = shakeBall();
 console.log("The answer is " + answer);
-
-/* 
-  This function should say whether the answer it is given is
-    - very positive
-    - positive
-    - negative
-    - very negative
-
-  This function should expect to be called with any value which was returned by the shakeBall function.
 */
+
 function checkAnswer(check) {
 if (answers.indexOf(check)<5)
 return "very positive";
