@@ -6,7 +6,7 @@
 */
 
 function convertToUSD(Pound) {
-  return Pound*1.4;
+  return Pound * 1.4;
 
 }
 
@@ -19,7 +19,8 @@ function convertToUSD(Pound) {
 */
 
 function convertToBRL(Pound) {
-  const BRL = 0.99 * Pound * 5.7;
+  const priceAfterFee = 0.99;
+  const BRL = priceAfterFee * Pound * 5.7;
   return Number(BRL.toFixed(2));
 }
 

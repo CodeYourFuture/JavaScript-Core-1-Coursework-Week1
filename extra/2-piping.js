@@ -32,13 +32,14 @@ function format(number) {
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
+//It can be seen as a bad code beacuse everything is in one line which makes it hard to read and understand.
 const badCode = format((startingValue + 10)*2);
 
 /* BETTER PRACTICE */
 
 let addition = add(startingValue, 10);
-let multification = multiply(addition, 2);
-let goodCode = format(multification);
+let multipication = multiply(addition, 2);
+let goodCode = format(multipication);
 
 /*
 To run the tests for just this one file, type `npm test -- --testPathPattern 2-piping` into your terminal
