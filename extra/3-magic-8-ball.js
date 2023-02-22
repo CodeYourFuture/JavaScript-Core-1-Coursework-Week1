@@ -76,23 +76,21 @@ let search=Math.floor(Math.random() * answers.length);
   return result;
   
 }
-/*
-let answer = shakeBall();
-console.log("The answer is " + answer);
-*/
+const answer=shakeBall();
 
-function checkAnswer(check) {
-if (answers.indexOf(check)<5)
+function checkAnswer(answer) {
+if (answers.indexOf(answer)<5)
 return "very positive";
-else if (answers.indexOf(check) < 10) {
+else if (answers.indexOf(answer) < 10) {
     return "positive";
-  } else if (answers.indexOf(check) < 15) {
+  } else if (answers.indexOf(answer) < 15) {
     return "negative";
   } else {
     return "very negative";
 }
-}
-console.log(checkAnswer(answer));
+};
+
+
 
 /* 
 ==================================
