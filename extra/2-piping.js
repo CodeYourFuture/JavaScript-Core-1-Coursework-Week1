@@ -32,11 +32,13 @@ function format(number) {
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =
+let badCode =format(multiply(add(startingValue, 10), 2));
 
 /* BETTER PRACTICE */
 
-let goodCode =
+let addedValue = add(startingValue, 10);
+let multipliedValue = multiply(addedValue, 2);
+let goodCode = format(multipliedValue);
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
