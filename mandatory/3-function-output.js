@@ -1,11 +1,12 @@
 // Add comments to explain what this function does. You're meant to use Google!
-
+//This is a multiplication function,The multiplication assignment ( *= ) operator multiplies a variable by the value of the right operand and assigns the result to the variable.
 
 function getRandomNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+//This is a concatenate function,The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array
 function combine2Words(word1, word2) {
   
   return word1 + word2;
