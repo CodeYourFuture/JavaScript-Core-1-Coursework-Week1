@@ -1,6 +1,6 @@
 // Add comments to explain what this function does. You're meant to use Google!
 
-// Math.random() returns a random number between 0 (inclusive),  and 1 (exclusive). this  code generate random number between 0 and 1 then multiply by 10.
+/* Math.random() returns a random number between 0 (inclusive),  and 1 (exclusive). this  code generate random number between 0 and 1 then multiply by 10. */
 
 function getRandomNumber() {
   return Math.random() * 10;
@@ -8,7 +8,7 @@ function getRandomNumber() {
 
 // Add comments to explain what this function does. You're meant to use Google!
 
-// The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
+/* The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array. */
 
 function combine2Words(word1, word2) {
   return word1.concat(word2);
