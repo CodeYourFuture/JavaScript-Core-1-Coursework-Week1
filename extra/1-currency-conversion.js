@@ -9,7 +9,7 @@
 function convertToUSD(priceGBP) {
    exchangeRate = 1.4;
   const priceUSD = priceGBP * exchangeRate;
-  return  Number(priceUSD.toFixed(2));
+  return  Number(priceUSD.toFixed(2)); 
 }
 
 /*
