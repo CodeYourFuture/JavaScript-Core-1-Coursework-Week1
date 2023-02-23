@@ -1,5 +1,5 @@
 // Add comments to explain what this function does. You're meant to use Google!
-// This function will return a random number in a ranfe of up to number 10.
+// This function will return a random number in a range of up to number 10.
 function getRandomNumber() {
   return Math.random() * 10;
 }
