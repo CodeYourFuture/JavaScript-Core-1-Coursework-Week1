@@ -25,12 +25,13 @@ function multiply(number1, number2) {
 }
 
 function format(number) {
-  return "£" + number;
+  return `£${number}`;
 }
 
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
+// It's bad code because the functions are not clearly defined systematically or step by step.
 let badCode = "£" + ((10 + startingValue) * 2)
 
 /* BETTER PRACTICE */
@@ -39,7 +40,7 @@ const betterStartingValue = 2;
 additionResult = betterStartingValue + 10;
 multiplicationResult = additionResult * 2;
 
-let goodCode = "£" + multiplicationResult;
+let goodCode = `£${multiplicationResult}`;
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
