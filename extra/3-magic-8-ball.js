@@ -61,6 +61,7 @@ const allResults = [veryPositive, positive, negative, veryNegative]
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
+
 const veryPositiveAnswers = [
   "It is certain.",
   "It is decidedly so.",
@@ -105,7 +106,7 @@ function shakeBall() {
   let num2 = findRandomIndex(5);
   return allAnswers[num1][num2];
  
-  }
+}
 
 function checkAnswer(answer) {
   let index; 
