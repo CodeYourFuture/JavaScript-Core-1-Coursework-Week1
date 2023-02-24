@@ -31,11 +31,13 @@ function format(value) {
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode = " ";
+let badCode = format(multiply(add(startingValue, 10), 2));
+
+/*  in this code there is space and no semicolons ; */
 
 /* BETTER PRACTICE */
 
-let goodCode = " ";
+let goodCode = format(multiply(add(startingValue, 10), 2));
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
