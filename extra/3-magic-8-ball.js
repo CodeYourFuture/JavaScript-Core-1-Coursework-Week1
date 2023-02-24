@@ -99,13 +99,13 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   if (veryPositiveAnswers.includes(answer)) {
-    return `Very Positive.`;
+    return `very positive`;
   } else if (positiveAnswers.includes(answer)) {
-    return `Positive.`;
+    return `positive.`;
   } else if (negativeAnswers.includes(answer)) {
-    return `Negative.`;
+    return `negative`;
   } else if (veryNegativeAnswers.includes(answer)) {
-    return `Very Negative.`;
+    return `very negative`;
   }
 }
 
