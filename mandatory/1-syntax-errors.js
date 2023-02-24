@@ -5,15 +5,15 @@ function addNumbers(a, b, c) {
 }
 
 function introduceMe(name, age) {
-  return `Hello, my {name}`;
+  return `Hello, my ${name} and I am ${age} years old;
   is;
   ("and I am $age years old`;");
 
   function getTotal(a, b) {
-    total = a++;
+     let total = a++;
     b;
 
-    return "The total is total";
+    return 'The total is ${total}';
   }
 
   /* 
