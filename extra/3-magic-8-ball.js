@@ -46,51 +46,50 @@
 // This should log "The ball has shaken!"
 // and return the answer.
 
+let veryPositiveAnswers = [
+  "It is certain",
+  "It is decidedly so",
+  "Without a doubt",
+  "Yes - definitely",
+  "You may rely on it",
+];
+
+let positiveAnswers = [
+  "As I see it, yes",
+  "Most likely",
+  "Outlook good",
+  "Yes",
+  "Signs point to yes",
+];
+
+let negativeAnswers = [
+  "Reply hazy",
+  "try again",
+  "Ask again later",
+  "Better not tell you now",
+  "Cannot predict now",
+  "Concentrate and ask again",
+];
+
+let veryNegativeAnswers = [
+  "Don't count on it",
+  "My reply is no",
+  "My sources say no",
+  "Outlook not so good",
+  "Very doubtful",
+];
+
+let answers = [
+  ...veryPositiveAnswers,
+  ...positiveAnswers,
+  ...negativeAnswers,
+  ...veryNegativeAnswers,
+];
+
+//Write your code in here
+
 function shakeBall() {
-  let veryPositiveAnswers = [
-    `It is certain`,
-    `It is decidedly so`,
-    `Without a doubt`,
-    `Yes - definitely`,
-    `You may rely on it`,
-  ];
-
-  let positiveAnswers = [
-    `As I see it, yes`,
-    `Most likely`,
-    `Outlook good`,
-    `Yes`,
-    `Signs point to yes`,
-  ];
-
-  let negativeAnswers = [
-    `Reply hazy`,
-    `try again`,
-    `Ask again later`,
-    `Better not tell you now`,
-    `Cannot predict now`,
-    `Concentrate and ask again`,
-  ];
-
-  let veryNegativeAnswers = [
-    `Don't count on it`,
-    `My reply is no`,
-    `My sources say no`,
-    `Outlook not so good`,
-    `Very doubtful`,
-  ];
-
-  let answers = [
-    veryPositiveAnswers,
-    positiveAnswers,
-    negativeAnswers,
-    veryNegativeAnswers,
-  ];
-
-  //Write your code in here
-
-  // function shakeBall() {
-  console.log("The ball has shaken!!");
+  console.log("The ball has shaken!");
   let randomIndex = Math.floor(Math.random() * answers.length);
   return answers[randomIndex];
 }
