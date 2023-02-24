@@ -17,16 +17,16 @@
 */
 
 function add(a, b) {
-  return a+b;
+  return a + b;
 }
 
 function multiply(a, b) {
-  return a*b;
+  return a * b;
 
 }
 
 function format(num) {
- return ("£" + num).toString();
+ return ("£" + num);
 }
 
 const startingValue = 2;

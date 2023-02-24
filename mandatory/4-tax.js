@@ -22,7 +22,8 @@ function calculateSalesTax(sales) {
 */
 
 function addTaxAndFormatCurrency(sales) {
-  return  "£" + calculateSalesTax(sales).toFixed(2);
+  const salesTax = calculateSalesTax(sales);
+  return  "£" + salesTax.toFixed(2);
 }
 
 /* 
