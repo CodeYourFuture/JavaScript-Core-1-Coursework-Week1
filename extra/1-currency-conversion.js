@@ -18,8 +18,8 @@ function convertToUSD(price) {
 */
 
 function convertToBRL(price) {
-  price = price * 0.99 * 5.7;
-  return parseFloat(price.toFixed(2));
+  let priceCoverted = price * 0.99 * 5.7;
+  return parseFloat(priceCoverted.toFixed(2));
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== 

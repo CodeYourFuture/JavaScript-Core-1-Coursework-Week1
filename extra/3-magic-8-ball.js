@@ -47,7 +47,7 @@
 // and return the answer.
 
 function shakeBall(herebetterStartingValue) {
-  answerRandom = Math.floor(Math.random() * 16);
+  answerRandom = Math.floor(Math.random() * allAnswers.length);
   return answerRandom;
   //Write your code in herebetterStartingValue
   
