@@ -44,7 +44,6 @@
 */
 
 let randomAnswer = 0;
-let answerType = 0;
 
 let veryPositiveAnswers = [
     `It is certain.`,
