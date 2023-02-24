@@ -1,17 +1,22 @@
 // Add comments to explain what this function does. You're meant to use Google!
+// we use math.random when we want a random floating point number between 0 and 10.
 function getRandomNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+// The concat() method joins two or more strings, in this example there is no space between the words, when we want to put space between words we should put quetation 
+//example word1.concat(" ", word2);
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
+  return firstWord.concat(" ", secondWord, " ", thirdWord);
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
 }
+
 
 /* 
 ===================================================
