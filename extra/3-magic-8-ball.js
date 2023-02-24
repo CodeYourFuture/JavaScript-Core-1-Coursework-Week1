@@ -83,8 +83,8 @@ let allAnswers = veryPositiveAnswers.concat(positiveAnswers, negativeAnswers, ve
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
-  console.log(`The ball has shaken!`)
-  randomAnswer = allAnswers[Math.floor(Math.random() * allAnswers.length)]
+  console.log(`The ball has shaken!`);
+  randomAnswer = allAnswers[Math.floor(Math.random() * allAnswers.length)];
   return randomAnswer;
 }
 
