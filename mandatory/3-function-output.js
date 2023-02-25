@@ -2,15 +2,20 @@
 function getRandomNumber() {
   return Math.random() * 10;
 }
-
+/* In this function the main purpose is to pick a random number with .random method that are >0 but <1
+ */
 // Add comments to explain what this function does. You're meant to use Google!
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
-
+/* This function is to combine 2 different string and give us a new string.
+ */
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  let allString= firstWord + secondWord + thirdWord;
+  return allString;
+
 }
 
 /* 
