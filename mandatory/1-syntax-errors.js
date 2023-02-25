@@ -5,18 +5,16 @@ function addNumbers(a, b, c) {
 }
 
 function introduceMe(name, age) {
-  return `Hello, my ${name} and I am ${age} years old;
-
+  return `Hello, my ${name} and I am ${age} years old`;
 }
 
-  function getTotal(a, b) {
-     let total = a++;
-    b;
+function getTotal(a, b) {
+  total = a + b;
 
-    return 'The total is ${total}';
-  }
+  return "The total is ${total}";
+}
 
-  /* 
+/* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
 
@@ -27,18 +25,16 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 1-s
 
 ===================================================
 */
+test("addNumbers adds numbers correctly", () => {
+  expect(addNumbers(3, 4, 6)).toEqual(13);
+});
 
-  test("addNumbers adds numbers correctly", () => {
-    expect(addNumbers(3, 4, 6)).toEqual(13);
-  });
+test("introduceMe function returns the correct string", () => {
+  expect(introduceMe("Sonjide", 27)).toEqual(
+    "Hello, my name is Sonjide and I am 27 years old"
+  );
+});
 
-  test("introduceMe function returns the correct string", () => {
-    expect(introduceMe("Sonjide", 27)).toEqual(
-      "Hello, my name is Sonjide and I am 27 years old"
-    );
-  });
-
-  test("getTotal returns a string describing the total", () => {
-    expect(getTotal(23, 5)).toEqual("The total is 28");
-  });
-}
+test("getTotal returns a string describing the total", () => {
+  expect(getTotal(23, 5)).toEqual("The total is 28");
+});
