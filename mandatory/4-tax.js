@@ -6,8 +6,8 @@
 */
 
 function calculateSalesTax(price) {
-  const salesTax = 0.2 * priceOfProduct; 
-  const totalPrice = salesTax + priceOfProduct;
+  const salesTax = 0.2 * price; 
+    const totalPrice = salesTax + price;
   return totalPrice;
 }
 
@@ -22,8 +22,9 @@ function calculateSalesTax(price) {
 */
 
 function addTaxAndFormatCurrency(price) {
-  const totalPrice = salesTax + priceOfProduct;
-  const formatprice = "£" + totalPrice.toFixed(2);
+  const totalPrice = calculateSalesTax(price);
+
+  return "£" + totalPrice.toFixed(2);
 }
 
 /* 
