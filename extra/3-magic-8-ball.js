@@ -1,3 +1,7 @@
+// import jest extended matchers
+const jestExtended = require("jest-extended");
+// extend the existing jest class with the jest-extended matchers
+expect.extend(jestExtended);
 /**
 
   Let's peer into the future using a Magic 8 Ball!
@@ -68,15 +72,15 @@ const answers = [
   "Very doubtful.",
 ];
 
-console.log("The ball has shaken!");
-
 function shakeBall() {
+  console.log("The ball has shaken!");
+
   let randonIndex = Math.floor(Math.random() * answers.length);
   let result = answers[randonIndex];
   return result;
 }
 
-console.log(shakeBall());
+// console.log(shakeBall());
 
 /* 
   This function should say whether the answer it is given is
@@ -88,35 +92,35 @@ console.log(shakeBall());
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 let answer = shakeBall();
-console.log(answer);
+// console.log(answer);
 
 function checkAnswer(answer) {
   if (
     answer === "It is certain." ||
-    "It is decidedly so." ||
-    "Without a doubt." ||
-    "Yes - definitely." ||
-    "You may rely on it."
+    answer === "It is decidedly so." ||
+    answer === "Without a doubt." ||
+    answer === "Yes - definitely." ||
+    answer === "You may rely on it."
   ) {
-    console.log("very positive");
+    return "very positive";
   } else if (
     answer === "As I see it, yes." ||
-    "Most likely." ||
-    "Outlook good." ||
-    "Yes." ||
-    "Signs point to yes."
+    answer === "Most likely." ||
+    answer === "Outlook good." ||
+    answer === "Yes." ||
+    answer === "Signs point to yes."
   ) {
-    console.log("positive");
+    return "positive";
   } else if (
     answer === "Reply hazy, try again." ||
-    "Ask again later." ||
-    "Better not tell you now." ||
-    "Cannot predict now." ||
-    "Concentrate and ask again."
+    answer === "Ask again later." ||
+    answer === "Better not tell you now." ||
+    answer === "Cannot predict now." ||
+    answer === "Concentrate and ask again."
   ) {
-    console.log("negative");
+    return "negative";
   } else {
-    console.log("very negative");
+    return "very negative";
   }
 }
 
