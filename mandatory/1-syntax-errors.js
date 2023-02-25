@@ -20,7 +20,7 @@ function getTotal(a, b) {
 
 There are some Tests in this file that will help you work out if your code is working.
 
-To run the tests for just this one file, type `npm test -- --testPathPattern 1-syntax-errors` into your terminal
+To run the tests for just this one file, type `npm test -- npm--testPathPattern 1-syntax-errors` into your terminal
 (Reminder: You must have run `npm install` one time before this will work!)
 
 ===================================================
