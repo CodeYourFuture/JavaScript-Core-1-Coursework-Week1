@@ -20,8 +20,10 @@ function calculateSalesTax(productPrice) {
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency() {
-  return "£".concat(calculateSalesTax(priceOfProduct).toFixed(2))
+function addTaxAndFormatCurrency(product) {
+  let amountOne=( (product*1.2).toFixed(2)).toString();
+  // let amountTwo= parseFloat(amountOne);
+ return `£${amountOne}`;
 };
 
 /* 
