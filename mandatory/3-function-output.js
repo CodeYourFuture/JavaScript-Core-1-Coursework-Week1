@@ -12,7 +12,7 @@ function combine2Words(word1, word2) {
 function concatenate(firstword, secondword, thirdword) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
-  return ('${firstword} ${secondword} ${thirdword}');
+  return `${firstword} ${secondword} ${thirdword}`;
 }
 
 /* 
@@ -25,7 +25,6 @@ To run the tests for just this one file, type `npm test -- --testPathPattern 3-f
 (Reminder: You must have run `npm install` one time before this will work!)
 ==================================
 */
-
 test("concatenate example #1", () => {
   expect(concatenate("code", "your", "future")).toEqual("code your future");
 });
