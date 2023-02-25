@@ -6,8 +6,8 @@
 */
 
 function calculateSalesTax(productPrice) {
-  let productTax=productSale*0.2;
-  return productPrice+productTax;
+ let productTotal=productPrice+(productPrice*0.2);
+ return productTotal;
 };
 
 /*
