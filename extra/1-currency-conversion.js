@@ -6,8 +6,9 @@
 */
 
 function convertToUSD(price) {
- let rate = 1.4 ;
- return price * rate;
+
+ let rate=1.4;
+ return rate * price;
 }
 
 /*
@@ -20,14 +21,10 @@ function convertToUSD(price) {
 
 function convertToBRL( price ) {
   let rate = 5.7 ;
-  let total = price * rate;
-  let newPrice  = total*0.99;
-  let result = (Math.round(newPrice*100)/100);
-  return result ;
-
+  return price * rate;
 }
 
-/* ======= TESTS - DO NOT MODIFY ===== 
+/* ======= TESTS - DO NOT MODIFY =====
 There are some Tests in this file that will help you work out if your code is working.
 
 To run the tests for just this one file, type `npm test -- --testPathPattern 1-currency-conversion` into your terminal
