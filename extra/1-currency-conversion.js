@@ -20,7 +20,11 @@ function convertToUSD(price) {
 
 function convertToBRL( price ) {
   let rate = 5.7 ;
-  return price * rate;
+  let total = price * rate;
+  let newPrice  = total*0.99;
+  let result = (Math.round(newPrice*100)/100);
+  return result ;
+
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== 
