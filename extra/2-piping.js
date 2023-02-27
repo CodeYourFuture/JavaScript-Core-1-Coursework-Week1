@@ -29,7 +29,9 @@ function format(a) {
 
 const startingValue = 2;
 
-// Why can this code be seen as bad practice? Comment your answer. Better to use a functions
+// Why can this code be seen as bad practice? Comment your answer. 
+//this is doing quite a lot on one line. Adding an extra line with a variable make this more clear.
+
 let badCode ="£"+((startingValue+10)*2);
 
 
