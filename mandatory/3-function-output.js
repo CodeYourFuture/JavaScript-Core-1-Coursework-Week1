@@ -3,18 +3,18 @@ function getRandomNumber() {
   return Math.random() * 10;
 }
 
-// This function will return a random number greater than or equal to 1 or less than 10. It will be a decimal. We don't need to pass an argument through this function.
+// This function will return a random number greater than or equal to 0 and less than 10. It will be a decimal. We don't need to pass an argument through this function.
 
 // Add comments to explain what this function does. You're meant to use Google!
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
 
-// This function will combine 2 or more arguments passed through this function.
+// This function will combine 2 arguments passed through it.
 // In this function, word1 will be combined with word2 in that order as word2 is inside the brackets. The function will return a new string.
 
 function concatenate(firstWord, secondWord, thirdWord) {
-  return firstWord.concat(" ", secondWord, " ", thirdWord);
+  return `${firstWord} ${secondWord} ${thirdWord}`;
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
 }
