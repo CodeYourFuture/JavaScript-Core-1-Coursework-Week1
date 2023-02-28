@@ -34,9 +34,9 @@ const startingValue = 2;
 let badCode = format(multiply(add(startingValue, 10), 2));
 
 /* BETTER PRACTICE */
-let step1 = add(startingValue, 10);
-let step2 = multiply(step1, 2);
-let goodCode = format(step2);
+const step1 = add(startingValue, 10);
+const step2 = multiply(step1, 2);
+const goodCode = format(step2);
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
