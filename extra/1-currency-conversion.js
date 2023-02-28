@@ -19,7 +19,6 @@ function convertToUSD(gbp) {
 
 function convertToBRL(gbp) {
   let minusCommission = gbp * 0.99;
-  // let real = minusCommission * 5.7;
   let real = minusCommission * 5.7;
   let realRounded = Math.round(real * 100) / 100;
   return Number(realRounded);
