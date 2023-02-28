@@ -5,7 +5,8 @@
   Sales tax is 20% of the price of the product.
 */
 
-function calculateSalesTax(priceNoTax) {
+// Changed the function name so that it is a little clearer
+function calculateAndAddSalesTax(priceNoTax) {
   return priceNoTax + (priceNoTax * 0.2);
 }
 
@@ -20,7 +21,7 @@ function calculateSalesTax(priceNoTax) {
 */
 
 function addTaxAndFormatCurrency(priceNoTax) {
-  return "£" + (priceNoTax + (priceNoTax * 0.2)).toFixed(2);
+  return `£${calculateAndAddSalesTax(priceNoTax)}`;
 }
 
 /* 

@@ -43,7 +43,6 @@
     Very doubtful.
 */
 
-let randomAnswer = 0;
 
 let veryPositiveAnswers = [
     `It is certain.`,
@@ -81,7 +80,9 @@ let allAnswers = veryPositiveAnswers.concat(positiveAnswers, negativeAnswers, ve
 
 // This should log "The ball has shaken!"
 // and return the answer.
-function shakeBall() {
+function shakeBall() { 
+  let randomAnswer = 0;
+
   console.log(`The ball has shaken!`);
   randomAnswer = allAnswers[Math.floor(Math.random() * allAnswers.length)];
   return randomAnswer;
@@ -100,7 +101,7 @@ function checkAnswer(answer) {
   if (veryPositiveAnswers.includes(answer)) {
     return `very positive`;
   } else if (positiveAnswers.includes(answer)) {
-    return `positive.`;
+    return `positive`;
   } else if (negativeAnswers.includes(answer)) {
     return `negative`;
   } else if (veryNegativeAnswers.includes(answer)) {
