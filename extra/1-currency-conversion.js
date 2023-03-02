@@ -5,9 +5,9 @@
   Write a function that converts a price to USD (exchange rate is 1.4 $ to £)
 */
 
-function convertToUSD(Pound) {
-  let USD= Pound * 1.4;
-  return USD;
+function convertToUSD(price) {
+  return price * 1.4;
+  
 
 
 }
@@ -19,10 +19,11 @@ function convertToUSD(Pound) {
   Write a new function for converting to the Brazilian real (exchange rate is 5.7 BRL to £)
   They have also decided that they should add a 1% fee to all foreign transactions, which means you only convert 99% of the £ to BRL.
 */
-function convertToBrl(amountInpound){
+function convertToBRL(price){
   
-   const amountInBRL= 0.99 * amountInpound * 5.7;
-   return Number(amountInBRL.toFixed(2));
+  let priceAfterFee = price * 0.99;
+  let priceInBRL = priceAfterFee * 5.7;
+  return Math.round(priceInBRL * 100) / 100;
   }
 
 
