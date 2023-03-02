@@ -6,8 +6,8 @@
 */
 
 // Changed the function name so that it is a little clearer
-function calculateAndAddSalesTax(priceNoTax) {
-  return priceNoTax + (priceNoTax * 0.2);
+function calculateAndAddSalesTax(priceNoTax) {  
+  return priceNoTax * 1.2;
 }
 
 /*
@@ -21,7 +21,9 @@ function calculateAndAddSalesTax(priceNoTax) {
 */
 
 function addTaxAndFormatCurrency(priceNoTax) {
-  return `£${calculateAndAddSalesTax(priceNoTax)}`;
+  let amount = calculateAndAddSalesTax(priceNoTax);
+  let formatAmount = Math.round(amount * 100) / 100;
+  return `£${formatAmount}`;
 }
 
 /* 
