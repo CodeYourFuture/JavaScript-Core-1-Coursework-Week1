@@ -6,6 +6,7 @@
 */
 
 function calculateSalesTax(price) {
+  let price = number;
   let percentage = 0.2; 
   const currency = "£";
   let taxAmount = price * percentage;
@@ -23,7 +24,8 @@ function calculateSalesTax(price) {
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency() {
+function addTaxAndFormatCurrency(number) {
+  let price = number;
   let percentage = 0.2; 
   const currency = "£";
   let taxAmount = price * percentage;
