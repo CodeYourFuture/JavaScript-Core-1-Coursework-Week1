@@ -1,14 +1,20 @@
 // Add comments to explain what this function does. You're meant to use Google!
+//this function generates a random value between 0(inclusive) and 10(exlusive) everytime is called
+//Math.random generates a number between 0(inclusive ) and 1(exlusive) and then the function multiplies it with 10
 function getRandomNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+//this function with combine/joins  two strings together and will return a 
+
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
+  return `${firstWord.toString()} ${secondWord.toString()} ${thirdWord.toString()}`;
+
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
 }
