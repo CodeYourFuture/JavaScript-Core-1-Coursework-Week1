@@ -30,18 +30,18 @@ function format(amount) {
 
 }
 
-const startingValue = 2;
+let startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
 let badCode =  format(multiply(add(startingValue, 10), 2));
 
 
 /* BETTER PRACTICE */
-const valueAfterAddition = add(startingValue, 10); // 12
-const valueAfterMultiplication = multiply(valueAfterAddition, 2); //12*2
-// const formattedValue = formatasapound(valueAfterMultiplication);
-let goodcode = format(valueAfterMultiplication);   
-// console.log(goodcode);
+let valueAfterAddition = add(startingValue, 10); // 12
+let valueAfterMultiplication = multiply(valueAfterAddition, 2); //12*2
+
+let goodCode = format(valueAfterMultiplication);   
+
 
 
 /* ======= TESTS - DO NOT MODIFY ===== 
