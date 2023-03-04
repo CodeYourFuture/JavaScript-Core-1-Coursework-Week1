@@ -45,9 +45,12 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
-function shakeBall() {
-  //Write your code in here
-}
+const veryPositive = "very positive";
+const positive = "positive";
+const negative = "negative";
+const veryNegative = "very negative";
+const allResults = [veryPositive, positive, negative, veryNegative]
+
 
 /* 
   This function should say whether the answer it is given is
@@ -58,10 +61,62 @@ function shakeBall() {
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
-function checkAnswer(answer) {
-  //Write your code in here
+
+const veryPositiveAnswers = [
+  "It is certain.",
+  "It is decidedly so.",
+  "Without a doubt.",
+  "Yes - definitely.",
+  "You may rely on it.",
+];
+
+const positiveAnswers = [
+  "As I see it, yes.",
+  "Most likely.",
+  "Outlook good.",
+  "Yes.",
+  "Signs point to yes.",
+];
+
+const negativeAnswers = [
+    "Reply hazy, try again.",
+    "Ask again later.",
+    "Better not tell you now.",
+    "Cannot predict now.",
+    "Concentrate and ask again.",
+];
+
+const veryNegativeAnswers = [
+  "Don't count on it.",
+  "My reply is no.",
+  "My sources say no.",
+  "Outlook not so good.",
+  "Very doubtful.",
+];
+
+let allAnswers = [veryPositiveAnswers, positiveAnswers, negativeAnswers, veryNegativeAnswers];
+
+function findRandomIndex(max){
+  return  Math.floor(Math.random() * max);
 }
 
+function shakeBall() {
+  console.log("The ball has shaken!");
+  let num1 = findRandomIndex(4);
+  let num2 = findRandomIndex(5);
+  return allAnswers[num1][num2];
+ 
+}
+
+function checkAnswer(answer) {
+  let index; 
+  allAnswers.map((answerItem, i)=>{
+    if(answerItem.includes(answer)){
+      index = i;
+    } 
+  })
+  return allResults[index];
+}
 /* 
 ==================================
 ======= TESTS - DO NOT MODIFY =====
