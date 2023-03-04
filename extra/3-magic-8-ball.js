@@ -47,8 +47,33 @@
 // and return the answer.
 function shakeBall() {
   //Write your code in here
-}
 
+  const possibleAnswers = [
+    "It is certain.",
+    "It is decidedly so.",
+    "Without a doubt.",
+    "Yes - definitely.",
+    "You may rely on it.",
+    "As I see it, yes.",
+    "Most likely.",
+    "Outlook good.",
+    "Yes.",
+    "Signs point to yes.",
+    "Reply hazy, try again.",
+    "Ask again later.",
+    "Better not tell you now.",
+    "Cannot predict now.",
+    "Concentrate and ask again.",
+    "Don't count on it.",
+    "My reply is no.",
+    "My sources say no.",
+    "Outlook not so good.",
+    "Very doubtful.",
+  ];
+  const randomIndex = Math.floor(Math.random() * possibleAnswers.length);
+  console.log("The ball has shaken!");
+  return possibleAnswers[randomIndex];
+}
 /* 
   This function should say whether the answer it is given is
     - very positive
@@ -60,6 +85,34 @@ function shakeBall() {
 */
 function checkAnswer(answer) {
   //Write your code in here
+
+  if (
+    answer == "It is certain." ||
+    answer == "It is decidedly so." ||
+    answer == "Without a doubt." ||
+    answer == "Yes - definitely." ||
+    answer == "You may rely on it."
+  ) {
+    return "very positive";
+  } else if (
+    answer == "As I see it, yes." ||
+    answer == "Most likely." ||
+    answer == "Outlook good." ||
+    answer == "Yes." ||
+    answer == "Signs point to yes."
+  ) {
+    return "positive";
+  } else if (
+    answer == "Reply hazy, try again." ||
+    answer == "Ask again later." ||
+    answer == "Better not tell you now." ||
+    answer == "Cannot predict now." ||
+    answer == "Concentrate and ask again."
+  ) {
+    return "negative";
+  } else {
+    return "very negative";
+  }
 }
 
 /* 
@@ -101,7 +154,9 @@ test("magic 8 ball returns different values each time", () => {
     );
   }
 
-  let seenPositivities = new Set(Array.from(seenAnswers.values()).map(checkAnswer));
+  let seenPositivities = new Set(
+    Array.from(seenAnswers.values()).map(checkAnswer)
+  );
   if (seenPositivities.size < 2) {
     throw Error(
       "Expected to random answers with different positivities each time shakeBall was called, but always got the same one"
