@@ -11,4 +11,4 @@ jobs:
     - name: Install modules
       run: npm install
     - name: Run extra tests
-      run: npm run extra-tests
+      run: npm test -- --selectProjects extra
