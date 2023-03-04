@@ -16,26 +16,40 @@
   the final result to the variable goodCode
 */
 
-function add() {
+function add(a,b) {
+let sum=a+b;
+return sum;
+}
+
+function multiply(a,b) {
+let mult=a*b;
+return mult;
 
 }
 
-function multiply() {
-
+function format(num) {
+return "£"+num;
 }
 
-function format() {
 
-}
-
-const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =
+//const is local variabe and we can't change its value
+const startingValue = 2;
+
+let badCode =format(multiply(add(startingValue,10),2));
+console.log(badCode);
+
 
 /* BETTER PRACTICE */
+//it is not easy to read and understand/ 
 
-let goodCode =
+//creating variable with let;//
+
+let summ= add(startingValue,10);
+let multiplyy=multiply(summ,2);
+let goodCode=format(multiplyy);
+/* we can understand this code better /
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
