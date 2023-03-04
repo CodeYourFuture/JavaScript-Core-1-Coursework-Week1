@@ -1,7 +1,7 @@
 /**
 
   Let's peer into the future using a Magic 8 Ball!
-  https://en.wikipedia.org/wiki/Magic_8-Ball 
+  https://en.wikipedia.org/wiki/Magic_8-Ball
 
   There are a few steps to being able view the future though:
   * Ask a question
@@ -45,11 +45,12 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
-function shakeBall() {
+function shakeBall(answer) {
   //Write your code in here
+
 }
 
-/* 
+/*
   This function should say whether the answer it is given is
     - very positive
     - positive
@@ -58,11 +59,14 @@ function shakeBall() {
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
-function checkAnswer(answer) {
-  //Write your code in here
+function checkAnswer() {
+
+
 }
 
-/* 
+
+
+/*
 ==================================
 ======= TESTS - DO NOT MODIFY =====
 

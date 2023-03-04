@@ -11,33 +11,45 @@
   - add 10 to startingValue
   - multiply the result by 2
   - format it
-  
+
   3. Write a more readable version of what you wrote in step 2 under the BETTER PRACTICE comment. Assign
   the final result to the variable goodCode
 */
 
-function add() {
-
+function add(num1,num2) {
+ let result = num1 + num2;
+ return result;
 }
 
-function multiply() {
-
+function multiply(num1,num2) {
+  let result = num1 * num2;
+  return result;
 }
 
-function format() {
-
+function format(startingValue) {
+return (`£` +startingValue);
 }
 
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =
+/*The string "£24" meaning that it appears without context or explanation
+in the code. This can make the code harder to read and maintain*/
+let badCode = "£24";
+console.log("The bad code is: " + badCode);
 
 /* BETTER PRACTICE */
 
-let goodCode =
 
-/* ======= TESTS - DO NOT MODIFY ===== 
+let currencySymbol = "£";
+let  price = 24;
+let goodCode = `${currencySymbol}${price}`;
+//This code is easy to read and understand, with no unnecessary complexity
+
+
+
+
+/* ======= TESTS - DO NOT MODIFY =====
 There are some Tests in this file that will help you work out if your code is working.
 
 To run the tests for just this one file, type `npm test -- --testPathPattern 2-piping` into your terminal
