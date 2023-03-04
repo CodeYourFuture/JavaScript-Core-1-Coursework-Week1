@@ -11,10 +11,13 @@ function combine2Words(word1, word2) {
 }
 //The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.//
 
+
+
+
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
-  let sentence = firstWord.concatenate(" ",secondWord , " ",thirdWord);
+  let sentence = firstWord.concat(" ",secondWord , " ",thirdWord);
   return sentence;
 }
 
