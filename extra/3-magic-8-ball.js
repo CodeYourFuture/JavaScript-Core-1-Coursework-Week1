@@ -1,3 +1,5 @@
+const { toBeOneOf } = require('jest-extended');
+
 /**
 
   Let's peer into the future using a Magic 8 Ball!
@@ -45,22 +47,70 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
+
+
+let randomOneOfVeryPositive = [
+    "It is certain.",
+    "It is decidedly so.",
+    "Without a doubt.",
+    "Yes - definitely.",
+    "You may rely on it."
+];
+
+let randomOneOfPositive = [
+    "As I see it, yes.",
+    "Most likely.",
+    "Outlook good.",
+    "Yes.",
+    "Signs point to yes."
+];
+
+let randomOneOfNegative = [
+    "Reply hazy, try again.",
+    "Ask again later.",
+    "Better not tell you now.",
+    "Cannot predict now.",
+    "Concentrate and ask again."
+];
+
+let randomOneOfVeryNegative = [
+    "Don't count on it.",
+    "My reply is no.",
+    "My sources say no.",
+    "Outlook not so good.",
+    "Very doubtful."
+];
+
+let answersArray = [
+  ...randomOneOfVeryPositive, 
+  ...randomOneOfPositive, 
+  ...randomOneOfNegative, 
+  ...randomOneOfVeryNegative
+];
+
+
 function shakeBall() {
-  //Write your code in here
+  console.log("The ball has shaken!");
+  let randomAnswerIndex = Math.floor(Math.random() * answersArray.length);
+   return answersArray [randomAnswerIndex]
+  
 }
 
-/* 
-  This function should say whether the answer it is given is
-    - very positive
-    - positive
-    - negative
-    - very negative
 
-  This function should expect to be called with any value which was returned by the shakeBall function.
-*/
 function checkAnswer(answer) {
-  //Write your code in here
+    if (randomOneOfVeryPositive.includes(answer)) {
+      return "very positive";
+    } 
+    else if(randomOneOfPositive.includes(answer)) {
+    return "positive";
+   }
+   else if(randomOneOfNegative.includes(answer)) {
+    return "negative";
+   } else if(randomOneOfVeryNegative.includes(answer)) {
+    return "very negative";
+}  
 }
+
 
 /* 
 ==================================
