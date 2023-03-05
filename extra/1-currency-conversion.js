@@ -6,9 +6,7 @@
 */
 
 function convertToUSD(amount) {
-  return amount * 1.4;
-
-  
+  return amount * 1.4; 
 }
 
 /*
