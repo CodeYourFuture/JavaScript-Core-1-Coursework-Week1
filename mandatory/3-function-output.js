@@ -1,14 +1,15 @@
 // Add comments to explain what this function does. You're meant to use Google!
 function getRandomNumber() {
-  return Math.random() * 10;
+  return Math.random() * 10; // math random is js math library and it generates random numbers then multiples then with 10
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
 function combine2Words(word1, word2) {
-  return word1.concat(word2);
+  return word1.concat(word2); // concat() method concatenates joins two or more arrays
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
+  return firstWord + " " + secondWord + " " + thirdWord; // placed plus sign between word and also duble quates with single spcae to make it more readable
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
 }

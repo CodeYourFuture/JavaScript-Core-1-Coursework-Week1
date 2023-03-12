@@ -1,3 +1,7 @@
+//
+//  https://codepen.io/codifiedconcepts/pen/vXgvQL
+//  https://github.com/mmaynar1/games/blob/master/magic-eight-ball/magic-eight-ball.js
+//  https://stackoverflow.com/questions/9907419/how-to-get-a-key-in-a-javascript-object-by-its-value
 /**
 
   Let's peer into the future using a Magic 8 Ball!
@@ -42,11 +46,61 @@
     Outlook not so good.
     Very doubtful.
 */
+//  have to include the below two iline for one test below to work
+const matchers = require("jest-extended");
+expect.extend(matchers);
 
+// main list of moods and sentences
+const mood = {
+  "very positive": [
+    "It is certain.",
+    "It is decidedly so.",
+    "Without a doubt.",
+    "Yes - definitely.",
+    "You may rely on it.",
+  ],
+  positive: [
+    "As I see it, yes.",
+    "Most likely.",
+    "Outlook good.",
+    "Yes.",
+    "Signs point to yes.",
+  ],
+  negative: [
+    "Reply hazy, try again.",
+    "Ask again later.",
+    "Better not tell you now.",
+    "Cannot predict now.",
+    "Concentrate and ask again.",
+  ],
+  "very negative": [
+    "Don't count on it.",
+    "My reply is no.",
+    "My sources say no.",
+    "Outlook not so good.",
+    "Very doubtful.",
+  ],
+};
+
+// sentencs selector for the 8 ball
+function mood_selector() {
+  var mood_keys = Object.keys(mood); // stores all the mood types
+  var ran_mood = Math.floor(Math.random() * mood_keys.length); // generates random math for mood types
+  var one_mood = mood_keys[ran_mood]; // stores one random mood
+  var one_mood_values = mood[mood_keys[ran_mood]]; // stores the all the values from inside one selected mood
+  var random_one_mood_values = Math.floor(
+    Math.random() * one_mood_values.length
+  ); // generates random math for values of one selected mood
+  var selected_ran_value = one_mood_values[random_one_mood_values]; // stores one selected random value
+  return selected_ran_value;
+}
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
-  //Write your code in here
+  //Write your code in hereconst
+  console.log("The ball has shaken!");
+
+  return mood_selector();
 }
 
 /* 
@@ -58,8 +112,17 @@ function shakeBall() {
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
+// mood checker for the check answer function
+const state_of_mood = (mood_object, sentence) => {
+  let key = Object.keys(mood_object).find((k) =>
+    mood[k].find((mood_value) => mood_value === sentence) ? true : false
+  );
+  return key;
+};
 function checkAnswer(answer) {
   //Write your code in here
+
+  return state_of_mood(mood, answer);
 }
 
 /* 
@@ -101,7 +164,9 @@ test("magic 8 ball returns different values each time", () => {
     );
   }
 
-  let seenPositivities = new Set(Array.from(seenAnswers.values()).map(checkAnswer));
+  let seenPositivities = new Set(
+    Array.from(seenAnswers.values()).map(checkAnswer)
+  );
   if (seenPositivities.size < 2) {
     throw Error(
       "Expected to random answers with different positivities each time shakeBall was called, but always got the same one"
