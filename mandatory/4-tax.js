@@ -1,14 +1,18 @@
 /*
-  SALES TAX
+  
+SALES TAX
   =========
   A business requires a program that calculates how much the price of a product is including sales tax
   Sales tax is 20% of the price of the product.
 */
 
-function calculateSalesTax(sales) {
-  const tax = 0.2 * sales;
-  return tax + sales;
+function calculateSalesTax(price ) {
+    let salesTax = .20;
+    let totalPrice = price + price*0.20;
+    return totalPrice;
 }
+
+
 
 /*
   CURRENCY FORMATTING
@@ -16,13 +20,14 @@ function calculateSalesTax(sales) {
   The business has informed you that prices must have 2 decimal places
   They must also start with the currency symbol
   Write a function that adds tax to a number, and then transforms the total into the format £0.00
-
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency(sales) {
-  return "£" + calculateSalesTax(sales).toFixed(2);
+function addTaxAndFormatCurrency(price) {
+let priceWithTax = calculateSalesTax(price);
+return "£" + priceWithTax.toFixed(2);
 }
+
 
 /* 
 ===================================================
