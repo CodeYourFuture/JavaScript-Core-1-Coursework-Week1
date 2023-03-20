@@ -5,7 +5,11 @@ function getRandomNumber() {
 
 // Add comments to explain what this function does. You're meant to use Google!
 function combine2Words(word1, word2) {
+  console.log();
+  console.log();
+  console.log();
   return word1.concat(word2);
+
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
