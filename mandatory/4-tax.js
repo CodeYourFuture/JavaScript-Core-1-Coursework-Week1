@@ -8,7 +8,7 @@
 // function calculateSalesTax() {}
 function calculateSalesTax(price) {
   const taxRate = 0.2; // 20% sales tax
-  const totalPrice = price + (price * taxRate);
+  const totalPrice = price + price * taxRate;
   return totalPrice;
 }
 
@@ -24,7 +24,7 @@ function calculateSalesTax(price) {
 
 function addTaxAndFormatCurrency(price, taxRate) {
   taxRate = 0.2;
-  const total = price + (price * taxRate);
+  const total = price + price * taxRate;
   const formattedTotal = "£" + total.toFixed(2);
   return formattedTotal;
 }

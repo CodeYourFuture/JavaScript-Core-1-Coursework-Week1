@@ -9,7 +9,7 @@ function introduceMe(name, age){
 }
 function getTotal(a, b) {
    total = a + b;
- return "The total is "+total
+ return "The total is "+totalÏ
 }
 
 /* 
