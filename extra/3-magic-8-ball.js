@@ -78,19 +78,6 @@ const answers ={
 ],
 }
 
-// This should log "The ball has shaken!"
-// and return the answer.
-// function shakeBall() {
-//   console.log('The Ball has shake');
-//   const answers = [
-//     Very_positive, Positive, 
-//     Very_negative, Negative,
-
-//   ];
-
-//   const P = Math.floor(Math.random() * answers.length);
-//   return answers[P];
-// }
 function shakeBall() {
   console.log('The ball has shaken!');
   const types = Object.keys(answers);
@@ -114,20 +101,7 @@ function checkAnswer(answer) {
     }
   }
 }
-// function checkAnswer(answers) {
-//   if(very_positive.includes(answers)){
-//     return 'very positive';
-//   }
-//   else if(positive.includes(answers)){
-//     return 'positive';
-//   }
-//      else if(very_negative.includes(answers)){
-//     return 'very negative';
-//   }
-//    else if(negative.includes(answers)){
-//     return 'negative';
-//   }
-// }
+
 
 
 /* 
