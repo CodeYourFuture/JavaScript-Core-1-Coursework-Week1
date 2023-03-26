@@ -47,45 +47,51 @@
 // and return the answer.
 
 
-const veryPositive  = 
+const veryPositiveAnswers  = 
     ["It is certain.",
     "It is decidedly so.",
     "Without a doubt.",
     "Yes - definitely.",
     "You may rely on it."]
 
-const positive = [
-    
+const positiveAnswers = [
     "As I see it, yes.",
     "Most likely.",
     "Outlook good.",
     "Yes.",
     "Signs point to yes."]
 
-const negative = [
+const negativeAnswers = [
     "Reply hazy, try again.",
     "Ask again later.",
     "Better not tell you now.",
     "Cannot predict now.",
     "Concentrate and ask again."]
 
-const veryNegative = [
-      "Don't count on it.",
+const veryNegativeAnswers = [
+    "Don't count on it.",
     "My reply is no.",
     "My sources say no.",
     "Outlook not so good.",
     "Very doubtful."
 ]
 
-const allAnswers = [...veryPositive, ...positive, ...negative, ...veryNegative]
+const allAnswers = [...veryPositiveAnswers, ...positiveAnswers, ...negativeAnswers, ...veryNegativeAnswers]
 
 function shakeBall() {
   console.log("The ball has shaken!");
-  numberRandom = Math.floor(Math.random() * allAnswers.length);
-  return allAnswers[numberRandom];
-  //Write your code in herebetterStartingValue
-  
+  let randomIndex = Math.floor(Math.random() * allAnswers.length);
+  return allAnswers[randomIndex];
 }
+
+/*
+The line "randomIndex = Math.floor(Math.random() * allAnswers.length);" in our solution generates a random integer between 0 (inclusive) and the length of the array allAnswers (exclusive).
+
+Math.random() generates a random decimal number between 0 (inclusive) and 1 (exclusive), and multiplying it by allAnswers.length gives us a random number between 0 (inclusive) and the length of the array. 
+Math.floor() then rounds down the result to the nearest integer, so that randomIndex is an integer between 0 (inclusive) and the last index of the array allAnswers (exclusive).
+
+This line of code is used in the shakeBall() function to select a random answer from the allAnswers array, so that each time the function is called, it returns a different answer.
+*/
 
 /* 
   This function should say whether the answer it is given is
@@ -98,20 +104,15 @@ function shakeBall() {
 */
 
 
-
-
-
-
-
 function checkAnswer(answer) {
-  if (veryPositive.includes(answer)) {
+  if (veryPositiveAnswers.includes(answer)) {
     return "very positive";
-  } else if (positive.includes(answer)) {
+  } else if (positiveAnswers.includes(answer)) {
     return "positive";
-  } else if (negative.includes(answer)) {
+  } else if (negativeAnswers.includes(answer)) {
     return "negative";
-  } else {
-    return "very negative"
+  } else if (veryNegativeAnswers.includes(answer)) {
+    return "very negative";
   }
 }
 
@@ -121,9 +122,9 @@ function checkAnswer(answer) {
 
 
 // "very positive",
-//   "positive",
-//   "negative",
-//   "very negative"
+// "positive",
+// "negative",
+// "very negative"
 
 /* 
 ==================================

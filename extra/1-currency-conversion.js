@@ -18,8 +18,9 @@ function convertToUSD(price) {
 */
 
 function convertToBRL(price) {
-  let priceCoverted = price * 0.99 * 5.7;
-  return parseFloat(priceCoverted.toFixed(2));
+  let priceAfterFee = price * 0.99;
+  let priceConvertedToBRL = priceAfterFee * 5.7;
+  return parseFloat(priceConvertedToBRL.toFixed(2)); // parseFloat converts into a floating number; we could also use Math.round(num * 100) / 100 i.e Math.round(priceConvertedToBRL * 100) / 100
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== 
