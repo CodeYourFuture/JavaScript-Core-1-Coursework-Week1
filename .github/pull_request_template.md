@@ -16,18 +16,18 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name: Afsha Hossain
+- Your City: London
+- Your Slack Name: Afsha10
 
 # Homework Details
 
-- Module:
-- Week:
+- Module: JS
+- Week: 1
 
 # Notes
 
-- What did you find easy?
+- What did you find easy? 
 
 - What did you find hard?
 

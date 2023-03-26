@@ -1,9 +1,15 @@
 // Add comments to explain what this function does. You're meant to use Google!
+// This function Math.random returns a random number between 0 and 10:
+// We then take this random value and multiply it by 10.
 function getRandomNumber() {
   return Math.random() * 10;
 }
 
 // Add comments to explain what this function does. You're meant to use Google!
+// The concat() function is used to combine two strings into a new string. 
+// It does not modify the original string, but returns a new string that is the result of joining the original string with one additional string.
+// The concat function will add the argument on to the end of the string.
+// The combine2Words() function will return a string with the word2 added to the end of word1.
 function combine2Words(word1, word2) {
   return word1.concat(word2);
 }
@@ -11,6 +17,7 @@ function combine2Words(word1, word2) {
 function concatenate(firstWord, secondWord, thirdWord) {
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
+  return `${firstWord} ${secondWord} ${thirdWord}`;
 }
 
 /* 

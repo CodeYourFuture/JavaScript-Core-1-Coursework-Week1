@@ -45,9 +45,53 @@
 
 // This should log "The ball has shaken!"
 // and return the answer.
+
+
+const veryPositiveAnswers  = 
+    ["It is certain.",
+    "It is decidedly so.",
+    "Without a doubt.",
+    "Yes - definitely.",
+    "You may rely on it."]
+
+const positiveAnswers = [
+    "As I see it, yes.",
+    "Most likely.",
+    "Outlook good.",
+    "Yes.",
+    "Signs point to yes."]
+
+const negativeAnswers = [
+    "Reply hazy, try again.",
+    "Ask again later.",
+    "Better not tell you now.",
+    "Cannot predict now.",
+    "Concentrate and ask again."]
+
+const veryNegativeAnswers = [
+    "Don't count on it.",
+    "My reply is no.",
+    "My sources say no.",
+    "Outlook not so good.",
+    "Very doubtful."
+]
+
+const allAnswers = [...veryPositiveAnswers, ...positiveAnswers, ...negativeAnswers, ...veryNegativeAnswers]
+
 function shakeBall() {
-  //Write your code in here
+  console.log("The ball has shaken!");
+  let randomIndex = Math.floor(Math.random() * allAnswers.length);
+  return allAnswers[randomIndex];
 }
+
+/*
+The line "randomIndex = Math.floor(Math.random() * allAnswers.length);" in our solution generates a random integer between 0 (inclusive) and the length of the array allAnswers (exclusive).
+
+Math.random() generates a random decimal number between 0 (inclusive) and 1 (exclusive), and multiplying it by allAnswers.length gives us a random number between 0 (inclusive) and the length of the array. 
+Math.floor() then rounds down the result to the nearest integer, so that randomIndex is an integer between 0 (inclusive) and the last index of the array allAnswers (exclusive).
+
+This line of code is used in the shakeBall() function to select a random answer from the allAnswers array, so that each time the function is called, it returns a different answer.
+*/
 
 /* 
   This function should say whether the answer it is given is
@@ -58,9 +102,29 @@ function shakeBall() {
 
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
+
+
 function checkAnswer(answer) {
-  //Write your code in here
+  if (veryPositiveAnswers.includes(answer)) {
+    return "very positive";
+  } else if (positiveAnswers.includes(answer)) {
+    return "positive";
+  } else if (negativeAnswers.includes(answer)) {
+    return "negative";
+  } else if (veryNegativeAnswers.includes(answer)) {
+    return "very negative";
+  }
 }
+
+
+ 
+  //Write your code in here
+
+
+// "very positive",
+// "positive",
+// "negative",
+// "very negative"
 
 /* 
 ==================================
