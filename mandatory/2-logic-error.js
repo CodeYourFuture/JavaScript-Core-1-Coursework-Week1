@@ -1,11 +1,11 @@
 // The syntax for these functions is valid but there are some errors, find them and fix them
 
-function trimWord(   CodeYourFuture ) {
-  return wordtrim();
+function trimWord(word) {
+  return word.trim();
 }
 
-function getStringLength( word    ) {
-  return word.length();
+function getStringLength(word) {
+  return word.length;
 }
 
 function multiply(a, b, c) {
