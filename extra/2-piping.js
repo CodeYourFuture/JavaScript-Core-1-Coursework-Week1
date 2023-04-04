@@ -16,26 +16,52 @@
   the final result to the variable goodCode
 */
 
-function add() {
-
+function add(a, b) {
+  return a + b;
 }
 
-function multiply() {
+console.log(add(20, 9));
 
+function multiply(a, b) {
+  return a * b;
 }
 
-function format() {
+console.log(multiply(2, 10));
 
+function format(num) {
+  return "£" + eval(num);
 }
+
+console.log(format(45));
 
 const startingValue = 2;
+function badPractice() {
+  return badCode;
+}
+
+let badCode = "£" + (startingValue + 10) * 2;
+
+console.log(badPractice());
+
+let incrementedValue = startingValue + 10;
+let doubledValue = incrementedValue * 2;
+let formattedValue = "£" + doubledValue;
+
+function goodPractice() {
+  return goodCode;
+}
+
+let goodCode = formattedValue;
+
+// let goodCode = format(multiply(add(startingValue, 10), 2)); //suggested in 'solutions'
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =
+
+// Const should be used for the values we don't re-assign. The name startingValue suggests otherwise
 
 /* BETTER PRACTICE */
 
-let goodCode =
+// let goodCode =
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.

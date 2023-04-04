@@ -4,8 +4,18 @@
   The business is breaking out into a new market and need to convert prices to USD
   Write a function that converts a price to USD (exchange rate is 1.4 $ to £)
 */
+function convertToUSD(pound) {
+  let usd = pound * 1.4;
+  return usd;
+  //  return "$" + pound * 1.4.toFixed(2);
+}
 
-function convertToUSD() {}
+// function convertToUSD(amountInPounds) {
+//   const exchangeRate = 1.4;
+//   return amountInPounds * exchangeRate;
+// } // suggested in 'solutions'
+
+// console.log(convertToUSD(200));
 
 /*
   CURRENCY CONVERSION
@@ -15,8 +25,19 @@ function convertToUSD() {}
   They have also decided that they should add a 1% fee to all foreign transactions, which means you only convert 99% of the £ to BRL.
 */
 
-function convertToBRL() {}
+function convertToBRL(pound) {
+  let brl = parseFloat(((pound / 100) * 99 * 5.7).toFixed(2));
+  return brl;
+}
 
+// function convertToBRL(amountInPounds) {
+//   const transactionFee = 0.01;
+//   const exchangeRate = 5.7;
+//   const amountAfterFee = amountInPounds * (1 - transactionFee);
+//   return amountAfterFee * exchangeRate;
+// } //suggested in 'solutions'
+
+// console.log(convertToBRL(10));
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
 
