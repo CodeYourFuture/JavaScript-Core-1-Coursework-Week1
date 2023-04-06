@@ -6,7 +6,7 @@
 */
 
 function convertToUSD(firstPrice) {
-  usPrice = firstPrice * 1.4 ;
+  let usPrice = firstPrice * 1.4 ;
   return usPrice ;
 }
 /*

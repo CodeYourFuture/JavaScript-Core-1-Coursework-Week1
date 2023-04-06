@@ -21,13 +21,13 @@ let addTotal = input1 + input2 ;
 return addTotal ;
 }
 
-function multiply(Num1, Num2) {
-let mulTotal = Num1 * Num2 ;
+function multiply(num1, num2) {
+let mulTotal = num1 * num2 ;
 return mulTotal ;
 }
 
-function format(Number) {
-return `£${Number}` ;
+function format(number) {
+return `£${number}` ;
 }
 
 const startingValue = 2;

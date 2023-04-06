@@ -22,7 +22,7 @@ function calculateSalesTax(firstPrice) {
 */
 
 function addTaxAndFormatCurrency(firstPrice) {
-  finalPrice = calculateSalesTax(firstPrice);
+  let finalPrice = calculateSalesTax(firstPrice);
 return `£` + finalPrice.toFixed(2);
 }
 
