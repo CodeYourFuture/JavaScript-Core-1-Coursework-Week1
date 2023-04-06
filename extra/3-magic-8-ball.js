@@ -13,53 +13,80 @@
   and have different levels of positivity or negativity.
 
   Below are the possible answers:
-
-  ## Very positive
-    It is certain.
-    It is decidedly so.
-    Without a doubt.
-    Yes - definitely.
-    You may rely on it.
-
-  ## Positive
-    As I see it, yes.
-    Most likely.
-    Outlook good.
-    Yes.
-    Signs point to yes.
-
-  ## Negative
-    Reply hazy, try again.
-    Ask again later.
-    Better not tell you now.
-    Cannot predict now.
-    Concentrate and ask again.
-
-  ## Very negative
-    Don't count on it.
-    My reply is no.
-    My sources say no.
-    Outlook not so good.
-    Very doubtful.
 */
+
+
+ let veryPositive =[
+    "It is certain.",
+    "It is decidedly so.",
+    "Without a doubt.",
+    "Yes - definitely.",
+    "You may rely on it."
+ ];
+
+  let positive = [
+    "As I see it, yes.",
+    "Most likely.",
+    "Outlook good.",
+    "Yes.",
+    "Signs point to yes."
+    ];
+
+  let negative = [
+    "Reply hazy, try again.",
+    "Ask again later.",
+    "Better not tell you now.",
+    "Cannot predict now.",
+    "Concentrate and ask again.",
+    ];
+
+  let veryNegative = [
+    "Don't count on it.",
+    "My reply is no.",
+    "My sources say no.",
+    "Outlook not so good.",
+    "Very doubtful"];
+  
+    let answers = [
+      ...veryPositive,
+      ...positive,
+      ...negative,
+      ...veryNegative];
+
 
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
   //Write your code in here
+  console.log("The ball has shaken!");
+  let ranAnswer = Math.floor(Math.random() * answers.length);
+  return answers[ranAnswer];
 }
 
 /* 
   This function should say whether the answer it is given is
-    - very positive
-    - positive
-    - negative
-    - very negative
-
+  
+  let answer1 = [very positive];
+  let answer2 = [positive];
+  let answer3 = [negative]
+  let answer4 = [very negative];
+/*
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
   //Write your code in here
+  if (veryPositive.includes(answer)){;
+    return "very positive";}
+  
+  else if (positive.includes(answer)){;
+    return "positive";}
+  
+  else if (negative.includes(answer)){;
+    return "negative";}
+
+  else if (veryNegative.includes(answer)){;
+    return "very negative";}
+  
 }
 
 /* 
