@@ -3,25 +3,25 @@
 function addNumbers(a, b, c) {
   return a + b + c;
 }
-console.log(addNumbers)
-//
+console.log(addNumbers(1, 2, 3));
 
-const name = 'gary'
-let age = '100'
-function introduceMe(name, age){
-return "Hello, my name is " + name "and I am " + age + "years old";
-} 
-console.log(introduceMe (name + age))
+const name = "gary";
+let age = "100";
+function introduceMe(name, age) {
+  return "Hello, my name is " + name + " and I am " + age + " years old";
+}
+console.log(introduceMe(name, age));
 
-
-
-  function getTotal(a, b) {
-  total = a ++ b;
-  return "The total is total";
-} console.log(getTotal) 
+function getTotal(a, b) {
+  let total = a + b; // a++  a+1
+  {
+    return "The total is total";
+  }
+}
+console.log(getTotal(2, 3));
 
 //Uncaught SyntaxError: Unexpected identifier return a + b + c;
-  
+
 //Uncaught SyntaxError: Illegal return statement }
 
 //function introduceMe(name, age){return "Hello, my name is " + name "and I am " + age + "years old"; Uncaught SyntaxError: Unexpected string
@@ -32,9 +32,7 @@ console.log(introduceMe (name + age))
 
 //function getTotal(a, b) { total = a ++ b;
 
-//Uncaught SyntaxError: Unexpected identifier return "The total is total"; 
-
-
+//Uncaught SyntaxError: Unexpected identifier return "The total is total";
 
 /* 
 ===================================================
