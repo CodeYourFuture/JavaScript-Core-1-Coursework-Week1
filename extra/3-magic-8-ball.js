@@ -1,3 +1,5 @@
+
+const {toBeOneOf} = require ('jest-extended');
 /**
 
   Let's peer into the future using a Magic 8 Ball!
@@ -42,56 +44,57 @@
     Outlook not so good.
     Very doubtful.
 */
-const predictions = [
-  "It is certain.",
-  "It is decidedly so.",
-  "Without a doubt.",
-  "Yes - definitely.",
-  "You may rely on it.",
-  "As I see it, yes.",
-  "Most likely.",
-  "Outlook good.",
-  "Yes.",
-  "Signs point to yes.",
-  "Reply hazy, try again.",
-  "Ask again later.",
-  "Better not tell you now.",
-  "Cannot predict now.",
-  "Concentrate and ask again.",
-  "Don't count on it.",
-  "My reply is no.",
-  "My sources say no.",
-  "Outlook not so good.",
-  "Very doubtful.",
-];
-const vposArr = [
-  "It is certain.",
-  "It is decidedly so.",
-  "Without a doubt.",
-  "Yes - definitely.",
-  "You may rely on it.",
-];
-const posArr = [
-  "As I see it, yes.",
-  "Most likely.",
-  "Outlook good.",
-  "Yes.",
-  "Signs point to yes.",
-];
-const negArr = [
-  "Reply hazy, try again.",
-  "Ask again later.",
-  "Better not tell you now.",
-  "Cannot predict now.",
-  "Concentrate and ask again.",
-];
-const vnegArr = [
-  "Don't count on it.",
-  "My reply is no.",
-  "My sources say no.",
-  "Outlook not so good.",
-  "Very doubtful.",
-];
+
+// const predictions = [
+//   "It is certain.",
+//   "It is decidedly so.",
+//   "Without a doubt.",
+//   "Yes - definitely.",
+//   "You may rely on it.",
+//   "As I see it, yes.",
+//   "Most likely.",
+//   "Outlook good.",
+//   "Yes.",
+//   "Signs point to yes.",
+//   "Reply hazy, try again.",
+//   "Ask again later.",
+//   "Better not tell you now.",
+//   "Cannot predict now.",
+//   "Concentrate and ask again.",
+//   "Don't count on it.",
+//   "My reply is no.",
+//   "My sources say no.",
+//   "Outlook not so good.",
+//   "Very doubtful.",
+// ];
+// const vposArr = [
+//   "It is certain.",
+//   "It is decidedly so.",
+//   "Without a doubt.",
+//   "Yes - definitely.",
+//   "You may rely on it.",
+// ];
+// const posArr = [
+//   "As I see it, yes.",
+//   "Most likely.",
+//   "Outlook good.",
+//   "Yes.",
+//   "Signs point to yes.",
+// ];
+// const negArr = [
+//   "Reply hazy, try again.",
+//   "Ask again later.",
+//   "Better not tell you now.",
+//   "Cannot predict now.",
+//   "Concentrate and ask again.",
+// ];
+// const vnegArr = [
+//   "Don't count on it.",
+//   "My reply is no.",
+//   "My sources say no.",
+//   "Outlook not so good.",
+//   "Very doubtful.",
+// ];
 
 
 
@@ -183,8 +186,10 @@ const vnegArr = [
    //and return the answer. 
     
  function shakeBall(){
-  
-  //Write your code in here
+//Write your code in here
+console.log("The ball has shaken!");
+let randomNum = Math.floor(Math.random() * 20) + 1;
+return predictions[randomNum];
 }
 
 
@@ -200,6 +205,18 @@ const vnegArr = [
 let answer = shakeBall();
 function checkAnswer(answer) {
   //Write your code in here
+  if (vposArr.includes(answer)){
+    return "very positive";
+  }
+  if (posArr.includes(answer)){
+    return "positive";
+  }
+  if (negArr.includes(answer)){
+    return "negative";
+  }
+  if (vnegArr.includes(answer)){
+    return "very negative";
+  }
 }
 
 
