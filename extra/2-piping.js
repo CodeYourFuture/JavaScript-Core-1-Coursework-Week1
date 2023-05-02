@@ -21,25 +21,22 @@ function add(a,b) {
 
 }
 
-function multiply(a,b) {
-  return a * b;
+function multiply() {
 
 }
 
-function format(value) {
-  return '£' + value;
+function format() {
 
 }
 
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =format(multiply(add(startingValue,10),2));
+let badCode =
 
 /* BETTER PRACTICE */
-let sum=add(startingValue, 10);
-let doubledSum=multiply(sum, 2)
-let goodCode =format(doubledSum)
+
+let goodCode =
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
