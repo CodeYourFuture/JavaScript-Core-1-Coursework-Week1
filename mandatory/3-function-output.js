@@ -2,7 +2,37 @@
 function getRandomNumber() {
   return Math.random() * 10;
 }
-// getRandomNumber is a desspription of what I want to happen. The Math.random() method - The Math object in JavaScript is a built-in object that has properties and methods for performing mathematical calculations. A common use of the Math object is to create a random number using the random() method.
+// getRandomNumber is a despription of what I want to happen. The Math.random() method - The Math object in JavaScript is a built-in object that has properties and methods for performing mathematical calculations. 
+// A common use of the Math object is to create a random number using the random() method.
+function getRandomNumber(this time 10) {
+  return Math.random(10) * 10;
+}
+
+It prints: 100
+
+function getRandomNumber(6) {
+  return Math.random(6) * 10;
+}
+
+It prints: 60
+
+function getRandomNumber(2) {
+  return Math.random(2) * 10;
+}
+
+It prints: 20
+
+function getRandomNumber(9) {
+  return Math.random(9) * 10;
+}
+
+It prints: 90
+
+function getRandomNumber(121) {
+  return Math.random(121) * 10;
+}
+
+It prints: 1210
 
 // Add comments to explain what this function does. You're meant to use Google!
 function combine2Words(word1, word2) {

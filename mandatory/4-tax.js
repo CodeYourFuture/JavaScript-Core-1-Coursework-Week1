@@ -11,6 +11,52 @@ function calculateSalesTax(sales) {
   return total;
 }
 
+let sales = 100;
+function calculateSalesTax(sales) {
+  let tax = sales * 0.2;
+  let total = sales + tax;
+  return total;
+}
+
+It prints: 20
+100
+
+let sales = 200;
+function calculateSalesTax(sales) {
+  let tax = sales * 0.2;
+  let total = sales + tax;
+  return total;
+}
+It prints: 40
+160 + 40 = 200
+
+
+let sales = 150;
+function calculateSalesTax(sales) {
+  let tax = sales * 0.2;
+  let total = sales + tax;
+  return total;
+}
+It prints: 30
+30 + 120 = 150
+
+let sales = 500
+function calculateSalesTax(sales) {
+  let tax = sales * 0.2;
+  let total = sales + tax;
+  return total;
+}
+It prints: 100
+400 + 100 = 500
+
+let sales = 400;
+function calculateSalesTax(sales) {
+  let tax = sales * 0.2;
+  let total = sales + tax;
+}
+It prints: 80
+320 + 80 = 400;
+
 /*
   CURRENCY FORMATTING
   ===================
