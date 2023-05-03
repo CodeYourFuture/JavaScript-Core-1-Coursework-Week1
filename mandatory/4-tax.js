@@ -5,6 +5,8 @@
   Sales tax is 20% of the price of the product.
 */
 
+
+
 function calculateSalesTax(sales) {
   let tax = sales * 0.2;
   let total = sales + tax;

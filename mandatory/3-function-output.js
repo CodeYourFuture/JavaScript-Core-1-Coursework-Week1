@@ -10,11 +10,17 @@ function getRandomNumber(this time 10) {
 
 It prints: 100
 
+// I start with a function getRandomNumber and 6. Inside the brackets I return Math with .random method and in this 
+// case 6. I multiply with 10. It prints 60.
+
 function getRandomNumber(6) {
   return Math.random(6) * 10;
 }
 
 It prints: 60
+
+// I start with a function getRandomNumber and 2. Inside the brackets return math with .random method and in this
+// case 2. I multiply with 2. It prints 20.
 
 function getRandomNumber(2) {
   return Math.random(2) * 10;
@@ -22,11 +28,19 @@ function getRandomNumber(2) {
 
 It prints: 20
 
+
+// I start with a function getRandomNumber and 9. Inside the brackets I return Math with .random and in this case 9
+// I multiply with 1. It prints 90.
+
+
 function getRandomNumber(9) {
   return Math.random(9) * 10;
 }
 
 It prints: 90
+
+// I start with a function getRandomNumber and 121. Inside the brackets I return Math with .random and in this case 121.
+// I multiply with 10. It prints 1210.
 
 function getRandomNumber(121) {
   return Math.random(121) * 10;
