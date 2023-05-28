@@ -46,7 +46,7 @@
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
-  //Write your code in here
+  console.log("The ball has shaken!");
 }
 
 /* 
@@ -59,7 +59,15 @@ function shakeBall() {
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
-  //Write your code in here
+  if (veryPositiveAnswers.includes(answer)) {
+    return "very positive";
+  } else if (positiveAnswers.includes(answer)) {
+    return "positive";
+  } else if (negativeAnswers.includes(answer)) {
+    return "negative";
+  } else if (veryNegativeAnswers.includes(answer)) {
+    return "very negative";
+  }
 }
 
 /* 
