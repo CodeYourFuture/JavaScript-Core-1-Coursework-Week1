@@ -6,8 +6,10 @@
 */
 
 function calculateSalesTax(price) {
-  return price * 1.2;
+  const fullPrice = price + price / 5;
+  return fullPrice;
 }
+
 /*
   CURRENCY FORMATTING
   ===================
@@ -17,12 +19,12 @@ function calculateSalesTax(price) {
 
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
+
 function addTaxAndFormatCurrency(price) {
-  let fullPrice = calculateSalesTax(price);
+  const prices = calculateSalesTax(price).toFixed(2);
 
-    return `£${fullPrice.toFixed(2)}`;
-  }
-
+  return `£${prices}`;
+}
 /* 
 ===================================================
 ======= TESTS - DO NOT MODIFY BELOW THIS LINE =====
