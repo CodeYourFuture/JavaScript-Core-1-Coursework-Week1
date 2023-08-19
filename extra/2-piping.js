@@ -16,26 +16,34 @@
   the final result to the variable goodCode
 */
 
-function add() {
-
+function add(a, b) {
+  return a + b;
 }
 
-function multiply() {
-
+function multiply(a, b) {
+  return a * b;
 }
 
-function format() {
-
+function format(value) {
+  return "£" + value;
 }
 
 const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode =
+let badCode = format(multiply(add(startingValue, 10), 2));
+
+/*  in this code there is space and no semicolons ; */
 
 /* BETTER PRACTICE */
 
-let goodCode =
+let goodCode = format(multiply(add(startingValue, 10), 2));
+
+let goodcode = add(10, startingValue);
+console.log("Better practice..", goodCode);
+
+let multiplyByTwo = multiply(goodCode, 2);
+console.log("Better practice..", multiplyByTwo);
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
