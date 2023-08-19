@@ -39,6 +39,12 @@ let badCode = format(multiply(add(startingValue, 10), 2));
 
 let goodCode = format(multiply(add(startingValue, 10), 2));
 
+let goodcode = add(10, startingValue);
+console.log("Better practice..", goodCode);
+
+let multiplyByTwo = multiply(goodCode, 2);
+console.log("Better practice..", multiplyByTwo);
+
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
 
