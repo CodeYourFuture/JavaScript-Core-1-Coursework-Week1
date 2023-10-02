@@ -1,18 +1,41 @@
-# Step 2 Adding Testing Stages
-name: CI
+# Step 3 Adding Deployment Stages
+name: CI/CD
 
-on: [push]
-
+on:
+  push:
+  
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-    - name: Install Dependencies
-      run: npm install
-    - name: Run tests
-      run: npm test
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Install Dependencies
+        run: npm install
+      - name: Run tests
+        run: npm test
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy
+        run: npm deploy
+
+# Step 2 Adding Testing Stages
+# name: CI
+
+# on: [push]
+
+# jobs:
+#   test:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: Checkout code
+#       uses: actions/checkout@v3
+#     - name: Install Dependencies
+#       run: npm install
+#     - name: Run tests
+#       run: npm test
 
 
 # Step 1 Setting up a Simple Workflow
