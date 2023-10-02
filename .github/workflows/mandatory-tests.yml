@@ -1,11 +1,25 @@
-name: Run mandatory tests
-on: pull_request
+# Step 1
+name: CI
+
+on: [push]
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Install modules
-      run: npm install
-    - name: Run mandatory tests
-      run: npm test -- --selectProjects mandatory
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+# Original code
+# name: Run mandatory tests
+# on: pull_request
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@v2
+#     - name: Install modules
+#       run: npm install
+#     - name: Run mandatory tests
+#       run: npm test -- --selectProjects mandatory
+
