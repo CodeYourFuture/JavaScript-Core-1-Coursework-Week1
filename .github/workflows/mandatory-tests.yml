@@ -1,27 +1,57 @@
-# Step 4 Creating a Workflow with Multiple Jobs
+# Step 5 Github Environment Variables
 name: CI/CD Pipeline
 
-on: [push]
-
+on:
+  push:
+  
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      NODE_ENV: test
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-    - name: Install Dependencies
-      run: npm install
-    - name: Run tests
-      run: npm test
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Install Dependencies
+        run: npm install
+      - name: Run tests
+        run: npm test
 
   deploy:
     needs: test
     runs-on: ubuntu-latest
+    env:
+      NODE_ENV: production
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-    - name: Deploy
-      run: npm deploy
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Deploy
+        run: npm deploy
+
+# Step 4 Creating a Workflow with Multiple Jobs
+# name: CI/CD Pipeline
+
+# on: [push]
+
+# jobs:
+#   test:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: Checkout code
+#       uses: actions/checkout@v3
+#     - name: Install Dependencies
+#       run: npm install
+#     - name: Run tests
+#       run: npm test
+
+#   deploy:
+#     needs: test
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: Checkout code
+#       uses: actions/checkout@v3
+#     - name: Deploy
+#       run: npm deploy
 
 # Step 3 Adding Deployment Stages
 # name: CI/CD
