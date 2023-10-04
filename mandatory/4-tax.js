@@ -5,7 +5,77 @@
   Sales tax is 20% of the price of the product.
 */
 
-function calculateSalesTax() {}
+// I start with a function calculateSalesTax with the value sales. Inside the brackets, I use the let variables tax that equals 
+// sales * 0.2 and total that equals sales + tax and then I return the total. It prints 20.
+
+function calculateSalesTax(sales) {
+  let tax = sales * 0.2;
+  let total = sales + tax;
+  return total;
+}
+
+let sales = 100;
+function calculateSalesTax(sales) {
+  let tax = sales * 0.2;
+  let total = sales + tax;
+  return total;
+}
+
+It prints: 20
+100
+
+// I start with a let variable sales that equal 200. Then a function calculateSalesTax with the value sales. Inside the brackets, 
+// I use the let variables tax that equals sales * 0.2 and total that equals sales + tax and then I return the total. 
+// It prints 40.
+
+let sales = 200;
+function calculateSalesTax(sales) {
+  let tax = sales * 0.2;
+  let total = sales + tax;
+  return total;
+}
+It prints: 40
+160 + 40 = 200
+
+
+// I start with a let variable sales that equal 150. Then a function calculteSalesTax with the value sales. Inside the brackets 
+// I use the let variables tax that equals sales * 0.2 and total that equals sales + tax and the I return total.
+// It prints 30
+
+
+let sales = 150;
+function calculateSalesTax(sales) {
+  let tax = sales * 0.2;
+  let total = sales + tax;
+  return total;
+}
+It prints: 30
+30 + 120 = 150
+
+// I start with a let variable sales that equal 500. Then a function calculateSalesTax with the value sales. Inside the brackets
+// I use the let variables tax that equals sales * 0.2 and total that equals sales + tax and then return total.
+// It prints 500
+
+let sales = 500
+function calculateSalesTax(sales) {
+  let tax = sales * 0.2;
+  let total = sales + tax;
+  return total;
+}
+It prints: 100
+400 + 100 = 500
+
+// I start with let variable sales that equals 400. Then a function calculateSalestax with the value sales. Inside the brackets
+// I use the let variable tax that equals sales * 0.2 and total that equals sales + tax and the return total.
+// It prints 80.
+
+let sales = 400;
+function calculateSalesTax(sales) {
+  let tax = sales * 0.2;
+  let total = sales + tax;
+}
+It prints: 80
+320 + 80 = 400;
 
 /*
   CURRENCY FORMATTING
@@ -17,7 +87,9 @@ function calculateSalesTax() {}
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency() {}
+function addTaxAndFormatCurrency(sales) {
+return "£" + calculateSalesTax(sales).toFixed(2);
+}
 
 /* 
 ===================================================

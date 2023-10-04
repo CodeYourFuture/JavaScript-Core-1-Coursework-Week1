@@ -46,7 +46,7 @@
 // This should log "The ball has shaken!"
 // and return the answer.
 function shakeBall() {
-  //Write your code in here
+  console.log(`The ball has shaken!`);
 }
 
 /* 
@@ -59,8 +59,98 @@ function shakeBall() {
   This function should expect to be called with any value which was returned by the shakeBall function.
 */
 function checkAnswer(answer) {
-  //Write your code in here
+  
 }
+
+function checkAnswer(answer) {
+  if (["It is certain.", "It is decidedly so.", "Without a doubt.", "Yes - definitely.", "You may rely on it."].includes(answer)) {
+    return "very positive";
+  } else if (["As I see it, yes.", "Most likely.", "Outlook good.", "Yes.", "Signs point to yes."].includes(answer)) {
+    return "positive";
+  } else if (["Reply hazy, try again.", "Ask again later.", "Better not tell you now.", "Cannot predict now.", "Concentrate and ask again."].includes(answer)) {
+    return "negative";
+  } else if (["Don't count on it.", "My reply is no.", "My sources say no.", "Outlook not so good.", "Very doubtful."].includes(answer)) {
+    return "very negative";
+  } else {
+    // If the answer isn't one of the expected values, return null
+    return null;
+  }
+}
+
+function checkAnswer(answer) {
+  if (["it is certain.", "It is decidedly so.", "Whithout a doubt.", "Yes - definitely.", "Yoy may rely on it."].includes(answer)) {
+    return "very posotive";
+  } else if (["As I see it, yes.", "Most likely.", "Outlook good.", "Yes.", "Signs points to yes."].includes(answer)) {
+    return "positive";
+  } else if (["Reply hazy, try again.", "Ask again later.", "Better not tell you now.", "cannot predict now.", "Concentrate and ask again."].includes(answr)) {
+    return "negative";
+  } else if (["Don't count on it.", "My reply is no.", "My sources ay no.", "Outlook not so good.", "Ver doubtful."].includes(answer)) {
+    return "very negative";
+  } else {
+    // if the answer isn't one of the expected values, return null
+    return null;
+  }
+}
+
+function checkAnswer(answer) {
+  if ([].includes) {
+    return "very positive";
+  } else if ([].includes) {
+    return "positive"; 
+  } else if ([].includes) {
+    return "negative";
+  } else if ([].includes) {
+    return "very negative";
+  } else {
+    // if the answer isn't one of the exected values, return null
+    return null;
+  }
+}
+
+function checkAnswer(answer) {
+  if ([].includes) {
+    return "very positive";
+  } else if ([].includes(answer)) {
+    return "positive";
+  } else if ([].includes) {
+    return "negative";
+  } else if ([].includes) {
+    return "very negative";
+  } else {
+    // if the answer isn't one of the expected values, return null
+    return null;
+  }
+}
+
+function checkAnswer(answer) {
+  if ([].includes(answer)) {
+    return "very positive";
+  } else if  ([].includes) {
+    return "positive";
+  } else if ([].includes(answer)) {
+    return "negtive";
+  } else if ([].includes) {
+    return "very negative";
+  } else {
+    // if the answer isn't one of the expected values, return null
+    return null;
+  }
+}
+
+function checkAnswer(answer) {
+  if ([].includes) {
+    return "very positive";
+  } else if ([].includes) {
+    return "positive";
+  } else if ([].includes) {
+    return "negative";
+  } else if ([].includes) {
+    return "very negative";
+  } else {
+    // if the answer isn't one of the expected values, return null
+    return null;
+  }
+  }
 
 /* 
 ==================================
