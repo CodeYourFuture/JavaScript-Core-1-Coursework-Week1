@@ -22,4 +22,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Deploy
-      run: npm deploy
+      run: npm run deploy
