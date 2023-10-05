@@ -4,7 +4,8 @@
   "description": "Exercises for JS1 Week 1",
   "license": "CC-BY-SA-4.0",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "deploy": "echo this is a deploy"
   },
   "repository": {
     "type": "git",
