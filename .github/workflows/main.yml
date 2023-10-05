@@ -22,5 +22,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Deploy
-      working-directory: ../../extra
+      working-directory: /extra
       run: npm run deploy
